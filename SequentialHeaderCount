@@ -14,9 +14,10 @@ outFile = open(sys.argv[2], "w")
 counter = Counter()
 
 for line in inFile:
+    line = line.rstrip()
     if line[0] == ">":
         sample_id = line.split('\t')[0]
         counter[sample_id] += 1
-        outFile.write(sample_id + "_" + str(counter[sample_id]) + "\n")
+        outFile.write("{0}_{1}\n".format(sample_id, str(counter[sample_id])))
     else:
-        outFile.write(line)
+        outFile.write("{0}\n".format(line))
