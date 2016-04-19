@@ -6,6 +6,8 @@
 # Date: 1/17/2016
 # Purpose is to replace parts of headers and add consecutive numbers to each sample ID
 
+## enter command as: python <path/to/python/script> <path/to/input/file> <path/and/name/to/output/file>
+
 import sys
 from collections import Counter
 
