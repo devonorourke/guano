@@ -1,0 +1,143 @@
+########################################################################################
+#########   PART 1: load OTU table and reformat for illustrations and analyses #########
+########################################################################################
+
+
+#Start here to set working directory to location where your QIIME OTU table was deposited, then import the file to R:
+
+#set working directory
+setwd("~/Documents/Lab.Foster/guano_NH/2015_work/qiime_output/persim_non97/persim97/")
+#load in table
+qiime_otu <- read.delim("oro11_mapping_L8.txt", check.names = F, header = T)
+
+#remove unwanted columns:
+qiime_otu$BarcodeSequence<-NULL
+qiime_otu$LinkerPrimerSequence<-NULL
+qiime_otu$Description<-NULL
+
+#subset metadata for merging downstream:
+qiime_meta <- qiime_otu[,1:3] # may need to change number if fields differ in initial OTU table
+colnames(qiime_meta) <- c("SampleID", "LocationName", "WeekOfYear")
+
+#remove remaining unwanted columns prior to melting df:
+qiime_otu$LocationName<-NULL
+qiime_otu$WeekOfYear<-NULL
+#rename the first column that I forgot to properly fix because of the default output from QIIME
+colnames(qiime_otu)[1] <- c("SampleID")
+
+#transpose data with reshape2 package, then rename columns and subset out all zero values:
+library(reshape2)
+t_otu <- melt(qiime_otu, id = c("SampleID"))
+#rename columns:
+colnames(t_otu) <- c("SampleID", "Taxa_name", "NumberReads")
+#remove all zero values for analysis:
+t_otu <- subset(t_otu, NumberReads > 0)
+
+#reformat column headers
+library(tidyr)
+t_otu <- separate(data = t_otu, col = Taxa_name, 
+                  into = c("phylum_name", "class_name", "order_name", "family_name", "genus_name", "species_name", "bin_uri", "processid"), sep = "\\;")
+df2 <- as.data.frame(sapply(t_otu,gsub,pattern="phylum_",replacement=""))
+df3 <- as.data.frame(sapply(df2,gsub,pattern="class_",replacement=""))
+df4 <- as.data.frame(sapply(df3,gsub,pattern="order_",replacement=""))
+df5 <- as.data.frame(sapply(df4,gsub,pattern="family_",replacement=""))
+df6 <- as.data.frame(sapply(df5,gsub,pattern="genus_",replacement=""))
+df7 <- as.data.frame(sapply(df6,gsub,pattern="species_",replacement=""))
+df8 <- as.data.frame(sapply(df7,gsub,pattern="bin_uri_",replacement=""))
+raw_otus <- as.data.frame(sapply(df8,gsub,pattern="processid_",replacement=""))
+#and remove temps
+rm(df2, df3, df4, df5, df6, df7, df8)
+
+
+########### WARNING - POTENTIALLY UNNECESSARY STEP   ################
+#remove the duplicate species calls
+##this won't be necessary if QIIME's summarize-taxa script just uses L8 instead of multiple levels)
+# CODE MUTED: raw_otus <- raw_otus[complete.cases(raw_otus[,8:9]),]
+########### ENDING - POTENTIALLY UNNECESSARY STEP   ################
+
+
+#set number of reads to numeric (not a factor)
+raw_otus$NumberReads <- as.numeric(as.character(raw_otus$NumberReads))
+
+
+#create new column of cummulative sum values for read filtering
+raw_otus <- raw_otus[order(raw_otus$NumberReads, decreasing= TRUE),]
+raw_otus$cum_sum<- cumsum(raw_otus$NumberReads)
+N = sum(raw_otus$NumberReads)
+N50 = N/2
+N75 = N*0.75
+N90 = N*0.9
+N95 = N*0.95
+N98 = N*0.98
+N99 = N*0.99
+
+#grab any contaminant reads for evaluation
+contaminants_all <- raw_otus[grep("blank", raw_otus$SampleID), ]
+
+#determine number of per-sample OTUs called as well as unique OTUs assigned
+#per-sample OTU calls:
+nrow(raw_otus)
+
+###### IGNORE but could be useful if you want to specify by processID over species ######
+#unique OTUs by processIDs among all samples:
+raw_otus_unique <- raw_otus[!duplicated(raw_otus[c("processid")]),]
+nrow(raw_otus_unique)
+###### see above  #######################################################################
+
+
+#unique OTUs by speciesID among all samples:
+raw_otus_unique_sp <- raw_otus[!duplicated(raw_otus[c("species_name")]),]
+nrow(raw_otus_unique_sp)
+#count all reads to all samples
+sum(raw_otus$NumberReads)
+
+#per-sample OTU calls for all contaminants:
+nrow(contaminants_all)
+#determine number unique OTUs
+contaminant_all_unique <- contaminants_all[!duplicated(contaminants_all[c("species_name")]),]
+nrow(contaminant_all_unique)
+#determine highest NumberRead value for all contaminants
+max(contaminant_all_unique$NumberReads)
+#count all reads to all contaminants
+sum(contaminants_all$NumberReads)
+
+
+##################################################################################################
+##############################    PART 2:  READ trimming        ##################################
+##################################################################################################
+
+#NumberRead quantity based upon the cumsum value where N = 99 (or whatever N-level you choose)...
+#Higher N-level keeps more data but may introduce Type-I errors; test samples and negative controls for each dataset to identify best N-level
+
+#determine N-level and subset at that value (read number minimum) in your datatable
+n99_otus <- subset(raw_otus, NumberReads >= 22)
+
+#OTU-samples among trimmed reads:
+nrow(n99_otus)
+#number unique OTUs per filter threshold
+n99_species_unique <- n99_otus[!duplicated(n99_otus[c("species_name")]),]
+nrow(n99_species_unique)
+#number of reads in all samples post-trim
+sum(n99_otus$NumberReads)
+
+#determine number of contaminant OTU-samples post trim:
+n99_contaminants <- subset(contaminants_all, NumberReads >=22)
+nrow(n99_contaminants)
+#determine number of unique species of blanks post trim:
+n99_contaminants_unique <- n99_contaminants[!duplicated(n99_contaminants[c("species_name")]),]
+nrow(n99_contaminants_unique)
+#determine max length of trimmed blanks
+max(n99_contaminants$NumberReads)
+#determine length of blanks post trim
+sum(n99_contaminants$NumberReads)
+
+
+##################################################################################################
+#####################      PART 3 - Bring metadata back together     #############################
+##################################################################################################
+
+#merge meta data with read data:
+#need to define "df_otus" below with whatever N-level you choose
+df_master <- merge(df_otus, qiime_meta, by = "SampleID")
+
+#export this data frame to whatever directory you want
