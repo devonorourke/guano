@@ -1,0 +1,29 @@
+#import master data file including Number of Reads per sample as well as any associated metadata
+master_oro_df_n99 <- read.delim("~/Documents/Lab.Foster/guano_NH/2015_work/r_output/master_oro_df_n99.txt")
+
+#convert numberReads to numeric:
+master_oro_df_n99$numberReads <- as.numeric(as.character(master_oro_df_n99$numberReads))
+
+#import relevant package "treemap"
+library(treemap)
+
+#Option1: visualize number of reads of a particular genus grouped by order
+treemap(master_oro_df_n99,
+        index = c("order_name", "genus_name"),
+        vSize = "numberReads",
+        type = "value",
+        range = c(0, 10000), 
+        title.legend = "number of reads by taxa: order and genus")
+        
+#Option2: visualize number of instances a particular species is detected grouped by order:
+treemap(master_oro_df_n99, 
+        index=c("order_name", "species_name"),
+        vSize="numberReads",
+        vColor="order_name",
+        type="categorical",
+        title = "Frequency of detection per species grouped by taxonomic order",
+        title.legend = "taxonomic Order",
+        position.legend = "none",
+        align.labels=list(c("center", "top"), c("left", "bottom")), 
+        fontsize.labels=10,
+        lowerbound.cex.labels=0.2)
