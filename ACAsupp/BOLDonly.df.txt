@@ -1,0 +1,635 @@
+tagID	OTUid	OTU_identifier	kingdom_name	phylum_name	class_name	order_name	family_name	genus_name	species_name	Site	Date	WOY	BatTagID	BatSpecies	Sex	Age	ReproStat	SiteWeek
+bri16.0082	OTU43	BOLD:AAA6614	Animalia	Arthropoda	Insecta	Lepidoptera	Depressariidae	Psilocorsis	Psilocorsis reflexella	ACA	7/7/16	28	DEY3782	MYLE	F	A	L	ACA 28
+bri16.0082	OTU379	BOLD:AAB0607	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Pseudotelphusa	Pseudotelphusa quercinigracella	ACA	7/7/16	28	DEY3782	MYLE	F	A	L	ACA 28
+bri16.0082	OTU28	BOLD:AAF9055	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Erioptera	Erioptera septemtrionis	ACA	7/7/16	28	DEY3782	MYLE	F	A	L	ACA 28
+bri16.0082	OTU36	BOLD:AAI6345	Animalia	Arthropoda	Insecta	Diptera	unknown	unknown	unknown	ACA	7/7/16	28	DEY3782	MYLE	F	A	L	ACA 28
+bri16.0082	OTU8	BOLD:ACA9904	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Cheilotrichia	Cheilotrichia stigmatica	ACA	7/7/16	28	DEY3782	MYLE	F	A	L	ACA 28
+bri16.0083	OTU407	BOLD:AAC4050	Animalia	Arthropoda	Insecta	Lepidoptera	Crambidae	Nascia	unknown	ACA	7/12/16	29	DEY2619	EPFU	M	A	NR	ACA 29
+bri16.0083	OTU12	BOLD:AAF3428	Animalia	Arthropoda	Insecta	Coleoptera	Elateridae	Melanotus	Melanotus similis	ACA	7/12/16	29	DEY2619	EPFU	M	A	NR	ACA 29
+bri16.0083	OTU437	BOLD:AAG9923	Animalia	Arthropoda	Insecta	Blattodea	unknown	unknown	unknown	ACA	7/12/16	29	DEY2619	EPFU	M	A	NR	ACA 29
+bri16.0083	OTU26	BOLD:AAH3593	Animalia	Arthropoda	Insecta	Megaloptera	Corydalidae	Chauliodes	Chauliodes pectinicornis	ACA	7/12/16	29	DEY2619	EPFU	M	A	NR	ACA 29
+bri16.0083	OTU186	BOLD:AAM7567	Animalia	Arthropoda	Insecta	Coleoptera	Elateridae	Melanotus	Melanotus similis	ACA	7/12/16	29	DEY2619	EPFU	M	A	NR	ACA 29
+bri16.0084	OTU324	BOLD:AAA3055	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Clepsis	Clepsis virescana	ACA	7/12/16	29	DEY3783	MYSE	F	A	NR	ACA 29
+bri16.0084	OTU378	BOLD:AAA5953	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Coleotechnites	Coleotechnites piceaella	ACA	7/12/16	29	DEY3783	MYSE	F	A	NR	ACA 29
+bri16.0084	OTU43	BOLD:AAA6614	Animalia	Arthropoda	Insecta	Lepidoptera	Depressariidae	Psilocorsis	Psilocorsis reflexella	ACA	7/12/16	29	DEY3783	MYSE	F	A	NR	ACA 29
+bri16.0084	OTU686	BOLD:AAB0271	Animalia	Arthropoda	Arachnida	Araneae	Araneidae	Cyclosa	Cyclosa conica	ACA	7/12/16	29	DEY3783	MYSE	F	A	NR	ACA 29
+bri16.0084	OTU475	BOLD:AAB0603	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Pseudotelphusa	Pseudotelphusa quercinigracella	ACA	7/12/16	29	DEY3783	MYSE	F	A	NR	ACA 29
+bri16.0084	OTU379	BOLD:AAB0607	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Pseudotelphusa	Pseudotelphusa quercinigracella	ACA	7/12/16	29	DEY3783	MYSE	F	A	NR	ACA 29
+bri16.0084	OTU584	BOLD:AAB2563	Animalia	Arthropoda	Arachnida	Araneae	Clubionidae	Clubiona	Clubiona canadensis	ACA	7/12/16	29	DEY3783	MYSE	F	A	NR	ACA 29
+bri16.0084	OTU777	BOLD:AAB5696	Animalia	Arthropoda	Insecta	Diptera	Culicidae	Aedes	Aedes canadensis	ACA	7/12/16	29	DEY3783	MYSE	F	A	NR	ACA 29
+bri16.0084	OTU203	BOLD:AAB9632	Animalia	Arthropoda	Insecta	Lepidoptera	Blastobasidae	Hypatopa	Hypatopa simplicella	ACA	7/12/16	29	DEY3783	MYSE	F	A	NR	ACA 29
+bri16.0084	OTU512	BOLD:AAD2248	Animalia	Arthropoda	Arachnida	Araneae	Araneidae	Araneus	Araneus saevus	ACA	7/12/16	29	DEY3783	MYSE	F	A	NR	ACA 29
+bri16.0084	OTU396	BOLD:AAD5963	Animalia	Arthropoda	Insecta	Coleoptera	Pyrochroidae	Dendroides	Dendroides concolor	ACA	7/12/16	29	DEY3783	MYSE	F	A	NR	ACA 29
+bri16.0084	OTU557	BOLD:AAF5630	Animalia	Arthropoda	Insecta	Coleoptera	unknown	unknown	unknown	ACA	7/12/16	29	DEY3783	MYSE	F	A	NR	ACA 29
+bri16.0084	OTU54	BOLD:AAG0758	Animalia	Arthropoda	Insecta	Coleoptera	Pyrochroidae	Dendroides	Dendroides canadensis	ACA	7/12/16	29	DEY3783	MYSE	F	A	NR	ACA 29
+bri16.0084	OTU99	BOLD:AAH2428	Animalia	Arthropoda	Insecta	Coleoptera	Elateridae	Athous	Athous brightwelli	ACA	7/12/16	29	DEY3783	MYSE	F	A	NR	ACA 29
+bri16.0084	OTU275	BOLD:ABX5931	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Tipula	Tipula trivittata	ACA	7/12/16	29	DEY3783	MYSE	F	A	NR	ACA 29
+bri16.0085	OTU250	BOLD:AAA6353	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Neotelphusa	Neotelphusa praefixa	ACA	7/17/16	29	DEY3351	MYLE	F	A	NR	ACA 29
+bri16.0085	OTU171	BOLD:AAA9667	Animalia	Arthropoda	Insecta	Lepidoptera	Oecophoridae	Epicallima	Epicallima argenticinctella	ACA	7/17/16	29	DEY3351	MYLE	F	A	NR	ACA 29
+bri16.0085	OTU743	BOLD:AAB0483	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Zeiraphera	Zeiraphera canadensis	ACA	7/17/16	29	DEY3351	MYLE	F	A	NR	ACA 29
+bri16.0085	OTU379	BOLD:AAB0607	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Pseudotelphusa	Pseudotelphusa quercinigracella	ACA	7/17/16	29	DEY3351	MYLE	F	A	NR	ACA 29
+bri16.0085	OTU1175	BOLD:AAB0710	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Epinotia	Epinotia transmissana	ACA	7/17/16	29	DEY3351	MYLE	F	A	NR	ACA 29
+bri16.0085	OTU7	BOLD:AAB1667	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Argyrotaenia	Argyrotaenia quercifoliana	ACA	7/17/16	29	DEY3351	MYLE	F	A	NR	ACA 29
+bri16.0085	OTU427	BOLD:AAB3573	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Cochylis	Cochylis nana	ACA	7/17/16	29	DEY3351	MYLE	F	A	NR	ACA 29
+bri16.0085	OTU969	BOLD:AAB3774	Animalia	Arthropoda	Insecta	Lepidoptera	Erebidae	Zanclognatha	Zanclognatha lituralis	ACA	7/17/16	29	DEY3351	MYLE	F	A	NR	ACA 29
+bri16.0085	OTU206	BOLD:AAB3916	Animalia	Arthropoda	Insecta	Lepidoptera	Depressariidae	Psilocorsis	Psilocorsis cryptolechiella	ACA	7/17/16	29	DEY3351	MYLE	F	A	NR	ACA 29
+bri16.0085	OTU124	BOLD:AAB3917	Animalia	Arthropoda	Insecta	Lepidoptera	Depressariidae	Psilocorsis	Psilocorsis quercicella	ACA	7/17/16	29	DEY3351	MYLE	F	A	NR	ACA 29
+bri16.0085	OTU203	BOLD:AAB9632	Animalia	Arthropoda	Insecta	Lepidoptera	Blastobasidae	Hypatopa	Hypatopa simplicella	ACA	7/17/16	29	DEY3351	MYLE	F	A	NR	ACA 29
+bri16.0085	OTU51	BOLD:AAC2533	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Olethreutes	Olethreutes fasciatana	ACA	7/17/16	29	DEY3351	MYLE	F	A	NR	ACA 29
+bri16.0085	OTU951	BOLD:AAD9100	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Battaristis	Battaristis nigratomella	ACA	7/17/16	29	DEY3351	MYLE	F	A	NR	ACA 29
+bri16.0085	OTU266	BOLD:AAF4974	Animalia	Arthropoda	Arachnida	Araneae	Theridiidae	Dipoena	Dipoena nigra	ACA	7/17/16	29	DEY3351	MYLE	F	A	NR	ACA 29
+bri16.0085	OTU163	BOLD:AAG8581	Animalia	Arthropoda	Insecta	Lepidoptera	Blastobasidae	Hypatopa	Hypatopa vestaliella	ACA	7/17/16	29	DEY3351	MYLE	F	A	NR	ACA 29
+bri16.0085	OTU99	BOLD:AAH2428	Animalia	Arthropoda	Insecta	Coleoptera	Elateridae	Athous	Athous brightwelli	ACA	7/17/16	29	DEY3351	MYLE	F	A	NR	ACA 29
+bri16.0085	OTU55	BOLD:AAV0892	Animalia	Arthropoda	Insecta	Coleoptera	Tenebrionidae	Isomira	unknown	ACA	7/17/16	29	DEY3351	MYLE	F	A	NR	ACA 29
+bri16.0085	OTU523	BOLD:ABA6647	Animalia	Arthropoda	Insecta	Lepidoptera	unknown	unknown	unknown	ACA	7/17/16	29	DEY3351	MYLE	F	A	NR	ACA 29
+bri16.0085	OTU831	BOLD:ABA6852	Animalia	Arthropoda	Insecta	Diptera	Mycetophilidae	unknown	unknown	ACA	7/17/16	29	DEY3351	MYLE	F	A	NR	ACA 29
+bri16.0086	OTU378	BOLD:AAA5953	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Coleotechnites	Coleotechnites piceaella	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU280	BOLD:AAA6005	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Olethreutes	Olethreutes glaciana	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU43	BOLD:AAA6614	Animalia	Arthropoda	Insecta	Lepidoptera	Depressariidae	Psilocorsis	Psilocorsis reflexella	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU267	BOLD:AAA7661	Animalia	Arthropoda	Insecta	Diptera	Culicidae	Culiseta	Culiseta melanura	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU684	BOLD:AAB2563	Animalia	Arthropoda	Arachnida	Araneae	Clubionidae	Clubiona	Clubiona canadensis	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU320	BOLD:AAB5838	Animalia	Arthropoda	Insecta	Lepidoptera	Hepialidae	Korscheltellus	Korscheltellus gracilis	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU283	BOLD:AAB7772	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Dichomeris	Dichomeris punctipennella	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU203	BOLD:AAB9632	Animalia	Arthropoda	Insecta	Lepidoptera	Blastobasidae	Hypatopa	Hypatopa simplicella	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU642	BOLD:AAC0958	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Hulda	Hulda impudens	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU106	BOLD:AAC7542	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Taygete	Taygete attributella	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU462	BOLD:AAD0510	Animalia	Arthropoda	Insecta	Lepidoptera	Stathmopodidae	Stathmopoda	Stathmopoda aenea	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU1003	BOLD:AAD4158	Animalia	Arthropoda	Insecta	Lepidoptera	unknown	unknown	unknown	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU977	BOLD:AAD5994	Animalia	Arthropoda	Insecta	Lepidoptera	Blastobasidae	Calosima	unknown	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU760	BOLD:AAE4217	Animalia	Arthropoda	Insecta	Lepidoptera	Tineidae	Nemapogon	Nemapogon ophrionella	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU840	BOLD:AAG0014	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Monochroa	Monochroa fragariae	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU424	BOLD:AAH2416	Animalia	Arthropoda	Insecta	Coleoptera	Elateridae	Dalopius	Dalopius vagus	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU541	BOLD:AAH4278	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Coleotechnites	unknown	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU36	BOLD:AAI6345	Animalia	Arthropoda	Insecta	Diptera	unknown	unknown	unknown	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU721	BOLD:AAJ0107	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU670	BOLD:AAK5444	Animalia	Arthropoda	Insecta	Lepidoptera	Tineidae	Homosetia	unknown	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU55	BOLD:AAV0892	Animalia	Arthropoda	Insecta	Coleoptera	Tenebrionidae	Isomira	unknown	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU15	BOLD:ABW5810	Animalia	Arthropoda	Insecta	Diptera	unknown	unknown	unknown	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU107	BOLD:ABX5520	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Tipula	Tipula hermannia	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU471	BOLD:ABX5520	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Tipula	Tipula hermannia	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU632	BOLD:ABX5520	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Tipula	Tipula hermannia	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU693	BOLD:ABX5520	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Tipula	Tipula hermannia	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU749	BOLD:ABX5520	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Tipula	Tipula hermannia	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU1044	BOLD:ABX5520	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Tipula	Tipula hermannia	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU1353	BOLD:ABX5520	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Tipula	Tipula hermannia	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU275	BOLD:ABX5931	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Tipula	Tipula trivittata	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU102	BOLD:ABY9168	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Clepsis	Clepsis peritana	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU513	BOLD:ACA3658	Animalia	Arthropoda	Insecta	Coleoptera	unknown	unknown	unknown	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU585	BOLD:ACE3399	Animalia	Arthropoda	Insecta	Trichoptera	Leptoceridae	Triaenodes	Triaenodes connatus	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU835	BOLD:ACH0501	Animalia	Arthropoda	Insecta	Lepidoptera	unknown	unknown	unknown	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU519	BOLD:ACL6243	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Molophilus	unknown	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0086	OTU893	BOLD:ACP5425	Animalia	Arthropoda	Insecta	Blattodea	unknown	unknown	unknown	ACA	7/17/16	29	DEY3784	MYLE	F	A	L	ACA 29
+bri16.0087	OTU378	BOLD:AAA5953	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Coleotechnites	Coleotechnites piceaella	ACA	7/17/16	29	DEY3785	MYLE	F	A	L	ACA 29
+bri16.0087	OTU190	BOLD:AAA7368	Animalia	Arthropoda	Insecta	Lepidoptera	Cosmopterigidae	Limnaecia	Limnaecia phragmitella	ACA	7/17/16	29	DEY3785	MYLE	F	A	L	ACA 29
+bri16.0087	OTU909	BOLD:AAB1383	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Aroga	Aroga trialbamaculella	ACA	7/17/16	29	DEY3785	MYLE	F	A	L	ACA 29
+bri16.0087	OTU124	BOLD:AAB3917	Animalia	Arthropoda	Insecta	Lepidoptera	Depressariidae	Psilocorsis	Psilocorsis quercicella	ACA	7/17/16	29	DEY3785	MYLE	F	A	L	ACA 29
+bri16.0087	OTU320	BOLD:AAB5838	Animalia	Arthropoda	Insecta	Lepidoptera	Hepialidae	Korscheltellus	Korscheltellus gracilis	ACA	7/17/16	29	DEY3785	MYLE	F	A	L	ACA 29
+bri16.0087	OTU214	BOLD:AAB7869	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Phtheochroa	Phtheochroa riscana	ACA	7/17/16	29	DEY3785	MYLE	F	A	L	ACA 29
+bri16.0087	OTU465	BOLD:AAF9035	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Nephrotoma	Nephrotoma alterna	ACA	7/17/16	29	DEY3785	MYLE	F	A	L	ACA 29
+bri16.0087	OTU1141	BOLD:AAY3988	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Pilaria	Pilaria tenuipes	ACA	7/17/16	29	DEY3785	MYLE	F	A	L	ACA 29
+bri16.0087	OTU1177	BOLD:AAZ0144	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Chironomus	unknown	ACA	7/17/16	29	DEY3785	MYLE	F	A	L	ACA 29
+bri16.0087	OTU102	BOLD:ABY9168	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Clepsis	Clepsis peritana	ACA	7/17/16	29	DEY3785	MYLE	F	A	L	ACA 29
+bri16.0087	OTU8	BOLD:ACA9904	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Cheilotrichia	Cheilotrichia stigmatica	ACA	7/17/16	29	DEY3785	MYLE	F	A	L	ACA 29
+bri16.0087	OTU876	BOLD:ACI3661	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	7/17/16	29	DEY3785	MYLE	F	A	L	ACA 29
+bri16.0087	OTU548	BOLD:ACK3644	Animalia	Arthropoda	Insecta	Diptera	Cecidomyiidae	unknown	unknown	ACA	7/17/16	29	DEY3785	MYLE	F	A	L	ACA 29
+bri16.0089	OTU350	BOLD:AAA1532	Animalia	Arthropoda	Insecta	Trichoptera	Leptoceridae	Oecetis	Oecetis inconspicua	ACA	7/18/16	30	DEY3787	MYLE	F	A	L	ACA 30
+bri16.0089	OTU862	BOLD:AAA1534	Animalia	Arthropoda	Insecta	Trichoptera	Leptoceridae	Oecetis	Oecetis inconspicua	ACA	7/18/16	30	DEY3787	MYLE	F	A	L	ACA 30
+bri16.0089	OTU250	BOLD:AAA6353	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Neotelphusa	Neotelphusa praefixa	ACA	7/18/16	30	DEY3787	MYLE	F	A	L	ACA 30
+bri16.0089	OTU928	BOLD:AAA9748	Animalia	Arthropoda	Insecta	Trichoptera	Phryganeidae	Ptilostomis	Ptilostomis ocellifera	ACA	7/18/16	30	DEY3787	MYLE	F	A	L	ACA 30
+bri16.0089	OTU28	BOLD:AAF9055	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Erioptera	Erioptera septemtrionis	ACA	7/18/16	30	DEY3787	MYLE	F	A	L	ACA 30
+bri16.0089	OTU177	BOLD:AAH4952	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Neotelphusa	Neotelphusa querciella	ACA	7/18/16	30	DEY3787	MYLE	F	A	L	ACA 30
+bri16.0089	OTU182	BOLD:AAI3278	Animalia	Arthropoda	Insecta	Lepidoptera	unknown	unknown	unknown	ACA	7/18/16	30	DEY3787	MYLE	F	A	L	ACA 30
+bri16.0089	OTU751	BOLD:AAO3985	Animalia	Arthropoda	Insecta	Trichoptera	Limnephilidae	unknown	unknown	ACA	7/18/16	30	DEY3787	MYLE	F	A	L	ACA 30
+bri16.0089	OTU275	BOLD:ABX5931	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Tipula	Tipula trivittata	ACA	7/18/16	30	DEY3787	MYLE	F	A	L	ACA 30
+bri16.0089	OTU8	BOLD:ACA9904	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Cheilotrichia	Cheilotrichia stigmatica	ACA	7/18/16	30	DEY3787	MYLE	F	A	L	ACA 30
+bri16.0089	OTU482	BOLD:ACI3242	Animalia	Arthropoda	Insecta	Hymenoptera	Braconidae	Macrocentrus	unknown	ACA	7/18/16	30	DEY3787	MYLE	F	A	L	ACA 30
+bri16.0089	OTU81	BOLD:ACL8561	Animalia	Arthropoda	Insecta	Diptera	Cecidomyiidae	unknown	unknown	ACA	7/18/16	30	DEY3787	MYLE	F	A	L	ACA 30
+bri16.0090	OTU296	BOLD:AAA4393	Animalia	Arthropoda	Insecta	Lepidoptera	Noctuidae	Elaphria	Elaphria versicolor	ACA	7/18/16	30	DEY3790	MYLE	F	A	PL	ACA 30
+bri16.0090	OTU378	BOLD:AAA5953	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Coleotechnites	Coleotechnites piceaella	ACA	7/18/16	30	DEY3790	MYLE	F	A	PL	ACA 30
+bri16.0090	OTU137	BOLD:AAA8940	Animalia	Arthropoda	Insecta	Lepidoptera	Blastobasidae	Asaphocrita	Asaphocrita aphidiella	ACA	7/18/16	30	DEY3790	MYLE	F	A	PL	ACA 30
+bri16.0090	OTU147	BOLD:AAB1097	Animalia	Arthropoda	Insecta	Lepidoptera	Blastobasidae	Blastobasis	Blastobasis floridella	ACA	7/18/16	30	DEY3790	MYLE	F	A	PL	ACA 30
+bri16.0090	OTU320	BOLD:AAB5838	Animalia	Arthropoda	Insecta	Lepidoptera	Hepialidae	Korscheltellus	Korscheltellus gracilis	ACA	7/18/16	30	DEY3790	MYLE	F	A	PL	ACA 30
+bri16.0090	OTU376	BOLD:AAC0175	Animalia	Arthropoda	Arachnida	Araneae	Theridiidae	Parasteatoda	Parasteatoda tepidariorum	ACA	7/18/16	30	DEY3790	MYLE	F	A	PL	ACA 30
+bri16.0090	OTU604	BOLD:AAD1185	Animalia	Arthropoda	Insecta	Lepidoptera	Gracillariidae	Phyllonorycter	Phyllonorycter blancardella	ACA	7/18/16	30	DEY3790	MYLE	F	A	PL	ACA 30
+bri16.0090	OTU285	BOLD:AAD6847	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Euphylidorea	Euphylidorea platyphallus	ACA	7/18/16	30	DEY3790	MYLE	F	A	PL	ACA 30
+bri16.0090	OTU28	BOLD:AAF9055	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Erioptera	Erioptera septemtrionis	ACA	7/18/16	30	DEY3790	MYLE	F	A	PL	ACA 30
+bri16.0090	OTU209	BOLD:AAF9306	Animalia	Arthropoda	Insecta	Diptera	Psychodidae	Psychoda	Psychoda alternata	ACA	7/18/16	30	DEY3790	MYLE	F	A	PL	ACA 30
+bri16.0090	OTU191	BOLD:ABZ6958	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Apotomis	Apotomis inundana	ACA	7/18/16	30	DEY3790	MYLE	F	A	PL	ACA 30
+bri16.0090	OTU929	BOLD:ACA9751	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Molophilus	Molophilus forcipulus	ACA	7/18/16	30	DEY3790	MYLE	F	A	PL	ACA 30
+bri16.0090	OTU81	BOLD:ACL8561	Animalia	Arthropoda	Insecta	Diptera	Cecidomyiidae	unknown	unknown	ACA	7/18/16	30	DEY3790	MYLE	F	A	PL	ACA 30
+bri16.0091	OTU3	BOLD:AAA4130	Animalia	Arthropoda	Insecta	Lepidoptera	Lasiocampidae	Malacosoma	Malacosoma disstria	ACA	7/18/16	30	DEY3791	MYLE	M	A	NR	ACA 30
+bri16.0091	OTU322	BOLD:AAG7627	Animalia	Arthropoda	Insecta	Hymenoptera	Ichneumonidae	unknown	unknown	ACA	7/18/16	30	DEY3791	MYLE	M	A	NR	ACA 30
+bri16.0095	OTU174	BOLD:AAA1518	Animalia	Arthropoda	Insecta	Lepidoptera	Crambidae	Scoparia	Scoparia biplagialis	ACA	8/22/16	35	DEY3795	MYLE	M	J	NR	ACA 35
+bri16.0095	OTU70	BOLD:AAG4943	Animalia	Arthropoda	Insecta	Diptera	Keroplatidae	unknown	unknown	ACA	8/22/16	35	DEY3795	MYLE	M	J	NR	ACA 35
+bri16.0095	OTU6	BOLD:ABX3627	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	unknown	unknown	ACA	8/22/16	35	DEY3795	MYLE	M	J	NR	ACA 35
+bri16.0095	OTU635	BOLD:ACA3350	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/22/16	35	DEY3795	MYLE	M	J	NR	ACA 35
+bri16.0095	OTU397	BOLD:ACD2226	Animalia	Arthropoda	Insecta	Psocodea	Psocidae	Ptycta	Ptycta polluta	ACA	8/22/16	35	DEY3795	MYLE	M	J	NR	ACA 35
+bri16.0096	OTU31	BOLD:AAC6102	Animalia	Arthropoda	Insecta	Lepidoptera	Blastobasidae	Pigritia	unknown	ACA	8/22/16	35	DEY3793	MYLE	M	J	NR	ACA 35
+bri16.0096	OTU572	BOLD:AAG4866	Animalia	Arthropoda	Insecta	Diptera	Mycetophilidae	unknown	unknown	ACA	8/22/16	35	DEY3793	MYLE	M	J	NR	ACA 35
+bri16.0096	OTU70	BOLD:AAG4943	Animalia	Arthropoda	Insecta	Diptera	Keroplatidae	unknown	unknown	ACA	8/22/16	35	DEY3793	MYLE	M	J	NR	ACA 35
+bri16.0096	OTU313	BOLD:AAH4942	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Dichomeris	unknown	ACA	8/22/16	35	DEY3793	MYLE	M	J	NR	ACA 35
+bri16.0096	OTU74	BOLD:AAP1210	Animalia	Arthropoda	Insecta	Diptera	Sciaridae	unknown	unknown	ACA	8/22/16	35	DEY3793	MYLE	M	J	NR	ACA 35
+bri16.0096	OTU361	BOLD:AAV1796	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	unknown	unknown	ACA	8/22/16	35	DEY3793	MYLE	M	J	NR	ACA 35
+bri16.0096	OTU333	BOLD:ACA2962	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/22/16	35	DEY3793	MYLE	M	J	NR	ACA 35
+bri16.0096	OTU16	BOLD:ACA9619	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Molophilus	unknown	ACA	8/22/16	35	DEY3793	MYLE	M	J	NR	ACA 35
+bri16.0096	OTU251	BOLD:ACF2821	Animalia	Arthropoda	Insecta	Diptera	Mycetophilidae	Mycetophila	Mycetophila fungorum	ACA	8/22/16	35	DEY3793	MYLE	M	J	NR	ACA 35
+bri16.0097	OTU331	BOLD:AAB4931	Animalia	Arthropoda	Insecta	Lepidoptera	Bucculatricidae	Bucculatrix	Bucculatrix ainsliella	ACA	8/22/16	35	DEY3794	MYLE	M	J	NR	ACA 35
+bri16.0097	OTU2	BOLD:AAN5882	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Erioptera	Erioptera caliptera	ACA	8/22/16	35	DEY3794	MYLE	M	J	NR	ACA 35
+bri16.0097	OTU6	BOLD:ABX3627	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	unknown	unknown	ACA	8/22/16	35	DEY3794	MYLE	M	J	NR	ACA 35
+bri16.0097	OTU255	BOLD:ACI5580	Animalia	Arthropoda	Insecta	Coleoptera	Scirtidae	unknown	unknown	ACA	8/22/16	35	DEY3794	MYLE	M	J	NR	ACA 35
+bri16.0097	OTU168	CFMR:IM30	Animalia	Arthropoda	Insecta	Lepidoptera	Erebidae	Idia	Idia aemula	ACA	8/22/16	35	DEY3794	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU350	BOLD:AAA1532	Animalia	Arthropoda	Insecta	Trichoptera	Leptoceridae	Oecetis	Oecetis inconspicua	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU576	BOLD:AAA3437	Animalia	Arthropoda	Insecta	Trichoptera	Polycentropodidae	Plectrocnemia	Plectrocnemia cinerea	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU106	BOLD:AAC7542	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Taygete	Taygete attributella	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU509	BOLD:AAC9510	Animalia	Arthropoda	Insecta	Hemiptera	Miridae	Blepharidopterus	Blepharidopterus provancheri	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU566	BOLD:AAG1678	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Thienemannimyia	unknown	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU274	BOLD:AAG2878	Animalia	Arthropoda	Insecta	Hemiptera	Cicadellidae	Gyponana	Gyponana salsa	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU343	BOLD:AAG2878	Animalia	Arthropoda	Insecta	Hemiptera	Cicadellidae	Gyponana	Gyponana salsa	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU572	BOLD:AAG4866	Animalia	Arthropoda	Insecta	Diptera	Mycetophilidae	unknown	unknown	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU70	BOLD:AAG4943	Animalia	Arthropoda	Insecta	Diptera	Keroplatidae	unknown	unknown	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU62	BOLD:AAG5457	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU23	BOLD:AAG8670	Animalia	Arthropoda	Insecta	Hemiptera	Miridae	Phytocoris	unknown	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU98	BOLD:AAG8977	Animalia	Arthropoda	Insecta	Hemiptera	Derbidae	Otiocerus	Otiocerus degeerii	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU141	BOLD:AAL5086	Animalia	Arthropoda	Insecta	Diptera	Mycetophilidae	Exechiopsis	unknown	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU25	BOLD:AAL7331	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU74	BOLD:AAP1210	Animalia	Arthropoda	Insecta	Diptera	Sciaridae	unknown	unknown	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU489	BOLD:AAP2998	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU213	BOLD:AAP8158	Animalia	Arthropoda	Insecta	Diptera	Mycetophilidae	Mycetophila	Mycetophila signatoides	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU107	BOLD:ABX5520	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Tipula	Tipula hermannia	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU471	BOLD:ABX5520	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Tipula	Tipula hermannia	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU632	BOLD:ABX5520	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Tipula	Tipula hermannia	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU693	BOLD:ABX5520	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Tipula	Tipula hermannia	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU771	BOLD:ABX5520	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Tipula	Tipula hermannia	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU1353	BOLD:ABX5520	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Tipula	Tipula hermannia	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU674	BOLD:ABY9871	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Microtendipes	unknown	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU333	BOLD:ACA2962	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU589	BOLD:ACB9270	Animalia	Arthropoda	Insecta	Diptera	Ceratopogonidae	Bezzia	unknown	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU546	BOLD:ACF1171	Animalia	Arthropoda	Insecta	Lepidoptera	Sphingidae	Clanis	Clanis thailandica	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU255	BOLD:ACI5580	Animalia	Arthropoda	Insecta	Coleoptera	Scirtidae	unknown	unknown	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU420	BOLD:ACL4711	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	unknown	unknown	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU97	BOLD:ACM9486	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	unknown	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0098	OTU374	BOLD:ACN6816	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/23/16	35	DEY3796	MYLE	M	J	NR	ACA 35
+bri16.0100	OTU267	BOLD:AAA7661	Animalia	Arthropoda	Insecta	Diptera	Culicidae	Culiseta	Culiseta melanura	ACA	8/23/16	35	DEY3797	MYLE	M	J	NR	ACA 35
+bri16.0100	OTU615	BOLD:AAD1396	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Polypedilum	Polypedilum convictum	ACA	8/23/16	35	DEY3797	MYLE	M	J	NR	ACA 35
+bri16.0100	OTU656	BOLD:AAG5509	Animalia	Arthropoda	Insecta	Diptera	Ceratopogonidae	Forcipomyia	unknown	ACA	8/23/16	35	DEY3797	MYLE	M	J	NR	ACA 35
+bri16.0100	OTU29	BOLD:AAL7322	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/23/16	35	DEY3797	MYLE	M	J	NR	ACA 35
+bri16.0100	OTU25	BOLD:AAL7331	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/23/16	35	DEY3797	MYLE	M	J	NR	ACA 35
+bri16.0100	OTU234	BOLD:AAM6227	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Procladius	unknown	ACA	8/23/16	35	DEY3797	MYLE	M	J	NR	ACA 35
+bri16.0100	OTU74	BOLD:AAP1210	Animalia	Arthropoda	Insecta	Diptera	Sciaridae	unknown	unknown	ACA	8/23/16	35	DEY3797	MYLE	M	J	NR	ACA 35
+bri16.0100	OTU8	BOLD:ACA9904	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Cheilotrichia	Cheilotrichia stigmatica	ACA	8/23/16	35	DEY3797	MYLE	M	J	NR	ACA 35
+bri16.0100	OTU97	BOLD:ACM9486	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	unknown	ACA	8/23/16	35	DEY3797	MYLE	M	J	NR	ACA 35
+bri16.0100	OTU245	BOLD:ACN4910	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/23/16	35	DEY3797	MYLE	M	J	NR	ACA 35
+bri16.0101	OTU108	BOLD:AAA7515	Animalia	Arthropoda	Insecta	Ephemeroptera	Caenidae	Caenis	Caenis youngi	ACA	8/23/16	35	DEY3799	MYLU	M	A	NR	ACA 35
+bri16.0101	OTU97	BOLD:ACM9486	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	unknown	ACA	8/23/16	35	DEY3799	MYLU	M	A	NR	ACA 35
+bri16.0102	OTU764	BOLD:AAA4125	Animalia	Arthropoda	Arachnida	Araneae	Araneidae	Araneus	Araneus diadematus	ACA	8/23/16	35	DEY3804	MYLU	M	J	NR	ACA 35
+bri16.0102	OTU42	BOLD:AAA7906	Animalia	Arthropoda	Insecta	Trichoptera	Phryganeidae	Phryganea	Phryganea cinerea	ACA	8/23/16	35	DEY3804	MYLU	M	J	NR	ACA 35
+bri16.0102	OTU518	BOLD:AAB4297	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Eucosma	Eucosma similana	ACA	8/23/16	35	DEY3804	MYLU	M	J	NR	ACA 35
+bri16.0102	OTU400	BOLD:AAE0330	Animalia	Arthropoda	Insecta	Odonata	Coenagrionidae	Enallagma	Enallagma vesperum	ACA	8/23/16	35	DEY3804	MYLU	M	J	NR	ACA 35
+bri16.0102	OTU303	BOLD:AAH4681	Animalia	Arthropoda	Insecta	Lepidoptera	Autostichidae	Oegoconia	Oegoconia novimundi	ACA	8/23/16	35	DEY3804	MYLU	M	J	NR	ACA 35
+bri16.0102	OTU97	BOLD:ACM9486	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	unknown	ACA	8/23/16	35	DEY3804	MYLU	M	J	NR	ACA 35
+bri16.0103	OTU405	BOLD:AAA9101	Animalia	Arthropoda	Insecta	Lepidoptera	Pyralidae	Moodna	Moodna ostrinella	ACA	8/23/16	35	DEY3805	MYLU	M	A	NR	ACA 35
+bri16.0103	OTU204	BOLD:AAB2768	Animalia	Arthropoda	Arachnida	Araneae	Philodromidae	Philodromus	Philodromus rufus	ACA	8/23/16	35	DEY3805	MYLU	M	A	NR	ACA 35
+bri16.0103	OTU490	BOLD:AAB5969	Animalia	Arthropoda	Insecta	Lepidoptera	Noctuidae	Loscopia	Loscopia velata	ACA	8/23/16	35	DEY3805	MYLU	M	A	NR	ACA 35
+bri16.0103	OTU34	BOLD:AAC0920	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Coleotechnites	Coleotechnites atrupictella	ACA	8/23/16	35	DEY3805	MYLU	M	A	NR	ACA 35
+bri16.0103	OTU31	BOLD:AAC6102	Animalia	Arthropoda	Insecta	Lepidoptera	Blastobasidae	Pigritia	unknown	ACA	8/23/16	35	DEY3805	MYLU	M	A	NR	ACA 35
+bri16.0103	OTU274	BOLD:AAG2878	Animalia	Arthropoda	Insecta	Hemiptera	Cicadellidae	Gyponana	Gyponana salsa	ACA	8/23/16	35	DEY3805	MYLU	M	A	NR	ACA 35
+bri16.0103	OTU343	BOLD:AAG2878	Animalia	Arthropoda	Insecta	Hemiptera	Cicadellidae	Gyponana	Gyponana salsa	ACA	8/23/16	35	DEY3805	MYLU	M	A	NR	ACA 35
+bri16.0103	OTU332	BOLD:AAG7261	Animalia	Arthropoda	Insecta	Coleoptera	Scirtidae	Cyphon	Cyphon variabilis	ACA	8/23/16	35	DEY3805	MYLU	M	A	NR	ACA 35
+bri16.0103	OTU23	BOLD:AAG8670	Animalia	Arthropoda	Insecta	Hemiptera	Miridae	Phytocoris	unknown	ACA	8/23/16	35	DEY3805	MYLU	M	A	NR	ACA 35
+bri16.0103	OTU856	BOLD:AAH4720	Animalia	Arthropoda	Insecta	Lepidoptera	Bucculatricidae	Bucculatrix	unknown	ACA	8/23/16	35	DEY3805	MYLU	M	A	NR	ACA 35
+bri16.0103	OTU2	BOLD:AAN5882	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Erioptera	Erioptera caliptera	ACA	8/23/16	35	DEY3805	MYLU	M	A	NR	ACA 35
+bri16.0103	OTU273	BOLD:AAV5938	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/23/16	35	DEY3805	MYLU	M	A	NR	ACA 35
+bri16.0103	OTU275	BOLD:ABX5931	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Tipula	Tipula trivittata	ACA	8/23/16	35	DEY3805	MYLU	M	A	NR	ACA 35
+bri16.0103	OTU347	BOLD:ACE4129	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Cydia	Cydia latiferreana	ACA	8/23/16	35	DEY3805	MYLU	M	A	NR	ACA 35
+bri16.0103	OTU546	BOLD:ACF1171	Animalia	Arthropoda	Insecta	Lepidoptera	Sphingidae	Clanis	Clanis thailandica	ACA	8/23/16	35	DEY3805	MYLU	M	A	NR	ACA 35
+bri16.0103	OTU97	BOLD:ACM9486	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	unknown	ACA	8/23/16	35	DEY3805	MYLU	M	A	NR	ACA 35
+bri16.0104	OTU13	BOLD:AAA3993	Animalia	Arthropoda	Insecta	Lepidoptera	Coleophoridae	Coleophora	Coleophora duplicis group	ACA	8/23/16	35	no-record	PESU	F	J	NR	ACA 35
+bri16.0104	OTU125	BOLD:AAA5487	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Eucosma	Eucosma parmatana	ACA	8/23/16	35	no-record	PESU	F	J	NR	ACA 35
+bri16.0104	OTU267	BOLD:AAA7661	Animalia	Arthropoda	Insecta	Diptera	Culicidae	Culiseta	Culiseta melanura	ACA	8/23/16	35	no-record	PESU	F	J	NR	ACA 35
+bri16.0104	OTU379	BOLD:AAB0607	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Pseudotelphusa	Pseudotelphusa quercinigracella	ACA	8/23/16	35	no-record	PESU	F	J	NR	ACA 35
+bri16.0104	OTU331	BOLD:AAB4931	Animalia	Arthropoda	Insecta	Lepidoptera	Bucculatricidae	Bucculatrix	Bucculatrix ainsliella	ACA	8/23/16	35	no-record	PESU	F	J	NR	ACA 35
+bri16.0104	OTU453	BOLD:AAC9531	Animalia	Arthropoda	Insecta	Diptera	Culicidae	Aedes	Aedes cantator	ACA	8/23/16	35	no-record	PESU	F	J	NR	ACA 35
+bri16.0104	OTU38	BOLD:AAF8979	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Metalimnobia	Metalimnobia novaeangliae	ACA	8/23/16	35	no-record	PESU	F	J	NR	ACA 35
+bri16.0104	OTU28	BOLD:AAF9055	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Erioptera	Erioptera septemtrionis	ACA	8/23/16	35	no-record	PESU	F	J	NR	ACA 35
+bri16.0104	OTU209	BOLD:AAF9306	Animalia	Arthropoda	Insecta	Diptera	Psychodidae	Psychoda	Psychoda alternata	ACA	8/23/16	35	no-record	PESU	F	J	NR	ACA 35
+bri16.0104	OTU76	BOLD:AAV0590	Animalia	Arthropoda	Arachnida	Mesostigmata	Blattisociidae	Cheiroseius	unknown	ACA	8/23/16	35	no-record	PESU	F	J	NR	ACA 35
+bri16.0104	OTU107	BOLD:ABX5520	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Tipula	Tipula hermannia	ACA	8/23/16	35	no-record	PESU	F	J	NR	ACA 35
+bri16.0105	OTU442	BOLD:AAA9420	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Eucosma	Eucosma derelicta	ACA	8/23/16	35	DEY3806	MYLU	M	A	NR	ACA 35
+bri16.0105	OTU34	BOLD:AAC0920	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Coleotechnites	Coleotechnites atrupictella	ACA	8/23/16	35	DEY3806	MYLU	M	A	NR	ACA 35
+bri16.0105	OTU268	BOLD:AAG8483	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Xenochironomus	Xenochironomus xenolabis	ACA	8/23/16	35	DEY3806	MYLU	M	A	NR	ACA 35
+bri16.0105	OTU29	BOLD:AAL7322	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/23/16	35	DEY3806	MYLU	M	A	NR	ACA 35
+bri16.0105	OTU234	BOLD:AAM6227	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Procladius	unknown	ACA	8/23/16	35	DEY3806	MYLU	M	A	NR	ACA 35
+bri16.0105	OTU258	BOLD:ABZ7432	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Acleris	Acleris subnivana	ACA	8/23/16	35	DEY3806	MYLU	M	A	NR	ACA 35
+bri16.0105	OTU546	BOLD:ACF1171	Animalia	Arthropoda	Insecta	Lepidoptera	Sphingidae	Clanis	Clanis thailandica	ACA	8/23/16	35	DEY3806	MYLU	M	A	NR	ACA 35
+bri16.0105	OTU37	BOLD:ACL3444	Animalia	Arthropoda	Arachnida	Trombidiformes	Limnesiidae	unknown	unknown	ACA	8/23/16	35	DEY3806	MYLU	M	A	NR	ACA 35
+bri16.0105	OTU97	BOLD:ACM9486	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	unknown	ACA	8/23/16	35	DEY3806	MYLU	M	A	NR	ACA 35
+bri16.0106	OTU111	BOLD:AAA2590	Animalia	Arthropoda	Insecta	Lepidoptera	Noctuidae	Xestia	Xestia smithii	ACA	8/23/16	35	DEY3807	MYLE	M	A	NR	ACA 35
+bri16.0106	OTU13	BOLD:AAA3993	Animalia	Arthropoda	Insecta	Lepidoptera	Coleophoridae	Coleophora	Coleophora duplicis group	ACA	8/23/16	35	DEY3807	MYLE	M	A	NR	ACA 35
+bri16.0106	OTU72	BOLD:AAA5486	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Phaneta	Phaneta ochroterminana	ACA	8/23/16	35	DEY3807	MYLE	M	A	NR	ACA 35
+bri16.0106	OTU314	BOLD:AAA5491	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Eucosma	Eucosma parmatana	ACA	8/23/16	35	DEY3807	MYLE	M	A	NR	ACA 35
+bri16.0106	OTU633	BOLD:AAA7528	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Epinotia	Epinotia nisella	ACA	8/23/16	35	DEY3807	MYLE	M	A	NR	ACA 35
+bri16.0106	OTU340	BOLD:AAA7550	Animalia	Arthropoda	Insecta	Lepidoptera	Depressariidae	Agonopterix	Agonopterix pulvipennella	ACA	8/23/16	35	DEY3807	MYLE	M	A	NR	ACA 35
+bri16.0106	OTU267	BOLD:AAA7661	Animalia	Arthropoda	Insecta	Diptera	Culicidae	Culiseta	Culiseta melanura	ACA	8/23/16	35	DEY3807	MYLE	M	A	NR	ACA 35
+bri16.0106	OTU373	BOLD:AAA7893	Animalia	Arthropoda	Insecta	Lepidoptera	Depressariidae	Machimia	Machimia tentoriferella	ACA	8/23/16	35	DEY3807	MYLE	M	A	NR	ACA 35
+bri16.0106	OTU536	BOLD:AAB0223	Animalia	Arthropoda	Insecta	Coleoptera	unknown	unknown	unknown	ACA	8/23/16	35	DEY3807	MYLE	M	A	NR	ACA 35
+bri16.0106	OTU376	BOLD:AAC0175	Animalia	Arthropoda	Arachnida	Araneae	Theridiidae	Parasteatoda	Parasteatoda tepidariorum	ACA	8/23/16	35	DEY3807	MYLE	M	A	NR	ACA 35
+bri16.0106	OTU34	BOLD:AAC0920	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Coleotechnites	Coleotechnites atrupictella	ACA	8/23/16	35	DEY3807	MYLE	M	A	NR	ACA 35
+bri16.0106	OTU246	BOLD:AAC5210	Animalia	Arthropoda	Insecta	Diptera	Culicidae	Aedes	Aedes japonicus	ACA	8/23/16	35	DEY3807	MYLE	M	A	NR	ACA 35
+bri16.0106	OTU98	BOLD:AAG8977	Animalia	Arthropoda	Insecta	Hemiptera	Derbidae	Otiocerus	Otiocerus degeerii	ACA	8/23/16	35	DEY3807	MYLE	M	A	NR	ACA 35
+bri16.0106	OTU579	BOLD:AAM8971	Animalia	Arthropoda	Insecta	Diptera	Culicidae	Culiseta	Culiseta melanura	ACA	8/23/16	35	DEY3807	MYLE	M	A	NR	ACA 35
+bri16.0106	OTU107	BOLD:ABX5520	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Tipula	Tipula hermannia	ACA	8/23/16	35	DEY3807	MYLE	M	A	NR	ACA 35
+bri16.0106	OTU1353	BOLD:ABX5520	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Tipula	Tipula hermannia	ACA	8/23/16	35	DEY3807	MYLE	M	A	NR	ACA 35
+bri16.0106	OTU571	BOLD:ABY7899	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Platynota	unknown	ACA	8/23/16	35	DEY3807	MYLE	M	A	NR	ACA 35
+bri16.0106	OTU8	BOLD:ACA9904	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Cheilotrichia	Cheilotrichia stigmatica	ACA	8/23/16	35	DEY3807	MYLE	M	A	NR	ACA 35
+bri16.0106	OTU1088	BOLD:ACC0536	Animalia	Arthropoda	Arachnida	Mesostigmata	Blattisociidae	unknown	unknown	ACA	8/23/16	35	DEY3807	MYLE	M	A	NR	ACA 35
+bri16.0106	OTU546	BOLD:ACF1171	Animalia	Arthropoda	Insecta	Lepidoptera	Sphingidae	Clanis	Clanis thailandica	ACA	8/23/16	35	DEY3807	MYLE	M	A	NR	ACA 35
+bri16.0106	OTU257	BOLD:ACX2014	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Tanytarsus	Tanytarsus mendax	ACA	8/23/16	35	DEY3807	MYLE	M	A	NR	ACA 35
+bri16.0107	OTU518	BOLD:AAB4297	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Eucosma	Eucosma similana	ACA	8/24/16	35	DEY3808	MYLE	M	A	no-record	ACA 35
+bri16.0107	OTU31	BOLD:AAC6102	Animalia	Arthropoda	Insecta	Lepidoptera	Blastobasidae	Pigritia	unknown	ACA	8/24/16	35	DEY3808	MYLE	M	A	no-record	ACA 35
+bri16.0107	OTU10	BOLD:AAH2433	Animalia	Arthropoda	Insecta	Coleoptera	Elateridae	Athous	Athous acanthus	ACA	8/24/16	35	DEY3808	MYLE	M	A	no-record	ACA 35
+bri16.0107	OTU36	BOLD:AAI6345	Animalia	Arthropoda	Insecta	Diptera	unknown	unknown	unknown	ACA	8/24/16	35	DEY3808	MYLE	M	A	no-record	ACA 35
+bri16.0107	OTU228	BOLD:ACE4734	Animalia	Arthropoda	Insecta	Lepidoptera	Erebidae	Idia	Idia rotundalis	ACA	8/24/16	35	DEY3808	MYLE	M	A	no-record	ACA 35
+bri16.0108	OTU350	BOLD:AAA1532	Animalia	Arthropoda	Insecta	Trichoptera	Leptoceridae	Oecetis	Oecetis inconspicua	ACA	8/25/16	35	DEY3810	MYLE	F	A	NR	ACA 35
+bri16.0108	OTU13	BOLD:AAA3993	Animalia	Arthropoda	Insecta	Lepidoptera	Coleophoridae	Coleophora	Coleophora duplicis group	ACA	8/25/16	35	DEY3810	MYLE	F	A	NR	ACA 35
+bri16.0108	OTU320	BOLD:AAB5838	Animalia	Arthropoda	Insecta	Lepidoptera	Hepialidae	Korscheltellus	Korscheltellus gracilis	ACA	8/25/16	35	DEY3810	MYLE	F	A	NR	ACA 35
+bri16.0108	OTU389	BOLD:AAC2498	Animalia	Arthropoda	Insecta	Diptera	Muscidae	Helina	Helina evecta	ACA	8/25/16	35	DEY3810	MYLE	F	A	NR	ACA 35
+bri16.0108	OTU246	BOLD:AAC5210	Animalia	Arthropoda	Insecta	Diptera	Culicidae	Aedes	Aedes japonicus	ACA	8/25/16	35	DEY3810	MYLE	F	A	NR	ACA 35
+bri16.0108	OTU31	BOLD:AAC6102	Animalia	Arthropoda	Insecta	Lepidoptera	Blastobasidae	Pigritia	unknown	ACA	8/25/16	35	DEY3810	MYLE	F	A	NR	ACA 35
+bri16.0108	OTU70	BOLD:AAG4943	Animalia	Arthropoda	Insecta	Diptera	Keroplatidae	unknown	unknown	ACA	8/25/16	35	DEY3810	MYLE	F	A	NR	ACA 35
+bri16.0108	OTU268	BOLD:AAG8483	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Xenochironomus	Xenochironomus xenolabis	ACA	8/25/16	35	DEY3810	MYLE	F	A	NR	ACA 35
+bri16.0108	OTU734	BOLD:AAH3725	Animalia	Arthropoda	Insecta	Diptera	Cecidomyiidae	unknown	unknown	ACA	8/25/16	35	DEY3810	MYLE	F	A	NR	ACA 35
+bri16.0108	OTU369	BOLD:AAH3994	Animalia	Arthropoda	Insecta	Diptera	Sciaridae	unknown	unknown	ACA	8/25/16	35	DEY3810	MYLE	F	A	NR	ACA 35
+bri16.0108	OTU579	BOLD:AAM8971	Animalia	Arthropoda	Insecta	Diptera	Culicidae	Culiseta	Culiseta melanura	ACA	8/25/16	35	DEY3810	MYLE	F	A	NR	ACA 35
+bri16.0108	OTU74	BOLD:AAP1210	Animalia	Arthropoda	Insecta	Diptera	Sciaridae	unknown	unknown	ACA	8/25/16	35	DEY3810	MYLE	F	A	NR	ACA 35
+bri16.0108	OTU358	BOLD:AAP4512	Animalia	Arthropoda	Insecta	Neuroptera	Hemerobiidae	Wesmaelius	Wesmaelius longifrons	ACA	8/25/16	35	DEY3810	MYLE	F	A	NR	ACA 35
+bri16.0108	OTU107	BOLD:ABX5520	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Tipula	Tipula hermannia	ACA	8/25/16	35	DEY3810	MYLE	F	A	NR	ACA 35
+bri16.0108	OTU693	BOLD:ABX5520	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Tipula	Tipula hermannia	ACA	8/25/16	35	DEY3810	MYLE	F	A	NR	ACA 35
+bri16.0108	OTU1353	BOLD:ABX5520	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Tipula	Tipula hermannia	ACA	8/25/16	35	DEY3810	MYLE	F	A	NR	ACA 35
+bri16.0108	OTU326	BOLD:ACA3028	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/25/16	35	DEY3810	MYLE	F	A	NR	ACA 35
+bri16.0108	OTU767	BOLD:ACD9067	Animalia	Arthropoda	Insecta	Hemiptera	Cicadellidae	Scaphoideus	Scaphoideus carinatus	ACA	8/25/16	35	DEY3810	MYLE	F	A	NR	ACA 35
+bri16.0108	OTU903	BOLD:ACI3521	Animalia	Arthropoda	Insecta	Diptera	Anthomyiidae	Lasiomma	unknown	ACA	8/25/16	35	DEY3810	MYLE	F	A	NR	ACA 35
+bri16.0108	OTU778	BOLD:ACI8787	Animalia	Arthropoda	Insecta	Diptera	Cecidomyiidae	unknown	unknown	ACA	8/25/16	35	DEY3810	MYLE	F	A	NR	ACA 35
+bri16.0108	OTU81	BOLD:ACL8561	Animalia	Arthropoda	Insecta	Diptera	Cecidomyiidae	unknown	unknown	ACA	8/25/16	35	DEY3810	MYLE	F	A	NR	ACA 35
+bri16.0108	OTU97	BOLD:ACM9486	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	unknown	ACA	8/25/16	35	DEY3810	MYLE	F	A	NR	ACA 35
+bri16.0108	OTU245	BOLD:ACN4910	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/25/16	35	DEY3810	MYLE	F	A	NR	ACA 35
+bri16.0108	OTU22	BOLD:ADA7198	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Procladius	Procladius signatus	ACA	8/25/16	35	DEY3810	MYLE	F	A	NR	ACA 35
+bri16.0109	OTU345	BOLD:AAB6943	Animalia	Arthropoda	Insecta	Diptera	Culicidae	Culex	Culex territans	ACA	8/26/16	35	DEY3812	MYLU	M	J	NR	ACA 35
+bri16.0109	OTU246	BOLD:AAC5210	Animalia	Arthropoda	Insecta	Diptera	Culicidae	Aedes	Aedes japonicus	ACA	8/26/16	35	DEY3812	MYLU	M	J	NR	ACA 35
+bri16.0109	OTU512	BOLD:AAD2248	Animalia	Arthropoda	Arachnida	Araneae	Araneidae	Araneus	Araneus saevus	ACA	8/26/16	35	DEY3812	MYLU	M	J	NR	ACA 35
+bri16.0109	OTU438	BOLD:AAG0314	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Psectrotanypus	unknown	ACA	8/26/16	35	DEY3812	MYLU	M	J	NR	ACA 35
+bri16.0109	OTU286	BOLD:AAG1350	Animalia	Arthropoda	Insecta	Hymenoptera	Braconidae	Aleiodes	unknown	ACA	8/26/16	35	DEY3812	MYLU	M	J	NR	ACA 35
+bri16.0109	OTU566	BOLD:AAG1678	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Thienemannimyia	unknown	ACA	8/26/16	35	DEY3812	MYLU	M	J	NR	ACA 35
+bri16.0109	OTU30	BOLD:AAG2348	Animalia	Arthropoda	Insecta	Diptera	Tachinidae	Lixophaga	unknown	ACA	8/26/16	35	DEY3812	MYLU	M	J	NR	ACA 35
+bri16.0109	OTU652	BOLD:AAG3628	Animalia	Arthropoda	Insecta	Diptera	Mycetophilidae	Mycetophila	Mycetophila luctuosa	ACA	8/26/16	35	DEY3812	MYLU	M	J	NR	ACA 35
+bri16.0109	OTU601	BOLD:AAG5517	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/26/16	35	DEY3812	MYLU	M	J	NR	ACA 35
+bri16.0109	OTU408	BOLD:AAG6519	Animalia	Arthropoda	Insecta	Diptera	Ceratopogonidae	Atrichopogon	unknown	ACA	8/26/16	35	DEY3812	MYLU	M	J	NR	ACA 35
+bri16.0109	OTU554	BOLD:AAJ9256	Animalia	Arthropoda	Insecta	Coleoptera	Curculionidae	Dryocoetes	Dryocoetes autographus	ACA	8/26/16	35	DEY3812	MYLU	M	J	NR	ACA 35
+bri16.0109	OTU25	BOLD:AAL7331	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/26/16	35	DEY3812	MYLU	M	J	NR	ACA 35
+bri16.0109	OTU256	BOLD:AAM6098	Animalia	Arthropoda	Insecta	Diptera	Cecidomyiidae	unknown	unknown	ACA	8/26/16	35	DEY3812	MYLU	M	J	NR	ACA 35
+bri16.0109	OTU234	BOLD:AAM6227	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Procladius	unknown	ACA	8/26/16	35	DEY3812	MYLU	M	J	NR	ACA 35
+bri16.0109	OTU450	BOLD:AAM7658	Animalia	Arthropoda	Insecta	Coleoptera	Carabidae	Amara	Amara rubrica	ACA	8/26/16	35	DEY3812	MYLU	M	J	NR	ACA 35
+bri16.0109	OTU11	BOLD:AAP6551	Animalia	Arthropoda	Insecta	Coleoptera	unknown	unknown	unknown	ACA	8/26/16	35	DEY3812	MYLU	M	J	NR	ACA 35
+bri16.0109	OTU172	BOLD:AAP7863	Animalia	Arthropoda	Insecta	Coleoptera	Elateridae	Ampedus	Ampedus pullus	ACA	8/26/16	35	DEY3812	MYLU	M	J	NR	ACA 35
+bri16.0109	OTU326	BOLD:ACA3028	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/26/16	35	DEY3812	MYLU	M	J	NR	ACA 35
+bri16.0109	OTU253	BOLD:ACA4013	Animalia	Arthropoda	Insecta	Coleoptera	Curculionidae	Dryocoetes	Dryocoetes affaber	ACA	8/26/16	35	DEY3812	MYLU	M	J	NR	ACA 35
+bri16.0109	OTU443	BOLD:ACL7552	Animalia	Arthropoda	Arachnida	Trombidiformes	Arrenuridae	unknown	unknown	ACA	8/26/16	35	DEY3812	MYLU	M	J	NR	ACA 35
+bri16.0109	OTU81	BOLD:ACL8561	Animalia	Arthropoda	Insecta	Diptera	Cecidomyiidae	unknown	unknown	ACA	8/26/16	35	DEY3812	MYLU	M	J	NR	ACA 35
+bri16.0109	OTU429	BOLD:ACM2489	Animalia	Arthropoda	Arachnida	Mesostigmata	Blattisociidae	unknown	unknown	ACA	8/26/16	35	DEY3812	MYLU	M	J	NR	ACA 35
+bri16.0109	OTU103	BOLD:ACN3115	Animalia	Arthropoda	Insecta	Coleoptera	Melandryidae	unknown	unknown	ACA	8/26/16	35	DEY3812	MYLU	M	J	NR	ACA 35
+bri16.0110	OTU267	BOLD:AAA7661	Animalia	Arthropoda	Insecta	Diptera	Culicidae	Culiseta	Culiseta melanura	ACA	8/26/16	35	DEY3813	MYLE	F	A	PL	ACA 35
+bri16.0110	OTU283	BOLD:AAB7772	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Dichomeris	Dichomeris punctipennella	ACA	8/26/16	35	DEY3813	MYLE	F	A	PL	ACA 35
+bri16.0110	OTU31	BOLD:AAC6102	Animalia	Arthropoda	Insecta	Lepidoptera	Blastobasidae	Pigritia	unknown	ACA	8/26/16	35	DEY3813	MYLE	F	A	PL	ACA 35
+bri16.0110	OTU167	BOLD:AAD4902	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Chionodes	unknown	ACA	8/26/16	35	DEY3813	MYLE	F	A	PL	ACA 35
+bri16.0110	OTU668	BOLD:AAG5219	Animalia	Arthropoda	Insecta	Coleoptera	Anthribidae	Euparius	Euparius marmoreus	ACA	8/26/16	35	DEY3813	MYLE	F	A	PL	ACA 35
+bri16.0110	OTU117	BOLD:AAU7327	Animalia	Arthropoda	Insecta	Coleoptera	Mycetophagidae	Litargus	Litargus tetraspilotus	ACA	8/26/16	35	DEY3813	MYLE	F	A	PL	ACA 35
+bri16.0110	OTU221	BOLD:ABZ2214	Animalia	Arthropoda	Insecta	Trichoptera	Limnephilidae	Ironoquia	Ironoquia punctatissima	ACA	8/26/16	35	DEY3813	MYLE	F	A	PL	ACA 35
+bri16.0110	OTU253	BOLD:ACA4013	Animalia	Arthropoda	Insecta	Coleoptera	Curculionidae	Dryocoetes	Dryocoetes affaber	ACA	8/26/16	35	DEY3813	MYLE	F	A	PL	ACA 35
+bri16.0110	OTU228	BOLD:ACE4734	Animalia	Arthropoda	Insecta	Lepidoptera	Erebidae	Idia	Idia rotundalis	ACA	8/26/16	35	DEY3813	MYLE	F	A	PL	ACA 35
+bri16.0111	OTU267	BOLD:AAA7661	Animalia	Arthropoda	Insecta	Diptera	Culicidae	Culiseta	Culiseta melanura	ACA	8/26/16	35	DEY3814	MYLU	M	J	NR	ACA 35
+bri16.0111	OTU684	BOLD:AAB2563	Animalia	Arthropoda	Arachnida	Araneae	Clubionidae	Clubiona	Clubiona canadensis	ACA	8/26/16	35	DEY3814	MYLU	M	J	NR	ACA 35
+bri16.0111	OTU354	BOLD:AAB7030	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Chironomus	unknown	ACA	8/26/16	35	DEY3814	MYLU	M	J	NR	ACA 35
+bri16.0111	OTU34	BOLD:AAC0920	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Coleotechnites	Coleotechnites atrupictella	ACA	8/26/16	35	DEY3814	MYLU	M	J	NR	ACA 35
+bri16.0111	OTU292	BOLD:AAG2355	Animalia	Arthropoda	Insecta	Diptera	Tachinidae	Strongygaster	Strongygaster triangulifera	ACA	8/26/16	35	DEY3814	MYLU	M	J	NR	ACA 35
+bri16.0111	OTU116	BOLD:AAG2369	Animalia	Arthropoda	Insecta	Diptera	Tachinidae	Strongygaster	unknown	ACA	8/26/16	35	DEY3814	MYLU	M	J	NR	ACA 35
+bri16.0111	OTU561	BOLD:AAG2646	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Procladius	unknown	ACA	8/26/16	35	DEY3814	MYLU	M	J	NR	ACA 35
+bri16.0111	OTU23	BOLD:AAG8670	Animalia	Arthropoda	Insecta	Hemiptera	Miridae	Phytocoris	unknown	ACA	8/26/16	35	DEY3814	MYLU	M	J	NR	ACA 35
+bri16.0111	OTU636	BOLD:AAH5396	Animalia	Arthropoda	Insecta	Lepidoptera	unknown	unknown	unknown	ACA	8/26/16	35	DEY3814	MYLU	M	J	NR	ACA 35
+bri16.0111	OTU29	BOLD:AAL7322	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/26/16	35	DEY3814	MYLU	M	J	NR	ACA 35
+bri16.0111	OTU768	BOLD:AAN6618	Animalia	Arthropoda	Arachnida	Trombidiformes	unknown	unknown	unknown	ACA	8/26/16	35	DEY3814	MYLU	M	J	NR	ACA 35
+bri16.0111	OTU165	BOLD:AAU7169	Animalia	Arthropoda	Insecta	Coleoptera	Scirtidae	Cyphon	unknown	ACA	8/26/16	35	DEY3814	MYLU	M	J	NR	ACA 35
+bri16.0111	OTU126	BOLD:ACL1629	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/26/16	35	DEY3814	MYLU	M	J	NR	ACA 35
+bri16.0111	OTU793	BOLD:ACL3651	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/26/16	35	DEY3814	MYLU	M	J	NR	ACA 35
+bri16.0111	OTU97	BOLD:ACM9486	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	unknown	ACA	8/26/16	35	DEY3814	MYLU	M	J	NR	ACA 35
+bri16.0111	OTU737	CFMR:IM3	Animalia	Arthropoda	Insecta	Diptera	Culicidae	Aedes	Aedes vexans	ACA	8/26/16	35	DEY3814	MYLU	M	J	NR	ACA 35
+bri16.0113	OTU178_suspect_mock_chimera	BOLD:AAA2634	Animalia	Arthropoda	Insecta	Lepidoptera	Noctuidae	Euxoa	Euxoa messoria	ACA	8/26/16	35	DEY3815	MYLU	F	A	NR	ACA 35
+bri16.0113	OTU70	BOLD:AAG4943	Animalia	Arthropoda	Insecta	Diptera	Keroplatidae	unknown	unknown	ACA	8/26/16	35	DEY3815	MYLU	F	A	NR	ACA 35
+bri16.0113	OTU62	BOLD:AAG5457	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/26/16	35	DEY3815	MYLU	F	A	NR	ACA 35
+bri16.0113	OTU327	BOLD:AAM6295	Animalia	Arthropoda	Insecta	Diptera	Chaoboridae	unknown	unknown	ACA	8/26/16	35	DEY3815	MYLU	F	A	NR	ACA 35
+bri16.0113	OTU2	BOLD:AAN5882	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Erioptera	Erioptera caliptera	ACA	8/26/16	35	DEY3815	MYLU	F	A	NR	ACA 35
+bri16.0114	OTU552	BOLD:AAA1524	Animalia	Arthropoda	Insecta	Trichoptera	Leptoceridae	Oecetis	Oecetis inconspicua	ACA	8/28/16	35	DEY3817	MYLE	F	J	NR	ACA 35
+bri16.0114	OTU516	BOLD:AAA5695	Animalia	Arthropoda	Insecta	Trichoptera	Hydropsychidae	Cheumatopsyche	Cheumatopsyche analis	ACA	8/28/16	35	DEY3817	MYLE	F	J	NR	ACA 35
+bri16.0114	OTU62	BOLD:AAG5457	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/28/16	35	DEY3817	MYLE	F	J	NR	ACA 35
+bri16.0114	OTU332	BOLD:AAG7261	Animalia	Arthropoda	Insecta	Coleoptera	Scirtidae	Cyphon	Cyphon variabilis	ACA	8/28/16	35	DEY3817	MYLE	F	J	NR	ACA 35
+bri16.0114	OTU268	BOLD:AAG8483	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Xenochironomus	Xenochironomus xenolabis	ACA	8/28/16	35	DEY3817	MYLE	F	J	NR	ACA 35
+bri16.0114	OTU36	BOLD:AAI6345	Animalia	Arthropoda	Insecta	Diptera	unknown	unknown	unknown	ACA	8/28/16	35	DEY3817	MYLE	F	J	NR	ACA 35
+bri16.0114	OTU25	BOLD:AAL7331	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/28/16	35	DEY3817	MYLE	F	J	NR	ACA 35
+bri16.0114	OTU461	BOLD:AAM6287	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Phaenopsectra	unknown	ACA	8/28/16	35	DEY3817	MYLE	F	J	NR	ACA 35
+bri16.0114	OTU74	BOLD:AAP1210	Animalia	Arthropoda	Insecta	Diptera	Sciaridae	unknown	unknown	ACA	8/28/16	35	DEY3817	MYLE	F	J	NR	ACA 35
+bri16.0114	OTU213	BOLD:AAP8158	Animalia	Arthropoda	Insecta	Diptera	Mycetophilidae	Mycetophila	Mycetophila signatoides	ACA	8/28/16	35	DEY3817	MYLE	F	J	NR	ACA 35
+bri16.0114	OTU20	BOLD:AAU6544	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Ormosia	Ormosia affinis	ACA	8/28/16	35	DEY3817	MYLE	F	J	NR	ACA 35
+bri16.0114	OTU222	BOLD:ABA8837	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Dicranophragma	unknown	ACA	8/28/16	35	DEY3817	MYLE	F	J	NR	ACA 35
+bri16.0114	OTU326	BOLD:ACA3028	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/28/16	35	DEY3817	MYLE	F	J	NR	ACA 35
+bri16.0114	OTU284	BOLD:ACA8818	Animalia	Arthropoda	Insecta	Hemiptera	Derbidae	Patara	Patara vanduzeei	ACA	8/28/16	35	DEY3817	MYLE	F	J	NR	ACA 35
+bri16.0114	OTU251	BOLD:ACF2821	Animalia	Arthropoda	Insecta	Diptera	Mycetophilidae	Mycetophila	Mycetophila fungorum	ACA	8/28/16	35	DEY3817	MYLE	F	J	NR	ACA 35
+bri16.0114	OTU97	BOLD:ACM9486	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	unknown	ACA	8/28/16	35	DEY3817	MYLE	F	J	NR	ACA 35
+bri16.0114	OTU374	BOLD:ACN6816	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/28/16	35	DEY3817	MYLE	F	J	NR	ACA 35
+bri16.0114	OTU497	BOLD:ACN7933	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Microtendipes	unknown	ACA	8/28/16	35	DEY3817	MYLE	F	J	NR	ACA 35
+bri16.0114	OTU257	BOLD:ACX2014	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Tanytarsus	Tanytarsus mendax	ACA	8/28/16	35	DEY3817	MYLE	F	J	NR	ACA 35
+bri16.0133	OTU279	BOLD:AAA2330	Animalia	Arthropoda	Insecta	Lepidoptera	Erebidae	Hypena	Hypena baltimoralis	ACA	8/28/16	35	DEY3819	MYLU	M	J	NR	ACA 35
+bri16.0133	OTU907	BOLD:AAC8567	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	Ablabesmyia americana	ACA	8/28/16	35	DEY3819	MYLU	M	J	NR	ACA 35
+bri16.0133	OTU220	BOLD:AAF9872	Animalia	Arthropoda	Insecta	Diptera	Hybotidae	Syneches	unknown	ACA	8/28/16	35	DEY3819	MYLU	M	J	NR	ACA 35
+bri16.0133	OTU5	BOLD:AAL2743	Animalia	Arthropoda	Arachnida	Trombidiformes	Pionidae	Forelia	unknown	ACA	8/28/16	35	DEY3819	MYLU	M	J	NR	ACA 35
+bri16.0133	OTU52	BOLD:AAO3944	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Geranomyia	unknown	ACA	8/28/16	35	DEY3819	MYLU	M	J	NR	ACA 35
+bri16.0133	OTU196	BOLD:ACE8913	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Dicrotendipes	Dicrotendipes modestus	ACA	8/28/16	35	DEY3819	MYLU	M	J	NR	ACA 35
+bri16.0133	OTU126	BOLD:ACL1629	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/28/16	35	DEY3819	MYLU	M	J	NR	ACA 35
+bri16.0133	OTU97	BOLD:ACM9486	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	unknown	ACA	8/28/16	35	DEY3819	MYLU	M	J	NR	ACA 35
+bri16.0133	OTU359	BOLD:ACX4822	Animalia	Arthropoda	Insecta	Diptera	unknown	unknown	unknown	ACA	8/28/16	35	DEY3819	MYLU	M	J	NR	ACA 35
+bri16.0133	OTU22	BOLD:ADA7198	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Procladius	Procladius signatus	ACA	8/28/16	35	DEY3819	MYLU	M	J	NR	ACA 35
+bri16.0134	OTU13	BOLD:AAA3993	Animalia	Arthropoda	Insecta	Lepidoptera	Coleophoridae	Coleophora	Coleophora duplicis group	ACA	8/25/16	35	DEY3811	MYLE	F	J	NR	ACA 35
+bri16.0134	OTU247	BOLD:AAA5320	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Acleris	Acleris variana	ACA	8/25/16	35	DEY3811	MYLE	F	J	NR	ACA 35
+bri16.0134	OTU492	BOLD:AAA5803	Animalia	Arthropoda	Insecta	Hemiptera	Miridae	Lygus	Lygus lineolaris	ACA	8/25/16	35	DEY3811	MYLE	F	J	NR	ACA 35
+bri16.0134	OTU267	BOLD:AAA7661	Animalia	Arthropoda	Insecta	Diptera	Culicidae	Culiseta	Culiseta melanura	ACA	8/25/16	35	DEY3811	MYLE	F	J	NR	ACA 35
+bri16.0134	OTU246	BOLD:AAC5210	Animalia	Arthropoda	Insecta	Diptera	Culicidae	Aedes	Aedes japonicus	ACA	8/25/16	35	DEY3811	MYLE	F	J	NR	ACA 35
+bri16.0134	OTU31	BOLD:AAC6102	Animalia	Arthropoda	Insecta	Lepidoptera	Blastobasidae	Pigritia	unknown	ACA	8/25/16	35	DEY3811	MYLE	F	J	NR	ACA 35
+bri16.0134	OTU209	BOLD:AAF9306	Animalia	Arthropoda	Insecta	Diptera	Psychodidae	Psychoda	Psychoda alternata	ACA	8/25/16	35	DEY3811	MYLE	F	J	NR	ACA 35
+bri16.0134	OTU98	BOLD:AAG8977	Animalia	Arthropoda	Insecta	Hemiptera	Derbidae	Otiocerus	Otiocerus degeerii	ACA	8/25/16	35	DEY3811	MYLE	F	J	NR	ACA 35
+bri16.0134	OTU177	BOLD:AAH4952	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Neotelphusa	Neotelphusa querciella	ACA	8/25/16	35	DEY3811	MYLE	F	J	NR	ACA 35
+bri16.0134	OTU370	BOLD:AAM9008	Animalia	Arthropoda	Insecta	Diptera	Mycetophilidae	unknown	unknown	ACA	8/25/16	35	DEY3811	MYLE	F	J	NR	ACA 35
+bri16.0134	OTU74	BOLD:AAP1210	Animalia	Arthropoda	Insecta	Diptera	Sciaridae	unknown	unknown	ACA	8/25/16	35	DEY3811	MYLE	F	J	NR	ACA 35
+bri16.0134	OTU523	BOLD:ABA6647	Animalia	Arthropoda	Insecta	Lepidoptera	unknown	unknown	unknown	ACA	8/25/16	35	DEY3811	MYLE	F	J	NR	ACA 35
+bri16.0134	OTU275	BOLD:ABX5931	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Tipula	Tipula trivittata	ACA	8/25/16	35	DEY3811	MYLE	F	J	NR	ACA 35
+bri16.0134	OTU346	BOLD:ACE3549	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Platynota	Platynota exasperatana	ACA	8/25/16	35	DEY3811	MYLE	F	J	NR	ACA 35
+bri16.0134	OTU311	BOLD:ACF9265	Animalia	Arthropoda	Insecta	Coleoptera	Melandryidae	unknown	unknown	ACA	8/25/16	35	DEY3811	MYLE	F	J	NR	ACA 35
+bri16.0134	OTU81	BOLD:ACL8561	Animalia	Arthropoda	Insecta	Diptera	Cecidomyiidae	unknown	unknown	ACA	8/25/16	35	DEY3811	MYLE	F	J	NR	ACA 35
+bri16.0134	OTU374	BOLD:ACN6816	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/25/16	35	DEY3811	MYLE	F	J	NR	ACA 35
+bri16.0135	OTU111	BOLD:AAA2590	Animalia	Arthropoda	Insecta	Lepidoptera	Noctuidae	Xestia	Xestia smithii	ACA	8/28/16	35	DEY3820	MYLU	M	A	NR	ACA 35
+bri16.0135	OTU70	BOLD:AAG4943	Animalia	Arthropoda	Insecta	Diptera	Keroplatidae	unknown	unknown	ACA	8/28/16	35	DEY3820	MYLU	M	A	NR	ACA 35
+bri16.0135	OTU5	BOLD:AAL2743	Animalia	Arthropoda	Arachnida	Trombidiformes	Pionidae	Forelia	unknown	ACA	8/28/16	35	DEY3820	MYLU	M	A	NR	ACA 35
+bri16.0135	OTU348	BOLD:AAY6799	Animalia	Arthropoda	Insecta	Hymenoptera	Ichneumonidae	unknown	unknown	ACA	8/28/16	35	DEY3820	MYLU	M	A	NR	ACA 35
+bri16.0135	OTU321	BOLD:ACD9543	Animalia	Arthropoda	Insecta	Diptera	Sciaridae	Bradysia	Bradysia brevispina	ACA	8/28/16	35	DEY3820	MYLU	M	A	NR	ACA 35
+bri16.0135	OTU436	BOLD:ACE4845	Animalia	Arthropoda	Insecta	Diptera	Sciaridae	Bradysia	Bradysia brevispina	ACA	8/28/16	35	DEY3820	MYLU	M	A	NR	ACA 35
+bri16.0135	OTU97	BOLD:ACM9486	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	unknown	ACA	8/28/16	35	DEY3820	MYLU	M	A	NR	ACA 35
+bri16.0732	OTU1047	BOLD:AAA5962	Animalia	Arthropoda	Insecta	Lepidoptera	Noctuidae	Xestia	Xestia dilucida	ACA	8/30/16	36	DEY3829	MYLU	M	A	NR	ACA 36
+bri16.0732	OTU267	BOLD:AAA7661	Animalia	Arthropoda	Insecta	Diptera	Culicidae	Culiseta	Culiseta melanura	ACA	8/30/16	36	DEY3829	MYLU	M	A	NR	ACA 36
+bri16.0732	OTU268	BOLD:AAG8483	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Xenochironomus	Xenochironomus xenolabis	ACA	8/30/16	36	DEY3829	MYLU	M	A	NR	ACA 36
+bri16.0732	OTU323	BOLD:AAH3229	Animalia	Arthropoda	Insecta	Psocodea	Dasydemellidae	Teliapsocus	unknown	ACA	8/30/16	36	DEY3829	MYLU	M	A	NR	ACA 36
+bri16.0732	OTU29	BOLD:AAL7322	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/30/16	36	DEY3829	MYLU	M	A	NR	ACA 36
+bri16.0732	OTU25	BOLD:AAL7331	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/30/16	36	DEY3829	MYLU	M	A	NR	ACA 36
+bri16.0732	OTU74	BOLD:AAP1210	Animalia	Arthropoda	Insecta	Diptera	Sciaridae	unknown	unknown	ACA	8/30/16	36	DEY3829	MYLU	M	A	NR	ACA 36
+bri16.0732	OTU639	BOLD:AAP2910	Animalia	Arthropoda	Insecta	Neuroptera	Hemerobiidae	Hemerobius	Hemerobius marginatus	ACA	8/30/16	36	DEY3829	MYLU	M	A	NR	ACA 36
+bri16.0732	OTU326	BOLD:ACA3028	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/30/16	36	DEY3829	MYLU	M	A	NR	ACA 36
+bri16.0732	OTU8	BOLD:ACA9904	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Cheilotrichia	Cheilotrichia stigmatica	ACA	8/30/16	36	DEY3829	MYLU	M	A	NR	ACA 36
+bri16.0732	OTU594	BOLD:ACC7822	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/30/16	36	DEY3829	MYLU	M	A	NR	ACA 36
+bri16.0732	OTU228	BOLD:ACE4734	Animalia	Arthropoda	Insecta	Lepidoptera	Erebidae	Idia	Idia rotundalis	ACA	8/30/16	36	DEY3829	MYLU	M	A	NR	ACA 36
+bri16.0732	OTU196	BOLD:ACE8913	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Dicrotendipes	Dicrotendipes modestus	ACA	8/30/16	36	DEY3829	MYLU	M	A	NR	ACA 36
+bri16.0732	OTU126	BOLD:ACL1629	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/30/16	36	DEY3829	MYLU	M	A	NR	ACA 36
+bri16.0732	OTU97	BOLD:ACM9486	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	unknown	ACA	8/30/16	36	DEY3829	MYLU	M	A	NR	ACA 36
+bri16.0732	OTU103	BOLD:ACN3115	Animalia	Arthropoda	Insecta	Coleoptera	Melandryidae	unknown	unknown	ACA	8/30/16	36	DEY3829	MYLU	M	A	NR	ACA 36
+bri16.0732	OTU352	BOLD:ACN5893	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/30/16	36	DEY3829	MYLU	M	A	NR	ACA 36
+bri16.0732	OTU22	BOLD:ADA7198	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Procladius	Procladius signatus	ACA	8/30/16	36	DEY3829	MYLU	M	A	NR	ACA 36
+bri16.0734	OTU766	BOLD:AAA4646	Animalia	Arthropoda	Insecta	Lepidoptera	Crambidae	Microthyris	Microthyris prolongalis	ACA	8/31/16	36	DEY3833	MYLU	M	A	NR	ACA 36
+bri16.0734	OTU42	BOLD:AAA7906	Animalia	Arthropoda	Insecta	Trichoptera	Phryganeidae	Phryganea	Phryganea cinerea	ACA	8/31/16	36	DEY3833	MYLU	M	A	NR	ACA 36
+bri16.0734	OTU660	BOLD:AAB0275	Animalia	Arthropoda	Insecta	Lepidoptera	Noctuidae	Cucullia	Cucullia intermedia	ACA	8/31/16	36	DEY3833	MYLU	M	A	NR	ACA 36
+bri16.0734	OTU1284	BOLD:AAB0437	Animalia	Arthropoda	Arachnida	Araneae	Clubionidae	Clubiona	Clubiona trivialis	ACA	8/31/16	36	DEY3833	MYLU	M	A	NR	ACA 36
+bri16.0734	OTU815	BOLD:AAB1331	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Epinotia	Epinotia transmissana	ACA	8/31/16	36	DEY3833	MYLU	M	A	NR	ACA 36
+bri16.0734	OTU154	BOLD:AAB6239	Animalia	Arthropoda	Insecta	Trichoptera	Dipseudopsidae	Phylocentropus	Phylocentropus placidus	ACA	8/31/16	36	DEY3833	MYLU	M	A	NR	ACA 36
+bri16.0734	OTU755	BOLD:AAB8726	Animalia	Arthropoda	Insecta	Lepidoptera	Erebidae	Melipotis	unknown	ACA	8/31/16	36	DEY3833	MYLU	M	A	NR	ACA 36
+bri16.0734	OTU28	BOLD:AAF9055	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Erioptera	Erioptera septemtrionis	ACA	8/31/16	36	DEY3833	MYLU	M	A	NR	ACA 36
+bri16.0734	OTU448	BOLD:AAG2645	Animalia	Arthropoda	Insecta	Ephemeroptera	Ephemeridae	Hexagenia	Hexagenia limbata	ACA	8/31/16	36	DEY3833	MYLU	M	A	NR	ACA 36
+bri16.0734	OTU145	BOLD:AAH0256	Animalia	Arthropoda	Insecta	Coleoptera	Latridiidae	Corticarina	unknown	ACA	8/31/16	36	DEY3833	MYLU	M	A	NR	ACA 36
+bri16.0734	OTU234	BOLD:AAM6227	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Procladius	unknown	ACA	8/31/16	36	DEY3833	MYLU	M	A	NR	ACA 36
+bri16.0734	OTU65	BOLD:AAN5165	Animalia	Arthropoda	Insecta	Diptera	Ceratopogonidae	Forcipomyia	unknown	ACA	8/31/16	36	DEY3833	MYLU	M	A	NR	ACA 36
+bri16.0734	OTU52	BOLD:AAO3944	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Geranomyia	unknown	ACA	8/31/16	36	DEY3833	MYLU	M	A	NR	ACA 36
+bri16.0734	OTU358	BOLD:AAP4512	Animalia	Arthropoda	Insecta	Neuroptera	Hemerobiidae	Wesmaelius	Wesmaelius longifrons	ACA	8/31/16	36	DEY3833	MYLU	M	A	NR	ACA 36
+bri16.0734	OTU20	BOLD:AAU6544	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Ormosia	Ormosia affinis	ACA	8/31/16	36	DEY3833	MYLU	M	A	NR	ACA 36
+bri16.0734	OTU1067	BOLD:ABV9271	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Tanytarsus	unknown	ACA	8/31/16	36	DEY3833	MYLU	M	A	NR	ACA 36
+bri16.0734	OTU24	BOLD:ACM5079	Animalia	Arthropoda	Arachnida	Trombidiformes	Pionidae	Piona	unknown	ACA	8/31/16	36	DEY3833	MYLU	M	A	NR	ACA 36
+bri16.0734	OTU97	BOLD:ACM9486	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	unknown	ACA	8/31/16	36	DEY3833	MYLU	M	A	NR	ACA 36
+bri16.0734	OTU245	BOLD:ACN4910	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/31/16	36	DEY3833	MYLU	M	A	NR	ACA 36
+bri16.0734	OTU257	BOLD:ACX2014	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Tanytarsus	Tanytarsus mendax	ACA	8/31/16	36	DEY3833	MYLU	M	A	NR	ACA 36
+bri16.0734	OTU359	BOLD:ACX4822	Animalia	Arthropoda	Insecta	Diptera	unknown	unknown	unknown	ACA	8/31/16	36	DEY3833	MYLU	M	A	NR	ACA 36
+bri16.0734	OTU22	BOLD:ADA7198	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Procladius	Procladius signatus	ACA	8/31/16	36	DEY3833	MYLU	M	A	NR	ACA 36
+bri16.0736	OTU111	BOLD:AAA2590	Animalia	Arthropoda	Insecta	Lepidoptera	Noctuidae	Xestia	Xestia smithii	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU247	BOLD:AAA5320	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Acleris	Acleris variana	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU1047	BOLD:AAA5962	Animalia	Arthropoda	Insecta	Lepidoptera	Noctuidae	Xestia	Xestia dilucida	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU789	BOLD:AAA8924	Animalia	Arthropoda	Collembola	Entomobryomorpha	Entomobryidae	Entomobrya	Entomobrya nivalis	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU34	BOLD:AAC0920	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Coleotechnites	Coleotechnites atrupictella	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU1138	BOLD:AAD2661	Animalia	Arthropoda	Insecta	Lepidoptera	Noctuidae	Coenophila	Coenophila subrosea	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU1028	BOLD:AAD7692	Animalia	Arthropoda	Insecta	Lepidoptera	Notodontidae	Drymonia	Drymonia dodonaea	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU28	BOLD:AAF9055	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Erioptera	Erioptera septemtrionis	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU627	BOLD:AAG1766	Animalia	Arthropoda	Insecta	Diptera	Muscidae	Coenosia	Coenosia nigritarsis	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU848	BOLD:AAG2151	Animalia	Arthropoda	Insecta	Diptera	Tachinidae	Cholomyia	unknown	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU205	BOLD:AAG2647	Animalia	Arthropoda	Insecta	Diptera	Chaoboridae	Chaoborus	Chaoborus punctipennis	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU892	BOLD:AAG5524	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU525	BOLD:AAG6862	Animalia	Arthropoda	Insecta	Diptera	Rhinophoridae	Melanophora	Melanophora roralis	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU145	BOLD:AAH0256	Animalia	Arthropoda	Insecta	Coleoptera	Latridiidae	Corticarina	unknown	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU234	BOLD:AAM6227	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Procladius	unknown	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU65	BOLD:AAN5165	Animalia	Arthropoda	Insecta	Diptera	Ceratopogonidae	Forcipomyia	unknown	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU184	BOLD:AAP8635	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Dicranomyia	Dicranomyia (Dicranomyia) longipennis	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU20	BOLD:AAU6544	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Ormosia	Ormosia affinis	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU426	BOLD:ABA5790	Animalia	Arthropoda	Insecta	Hemiptera	Miridae	Phytocoris	Phytocoris uniformis	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU697	BOLD:ABY8804	Animalia	Arthropoda	Insecta	Lepidoptera	unknown	unknown	unknown	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU546	BOLD:ACF1171	Animalia	Arthropoda	Insecta	Lepidoptera	Sphingidae	Clanis	Clanis thailandica	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU255	BOLD:ACI5580	Animalia	Arthropoda	Insecta	Coleoptera	Scirtidae	unknown	unknown	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU606	BOLD:ACM3087	Animalia	Arthropoda	Insecta	Diptera	unknown	unknown	unknown	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU24	BOLD:ACM5079	Animalia	Arthropoda	Arachnida	Trombidiformes	Pionidae	Piona	unknown	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU97	BOLD:ACM9486	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	unknown	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU245	BOLD:ACN4910	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU257	BOLD:ACX2014	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Tanytarsus	Tanytarsus mendax	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU359	BOLD:ACX4822	Animalia	Arthropoda	Insecta	Diptera	unknown	unknown	unknown	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	OTU22	BOLD:ADA7198	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Procladius	Procladius signatus	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0736	MockIM4_pident=100.0_OTU91	CFMR:IM4	Animalia	Arthropoda	Insecta	Lepidoptera	Noctuidae	Agrotis	Agrotis ipsilon	ACA	8/31/16	36	DEY3835	MYLU	F	J	NR	ACA 36
+bri16.0737	OTU247	BOLD:AAA5320	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Acleris	Acleris variana	ACA	9/1/16	36	DEY3858	MYLE	M	A	S	ACA 36
+bri16.0737	OTU1047	BOLD:AAA5962	Animalia	Arthropoda	Insecta	Lepidoptera	Noctuidae	Xestia	Xestia dilucida	ACA	9/1/16	36	DEY3858	MYLE	M	A	S	ACA 36
+bri16.0737	OTU267	BOLD:AAA7661	Animalia	Arthropoda	Insecta	Diptera	Culicidae	Culiseta	Culiseta melanura	ACA	9/1/16	36	DEY3858	MYLE	M	A	S	ACA 36
+bri16.0737	OTU660	BOLD:AAB0275	Animalia	Arthropoda	Insecta	Lepidoptera	Noctuidae	Cucullia	Cucullia intermedia	ACA	9/1/16	36	DEY3858	MYLE	M	A	S	ACA 36
+bri16.0737	OTU507	BOLD:AAB3376	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Pelochrista	Pelochrista dorsisignatana	ACA	9/1/16	36	DEY3858	MYLE	M	A	S	ACA 36
+bri16.0737	OTU216	BOLD:AAC2499	Animalia	Arthropoda	Insecta	Diptera	Drosophilidae	Drosophila	Drosophila suzukii	ACA	9/1/16	36	DEY3858	MYLE	M	A	S	ACA 36
+bri16.0737	OTU512	BOLD:AAD2248	Animalia	Arthropoda	Arachnida	Araneae	Araneidae	Araneus	Araneus saevus	ACA	9/1/16	36	DEY3858	MYLE	M	A	S	ACA 36
+bri16.0737	OTU28	BOLD:AAF9055	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Erioptera	Erioptera septemtrionis	ACA	9/1/16	36	DEY3858	MYLE	M	A	S	ACA 36
+bri16.0737	OTU23	BOLD:AAG8670	Animalia	Arthropoda	Insecta	Hemiptera	Miridae	Phytocoris	unknown	ACA	9/1/16	36	DEY3858	MYLE	M	A	S	ACA 36
+bri16.0737	OTU92	BOLD:AAH4284	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Caryocolum	Caryocolum pullatella	ACA	9/1/16	36	DEY3858	MYLE	M	A	S	ACA 36
+bri16.0737	OTU698	BOLD:AAW8310	Animalia	Arthropoda	Insecta	Lepidoptera	Gracillariidae	Caloptilia	Caloptilia umbratella	ACA	9/1/16	36	DEY3858	MYLE	M	A	S	ACA 36
+bri16.0737	OTU592	BOLD:ABW8057	Animalia	Arthropoda	Insecta	Diptera	Cecidomyiidae	unknown	unknown	ACA	9/1/16	36	DEY3858	MYLE	M	A	S	ACA 36
+bri16.0737	OTU658	BOLD:ABX7717	Animalia	Arthropoda	Insecta	Coleoptera	Elateridae	Ampedus	unknown	ACA	9/1/16	36	DEY3858	MYLE	M	A	S	ACA 36
+bri16.0737	OTU47	BOLD:ABY6840	Animalia	Arthropoda	Insecta	Diptera	Culicidae	Aedes	Aedes nigromaculis	ACA	9/1/16	36	DEY3858	MYLE	M	A	S	ACA 36
+bri16.0737	OTU414	BOLD:ABY8347	Animalia	Arthropoda	Insecta	Hemiptera	Lygaeidae	Kleidocerys	Kleidocerys resedae	ACA	9/1/16	36	DEY3858	MYLE	M	A	S	ACA 36
+bri16.0738	OTU17	BOLD:AAA3920	Animalia	Arthropoda	Insecta	Lepidoptera	Crambidae	Agriphila	Agriphila ruricolellus	ACA	9/1/16	36	DEY3838	MYLE	F	A	PL	ACA 36
+bri16.0738	OTU13	BOLD:AAA3993	Animalia	Arthropoda	Insecta	Lepidoptera	Coleophoridae	Coleophora	Coleophora duplicis group	ACA	9/1/16	36	DEY3838	MYLE	F	A	PL	ACA 36
+bri16.0738	OTU34	BOLD:AAC0920	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Coleotechnites	Coleotechnites atrupictella	ACA	9/1/16	36	DEY3838	MYLE	F	A	PL	ACA 36
+bri16.0738	OTU28	BOLD:AAF9055	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Erioptera	Erioptera septemtrionis	ACA	9/1/16	36	DEY3838	MYLE	F	A	PL	ACA 36
+bri16.0738	OTU306	BOLD:AAG7685	Animalia	Arthropoda	Insecta	Hymenoptera	Braconidae	unknown	unknown	ACA	9/1/16	36	DEY3838	MYLE	F	A	PL	ACA 36
+bri16.0738	OTU546	BOLD:ACF1171	Animalia	Arthropoda	Insecta	Lepidoptera	Sphingidae	Clanis	Clanis thailandica	ACA	9/1/16	36	DEY3838	MYLE	F	A	PL	ACA 36
+bri16.0740	OTU178_suspect_mock_chimera	BOLD:AAA2634	Animalia	Arthropoda	Insecta	Lepidoptera	Noctuidae	Euxoa	Euxoa messoria	ACA	9/2/16	36	DEY3840	MYLU	F	A	PL	ACA 36
+bri16.0740	OTU907	BOLD:AAC8567	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	Ablabesmyia americana	ACA	9/2/16	36	DEY3840	MYLU	F	A	PL	ACA 36
+bri16.0740	OTU667	BOLD:AAD6225	Animalia	Arthropoda	Insecta	Hemiptera	Miridae	Phytocoris	Phytocoris conspurcatus	ACA	9/2/16	36	DEY3840	MYLU	F	A	PL	ACA 36
+bri16.0740	OTU205	BOLD:AAG2647	Animalia	Arthropoda	Insecta	Diptera	Chaoboridae	Chaoborus	Chaoborus punctipennis	ACA	9/2/16	36	DEY3840	MYLU	F	A	PL	ACA 36
+bri16.0740	OTU233	BOLD:AAH4499	Animalia	Arthropoda	Insecta	Lepidoptera	Gracillariidae	Caloptilia	unknown	ACA	9/2/16	36	DEY3840	MYLU	F	A	PL	ACA 36
+bri16.0740	OTU29	BOLD:AAL7322	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	9/2/16	36	DEY3840	MYLU	F	A	PL	ACA 36
+bri16.0740	OTU234	BOLD:AAM6227	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Procladius	unknown	ACA	9/2/16	36	DEY3840	MYLU	F	A	PL	ACA 36
+bri16.0740	OTU849	BOLD:AAN5542	Animalia	Arthropoda	Insecta	Diptera	Drosophilidae	unknown	unknown	ACA	9/2/16	36	DEY3840	MYLU	F	A	PL	ACA 36
+bri16.0740	OTU97	BOLD:ACM9486	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	unknown	ACA	9/2/16	36	DEY3840	MYLU	F	A	PL	ACA 36
+bri16.0740	OTU22	BOLD:ADA7198	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Procladius	Procladius signatus	ACA	9/2/16	36	DEY3840	MYLU	F	A	PL	ACA 36
+bri16.0741	OTU13	BOLD:AAA3993	Animalia	Arthropoda	Insecta	Lepidoptera	Coleophoridae	Coleophora	Coleophora duplicis group	ACA	9/3/16	36	DEY0081	MYLE	M	A	S	ACA 36
+bri16.0741	OTU225	BOLD:AAB6692	Animalia	Arthropoda	Insecta	Plecoptera	Nemouridae	Amphinemura	Amphinemura wui	ACA	9/3/16	36	DEY0081	MYLE	M	A	S	ACA 36
+bri16.0741	OTU209	BOLD:AAF9306	Animalia	Arthropoda	Insecta	Diptera	Psychodidae	Psychoda	Psychoda alternata	ACA	9/3/16	36	DEY0081	MYLE	M	A	S	ACA 36
+bri16.0741	OTU545	BOLD:AAG0892	Animalia	Arthropoda	Insecta	Neuroptera	Hemerobiidae	Hemerobius	Hemerobius humulinus	ACA	9/3/16	36	DEY0081	MYLE	M	A	S	ACA 36
+bri16.0741	OTU74	BOLD:AAP1210	Animalia	Arthropoda	Insecta	Diptera	Sciaridae	unknown	unknown	ACA	9/3/16	36	DEY0081	MYLE	M	A	S	ACA 36
+bri16.0741	OTU318	BOLD:ABA0755	Animalia	Arthropoda	Insecta	Diptera	Drosophilidae	unknown	unknown	ACA	9/3/16	36	DEY0081	MYLE	M	A	S	ACA 36
+bri16.0741	OTU63	BOLD:ABX6298	Animalia	Arthropoda	Insecta	Diptera	Tipulidae	Nephrotoma	Nephrotoma ferruginea	ACA	9/3/16	36	DEY0081	MYLE	M	A	S	ACA 36
+bri16.0741	OTU8	BOLD:ACA9904	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Cheilotrichia	Cheilotrichia stigmatica	ACA	9/3/16	36	DEY0081	MYLE	M	A	S	ACA 36
+bri16.0741	OTU388	BOLD:ACG2784	Animalia	Arthropoda	Insecta	Neuroptera	Coniopterygidae	unknown	unknown	ACA	9/3/16	36	DEY0081	MYLE	M	A	S	ACA 36
+bri16.0741	OTU24	BOLD:ACM5079	Animalia	Arthropoda	Arachnida	Trombidiformes	Pionidae	Piona	unknown	ACA	9/3/16	36	DEY0081	MYLE	M	A	S	ACA 36
+bri16.0741	OTU97	BOLD:ACM9486	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	unknown	ACA	9/3/16	36	DEY0081	MYLE	M	A	S	ACA 36
+bri16.0742	OTU247	BOLD:AAA5320	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Acleris	Acleris variana	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0742	OTU686	BOLD:AAB0271	Animalia	Arthropoda	Arachnida	Araneae	Araneidae	Cyclosa	Cyclosa conica	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0742	OTU360	BOLD:AAC0706	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Dicrotendipes	Dicrotendipes tritomus	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0742	OTU537	BOLD:AAC5276	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Parachironomus	Parachironomus tenuicaudatus	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0742	OTU907	BOLD:AAC8567	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	Ablabesmyia americana	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0742	OTU205	BOLD:AAG2647	Animalia	Arthropoda	Insecta	Diptera	Chaoboridae	Chaoborus	Chaoborus punctipennis	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0742	OTU440	BOLD:AAG5527	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Procladius	Procladius rufovittatus	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0742	OTU145	BOLD:AAH0256	Animalia	Arthropoda	Insecta	Coleoptera	Latridiidae	Corticarina	unknown	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0742	OTU29	BOLD:AAL7322	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0742	OTU25	BOLD:AAL7331	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0742	OTU593	BOLD:AAL7346	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0742	OTU65	BOLD:AAN5165	Animalia	Arthropoda	Insecta	Diptera	Ceratopogonidae	Forcipomyia	unknown	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0742	OTU74	BOLD:AAP1210	Animalia	Arthropoda	Insecta	Diptera	Sciaridae	unknown	unknown	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0742	OTU661	BOLD:AAP4628	Animalia	Arthropoda	Insecta	Psocodea	Caeciliusidae	Valenzuela	unknown	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0742	OTU20	BOLD:AAU6544	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Ormosia	Ormosia affinis	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0742	OTU413	BOLD:AAZ8463	Animalia	Arthropoda	Insecta	Diptera	unknown	unknown	unknown	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0742	OTU491	BOLD:ACD7843	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0742	OTU196	BOLD:ACE8913	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Dicrotendipes	Dicrotendipes modestus	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0742	OTU126	BOLD:ACL1629	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0742	OTU644	BOLD:ACL6074	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0742	OTU447	BOLD:ACL7691	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	unknown	unknown	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0742	OTU97	BOLD:ACM9486	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	unknown	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0742	OTU245	BOLD:ACN4910	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0742	OTU605	BOLD:ACP0749	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0742	OTU359	BOLD:ACX4822	Animalia	Arthropoda	Insecta	Diptera	unknown	unknown	unknown	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0742	OTU22	BOLD:ADA7198	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Procladius	Procladius signatus	ACA	9/3/16	36	DEY3841	MYLU	M	A	S	ACA 36
+bri16.0743	OTU815	BOLD:AAB1331	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Epinotia	Epinotia transmissana	ACA	9/5/16	37	DEY3843	MYLE	M	A	NR	ACA 37
+bri16.0743	OTU114	BOLD:AAF3316	Animalia	Arthropoda	Insecta	Lepidoptera	Gelechiidae	Chionodes	Chionodes soter	ACA	9/5/16	37	DEY3843	MYLE	M	A	NR	ACA 37
+bri16.0743	OTU28	BOLD:AAF9055	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Erioptera	Erioptera septemtrionis	ACA	9/5/16	37	DEY3843	MYLE	M	A	NR	ACA 37
+bri16.0743	OTU142	BOLD:AAG4927	Animalia	Arthropoda	Insecta	Diptera	unknown	unknown	unknown	ACA	9/5/16	37	DEY3843	MYLE	M	A	NR	ACA 37
+bri16.0743	OTU62	BOLD:AAG5457	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	9/5/16	37	DEY3843	MYLE	M	A	NR	ACA 37
+bri16.0743	OTU234	BOLD:AAM6227	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Procladius	unknown	ACA	9/5/16	37	DEY3843	MYLE	M	A	NR	ACA 37
+bri16.0743	OTU65	BOLD:AAN5165	Animalia	Arthropoda	Insecta	Diptera	Ceratopogonidae	Forcipomyia	unknown	ACA	9/5/16	37	DEY3843	MYLE	M	A	NR	ACA 37
+bri16.0743	OTU74	BOLD:AAP1210	Animalia	Arthropoda	Insecta	Diptera	Sciaridae	unknown	unknown	ACA	9/5/16	37	DEY3843	MYLE	M	A	NR	ACA 37
+bri16.0743	OTU357	BOLD:AAQ0607	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Dicrotendipes	unknown	ACA	9/5/16	37	DEY3843	MYLE	M	A	NR	ACA 37
+bri16.0743	OTU97	BOLD:ACM9486	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	unknown	ACA	9/5/16	37	DEY3843	MYLE	M	A	NR	ACA 37
+bri16.0744	OTU14	BOLD:AAA2527	Animalia	Arthropoda	Insecta	Trichoptera	Hydropsychidae	Hydropsyche	Hydropsyche slossonae	ACA	9/5/16	37	DEY3844	MYLE	M	A	S	ACA 37
+bri16.0744	OTU692	BOLD:AAC0360	Animalia	Arthropoda	Insecta	Trichoptera	Phryganeidae	Agrypnia	Agrypnia vestita	ACA	9/5/16	37	DEY3844	MYLE	M	A	S	ACA 37
+bri16.0744	OTU285	BOLD:AAD6847	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Euphylidorea	Euphylidorea platyphallus	ACA	9/5/16	37	DEY3844	MYLE	M	A	S	ACA 37
+bri16.0744	OTU572	BOLD:AAG4866	Animalia	Arthropoda	Insecta	Diptera	Mycetophilidae	unknown	unknown	ACA	9/5/16	37	DEY3844	MYLE	M	A	S	ACA 37
+bri16.0744	OTU62	BOLD:AAG5457	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	9/5/16	37	DEY3844	MYLE	M	A	S	ACA 37
+bri16.0744	OTU23	BOLD:AAG8670	Animalia	Arthropoda	Insecta	Hemiptera	Miridae	Phytocoris	unknown	ACA	9/5/16	37	DEY3844	MYLE	M	A	S	ACA 37
+bri16.0744	OTU234	BOLD:AAM6227	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Procladius	unknown	ACA	9/5/16	37	DEY3844	MYLE	M	A	S	ACA 37
+bri16.0744	OTU579	BOLD:AAM8971	Animalia	Arthropoda	Insecta	Diptera	Culicidae	Culiseta	Culiseta melanura	ACA	9/5/16	37	DEY3844	MYLE	M	A	S	ACA 37
+bri16.0744	OTU588	BOLD:AAM8991	Animalia	Arthropoda	Insecta	Diptera	Mycetophilidae	unknown	unknown	ACA	9/5/16	37	DEY3844	MYLE	M	A	S	ACA 37
+bri16.0744	OTU825	BOLD:AAN7485	Animalia	Arthropoda	Insecta	Lepidoptera	Nepticulidae	Ectoedemia	Ectoedemia zimmermannia	ACA	9/5/16	37	DEY3844	MYLE	M	A	S	ACA 37
+bri16.0744	OTU74	BOLD:AAP1210	Animalia	Arthropoda	Insecta	Diptera	Sciaridae	unknown	unknown	ACA	9/5/16	37	DEY3844	MYLE	M	A	S	ACA 37
+bri16.0744	OTU1	BOLD:AAP6367	Animalia	Arthropoda	Insecta	Coleoptera	Elateridae	Hemicrepidius	Hemicrepidius brevicollis	ACA	9/5/16	37	DEY3844	MYLE	M	A	S	ACA 37
+bri16.0744	OTU20	BOLD:AAU6544	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Ormosia	Ormosia affinis	ACA	9/5/16	37	DEY3844	MYLE	M	A	S	ACA 37
+bri16.0744	OTU980	BOLD:ABA6849	Animalia	Arthropoda	Insecta	Diptera	Mycetophilidae	unknown	unknown	ACA	9/5/16	37	DEY3844	MYLE	M	A	S	ACA 37
+bri16.0744	OTU8	BOLD:ACA9904	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Cheilotrichia	Cheilotrichia stigmatica	ACA	9/5/16	37	DEY3844	MYLE	M	A	S	ACA 37
+bri16.0744	OTU251	BOLD:ACF2821	Animalia	Arthropoda	Insecta	Diptera	Mycetophilidae	Mycetophila	Mycetophila fungorum	ACA	9/5/16	37	DEY3844	MYLE	M	A	S	ACA 37
+bri16.0744	OTU97	BOLD:ACM9486	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	unknown	ACA	9/5/16	37	DEY3844	MYLE	M	A	S	ACA 37
+bri16.0744	OTU257	BOLD:ACX2014	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Tanytarsus	Tanytarsus mendax	ACA	9/5/16	37	DEY3844	MYLE	M	A	S	ACA 37
+bri16.0744	OTU359	BOLD:ACX4822	Animalia	Arthropoda	Insecta	Diptera	unknown	unknown	unknown	ACA	9/5/16	37	DEY3844	MYLE	M	A	S	ACA 37
+bri16.0745	OTU731	BOLD:AAC0903	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Chironomus	Chironomus acidophilus	ACA	9/5/16	37	DEY3845	MYLE	M	A	NR	ACA 37
+bri16.0745	OTU401	BOLD:AAE0434	Animalia	Arthropoda	Insecta	Diptera	Culicidae	Uranotaenia	Uranotaenia sapphirina	ACA	9/5/16	37	DEY3845	MYLE	M	A	NR	ACA 37
+bri16.0745	OTU62	BOLD:AAG5457	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	9/5/16	37	DEY3845	MYLE	M	A	NR	ACA 37
+bri16.0745	OTU702	BOLD:AAK8831	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Metalimnobia	Metalimnobia cinctipes	ACA	9/5/16	37	DEY3845	MYLE	M	A	NR	ACA 37
+bri16.0745	OTU74	BOLD:AAP1210	Animalia	Arthropoda	Insecta	Diptera	Sciaridae	unknown	unknown	ACA	9/5/16	37	DEY3845	MYLE	M	A	NR	ACA 37
+bri16.0745	OTU326	BOLD:ACA3028	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	9/5/16	37	DEY3845	MYLE	M	A	NR	ACA 37
+bri16.0745	OTU8	BOLD:ACA9904	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Cheilotrichia	Cheilotrichia stigmatica	ACA	9/5/16	37	DEY3845	MYLE	M	A	NR	ACA 37
+bri16.0745	OTU248	BOLD:ACV1604	Animalia	Arthropoda	Insecta	Coleoptera	Ptinidae	unknown	unknown	ACA	9/5/16	37	DEY3845	MYLE	M	A	NR	ACA 37
+bri16.0746	OTU40	BOLD:AAA8153	Animalia	Arthropoda	Insecta	Trichoptera	Limnephilidae	Platycentropus	Platycentropus radiatus	ACA	9/5/16	37	DEY3846	MYLE	M	J	NR	ACA 37
+bri16.0746	OTU401	BOLD:AAE0434	Animalia	Arthropoda	Insecta	Diptera	Culicidae	Uranotaenia	Uranotaenia sapphirina	ACA	9/5/16	37	DEY3846	MYLE	M	J	NR	ACA 37
+bri16.0746	OTU62	BOLD:AAG5457	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	9/5/16	37	DEY3846	MYLE	M	J	NR	ACA 37
+bri16.0746	OTU74	BOLD:AAP1210	Animalia	Arthropoda	Insecta	Diptera	Sciaridae	unknown	unknown	ACA	9/5/16	37	DEY3846	MYLE	M	J	NR	ACA 37
+bri16.0746	OTU422	BOLD:ABA9828	Animalia	Arthropoda	Insecta	Hemiptera	Derbidae	Otiocerus	Otiocerus wolfei	ACA	9/5/16	37	DEY3846	MYLE	M	J	NR	ACA 37
+bri16.0746	OTU816	BOLD:ACC0467	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Phaenopsectra	unknown	ACA	9/5/16	37	DEY3846	MYLE	M	J	NR	ACA 37
+bri16.0746	OTU97	BOLD:ACM9486	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	unknown	ACA	9/5/16	37	DEY3846	MYLE	M	J	NR	ACA 37
+bri16.0747	OTU526	BOLD:AAA8554	Animalia	Arthropoda	Insecta	Trichoptera	Philopotamidae	Chimarra	Chimarra aterrima	ACA	9/6/16	37	DEY3847	MYLU	F	A	PL	ACA 37
+bri16.0747	OTU815	BOLD:AAB1331	Animalia	Arthropoda	Insecta	Lepidoptera	Tortricidae	Epinotia	Epinotia transmissana	ACA	9/6/16	37	DEY3847	MYLU	F	A	PL	ACA 37
+bri16.0747	OTU5	BOLD:AAL2743	Animalia	Arthropoda	Arachnida	Trombidiformes	Pionidae	Forelia	unknown	ACA	9/6/16	37	DEY3847	MYLU	F	A	PL	ACA 37
+bri16.0747	OTU27	BOLD:AAN5879	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	unknown	unknown	ACA	9/6/16	37	DEY3847	MYLU	F	A	PL	ACA 37
+bri16.0747	OTU20	BOLD:AAU6544	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Ormosia	Ormosia affinis	ACA	9/6/16	37	DEY3847	MYLU	F	A	PL	ACA 37
+bri16.0747	OTU48	BOLD:ABA5202	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Pseudolimnophila	Pseudolimnophila luteipennis	ACA	9/6/16	37	DEY3847	MYLU	F	A	PL	ACA 37
+bri16.0747	OTU196	BOLD:ACE8913	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Dicrotendipes	Dicrotendipes modestus	ACA	9/6/16	37	DEY3847	MYLU	F	A	PL	ACA 37
+bri16.0749	OTU174	BOLD:AAA1518	Animalia	Arthropoda	Insecta	Lepidoptera	Crambidae	Scoparia	Scoparia biplagialis	ACA	9/7/16	37	DEY3848	MYLE	M	A	NR	ACA 37
+bri16.0749	OTU1047	BOLD:AAA5962	Animalia	Arthropoda	Insecta	Lepidoptera	Noctuidae	Xestia	Xestia dilucida	ACA	9/7/16	37	DEY3848	MYLE	M	A	NR	ACA 37
+bri16.0749	OTU216	BOLD:AAC2499	Animalia	Arthropoda	Insecta	Diptera	Drosophilidae	Drosophila	Drosophila suzukii	ACA	9/7/16	37	DEY3848	MYLE	M	A	NR	ACA 37
+bri16.0749	OTU70	BOLD:AAG4943	Animalia	Arthropoda	Insecta	Diptera	Keroplatidae	unknown	unknown	ACA	9/7/16	37	DEY3848	MYLE	M	A	NR	ACA 37
+bri16.0749	OTU27	BOLD:AAN5879	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	unknown	unknown	ACA	9/7/16	37	DEY3848	MYLE	M	A	NR	ACA 37
+bri16.0749	OTU74	BOLD:AAP1210	Animalia	Arthropoda	Insecta	Diptera	Sciaridae	unknown	unknown	ACA	9/7/16	37	DEY3848	MYLE	M	A	NR	ACA 37
+bri16.0749	OTU11	BOLD:AAP6551	Animalia	Arthropoda	Insecta	Coleoptera	unknown	unknown	unknown	ACA	9/7/16	37	DEY3848	MYLE	M	A	NR	ACA 37
+bri16.0749	OTU326	BOLD:ACA3028	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	9/7/16	37	DEY3848	MYLE	M	A	NR	ACA 37
+bri16.0749	OTU22	BOLD:ADA7198	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Procladius	Procladius signatus	ACA	9/7/16	37	DEY3848	MYLE	M	A	NR	ACA 37
+bri16.0750	OTU614	BOLD:AAA5686	Animalia	Arthropoda	Insecta	Lepidoptera	Geometridae	Metanema	Metanema inatomaria	ACA	9/7/16	37	DEY3850	MYLU	M	A	S	ACA 37
+bri16.0750	OTU360	BOLD:AAC0706	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Dicrotendipes	Dicrotendipes tritomus	ACA	9/7/16	37	DEY3850	MYLU	M	A	S	ACA 37
+bri16.0750	OTU907	BOLD:AAC8567	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	Ablabesmyia americana	ACA	9/7/16	37	DEY3850	MYLU	M	A	S	ACA 37
+bri16.0750	OTU126	BOLD:ACL1629	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	9/7/16	37	DEY3850	MYLU	M	A	S	ACA 37
+bri16.0750	OTU22	BOLD:ADA7198	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Procladius	Procladius signatus	ACA	9/7/16	37	DEY3850	MYLU	M	A	S	ACA 37
+bri16.0753	OTU13	BOLD:AAA3993	Animalia	Arthropoda	Insecta	Lepidoptera	Coleophoridae	Coleophora	Coleophora duplicis group	ACA	8/29/16	36	DEY3868	MYLU	M	A	NR	ACA 36
+bri16.0753	OTU28	BOLD:AAF9055	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Erioptera	Erioptera septemtrionis	ACA	8/29/16	36	DEY3868	MYLU	M	A	NR	ACA 36
+bri16.0753	OTU145	BOLD:AAH0256	Animalia	Arthropoda	Insecta	Coleoptera	Latridiidae	Corticarina	unknown	ACA	8/29/16	36	DEY3868	MYLU	M	A	NR	ACA 36
+bri16.0753	OTU65	BOLD:AAN5165	Animalia	Arthropoda	Insecta	Diptera	Ceratopogonidae	Forcipomyia	unknown	ACA	8/29/16	36	DEY3868	MYLU	M	A	NR	ACA 36
+bri16.0753	OTU2	BOLD:AAN5882	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Erioptera	Erioptera caliptera	ACA	8/29/16	36	DEY3868	MYLU	M	A	NR	ACA 36
+bri16.0753	OTU184	BOLD:AAP8635	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Dicranomyia	Dicranomyia (Dicranomyia) longipennis	ACA	8/29/16	36	DEY3868	MYLU	M	A	NR	ACA 36
+bri16.0753	OTU6	BOLD:ABX3627	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	unknown	unknown	ACA	8/29/16	36	DEY3868	MYLU	M	A	NR	ACA 36
+bri16.0753	OTU367	BOLD:ACB0753	Animalia	Arthropoda	Insecta	Hymenoptera	Trigonalidae	Orthogonalys	Orthogonalys pulchella	ACA	8/29/16	36	DEY3868	MYLU	M	A	NR	ACA 36
+bri16.0753	OTU97	BOLD:ACM9486	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	unknown	ACA	8/29/16	36	DEY3868	MYLU	M	A	NR	ACA 36
+bri16.0754	OTU174	BOLD:AAA1518	Animalia	Arthropoda	Insecta	Lepidoptera	Crambidae	Scoparia	Scoparia biplagialis	ACA	8/29/16	36	DEY3864	MYLU	M	A	NR	ACA 36
+bri16.0754	OTU354	BOLD:AAB7030	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Chironomus	unknown	ACA	8/29/16	36	DEY3864	MYLU	M	A	NR	ACA 36
+bri16.0754	OTU907	BOLD:AAC8567	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	Ablabesmyia americana	ACA	8/29/16	36	DEY3864	MYLU	M	A	NR	ACA 36
+bri16.0754	OTU334	BOLD:AAH4033	Animalia	Arthropoda	Insecta	Diptera	Diadocidiidae	unknown	unknown	ACA	8/29/16	36	DEY3864	MYLU	M	A	NR	ACA 36
+bri16.0754	OTU386	BOLD:AAJ4275	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Chironomus	Chironomus harpi	ACA	8/29/16	36	DEY3864	MYLU	M	A	NR	ACA 36
+bri16.0754	OTU25	BOLD:AAL7331	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/29/16	36	DEY3864	MYLU	M	A	NR	ACA 36
+bri16.0754	OTU560	BOLD:AAL7361	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Procladius	unknown	ACA	8/29/16	36	DEY3864	MYLU	M	A	NR	ACA 36
+bri16.0754	OTU20	BOLD:AAU6544	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Ormosia	Ormosia affinis	ACA	8/29/16	36	DEY3864	MYLU	M	A	NR	ACA 36
+bri16.0754	OTU333	BOLD:ACA2962	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/29/16	36	DEY3864	MYLU	M	A	NR	ACA 36
+bri16.0754	OTU326	BOLD:ACA3028	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/29/16	36	DEY3864	MYLU	M	A	NR	ACA 36
+bri16.0754	OTU253	BOLD:ACA4013	Animalia	Arthropoda	Insecta	Coleoptera	Curculionidae	Dryocoetes	Dryocoetes affaber	ACA	8/29/16	36	DEY3864	MYLU	M	A	NR	ACA 36
+bri16.0754	OTU196	BOLD:ACE8913	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Dicrotendipes	Dicrotendipes modestus	ACA	8/29/16	36	DEY3864	MYLU	M	A	NR	ACA 36
+bri16.0763	OTU706	BOLD:AAA2052	Animalia	Arthropoda	Insecta	Lepidoptera	Erebidae	Lymantria	Lymantria dispar	ACA	8/29/16	36	DEY3866	MYLU	M	A	NR	ACA 36
+bri16.0763	OTU154	BOLD:AAB6239	Animalia	Arthropoda	Insecta	Trichoptera	Dipseudopsidae	Phylocentropus	Phylocentropus placidus	ACA	8/29/16	36	DEY3866	MYLU	M	A	NR	ACA 36
+bri16.0763	OTU467	BOLD:AAB7915	Animalia	Arthropoda	Collembola	Symphypleona	Bourletiellidae	Deuterosminthurus	unknown	ACA	8/29/16	36	DEY3866	MYLU	M	A	NR	ACA 36
+bri16.0763	OTU360	BOLD:AAC0706	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Dicrotendipes	Dicrotendipes tritomus	ACA	8/29/16	36	DEY3866	MYLU	M	A	NR	ACA 36
+bri16.0763	OTU907	BOLD:AAC8567	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	Ablabesmyia americana	ACA	8/29/16	36	DEY3866	MYLU	M	A	NR	ACA 36
+bri16.0763	OTU315	BOLD:AAF8970	Animalia	Arthropoda	Insecta	Diptera	Pediciidae	Tricyphona	Tricyphona autumnalis	ACA	8/29/16	36	DEY3866	MYLU	M	A	NR	ACA 36
+bri16.0763	OTU504	BOLD:AAG1294	Animalia	Arthropoda	Insecta	Hymenoptera	Braconidae	Clinocentrus	unknown	ACA	8/29/16	36	DEY3866	MYLU	M	A	NR	ACA 36
+bri16.0763	OTU205	BOLD:AAG2647	Animalia	Arthropoda	Insecta	Diptera	Chaoboridae	Chaoborus	Chaoborus punctipennis	ACA	8/29/16	36	DEY3866	MYLU	M	A	NR	ACA 36
+bri16.0763	OTU440	BOLD:AAG5527	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Procladius	Procladius rufovittatus	ACA	8/29/16	36	DEY3866	MYLU	M	A	NR	ACA 36
+bri16.0763	OTU268	BOLD:AAG8483	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Xenochironomus	Xenochironomus xenolabis	ACA	8/29/16	36	DEY3866	MYLU	M	A	NR	ACA 36
+bri16.0763	OTU145	BOLD:AAH0256	Animalia	Arthropoda	Insecta	Coleoptera	Latridiidae	Corticarina	unknown	ACA	8/29/16	36	DEY3866	MYLU	M	A	NR	ACA 36
+bri16.0763	OTU234	BOLD:AAM6227	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Procladius	unknown	ACA	8/29/16	36	DEY3866	MYLU	M	A	NR	ACA 36
+bri16.0763	OTU65	BOLD:AAN5165	Animalia	Arthropoda	Insecta	Diptera	Ceratopogonidae	Forcipomyia	unknown	ACA	8/29/16	36	DEY3866	MYLU	M	A	NR	ACA 36
+bri16.0763	OTU784	BOLD:AAN6442	Animalia	Arthropoda	Insecta	Diptera	Sciaridae	unknown	unknown	ACA	8/29/16	36	DEY3866	MYLU	M	A	NR	ACA 36
+bri16.0763	OTU126	BOLD:ACL1629	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/29/16	36	DEY3866	MYLU	M	A	NR	ACA 36
+bri16.0763	OTU97	BOLD:ACM9486	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	unknown	ACA	8/29/16	36	DEY3866	MYLU	M	A	NR	ACA 36
+bri16.0763	OTU245	BOLD:ACN4910	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/29/16	36	DEY3866	MYLU	M	A	NR	ACA 36
+bri16.0763	OTU352	BOLD:ACN5893	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/29/16	36	DEY3866	MYLU	M	A	NR	ACA 36
+bri16.0763	OTU711	BOLD:ACR3749	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	Ablabesmyia monilis	ACA	8/29/16	36	DEY3866	MYLU	M	A	NR	ACA 36
+bri16.0763	OTU22	BOLD:ADA7198	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Procladius	Procladius signatus	ACA	8/29/16	36	DEY3866	MYLU	M	A	NR	ACA 36
+bri16.0765	OTU28	BOLD:AAF9055	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Erioptera	Erioptera septemtrionis	ACA	8/29/16	36	DEY3865	MYLU	M	no-record	NR	ACA 36
+bri16.0765	OTU20	BOLD:AAU6544	Animalia	Arthropoda	Insecta	Diptera	Limoniidae	Ormosia	Ormosia affinis	ACA	8/29/16	36	DEY3865	MYLU	M	no-record	NR	ACA 36
+bri16.0765	OTU333	BOLD:ACA2962	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/29/16	36	DEY3865	MYLU	M	no-record	NR	ACA 36
+bri16.0765	OTU326	BOLD:ACA3028	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/29/16	36	DEY3865	MYLU	M	no-record	NR	ACA 36
+bri16.0765	OTU548	BOLD:ACK3644	Animalia	Arthropoda	Insecta	Diptera	Cecidomyiidae	unknown	unknown	ACA	8/29/16	36	DEY3865	MYLU	M	no-record	NR	ACA 36
+bri16.0765	OTU24	BOLD:ACM5079	Animalia	Arthropoda	Arachnida	Trombidiformes	Pionidae	Piona	unknown	ACA	8/29/16	36	DEY3865	MYLU	M	no-record	NR	ACA 36
+bri16.0765	OTU97	BOLD:ACM9486	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Ablabesmyia	unknown	ACA	8/29/16	36	DEY3865	MYLU	M	no-record	NR	ACA 36
+bri16.0765	OTU245	BOLD:ACN4910	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	unknown	unknown	ACA	8/29/16	36	DEY3865	MYLU	M	no-record	NR	ACA 36
+bri16.0765	OTU257	BOLD:ACX2014	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Tanytarsus	Tanytarsus mendax	ACA	8/29/16	36	DEY3865	MYLU	M	no-record	NR	ACA 36
+bri16.0765	OTU595	CFMR:IM44	Animalia	Arthropoda	Insecta	Diptera	Chironomidae	Procladius	unknown	ACA	8/29/16	36	DEY3865	MYLU	M	no-record	NR	ACA 36
