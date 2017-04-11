@@ -1,0 +1,25 @@
+OTUid	Description
+OTU1	freshwater mold
+OTU10	oomycete
+OTU12	oomycete
+OTU15	oomycete
+OTU17	oomycete
+OTU18	green algae
+OTU2	water mold
+OTU20	green algae
+OTU21	oomycete
+OTU22	oomycete
+OTU23	oomycete
+OTU24	oomycete
+OTU25	oomycete
+OTU27	oomycete
+OTU28	oomycete
+OTU31	oomycete
+OTU34	red algae
+OTU35	oomycete
+OTU36	oomycete
+OTU37	oomycete
+OTU42	red algae
+OTU43	arthropod
+OTU47	oomycete
+OTU63	bacteria(Rickettsieae)
