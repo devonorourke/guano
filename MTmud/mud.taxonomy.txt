@@ -1,0 +1,118 @@
+#OTUID	taxonomy	USEARCH	SINTAX	UTAX
+MockIM4_pident=100.0_OTU3	CFMR:IM4;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Noctuidae,g:Agrotis,s:Agrotis ipsilon	CFMR:IM4;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Noctuidae,g:Agrotis,s:Agrotis ipsilon (100.0)	k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Noctuidae,g:Agrotis,s:Agrotis ipsilon	k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera
+MockIM5_pident=100.0_OTU5	CFMR:IM5;k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera,f:Aphididae,g:Aphis,s:Aphis helianthi	CFMR:IM5;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera,f:Aphididae,g:Aphis,s:Aphis helianthi (100.0)	k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera,f:Aphididae,g:Aphis,s:Aphis helianthi	k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera
+MockIM6_pident=100.0_OTU13	CFMR:IM6;k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera,f:Aphididae,g:Aphis,s:Aphis mellifera	CFMR:IM6;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera,f:Aphididae,g:Aphis,s:Aphis mellifera (100.0)	k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera,f:Aphididae,g:Aphis,s:Aphis mellifera	k:Animalia,p:Arthropoda,c:Insecta
+MockIM15_pident=99.4_OTU9	CFMR:IM15;k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Bombyliidae,g:Lepidophora,s:Lepidophora lutea	CFMR:IM15;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Bombyliidae,g:Lepidophora,s:Lepidophora lutea (99.4)	k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Bombyliidae,g:Lepidophora,s:Lepidophora lutea	k:Animalia,p:Arthropoda,c:Insecta
+MockIM21_pident=97.8_OTU6	CFMR:IM23;k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera,f:Coccinellidae,g:Harmonia,s:Harmonia axyridis	CFMR:IM23;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera,f:Coccinellidae,g:Harmonia,s:Harmonia axyridis (100.0)	k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera,f:Coccinellidae,g:Harmonia,s:Harmonia axyridis	k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera,f:Coccinellidae,g:Harmonia,s:Harmonia
+MockIM34_pident=100.0_OTU19	CFMR:IM34;k:Animalia,p:Arthropoda,c:Insecta,o:Orthoptera,f:Acrididae,g:Melanoplus	CFMR:IM34;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Orthoptera,f:Acrididae,g:Melanoplus (100.0)	k:Animalia,p:Arthropoda,c:Insecta,o:Orthoptera,f:Acrididae,g:Melanoplus	k:Animalia,p:Arthropoda,c:Insecta,o:Orthoptera
+MockIM39_pident=100.0_OTU8	CFMR:IM39;k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera,f:Chrysomelidae,g:Paria,s:Paria fragariae	CFMR:IM39;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera,f:Chrysomelidae,g:Paria,s:Paria fragariae (100.0)	k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera,f:Chrysomelidae,g:Paria,s:Paria fragariae	k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera,f:Chrysomelidae,g:Paria,s:Paria
+MockIM40_pident=100.0_OTU11	CFMR:IM40;k:Animalia,p:Arthropoda,c:Insecta,o:Blattodea,f:Blattidae,g:Periplaneta,s:Periplaneta fuliginosa	CFMR:IM40;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Blattodea,f:Blattidae,g:Periplaneta,s:Periplaneta fuliginosa (100.0)	k:Animalia,p:Arthropoda,c:Insecta,o:Blattodea,f:Blattidae,g:Periplaneta,s:Periplaneta fuliginosa	k:Animalia,p:Arthropoda,c:Insecta
+MockIM41_pident=97.2_OTU4	CFMR:IM42;k:Animalia,p:Arthropoda,c:Arachnida,o:Opiliones,f:Phalangiidae,g:Phalangium,s:Phalangium opilio	CFMR:IM42;tax=k:Animalia,p:Arthropoda,c:Arachnida,o:Opiliones,f:Phalangiidae,g:Phalangium,s:Phalangium opilio (100.0)	k:Animalia,p:Arthropoda,c:Arachnida,o:Opiliones,f:Phalangiidae,g:Phalangium,s:Phalangium opilio	k:Animalia,p:Arthropoda,c:Arachnida
+MockIM46_pident=100.0_OTU7	CFMR:IM46;k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera	CFMR:IM46;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera (100.0)	k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera	k:Animalia,p:Arthropoda,c:Insecta
+OTU1	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACO2249;tax=k:Animalia,p:Arthropoda,c:Arachnida (81.1)	k:Animalia,p:Arthropoda	k:Animalia
+OTU2	SINTAX;k:Animalia,p:Arthropoda	BOLD:AAV6186;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera (70.6)	k:Animalia,p:Arthropoda	*
+OTU10	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACD9810;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Diptera (70.0)	k:Animalia,p:Arthropoda	*
+OTU12	SINTAX;k:Animalia,p:Arthropoda,c:Insecta	* (*)	k:Animalia,p:Arthropoda,c:Insecta	*
+OTU15	SINTAX;k:Animalia,p:Arthropoda,c:Insecta	BOLD:ACS3427;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Diptera (70.4)	k:Animalia,p:Arthropoda,c:Insecta	*
+OTU17	SINTAX;k:Animalia,p:Arthropoda,c:Insecta	BOLD:ACM2423;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera,f:Nitidulidae,g:Epuraea,s:Epuraea labilis (70.0)	k:Animalia,p:Arthropoda,c:Insecta	*
+OTU18	SINTAX;k:Animalia,p:Arthropoda	* (*)	k:Animalia,p:Arthropoda	*
+OTU20	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACY0966;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Odonata,f:Aeshnidae,g:Gynacantha,s:Gynacantha vesiculata (71.1)	k:Animalia,p:Arthropoda	*
+OTU21	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACW5153;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Diptera (70.4)	k:Animalia,p:Arthropoda	*
+OTU22	SINTAX;k:Animalia,p:Arthropoda	BOLD:ADA3763;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Diptera (74.3)	k:Animalia,p:Arthropoda	k:Animalia
+OTU23	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACJ9157;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Cecidomyiidae (73.3)	k:Animalia,p:Arthropoda	k:Animalia
+OTU24	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACN6692;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera (70.0)	k:Animalia,p:Arthropoda	*
+OTU25	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACO2249;tax=k:Animalia,p:Arthropoda,c:Arachnida (80.6)	k:Animalia,p:Arthropoda	k:Animalia
+OTU26	SINTAX;k:Animalia,p:Arthropoda,c:Insecta	BOLD:ACU5823;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Diptera (70.2)	k:Animalia,p:Arthropoda,c:Insecta	*
+OTU27	SINTAX;k:Animalia,p:Arthropoda	BOLD:AAI1586;tax=k:Animalia,p:Arthropoda,c:Arachnida,o:Araneae (71.1)	k:Animalia,p:Arthropoda	k:Animalia
+OTU28	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACV7222;tax=k:Animalia,p:Arthropoda,c:Arachnida (75.9)	k:Animalia,p:Arthropoda	*
+OTU29	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACO2249;tax=k:Animalia,p:Arthropoda,c:Arachnida (76.1)	k:Animalia,p:Arthropoda	*
+OTU30	SINTAX;k:Animalia,p:Arthropoda,c:Insecta	BOLD:AAZ1892;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera,f:Lygaeidae,g:Neacoryphus,s:Neacoryphus bicrucis (70.6)	k:Animalia,p:Arthropoda,c:Insecta	k:Animalia
+OTU31	SINTAX;k:Animalia,p:Arthropoda,c:Insecta	BOLD:ACS1891;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Diptera (73.2)	k:Animalia,p:Arthropoda,c:Insecta	*
+OTU32	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACO1512;tax=k:Animalia,p:Arthropoda,c:Arachnida (71.5)	k:Animalia,p:Arthropoda	*
+OTU33	SINTAX;k:Animalia,p:Arthropoda	* (*)	k:Animalia,p:Arthropoda	*
+OTU34	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACG0440;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Odonata,f:Platystictidae,g:Ceylonosticta,s:Ceylonosticta lankanensis (70.6)	k:Animalia,p:Arthropoda	*
+OTU35	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACO2249;tax=k:Animalia,p:Arthropoda,c:Arachnida (74.4)	k:Animalia,p:Arthropoda	*
+OTU36	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACO2249;tax=k:Animalia,p:Arthropoda,c:Arachnida (77.2)	k:Animalia,p:Arthropoda	*
+OTU37	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACV7222;tax=k:Animalia,p:Arthropoda,c:Arachnida (75.3)	k:Animalia,p:Arthropoda	*
+OTU38	BOLD:ADB9451;k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Limoniidae,g:Epiphragma,s:Epiphragma fasciapenne	BOLD:ADB9451;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Limoniidae,g:Epiphragma,s:Epiphragma fasciapenne (99.4)	k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Limoniidae,g:Epiphragma,s:Epiphragma fasciapenne	k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Limoniidae,g:Epiphragma,s:Epiphragma
+OTU39	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACY0966;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Odonata,f:Aeshnidae,g:Gynacantha,s:Gynacantha vesiculata (72.2)	k:Animalia,p:Arthropoda	k:Animalia
+OTU40	SINTAX;k:Animalia,p:Arthropoda	BOLD:AAZ1636;tax=k:Animalia,p:Arthropoda,c:Collembola,o:Entomobryomorpha (70.0)	k:Animalia,p:Arthropoda	*
+OTU41	SINTAX;k:Animalia,p:Arthropoda	BOLD:AAY6667;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Orthoptera (70.0)	k:Animalia,p:Arthropoda	*
+OTU42	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACJ5055;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Diptera (70.0)	k:Animalia,p:Arthropoda	*
+OTU43	BOLD:AAO8357;k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera	BOLD:AAO8357;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera (97.8)	k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera	k:Animalia,p:Arthropoda,c:Insecta
+OTU44	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACB2428;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Cecidomyiidae (71.1)	k:Animalia,p:Arthropoda	*
+OTU45	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACV7222;tax=k:Animalia,p:Arthropoda,c:Arachnida (75.3)	k:Animalia,p:Arthropoda	*
+OTU46	SINTAX;k:Animalia,p:Arthropoda,c:Insecta	* (*)	k:Animalia,p:Arthropoda,c:Insecta	*
+OTU47	SINTAX;k:Animalia,p:Arthropoda	BOLD:ADB4425;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Odonata,f:Libellulidae,g:Acisoma,s:Acisoma ascalaphoides (70.6)	k:Animalia,p:Arthropoda	*
+OTU48	SINTAX;k:Animalia,p:Arthropoda	* (*)	k:Animalia,p:Arthropoda	*
+OTU49	SINTAX;k:Animalia,p:Arthropoda,c:Insecta	* (*)	k:Animalia,p:Arthropoda,c:Insecta	*
+OTU50	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACO2249;tax=k:Animalia,p:Arthropoda,c:Arachnida (74.4)	k:Animalia,p:Arthropoda	*
+OTU51	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACH2904;tax=k:Animalia,p:Arthropoda,c:Malacostraca,o:Decapoda (70.6)	k:Animalia,p:Arthropoda	*
+OTU52	SINTAX;k:Animalia,p:Arthropoda	BOLD:AAE5752;tax=k:Animalia,p:Arthropoda,c:Collembola,o:Entomobryomorpha,f:Isotomidae,g:IsotomidaeGEN (70.9)	k:Animalia,p:Arthropoda	k:Animalia
+OTU53	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACN4780;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Diptera (76.0)	k:Animalia,p:Arthropoda	k:Animalia
+OTU54	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACV7923;tax=k:Animalia,p:Arthropoda,c:Arachnida (70.9)	k:Animalia,p:Arthropoda	*
+OTU55	SINTAX;k:Animalia,p:Arthropoda,c:Insecta	BOLD:AAO0266;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera (70.6)	k:Animalia,p:Arthropoda,c:Insecta	*
+OTU56	SINTAX;k:Animalia,p:Arthropoda	* (*)	k:Animalia,p:Arthropoda	*
+OTU57	BOLD:AAA3313;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Erebidae,g:Coenipeta,s:Coenipeta bibitrix	BOLD:AAA3313;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Erebidae,g:Coenipeta,s:Coenipeta bibitrix (100.0)	k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Erebidae,g:Coenipeta,s:Coenipeta bibitrix	k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera
+OTU58	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACO2249;tax=k:Animalia,p:Arthropoda,c:Arachnida (80.0)	k:Animalia,p:Arthropoda	k:Animalia
+OTU59	SINTAX;k:Animalia,p:Arthropoda,c:Insecta	BOLD:AAD0073;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera,f:Cerambycidae,g:Xestoleptura,s:Xestoleptura crassipes (70.0)	k:Animalia,p:Arthropoda,c:Insecta	k:Animalia
+OTU60	SINTAX;k:Animalia,p:Arthropoda,c:Insecta	BOLD:ACF5993;tax=k:Animalia,p:Arthropoda,c:Collembola,o:Entomobryomorpha (72.2)	k:Animalia,p:Arthropoda,c:Insecta	*
+OTU61	SINTAX;k:Animalia,p:Arthropoda	* (*)	k:Animalia,p:Arthropoda	*
+OTU62	SINTAX;k:Animalia,p:Arthropoda	* (*)	k:Animalia,p:Arthropoda	*
+OTU63	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACJ3518;tax=k:Animalia,p:Arthropoda,c:Collembola (76.7)	k:Animalia,p:Arthropoda	*
+OTU64	SINTAX;k:Animalia,p:Arthropoda	* (*)	k:Animalia,p:Arthropoda	*
+OTU65	BOLD:AAC3010;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Gelechiidae,g:Agnippe,s:Agnippe prunifoliella	BOLD:AAC3010;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Gelechiidae,g:Agnippe,s:Agnippe prunifoliella (100.0)	k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Gelechiidae,g:Agnippe,s:Agnippe prunifoliella	k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera
+OTU66	SINTAX;k:Animalia,p:Arthropoda	* (*)	k:Animalia,p:Arthropoda	*
+OTU67	BOLD:AAC0733;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera	BOLD:AAC0733;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera (99.4)	k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera	k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera
+OTU68	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACY9530;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Chironomidae (71.1)	k:Animalia,p:Arthropoda	k:Animalia
+OTU69	CFMR:IM30;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Erebidae,g:Idia,s:Idia aemula	CFMR:IM30;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Erebidae,g:Idia,s:Idia aemula (100.0)	k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Erebidae,g:Idia,s:Idia aemula	k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Erebidae,g:Idia,s:Idia
+OTU70	SINTAX;k:Animalia,p:Arthropoda,c:Insecta	BOLD:ACA5232;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Diptera (76.7)	k:Animalia,p:Arthropoda,c:Insecta	k:Animalia
+OTU72	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACT6628;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Diptera (71.4)	k:Animalia,p:Arthropoda	*
+OTU73	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACB2296;tax=k:Animalia,p:Arthropoda,c:Arachnida,o:Araneae (76.1)	k:Animalia,p:Arthropoda	k:Animalia
+OTU74	SINTAX;k:Animalia,p:Arthropoda	BOLD:AAV0387;tax=k:Animalia,p:Arthropoda,c:Arachnida,o:Araneae (72.8)	k:Animalia,p:Arthropoda	k:Animalia
+OTU76	SINTAX;k:Animalia,p:Arthropoda	* (*)	k:Animalia,p:Arthropoda	k:Animalia
+OTU77	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACX3336;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Diptera (70.9)	k:Animalia,p:Arthropoda	*
+OTU78	BOLD:AAO2061;k:Animalia,p:Arthropoda,c:Insecta,o:Blattodea	BOLD:AAO2061;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Blattodea (100.0)	k:Animalia,p:Arthropoda,c:Insecta,o:Blattodea	k:Animalia,p:Arthropoda,c:Insecta,o:Blattodea
+OTU79	SINTAX;k:Animalia,p:Arthropoda,c:Insecta	BOLD:ACN8260;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Diptera (73.3)	k:Animalia,p:Arthropoda,c:Insecta	k:Animalia
+OTU80	SINTAX;k:Animalia,p:Arthropoda,c:Insecta	* (*)	k:Animalia,p:Arthropoda,c:Insecta	*
+OTU81	SINTAX;k:Animalia,p:Arthropoda,c:Insecta	BOLD:ACW2722;tax=k:Animalia,p:Arthropoda,c:Arachnida,o:Araneae (73.3)	k:Animalia,p:Arthropoda,c:Insecta	*
+OTU82	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACO2249;tax=k:Animalia,p:Arthropoda,c:Arachnida (78.9)	k:Animalia,p:Arthropoda	k:Animalia
+OTU83	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACA1323;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Orthoptera (70.6)	k:Animalia,p:Arthropoda	*
+OTU84	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACO2249;tax=k:Animalia,p:Arthropoda,c:Arachnida (77.2)	k:Animalia,p:Arthropoda	*
+OTU86	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACA4959;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera (70.0)	k:Animalia,p:Arthropoda	*
+OTU87	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACM8766;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Ceratopogonidae,g:Culicoides,s:Culicoides mesghalii (70.0)	k:Animalia,p:Arthropoda	*
+OTU88	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACO2249;tax=k:Animalia,p:Arthropoda,c:Arachnida (78.3)	k:Animalia,p:Arthropoda	k:Animalia
+OTU89	BOLD:AAG9532;k:Animalia,p:Arthropoda,c:Maxillopoda,o:Calanoida,f:Diaptomidae,g:Diaptomus	BOLD:AAG9532;tax=k:Animalia,p:Arthropoda,c:Maxillopoda,o:Calanoida,f:Diaptomidae,g:Diaptomus (97.2)	k:Animalia,p:Arthropoda,c:Maxillopoda,o:Calanoida,f:Diaptomidae,g:Diaptomus	k:Animalia
+OTU90	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACV7222;tax=k:Animalia,p:Arthropoda,c:Arachnida (71.8)	k:Animalia,p:Arthropoda	*
+OTU91	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACO2249;tax=k:Animalia,p:Arthropoda,c:Arachnida (80.0)	k:Animalia,p:Arthropoda	k:Animalia
+OTU92	SINTAX;k:Animalia,p:Arthropoda,c:Insecta	* (*)	k:Animalia,p:Arthropoda,c:Insecta	*
+OTU94	BOLD:ACG7223;k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera	BOLD:ACG7223;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera (100.0)	k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera	k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera
+OTU95	SINTAX;k:Animalia,p:Arthropoda,c:Insecta	BOLD:ACR2515;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Diptera (77.9)	k:Animalia,p:Arthropoda,c:Insecta	*
+OTU96	SINTAX;k:Animalia,p:Arthropoda	* (*)	k:Animalia,p:Arthropoda	*
+OTU97	BOLD:AAA4727;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Euteliidae,g:Eutelia,s:Eutelia furcata	BOLD:AAA4727;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Euteliidae,g:Eutelia,s:Eutelia furcata (100.0)	k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Euteliidae,g:Eutelia,s:Eutelia furcata	k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera
+OTU98	SINTAX;k:Animalia,p:Arthropoda	* (*)	k:Animalia,p:Arthropoda	*
+OTU99	SINTAX;k:Animalia,p:Arthropoda	BOLD:ABV2601;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera (70.6)	k:Animalia,p:Arthropoda	*
+OTU100	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACO2249;tax=k:Animalia,p:Arthropoda,c:Arachnida (75.0)	k:Animalia,p:Arthropoda	k:Animalia
+OTU101	SINTAX;k:Animalia,p:Arthropoda	BOLD:AAC6161;tax=k:Animalia,p:Arthropoda,c:Malacostraca,o:Cumacea (77.8)	k:Animalia,p:Arthropoda	*
+OTU102	SINTAX;k:Animalia,p:Arthropoda,c:Insecta	* (*)	k:Animalia,p:Arthropoda,c:Insecta	*
+OTU103	SINTAX;k:Animalia,p:Arthropoda	* (*)	k:Animalia,p:Arthropoda	*
+OTU104	SINTAX;k:Animalia,p:Arthropoda,c:Insecta	* (*)	k:Animalia,p:Arthropoda,c:Insecta	*
+OTU105	BOLD:ACB0302;k:Animalia,p:Arthropoda,c:Insecta,o:Hymenoptera	BOLD:ACB0302;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Hymenoptera (100.0)	k:Animalia,p:Arthropoda,c:Insecta,o:Hymenoptera	k:Animalia,p:Arthropoda,c:Insecta,o:Hymenoptera
+OTU107	BOLD:ACO6860;k:Animalia,p:Arthropoda,c:Insecta,o:Isoptera	BOLD:ACO6860;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Isoptera (100.0)	k:Animalia,p:Arthropoda,c:Insecta,o:Isoptera	k:Animalia,p:Arthropoda,c:Insecta,o:Isoptera
+OTU108	SINTAX;k:Animalia,p:Arthropoda,c:Insecta	BOLD:ACN7354;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Cecidomyiidae (74.9)	k:Animalia,p:Arthropoda,c:Insecta	k:Animalia
+OTU109	BOLD:AAE7337;k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera,f:Carabidae,g:Calosoma,s:Calosoma eremicola	BOLD:AAE7337;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera,f:Carabidae,g:Calosoma,s:Calosoma eremicola (99.4)	k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera,f:Carabidae,g:Calosoma	k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera,f:Carabidae
+OTU111	SINTAX;k:Animalia,p:Arthropoda	BOLD:AAH7997;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Trichoptera,f:Calocidae,g:Pycnocentrella,s:Pycnocentrella eruensis (70.6)	k:Animalia,p:Arthropoda	*
+OTU112	SINTAX;k:Animalia,p:Arthropoda	* (*)	k:Animalia,p:Arthropoda	*
+OTU113	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACO9630;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Diptera (70.9)	k:Animalia,p:Arthropoda	*
+OTU115	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACS2643;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Cecidomyiidae (70.4)	k:Animalia,p:Arthropoda	*
+OTU116	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACD0398;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera,f:Zopheridae,g:Phellopsis,s:Phellopsis porcata (70.0)	k:Animalia,p:Arthropoda	*
+OTU119	SINTAX;k:Animalia,p:Arthropoda	BOLD:ABX4971;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Hymenoptera,f:Braconidae,g:Diolcogaster (71.1)	k:Animalia,p:Arthropoda	*
+OTU123	SINTAX;k:Animalia,p:Arthropoda,c:Insecta	BOLD:ACU2695;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Diptera (72.1)	k:Animalia,p:Arthropoda,c:Insecta	*
+OTU124	SINTAX;k:Animalia,p:Arthropoda,c:Insecta	BOLD:ACO2249;tax=k:Animalia,p:Arthropoda,c:Arachnida (75.6)	k:Animalia,p:Arthropoda,c:Insecta	k:Animalia
+OTU125	BOLD:ABY6336;k:Animalia,p:Chordata,c:Mammalia,o:Chiroptera,f:Noctilionidae,g:Noctilio,s:Noctilio leporinus	BOLD:ABY6336;tax=k:Animalia,p:Chordata,c:Mammalia,o:Chiroptera,f:Noctilionidae,g:Noctilio,s:Noctilio leporinus (98.9)	k:Animalia,p:Chordata,c:Mammalia,o:Chiroptera,f:Noctilionidae,g:Noctilio,s:Noctilio leporinus	k:Animalia,p:Chordata,c:Mammalia,o:Chiroptera,f:Noctilionidae,g:Noctilio,s:Noctilio
+OTU126	BOLD:ACJ2489;k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera	BOLD:ACJ2489;tax=k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera (100.0)	k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera	k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera
+OTU133	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACO2249;tax=k:Animalia,p:Arthropoda,c:Arachnida (76.7)	k:Animalia,p:Arthropoda	*
+OTU134	SINTAX;k:Animalia,p:Arthropoda	BOLD:ACO2249;tax=k:Animalia,p:Arthropoda,c:Arachnida (70.6)	k:Animalia,p:Arthropoda	*
+OTU136	BOLD:AAA2454;k:Animalia,p:Chordata,c:Mammalia,o:Chiroptera,f:Molossidae,g:Molossus,s:Molossus molossus	BOLD:AAA2454;tax=k:Animalia,p:Chordata,c:Mammalia,o:Chiroptera,f:Molossidae,g:Molossus,s:Molossus molossus (99.4)	k:Animalia,p:Chordata,c:Mammalia,o:Chiroptera,f:Molossidae,g:Molossus,s:Molossus molossus	k:Animalia
+OTU140	SINTAX;k:Animalia,p:Arthropoda	* (*)	k:Animalia,p:Arthropoda	*
+OTU147	BOLD:AAB5742;k:Animalia,p:Chordata,c:Mammalia,o:Chiroptera,f:Vespertilionidae,g:Rhogeessa,s:Rhogeessa tumida	BOLD:AAB5742;tax=k:Animalia,p:Chordata,c:Mammalia,o:Chiroptera,f:Vespertilionidae,g:Rhogeessa,s:Rhogeessa tumida (98.3)	k:Animalia,p:Chordata,c:Mammalia,o:Chiroptera,f:Vespertilionidae,g:Rhogeessa,s:Rhogeessa tumida	k:Animalia,p:Chordata,c:Mammalia,o:Chiroptera,f:Vespertilionidae,g:Rhogeessa,s:Rhogeessa
