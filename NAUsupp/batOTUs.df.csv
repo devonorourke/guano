@@ -1,0 +1,27 @@
+SampleID,OTUid,OTU_identifier,kingdom_name,phylum_name,class_name,order_name,family_name,genus_name,species_name,Site,Date,BatTagID,BatSpecies,Sex
+nau.7002,OTU185,BOLD:AAD0446,Animalia,Chordata,Mammalia,Chiroptera,Vespertilionidae,Lasiurus,Lasiurus blossevillii,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,2,LABL,F
+nau.7004,OTU39,BOLD:ABY6336,Animalia,Chordata,Mammalia,Chiroptera,Noctilionidae,Noctilio,Noctilio leporinus,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,5,NOLE,F
+nau.7013,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,19,MOPR,F
+nau.7014,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,20,MOPR,F
+nau.7015,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,21,MOPR,F
+nau.7016,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,22,MOPR,F
+nau.7023,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,SARDINA,6/1/16,18,MYNI,F
+nau.7032,OTU121,BOLD:AAA3107,Animalia,Chordata,Mammalia,Chiroptera,Phyllostomidae,Trachops,Trachops cirrhosus,SARDINA,6/1/16,34,TRCI,F
+nau.7035,OTU8,BOLD:AAB5742,Animalia,Chordata,Mammalia,Chiroptera,Vespertilionidae,Rhogeessa,Rhogeessa tumida,ESCAMAQUITA,6/2/16,1,RHBI,F
+nau.7043,OTU8,BOLD:AAB5742,Animalia,Chordata,Mammalia,Chiroptera,Vespertilionidae,Rhogeessa,Rhogeessa tumida,ESCAMAQUITA,6/2/16,15,RHBI,F
+nau.7052,OTU8,BOLD:AAB5742,Animalia,Chordata,Mammalia,Chiroptera,Vespertilionidae,Rhogeessa,Rhogeessa tumida,ESCAMAQUITA,6/2/16,31,RHBI,F
+nau.7124,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU440,BOLD:AAA9062,Animalia,Chordata,Mammalia,Chiroptera,Vespertilionidae,Eptesicus,Eptesicus furinalis,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU8,BOLD:AAB5742,Animalia,Chordata,Mammalia,Chiroptera,Vespertilionidae,Rhogeessa,Rhogeessa tumida,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7127,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,NICARAGUA,5/31/15,43,MOPR,F
+nau.7128,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,NICARAGUA,5/31/15,41,MOMO,F
+nau.7129,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,NICARAGUA,5/31/15,40,RHDU,F
+nau.7129,OTU8,BOLD:AAB5742,Animalia,Chordata,Mammalia,Chiroptera,Vespertilionidae,Rhogeessa,Rhogeessa tumida,NICARAGUA,5/31/15,40,RHDU,F
+nau.7130,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,NICARAGUA,5/31/15,38,MOPR,F
+nau.7133,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,NICARAGUA,5/31/15,29,MOMO,F
+nau.7134,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,NICARAGUA,5/31/15,27,MOPR,F
+nau.7136,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,NICARAGUA,5/31/15,23,MOPR,F
+nau.7137,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,NICARAGUA,5/31/15,21,EUUN,F
+nau.7138,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,NICARAGUA,5/31/15,176,CAPE,M
+nau.7139,OTU39,BOLD:ABY6336,Animalia,Chordata,Mammalia,Chiroptera,Noctilionidae,Noctilio,Noctilio leporinus,NICARAGUA,5/31/15,168,NOLE,F
+nau.euma1bandersonNM,OTU435,BOLD:AAF1689,Animalia,Chordata,Mammalia,Chiroptera,Vespertilionidae,Euderma,Euderma maculatum,NEW_MEXICO,noRecord,noRecord,EUMA,noRecord

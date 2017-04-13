@@ -1,0 +1,626 @@
+tagID,OTUid,OTU_identifier,kingdom_name,phylum_name,class_name,order_name,family_name,genus_name,species_name,Site,Date,BatID,BatSpecies,Sex
+nau.7001,OTU50,BOLD:AAA3461,Animalia,Arthropoda,Insecta,Lepidoptera,Cosmopterigidae,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU104,BOLD:AAA4032,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU44,BOLD:AAA8220,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Obrima,Obrima pyraloides,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU4,BOLD:AAB0279,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU196,BOLD:AAB7737,Animalia,Arthropoda,Insecta,Lepidoptera,Crambidae,Donacaula,Donacaula melinella CS,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU40,BOLD:AAC1306,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Toxonprucha,Toxonprucha scitior,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU296,BOLD:AAC9531,Animalia,Arthropoda,Insecta,Diptera,Culicidae,Aedes,Aedes cantator,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU170,BOLD:AAH0136,Animalia,Arthropoda,Insecta,Coleoptera,Scarabaeidae,Phyllophaga,Phyllophaga anxia,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU12,BOLD:AAH5510,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,Setomorpha,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU194,BOLD:AAI1345,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Dicranomyia,Dicranomyia (Idiopyga) halterella,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU273,BOLD:AAI3614,Animalia,Arthropoda,Insecta,Diptera,Stratiomyidae,Odontomyia,Odontomyia cincta,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU181,BOLD:AAO8357,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU218,BOLD:AAR9607,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Photedes,Photedes enervata,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU31,BOLD:AAW0548,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU1,BOLD:AAW6052,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,Acrolophus,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU33,BOLD:AAY5064,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU48,BOLD:ABA3533,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU179,BOLD:ABU8802,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU9,BOLD:ABY7602,Animalia,Arthropoda,Insecta,Lepidoptera,Crambidae,Herpetogramma,Herpetogramma phaeopteralis,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU10,BOLD:ACG7223,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU7,BOLD:ACN4193,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU5,BOLD:ACO6860,Animalia,Arthropoda,Insecta,Isoptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU302,BOLD:ACV0378,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU328,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU461,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU314,SINTAX,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU83,SINTAX,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7001,OTU176,UTAX,Animalia,Arthropoda,Insecta,Diptera,Tabanidae,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,1,PTPA,F
+nau.7002,OTU50,BOLD:AAA3461,Animalia,Arthropoda,Insecta,Lepidoptera,Cosmopterigidae,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,2,LABL,F
+nau.7002,OTU354,BOLD:AAA4470,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Elaphria,Elaphria agrotina,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,2,LABL,F
+nau.7002,OTU196,BOLD:AAB7737,Animalia,Arthropoda,Insecta,Lepidoptera,Crambidae,Donacaula,Donacaula melinella CS,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,2,LABL,F
+nau.7002,OTU40,BOLD:AAC1306,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Toxonprucha,Toxonprucha scitior,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,2,LABL,F
+nau.7002,OTU185,BOLD:AAD0446,Animalia,Chordata,Mammalia,Chiroptera,Vespertilionidae,Lasiurus,Lasiurus blossevillii,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,2,LABL,F
+nau.7002,OTU12,BOLD:AAH5510,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,Setomorpha,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,2,LABL,F
+nau.7002,OTU31,BOLD:AAW0548,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,2,LABL,F
+nau.7002,OTU1,BOLD:AAW6052,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,Acrolophus,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,2,LABL,F
+nau.7002,OTU71,BOLD:ACF5230,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Ponometia,Ponometia bicolorata,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,2,LABL,F
+nau.7004,OTU13,BOLD:AAA0716,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Metaponpneumata,Metaponpneumata rogenhoferi,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,5,NOLE,F
+nau.7004,OTU4,BOLD:AAB0279,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,5,NOLE,F
+nau.7004,OTU196,BOLD:AAB7737,Animalia,Arthropoda,Insecta,Lepidoptera,Crambidae,Donacaula,Donacaula melinella CS,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,5,NOLE,F
+nau.7004,OTU12,BOLD:AAH5510,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,Setomorpha,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,5,NOLE,F
+nau.7004,OTU1,BOLD:AAW6052,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,Acrolophus,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,5,NOLE,F
+nau.7004,OTU33,BOLD:AAY5064,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,5,NOLE,F
+nau.7004,OTU199,BOLD:ABA3523,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,5,NOLE,F
+nau.7004,OTU48,BOLD:ABA3533,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,5,NOLE,F
+nau.7004,OTU39,BOLD:ABY6336,Animalia,Chordata,Mammalia,Chiroptera,Noctilionidae,Noctilio,Noctilio leporinus,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,5,NOLE,F
+nau.7004,OTU9,BOLD:ABY7602,Animalia,Arthropoda,Insecta,Lepidoptera,Crambidae,Herpetogramma,Herpetogramma phaeopteralis,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,5,NOLE,F
+nau.7004,OTU176,UTAX,Animalia,Arthropoda,Insecta,Diptera,Tabanidae,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,5,NOLE,F
+nau.7006,OTU116,BOLD:AAA0413,Animalia,Arthropoda,Insecta,Lepidoptera,Crambidae,Argyria,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,8,PTPE,F
+nau.7006,OTU16,BOLD:AAA0986,Animalia,Arthropoda,Insecta,Lepidoptera,Blastobasidae,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,8,PTPE,F
+nau.7006,OTU47,BOLD:AAA0988,Animalia,Arthropoda,Insecta,Lepidoptera,Depressariidae,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,8,PTPE,F
+nau.7006,OTU62,BOLD:AAA1494,Animalia,Arthropoda,Insecta,Lepidoptera,Geometridae,Macaria,Macaria nundinata,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,8,PTPE,F
+nau.7006,OTU223,BOLD:AAC5162,Animalia,Arthropoda,Insecta,Lepidoptera,Geometridae,Pleuroprucha,Pleuroprucha asthenaria,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,8,PTPE,F
+nau.7006,OTU94,BOLD:AAF6795,Animalia,Arthropoda,Insecta,Lepidoptera,Pyralidae,Ufa,Ufa rubedinella,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,8,PTPE,F
+nau.7006,OTU243,BOLD:ABZ9507,Animalia,Arthropoda,Insecta,Diptera,Chironomidae,Chironomus,Chironomus calligraphus,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,8,PTPE,F
+nau.7006,OTU5,BOLD:ACO6860,Animalia,Arthropoda,Insecta,Isoptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,8,PTPE,F
+nau.7006,OTU256,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,8,PTPE,F
+nau.7006,OTU264,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,8,PTPE,F
+nau.7006,OTU287,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,8,PTPE,F
+nau.7006,OTU103,SINTAX,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,8,PTPE,F
+nau.7007,OTU74,BOLD:AAA4031,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,Acrolophus,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,9,PTPA,F
+nau.7007,OTU106,BOLD:AAA5135,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Eulepidotis,Eulepidotis rectimargo,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,9,PTPA,F
+nau.7007,OTU4,BOLD:AAB0279,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,9,PTPA,F
+nau.7007,OTU73,BOLD:AAB5968,Animalia,Arthropoda,Insecta,Lepidoptera,Limacodidae,Parasa,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,9,PTPA,F
+nau.7007,OTU93,BOLD:AAC1585,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Coxina,Coxina hadenoides,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,9,PTPA,F
+nau.7007,OTU12,BOLD:AAH5510,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,Setomorpha,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,9,PTPA,F
+nau.7007,OTU1,BOLD:AAW6052,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,Acrolophus,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,9,PTPA,F
+nau.7007,OTU33,BOLD:AAY5064,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,9,PTPA,F
+nau.7007,OTU48,BOLD:ABA3533,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,9,PTPA,F
+nau.7007,OTU69,BOLD:ACG4989,Animalia,Arthropoda,Insecta,Blattodea,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,9,PTPA,F
+nau.7007,OTU7,BOLD:ACN4193,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,9,PTPA,F
+nau.7007,OTU132,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,9,PTPA,F
+nau.7007,OTU159,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,9,PTPA,F
+nau.7007,OTU191,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,9,PTPA,F
+nau.7009,OTU13,BOLD:AAA0716,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Metaponpneumata,Metaponpneumata rogenhoferi,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,11,PTPA,M
+nau.7009,OTU22,BOLD:AAA0866,Animalia,Arthropoda,Insecta,Lepidoptera,Geometridae,Macaria,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,11,PTPA,M
+nau.7009,OTU6,BOLD:AAA3313,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Coenipeta,Coenipeta bibitrix,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,11,PTPA,M
+nau.7009,OTU61,BOLD:AAB6761,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Tarache,Tarache tetragona,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,11,PTPA,M
+nau.7009,OTU18,BOLD:AAB8726,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Melipotis,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,11,PTPA,M
+nau.7009,OTU40,BOLD:AAC1306,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Toxonprucha,Toxonprucha scitior,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,11,PTPA,M
+nau.7009,OTU157,BOLD:AAE0544,Animalia,Arthropoda,Insecta,Lepidoptera,Geometridae,Pero,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,11,PTPA,M
+nau.7009,OTU9,BOLD:ABY7602,Animalia,Arthropoda,Insecta,Lepidoptera,Crambidae,Herpetogramma,Herpetogramma phaeopteralis,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,11,PTPA,M
+nau.7009,OTU113,BOLD:ACE4783,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Spodoptera,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,11,PTPA,M
+nau.7009,OTU5,BOLD:ACO6860,Animalia,Arthropoda,Insecta,Isoptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,11,PTPA,M
+nau.7010,OTU194,BOLD:AAI1345,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Dicranomyia,Dicranomyia (Idiopyga) halterella,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,12,PTPE,F
+nau.7010,OTU5,BOLD:ACO6860,Animalia,Arthropoda,Insecta,Isoptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,12,PTPE,F
+nau.7010,OTU63,SINTAX,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,12,PTPE,F
+nau.7011,OTU3,BOLD:AAA4727,Animalia,Arthropoda,Insecta,Lepidoptera,Euteliidae,Eutelia,Eutelia furcata,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,15,PTPE,M
+nau.7011,OTU4,BOLD:AAB0279,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,15,PTPE,M
+nau.7011,OTU95,BOLD:AAE2024,Animalia,Arthropoda,Insecta,Lepidoptera,Depressariidae,Stenoma,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,15,PTPE,M
+nau.7011,OTU194,BOLD:AAI1345,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Dicranomyia,Dicranomyia (Idiopyga) halterella,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,15,PTPE,M
+nau.7011,OTU78,BOLD:ACN3334,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,15,PTPE,M
+nau.7011,OTU5,BOLD:ACO6860,Animalia,Arthropoda,Insecta,Isoptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,15,PTPE,M
+nau.7011,OTU135,BOLD:ACS3139,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,15,PTPE,M
+nau.7011,OTU120,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,15,PTPE,M
+nau.7011,OTU38,SINTAX,Animalia,Chordata,Mammalia,Chiroptera,Noctilionidae,Noctilio,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,15,PTPE,M
+nau.7012,OTU3,BOLD:AAA4727,Animalia,Arthropoda,Insecta,Lepidoptera,Euteliidae,Eutelia,Eutelia furcata,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,17,PTGY,M
+nau.7012,OTU44,BOLD:AAA8220,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Obrima,Obrima pyraloides,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,17,PTGY,M
+nau.7012,OTU215,BOLD:ACE8901,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Illice,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,17,PTGY,M
+nau.7012,OTU212,BOLD:ACJ6801,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,17,PTGY,M
+nau.7012,OTU5,BOLD:ACO6860,Animalia,Arthropoda,Insecta,Isoptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,17,PTGY,M
+nau.7013,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,19,MOPR,F
+nau.7013,OTU419,BOLD:AAX2300,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,19,MOPR,F
+nau.7013,OTU254,BOLD:ABA2453,Animalia,Arthropoda,Insecta,Isoptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,19,MOPR,F
+nau.7013,OTU233,BOLD:ACA3697,Animalia,Arthropoda,Insecta,Coleoptera,Chrysomelidae,Anomoea,Anomoea laticlavia,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,19,MOPR,F
+nau.7013,OTU5,BOLD:ACO6860,Animalia,Arthropoda,Insecta,Isoptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,19,MOPR,F
+nau.7013,OTU36,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,19,MOPR,F
+nau.7013,OTU98,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,19,MOPR,F
+nau.7013,OTU111,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,19,MOPR,F
+nau.7013,OTU403,SINTAX,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,19,MOPR,F
+nau.7013,OTU66,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,19,MOPR,F
+nau.7014,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,20,MOPR,F
+nau.7014,OTU100,SINTAX,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,20,MOPR,F
+nau.7015,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,21,MOPR,F
+nau.7015,OTU5,BOLD:ACO6860,Animalia,Arthropoda,Insecta,Isoptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,21,MOPR,F
+nau.7015,OTU14,SINTAX,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,21,MOPR,F
+nau.7015,OTU66,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,21,MOPR,F
+nau.7016,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,ESCAMECCA_GRANDE_HOT_SPRINGS,5/31/16,22,MOPR,F
+nau.7019,OTU257,BOLD:AAM6826,Animalia,Arthropoda,Insecta,Hymenoptera,Formicidae,Camponotus,NA,SARDINA,6/1/16,12,RHBI,F
+nau.7019,OTU363,BOLD:ACG3125,Animalia,Arthropoda,Insecta,Blattodea,NA,NA,NA,SARDINA,6/1/16,12,RHBI,F
+nau.7019,OTU43,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,12,RHBI,F
+nau.7019,OTU80,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,12,RHBI,F
+nau.7019,OTU144,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,12,RHBI,F
+nau.7019,OTU193,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,12,RHBI,F
+nau.7019,OTU197,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,12,RHBI,F
+nau.7019,OTU217,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,12,RHBI,F
+nau.7019,OTU235,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,12,RHBI,F
+nau.7019,OTU335,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,12,RHBI,F
+nau.7019,OTU344,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,12,RHBI,F
+nau.7019,OTU356,SINTAX,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,SARDINA,6/1/16,12,RHBI,F
+nau.7019,OTU425,SINTAX,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,SARDINA,6/1/16,12,RHBI,F
+nau.7019,OTU229,SINTAX,Animalia,Chordata,Mammalia,Chiroptera,Vespertilionidae,Rhogeessa,Rhogeessa io,SARDINA,6/1/16,12,RHBI,F
+nau.7021,OTU16,BOLD:AAA0986,Animalia,Arthropoda,Insecta,Lepidoptera,Blastobasidae,NA,NA,SARDINA,6/1/16,16,CAPE,F
+nau.7021,OTU6,BOLD:AAA3313,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Coenipeta,Coenipeta bibitrix,SARDINA,6/1/16,16,CAPE,F
+nau.7021,OTU255,BOLD:AAB5414,Animalia,Arthropoda,Insecta,Lepidoptera,Coleophoridae,Coleophora,Coleophora cratipennella,SARDINA,6/1/16,16,CAPE,F
+nau.7021,OTU196,BOLD:AAB7737,Animalia,Arthropoda,Insecta,Lepidoptera,Crambidae,Donacaula,Donacaula melinella CS,SARDINA,6/1/16,16,CAPE,F
+nau.7021,OTU170,BOLD:AAH0136,Animalia,Arthropoda,Insecta,Coleoptera,Scarabaeidae,Phyllophaga,Phyllophaga anxia,SARDINA,6/1/16,16,CAPE,F
+nau.7021,OTU110,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,16,CAPE,F
+nau.7021,OTU148,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,16,CAPE,F
+nau.7021,OTU166,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,16,CAPE,F
+nau.7021,OTU167,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,16,CAPE,F
+nau.7021,OTU172,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,16,CAPE,F
+nau.7021,OTU209,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,16,CAPE,F
+nau.7021,OTU258,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,16,CAPE,F
+nau.7021,OTU268,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,16,CAPE,F
+nau.7021,OTU283,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,16,CAPE,F
+nau.7021,OTU300,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,16,CAPE,F
+nau.7021,OTU313,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,16,CAPE,F
+nau.7021,OTU485,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,16,CAPE,F
+nau.7021,OTU515,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,16,CAPE,F
+nau.7021,OTU57,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,16,CAPE,F
+nau.7021,OTU88,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,16,CAPE,F
+nau.7021,OTU426,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,16,CAPE,F
+nau.7021,OTU516,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,16,CAPE,F
+nau.7023,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,SARDINA,6/1/16,18,MYNI,F
+nau.7023,OTU213,BOLD:AAF6987,Animalia,Arthropoda,Insecta,Ephemeroptera,NA,NA,NA,SARDINA,6/1/16,18,MYNI,F
+nau.7023,OTU162,BOLD:AAH5770,Animalia,Arthropoda,Insecta,Lepidoptera,Autostichidae,NA,NA,SARDINA,6/1/16,18,MYNI,F
+nau.7023,OTU218,BOLD:AAR9607,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Photedes,Photedes enervata,SARDINA,6/1/16,18,MYNI,F
+nau.7023,OTU245,BOLD:ACH1993,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,SARDINA,6/1/16,18,MYNI,F
+nau.7023,OTU7,BOLD:ACN4193,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,SARDINA,6/1/16,18,MYNI,F
+nau.7031,OTU7,BOLD:ACN4193,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,SARDINA,6/1/16,32,MYNI,noRecord
+nau.7031,OTU43,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,32,MYNI,noRecord
+nau.7031,OTU158,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,32,MYNI,noRecord
+nau.7031,OTU335,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,32,MYNI,noRecord
+nau.7031,OTU160,SINTAX,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,SARDINA,6/1/16,32,MYNI,noRecord
+nau.7031,OTU178,SINTAX,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,SARDINA,6/1/16,32,MYNI,noRecord
+nau.7031,OTU79,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,SARDINA,6/1/16,32,MYNI,noRecord
+nau.7032,OTU121,BOLD:AAA3107,Animalia,Chordata,Mammalia,Chiroptera,Phyllostomidae,Trachops,Trachops cirrhosus,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU6,BOLD:AAA3313,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Coenipeta,Coenipeta bibitrix,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU3,BOLD:AAA4727,Animalia,Arthropoda,Insecta,Lepidoptera,Euteliidae,Eutelia,Eutelia furcata,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU4,BOLD:AAB0279,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU196,BOLD:AAB7737,Animalia,Arthropoda,Insecta,Lepidoptera,Crambidae,Donacaula,Donacaula melinella CS,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU70,BOLD:AAY4866,Animalia,Arthropoda,Insecta,Hemiptera,Cicadidae,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU48,BOLD:ABA3533,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU259,BOLD:ACJ1633,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU250,BOLD:ACJ4237,Animalia,Arthropoda,Arachnida,Trombidiformes,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU404,BOLD:ACJ9843,Animalia,Arthropoda,Collembola,Entomobryomorpha,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU87,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU114,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU131,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU151,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU183,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU186,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU195,SINTAX,Animalia,NA,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU206,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU220,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU225,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU270,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU282,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU287,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU297,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU299,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU305,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU309,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU358,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU359,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU385,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU414,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU420,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU441,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU456,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU495,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU503,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU517,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU518,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU547,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU246,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU284,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU320,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU325,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU326,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU340,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU389,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU394,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU142,SINTAX,Animalia,Arthropoda,Insecta,Orthoptera,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU277,SINTAX,Animalia,Arthropoda,Insecta,Orthoptera,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU125,SINTAX,Animalia,Arthropoda,Arachnida,Trombidiformes,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU395,SINTAX,Animalia,Arthropoda,Arachnida,Trombidiformes,NA,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7032,OTU294,SINTAX,Animalia,Arthropoda,Arachnida,Trombidiformes,Tarsonemidae,NA,NA,SARDINA,6/1/16,34,TRCI,F
+nau.7033,OTU306,BOLD:AAH5500,Animalia,Arthropoda,Insecta,Lepidoptera,Depressariidae,NA,NA,SARDINA,6/1/16,35,RHNA,F
+nau.7033,OTU334,BOLD:AAH5825,Animalia,Arthropoda,Insecta,Lepidoptera,Cosmopterigidae,NA,NA,SARDINA,6/1/16,35,RHNA,F
+nau.7033,OTU65,BOLD:AAM6232,Animalia,Arthropoda,Insecta,Diptera,Chironomidae,Coelotanypus,NA,SARDINA,6/1/16,35,RHNA,F
+nau.7033,OTU230,BOLD:ACG3703,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,SARDINA,6/1/16,35,RHNA,F
+nau.7033,OTU102,BOLD:ACR8071,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,SARDINA,6/1/16,35,RHNA,F
+nau.7033,OTU528,BOLD:ACY4794,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,SARDINA,6/1/16,35,RHNA,F
+nau.7033,OTU98,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,35,RHNA,F
+nau.7033,OTU136,SINTAX,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,SARDINA,6/1/16,35,RHNA,F
+nau.7033,OTU152,SINTAX,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,SARDINA,6/1/16,35,RHNA,F
+nau.7033,OTU154,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,SARDINA,6/1/16,35,RHNA,F
+nau.7033,OTU24,SINTAX,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,SARDINA,6/1/16,35,RHNA,F
+nau.7034,OTU467,BOLD:AAH0409,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,SARDINA,6/1/16,37,NOAL,F
+nau.7034,OTU65,BOLD:AAM6232,Animalia,Arthropoda,Insecta,Diptera,Chironomidae,Coelotanypus,NA,SARDINA,6/1/16,37,NOAL,F
+nau.7034,OTU234,BOLD:AAO7946,Animalia,Arthropoda,Insecta,Orthoptera,NA,NA,NA,SARDINA,6/1/16,37,NOAL,F
+nau.7034,OTU130,BOLD:ACB8679,Animalia,Arthropoda,Insecta,Isoptera,NA,NA,NA,SARDINA,6/1/16,37,NOAL,F
+nau.7034,OTU352,BOLD:ACJ1661,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,SARDINA,6/1/16,37,NOAL,F
+nau.7034,OTU391,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,SARDINA,6/1/16,37,NOAL,F
+nau.7034,OTU38,SINTAX,Animalia,Chordata,Mammalia,Chiroptera,Noctilionidae,Noctilio,NA,SARDINA,6/1/16,37,NOAL,F
+nau.7034,OTU176,UTAX,Animalia,Arthropoda,Insecta,Diptera,Tabanidae,NA,NA,SARDINA,6/1/16,37,NOAL,F
+nau.7035,OTU8,BOLD:AAB5742,Animalia,Chordata,Mammalia,Chiroptera,Vespertilionidae,Rhogeessa,Rhogeessa tumida,ESCAMAQUITA,6/2/16,1,RHBI,F
+nau.7035,OTU123,BOLD:AAF1735,Animalia,Arthropoda,Insecta,Diptera,Culicidae,Culex,Culex nigripalpus,ESCAMAQUITA,6/2/16,1,RHBI,F
+nau.7035,OTU180,BOLD:AAJ1744,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,ESCAMAQUITA,6/2/16,1,RHBI,F
+nau.7035,OTU274,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,1,RHBI,F
+nau.7035,OTU192,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,1,RHBI,F
+nau.7035,OTU204,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,1,RHBI,F
+nau.7035,OTU14,SINTAX,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,ESCAMAQUITA,6/2/16,1,RHBI,F
+nau.7035,OTU55,SINTAX,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,ESCAMAQUITA,6/2/16,1,RHBI,F
+nau.7035,OTU415,SINTAX,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,ESCAMAQUITA,6/2/16,1,RHBI,F
+nau.7035,OTU66,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,ESCAMAQUITA,6/2/16,1,RHBI,F
+nau.7038,OTU104,BOLD:AAA4032,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,NA,NA,ESCAMAQUITA,6/2/16,10,PTPA,M
+nau.7038,OTU3,BOLD:AAA4727,Animalia,Arthropoda,Insecta,Lepidoptera,Euteliidae,Eutelia,Eutelia furcata,ESCAMAQUITA,6/2/16,10,PTPA,M
+nau.7038,OTU4,BOLD:AAB0279,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,NA,NA,ESCAMAQUITA,6/2/16,10,PTPA,M
+nau.7038,OTU113,BOLD:ACE4783,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Spodoptera,NA,ESCAMAQUITA,6/2/16,10,PTPA,M
+nau.7038,OTU153,BOLD:ACO9676,Animalia,Arthropoda,Insecta,Blattodea,NA,NA,NA,ESCAMAQUITA,6/2/16,10,PTPA,M
+nau.7038,OTU122,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,10,PTPA,M
+nau.7039,OTU4,BOLD:AAB0279,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,NA,NA,ESCAMAQUITA,6/2/16,11,PTPA,M
+nau.7039,OTU27,BOLD:AAB1169,Animalia,Arthropoda,Insecta,Lepidoptera,Sphingidae,Eumorpha,Eumorpha vitis,ESCAMAQUITA,6/2/16,11,PTPA,M
+nau.7039,OTU130,BOLD:ACB8679,Animalia,Arthropoda,Insecta,Isoptera,NA,NA,NA,ESCAMAQUITA,6/2/16,11,PTPA,M
+nau.7041,OTU128,BOLD:AAA3932,Animalia,Arthropoda,Insecta,Lepidoptera,Sphingidae,Erinnyis,Erinnyis ello,ESCAMAQUITA,6/2/16,13,PTPA,M
+nau.7041,OTU4,BOLD:AAB0279,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,NA,NA,ESCAMAQUITA,6/2/16,13,PTPA,M
+nau.7041,OTU228,BOLD:ACF5499,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Epidromia,Epidromia linearis,ESCAMAQUITA,6/2/16,13,PTPA,M
+nau.7041,OTU122,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,13,PTPA,M
+nau.7042,OTU62,BOLD:AAA1494,Animalia,Arthropoda,Insecta,Lepidoptera,Geometridae,Macaria,Macaria nundinata,ESCAMAQUITA,6/2/16,14,PTGY,F
+nau.7042,OTU6,BOLD:AAA3313,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Coenipeta,Coenipeta bibitrix,ESCAMAQUITA,6/2/16,14,PTGY,F
+nau.7042,OTU3,BOLD:AAA4727,Animalia,Arthropoda,Insecta,Lepidoptera,Euteliidae,Eutelia,Eutelia furcata,ESCAMAQUITA,6/2/16,14,PTGY,F
+nau.7042,OTU150,BOLD:AAE3798,Animalia,Arthropoda,Insecta,Lepidoptera,Crambidae,Steniodes,Steniodes declivalis,ESCAMAQUITA,6/2/16,14,PTGY,F
+nau.7043,OTU16,BOLD:AAA0986,Animalia,Arthropoda,Insecta,Lepidoptera,Blastobasidae,NA,NA,ESCAMAQUITA,6/2/16,15,RHBI,F
+nau.7043,OTU47,BOLD:AAA0988,Animalia,Arthropoda,Insecta,Lepidoptera,Depressariidae,NA,NA,ESCAMAQUITA,6/2/16,15,RHBI,F
+nau.7043,OTU8,BOLD:AAB5742,Animalia,Chordata,Mammalia,Chiroptera,Vespertilionidae,Rhogeessa,Rhogeessa tumida,ESCAMAQUITA,6/2/16,15,RHBI,F
+nau.7043,OTU199,BOLD:ABA3523,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,ESCAMAQUITA,6/2/16,15,RHBI,F
+nau.7043,OTU86,BOLD:ABW8341,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,ESCAMAQUITA,6/2/16,15,RHBI,F
+nau.7043,OTU101_suspect_mock_chimera,BOLD:ABY4201,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Lesmone,NA,ESCAMAQUITA,6/2/16,15,RHBI,F
+nau.7043,OTU119,BOLD:ACA2723,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,ESCAMAQUITA,6/2/16,15,RHBI,F
+nau.7043,OTU182,BOLD:ACJ4855,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,ESCAMAQUITA,6/2/16,15,RHBI,F
+nau.7043,OTU19,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,15,RHBI,F
+nau.7043,OTU36,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,15,RHBI,F
+nau.7043,OTU173,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,15,RHBI,F
+nau.7043,OTU99,UTAX,Animalia,Arthropoda,Insecta,Hymenoptera,Formicidae,NA,NA,ESCAMAQUITA,6/2/16,15,RHBI,F
+nau.7044,OTU104,BOLD:AAA4032,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,NA,NA,ESCAMAQUITA,6/2/16,16,PTPA,M
+nau.7044,OTU4,BOLD:AAB0279,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,NA,NA,ESCAMAQUITA,6/2/16,16,PTPA,M
+nau.7044,OTU21,BOLD:AAB0282,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,NA,NA,ESCAMAQUITA,6/2/16,16,PTPA,M
+nau.7044,OTU149,BOLD:ACE8070,Animalia,Arthropoda,Insecta,Lepidoptera,Sphingidae,Perigonia,Perigonia ilus,ESCAMAQUITA,6/2/16,16,PTPA,M
+nau.7044,OTU238,BOLD:ACJ8478,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,ESCAMAQUITA,6/2/16,16,PTPA,M
+nau.7046,OTU16,BOLD:AAA0986,Animalia,Arthropoda,Insecta,Lepidoptera,Blastobasidae,NA,NA,ESCAMAQUITA,6/2/16,18,EPFUR,M
+nau.7046,OTU6,BOLD:AAA3313,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Coenipeta,Coenipeta bibitrix,ESCAMAQUITA,6/2/16,18,EPFUR,M
+nau.7046,OTU3,BOLD:AAA4727,Animalia,Arthropoda,Insecta,Lepidoptera,Euteliidae,Eutelia,Eutelia furcata,ESCAMAQUITA,6/2/16,18,EPFUR,M
+nau.7046,OTU21,BOLD:AAB0282,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,NA,NA,ESCAMAQUITA,6/2/16,18,EPFUR,M
+nau.7046,OTU196,BOLD:AAB7737,Animalia,Arthropoda,Insecta,Lepidoptera,Crambidae,Donacaula,Donacaula melinella CS,ESCAMAQUITA,6/2/16,18,EPFUR,M
+nau.7046,OTU18,BOLD:AAB8726,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Melipotis,NA,ESCAMAQUITA,6/2/16,18,EPFUR,M
+nau.7046,OTU40,BOLD:AAC1306,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Toxonprucha,Toxonprucha scitior,ESCAMAQUITA,6/2/16,18,EPFUR,M
+nau.7046,OTU296,BOLD:AAC9531,Animalia,Arthropoda,Insecta,Diptera,Culicidae,Aedes,Aedes cantator,ESCAMAQUITA,6/2/16,18,EPFUR,M
+nau.7046,OTU218,BOLD:AAR9607,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Photedes,Photedes enervata,ESCAMAQUITA,6/2/16,18,EPFUR,M
+nau.7046,OTU105,BOLD:ACR5974,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,ESCAMAQUITA,6/2/16,18,EPFUR,M
+nau.7046,OTU461,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,18,EPFUR,M
+nau.7046,OTU19,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,18,EPFUR,M
+nau.7046,OTU36,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,18,EPFUR,M
+nau.7046,OTU68,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,18,EPFUR,M
+nau.7046,OTU192,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,18,EPFUR,M
+nau.7046,OTU465,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,18,EPFUR,M
+nau.7046,OTU176,UTAX,Animalia,Arthropoda,Insecta,Diptera,Tabanidae,NA,NA,ESCAMAQUITA,6/2/16,18,EPFUR,M
+nau.7048,OTU3,BOLD:AAA4727,Animalia,Arthropoda,Insecta,Lepidoptera,Euteliidae,Eutelia,Eutelia furcata,ESCAMAQUITA,6/2/16,26,PTPA,M
+nau.7048,OTU4,BOLD:AAB0279,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,NA,NA,ESCAMAQUITA,6/2/16,26,PTPA,M
+nau.7048,OTU95,BOLD:AAE2024,Animalia,Arthropoda,Insecta,Lepidoptera,Depressariidae,Stenoma,NA,ESCAMAQUITA,6/2/16,26,PTPA,M
+nau.7049,OTU17,BOLD:AAA0932,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Bleptina,NA,ESCAMAQUITA,6/2/16,27,MOSI,F
+nau.7049,OTU370,BOLD:AAA4173,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Eulepidotis,Eulepidotis caeruleilinea,ESCAMAQUITA,6/2/16,27,MOSI,F
+nau.7049,OTU3,BOLD:AAA4727,Animalia,Arthropoda,Insecta,Lepidoptera,Euteliidae,Eutelia,Eutelia furcata,ESCAMAQUITA,6/2/16,27,MOSI,F
+nau.7049,OTU18,BOLD:AAB8726,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Melipotis,NA,ESCAMAQUITA,6/2/16,27,MOSI,F
+nau.7049,OTU40,BOLD:AAC1306,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Toxonprucha,Toxonprucha scitior,ESCAMAQUITA,6/2/16,27,MOSI,F
+nau.7049,OTU48,BOLD:ABA3533,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,ESCAMAQUITA,6/2/16,27,MOSI,F
+nau.7050,OTU398,BOLD:AAA0948,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Platynota,Platynota subargentea,ESCAMAQUITA,6/2/16,29,PTPA,F
+nau.7050,OTU3,BOLD:AAA4727,Animalia,Arthropoda,Insecta,Lepidoptera,Euteliidae,Eutelia,Eutelia furcata,ESCAMAQUITA,6/2/16,29,PTPA,F
+nau.7050,OTU4,BOLD:AAB0279,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,NA,NA,ESCAMAQUITA,6/2/16,29,PTPA,F
+nau.7050,OTU165,BOLD:AAK3271,Animalia,Arthropoda,Insecta,Hymenoptera,Braconidae,Odontobracon,NA,ESCAMAQUITA,6/2/16,29,PTPA,F
+nau.7050,OTU153,BOLD:ACO9676,Animalia,Arthropoda,Insecta,Blattodea,NA,NA,NA,ESCAMAQUITA,6/2/16,29,PTPA,F
+nau.7050,OTU85,BOLD:ADB6464,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,ESCAMAQUITA,6/2/16,29,PTPA,F
+nau.7050,OTU91,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,29,PTPA,F
+nau.7050,OTU216,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,29,PTPA,F
+nau.7050,OTU307,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,29,PTPA,F
+nau.7050,OTU347,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,29,PTPA,F
+nau.7050,OTU421,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,29,PTPA,F
+nau.7050,OTU439,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,29,PTPA,F
+nau.7050,OTU500,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,29,PTPA,F
+nau.7050,OTU263,SINTAX,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,ESCAMAQUITA,6/2/16,29,PTPA,F
+nau.7050,OTU331,SINTAX,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,ESCAMAQUITA,6/2/16,29,PTPA,F
+nau.7052,OTU118,BOLD:AAA0953,Animalia,Arthropoda,Insecta,Lepidoptera,Coleophoridae,NA,NA,ESCAMAQUITA,6/2/16,31,RHBI,F
+nau.7052,OTU200,BOLD:AAA1036,Animalia,Arthropoda,Insecta,Lepidoptera,Blastobasidae,NA,NA,ESCAMAQUITA,6/2/16,31,RHBI,F
+nau.7052,OTU50,BOLD:AAA3461,Animalia,Arthropoda,Insecta,Lepidoptera,Cosmopterigidae,NA,NA,ESCAMAQUITA,6/2/16,31,RHBI,F
+nau.7052,OTU8,BOLD:AAB5742,Animalia,Chordata,Mammalia,Chiroptera,Vespertilionidae,Rhogeessa,Rhogeessa tumida,ESCAMAQUITA,6/2/16,31,RHBI,F
+nau.7052,OTU41,BOLD:AAH4593,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,ESCAMAQUITA,6/2/16,31,RHBI,F
+nau.7052,OTU180,BOLD:AAJ1744,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,ESCAMAQUITA,6/2/16,31,RHBI,F
+nau.7052,OTU364,BOLD:AAY9256,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,Aristotelia,NA,ESCAMAQUITA,6/2/16,31,RHBI,F
+nau.7052,OTU275,BOLD:ABY2232,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,ESCAMAQUITA,6/2/16,31,RHBI,F
+nau.7052,OTU208,BOLD:ACG0465,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,ESCAMAQUITA,6/2/16,31,RHBI,F
+nau.7052,OTU161,BOLD:ACG4524,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,ESCAMAQUITA,6/2/16,31,RHBI,F
+nau.7052,OTU51,BOLD:ACJ4530,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,ESCAMAQUITA,6/2/16,31,RHBI,F
+nau.7052,OTU19,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,31,RHBI,F
+nau.7052,OTU122,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,31,RHBI,F
+nau.7052,OTU202,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,31,RHBI,F
+nau.7052,OTU232,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,31,RHBI,F
+nau.7052,OTU262,SINTAX,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,ESCAMAQUITA,6/2/16,31,RHBI,F
+nau.7053,OTU13,BOLD:AAA0716,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Metaponpneumata,Metaponpneumata rogenhoferi,ESCAMAQUITA,6/2/16,32,PTGY,F
+nau.7053,OTU22,BOLD:AAA0866,Animalia,Arthropoda,Insecta,Lepidoptera,Geometridae,Macaria,NA,ESCAMAQUITA,6/2/16,32,PTGY,F
+nau.7053,OTU6,BOLD:AAA3313,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Coenipeta,Coenipeta bibitrix,ESCAMAQUITA,6/2/16,32,PTGY,F
+nau.7053,OTU59,BOLD:AAA4172,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Eulepidotis,Eulepidotis juncida,ESCAMAQUITA,6/2/16,32,PTGY,F
+nau.7053,OTU96,BOLD:AAA4337,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Magusa,Magusa divaricata,ESCAMAQUITA,6/2/16,32,PTGY,F
+nau.7053,OTU3,BOLD:AAA4727,Animalia,Arthropoda,Insecta,Lepidoptera,Euteliidae,Eutelia,Eutelia furcata,ESCAMAQUITA,6/2/16,32,PTGY,F
+nau.7053,OTU106,BOLD:AAA5135,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Eulepidotis,Eulepidotis rectimargo,ESCAMAQUITA,6/2/16,32,PTGY,F
+nau.7053,OTU52,BOLD:AAA6304,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Azeta,Azeta ceramina,ESCAMAQUITA,6/2/16,32,PTGY,F
+nau.7053,OTU82,BOLD:AAA7586,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Hypsoropha,Hypsoropha adeona,ESCAMAQUITA,6/2/16,32,PTGY,F
+nau.7053,OTU60,BOLD:AAB4195,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Catabenoides,Catabenoides terminellus,ESCAMAQUITA,6/2/16,32,PTGY,F
+nau.7053,OTU40,BOLD:AAC1306,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Toxonprucha,Toxonprucha scitior,ESCAMAQUITA,6/2/16,32,PTGY,F
+nau.7053,OTU203,BOLD:AAD0740,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Spodoptera,Spodoptera albula,ESCAMAQUITA,6/2/16,32,PTGY,F
+nau.7053,OTU58,BOLD:AAF7338,Animalia,Arthropoda,Insecta,Lepidoptera,Crambidae,Pilocrocis,Pilocrocis calamistis,ESCAMAQUITA,6/2/16,32,PTGY,F
+nau.7054,OTU62,BOLD:AAA1494,Animalia,Arthropoda,Insecta,Lepidoptera,Geometridae,Macaria,Macaria nundinata,ESCAMAQUITA,6/2/16,34,PTPA,M
+nau.7054,OTU6,BOLD:AAA3313,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Coenipeta,Coenipeta bibitrix,ESCAMAQUITA,6/2/16,34,PTPA,M
+nau.7054,OTU3,BOLD:AAA4727,Animalia,Arthropoda,Insecta,Lepidoptera,Euteliidae,Eutelia,Eutelia furcata,ESCAMAQUITA,6/2/16,34,PTPA,M
+nau.7054,OTU4,BOLD:AAB0279,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,NA,NA,ESCAMAQUITA,6/2/16,34,PTPA,M
+nau.7054,OTU27,BOLD:AAB1169,Animalia,Arthropoda,Insecta,Lepidoptera,Sphingidae,Eumorpha,Eumorpha vitis,ESCAMAQUITA,6/2/16,34,PTPA,M
+nau.7054,OTU61,BOLD:AAB6761,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Tarache,Tarache tetragona,ESCAMAQUITA,6/2/16,34,PTPA,M
+nau.7054,OTU149,BOLD:ACE8070,Animalia,Arthropoda,Insecta,Lepidoptera,Sphingidae,Perigonia,Perigonia ilus,ESCAMAQUITA,6/2/16,34,PTPA,M
+nau.7054,OTU91,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,34,PTPA,M
+nau.7054,OTU132,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,ESCAMAQUITA,6/2/16,34,PTPA,M
+nau.7054,OTU75,SINTAX,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,ESCAMAQUITA,6/2/16,34,PTPA,M
+nau.7055,OTU6,BOLD:AAA3313,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Coenipeta,Coenipeta bibitrix,ESCAMAQUITA,6/2/16,35,PTPA,M
+nau.7055,OTU3,BOLD:AAA4727,Animalia,Arthropoda,Insecta,Lepidoptera,Euteliidae,Eutelia,Eutelia furcata,ESCAMAQUITA,6/2/16,35,PTPA,M
+nau.7055,OTU44,BOLD:AAA8220,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Obrima,Obrima pyraloides,ESCAMAQUITA,6/2/16,35,PTPA,M
+nau.7055,OTU21,BOLD:AAB0282,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,NA,NA,ESCAMAQUITA,6/2/16,35,PTPA,M
+nau.7055,OTU18,BOLD:AAB8726,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Melipotis,NA,ESCAMAQUITA,6/2/16,35,PTPA,M
+nau.7055,OTU95,BOLD:AAE2024,Animalia,Arthropoda,Insecta,Lepidoptera,Depressariidae,Stenoma,NA,ESCAMAQUITA,6/2/16,35,PTPA,M
+nau.7055,OTU33,BOLD:AAY5064,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,NA,NA,ESCAMAQUITA,6/2/16,35,PTPA,M
+nau.7055,OTU528,BOLD:ACY4794,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,ESCAMAQUITA,6/2/16,35,PTPA,M
+nau.7055,OTU83,SINTAX,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,ESCAMAQUITA,6/2/16,35,PTPA,M
+nau.7056,OTU17,BOLD:AAA0932,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Bleptina,NA,ESCAMAQUITA,6/2/16,39,STPA,F
+nau.7056,OTU3,BOLD:AAA4727,Animalia,Arthropoda,Insecta,Lepidoptera,Euteliidae,Eutelia,Eutelia furcata,ESCAMAQUITA,6/2/16,39,STPA,F
+nau.7056,OTU4,BOLD:AAB0279,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,NA,NA,ESCAMAQUITA,6/2/16,39,STPA,F
+nau.7056,OTU176,UTAX,Animalia,Arthropoda,Insecta,Diptera,Tabanidae,NA,NA,ESCAMAQUITA,6/2/16,39,STPA,F
+nau.7059,OTU3,BOLD:AAA4727,Animalia,Arthropoda,Insecta,Lepidoptera,Euteliidae,Eutelia,Eutelia furcata,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU408,BOLD:AAO8154,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU64,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU108,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU114,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU168,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU171,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU201,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU265,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU288,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU303,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU349,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU353,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU372,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU374,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU379,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU383,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU393,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU405,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU407,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU432,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU433,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU444,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU445,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU446,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU490,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU505,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU506,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU507,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU541,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU549,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU237,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU240,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU280,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU326,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU350,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU382,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU406,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU417,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU418,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU452,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU529,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU530,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU56,UTAX,Animalia,Arthropoda,Maxillopoda,NA,NA,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7059,OTU176,UTAX,Animalia,Arthropoda,Insecta,Diptera,Tabanidae,NA,NA,FINCA_GUADELUPE,6/4/16,42,STPA,F
+nau.7073,OTU11,BOLD:ACB0302,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,FINCA_GUADELUPE,6/4/15,57-A,PHST,F
+nau.7073,OTU124,SINTAX,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,FINCA_GUADELUPE,6/4/15,57-A,PHST,F
+nau.7073,OTU126,SINTAX,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,FINCA_GUADELUPE,6/4/15,57-A,PHST,F
+nau.7074,OTU11,BOLD:ACB0302,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,FINCA_GUADELUPE,6/4/15,57-B,PHST,F
+nau.7074,OTU124,SINTAX,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,FINCA_GUADELUPE,6/4/15,57-B,PHST,F
+nau.7074,OTU126,SINTAX,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,FINCA_GUADELUPE,6/4/15,57-B,PHST,F
+nau.7074,OTU262,SINTAX,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,FINCA_GUADELUPE,6/4/15,57-B,PHST,F
+nau.7074,OTU290,SINTAX,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,FINCA_GUADELUPE,6/4/15,57-B,PHST,F
+nau.7075,OTU11,BOLD:ACB0302,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,FINCA_GUADELUPE,6/4/15,57-C,PHST,F
+nau.7075,OTU124,SINTAX,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,FINCA_GUADELUPE,6/4/15,57-C,PHST,F
+nau.7075,OTU126,SINTAX,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,FINCA_GUADELUPE,6/4/15,57-C,PHST,F
+nau.7075,OTU290,SINTAX,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,FINCA_GUADELUPE,6/4/15,57-C,PHST,F
+nau.7120,OTU17,BOLD:AAA0932,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Bleptina,NA,NICARAGUA,5/20/15,135,PHDI,noRecord
+nau.7120,OTU6,BOLD:AAA3313,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Coenipeta,Coenipeta bibitrix,NICARAGUA,5/20/15,135,PHDI,noRecord
+nau.7120,OTU194,BOLD:AAI1345,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Dicranomyia,Dicranomyia (Idiopyga) halterella,NICARAGUA,5/20/15,135,PHDI,noRecord
+nau.7120,OTU70,BOLD:AAY4866,Animalia,Arthropoda,Insecta,Hemiptera,Cicadidae,NA,NA,NICARAGUA,5/20/15,135,PHDI,noRecord
+nau.7120,OTU90,BOLD:ABA3539,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/20/15,135,PHDI,noRecord
+nau.7120,OTU292,BOLD:ABX9062,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/20/15,135,PHDI,noRecord
+nau.7120,OTU98,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,135,PHDI,noRecord
+nau.7120,OTU341,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,135,PHDI,noRecord
+nau.7121,OTU6,BOLD:AAA3313,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Coenipeta,Coenipeta bibitrix,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU18,BOLD:AAB8726,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Melipotis,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU210,BOLD:AAH5091,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,Aristotelia,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU70,BOLD:AAY4866,Animalia,Arthropoda,Insecta,Hemiptera,Cicadidae,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU90,BOLD:ABA3539,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU357,BOLD:ABX7969,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU292,BOLD:ABX9062,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU291,BOLD:ABY3639,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU190,BOLD:ACA2544,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU23,BOLD:ACJ2489,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU105,BOLD:ACR5974,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU115,BOLD:ACR6126,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU231,BOLD:ACR7012,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU19,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU109,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU117,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU122,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU127,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU134,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU137,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU138,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU140,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU141,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU147,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU156,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU174,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU177,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU207,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU224,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU227,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU317,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU339,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU550,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU100,SINTAX,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU248,SINTAX,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU145,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7121,OTU557,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,NICARAGUA,5/20/15,148,EPFUR,noRecord
+nau.7122,OTU6,BOLD:AAA3313,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Coenipeta,Coenipeta bibitrix,NICARAGUA,5/20/15,155,EPFUR,noRecord
+nau.7122,OTU164,BOLD:AAH0552,Animalia,Arthropoda,Insecta,Lepidoptera,Blastobasidae,NA,NA,NICARAGUA,5/20/15,155,EPFUR,noRecord
+nau.7122,OTU199,BOLD:ABA3523,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/20/15,155,EPFUR,noRecord
+nau.7122,OTU90,BOLD:ABA3539,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/20/15,155,EPFUR,noRecord
+nau.7122,OTU54,BOLD:ACA0434,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,NICARAGUA,5/20/15,155,EPFUR,noRecord
+nau.7122,OTU92,BOLD:ACA2803,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/20/15,155,EPFUR,noRecord
+nau.7122,OTU112,BOLD:ACF6261,Animalia,Arthropoda,Insecta,Blattodea,NA,NA,NA,NICARAGUA,5/20/15,155,EPFUR,noRecord
+nau.7122,OTU115,BOLD:ACR6126,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/20/15,155,EPFUR,noRecord
+nau.7122,OTU98,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,155,EPFUR,noRecord
+nau.7122,OTU122,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,155,EPFUR,noRecord
+nau.7122,OTU129,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,155,EPFUR,noRecord
+nau.7122,OTU143,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,155,EPFUR,noRecord
+nau.7122,OTU163,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,155,EPFUR,noRecord
+nau.7122,OTU219,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,155,EPFUR,noRecord
+nau.7122,OTU272,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,155,EPFUR,noRecord
+nau.7122,OTU281,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/20/15,155,EPFUR,noRecord
+nau.7122,OTU100,SINTAX,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/20/15,155,EPFUR,noRecord
+nau.7122,OTU146,SINTAX,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,NICARAGUA,5/20/15,155,EPFUR,noRecord
+nau.7122,OTU66,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,NICARAGUA,5/20/15,155,EPFUR,noRecord
+nau.7122,OTU187,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,NICARAGUA,5/20/15,155,EPFUR,noRecord
+nau.7124,OTU47,BOLD:AAA0988,Animalia,Arthropoda,Insecta,Lepidoptera,Depressariidae,NA,NA,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU200,BOLD:AAA1036,Animalia,Arthropoda,Insecta,Lepidoptera,Blastobasidae,NA,NA,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU501,BOLD:AAA3993,Animalia,Arthropoda,Insecta,Lepidoptera,Coleophoridae,Coleophora,Coleophora duplicis group,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU20,BOLD:AAA4646,Animalia,Arthropoda,Insecta,Lepidoptera,Crambidae,Microthyris,Microthyris prolongalis,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU440,BOLD:AAA9062,Animalia,Chordata,Mammalia,Chiroptera,Vespertilionidae,Eptesicus,Eptesicus furinalis,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU8,BOLD:AAB5742,Animalia,Chordata,Mammalia,Chiroptera,Vespertilionidae,Rhogeessa,Rhogeessa tumida,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU18,BOLD:AAB8726,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Melipotis,NA,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU164,BOLD:AAH0552,Animalia,Arthropoda,Insecta,Lepidoptera,Blastobasidae,NA,NA,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU513,BOLD:AAN5879,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,NA,NA,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU368,BOLD:AAN5882,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Erioptera,Erioptera caliptera,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU688,BOLD:AAQ2471,Animalia,Arthropoda,Insecta,Coleoptera,Carabidae,Selenophorus,Selenophorus famulus,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU512,BOLD:AAU6544,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Ormosia,Ormosia affinis,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU86,BOLD:ABW8341,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU454,BOLD:ACA9904,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Cheilotrichia,Cheilotrichia stigmatica,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU230,BOLD:ACG3703,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU77,BOLD:ACL5711,Animalia,Arthropoda,Insecta,Blattodea,NA,NA,NA,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU49,BOLD:ACO4682,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU115,BOLD:ACR6126,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU231,BOLD:ACR7012,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU341,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU260,SINTAX,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU345,SINTAX,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU690,SINTAX,Animalia,Chordata,Mammalia,Chiroptera,Vespertilionidae,Eptesicus,NA,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU278,UTAX,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7124,OTU241,UTAX,Animalia,Arthropoda,Insecta,Coleoptera,Cerambycidae,Psyrassa,Psyrassa,NICARAGUA,5/31/15,60,EPBR?,F
+nau.7125,OTU175,BOLD:AAA3286,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Gonodonta,Gonodonta pyrgo,NICARAGUA,5/31/15,57,EUGL,F
+nau.7125,OTU20,BOLD:AAA4646,Animalia,Arthropoda,Insecta,Lepidoptera,Crambidae,Microthyris,Microthyris prolongalis,NICARAGUA,5/31/15,57,EUGL,F
+nau.7125,OTU253,BOLD:AAA8912,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Anomis,Anomis cataggelus,NICARAGUA,5/31/15,57,EUGL,F
+nau.7125,OTU18,BOLD:AAB8726,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Melipotis,NA,NICARAGUA,5/31/15,57,EUGL,F
+nau.7125,OTU101_suspect_mock_chimera,BOLD:ABY4201,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Lesmone,NA,NICARAGUA,5/31/15,57,EUGL,F
+nau.7125,OTU205,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,NICARAGUA,5/31/15,57,EUGL,F
+nau.7127,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,NICARAGUA,5/31/15,43,MOPR,F
+nau.7127,OTU111,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/31/15,43,MOPR,F
+nau.7127,OTU66,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,NICARAGUA,5/31/15,43,MOPR,F
+nau.7128,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,NICARAGUA,5/31/15,41,MOMO,F
+nau.7129,OTU47,BOLD:AAA0988,Animalia,Arthropoda,Insecta,Lepidoptera,Depressariidae,NA,NA,NICARAGUA,5/31/15,40,RHDU,F
+nau.7129,OTU242,BOLD:AAA1041,Animalia,Arthropoda,Insecta,Lepidoptera,Blastobasidae,NA,NA,NICARAGUA,5/31/15,40,RHDU,F
+nau.7129,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,NICARAGUA,5/31/15,40,RHDU,F
+nau.7129,OTU249,BOLD:AAA6020,Animalia,Arthropoda,Insecta,Diptera,Muscidae,Musca,Musca domestica,NICARAGUA,5/31/15,40,RHDU,F
+nau.7129,OTU8,BOLD:AAB5742,Animalia,Chordata,Mammalia,Chiroptera,Vespertilionidae,Rhogeessa,Rhogeessa tumida,NICARAGUA,5/31/15,40,RHDU,F
+nau.7129,OTU188,BOLD:AAH5247,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,Acrolophus,NA,NICARAGUA,5/31/15,40,RHDU,F
+nau.7129,OTU86,BOLD:ABW8341,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,NICARAGUA,5/31/15,40,RHDU,F
+nau.7129,OTU101_suspect_mock_chimera,BOLD:ABY4201,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Lesmone,NA,NICARAGUA,5/31/15,40,RHDU,F
+nau.7129,OTU97,BOLD:ACJ2690,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/31/15,40,RHDU,F
+nau.7129,OTU49,BOLD:ACO4682,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,NICARAGUA,5/31/15,40,RHDU,F
+nau.7129,OTU222,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,NICARAGUA,5/31/15,40,RHDU,F
+nau.7129,OTU81,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/31/15,40,RHDU,F
+nau.7129,OTU221,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/31/15,40,RHDU,F
+nau.7129,OTU100,SINTAX,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/31/15,40,RHDU,F
+nau.7129,OTU251,SINTAX,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,NICARAGUA,5/31/15,40,RHDU,F
+nau.7130,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,NICARAGUA,5/31/15,38,MOPR,F
+nau.7130,OTU10,BOLD:ACG7223,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,NICARAGUA,5/31/15,38,MOPR,F
+nau.7133,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,NICARAGUA,5/31/15,29,MOMO,F
+nau.7133,OTU10,BOLD:ACG7223,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,NICARAGUA,5/31/15,29,MOMO,F
+nau.7134,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,NICARAGUA,5/31/15,27,MOPR,F
+nau.7134,OTU65,BOLD:AAM6232,Animalia,Arthropoda,Insecta,Diptera,Chironomidae,Coelotanypus,NA,NICARAGUA,5/31/15,27,MOPR,F
+nau.7134,OTU10,BOLD:ACG7223,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,NICARAGUA,5/31/15,27,MOPR,F
+nau.7135,OTU252,BOLD:AAA0687,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Bleptina,NA,NICARAGUA,5/31/15,25,LAEG,F
+nau.7135,OTU17,BOLD:AAA0932,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Bleptina,NA,NICARAGUA,5/31/15,25,LAEG,F
+nau.7135,OTU16,BOLD:AAA0986,Animalia,Arthropoda,Insecta,Lepidoptera,Blastobasidae,NA,NA,NICARAGUA,5/31/15,25,LAEG,F
+nau.7135,OTU6,BOLD:AAA3313,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Coenipeta,Coenipeta bibitrix,NICARAGUA,5/31/15,25,LAEG,F
+nau.7135,OTU226,BOLD:AAA4745,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Elaphria,Elaphria trolia,NICARAGUA,5/31/15,25,LAEG,F
+nau.7135,OTU198,BOLD:AAA6882,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Elaphria,NA,NICARAGUA,5/31/15,25,LAEG,F
+nau.7135,OTU135,BOLD:ACS3139,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,NICARAGUA,5/31/15,25,LAEG,F
+nau.7136,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,NICARAGUA,5/31/15,23,MOPR,F
+nau.7136,OTU10,BOLD:ACG7223,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,NICARAGUA,5/31/15,23,MOPR,F
+nau.7136,OTU89,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/31/15,23,MOPR,F
+nau.7137,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,NICARAGUA,5/31/15,21,EUUN,F
+nau.7137,OTU29,BOLD:AAE7337,Animalia,Arthropoda,Insecta,Coleoptera,Carabidae,Calosoma,Calosoma eremicola,NICARAGUA,5/31/15,21,EUUN,F
+nau.7137,OTU54,BOLD:ACA0434,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,NICARAGUA,5/31/15,21,EUUN,F
+nau.7137,OTU10,BOLD:ACG7223,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,NICARAGUA,5/31/15,21,EUUN,F
+nau.7137,OTU139,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,NICARAGUA,5/31/15,21,EUUN,F
+nau.7137,OTU155,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,NICARAGUA,5/31/15,21,EUUN,F
+nau.7138,OTU2,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,NICARAGUA,5/31/15,176,CAPE,M
+nau.7138,OTU4,BOLD:AAB0279,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,NA,NA,NICARAGUA,5/31/15,176,CAPE,M
+nau.7138,OTU236,BOLD:AAB7247,Animalia,Arthropoda,Insecta,Lepidoptera,Ypsolophidae,Ypsolopha,Ypsolopha barberella,NICARAGUA,5/31/15,176,CAPE,M
+nau.7138,OTU29,BOLD:AAE7337,Animalia,Arthropoda,Insecta,Coleoptera,Carabidae,Calosoma,Calosoma eremicola,NICARAGUA,5/31/15,176,CAPE,M
+nau.7138,OTU298,BOLD:AAG7045,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,NICARAGUA,5/31/15,176,CAPE,M
+nau.7138,OTU218,BOLD:AAR9607,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Photedes,Photedes enervata,NICARAGUA,5/31/15,176,CAPE,M
+nau.7138,OTU214,BOLD:ABA3151,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/31/15,176,CAPE,M
+nau.7138,OTU48,BOLD:ABA3533,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/31/15,176,CAPE,M
+nau.7138,OTU10,BOLD:ACG7223,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,NICARAGUA,5/31/15,176,CAPE,M
+nau.7138,OTU64,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,NICARAGUA,5/31/15,176,CAPE,M
+nau.7138,OTU201,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,NICARAGUA,5/31/15,176,CAPE,M
+nau.7138,OTU286,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,NICARAGUA,5/31/15,176,CAPE,M
+nau.7138,OTU100,SINTAX,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/31/15,176,CAPE,M
+nau.7138,OTU211,SINTAX,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,NICARAGUA,5/31/15,176,CAPE,M
+nau.7139,OTU3,BOLD:AAA4727,Animalia,Arthropoda,Insecta,Lepidoptera,Euteliidae,Eutelia,Eutelia furcata,NICARAGUA,5/31/15,168,NOLE,F
+nau.7139,OTU4,BOLD:AAB0279,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,NA,NA,NICARAGUA,5/31/15,168,NOLE,F
+nau.7139,OTU48,BOLD:ABA3533,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/31/15,168,NOLE,F
+nau.7139,OTU39,BOLD:ABY6336,Animalia,Chordata,Mammalia,Chiroptera,Noctilionidae,Noctilio,Noctilio leporinus,NICARAGUA,5/31/15,168,NOLE,F
+nau.7139,OTU10,BOLD:ACG7223,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,NICARAGUA,5/31/15,168,NOLE,F
+nau.7139,MockIM4_pident=100.0_OTU25,CFMR:IM4,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Agrotis,Agrotis ipsilon,NICARAGUA,5/31/15,168,NOLE,F
+nau.7139,OTU321,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,NICARAGUA,5/31/15,168,NOLE,F
+nau.7139,OTU176,UTAX,Animalia,Arthropoda,Insecta,Diptera,Tabanidae,NA,NA,NICARAGUA,5/31/15,168,NOLE,F
+nau.7140,OTU133,BOLD:ABY3400,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/31/15,164,EPFUR,F
+nau.7140,OTU23,BOLD:ACJ2489,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/31/15,164,EPFUR,F
+nau.7140,OTU492,BOLD:ACJ2489,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/31/15,164,EPFUR,F
+nau.7140,OTU15,BOLD:ACK5957,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/31/15,164,EPFUR,F
+nau.7140,OTU184,BOLD:ACR5931,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/31/15,164,EPFUR,F
+nau.7140,OTU67,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/31/15,164,EPFUR,F
+nau.7140,OTU169,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/31/15,164,EPFUR,F
+nau.7140,OTU342,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/31/15,164,EPFUR,F
+nau.7140,OTU343,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/31/15,164,EPFUR,F
+nau.7140,OTU189,SINTAX,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/31/15,164,EPFUR,F
+nau.7141,OTU6,BOLD:AAA3313,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Coenipeta,Coenipeta bibitrix,NICARAGUA,5/31/15,105,EPFUR,F
+nau.7141,OTU107,BOLD:ACF5863,Animalia,Arthropoda,Insecta,Blattodea,Blaberidae,Pycnoscelus,Pycnoscelus surinamensis,NICARAGUA,5/31/15,105,EPFUR,F
+nau.7141,OTU15,BOLD:ACK5957,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/31/15,105,EPFUR,F
+nau.7141,OTU318,BOLD:ACL2853,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,NICARAGUA,5/31/15,105,EPFUR,F
+nau.7141,OTU311,BOLD:ACS2358,Animalia,Arthropoda,Insecta,Blattodea,NA,NA,NA,NICARAGUA,5/31/15,105,EPFUR,F
+nau.7141,OTU43,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/31/15,105,EPFUR,F
+nau.7141,OTU266,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/31/15,105,EPFUR,F
+nau.7141,OTU316,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/31/15,105,EPFUR,F
+nau.7141,OTU335,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,NICARAGUA,5/31/15,105,EPFUR,F
+nau.7141,OTU66,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,NICARAGUA,5/31/15,105,EPFUR,F
+nau.7141,OTU267,SINTAX,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,NICARAGUA,5/31/15,105,EPFUR,F
+nau.euma1bandersonNM,OTU424,BOLD:AAA7111,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Acronicta,Acronicta insularis,NEW_MEXICO,noRecord,noRecord,EUMA,noRecord
+nau.euma1bandersonNM,OTU319,BOLD:AAB0891,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Acronicta,Acronicta lepusculina,NEW_MEXICO,noRecord,noRecord,EUMA,noRecord
+nau.euma1bandersonNM,OTU336,BOLD:AAB1002,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Euparthenos,Euparthenos nubilis,NEW_MEXICO,noRecord,noRecord,EUMA,noRecord
+nau.euma1bandersonNM,OTU435,BOLD:AAF1689,Animalia,Chordata,Mammalia,Chiroptera,Vespertilionidae,Euderma,Euderma maculatum,NEW_MEXICO,noRecord,noRecord,EUMA,noRecord
+nau.euma1bandersonNM,OTU76,BOLD:AAG2173,Animalia,Arthropoda,Insecta,Diptera,Tachinidae,Ceromasia,Ceromasia aurifrons,NEW_MEXICO,noRecord,noRecord,EUMA,noRecord
+nau.euma1bandersonNM,OTU12,BOLD:AAH5510,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,Setomorpha,NA,NEW_MEXICO,noRecord,noRecord,EUMA,noRecord
+nau.euma1bandersonNM,OTU218,BOLD:AAR9607,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Photedes,Photedes enervata,NEW_MEXICO,noRecord,noRecord,EUMA,noRecord
+nau.euma1bandersonNM,OTU1,BOLD:AAW6052,Animalia,Arthropoda,Insecta,Lepidoptera,Tineidae,Acrolophus,NA,NEW_MEXICO,noRecord,noRecord,EUMA,noRecord
+nau.euma1bandersonNM,OTU46,BOLD:ABY5257,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Apamea,Apamea devastator,NEW_MEXICO,noRecord,noRecord,EUMA,noRecord
+nau.euma1bandersonNM,OTU53,BOLD:ACE7158,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,NEW_MEXICO,noRecord,noRecord,EUMA,noRecord
+nau.euma1bandersonNM,OTU176,UTAX,Animalia,Arthropoda,Insecta,Diptera,Tabanidae,NA,NA,NEW_MEXICO,noRecord,noRecord,EUMA,noRecord
