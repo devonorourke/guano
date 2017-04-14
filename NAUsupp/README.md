@@ -59,6 +59,9 @@ The metadata file containing Site, Date, BatSpecies, Sex, and BatTagID values fo
 **nau_amptk_pipeline.ipynb**
 A notebook explaining the methods and tools employed to process Illumina read data, cluster unique OTUs, and assigne taxonomic information to each OTU. The file contains explanations and motivations behind the entire workflow and includes links when possible to the programs used for each step.  
 
+**nauall.final.csv**
+Data table consisting of the total number of filtered reads mapped to each OTU called from the DADA2 pipeline on a per-sample basis. Very useful table when looking at the binary 'presence/absence' taxonomic information and determining whether or not an OTU (and subsequent classification) is something to further pursue, as well as deterimine the range of sequences per OTU per sample (ie. is there an equal number of sequences per OTU within a sample, or do just a few OTUs dominate all reads).
+
 **nauall.otus.taxonomy.fa**
 The fasta file of all uniquely clustered OTUs in the dataset. A useful file to perform secondary alignments against non-BOLD databases for both confirmation of existing taxonomic classifications as well as corrections or improvements when lacking in our current BOLD-dependent calls.  
 
