@@ -14,6 +14,12 @@ This is the master data table containing all metadata and taxonomic information 
 **BOLDonlyMinRead110.df.csv**
 Same information as with **BOLDonly.df.csv** (above), however the data has been subset to include only observations with at least 110 reads. Note these are the post-filtered, non-normalized values following the 'AMPtk filter' step as indicated in the **sean_amptk_pipeline.ipynb** file.
 
+**OTUidTaxaClassifications.csv**
+Table of the output of the **taxifying_blastout.R** script. Contains potential alignment matches which may improve upon the taxonomic resolution in the existing **BOLDonlyMinRead110.df.csv** file. Note that multiple hits may exist for a given OTU.
+
+**OTUlist.110minReads.txt**
+A single filed text file listing all OTUs present in the **min110Reads.fa** file. Used for the subsequent BLAST search used in the **taxifying_blastout.R** script.
+
 **cleanBlastout.txt**
 The partially filtered BLAST output. See Part 5 within **sean_amptk_pipeline.ipynb** for details. Information was used in the **taxifying_blastout.R** script to generate taxonomic assignments for each OTU present in the **OTUlist.110minReads.txt** file.
 
@@ -23,7 +29,7 @@ The complete data table containing all OTUs identified by all three classificati
 **metadf.csv**
 The metadata file containing Site, Date, BatSpecies, Sex, and BatTagID values for each guano sample analyzed.
 
-**min110OTUs.fa**
+**min110Reads.fa**
 Same information as in **sean.otus.taxonomy.fa** but containing only OTUs which were part of the **BOLDonlyMinRead110.df.csv** subset. In other words, it's a reduced fasta file with only OTUs with at least 110 reads represented in every sample containing that OTU.
 
 **otu_analysis.R**
@@ -32,11 +38,6 @@ The R script used to generate most of the data tables and figures presented here
 **taxifying_blastout.R**
 R script which takes a fasta file of unknown taxonomic classification and assigns identity using Genbanks 'nr' database.
 
-**OTUidTaxaClassifications.csv**
-Table of the output of the **taxifying_blastout.R** script. Contains potential alignment matches which may improve upon the taxonomic resolution in the existing **BOLDonlyMinRead110.df.csv** file. Note that multiple hits may exist for a given OTU.
-
-**OTUlist.110minReads.txt**
-A single filed text file listing all OTUs present in the **min110OTUs.fa** file. Used for the subsequent BLAST search used in the **taxifying_blastout.R** script.
 
 **sean_amptk_pipeline.ipynb**
 A notebook explaining the methods and tools employed to process Illumina read data, cluster unique OTUs, and assigne taxonomic information to each OTU. The file contains explanations and motivations behind the entire workflow and includes links when possible to the programs used for each step.  
