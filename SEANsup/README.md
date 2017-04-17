@@ -26,6 +26,15 @@ The metadata file containing Site, Date, BatSpecies, Sex, and BatTagID values fo
 **min110OTUs.fa**
 Same information as in **sean.otus.taxonomy.fa** but containing only OTUs which were part of the **BOLDonlyMinRead110.df.csv** subset. In other words, it's a reduced fasta file with only OTUs with at least 110 reads represented in every sample containing that OTU.
 
+**otu_analysis.R**
+The R script used to generate most of the data tables and figures presented herein.  
+
+**taxifying_blastout.R**
+R script which takes a fasta file of unknown taxonomic classification and assigns identity using Genbanks 'nr' database.
+
+**OTUidTaxaClassifications.csv**
+Table of the output of the **taxifying_blastout.R** script. Contains potential alignment matches which may improve upon the taxonomic resolution in the existing **BOLDonlyMinRead110.df.csv** file. Note that multiple hits may exist for a given OTU.
+
 **OTUlist.110minReads.txt**
 A single filed text file listing all OTUs present in the **min110OTUs.fa** file. Used for the subsequent BLAST search used in the **taxifying_blastout.R** script.
 
@@ -35,8 +44,10 @@ A notebook explaining the methods and tools employed to process Illumina read da
 **sean.final.txt**
 Tab-delimited file consisting of the total number of filtered reads mapped to each OTU called from the DADA2 pipeline on a per-sample basis. Very useful table when looking at the binary 'presence/absence' taxonomic information and determining whether or not an OTU (and subsequent classification) is something to further pursue, as well as deterimine the range of sequences per OTU per sample (ie. is there an equal number of sequences per OTU within a sample, or do just a few OTUs dominate all reads).
 
+**sean.otu_table.taxonomy.txt**
+Output file from Part 4 in the AMPtk pipeline (see **sean_amptk_pipeline.ipynb** ); contains a matrix of binary presence/absence of a given OTU for each sample. The file serves as the input for generating the **BOLDonly.df.csv** file (and derivatives) - see **otu_analysis.R** for details.
+
 **sean.otus.taxonomy.fa**
 The fasta file of all uniquely clustered OTUs in the dataset. A useful file to perform secondary alignments against non-BOLD databases for both confirmation of existing taxonomic classifications as well as corrections or improvements when lacking in our current BOLD-dependent calls.  
 
-**otu_analysis.R**
-The R script used to generate most of the data tables and figures presented herein.  
+
