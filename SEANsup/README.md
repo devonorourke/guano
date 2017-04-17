@@ -35,12 +35,8 @@ Same information as in **sean.otus.taxonomy.fa** but containing only OTUs which 
 **otu_analysis.R**
 The R script used to generate most of the data tables and figures presented herein.  
 
-**taxifying_blastout.R**
-R script which takes a fasta file of unknown taxonomic classification and assigns identity using Genbanks 'nr' database.
-
-
 **sean_amptk_pipeline.ipynb**
-A notebook explaining the methods and tools employed to process Illumina read data, cluster unique OTUs, and assigne taxonomic information to each OTU. The file contains explanations and motivations behind the entire workflow and includes links when possible to the programs used for each step.  
+A notebook explaining the methods and tools employed to process Illumina read data, cluster unique OTUs, and assigne taxonomic information to each OTU. The file contains explanations and motivations behind the entire workflow and includes links when possible to the programs used for each step.
 
 **sean.final.txt**
 Tab-delimited file consisting of the total number of filtered reads mapped to each OTU called from the DADA2 pipeline on a per-sample basis. Very useful table when looking at the binary 'presence/absence' taxonomic information and determining whether or not an OTU (and subsequent classification) is something to further pursue, as well as deterimine the range of sequences per OTU per sample (ie. is there an equal number of sequences per OTU within a sample, or do just a few OTUs dominate all reads).
@@ -49,6 +45,7 @@ Tab-delimited file consisting of the total number of filtered reads mapped to ea
 Output file from Part 4 in the AMPtk pipeline (see **sean_amptk_pipeline.ipynb** ); contains a matrix of binary presence/absence of a given OTU for each sample. The file serves as the input for generating the **BOLDonly.df.csv** file (and derivatives) - see **otu_analysis.R** for details.
 
 **sean.otus.taxonomy.fa**
-The fasta file of all uniquely clustered OTUs in the dataset. A useful file to perform secondary alignments against non-BOLD databases for both confirmation of existing taxonomic classifications as well as corrections or improvements when lacking in our current BOLD-dependent calls.  
+The fasta file of all uniquely clustered OTUs in the dataset. A useful file to perform secondary alignments against non-BOLD databases for both confirmation of existing taxonomic classifications as well as corrections or improvements when lacking in our current BOLD-dependent calls.
 
-
+**taxifying_blastout.R**
+R script which takes a fasta file of unknown taxonomic classification and assigns identity using Genbanks 'nr' database.
