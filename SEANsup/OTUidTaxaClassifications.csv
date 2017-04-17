@@ -1,0 +1,46 @@
+TAXid,OTUid,Accession,pid,length,bit,eval,ncbi-class,ncbi-order,ncbi-family,ncbi-genus,ncbi-species
+312888,OTU15,gi|752377132|gb|KF114026.1|,100,180,333,7e-88,Insecta,Hemiptera,Aphididae,Hyalopterus,Hyalopterus pruni
+1863957,OTU15,gi|1039309391|gb|KR566238.1|,100,170,315,3e-82,Insecta,Hemiptera,Aphididae,Hyalopterus,Hyalopterus sp. BOLD:AAB9081
+1276923,OTU15,gi|570340918|gb|KF639409.1|,97.78,180,311,3e-81,Insecta,Hemiptera,Aphididae,Hyalopterus,Hyalopterus amygdali
+214366,OTU17,gi|630054846|gb|KJ379744.1|,100,180,333,7e-88,Insecta,Lepidoptera,Erebidae,Spilosoma,Spilosoma virginica
+741543,OTU24,gi|295078000|gb|GU700315.1|,98.89,180,322,2e-84,Insecta,Lepidoptera,Noctuidae,Zale,Zale phaeograpta
+835138,OTU24,gi|304280150|gb|HM429977.1|,98.89,180,322,2e-84,Insecta,Lepidoptera,NA,NA,Lepidoptera sp. BOLD:AAB1415
+1139505,OTU24,gi|374938498|gb|JQ572100.1|,98.33,180,316,7e-83,Insecta,Lepidoptera,Noctuidae,Melipotis,Melipotis sp. punctifinisDHJ02
+1178044,OTU24,gi|558478017|gb|KF492179.1|,98.33,180,316,7e-83,Insecta,Lepidoptera,Noctuidae,Zale,Zale lunifera
+1371882,OTU24,gi|529403773|gb|KF394207.1|,98.33,180,316,7e-83,Insecta,Lepidoptera,Geometridae,Chaetolopha,Chaetolopha pseudooxyntis
+1496507,OTU24,gi|630055952|gb|KJ380297.1|,98.33,180,316,7e-83,Insecta,Lepidoptera,Noctuidae,Zale,Zale intenta
+744700,OTU24,gi|374910187|gb|JQ558203.1|,98.33,180,316,7e-83,Insecta,Lepidoptera,Notodontidae,Poresta,Poresta sp. 'lophocera'
+527615,OTU25,gi|188503077|gb|EU701554.1|,100,180,333,7e-88,Insecta,Hemiptera,Aphididae,Capitophorus,Capitophorus xanthii
+132712,OTU25,gi|570341032|gb|KF639466.1|,97.22,180,305,2e-79,Insecta,Hemiptera,Aphididae,Macrosiphoniella,Macrosiphoniella tanacetaria
+1710756,OTU26,gi|1031894579|gb|KR489230.1|,99.44,180,327,3e-86,Insecta,Coleoptera,Scarabaeidae,Phyllophaga,Phyllophaga anxia
+220092,OTU34,gi|188503655|gb|EU701843.1|,100,180,333,7e-88,Insecta,Hemiptera,Pemphigidae,Pemphigus,Pemphigus populiramulorum
+1323456,OTU34,gi|480359546|gb|JX536301.1|,98.33,180,316,7e-83,Insecta,Hemiptera,Pemphigidae,Pemphigus,Pemphigus sp. 25483
+1357731,OTU34,gi|523584070|gb|KC710386.1|,98.33,180,316,7e-83,Insecta,Hemiptera,Pemphigidae,Pemphigus,Pemphigus sp. XYL-2013
+396697,OTU34,gi|523584072|gb|KC710387.1|,98.33,180,316,7e-83,Insecta,Hemiptera,Pemphigidae,Pemphigus,Pemphigus borealis
+396700,OTU34,gi|523584076|gb|KC710389.1|,98.33,180,316,7e-83,Insecta,Hemiptera,Pemphigidae,Pemphigus,Pemphigus tibetensis
+511038,OTU34,gi|409689395|gb|JQ916108.1|,98.33,180,316,7e-83,Insecta,Hemiptera,Aphididae,Aphis,Aphis kurosawai
+128817,OTU34,gi|1039308153|gb|KR565619.1|,97.78,180,311,3e-81,Insecta,Hemiptera,Pemphigidae,Pemphigus,Pemphigus bursarius
+1863181,OTU34,gi|1039310649|gb|KR566867.1|,97.78,180,311,3e-81,Insecta,Hemiptera,Aphididae,NA,Aphididae sp. BOLD:AAD1826
+988176,OTU4,gi|1042276100|gb|KX041911.1|,97.22,180,305,2e-79,Insecta,Lepidoptera,Notodontidae,Drymonia,Drymonia dodonaea
+988178,OTU4,gi|326369700|gb|JF415359.1|,97.22,180,305,2e-79,Insecta,Lepidoptera,Notodontidae,Drymonia,Drymonia ruficornis
+527278,OTU40,gi|930542719|gb|KT704600.1|,100,180,333,7e-88,Arachnida,Araneae,Lycosidae,Pirata,Pirata piraticus
+398851,OTU44,gi|116607421|gb|DQ889079.1|,100,179,331,3e-87,Malacostraca,Isopoda,Armadillidiidae,Armadillidium,Armadillidium sp. BOLD:AAH4108
+13347,OTU44,gi|974141976|gb|KR424609.1|,98.88,179,320,6e-84,Malacostraca,Isopoda,Armadillidiidae,Armadillidium,Armadillidium vulgare
+946270,OTU47,gi|676260445|gb|KM000131.1|,100,180,333,7e-88,Insecta,Hemiptera,Cicadidae,Diceroprocta,Diceroprocta semicincta
+1823137,OTU48,gi|1039330599|gb|KR519059.1|,98.89,180,322,2e-84,Insecta,Diptera,Limoniidae,NA,Limoniidae sp. BOLD:ACL8650
+140742,OTU48,gi|930623245|gb|KT708474.1|,98.33,180,316,7e-83,Insecta,Diptera,Limoniidae,Epiphragma,Epiphragma fasciapenne
+1822979,OTU48,gi|1015827122|gb|KR395743.1|,97.78,180,311,3e-81,Insecta,Diptera,Limoniidae,Epiphragma,Epiphragma sp. BOLD:ACL8547
+1002954,OTU49,gi|1042281515|gb|KX042528.1|,98.89,180,322,2e-84,Insecta,Lepidoptera,Crambidae,Udea,Udea ferrugalis
+1558090,OTU49,gi|323111031|gb|HQ949689.1|,98.89,180,322,2e-84,Insecta,Lepidoptera,Erebidae,Prorocopis,Prorocopis stenota
+1377312,OTU49,gi|529376911|gb|KF400090.1|,98.88,179,320,6e-84,Insecta,Lepidoptera,Yponomeutidae,Teinoptila,Teinoptila interruptella
+405018,OTU49,gi|870901274|gb|KP870682.1|,98.88,179,320,6e-84,Insecta,Lepidoptera,Nymphalidae,Argynnis,Argynnis pandora
+1002938,OTU49,gi|1042274125|gb|KX041109.1|,98.33,180,316,7e-83,Insecta,Lepidoptera,Crambidae,Udea,Udea accolalis
+1498833,OTU49,gi|1042281525|gb|KX042530.1|,98.33,180,316,7e-83,Insecta,Lepidoptera,Crambidae,Eudonia,Eudonia angustea
+687515,OTU49,gi|1031886527|gb|KR450042.1|,98.33,180,316,7e-83,Insecta,Lepidoptera,Gelechiidae,Telphusa,Telphusa longifasciella
+1656713,OTU57,gi|835458352|gb|KR040116.1|,100,180,333,7e-88,Insecta,Hemiptera,Lygaeidae,Nysius,Nysius raphanus
+1864209,OTU57,gi|1039318091|gb|KR570588.1|,100,180,333,7e-88,Insecta,Hemiptera,Lygaeidae,Nysius,Nysius sp. BOLD:AAN8267
+1511236,OTU57,gi|659495959|gb|KJ541649.1|,98.89,180,322,2e-84,Insecta,Hemiptera,Lygaeidae,Nysius,Nysius cymoides
+259784,OTU58,gi|48256536|gb|AY253062.1|,98.85,174,309,1e-80,Insecta,Hemiptera,Miridae,Phytocoris,Phytocoris sp. WCW-2003j
+881705,OTU58,gi|306994973|gb|HQ106108.1|,97.22,180,305,2e-79,Insecta,Hemiptera,Miridae,Phytocoris,Phytocoris conspurcatus
+237292,OTU58,gi|48256542|gb|AY253065.1|,97.21,179,303,6e-79,Insecta,Hemiptera,Miridae,Phytocoris,Phytocoris ramosus
+1864086,OTU58,gi|1039313613|gb|KR568349.1|,97.06,170,287,6e-74,Insecta,Hemiptera,Miridae,NA,Miridae sp. BOLD:AAD6225

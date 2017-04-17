@@ -1,0 +1,298 @@
+SampleID,OTUid,OTU_identifier,kingdom_name,phylum_name,class_name,order_name,family_name,genus_name,species_name,SiteNumber,CollectionDate,WeekOfYear,NetNumber,BirdSpecies,Ordercaught,Description,Notes
+sea.10,OTU55,BOLD:AAL2743,Animalia,Arthropoda,Arachnida,Trombidiformes,Pionidae,Forelia,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU19,BOLD:AAQ2462,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU14,BOLD:AAY7735,Animalia,Arthropoda,Insecta,Coleoptera,Carabidae,Laemostenus,Laemostenus complanatus,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU22,BOLD:AAY9818,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU1,BOLD:ABA8895,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU27,BOLD:ABX0192,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU47,BOLD:ABX3680,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU35,BOLD:ABX3686,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU31,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU32,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU37,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU39,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU41,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU42,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU43,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU45,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU46,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU53,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU54,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU56,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU73,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU76,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU83,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU86,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU95,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU13,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU59,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.10,OTU99,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord
+sea.115,OTU82,BOLD:AAA2650,Animalia,Arthropoda,Insecta,Lepidoptera,Pyralidae,Ephestiodes,Ephestiodes gilvescentella,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16
+sea.115,OTU106,BOLD:AAA3993,Animalia,Arthropoda,Insecta,Lepidoptera,Coleophoridae,Coleophora,Coleophora duplicis group,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16
+sea.115,OTU132,BOLD:AAA4646,Animalia,Arthropoda,Insecta,Lepidoptera,Crambidae,Microthyris,Microthyris prolongalis,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16
+sea.115,OTU33,BOLD:AAB0223,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16
+sea.115,OTU100,BOLD:AAB1667,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Argyrotaenia,Argyrotaenia quercifoliana,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16
+sea.115,OTU40,BOLD:AAB6784,Animalia,Arthropoda,Arachnida,Araneae,Lycosidae,Pirata,Pirata piraticus,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16
+sea.115,OTU126,BOLD:AAB8726,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Melipotis,NA,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16
+sea.115,OTU164,BOLD:AAC7542,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,Taygete,Taygete attributella,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16
+sea.115,OTU34,BOLD:AAD5316,Animalia,Arthropoda,Insecta,Hemiptera,Aphididae,Pemphigus,Pemphigus populiramulorum,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16
+sea.115,OTU96,BOLD:AAF6788,Animalia,Arthropoda,Insecta,Hymenoptera,Formicidae,Formica,Formica neogagates,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16
+sea.115,OTU152,BOLD:AAF9064,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Elephantomyia,Elephantomyia westwoodi,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16
+sea.115,OTU125,BOLD:AAG8670,Animalia,Arthropoda,Insecta,Hemiptera,Miridae,Phytocoris,NA,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16
+sea.115,OTU162,BOLD:AAG8977,Animalia,Arthropoda,Insecta,Hemiptera,Derbidae,Otiocerus,Otiocerus degeerii,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16
+sea.115,OTU26,BOLD:AAH0136,Animalia,Arthropoda,Insecta,Coleoptera,Scarabaeidae,Phyllophaga,Phyllophaga anxia,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16
+sea.115,OTU163,BOLD:AAL5086,Animalia,Arthropoda,Insecta,Diptera,Mycetophilidae,Exechiopsis,NA,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16
+sea.115,OTU131,BOLD:AAO3944,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Geranomyia,NA,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16
+sea.115,OTU101,BOLD:AAZ2161,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16
+sea.115,OTU1,BOLD:ABA8895,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16
+sea.115,OTU144,BOLD:ABA8950,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16
+sea.115,OTU36,SINTAX,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16
+sea.115,OTU72,SINTAX,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16
+sea.115,OTU20,SINTAX,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16
+sea.123,OTU33,BOLD:AAB0223,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN1_YBCH1_062013,noRecord
+sea.123,OTU96,BOLD:AAF6788,Animalia,Arthropoda,Insecta,Hymenoptera,Formicidae,Formica,Formica neogagates,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN1_YBCH1_062013,noRecord
+sea.123,OTU91,BOLD:AAG2348,Animalia,Arthropoda,Insecta,Diptera,Tachinidae,Lixophaga,NA,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN1_YBCH1_062013,noRecord
+sea.123,OTU26,BOLD:AAH0136,Animalia,Arthropoda,Insecta,Coleoptera,Scarabaeidae,Phyllophaga,Phyllophaga anxia,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN1_YBCH1_062013,noRecord
+sea.123,OTU138,BOLD:AAH3589,Animalia,Arthropoda,Insecta,Mantodea,NA,NA,NA,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN1_YBCH1_062013,noRecord
+sea.123,OTU52,BOLD:AAP6367,Animalia,Arthropoda,Insecta,Coleoptera,Elateridae,Hemicrepidius,Hemicrepidius brevicollis,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN1_YBCH1_062013,noRecord
+sea.123,OTU108,BOLD:AAP6551,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN1_YBCH1_062013,noRecord
+sea.123,OTU48,BOLD:ADB9451,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Epiphragma,Epiphragma fasciapenne,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN1_YBCH1_062013,noRecord
+sea.123,OTU21,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN1_YBCH1_062013,noRecord
+sea.123,OTU107,SINTAX,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN1_YBCH1_062013,noRecord
+sea.134,OTU60,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,GBN11_YBCH1_052513,noRecord
+sea.134,OTU94,BOLD:AAC6102,Animalia,Arthropoda,Insecta,Lepidoptera,Blastobasidae,Pigritia,NA,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,GBN11_YBCH1_052513,noRecord
+sea.134,OTU11,BOLD:AAG7013,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,NA,NA,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,GBN11_YBCH1_052513,noRecord
+sea.134,OTU116,BOLD:AAH3496,Animalia,Arthropoda,Arachnida,Araneae,NA,NA,NA,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,GBN11_YBCH1_052513,noRecord
+sea.134,OTU44,BOLD:AAH4108,Animalia,Arthropoda,Malacostraca,Isopoda,Armadillidiidae,Armadillidium,NA,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,GBN11_YBCH1_052513,noRecord
+sea.134,OTU52,BOLD:AAP6367,Animalia,Arthropoda,Insecta,Coleoptera,Elateridae,Hemicrepidius,Hemicrepidius brevicollis,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,GBN11_YBCH1_052513,noRecord
+sea.134,OTU78,BOLD:ABV3669,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,GBN11_YBCH1_052513,noRecord
+sea.134,OTU133,BOLD:ABZ6564,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Clepsis,Clepsis peritana,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,GBN11_YBCH1_052513,noRecord
+sea.134,OTU92,BOLD:ACA9904,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Cheilotrichia,Cheilotrichia stigmatica,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,GBN11_YBCH1_052513,noRecord
+sea.134,OTU97,BOLD:ADA7198,Animalia,Arthropoda,Insecta,Diptera,Chironomidae,Procladius,Procladius signatus,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,GBN11_YBCH1_052513,noRecord
+sea.134,MockIM49_pident=100.0_OTU18,CFMR:IM49,Animalia,Arthropoda,Insecta,Blattodea,Ectobiidae,Supella,Supella longipalpa,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,GBN11_YBCH1_052513,noRecord
+sea.156,OTU106,BOLD:AAA3993,Animalia,Arthropoda,Insecta,Lepidoptera,Coleophoridae,Coleophora,Coleophora duplicis group,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord
+sea.156,OTU100,BOLD:AAB1667,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Argyrotaenia,Argyrotaenia quercifoliana,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord
+sea.156,OTU94,BOLD:AAC6102,Animalia,Arthropoda,Insecta,Lepidoptera,Blastobasidae,Pigritia,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord
+sea.156,OTU139,BOLD:AAF8979,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Metalimnobia,Metalimnobia novaeangliae,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord
+sea.156,OTU68,BOLD:AAF9055,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Erioptera,Erioptera septemtrionis,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord
+sea.156,OTU26,BOLD:AAH0136,Animalia,Arthropoda,Insecta,Coleoptera,Scarabaeidae,Phyllophaga,Phyllophaga anxia,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord
+sea.156,OTU55,BOLD:AAL2743,Animalia,Arthropoda,Arachnida,Trombidiformes,Pionidae,Forelia,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord
+sea.156,OTU62,BOLD:AAL7331,Animalia,Arthropoda,Insecta,Diptera,Chironomidae,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord
+sea.156,OTU131,BOLD:AAO3944,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Geranomyia,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord
+sea.156,OTU30,BOLD:AAO8357,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord
+sea.156,OTU52,BOLD:AAP6367,Animalia,Arthropoda,Insecta,Coleoptera,Elateridae,Hemicrepidius,Hemicrepidius brevicollis,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord
+sea.156,OTU153,BOLD:AAV0590,Animalia,Arthropoda,Arachnida,Mesostigmata,Blattisociidae,Cheiroseius,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord
+sea.156,OTU1,BOLD:ABA8895,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord
+sea.156,OTU35,BOLD:ABX3686,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord
+sea.156,OTU92,BOLD:ACA9904,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Cheilotrichia,Cheilotrichia stigmatica,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord
+sea.156,OTU97,BOLD:ADA7198,Animalia,Arthropoda,Insecta,Diptera,Chironomidae,Procladius,Procladius signatus,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord
+sea.156,OTU48,BOLD:ADB9451,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Epiphragma,Epiphragma fasciapenne,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord
+sea.156,MockIM21_pident=97.8_OTU7,CFMR:IM23,Animalia,Arthropoda,Insecta,Coleoptera,Coccinellidae,Harmonia,Harmonia axyridis,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord
+sea.156,MockIM39_pident=100.0_OTU10,CFMR:IM39,Animalia,Arthropoda,Insecta,Coleoptera,Chrysomelidae,Paria,Paria fragariae,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord
+sea.156,OTU50,SINTAX,Animalia,Arthropoda,NA,NA,NA,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord
+sea.156,OTU23,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord
+sea.156,OTU168,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord
+sea.156,OTU117,SINTAX,Animalia,Arthropoda,Insecta,Diptera,Tipulidae,Tipula,Tipula oleracea,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord
+sea.164,OTU113_suspect_mock_chimera,BOLD:AAA2590,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Xestia,Xestia smithii,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN1_SOSP2_062013,noRecord
+sea.164,OTU17,BOLD:AAA3347,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Spilosoma,Spilosoma virginica,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN1_SOSP2_062013,noRecord
+sea.164,OTU106,BOLD:AAA3993,Animalia,Arthropoda,Insecta,Lepidoptera,Coleophoridae,Coleophora,Coleophora duplicis group,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN1_SOSP2_062013,noRecord
+sea.164,OTU64,BOLD:AAA4130,Animalia,Arthropoda,Insecta,Lepidoptera,Lasiocampidae,Malacosoma,Malacosoma disstria,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN1_SOSP2_062013,noRecord
+sea.164,OTU66,BOLD:AAB0224,Animalia,Arthropoda,Insecta,Lepidoptera,Yponomeutidae,Swammerdamia,Swammerdamia caesiella,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN1_SOSP2_062013,noRecord
+sea.164,OTU134,BOLD:AAB5440,Animalia,Arthropoda,Collembola,Entomobryomorpha,Tomoceridae,Tomocerus,Tomocerus minor,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN1_SOSP2_062013,noRecord
+sea.164,OTU24,BOLD:AAE4693,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN1_SOSP2_062013,noRecord
+sea.164,OTU124,BOLD:AAE8479,Animalia,Arthropoda,Insecta,Ephemeroptera,Heptageniidae,Maccaffertium,Maccaffertium mexicanum,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN1_SOSP2_062013,noRecord
+sea.164,OTU89,BOLD:AAF3316,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,Chionodes,Chionodes soter,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN1_SOSP2_062013,noRecord
+sea.164,OTU120,BOLD:AAF9016,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN1_SOSP2_062013,noRecord
+sea.164,OTU68,BOLD:AAF9055,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Erioptera,Erioptera septemtrionis,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN1_SOSP2_062013,noRecord
+sea.164,OTU103,BOLD:AAG4927,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN1_SOSP2_062013,noRecord
+sea.164,OTU55,BOLD:AAL2743,Animalia,Arthropoda,Arachnida,Trombidiformes,Pionidae,Forelia,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN1_SOSP2_062013,noRecord
+sea.164,OTU62,BOLD:AAL7331,Animalia,Arthropoda,Insecta,Diptera,Chironomidae,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN1_SOSP2_062013,noRecord
+sea.164,OTU52,BOLD:AAP6367,Animalia,Arthropoda,Insecta,Coleoptera,Elateridae,Hemicrepidius,Hemicrepidius brevicollis,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN1_SOSP2_062013,noRecord
+sea.164,OTU169,BOLD:AAU8748,Animalia,Arthropoda,Insecta,Hymenoptera,Ichneumonidae,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN1_SOSP2_062013,noRecord
+sea.164,OTU14,BOLD:AAY7735,Animalia,Arthropoda,Insecta,Coleoptera,Carabidae,Laemostenus,Laemostenus complanatus,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN1_SOSP2_062013,noRecord
+sea.164,OTU1,BOLD:ABA8895,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN1_SOSP2_062013,noRecord
+sea.164,OTU80,BOLD:ACL3444,Animalia,Arthropoda,Arachnida,Trombidiformes,Limnesiidae,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN1_SOSP2_062013,noRecord
+sea.164,OTU48,BOLD:ADB9451,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Epiphragma,Epiphragma fasciapenne,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN1_SOSP2_062013,noRecord
+sea.164,MockIM15_pident=99.4_OTU12,CFMR:IM15,Animalia,Arthropoda,Insecta,Diptera,Bombyliidae,Lepidophora,Lepidophora lutea,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN1_SOSP2_062013,noRecord
+sea.164,OTU53,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN1_SOSP2_062013,noRecord
+sea.164,OTU20,SINTAX,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN1_SOSP2_062013,noRecord
+sea.164,OTU51,SINTAX,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN1_SOSP2_062013,noRecord
+sea.171,OTU64,BOLD:AAA4130,Animalia,Arthropoda,Insecta,Lepidoptera,Lasiocampidae,Malacosoma,Malacosoma disstria,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN6_BEWR1_062113,noRecord
+sea.171,OTU66,BOLD:AAB0224,Animalia,Arthropoda,Insecta,Lepidoptera,Yponomeutidae,Swammerdamia,Swammerdamia caesiella,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN6_BEWR1_062113,noRecord
+sea.171,OTU40,BOLD:AAB6784,Animalia,Arthropoda,Arachnida,Araneae,Lycosidae,Pirata,Pirata piraticus,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN6_BEWR1_062113,noRecord
+sea.171,OTU24,BOLD:AAE4693,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN6_BEWR1_062113,noRecord
+sea.171,OTU68,BOLD:AAF9055,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Erioptera,Erioptera septemtrionis,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN6_BEWR1_062113,noRecord
+sea.171,OTU58,BOLD:AAG8886,Animalia,Arthropoda,Insecta,Hemiptera,Miridae,Phytocoris,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN6_BEWR1_062113,noRecord
+sea.171,OTU26,BOLD:AAH0136,Animalia,Arthropoda,Insecta,Coleoptera,Scarabaeidae,Phyllophaga,Phyllophaga anxia,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN6_BEWR1_062113,noRecord
+sea.171,OTU55,BOLD:AAL2743,Animalia,Arthropoda,Arachnida,Trombidiformes,Pionidae,Forelia,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN6_BEWR1_062113,noRecord
+sea.171,OTU62,BOLD:AAL7331,Animalia,Arthropoda,Insecta,Diptera,Chironomidae,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN6_BEWR1_062113,noRecord
+sea.171,OTU57,BOLD:AAN8267,Animalia,Arthropoda,Insecta,Hemiptera,Lygaeidae,Nysius,Nysius raphanus,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN6_BEWR1_062113,noRecord
+sea.171,OTU71,BOLD:AAO8105,Animalia,Arthropoda,Insecta,Orthoptera,NA,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN6_BEWR1_062113,noRecord
+sea.171,OTU1,BOLD:ABA8895,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN6_BEWR1_062113,noRecord
+sea.171,OTU80,BOLD:ACL3444,Animalia,Arthropoda,Arachnida,Trombidiformes,Limnesiidae,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN6_BEWR1_062113,noRecord
+sea.171,OTU90,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN6_BEWR1_062113,noRecord
+sea.171,OTU20,SINTAX,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN6_BEWR1_062113,noRecord
+sea.171,OTU29,SINTAX,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN6_BEWR1_062113,noRecord
+sea.171,OTU85,SINTAX,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN6_BEWR1_062113,noRecord
+sea.20,OTU17,BOLD:AAA3347,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Spilosoma,Spilosoma virginica,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU64,BOLD:AAA4130,Animalia,Arthropoda,Insecta,Lepidoptera,Lasiocampidae,Malacosoma,Malacosoma disstria,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU33,BOLD:AAB0223,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU66,BOLD:AAB0224,Animalia,Arthropoda,Insecta,Lepidoptera,Yponomeutidae,Swammerdamia,Swammerdamia caesiella,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU15,BOLD:AAB9081,Animalia,Arthropoda,Insecta,Hemiptera,Aphididae,Hyalopterus,Hyalopterus pruni,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU89,BOLD:AAF3316,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,Chionodes,Chionodes soter,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU68,BOLD:AAF9055,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Erioptera,Erioptera septemtrionis,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU74,BOLD:AAH8545,Animalia,Arthropoda,Insecta,Hemiptera,Miridae,Agnocoris,Agnocoris pulverulentus,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU55,BOLD:AAL2743,Animalia,Arthropoda,Arachnida,Trombidiformes,Pionidae,Forelia,NA,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU62,BOLD:AAL7331,Animalia,Arthropoda,Insecta,Diptera,Chironomidae,NA,NA,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU19,BOLD:AAQ2462,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU25,BOLD:AAW8127,Animalia,Arthropoda,Insecta,Hemiptera,Aphididae,Capitophorus,Capitophorus xanthii,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU14,BOLD:AAY7735,Animalia,Arthropoda,Insecta,Coleoptera,Carabidae,Laemostenus,Laemostenus complanatus,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU22,BOLD:AAY9818,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU1,BOLD:ABA8895,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU69,BOLD:ABW8764,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU27,BOLD:ABX0192,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU47,BOLD:ABX3680,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU35,BOLD:ABX3686,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU80,BOLD:ACL3444,Animalia,Arthropoda,Arachnida,Trombidiformes,Limnesiidae,NA,NA,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU31,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU32,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU39,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU41,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU43,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU46,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU53,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU75,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU77,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU110,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU13,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU59,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.20,OTU99,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord
+sea.26,OTU98,BOLD:AAB7030,Animalia,Arthropoda,Insecta,Diptera,Chironomidae,Chironomus,NA,5,6/23/14,26,10,ywar,1,sea01.05n10_ywar1_062314,noRecord
+sea.26,OTU15,BOLD:AAB9081,Animalia,Arthropoda,Insecta,Hemiptera,Aphididae,Hyalopterus,Hyalopterus pruni,5,6/23/14,26,10,ywar,1,sea01.05n10_ywar1_062314,noRecord
+sea.26,OTU4,BOLD:AAD7692,Animalia,Arthropoda,Insecta,Lepidoptera,Notodontidae,Drymonia,Drymonia dodonaea,5,6/23/14,26,10,ywar,1,sea01.05n10_ywar1_062314,noRecord
+sea.26,OTU91,BOLD:AAG2348,Animalia,Arthropoda,Insecta,Diptera,Tachinidae,Lixophaga,NA,5,6/23/14,26,10,ywar,1,sea01.05n10_ywar1_062314,noRecord
+sea.26,OTU30,BOLD:AAO8357,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,5,6/23/14,26,10,ywar,1,sea01.05n10_ywar1_062314,noRecord
+sea.26,OTU52,BOLD:AAP6367,Animalia,Arthropoda,Insecta,Coleoptera,Elateridae,Hemicrepidius,Hemicrepidius brevicollis,5,6/23/14,26,10,ywar,1,sea01.05n10_ywar1_062314,noRecord
+sea.26,OTU108,BOLD:AAP6551,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,5,6/23/14,26,10,ywar,1,sea01.05n10_ywar1_062314,noRecord
+sea.26,OTU107,SINTAX,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,5,6/23/14,26,10,ywar,1,sea01.05n10_ywar1_062314,noRecord
+sea.26,OTU114,SINTAX,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,5,6/23/14,26,10,ywar,1,sea01.05n10_ywar1_062314,noRecord
+sea.30,OTU17,BOLD:AAA3347,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Spilosoma,Spilosoma virginica,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU64,BOLD:AAA4130,Animalia,Arthropoda,Insecta,Lepidoptera,Lasiocampidae,Malacosoma,Malacosoma disstria,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU66,BOLD:AAB0224,Animalia,Arthropoda,Insecta,Lepidoptera,Yponomeutidae,Swammerdamia,Swammerdamia caesiella,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU68,BOLD:AAF9055,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Erioptera,Erioptera septemtrionis,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU103,BOLD:AAG4927,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU49,BOLD:AAH4366,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU55,BOLD:AAL2743,Animalia,Arthropoda,Arachnida,Trombidiformes,Pionidae,Forelia,NA,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU62,BOLD:AAL7331,Animalia,Arthropoda,Insecta,Diptera,Chironomidae,NA,NA,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU30,BOLD:AAO8357,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU19,BOLD:AAQ2462,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU25,BOLD:AAW8127,Animalia,Arthropoda,Insecta,Hemiptera,Aphididae,Capitophorus,Capitophorus xanthii,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU14,BOLD:AAY7735,Animalia,Arthropoda,Insecta,Coleoptera,Carabidae,Laemostenus,Laemostenus complanatus,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU22,BOLD:AAY9818,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU1,BOLD:ABA8895,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU69,BOLD:ABW8764,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU27,BOLD:ABX0192,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU35,BOLD:ABX3686,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU80,BOLD:ACL3444,Animalia,Arthropoda,Arachnida,Trombidiformes,Limnesiidae,NA,NA,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU79,BOLD:ACN5124,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU31,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU38,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU41,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU46,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU54,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU81,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU72,SINTAX,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU13,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU59,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU99,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU114,SINTAX,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.30,OTU130,SINTAX,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord
+sea.36,OTU60,BOLD:AAA2454,Animalia,Chordata,Mammalia,Chiroptera,Molossidae,Molossus,Molossus molossus,10,7/22/14,30,7,luwa,1,sea01.10n07_luwa1_072214,noRecord
+sea.36,OTU33,BOLD:AAB0223,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,10,7/22/14,30,7,luwa,1,sea01.10n07_luwa1_072214,noRecord
+sea.36,OTU94,BOLD:AAC6102,Animalia,Arthropoda,Insecta,Lepidoptera,Blastobasidae,Pigritia,NA,10,7/22/14,30,7,luwa,1,sea01.10n07_luwa1_072214,noRecord
+sea.36,OTU4,BOLD:AAD7692,Animalia,Arthropoda,Insecta,Lepidoptera,Notodontidae,Drymonia,Drymonia dodonaea,10,7/22/14,30,7,luwa,1,sea01.10n07_luwa1_072214,noRecord
+sea.36,OTU112,BOLD:AAD9965,Animalia,Arthropoda,Insecta,Hemiptera,Pentatomidae,Brochymena,Brochymena quadripustulata,10,7/22/14,30,7,luwa,1,sea01.10n07_luwa1_072214,noRecord
+sea.36,OTU96,BOLD:AAF6788,Animalia,Arthropoda,Insecta,Hymenoptera,Formicidae,Formica,Formica neogagates,10,7/22/14,30,7,luwa,1,sea01.10n07_luwa1_072214,noRecord
+sea.36,OTU63,BOLD:AAN6005,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,10,7/22/14,30,7,luwa,1,sea01.10n07_luwa1_072214,noRecord
+sea.36,OTU52,BOLD:AAP6367,Animalia,Arthropoda,Insecta,Coleoptera,Elateridae,Hemicrepidius,Hemicrepidius brevicollis,10,7/22/14,30,7,luwa,1,sea01.10n07_luwa1_072214,noRecord
+sea.36,OTU102,BOLD:ACA8753,Animalia,Arthropoda,Insecta,Hemiptera,Derbidae,Cedusa,Cedusa californica,10,7/22/14,30,7,luwa,1,sea01.10n07_luwa1_072214,noRecord
+sea.36,OTU92,BOLD:ACA9904,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Cheilotrichia,Cheilotrichia stigmatica,10,7/22/14,30,7,luwa,1,sea01.10n07_luwa1_072214,noRecord
+sea.36,OTU115,BOLD:ACY5867,Animalia,Arthropoda,Insecta,Hymenoptera,Braconidae,Apanteles,NA,10,7/22/14,30,7,luwa,1,sea01.10n07_luwa1_072214,noRecord
+sea.36,OTU97,BOLD:ADA7198,Animalia,Arthropoda,Insecta,Diptera,Chironomidae,Procladius,Procladius signatus,10,7/22/14,30,7,luwa,1,sea01.10n07_luwa1_072214,noRecord
+sea.36,OTU84,BOLD:ADC0948,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,10,7/22/14,30,7,luwa,1,sea01.10n07_luwa1_072214,noRecord
+sea.36,OTU93,SINTAX,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,10,7/22/14,30,7,luwa,1,sea01.10n07_luwa1_072214,noRecord
+sea.36,OTU61,SINTAX,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,10,7/22/14,30,7,luwa,1,sea01.10n07_luwa1_072214,noRecord
+sea.41,OTU150,BOLD:AAA1518,Animalia,Arthropoda,Insecta,Lepidoptera,Crambidae,Scoparia,Scoparia biplagialis,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU113_suspect_mock_chimera,BOLD:AAA2590,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Xestia,Xestia smithii,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU17,BOLD:AAA3347,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Spilosoma,Spilosoma virginica,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU64,BOLD:AAA4130,Animalia,Arthropoda,Insecta,Lepidoptera,Lasiocampidae,Malacosoma,Malacosoma disstria,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU33,BOLD:AAB0223,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU66,BOLD:AAB0224,Animalia,Arthropoda,Insecta,Lepidoptera,Yponomeutidae,Swammerdamia,Swammerdamia caesiella,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU4,BOLD:AAD7692,Animalia,Arthropoda,Insecta,Lepidoptera,Notodontidae,Drymonia,Drymonia dodonaea,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU89,BOLD:AAF3316,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,Chionodes,Chionodes soter,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU120,BOLD:AAF9016,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU68,BOLD:AAF9055,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Erioptera,Erioptera septemtrionis,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU103,BOLD:AAG4927,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU55,BOLD:AAL2743,Animalia,Arthropoda,Arachnida,Trombidiformes,Pionidae,Forelia,NA,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU62,BOLD:AAL7331,Animalia,Arthropoda,Insecta,Diptera,Chironomidae,NA,NA,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU19,BOLD:AAQ2462,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU25,BOLD:AAW8127,Animalia,Arthropoda,Insecta,Hemiptera,Aphididae,Capitophorus,Capitophorus xanthii,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU14,BOLD:AAY7735,Animalia,Arthropoda,Insecta,Coleoptera,Carabidae,Laemostenus,Laemostenus complanatus,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU22,BOLD:AAY9818,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU1,BOLD:ABA8895,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU27,BOLD:ABX0192,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU35,BOLD:ABX3686,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU80,BOLD:ACL3444,Animalia,Arthropoda,Arachnida,Trombidiformes,Limnesiidae,NA,NA,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU39,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU65,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU118,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU121,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU13,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU59,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.41,OTU114,SINTAX,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord
+sea.51,OTU113_suspect_mock_chimera,BOLD:AAA2590,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Xestia,Xestia smithii,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord
+sea.51,OTU17,BOLD:AAA3347,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Spilosoma,Spilosoma virginica,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord
+sea.51,OTU64,BOLD:AAA4130,Animalia,Arthropoda,Insecta,Lepidoptera,Lasiocampidae,Malacosoma,Malacosoma disstria,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord
+sea.51,OTU129,BOLD:AAA7515,Animalia,Arthropoda,Insecta,Ephemeroptera,Caenidae,Caenis,Caenis youngi,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord
+sea.51,OTU66,BOLD:AAB0224,Animalia,Arthropoda,Insecta,Lepidoptera,Yponomeutidae,Swammerdamia,Swammerdamia caesiella,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord
+sea.51,OTU24,BOLD:AAE4693,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord
+sea.51,OTU124,BOLD:AAE8479,Animalia,Arthropoda,Insecta,Ephemeroptera,Heptageniidae,Maccaffertium,Maccaffertium mexicanum,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord
+sea.51,OTU89,BOLD:AAF3316,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,Chionodes,Chionodes soter,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord
+sea.51,OTU120,BOLD:AAF9016,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord
+sea.51,OTU68,BOLD:AAF9055,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Erioptera,Erioptera septemtrionis,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord
+sea.51,OTU122,BOLD:AAG8597,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord
+sea.51,OTU55,BOLD:AAL2743,Animalia,Arthropoda,Arachnida,Trombidiformes,Pionidae,Forelia,NA,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord
+sea.51,OTU62,BOLD:AAL7331,Animalia,Arthropoda,Insecta,Diptera,Chironomidae,NA,NA,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord
+sea.51,OTU71,BOLD:AAO8105,Animalia,Arthropoda,Insecta,Orthoptera,NA,NA,NA,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord
+sea.51,OTU19,BOLD:AAQ2462,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord
+sea.51,OTU25,BOLD:AAW8127,Animalia,Arthropoda,Insecta,Hemiptera,Aphididae,Capitophorus,Capitophorus xanthii,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord
+sea.51,OTU14,BOLD:AAY7735,Animalia,Arthropoda,Insecta,Coleoptera,Carabidae,Laemostenus,Laemostenus complanatus,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord
+sea.51,OTU22,BOLD:AAY9818,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord
+sea.51,OTU1,BOLD:ABA8895,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord
+sea.51,OTU80,BOLD:ACL3444,Animalia,Arthropoda,Arachnida,Trombidiformes,Limnesiidae,NA,NA,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord
+sea.51,OTU67,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord
+sea.51,OTU77,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord
+sea.51,OTU72,SINTAX,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord
+sea.51,OTU13,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord
+sea.51,OTU99,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord
+sea.82,OTU15,BOLD:AAB9081,Animalia,Arthropoda,Insecta,Hemiptera,Aphididae,Hyalopterus,Hyalopterus pruni,noRecord,2/13/15,noRecord,noRecord,noRecord,noRecord,05n14_ybch1_071914,noRecord
+sea.82,OTU52,BOLD:AAP6367,Animalia,Arthropoda,Insecta,Coleoptera,Elateridae,Hemicrepidius,Hemicrepidius brevicollis,noRecord,2/13/15,noRecord,noRecord,noRecord,noRecord,05n14_ybch1_071914,noRecord
+sea.82,OTU1,BOLD:ABA8895,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,noRecord,2/13/15,noRecord,noRecord,noRecord,noRecord,05n14_ybch1_071914,noRecord
+sea.82,OTU47,BOLD:ABX3680,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,noRecord,2/13/15,noRecord,noRecord,noRecord,noRecord,05n14_ybch1_071914,noRecord
+sea.82,OTU35,BOLD:ABX3686,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,noRecord,2/13/15,noRecord,noRecord,noRecord,noRecord,05n14_ybch1_071914,noRecord
+sea.82,OTU70,BOLD:ABY0464,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,noRecord,2/13/15,noRecord,noRecord,noRecord,noRecord,05n14_ybch1_071914,noRecord
+sea.82,OTU119,BOLD:ACP1406,Animalia,Arthropoda,Insecta,Orthoptera,NA,NA,NA,noRecord,2/13/15,noRecord,noRecord,noRecord,noRecord,05n14_ybch1_071914,noRecord
+sea.82,MockIM6_pident=100.0_OTU16,CFMR:IM6,Animalia,Arthropoda,Insecta,Hemiptera,Aphididae,Aphis,Aphis mellifera,noRecord,2/13/15,noRecord,noRecord,noRecord,noRecord,05n14_ybch1_071914,noRecord
+sea.82,OTU23,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,noRecord,2/13/15,noRecord,noRecord,noRecord,noRecord,05n14_ybch1_071914,noRecord
+sea.82,OTU31,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,noRecord,2/13/15,noRecord,noRecord,noRecord,noRecord,05n14_ybch1_071914,noRecord
+sea.82,OTU41,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,noRecord,2/13/15,noRecord,noRecord,noRecord,noRecord,05n14_ybch1_071914,noRecord
+sea.82,OTU43,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,noRecord,2/13/15,noRecord,noRecord,noRecord,noRecord,05n14_ybch1_071914,noRecord
+sea.82,OTU45,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,noRecord,2/13/15,noRecord,noRecord,noRecord,noRecord,05n14_ybch1_071914,noRecord
+sea.82,OTU46,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,noRecord,2/13/15,noRecord,noRecord,noRecord,noRecord,05n14_ybch1_071914,noRecord
+sea.82,OTU53,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,noRecord,2/13/15,noRecord,noRecord,noRecord,noRecord,05n14_ybch1_071914,noRecord
+sea.82,OTU65,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,noRecord,2/13/15,noRecord,noRecord,noRecord,noRecord,05n14_ybch1_071914,noRecord
+sea.82,OTU73,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,noRecord,2/13/15,noRecord,noRecord,noRecord,noRecord,05n14_ybch1_071914,noRecord
+sea.82,OTU81,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,noRecord,2/13/15,noRecord,noRecord,noRecord,noRecord,05n14_ybch1_071914,noRecord
+sea.82,OTU87,SINTAX,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,noRecord,2/13/15,noRecord,noRecord,noRecord,noRecord,05n14_ybch1_071914,noRecord
+sea.82,OTU13,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,noRecord,2/13/15,noRecord,noRecord,noRecord,noRecord,05n14_ybch1_071914,noRecord
+sea.82,OTU59,SINTAX,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,noRecord,2/13/15,noRecord,noRecord,noRecord,noRecord,05n14_ybch1_071914,noRecord

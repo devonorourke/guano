@@ -1,0 +1,131 @@
+#OTU ID	sea-10	sea-20	sea-26	sea-30	sea-36	sea-41	sea-51	sea-82	sea-115	sea-123	sea-134	sea-156	sea-164	sea-171	Taxonomy
+MockIM6_pident=100.0_OTU16	0	0	0	0	0	0	0	1	0	0	0	0	0	0	CFMR:IM6;k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera,f:Aphididae,g:Aphis,s:Aphis mellifera
+MockIM15_pident=99.4_OTU12	0	0	0	0	0	0	0	0	0	0	0	0	1	0	CFMR:IM15;k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Bombyliidae,g:Lepidophora,s:Lepidophora lutea
+MockIM21_pident=97.8_OTU7	0	0	0	0	0	0	0	0	0	0	0	1	0	0	CFMR:IM23;k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera,f:Coccinellidae,g:Harmonia,s:Harmonia axyridis
+MockIM39_pident=100.0_OTU10	0	0	0	0	0	0	0	0	0	0	0	1	0	0	CFMR:IM39;k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera,f:Chrysomelidae,g:Paria,s:Paria fragariae
+MockIM49_pident=100.0_OTU18	0	0	0	0	0	0	0	0	0	0	1	0	0	0	CFMR:IM49;k:Animalia,p:Arthropoda,c:Insecta,o:Blattodea,f:Ectobiidae,g:Supella,s:Supella longipalpa
+OTU1	1	1	0	1	0	1	1	1	1	0	0	1	1	1	BOLD:ABA8895;k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera
+OTU4	0	0	1	0	1	1	0	0	0	0	0	0	0	0	BOLD:AAD7692;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Notodontidae,g:Drymonia,s:Drymonia dodonaea
+OTU11	0	0	0	0	0	0	0	0	0	0	1	0	0	0	BOLD:AAG7013;k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Limoniidae
+OTU13	1	1	0	1	0	1	1	1	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera
+OTU14	1	1	0	1	0	1	1	0	0	0	0	0	1	0	BOLD:AAY7735;k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera,f:Carabidae,g:Laemostenus,s:Laemostenus complanatus
+OTU15	0	1	1	0	0	0	0	1	0	0	0	0	0	0	BOLD:AAB9081;k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera,f:Aphididae,g:Hyalopterus,s:Hyalopterus pruni
+OTU17	0	1	0	1	0	1	1	0	0	0	0	0	1	0	BOLD:AAA3347;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Erebidae,g:Spilosoma,s:Spilosoma virginica
+OTU19	1	1	0	1	0	1	1	0	0	0	0	0	0	0	BOLD:AAQ2462;k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera
+OTU20	0	0	0	0	0	0	0	0	1	0	0	0	1	1	SINTAX;k:Animalia,p:Arthropoda,c:Insecta,o:Hymenoptera
+OTU21	0	0	0	0	0	0	0	0	0	1	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU22	1	1	0	1	0	1	1	0	0	0	0	0	0	0	BOLD:AAY9818;k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera
+OTU23	0	0	0	0	0	0	0	1	0	0	0	1	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU24	0	0	0	0	0	0	1	0	0	0	0	0	1	1	BOLD:AAE4693;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera
+OTU25	0	1	0	1	0	1	1	0	0	0	0	0	0	0	BOLD:AAW8127;k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera,f:Aphididae,g:Capitophorus,s:Capitophorus xanthii
+OTU26	0	0	0	0	0	0	0	0	1	1	0	1	0	1	BOLD:AAH0136;k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera,f:Scarabaeidae,g:Phyllophaga,s:Phyllophaga anxia
+OTU27	1	1	0	1	0	1	0	0	0	0	0	0	0	0	BOLD:ABX0192;k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera
+OTU29	0	0	0	0	0	0	0	0	0	0	0	0	0	1	SINTAX;k:Animalia,p:Arthropoda,c:Insecta,o:Hymenoptera
+OTU30	0	0	1	1	0	0	0	0	0	0	0	1	0	0	BOLD:AAO8357;k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera
+OTU31	1	1	0	1	0	0	0	1	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU32	1	1	0	0	0	0	0	0	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU33	0	1	0	0	1	1	0	0	1	1	0	0	0	0	BOLD:AAB0223;k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera
+OTU34	0	0	0	0	0	0	0	0	1	0	0	0	0	0	BOLD:AAD5316;k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera,f:Aphididae,g:Pemphigus,s:Pemphigus populiramulorum
+OTU35	1	1	0	1	0	1	0	1	0	0	0	1	0	0	BOLD:ABX3686;k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera
+OTU36	0	0	0	0	0	0	0	0	1	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera
+OTU37	1	0	0	0	0	0	0	0	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU38	0	0	0	1	0	0	0	0	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU39	1	1	0	0	0	1	0	0	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU40	0	0	0	0	0	0	0	0	1	0	0	0	0	1	BOLD:AAB6784;k:Animalia,p:Arthropoda,c:Arachnida,o:Araneae,f:Lycosidae,g:Pirata,s:Pirata piraticus
+OTU41	1	1	0	1	0	0	0	1	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU42	1	0	0	0	0	0	0	0	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU43	1	1	0	0	0	0	0	1	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU44	0	0	0	0	0	0	0	0	0	0	1	0	0	0	BOLD:AAH4108;k:Animalia,p:Arthropoda,c:Malacostraca,o:Isopoda,f:Armadillidiidae,g:Armadillidium
+OTU45	1	0	0	0	0	0	0	1	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU46	1	1	0	1	0	0	0	1	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU47	1	1	0	0	0	0	0	1	0	0	0	0	0	0	BOLD:ABX3680;k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera
+OTU48	0	0	0	0	0	0	0	0	0	1	0	1	1	0	BOLD:ADB9451;k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Limoniidae,g:Epiphragma,s:Epiphragma fasciapenne
+OTU49	0	0	0	1	0	0	0	0	0	0	0	0	0	0	BOLD:AAH4366;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera
+OTU50	0	0	0	0	0	0	0	0	0	0	0	1	0	0	SINTAX;k:Animalia,p:Arthropoda
+OTU51	0	0	0	0	0	0	0	0	0	0	0	0	1	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera
+OTU52	0	0	1	0	1	0	0	1	0	1	1	1	1	0	BOLD:AAP6367;k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera,f:Elateridae,g:Hemicrepidius,s:Hemicrepidius brevicollis
+OTU53	1	1	0	0	0	0	0	1	0	0	0	0	1	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU54	1	0	0	1	0	0	0	0	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU55	1	1	0	1	0	1	1	0	0	0	0	1	1	1	BOLD:AAL2743;k:Animalia,p:Arthropoda,c:Arachnida,o:Trombidiformes,f:Pionidae,g:Forelia
+OTU56	1	0	0	0	0	0	0	0	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU57	0	0	0	0	0	0	0	0	0	0	0	0	0	1	BOLD:AAN8267;k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera,f:Lygaeidae,g:Nysius,s:Nysius raphanus
+OTU58	0	0	0	0	0	0	0	0	0	0	0	0	0	1	BOLD:AAG8886;k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera,f:Miridae,g:Phytocoris
+OTU59	1	1	0	1	0	1	0	1	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera
+OTU60	0	0	0	0	1	0	0	0	0	0	1	0	0	0	BOLD:AAA2454;k:Animalia,p:Chordata,c:Mammalia,o:Chiroptera,f:Molossidae,g:Molossus,s:Molossus molossus
+OTU61	0	0	0	0	1	0	0	0	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta,o:Hymenoptera
+OTU62	0	1	0	1	0	1	1	0	0	0	0	1	1	1	BOLD:AAL7331;k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Chironomidae
+OTU63	0	0	0	0	1	0	0	0	0	0	0	0	0	0	BOLD:AAN6005;k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera
+OTU64	0	1	0	1	0	1	1	0	0	0	0	0	1	1	BOLD:AAA4130;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Lasiocampidae,g:Malacosoma,s:Malacosoma disstria
+OTU65	0	0	0	0	0	1	0	1	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU66	0	1	0	1	0	1	1	0	0	0	0	0	1	1	BOLD:AAB0224;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Yponomeutidae,g:Swammerdamia,s:Swammerdamia caesiella
+OTU67	0	0	0	0	0	0	1	0	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU68	0	1	0	1	0	1	1	0	0	0	0	1	1	1	BOLD:AAF9055;k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Limoniidae,g:Erioptera,s:Erioptera septemtrionis
+OTU69	0	1	0	1	0	0	0	0	0	0	0	0	0	0	BOLD:ABW8764;k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera
+OTU70	0	0	0	0	0	0	0	1	0	0	0	0	0	0	BOLD:ABY0464;k:Animalia,p:Arthropoda,c:Insecta,o:Hymenoptera
+OTU71	0	0	0	0	0	0	1	0	0	0	0	0	0	1	BOLD:AAO8105;k:Animalia,p:Arthropoda,c:Insecta,o:Orthoptera
+OTU72	0	0	0	1	0	0	1	0	1	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta,o:Diptera
+OTU73	1	0	0	0	0	0	0	1	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU74	0	1	0	0	0	0	0	0	0	0	0	0	0	0	BOLD:AAH8545;k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera,f:Miridae,g:Agnocoris,s:Agnocoris pulverulentus
+OTU75	0	1	0	0	0	0	0	0	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU76	1	0	0	0	0	0	0	0	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU77	0	1	0	0	0	0	1	0	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU78	0	0	0	0	0	0	0	0	0	0	1	0	0	0	BOLD:ABV3669;k:Animalia,p:Arthropoda,c:Insecta,o:Diptera
+OTU79	0	0	0	1	0	0	0	0	0	0	0	0	0	0	BOLD:ACN5124;k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera
+OTU80	0	1	0	1	0	1	1	0	0	0	0	0	1	1	BOLD:ACL3444;k:Animalia,p:Arthropoda,c:Arachnida,o:Trombidiformes,f:Limnesiidae
+OTU81	0	0	0	1	0	0	0	1	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU82	0	0	0	0	0	0	0	0	1	0	0	0	0	0	BOLD:AAA2650;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Pyralidae,g:Ephestiodes,s:Ephestiodes gilvescentella
+OTU83	1	0	0	0	0	0	0	0	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU84	0	0	0	0	1	0	0	0	0	0	0	0	0	0	BOLD:ADC0948;k:Animalia,p:Arthropoda,c:Insecta,o:Hymenoptera
+OTU85	0	0	0	0	0	0	0	0	0	0	0	0	0	1	SINTAX;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera
+OTU86	1	0	0	0	0	0	0	0	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU87	0	0	0	0	0	0	0	1	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU89	0	1	0	0	0	1	1	0	0	0	0	0	1	0	BOLD:AAF3316;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Gelechiidae,g:Chionodes,s:Chionodes soter
+OTU90	0	0	0	0	0	0	0	0	0	0	0	0	0	1	SINTAX;k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera
+OTU91	0	0	1	0	0	0	0	0	0	1	0	0	0	0	BOLD:AAG2348;k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Tachinidae,g:Lixophaga
+OTU92	0	0	0	0	1	0	0	0	0	0	1	1	0	0	BOLD:ACA9904;k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Limoniidae,g:Cheilotrichia,s:Cheilotrichia stigmatica
+OTU93	0	0	0	0	1	0	0	0	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera
+OTU94	0	0	0	0	1	0	0	0	0	0	1	1	0	0	BOLD:AAC6102;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Blastobasidae,g:Pigritia
+OTU95	1	0	0	0	0	0	0	0	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU96	0	0	0	0	1	0	0	0	1	1	0	0	0	0	BOLD:AAF6788;k:Animalia,p:Arthropoda,c:Insecta,o:Hymenoptera,f:Formicidae,g:Formica,s:Formica neogagates
+OTU97	0	0	0	0	1	0	0	0	0	0	1	1	0	0	BOLD:ADA7198;k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Chironomidae,g:Procladius,s:Procladius signatus
+OTU98	0	0	1	0	0	0	0	0	0	0	0	0	0	0	BOLD:AAB7030;k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Chironomidae,g:Chironomus
+OTU99	1	1	0	1	0	0	1	0	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera
+OTU100	0	0	0	0	0	0	0	0	1	0	0	1	0	0	BOLD:AAB1667;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Tortricidae,g:Argyrotaenia,s:Argyrotaenia quercifoliana
+OTU101	0	0	0	0	0	0	0	0	1	0	0	0	0	0	BOLD:AAZ2161;k:Animalia,p:Arthropoda,c:Insecta,o:Diptera
+OTU102	0	0	0	0	1	0	0	0	0	0	0	0	0	0	BOLD:ACA8753;k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera,f:Derbidae,g:Cedusa,s:Cedusa californica
+OTU103	0	0	0	1	0	1	0	0	0	0	0	0	1	0	BOLD:AAG4927;k:Animalia,p:Arthropoda,c:Insecta,o:Diptera
+OTU106	0	0	0	0	0	0	0	0	1	0	0	1	1	0	BOLD:AAA3993;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Coleophoridae,g:Coleophora,s:Coleophora duplicis group
+OTU107	0	0	1	0	0	0	0	0	0	1	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera
+OTU108	0	0	1	0	0	0	0	0	0	1	0	0	0	0	BOLD:AAP6551;k:Animalia,p:Arthropoda,c:Insecta,o:Coleoptera
+OTU110	0	1	0	0	0	0	0	0	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU112	0	0	0	0	1	0	0	0	0	0	0	0	0	0	BOLD:AAD9965;k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera,f:Pentatomidae,g:Brochymena,s:Brochymena quadripustulata
+OTU113_suspect_mock_chimera	0	0	0	0	0	1	1	0	0	0	0	0	1	0	BOLD:AAA2590;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Noctuidae,g:Xestia,s:Xestia smithii
+OTU114	0	0	1	1	0	1	0	0	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera
+OTU115	0	0	0	0	1	0	0	0	0	0	0	0	0	0	BOLD:ACY5867;k:Animalia,p:Arthropoda,c:Insecta,o:Hymenoptera,f:Braconidae,g:Apanteles
+OTU116	0	0	0	0	0	0	0	0	0	0	1	0	0	0	BOLD:AAH3496;k:Animalia,p:Arthropoda,c:Arachnida,o:Araneae
+OTU117	0	0	0	0	0	0	0	0	0	0	0	1	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Tipulidae,g:Tipula,s:Tipula oleracea
+OTU118	0	0	0	0	0	1	0	0	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU119	0	0	0	0	0	0	0	1	0	0	0	0	0	0	BOLD:ACP1406;k:Animalia,p:Arthropoda,c:Insecta,o:Orthoptera
+OTU120	0	0	0	0	0	1	1	0	0	0	0	0	1	0	BOLD:AAF9016;k:Animalia,p:Arthropoda,c:Insecta,o:Diptera
+OTU121	0	0	0	0	0	1	0	0	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU122	0	0	0	0	0	0	1	0	0	0	0	0	0	0	BOLD:AAG8597;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera
+OTU124	0	0	0	0	0	0	1	0	0	0	0	0	1	0	BOLD:AAE8479;k:Animalia,p:Arthropoda,c:Insecta,o:Ephemeroptera,f:Heptageniidae,g:Maccaffertium,s:Maccaffertium mexicanum
+OTU125	0	0	0	0	0	0	0	0	1	0	0	0	0	0	BOLD:AAG8670;k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera,f:Miridae,g:Phytocoris
+OTU126	0	0	0	0	0	0	0	0	1	0	0	0	0	0	BOLD:AAB8726;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Erebidae,g:Melipotis
+OTU129	0	0	0	0	0	0	1	0	0	0	0	0	0	0	BOLD:AAA7515;k:Animalia,p:Arthropoda,c:Insecta,o:Ephemeroptera,f:Caenidae,g:Caenis,s:Caenis youngi
+OTU130	0	0	0	1	0	0	0	0	0	0	0	0	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera
+OTU131	0	0	0	0	0	0	0	0	1	0	0	1	0	0	BOLD:AAO3944;k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Limoniidae,g:Geranomyia
+OTU132	0	0	0	0	0	0	0	0	1	0	0	0	0	0	BOLD:AAA4646;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Crambidae,g:Microthyris,s:Microthyris prolongalis
+OTU133	0	0	0	0	0	0	0	0	0	0	1	0	0	0	BOLD:ABZ6564;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Tortricidae,g:Clepsis,s:Clepsis peritana
+OTU134	0	0	0	0	0	0	0	0	0	0	0	0	1	0	BOLD:AAB5440;k:Animalia,p:Arthropoda,c:Collembola,o:Entomobryomorpha,f:Tomoceridae,g:Tomocerus,s:Tomocerus minor
+OTU138	0	0	0	0	0	0	0	0	0	1	0	0	0	0	BOLD:AAH3589;k:Animalia,p:Arthropoda,c:Insecta,o:Mantodea
+OTU139	0	0	0	0	0	0	0	0	0	0	0	1	0	0	BOLD:AAF8979;k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Limoniidae,g:Metalimnobia,s:Metalimnobia novaeangliae
+OTU144	0	0	0	0	0	0	0	0	1	0	0	0	0	0	BOLD:ABA8950;k:Animalia,p:Arthropoda,c:Insecta,o:Diptera
+OTU150	0	0	0	0	0	1	0	0	0	0	0	0	0	0	BOLD:AAA1518;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Crambidae,g:Scoparia,s:Scoparia biplagialis
+OTU152	0	0	0	0	0	0	0	0	1	0	0	0	0	0	BOLD:AAF9064;k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Limoniidae,g:Elephantomyia,s:Elephantomyia westwoodi
+OTU153	0	0	0	0	0	0	0	0	0	0	0	1	0	0	BOLD:AAV0590;k:Animalia,p:Arthropoda,c:Arachnida,o:Mesostigmata,f:Blattisociidae,g:Cheiroseius
+OTU162	0	0	0	0	0	0	0	0	1	0	0	0	0	0	BOLD:AAG8977;k:Animalia,p:Arthropoda,c:Insecta,o:Hemiptera,f:Derbidae,g:Otiocerus,s:Otiocerus degeerii
+OTU163	0	0	0	0	0	0	0	0	1	0	0	0	0	0	BOLD:AAL5086;k:Animalia,p:Arthropoda,c:Insecta,o:Diptera,f:Mycetophilidae,g:Exechiopsis
+OTU164	0	0	0	0	0	0	0	0	1	0	0	0	0	0	BOLD:AAC7542;k:Animalia,p:Arthropoda,c:Insecta,o:Lepidoptera,f:Gelechiidae,g:Taygete,s:Taygete attributella
+OTU168	0	0	0	0	0	0	0	0	0	0	0	1	0	0	SINTAX;k:Animalia,p:Arthropoda,c:Insecta
+OTU169	0	0	0	0	0	0	0	0	0	0	0	0	1	0	BOLD:AAU8748;k:Animalia,p:Arthropoda,c:Insecta,o:Hymenoptera,f:Ichneumonidae

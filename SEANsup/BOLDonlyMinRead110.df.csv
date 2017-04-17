@@ -1,0 +1,57 @@
+SampleID,OTUid,OTU_identifier,kingdom_name,phylum_name,class_name,order_name,family_name,genus_name,species_name,SiteNumber,CollectionDate,WeekOfYear,NetNumber,BirdSpecies,Ordercaught,Description,Notes,reads
+sea.36,OTU63,BOLD:AAN6005,Animalia,Arthropoda,Insecta,Coleoptera,unknown,unknown,unknown,10,7/22/14,30,7,luwa,1,sea01.10n07_luwa1_072214,noRecord,111
+sea.134,OTU78,BOLD:ABV3669,Animalia,Arthropoda,Insecta,Diptera,unknown,unknown,unknown,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,GBN11_YBCH1_052513,noRecord,122
+sea.41,OTU35,BOLD:ABX3686,Animalia,Arthropoda,Insecta,Hemiptera,unknown,unknown,unknown,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord,130
+sea.30,OTU69,BOLD:ABW8764,Animalia,Arthropoda,Insecta,Coleoptera,unknown,unknown,unknown,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord,131
+sea.171,OTU26,BOLD:AAH0136,Animalia,Arthropoda,Insecta,Coleoptera,Scarabaeidae,Phyllophaga,Phyllophaga anxia,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN6_BEWR1_062113,noRecord,140
+sea.156,OTU30,BOLD:AAO8357,Animalia,Arthropoda,Insecta,Hemiptera,unknown,unknown,unknown,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord,146
+sea.30,OTU27,BOLD:ABX0192,Animalia,Arthropoda,Insecta,Coleoptera,unknown,unknown,unknown,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord,147
+sea.171,OTU58,BOLD:AAG8886,Animalia,Arthropoda,Insecta,Hemiptera,Miridae,Phytocoris,unknown,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN6_BEWR1_062113,noRecord,153
+sea.30,OTU22,BOLD:AAY9818,Animalia,Arthropoda,Insecta,Coleoptera,unknown,unknown,unknown,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord,155
+sea.115,OTU33,BOLD:AAB0223,Animalia,Arthropoda,Insecta,Coleoptera,unknown,unknown,unknown,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16,174
+sea.51,OTU25,BOLD:AAW8127,Animalia,Arthropoda,Insecta,Hemiptera,Aphididae,Capitophorus,Capitophorus xanthii,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord,193
+sea.171,OTU57,BOLD:AAN8267,Animalia,Arthropoda,Insecta,Hemiptera,Lygaeidae,Nysius,Nysius raphanus,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN6_BEWR1_062113,noRecord,221
+sea.20,OTU35,BOLD:ABX3686,Animalia,Arthropoda,Insecta,Hemiptera,unknown,unknown,unknown,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord,226
+sea.82,OTU35,BOLD:ABX3686,Animalia,Arthropoda,Insecta,Hemiptera,unknown,unknown,unknown,noRecord,2/13/15,noRecord,noRecord,noRecord,noRecord,05n14_ybch1_071914,noRecord,233
+sea.156,OTU48,BOLD:ADB9451,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Epiphragma,Epiphragma fasciapenne,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord,251
+sea.30,OTU35,BOLD:ABX3686,Animalia,Arthropoda,Insecta,Hemiptera,unknown,unknown,unknown,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord,256
+sea.20,OTU33,BOLD:AAB0223,Animalia,Arthropoda,Insecta,Coleoptera,unknown,unknown,unknown,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord,266
+sea.41,OTU19,BOLD:AAQ2462,Animalia,Arthropoda,Insecta,Coleoptera,unknown,unknown,unknown,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord,271
+sea.156,OTU26,BOLD:AAH0136,Animalia,Arthropoda,Insecta,Coleoptera,Scarabaeidae,Phyllophaga,Phyllophaga anxia,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,MQN5_VERD1_061213,noRecord,272
+sea.123,OTU48,BOLD:ADB9451,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Epiphragma,Epiphragma fasciapenne,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN1_YBCH1_062013,noRecord,274
+sea.51,OTU17,BOLD:AAA3347,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Spilosoma,Spilosoma virginica,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord,287
+sea.20,OTU22,BOLD:AAY9818,Animalia,Arthropoda,Insecta,Coleoptera,unknown,unknown,unknown,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord,289
+sea.26,OTU30,BOLD:AAO8357,Animalia,Arthropoda,Insecta,Hemiptera,unknown,unknown,unknown,5,6/23/14,26,10,ywar,1,sea01.05n10_ywar1_062314,noRecord,296
+sea.51,OTU14,BOLD:AAY7735,Animalia,Arthropoda,Insecta,Coleoptera,Carabidae,Laemostenus,Laemostenus complanatus,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord,296
+sea.20,OTU25,BOLD:AAW8127,Animalia,Arthropoda,Insecta,Hemiptera,Aphididae,Capitophorus,Capitophorus xanthii,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord,297
+sea.134,OTU44,BOLD:AAH4108,Animalia,Arthropoda,Malacostraca,Isopoda,Armadillidiidae,Armadillidium,unknown,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,GBN11_YBCH1_052513,noRecord,305
+sea.30,OTU49,BOLD:AAH4366,Animalia,Arthropoda,Insecta,Lepidoptera,unknown,unknown,unknown,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord,324
+sea.30,OTU30,BOLD:AAO8357,Animalia,Arthropoda,Insecta,Hemiptera,unknown,unknown,unknown,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord,335
+sea.115,OTU40,BOLD:AAB6784,Animalia,Arthropoda,Arachnida,Araneae,Lycosidae,Pirata,Pirata piraticus,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16,337
+sea.30,OTU25,BOLD:AAW8127,Animalia,Arthropoda,Insecta,Hemiptera,Aphididae,Capitophorus,Capitophorus xanthii,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord,487
+sea.10,OTU47,BOLD:ABX3680,Animalia,Arthropoda,Insecta,Hemiptera,unknown,unknown,unknown,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord,493
+sea.115,OTU34,BOLD:AAD5316,Animalia,Arthropoda,Insecta,Hemiptera,Aphididae,Pemphigus,Pemphigus populiramulorum,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16,547
+sea.123,OTU33,BOLD:AAB0223,Animalia,Arthropoda,Insecta,Coleoptera,unknown,unknown,unknown,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN1_YBCH1_062013,noRecord,555
+sea.115,OTU1,BOLD:ABA8895,Animalia,Arthropoda,Insecta,Hemiptera,unknown,unknown,unknown,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16,622
+sea.115,OTU26,BOLD:AAH0136,Animalia,Arthropoda,Insecta,Coleoptera,Scarabaeidae,Phyllophaga,Phyllophaga anxia,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN6_ABTO1_072313,might be sgn16,627
+sea.10,OTU27,BOLD:ABX0192,Animalia,Arthropoda,Insecta,Coleoptera,unknown,unknown,unknown,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord,630
+sea.30,OTU14,BOLD:AAY7735,Animalia,Arthropoda,Insecta,Coleoptera,Carabidae,Laemostenus,Laemostenus complanatus,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord,688
+sea.20,OTU14,BOLD:AAY7735,Animalia,Arthropoda,Insecta,Coleoptera,Carabidae,Laemostenus,Laemostenus complanatus,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord,876
+sea.30,OTU19,BOLD:AAQ2462,Animalia,Arthropoda,Insecta,Coleoptera,unknown,unknown,unknown,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord,918
+sea.123,OTU26,BOLD:AAH0136,Animalia,Arthropoda,Insecta,Coleoptera,Scarabaeidae,Phyllophaga,Phyllophaga anxia,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,SGN1_YBCH1_062013,noRecord,959
+sea.171,OTU24,BOLD:AAE4693,Animalia,Arthropoda,Insecta,Lepidoptera,unknown,unknown,unknown,noRecord,3/26/14,noRecord,noRecord,noRecord,noRecord,SGN6_BEWR1_062113,noRecord,1141
+sea.10,OTU35,BOLD:ABX3686,Animalia,Arthropoda,Insecta,Hemiptera,unknown,unknown,unknown,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord,1270
+sea.10,OTU22,BOLD:AAY9818,Animalia,Arthropoda,Insecta,Coleoptera,unknown,unknown,unknown,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord,1412
+sea.41,OTU1,BOLD:ABA8895,Animalia,Arthropoda,Insecta,Hemiptera,unknown,unknown,unknown,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord,1665
+sea.51,OTU1,BOLD:ABA8895,Animalia,Arthropoda,Insecta,Hemiptera,unknown,unknown,unknown,13,7/15/14,29,6,bewr,1,sea01.13n06_bewr1_071514,noRecord,1723
+sea.30,OTU17,BOLD:AAA3347,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Spilosoma,Spilosoma virginica,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord,1885
+sea.41,OTU17,BOLD:AAA3347,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Spilosoma,Spilosoma virginica,2,6/13/14,24,6,ybch,1,sea01.02n06_ybch1_061314,noRecord,2585
+sea.10,OTU19,BOLD:AAQ2462,Animalia,Arthropoda,Insecta,Coleoptera,unknown,unknown,unknown,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord,2818
+sea.10,OTU14,BOLD:AAY7735,Animalia,Arthropoda,Insecta,Coleoptera,Carabidae,Laemostenus,Laemostenus complanatus,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord,4809
+sea.30,OTU1,BOLD:ABA8895,Animalia,Arthropoda,Insecta,Hemiptera,unknown,unknown,unknown,9,6/19/14,25,3,bewr,1,sea01.09n03_bewr1_061914,noRecord,5397
+sea.20,OTU1,BOLD:ABA8895,Animalia,Arthropoda,Insecta,Hemiptera,unknown,unknown,unknown,9,6/19/14,25,3,bewr,2,sea01.09n03_bewr2_061914,noRecord,6351
+sea.26,OTU15,BOLD:AAB9081,Animalia,Arthropoda,Insecta,Hemiptera,Aphididae,Hyalopterus,Hyalopterus pruni,5,6/23/14,26,10,ywar,1,sea01.05n10_ywar1_062314,noRecord,6405
+sea.134,OTU11,BOLD:AAG7013,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,unknown,unknown,noRecord,2/7/14,noRecord,noRecord,noRecord,noRecord,GBN11_YBCH1_052513,noRecord,8361
+sea.36,OTU4,BOLD:AAD7692,Animalia,Arthropoda,Insecta,Lepidoptera,Notodontidae,Drymonia,Drymonia dodonaea,10,7/22/14,30,7,luwa,1,sea01.10n07_luwa1_072214,noRecord,12177
+sea.82,OTU1,BOLD:ABA8895,Animalia,Arthropoda,Insecta,Hemiptera,unknown,unknown,unknown,noRecord,2/13/15,noRecord,noRecord,noRecord,noRecord,05n14_ybch1_071914,noRecord,20504
+sea.10,OTU1,BOLD:ABA8895,Animalia,Arthropoda,Insecta,Hemiptera,unknown,unknown,unknown,2,7/18/14,29,11,ybch,1,sea01.02n11_ybch1_071814,noRecord,30582
