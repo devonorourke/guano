@@ -8,19 +8,43 @@ See [here](https://virtualenv.pypa.io/en/stable/installation/) for information a
 cd $HOME
 mkdir venvs
 ```
-- Move into that directory and create a new virtual environment, named **vamptk**:
+- We're going to move into that directory and create a new virtual environment, named **vamptk**. You can make a very unassuming mistake here - depending on where your `virtualenv` command points to, you might be installing a virtual environment using Python2 or Python3; furthermore you might be installing a version of Python2 or 3 that you didn't want if you happen to have multiple versions installed. Get some help using Python3 virtual environments [here](https://docs.python.org/3/library/venv.html), and check out  I'm going to demonstrate two different ways that you might get something to work. *Note that Flavor1 is what we want, while Flavor2 is NOT what you want to do*  
+
 ```
+## Assumes Python2 and Python3 both installed
+## Move into the new directory you just created
 cd venvs
+
+## Now create a new virtual environment. 
+## Flavor1 - you specify to build a Python3 virtual environment:
+python3 -m venv vamptk
+
+## Flavor 2
 virtualenv vamptk
+## this creates a virtual environment with Python2.7 as your default language. This isn't what you want in our case.
 ```
-- The previous command should create a new folder within `$HOME/venvs/` called **vamtpk**. This parent directory will serve as the repository for all the program information we need moving forward. Each time you want to use this repository (and therefore programs), you need to activate the virtual environment:  
+It can be worse than that too. If you are using an older version of Python3, anything before Python 3.5 (so 3.4, 3.3, etc...) then the `venv` command won't work, as they changed the sytnax to execute that command between versions 3.4 and 3.5. If you're stuck with v3.4 or less, you're going to use a few different commands. This is what happens when you're stuck with old versions, and different updates of different programs get worse over time. There are two things you'll do: first, you're going to use a slightly different installation sytnax to get the virtual environment running on the older Python3 variety - see [this site](https://robinwinslow.uk/2013/12/26/python-3-4-virtual-environment/#pyvenv-3-4) for a helpful example of how you'd do that in general. However, you're potentially going to run into an error because of a bug between the Linux OS and Python version you're trying to put together - see [this message](https://askubuntu.com/questions/488529/pyvenv-3-4-error-returned-non-zero-exit-status-1). Fortunately for you, I've condensed that info below into something that works pretty easily:
+```
+## Which Python3 version are you using?
+[my@machine]: python3 --version
+Python 3.4.0
+
+## Because I have version 3.4, I'm going to have to use the 'pyvenv' command to install my virtual environment, rather than the 'venv' command as noted above.
+pyvenv-3.4 --without-pip vamptk
+source vamptk/bin/activate
+curl https://bootstrap.pypa.io/get-pip.py | python
+deactivate
+```
+Regardless of what Python3 version you're using, the previous command should create a new folder within `$HOME/venvs/` called **vamtpk**. This parent directory will serve as the repository for all the program information we need moving forward. Each time you want to use this repository (and therefore programs), you need to activate the virtual environment:  
 ```
 source activate /vamptk/bin/activate
 
 #full path would also work...
-[your@terminal]: source activate $HOME/vamptk/bin/activate
+[my@machine]: source activate $HOME/vamptk/bin/activate
 ```
-You should notice that the name of your prompt will have changed to indicate that the virtual environment is now your working environment. So if before you looked like ```[your@terminal]:```, you after sourcing the virtual environment named **vamptk** it should look like ```vamptk[your@terminal]:```.  
+You should notice that the name of your prompt will have changed to indicate that the virtual environment is now your working environment. So if before you looked like `[my@machine]:`, you after sourcing the virtual environment named **vamptk** it should look like `(vamptk)[my@machine]:`.  
+Likewise, to get out of the virtual environment, you can always just type `deactivate` and you should see your prompt on the left side disappear from `(vamptk)[my@machine]` to `[my@machine]`.
+
 
 ## installation of dependencies
 Once you've installed your virtual environment it's time to install a slew of dependencies. Many of these are easy to install by typing just a one line command, though some more of these require a bit more work. These packages enable Jon's Python scripts to run, but are certainly capable of completing many more operations than what are described within the **amptk** scripts. For some documentation on many of these packages, [start here](https://www.scipy.org/index.html).  
