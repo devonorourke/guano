@@ -133,11 +133,6 @@ cd $HOME/miniconda3/bin
 ln -s /home/fosterLab/devonr/miniconda3//pkgs/amptk/amptk
 ```
 
-If you happen to get a weird message, [try this](https://github.com/ContinuumIO/anaconda-issues/issues/152):
-```
-conda remove --force readline
-```
-
 Okay - very last thing! You have to open up Jon's python script - the **amptk** file you just create a soft link for - and change the header from `#!/usr/bin/env python` to just `#!/usr/bin/python`, or the script will fail to generate. Do this by navigating back into the directory of the file in question, use a text editor (ex. nano, vim, etc.) to edit that first line, then quit and save:  
 ```
 cd $HOME/miniconda3/pkgs/amptk
@@ -151,3 +146,8 @@ nano amptk
 ```
 
 That's it - you should be ready to get going with **amptk** now (and more)!
+
+Well, except if you happen to get a weird message, [try this](https://github.com/ContinuumIO/anaconda-issues/issues/152). Apparently having this program installed can cause some issues. I was able to run amptk successfully once this was removed. Try running amptk without doing this first, and if it works, lucky you. If not, try this, and hope you're lucky.
+```
+conda remove --force readline
+```
