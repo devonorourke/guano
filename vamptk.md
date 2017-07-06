@@ -133,7 +133,7 @@ cd $HOME/miniconda3/bin
 ln -s /home/fosterLab/devonr/miniconda3//pkgs/amptk/amptk
 ```
 
-Okay - very last thing! You have to open up Jon's python script - the **amptk** file you just create a soft link for - and change the header from `#!/usr/bin/env python` to just `#!/usr/bin/python`, or the script will fail to generate. Do this by navigating back into the directory of the file in question, use a text editor (ex. nano, vim, etc.) to edit that first line, then quit and save:  
+You have to open up Jon's python script - the **amptk** file you just create a soft link for - and change the header from `#!/usr/bin/env python` to just `#!/usr/bin/python`, or the script will fail to generate. Do this by navigating back into the directory of the file in question, use a text editor (ex. nano, vim, etc.) to edit that first line, then quit and save:  
 ```
 cd $HOME/miniconda3/pkgs/amptk
 nano amptk
@@ -151,3 +151,19 @@ Well, except if you happen to get a weird message, [try this](https://github.com
 ```
 conda remove --force readline
 ```
+
+You may also run into problems with the R program. If you need to do a manual install of that:
+```
+## Install in relevant directory
+cd $HOME/miniconda3/pkgs
+wget https://cran.r-project.org/src/base/R-3/R-3.4.1.tar.gz
+tar -xvzf R-3.4.1.tar.gz
+
+## Then configure and install
+cd $HOME/miniconda3/pkgs/R-3.4.1/
+./configure
+make
+make check
+```
+voila!
+
