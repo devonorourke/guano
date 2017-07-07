@@ -73,7 +73,7 @@ Once you've installed your virtual environment it's time to install a slew of de
 
 Let's do the easy stuff first, installing python modules with *pip*. Ensure that you are working within the *vamptk* directory and have that virtual environment active (look at the prompt - do you see something like ```vamptk[your@terminal]```?). By the way, these are pretty big programs so go get a cup of coffee and come back in about 20 minutes.
 ```
-conda install biopython natsort pandas numpy matplotlib biom-format psutil
+conda install --yes biopython natsort psutil biom-format pandas numpy matplotlib  
 ```  
 We're going to install a few other programs not listed in Jon's recommendations which can be very helpful for later applications such as plotting and note taking, and we'll use the same strategy as above with *pip*:  
 ```
@@ -109,10 +109,11 @@ That's it! **USEARCH** is fully executable binary file which you don't have to d
 Back to our Conda world. Pretty simple for many of these programs with just a few lines - see [this link](https://www.continuum.io/blog/developer/jupyter-and-conda-r) for a brief description of the 'r-essentials' package we install in the second command:  
 ```
 ## Install non-R dependencies
-conda install bedtools vsearch
+conda install bedtools vsearch sra-tools rpy2
 
 ## Now install R (this includes R and some helpful packages)
-conda install -c r r-essentials
+conda install r-base r-essentials r-curl r-irkernel bioconductor-phyloseq
+#notrun: conda install -c r r-base r-essentials r-curl r-irkernel bioconductor-phyloseq 
 
 ## Install a special R package not installed with that previous command
 conda install bioconductor-dada2
