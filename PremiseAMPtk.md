@@ -28,6 +28,7 @@ To create the scripts you'll want to run there are several potential arguments y
 So what does this code look like?  Here are some slurm scripts for code blocks that could be run individually or combined into a longer single script if you don't need to delve into contamination checks with your reads. In addition, these may be modified as needed, but generally are sufficient with the exception that you may want to rename file names, directories, etc.  
 
 ### amptk Illumina SLURM script
+This script would work on a single lane of data, present in the directory `/mnt/lustre/macmaneslab/devon/slurmtest/p5data/lane1` and is labeled as **amptk-IlluminaL1.sh**. Notably, the equvalent script for Lane 2 data follows the same structure but substitutes L1 with L2.  
 
 ```
 #!/bin/bash
@@ -35,11 +36,11 @@ So what does this code look like?  Here are some slurm scripts for code blocks t
 ## command executed is: sbatch amptk-illumina-test.sh
 ## see /mnt/lustre/hcgs/shared/slurm-templates for help on creating these scripts
 
-#SBATCH -D /mnt/lustre/macmaneslab/devon/slurmtest
+#SBATCH -D /mnt/lustre/macmaneslab/devon/slurmtest/p5data/lane1
 #SBATCH -p macmanes,shared
-#SBATCH --job-name="orourke-amptkIlluminaTest"
+#SBATCH --job-name="orourke-amptkIlluminaL1"
 #SBATCH --ntasks=1
-#SBATCH --output=oroAmpTest.output
+#SBATCH --output=oroAmpIllL1.output
 
 module purge
 module load linuxbrew/colsa
@@ -47,8 +48,8 @@ module load linuxbrew/colsa
 PATH=/mnt/lustre/macmaneslab/devon/bin:$PATH
 
 srun amptk illumina \
--i /mnt/lustre/macmaneslab/devon/slurmtest \
--o test2delete \
+-i /mnt/lustre/macmaneslab/devon/slurmtest/p5data/lane1 \
+-o p5L1 \
 --rescue_forward on \
 --require_primer off \
 --min_len 160 \
