@@ -69,7 +69,7 @@ chmod +x {script_name.sh}
 
 Next, run the slurm script for your arguments to be executed:  
 ```
-sbatch amptk-IlluminaL1.sh
+sbatch {script_name.sh}
 ```
 That's it!  
 
