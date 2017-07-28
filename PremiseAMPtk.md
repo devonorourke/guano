@@ -33,7 +33,7 @@ This script would work on a single lane of data, present in the directory `/mnt/
 ```
 #!/bin/bash
 
-## command executed is: sbatch amptk-illumina-test.sh
+## command executed is: sbatch amptk-IlluminaL1.sh
 ## see /mnt/lustre/hcgs/shared/slurm-templates for help on creating these scripts
 
 #SBATCH -D /mnt/lustre/macmaneslab/devon/slurmtest/p5data/lane1
@@ -58,4 +58,26 @@ srun amptk illumina \
 --read_length 250 \
 -f GGTCAACAAATCATAAAGATATTGG \
 -r GGWACTAATCAATTTCCAAATCC
+```
+
+## Step 3 - Execting the scripts
+To run one or all scripts, perform just a few steps:  
+First, make sure the script is executable:  
+```
+chmod +x {script_name.sh}
+```
+
+Next, run the slurm script for your arguments to be executed:  
+```
+sbatch amptk-IlluminaL1.sh
+```
+That's it!  
+
+You can check whether the program is operating properly with a few commands. To see whether it's lined up in the queue properly, type:  
+```
+squeue
+```
+Likewise, to see your personal history of Slurm job submissions, type:  
+```
+sacct
 ```
