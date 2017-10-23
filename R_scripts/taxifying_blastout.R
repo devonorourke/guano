@@ -1,3 +1,4 @@
+# this is super awesome
 #updating SINTAX and UTAX taxonmy information with 'taxize'
 #written 1.6.16
 #Devon O'Rourke
@@ -65,12 +66,12 @@ taxa_chunk3 <- taxa_chunk3_raw[,c("kingdom", "phylum", "class", "order", "family
 #then bind them all together
 ncbi_taxa_df = rbind(taxa_chunk1, taxa_chunk2, taxa_chunk3)
 #and rename them for an incoming merging with the 'blastdf' object
-colnames(ncbi_taxa_df) <- c("ncbi-kingdom", 
-                            "ncbi-phylum", 
-                            "ncbi-class", 
-                            "ncbi-order", 
-                            "ncbi-family", 
-                            "ncbi-genus", 
+colnames(ncbi_taxa_df) <- c("ncbi-kingdom",
+                            "ncbi-phylum",
+                            "ncbi-class",
+                            "ncbi-order",
+                            "ncbi-family",
+                            "ncbi-genus",
                             "ncbi-species",
                             "TAXid")
 
@@ -84,7 +85,7 @@ rm(query_chunk1, query_chunk2, query_chunk3, taxinfo_chunk1, taxinfo_chunk2, tax
 
 blastTaxa_df <- merge(blastdf, ncbi_taxa_df, by = "TAXid")
 
-#I'm not convinced it's worthwhile to compare BLAST outputs with anything less than 95% alignment... 
+#I'm not convinced it's worthwhile to compare BLAST outputs with anything less than 95% alignment...
 #what we're really trying to do is replace the obvious things - the OTUs which were assigned as "Animalia" only...
 ##...but really could be assigned confidently to a genus/species because of really high BLAST alignemnt...
 ### we could have avoided this entirely if we switched our 'blastn' parameters to query for a '-perc_identity' that was...
