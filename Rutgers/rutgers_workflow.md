@@ -1,9 +1,7 @@
 # Background
-Statements about the pre-bioinformatic work
-- sample collection
-- metadata components
-- DNA extraction and extended protocol
-- PCR and cleanup
+Single guano samples failed to generate significant numbers of amplicons; batch samples were substituted to improve the proportion of DNA extracted in hopes that more amplicons could be produced per (batch) sample. DNA extraction was performed by combining ~ 3-5 guano pieces per sample from each batch. Because we had excess guano per extraction, two separate extractions were performed from the same batch.
+
+Initial amplification of extracted DNA was as poor as individual samples. It is likely that there is extensive amount of DNA degradation in these dry samples; the addition of more tissue (guano) should increase the likelihood of template DNA target to amplify, however it also increase likelihood of inhibitors to PCR. To increase concentration and reduce inhibitors, each sample was subject to a 0.4x SPRI bead cleanup. The replicate samples were then pooled together and new amplification was conducted. Samples showed improved concentration of amplicons, though primer dimers were still extensive. Rather than removing these dimers on a per-sample basis with another SPRI bead cleanup (and risking lose even more amplicon target), samples were normalized (pooled) using total DNA (of PCR products); the subsequent pool was then filtered using the QiaQuick PCR cleanup spin column. The library was then submitted to Northern Arizona University's sequencing center.
 
 ## sequencing at NAU
 The pooled library of COI amplicons were sequenced using a MiSeq platform following 250 bp PE sequencing using V2 chemistry set for 500 cycles Northern Arizona University's sequencing center on January 17, 2017. Raw numbers of reads and general run metrics are available to view from [this Google Sheet](https://docs.google.com/spreadsheets/d/1uW1KONV-eMAPNyBe0-6iJSIvnG1MYa3nmCaTDsG5i68/edit#gid=0). Less the fraction of reads dedicated to the positive control, about 6.3 million reads were generated across 104 negative control and true samples (negative controls contributed just 1.45% of these reads).
