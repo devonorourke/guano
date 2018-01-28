@@ -186,9 +186,9 @@ The data is structured as follows:
 
 For example, the first observation occurs for the mock community sample, which identifies a Mock OTU as the OTU with the most reads associated to that sample (which is 223034 reads) - that's exactly what we'd expect (the mock community should contain only mock sequences). The next observation is that of sample `rut16-1382`; the OTU for this sample which has the greatest number of reads is OTU2, which contains 21124 reads total.  
 
-Highlighted **OTUid** fields are those cases which are of concern, and suggest that in some, but not all cases, we have mock community sequences producing significant index bleed into the overall proportion of our samples. 19 of 68 of these samples have a mock community member contributing to the highest proportion of their overall reads - this is a likely a direct consequence of the high proportion of mock community sequences relative to sample sequences.  
+Highlighted **OTUid** fields are those cases which are of concern, and suggest that in some, but not all cases, we have mock community sequences producing significant index bleed into the overall proportion of our samples. 19 of 68 of these samples have a mock community member contributing to the highest proportion of their overall reads - this is a likely a direct consequence of the high proportion of mock community sequences relative to sample sequences. The only way to account for these sequences are to remove them - this eliminates the false positive situation, but importantly, does nothing to address the fact that these may be samples in which that represents a real dietary component. Notably, these sequences are **not removed** from our filtering process, but remain in place even after taxonomy is assigned. However, when examining dietary trends among our samples, these mock samples will be filtered out.  
 
-The only way to account for these sequences are to remove them - this eliminates the false positive situation, but importantly, does nothing to address the fact that these may be samples in which that represents a real dietary component. Notably, these sequences are **not removed** from our filtering process, but remain in place even after taxonomy is assigned. However, when examining dietary trends among our samples, these mock samples will be filtered out.  
+What is just as revealing is that 2/3 of the samples don't contain a mock OTU as the dominant sequence type. This is encouraging because it suggests that if index bleed is happening, it's happening randomly and is not universally extensive (that is, even if every sample had some amount of mock OTU sequence in it, it's not in the majority). What is impossible to calculate is the extent with which a true sample is bleeding into another true sample.  
 
 ## Summary observations
 The proportion of index bleed _into_ the mock community is trivial - less than 0.05%. This is expected given the large proportion of reads in the mock community relative to any other single sample in the library. However, the proportion of mock community reads _into a non-mock sample_ varies; in about 1/3 of the overall instances the mock sequence represents the highest proportion of reads, yet this generally represents less than 20% of the overall number of total reads in a given sample. This would appear to set the upper ceiling of index bleed at about 20% (an enormous value which would drastically reduce our dataset).  
@@ -196,3 +196,68 @@ The proportion of index bleed _into_ the mock community is trivial - less than 0
 The tradeoff is as follows:  
 - **Keep majority of data, lose specific OTUS**. We can greatly reduce the observed index bleed if we eliminate mock sequences entirely from our analysis. However, the only rate with which we can empirically derive a value for index bleed if doing so would be from the `--calculate in` function which estimated a low index bleed rate of about 0.05%. The result in doing so would eliminate our potential to include the mock OTUs in any true sample, even if it were true that bats are eating one of those ~20 species. The benefit is that the vast majority of OTUs are retained; I would likely apply a slightly more conservative index bleed of about 0.1% (doubling the empirically derived observation).
 - **Keep all OTUs, lose majority of data**. This would drastically cut down the total number of reads remaining in our dataset, but would retain instances in which mock OTUs are identified in non-mock samples. This does not seem like the most prudent option because you are retaining potential false positives (which you can't empirically differentiate from true signal short of resequencing or targeting via qPCR), and you lose the majority of the overall read numbers in your data set.  
+
+## (almost) Final filtering protocol  
+I am going to apply an index-bleed filter of 1% across all reads, drop the mock community sample from our analysis, and carry forward with applying taxonomic information to the OTUs in the dataset. In addition, I will use the modified mock fasta file which added OTU228 as an additional Harmonia sequence.  
+
+This is performed with the following code:  
+
+```
+amptk filter \
+-i ../dropd.cluster.otu_table.txt \
+-f ../dropd.cluster.otus.fa \
+-b mockIM4p82redo \
+--delimiter csv \
+--index_bleed 0.01 \
+--mc /mnt/lustre/macmaneslab/devon/guano/mockFastas/CFMR_insect_mock4alt.fa \
+--threshold max \
+-o noNorm_bleed_1.0 \
+--normalize n
+```
+
+We observe the following summary statistics:  
+
+```
+Index bleed, mock into samples: 8.307496%.  Index bleed, samples into mock: 0.050620%.
+mockIM4p82redo sample has 56 OTUS out of 25 expected; 10 mock variants; 20 mock chimeras; Error rate: 0.041%
+Filtering OTU table down to 941 OTUs and 5,677,849 read counts
+```
+
+See **tableS3** for this output - a table of non-normalized number of reads per OTU per sample. Of note, this table suggests that among the OTUs detected in the mock sample the top 3 OTUs (in terms of number of reads) are **216, 29, and 11**. All other OTUs identified in the mock sample contain less than 10 reads. This is suggests that we may set a threshold for inclusion in our binary "present" or "absent" data table for future analyses in which somewhere between 10-217 reads are required to be considered "present", rather than just 1 or 2. This is ultimately the last major filtering consideration - what number of reads should any OTU, per sample, have _at a minimum_?  
+
+This _read minimum threshold_ can be applied in the same `amptk filter` script. When we append the above final filtering script to include `--min_reads_otu` and a value (either 216 or 29, for example) we see the following summary outputs:  
+
+** for a minimum number of reads > 29 **
+
+```
+mockIM4p82redo sample has 35 OTUS out of 25 expected; 4 mock variants; 7 mock chimeras; Error rate: 0.038%
+Filtering OTU table down to 703 OTUs and 5,673,534 read counts
+```
+
+** for a minimum number of reads > 216 **
+
+```
+mockIM4p82redo sample has 25 OTUS out of 25 expected; 1 mock variants; 0 mock chimeras; Error rate: 0.036%
+Filtering OTU table down to 442 OTUs and 5,626,434 read counts
+```
+
+We find that there are no unintended OTUs present in the mock community and have thus resolved any traces of index bleed _into the mock sample_ with the more stringend **217** minimum read threshold. As expected, the additional filtering parameter of requiring a read minimum of 217 reads per sample don't significantly reduce the total number of reads from the library (it's a net loss of less than 1%). What is significant is the number of OTUs which are discarded - we lose more than half in the case of a minimum read depth set to **217**, but lose only about a quarter of reads when set to **30**. To be most conservative I'm inclined to enact a stricter threshold for read inclusion and will set the minimum number of reads to that higher value to ensure we have removed all trace of index bleed into our mock community.  
+
+
+The final filtering command is as follows:  
+
+```
+amptk filter \
+-i ../dropd.cluster.otu_table.txt \
+-f ../dropd.cluster.otus.fa \
+-b mockIM4p82redo \
+--mc /mnt/lustre/macmaneslab/devon/guano/mockFastas/CFMR_insect_mock4alt.fa \
+--index_bleed 0.01 \
+--threshold max \
+--subtract 217 \
+-o fullFilt \
+--delimiter csv \
+--normalize n
+```
+
+One final note: the filtering threshold is applied to the dataset which contained all samples. Because some samples contained less than the minimum read number on a per-OTU basis
