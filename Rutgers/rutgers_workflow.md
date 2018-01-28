@@ -88,17 +88,6 @@ Note that both `dropd` and `trimd` datasets had the same code applied. The outpu
 
 ## filtering for index bleed
 
-Because a mock community was added to this project, the rate with which bardoes are misassigned can be estimated and accounted for when determining how many reads on a per-OTU basis should likely reflect true sample vs. index bleed. This is calculated with the following code:  
+Because a mock community was added to this project, the proportion of reads that are likely misassigned can be estimated on a per-OTU basis. In brief, we are certain of the OTUs likely to be present in mock community; any additional OTU is the result of index bleed. By calculating the proportion of reads that are present in our mock sample which _shouldn't be there_ we can estimate what fraction of reads (on a per-OTU basis) should be subtracted from all true samples.
 
-```
-srun amptk filter \
--i /mnt/lustre/macmaneslab/devon/p5data/L1dat/p5L1-noFilt.cluster.otu_table.txt \
--f /mnt/lustre/macmaneslab/devon/p5data/L1dat/p5L1-noFilt.cluster.otus.fa \
--b p5L1-mockIM4 \
---keep_mock \
---calculate in \
---mc /mnt/lustre/macmaneslab/devon/mockFastas/CFMR_insect_mock4.fa \
---debug \
---subtract auto \
--o p5L1-testfilt1
-```
+This process takes place by applying an initial filtering step that filters reads using the most strict criteria (taking the largest instance of an OTU bleed and applying that percentage to filter across true samples); intermediate files are kept to investigate how the index-bleed is distributed on a per-OTU basis. I have maintained a [separate document](https://github.com/devonorourke/guano/blob/master/Rutgers/filtering_notes.md) describing the detailed steps used to apply what I feel are the most appropriate filtering strategies for this dataset. In brief, this amounted to determining the proportion of index bleed _into the mock community_, the proportion of index bleed _from mock community into true samples_, and identifying any OTUs which were clustered yet not identified in the mock fasta file.
