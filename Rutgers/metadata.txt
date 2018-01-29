@@ -1,4 +1,4 @@
-SeqIDname	Location Name	Collection Date	Week of Year
+SampleID	Location	CollectDate	WeekOfYear
 rut16.1382	TWS	5/10/16	20
 rut16.1383	TWS	8/4/16	32
 rut16.1384	TWS	9/1/16	36
