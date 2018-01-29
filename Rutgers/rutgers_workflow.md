@@ -116,4 +116,4 @@ amptk taxonomy \
 --mapping_file /mnt/lustre/macmaneslab/devon/guano/NAU/p8-2/illumina/dropd.mapping_file.txt
 ```
 
- An R script was then used to manipulate the output `rut16_h.otu_table.taxonomy.txt` file which includes both further data filtering, as well as the calculations for frequency tables and visualizations.
+ An R script was then used to manipulate the output `rut16_h.otu_table.taxonomy.txt` file which includes both further data filtering, as well as the calculations for frequency tables and visualizations - [see here](https://github.com/devonorourke/guano/blob/master/Rutgers/OTUanalysis.R).
