@@ -51,9 +51,12 @@ rm(tmp.df, meta.df)
 master.df$onclick <- paste("http://v4.boldsystems.org/index.php/Public_BarcodeCluster?clusteruri=",
            as.character(master.df$BOLDid), sep = "")
 master.df$onclick <- gsub('.{2}$', '', master.df$onclick)     # had to remove last 2 characters for link to work
+master.df <- master.df[grepl("None", BOLDid), onclick := "no_link_available"];    # when BOLDid not available, removed broken link
 
 setwd("~/Desktop/guano/Rutgers/")
 write.csv(master.df, "master.csv", row.names = F, quote = F)
+
+## Notrun: write.table(master.df, "PHINCHmaster.txt", row.names = F, quote = F, sep = "\t")
 
 
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ # 
@@ -84,10 +87,46 @@ OTUperSite = count(master.df, vars = c("Location"))
 OTUperSite$Location <- sub("^$", "-control", OTUperSite$Location)
 write.csv(OTUperSite, "OTU_per_Site.csv", row.names = F, quote = F)   
 
+
 ## how many OTUs are called per site per week?
 OTUperSiteWeek = count(master.df, vars = c("Location", "WeekOfYear"))
 OTUperSiteWeek$Location <- sub("^$", "-control", OTUperSiteWeek$Location)
 write.csv(OTUperSiteWeek, "OTU_per_SiteWeek.csv", row.names = F, quote = F)   
+
+
+## what pests are detected?
+pestlist.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/pestlist.csv')
+
+## create a list of unique names from 'pestlist.df': unique species as well as unique genera
+pestSpeciesNames.df <- as.data.frame(unique(pestlist.df$LinneanName))     ## creates non-redundant list
+colnames(pestSpeciesNames.df) <- c("genus_name")
+pestSpeciesNames.df$genus_name <- as.character(pestSpeciesNames.df$genus_name)
+pestSpeciesNames.df$species_name <- pestSpeciesNames.df$genus_name
+pestSpeciesNames.df$genus_name <- gsub(" .*","", pestSpeciesNames.df$genus_name)  ## creates genus list, but not unique
+pestGenusNames.df <- data.frame(unique(pestSpeciesNames.df$genus))      ## creates a unique data.frame of unique genera
+colnames(pestGenusNames.df) <- "genus_name"
+pestGenusNames.df$genus_name <- as.character(pestGenusNames.df$genus_name)
+pestGenusNames.df$status <- "pest"
+pestSpeciesNames.df$genus_name <- NULL                                         ## creates a unique data.frame of unique species
+pestSpeciesNames.df$status <- "pest"
+rm(pestlist.df)
+
+## what 'species_name'values in 'master.df' match our 'pestSpeciesName.df' list?
+library(tidyverse)
+speciesPestMatch.df <- master.df %>% inner_join(pestSpeciesNames.df)
+
+## what 'genus_name'values in 'master.df' match our 'pestSpeciesName.df' list?
+    ## note these are not exact matches; 
+    ## these merely represent insects in 'master.df' which share a genus with pests listed in the same genera
+genusPestMatch.df <- master.df %>% inner_join(pestGenusNames.df)
+
+## how often was each species detected?
+genusPestMatch.table <- data.frame(table(genusPestMatch.df$species_name))
+length(unique(genusPestMatch.df$species_name))    ## 26 unique matches (not all unique matches named to species level)
+
+setwd("~/Desktop/guano/Rutgers/")
+write.csv(speciesPestMatch.df, "speciesPestMatch.csv", row.names = F, quote = F)
+write.csv(genusPestMatch.df, "genusPestMatch.csv", row.names = F, quote = F)
 
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ # 
               ######     Part 3 - data visualization     ######     
