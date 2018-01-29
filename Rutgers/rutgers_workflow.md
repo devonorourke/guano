@@ -126,6 +126,17 @@ amptk taxonomy \
 --mapping_file /mnt/lustre/macmaneslab/devon/guano/NAU/p8-2/illumina/dropd.mapping_file.txt
 ```
 
-The output fasta sequence was uploaded to [the Github repo](https://github.com/devonorourke/guano/tree/master/Rutgers), while the OTU table with taxonomic information was added to the [supplementary spreadsheet](https://docs.google.com/spreadsheets/d/1OQVuGjC5trpjTDsATPYikvr6J0B_bCLT1yoJc7i8NzQ/edit#gid=860400922) as **Table S6**.  
+The output fasta sequence was uploaded to [the Github repo](https://github.com/devonorourke/guano/tree/master/Rutgers), while the OTU table with taxonomic information was added to the [supplementary spreadsheet](https://docs.google.com/spreadsheets/d/1OQVuGjC5trpjTDsATPYikvr6J0B_bCLT1yoJc7i8NzQ/edit#gid=860400922) as **Table S6**. Note that this table is in a binary "presence/absence" format, thus any value of `1` indicates that an OTU has passed our filters and counts as detected (present), while a value of `0` indicates that there is not sufficient evidence of detection for an OTU in a given sample.  
 
- An R script was then used to manipulate the output `rut16_h.otu_table.taxonomy.txt` file which includes both further data filtering, as well as the calculations for frequency tables and visualizations - [see here](https://github.com/devonorourke/guano/blob/master/Rutgers/OTUanalysis.R).
+> Note that "absence" means a lot of different things:
+> - it could be that the OTU is not truly in the sample of guano
+> - it could be because an OTU was present but not amplified and sequenced  
+> - it could be the OTU was sequenced but there wasn't enough reads to pass our filters (with `--index_bleed` and `--subtract` arguments in `amptk filter`))
+
+ # Further analyses
+
+ An R script was then used to manipulate the output `rut16_h.otu_table.taxonomy.txt` file which includes both further data filtering, as well as the calculations for frequency tables and visualizations - [see here](https://github.com/devonorourke/guano/blob/master/Rutgers/OTUanalysis.R).  
+
+ > One such data filtering taking place here is the removal of reads associated with the mock community. The index-bleed from the mock sequences into true samples is still detected in **Table S6**, however, these are removed within the R script when producing the final summary tables  
+
+Please see the Rutgers project [Github repo](https://github.com/devonorourke/guano/blob/master/Rutgers) for data summaries and visualizations.  
