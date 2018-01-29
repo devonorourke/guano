@@ -16,35 +16,66 @@ w1.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/Rutg
 
 ## reformat matrix into data.frame, split strings into appropriate columns
 w1.df[w1.df == 0] <- NA       # we loaded a binary matrix; all zero's indicate absence of data, all 1's indicate presence of an amplicon
-tmp1.df <- melt(w1.df)           # converting from wide format to long format (useful for plots)
+tmp.df <- melt(w1.df)           # converting from wide format to long format (useful for plots)
 rm(w1.df)
-colnames(tmp1.df) <- c("OTUid", "Taxonomy", "SampleID", "Presence")
-tmp2.df <- tmp1.df[complete.cases(tmp1.df),]
-rm(tmp1.df)
-tmp2.df$Presence <- NULL
-tmp2.df <- separate(data = tmp2.df, 
+colnames(tmp.df) <- c("OTUid", "Taxonomy", "SampleID", "Presence")
+tmp.df <- tmp.df[complete.cases(tmp.df),]
+tmp.df$Presence <- NULL
+tmp.df <- separate(data = tmp.df, 
                     col = Taxonomy, 
-                    into = c("TaxMethod", 
-                             "AlignScore", 
-                             "BOLDid", 
-                             "kingdom_name", 
-                             "phylum_name", 
-                             "class_name", 
-                             "order_name", 
-                             "family_name", 
-                             "genus_name", 
-                             "species_name"), 
+                    into = c("TaxMethod", "AlignScore", "BOLDid", "kingdom_name", "phylum_name", "class_name", 
+                             "order_name", "family_name", "genus_name", "species_name"), 
                     sep = "\\;|,|\\|")
 
 ## reformat taxonomy columns to discard given prefix
-tmp2.df$kingdom_name <- sub("k:", "", tmp2.df$kingdom_name)
-tmp2.df$phylum_name <- sub("p:", "", tmp2.df$phylum_name)
-tmp2.df$class_name <- sub("c:", "", tmp2.df$class_name)
-tmp2.df$order_name <- sub("o:", "", tmp2.df$order_name)
-tmp2.df$family_name <- sub("f:", "", tmp2.df$family_name)
-tmp2.df$genus_name <- sub("g:", "", tmp2.df$genus_name)
-tmp2.df$species_name <- sub("s:", "", tmp2.df$species_name)
+tmp.df$kingdom_name <- sub("k:", "", tmp.df$kingdom_name)
+tmp.df$phylum_name <- sub("p:", "", tmp.df$phylum_name)
+tmp.df$class_name <- sub("c:", "", tmp.df$class_name)
+tmp.df$order_name <- sub("o:", "", tmp.df$order_name)
+tmp.df$family_name <- sub("f:", "", tmp.df$family_name)
+tmp.df$genus_name <- sub("g:", "", tmp.df$genus_name)
+tmp.df$species_name <- sub("s:", "", tmp.df$species_name)
+
+## remove Chiroptera reads; remove reads assigned to Mock Community sequences
+tmp.df <- subset(tmp.df, order_name != "Chiroptera")
+tmp.df <- tmp.df[grep("^MockIM", tmp.df$OTUid, invert = TRUE),]
+tmp.df <- tmp.df[grep("^Mock-Harmonia", tmp.df$OTUid, invert = TRUE),]
+
+## merge with metadata information
+meta.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/Rutgers/metadata.txt')
+meta.df$SampleID <- sub("\\.", "-", meta.df$SampleID)
+master.df <- merge(tmp.df, meta.df)
+rm(tmp.df, meta.df)
+
+setwd("~/Desktop/guano/Rutgers/")
+write.csv(master.df, "master.csv", row.names = F, quote = F)
+
 
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ # 
-               ######     Part 2 - frequency tables     ######     
+                 ######     Part 2 - data analyses     ######     
+# ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
+
+## load libraries and set working directory to print out data tables:
+library(plyr)
+setwd("~/Desktop/guano/Rutgers/")
+
+## how many observations of OTUs contain complete information (ie. include 'species_name')... a.k.a. species frequency table
+speciesOnly.df <- na.omit(master.df)
+freq_species <- as.data.frame(table(speciesOnly.df$species_name))     # frequency table of species detected
+colnames(freq_species) <- c("species_name", "counts")
+write.csv(freq_species, "species_frq_table.csv", row.names = F, quote = F)   
+sum(freq_species$Freq > 1)  # note 166 species identified, but almost all rare (just 53 OTUs detected more than once)
+
+## how many OTUs are called per site?
+OTUperSite = count(master.df, vars = c("Location"))
+OTUperSite$Location <- sub("^$", "-control", OTUperSite$Location)
+write.csv(OTUperSite, "OTU_per_Site.csv", row.names = F, quote = F)   
+
+## how many OTUs are called per site per week?
+OTUperSiteWeek = count(master.df, vars = c("Location", "WeekOfYear"))
+OTUperSiteWeek$Location <- sub("^$", "-control", OTUperSiteWeek$Location)
+write.csv(OTUperSiteWeek, "OTU_per_SiteWeek.csv", row.names = F, quote = F)   
+
+# ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ # 
+              ######     Part 3 - data visualization     ######     
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
