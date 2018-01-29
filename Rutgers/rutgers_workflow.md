@@ -1,4 +1,7 @@
-# Background
+# Introduction
+All information created for this project is available at [this Github repo](https://github.com/devonorourke/guano/tree/master/Rutgers). Please visit that page for more information regarding data tables, visualizations, and code used to complete this work.
+
+## extraction history
 Single guano samples failed to generate significant numbers of amplicons; batch samples were substituted to improve the proportion of DNA extracted in hopes that more amplicons could be produced per (batch) sample. DNA extraction was performed by combining ~ 3-5 guano pieces per sample from each batch. Because we had excess guano per extraction, two separate extractions were performed from the same batch.
 
 Initial amplification of extracted DNA was as poor as individual samples. It is likely that there is extensive amount of DNA degradation in these dry samples; the addition of more tissue (guano) should increase the likelihood of template DNA target to amplify, however it also increase likelihood of inhibitors to PCR. To increase concentration and reduce inhibitors, each sample was subject to a 0.4x SPRI bead cleanup. The replicate samples were then pooled together and new amplification was conducted. Samples showed improved concentration of amplicons, though primer dimers were still extensive. Rather than removing these dimers on a per-sample basis with another SPRI bead cleanup (and risking lose even more amplicon target), samples were normalized (pooled) using total DNA (of PCR products); the subsequent pool was then filtered using the QiaQuick PCR cleanup spin column. The library was then submitted to Northern Arizona University's sequencing center.
@@ -61,7 +64,9 @@ amptk remove \
 gzip dropd.demux.fq
 ```
 
-This is a significant threshold as it drops 37 of 104 possible samples. However, the total number of reads which are excluded from the dataset is just 1% of the overall amount. A separate design in which all samples, or a lower threshold read-number applied, is also possible to carry through and compare if major difference arise in OTU abundance, index bleed thresholds, etc. As a first approximation, this more conservative approach seemed most sensible. Analysis of this reduced dataset has the suffix `dropd` applied, while a dataset in which all samples are included are termed `trimd`.  
+This is a significant threshold as it drops 37 of 104 possible samples. However, the total number of reads which are excluded from the dataset is just 1% of the overall amount. A separate design in which all samples, or a lower threshold read-number applied, is also possible to carry through and compare if major difference arise in OTU abundance, index bleed thresholds, etc. As a first approximation, the more conservative approach seemed most sensible. Analysis of this reduced dataset has the suffix `dropd` applied. However it's also useful to explore what happens post-filtering with the less stringent read depth criteria are relaxed and all samples are included - these are termed `trimd`.
+
+Both datasets were retained throughout the analyses. Clustering was performed independently between datasets while filtering was applied to the `dropd` dataset only. One consequence of independent clustering approaches is the OTU numbers aren't comparable - what sequence represents OTU1 in the `dropd` dataset isn't necessarily the same sequence for OTU1 in the `trimd` dataset.  
 
 ## clustering for OTUs
 
@@ -92,7 +97,12 @@ Because a mock community was added to this project, the proportion of reads that
 
 This process takes place by applying an initial filtering step that filters reads using the most strict criteria (taking the largest instance of an OTU bleed and applying that percentage to filter across true samples); intermediate files are kept to investigate how the index-bleed is distributed on a per-OTU basis. I have maintained a [separate document](https://github.com/devonorourke/guano/blob/master/Rutgers/filtering_notes.md) describing the detailed steps used to apply what I feel are the most appropriate filtering strategies for this dataset. In addition, data output from these filtering steps is contained in a [supplementary spreadsheet](https://docs.google.com/spreadsheets/d/1OQVuGjC5trpjTDsATPYikvr6J0B_bCLT1yoJc7i8NzQ/edit#gid=1765686535).  
 
-In brief, this amounted to determining the proportion of index bleed _into the mock community_, the proportion of index bleed _from mock community into true samples_, and identifying any OTUs which were clustered yet not identified in the mock fasta file. Following data filtering, an initial dataset containing **953 OTUs** and **9,335,697 reads** is reduced to **442 OTUs** and **5,626,434 reads**. A pair of output files after completing filtering steps are applied to then assign taxonomic information to our remaining reads.  
+In brief, this amounted to determining the proportion of index bleed _into the mock community_, the proportion of index bleed _from mock community into true samples_, and identifying any OTUs which were clustered yet not identified in the mock fasta file.  
+
+- Following a conservative data filtering approach, an initial dataset containing **100** samples, **953 OTUs** and **9,335,697 reads** is reduced to **67 samples**, **442 OTUs** and **5,626,434 reads**.   
+- The less stringent approach retains signal from all **99 samples**, **454 OTUs**, and **5,655,871 reads**.
+
+ A pair of output files after completing filtering steps are applied to then assign taxonomic information to our remaining reads. Following these steps, the `trimd` dataset was used exclusively to assign taxonomy to the OTUs present.  
 
 ## taxonomy assignment
 As described in the [amptk taxonomy](http://amptk.readthedocs.io/en/latest/taxonomy.html) section, the database used to assign taxonomy is derived from the Barcode of Life Database ([BOLD](http://v4.boldsystems.org/)). The sequences present in the database we're using are the result of two sequential clustering processes.
@@ -108,12 +118,14 @@ The following code was applied (in this example the method is the `hybrid` appro
 
 ```
 amptk taxonomy \
--i /mnt/lustre/macmaneslab/devon/guano/NAU/p8-2/filt/filt_final/fullFilt.final.binary.txt \
+--input /mnt/lustre/macmaneslab/devon/guano/NAU/p8-2/filt/filt_final/fullFilt.final.binary.txt \
 --fasta /mnt/lustre/macmaneslab/devon/guano/NAU/p8-2/filt/filt_final/fullFilt.filtered.otus.fa \
 --out rut16_h \
 --db COI \
 --method usearch \
 --mapping_file /mnt/lustre/macmaneslab/devon/guano/NAU/p8-2/illumina/dropd.mapping_file.txt
 ```
+
+The output fasta sequence was uploaded to [the Github repo](https://github.com/devonorourke/guano/tree/master/Rutgers), while the OTU table with taxonomic information was added to the [supplementary spreadsheet](https://docs.google.com/spreadsheets/d/1OQVuGjC5trpjTDsATPYikvr6J0B_bCLT1yoJc7i8NzQ/edit#gid=860400922) as **Table S6**.  
 
  An R script was then used to manipulate the output `rut16_h.otu_table.taxonomy.txt` file which includes both further data filtering, as well as the calculations for frequency tables and visualizations - [see here](https://github.com/devonorourke/guano/blob/master/Rutgers/OTUanalysis.R).

@@ -175,7 +175,7 @@ Final.df$WhichMax <- NULL
 
 The goal of this analysis was to search through each sample and identify the OTU which contained the greatest number of reads. The output lists the OTU identity, the number of reads, and the sample name. The output can be viewed on [tableS2](https://docs.google.com/spreadsheets/d/1OQVuGjC5trpjTDsATPYikvr6J0B_bCLT1yoJc7i8NzQ/edit#gid=0).  
 
-The raw output from the R script only generates three fields. Two additional fields were created and are explained below. Note that the **OTUid** field indicates extensive numbers of suspected mock chimeras - this is a bug in the software which prints this value out when performing `--calculate all` in the `amptk filter` script _and you keep your `--keep mock` flag_. For further details about the naming convention Jon applies, see lines 185-189 in [his python script](https://github.com/nextgenusfs/amptk/blob/master/bin/amptk-filter.py).  
+The raw output from the R script only generates three fields. Two additional fields were created and are explained below. Note that the **OTUid** field indicates extensive numbers of suspected mock chimeras - this is a bug in the software which prints this value out when performing `--calculate all` in the `amptk filter` script _and you keep your `--keep mock` flag_. For further details about the naming convention Jon applies, see lines 185-189 in [his python script](https://github.com/nextgenusfs/amptk/blob/master/bin/amptk-filter.py). You'll note that these _suspected mock_ identifiers are dropped in the final two OTU tables, **S4** and **S5**, while retaining the same OTU number (in short, they're not actually suspected chimeras).  
 
 The data is structured as follows:  
 - **SampleID** represents the uniquely sequenced guano sample  
@@ -254,12 +254,15 @@ amptk filter \
 --mc /mnt/lustre/macmaneslab/devon/guano/mockFastas/CFMR_insect_mock4alt.fa \
 --index_bleed 0.01 \
 --threshold max \
+--calculate in \
 --subtract 217 \
--o fullFilt \
+-o DropdFilt \
 --delimiter tsv \
 --normalize n
 ```
 
 See **tableS4** for output of the final number of reads associated per sample per OTU.  
 
-One final note: the filtering threshold applied to this dataset could also reasonably be applied to the other dataset which contained _all samples_; note, however, that because some samples contained less _total reads_ than the minimum read number on a per-OTU basis, some of these would be dropped anyway again. Because we based our filtering from index bleed into the mock community using samples with the greatest number of reads it's highly likely that the filtering parameters would have changed by including additional samples which contained even fewer reads.  
+One final note: the filtering threshold applied to this dataset could also reasonably be applied to the other dataset which contained _all samples_; note, however, that because some samples contained less _total reads_ than the minimum read number on a per-OTU basis, some of these would be dropped anyway again. Because we based our filtering from index bleed into the mock community using samples with the greatest number of reads it's highly likely that the filtering parameters would have changed by including additional samples which contained even fewer reads. This was applied as a comparison, with the `-i` and `-f` flags reflecting the changed input files from `dropd` to `trim`. There were a few more OTUs preserved, a few more reads preserved, and more samples.  
+
+See **tableS5** for output when using the `trimd` dataset.
