@@ -256,8 +256,10 @@ amptk filter \
 --threshold max \
 --subtract 217 \
 -o fullFilt \
---delimiter csv \
+--delimiter tsv \
 --normalize n
 ```
 
-One final note: the filtering threshold is applied to the dataset which contained all samples. Because some samples contained less than the minimum read number on a per-OTU basis
+See **tableS4** for output of the final number of reads associated per sample per OTU.  
+
+One final note: the filtering threshold applied to this dataset could also reasonably be applied to the other dataset which contained _all samples_; note, however, that because some samples contained less _total reads_ than the minimum read number on a per-OTU basis, some of these would be dropped anyway again. Because we based our filtering from index bleed into the mock community using samples with the greatest number of reads it's highly likely that the filtering parameters would have changed by including additional samples which contained even fewer reads.  

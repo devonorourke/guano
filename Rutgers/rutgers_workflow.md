@@ -92,6 +92,28 @@ Because a mock community was added to this project, the proportion of reads that
 
 This process takes place by applying an initial filtering step that filters reads using the most strict criteria (taking the largest instance of an OTU bleed and applying that percentage to filter across true samples); intermediate files are kept to investigate how the index-bleed is distributed on a per-OTU basis. I have maintained a [separate document](https://github.com/devonorourke/guano/blob/master/Rutgers/filtering_notes.md) describing the detailed steps used to apply what I feel are the most appropriate filtering strategies for this dataset. In addition, data output from these filtering steps is contained in a [supplementary spreadsheet](https://docs.google.com/spreadsheets/d/1OQVuGjC5trpjTDsATPYikvr6J0B_bCLT1yoJc7i8NzQ/edit#gid=1765686535).  
 
-In brief, this amounted to determining the proportion of index bleed _into the mock community_, the proportion of index bleed _from mock community into true samples_, and identifying any OTUs which were clustered yet not identified in the mock fasta file. Following data filtering, an initial dataset containing **953 OTUs** and **9,335,697 reads** is reduced to **941 OTUs** and **5,677,849 reads**. Notably, this is not the last filtering step which will occur
+In brief, this amounted to determining the proportion of index bleed _into the mock community_, the proportion of index bleed _from mock community into true samples_, and identifying any OTUs which were clustered yet not identified in the mock fasta file. Following data filtering, an initial dataset containing **953 OTUs** and **9,335,697 reads** is reduced to **442 OTUs** and **5,626,434 reads**. A pair of output files after completing filtering steps are applied to then assign taxonomic information to our remaining reads.  
 
 ## taxonomy assignment
+As described in the [amptk taxonomy](http://amptk.readthedocs.io/en/latest/taxonomy.html) section, the database used to assign taxonomy is derived from the Barcode of Life Database ([BOLD](http://v4.boldsystems.org/)). The sequences present in the database we're using are the result of two sequential clustering processes.
+- BOLD's BIN data serve as the initial sequence material. These sequences themselves are initially derived from [a clustering process](http://v4.boldsystems.org/index.php/Public_BarcodeIndexNumber_Home).
+- The BIN sequences are then clustered locally by amptk to 99% identity. These data are further processed to train the UTAX program which can be used in taxonomic assignment/prediction.  
+
+> This database was updated as of 14-sept-2017, following the [release](https://github.com/nextgenusfs/amptk/releases/tag/1.0.0) of amptk v-1.0.0.  
+> Complete database download is [available here](https://osf.io/4xd9r/files/)
+
+Taxonomy was explored using both the _hybrid_ approach (default in amptk) as well as a _usearch only_ approach. In both instances, the `--method` reflected the given approach. See Jon's description of the steps used in his documentation at the link above.  
+
+The following code was applied (in this example the method is the `hybrid` approach):  
+
+```
+amptk taxonomy \
+-i /mnt/lustre/macmaneslab/devon/guano/NAU/p8-2/filt/filt_final/fullFilt.final.binary.txt \
+--fasta /mnt/lustre/macmaneslab/devon/guano/NAU/p8-2/filt/filt_final/fullFilt.filtered.otus.fa \
+--out rut16_h \
+--db COI \
+--method usearch \
+--mapping_file /mnt/lustre/macmaneslab/devon/guano/NAU/p8-2/illumina/dropd.mapping_file.txt
+```
+
+ An R script was then used to manipulate the output `rut16_h.otu_table.taxonomy.txt` file which includes both further data filtering, as well as the calculations for frequency tables and visualizations.
