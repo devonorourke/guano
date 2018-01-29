@@ -47,6 +47,11 @@ meta.df$SampleID <- sub("\\.", "-", meta.df$SampleID)
 master.df <- merge(tmp.df, meta.df)
 rm(tmp.df, meta.df)
 
+## adding hyperlink to link BOLD BIN value to website
+master.df$onclick <- paste("http://v4.boldsystems.org/index.php/Public_BarcodeCluster?clusteruri=",
+           as.character(master.df$BOLDid), sep = "")
+master.df$onclick <- gsub('.{2}$', '', master.df$onclick)     # had to remove last 2 characters for link to work
+
 setwd("~/Desktop/guano/Rutgers/")
 write.csv(master.df, "master.csv", row.names = F, quote = F)
 
@@ -59,12 +64,20 @@ write.csv(master.df, "master.csv", row.names = F, quote = F)
 library(plyr)
 setwd("~/Desktop/guano/Rutgers/")
 
+## following our filtering, how many samples remain with at least 1 OTU? 2 OTUs? 10 OTUs?
+OTUperSample = count(master.df, vars = c("SampleID"))   # There are 92 remaining samples; 5 of these are negative controls
+sum(OTUperSample$freq > 1)    # There are 74 samples with at least 2 OTUs (includes all 5 negative controls)
+sum(OTUperSample$freq > 4)    # There are 41 samples with at least 5 OTUs (includes 2 negative controls)
+sum(OTUperSample$freq > 9)    # There are 26 samples with at least 10 OTUs (includes 1 negative control)
+
+
 ## how many observations of OTUs contain complete information (ie. include 'species_name')... a.k.a. species frequency table
 speciesOnly.df <- na.omit(master.df)
 freq_species <- as.data.frame(table(speciesOnly.df$species_name))     # frequency table of species detected
 colnames(freq_species) <- c("species_name", "counts")
 write.csv(freq_species, "species_frq_table.csv", row.names = F, quote = F)   
-sum(freq_species$Freq > 1)  # note 166 species identified, but almost all rare (just 53 OTUs detected more than once)
+sum(freq_species$counts > 1)  # note 172 species identified, but almost all rare (just 55 OTUs detected more than once)
+
 
 ## how many OTUs are called per site?
 OTUperSite = count(master.df, vars = c("Location"))
