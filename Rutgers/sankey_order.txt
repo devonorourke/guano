@@ -1,0 +1,32 @@
+1	Arachnida
+2	Insecta
+3	Insecta
+4	Maxillopoda
+5	Malacostraca
+6	Insecta
+7	Collembola
+8	Insecta
+9	Hexanauplia
+10	Insecta
+11	Insecta
+12	Malacostraca
+13	Insecta
+14	Insecta
+15	Insecta
+16	Arachnida
+17	Insecta
+18	Insecta
+19	Insecta
+20	Collembola
+21	Insecta
+22	Arachnida
+23	Collembola
+24	Insecta
+25	Arachnida
+
+don't forget:
+ [1] "Araneae"          "Blattodea"        "Coleoptera"       "Cyclopoida"       "Decapoda"         "Diptera"         
+ [7] "Entomobryomorpha" "Ephemeroptera"    "Harpacticoida"    "Hemiptera"        "Hymenoptera"      "Isopoda"         
+[13] "Lepidoptera"      "Mecoptera"        "Megaloptera"      "Mesostigmata"     "Neuroptera"       "Orthoptera"      
+[19] "Plecoptera"       "Poduromorpha"     "Psocodea"         "Sarcoptiformes"   "Symphypleona"     "Trichoptera"     
+[25] "Trombidiformes"
