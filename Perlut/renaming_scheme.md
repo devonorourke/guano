@@ -14,6 +14,14 @@ The following steps were applied to the files to achieve that:
 ```
 for i in *.gz; do mv "$i" "$(echo "$i" | sed -e 's/NHCS-//' | sed -e 's/CONTROL-//' | sed -e 's/-.*._L/_L/' | sed -e 's/une/une-/' - )"; done
 ```
+This should create a list of files that now look something like this:  
+
+```
+extBlankA07_L001_R1_001.fastq.gz     une-31_L001_R2_001.fastq.gz
+extBlankA07_L001_R2_001.fastq.gz     une-32_L001_R1_001.fastq.gz
+extBlankB11_L001_R1_001.fastq.gz     une-32_L001_R2_001.fastq.gz
+extBlankB11_L001_R2_001.fastq.gz     une-33_L001_R1_001.fastq.gz
+```
 
 2. Create a text file which is just a list of those `fastq.gz` filenames as they currently exist (we'll use this list to build in a file used to substitute one list of names with another):  
 ```
@@ -50,4 +58,13 @@ paste tmp_filelist.txt wanted_filelist.txt > final_filelist.txt
 8. Use that `final_filelist.txt` and pass this argument to rename all the files:
 ```
 xargs -a final_filelist.txt -n 2 mv
+```
+
+This should rename all the files so that they now look something like this (compare to the inital structure from *step 1*: 
+
+```
+extBlankA07_GTCTGCTA-CGTCGCTA_L001_R2_001.fastq.gz     une-31_CGAGCGAC-GACACTGA_L001_R2_001.fastq.gz
+extBlankA07_TAGTCTCC-GCTCTAGT_L001_R1_001.fastq.gz     une-31_GACATAGT-CGTCGCTA_L001_R1_001.fastq.gz
+extBlankB11_GTCTATGA-GACACTGA_L001_R2_001.fastq.gz     une-32_CTGCGTAG-CTAGAGCT_L001_R2_001.fastq.gz
+extBlankB11_TAGTCTCC-CTAGAGCT_L001_R1_001.fastq.gz     une-32_TGAGTACG-CGTCGCTA_L001_R1_001.fastq.gz
 ```
