@@ -68,3 +68,9 @@ extBlankA07_TAGTCTCC-GCTCTAGT_L001_R1_001.fastq.gz     une-31_GACATAGT-CGTCGCTA_
 extBlankB11_GTCTATGA-GACACTGA_L001_R2_001.fastq.gz     une-32_CTGCGTAG-CTAGAGCT_L001_R2_001.fastq.gz
 extBlankB11_TAGTCTCC-CTAGAGCT_L001_R1_001.fastq.gz     une-32_TGAGTACG-CGTCGCTA_L001_R1_001.fastq.gz
 ```
+
+Remove the unwanted `.txt` files from the directory and you're ready to start with the `amptk `pipeline:
+
+```
+rm *.txt
+```
