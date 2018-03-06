@@ -27,13 +27,22 @@ A series of steps were applied to achieve that, as [described here](https://gith
 
 # amptk pipeline
 
-[amptk](https://github.com/nextgenusfs/amptk) is a bioinformatic toolkit which performs all necessary tasks beginning with quality and adapter trimming of raw reads, clustering OTUs, denoising and chimera detection, through to assigning taxonomy to each identified cluster and generating (among other outputs) the list of per-sample taxa represented in the dataset. A full documentation of available parameters used for the program are [detailed here](http://amptk.readthedocs.io/en/latest/index.html)
+[amptk](https://github.com/nextgenusfs/amptk) is a bioinformatic toolkit which performs all necessary tasks beginning with quality and adapter trimming of raw reads, clustering OTUs, denoising and chimera detection, through to assigning taxonomy to each identified cluster and generating (among other outputs) the list of per-sample taxa represented in the dataset. A full documentation of available parameters used for the program are [detailed here](http://amptk.readthedocs.io/en/latest/index.html). 
+
+A virtual environment was created when completing the installation process. _Recall that `amptk` is written in Python2, not Python3_. Initiall installation proceeded as described in Jon's suggested installation guide.  
 
 > A note about versions - in addition to the core Python scripts comprising `amptk`, several dependencies were also installed. Versions used in this analysis include:
-- amptk v. 1.0.3
-- usearch v. 9.2.64
-- vsearch v. 2.6.2
-- remaining python modules and R dependencies were installed via Conda
+- amptk v. 1.1.0
+- usearch9 v9.2.64_i86linux32
+- usearch10 v10.0.240_i86linux32
+- vsearch v2.6.2_linux_x86_64
+- remaining python modules and R dependencies were installed via Conda (upgrade/updates with `pip` and/or `conda` performed 5-Mar-2017); install commands were:  
+
+```
+pip install -U -I biopython natsort pandas numpy matplotlib seaborn edlib biom-format psutil
+conda install r-base bioconductor-dada2
+conda install r-base bioconductor-dada2
+```  
 
 ## adapter trimming and PE merging
 
@@ -43,7 +52,7 @@ The first step in the pipeline trims adapters (as a result of the insert length 
 
 ```
 amptk illumina \
--i /mnt/lustre/macmaneslab/devon/guano/NAU/p8-2/raw_fq \
+-i /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/fqraw \
 -o trim \
 --rescue_forward on \
 --require_primer off \
