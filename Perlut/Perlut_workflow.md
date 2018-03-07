@@ -56,7 +56,13 @@ conda install r-base bioconductor-dada2
 
 The first step in the pipeline trims adapters (as a result of the insert length being less than the read length) and then uses USEARCH to merge paired end reads. Orphaned reads are discarded (this typically accounts for less then 2% of the overall number or reads in a sample). A single **.fastq.gz** file is output by concatenating all the individual paired reads with headers modified to specify the sample name. In addition, the **.amptk-demux.log** file documents the proportion of merged reads per sample. These ranged from the high end (~3.5 million; positive control) to just 26 total reads for a single sample. There was a significant distribution of numbers of reads for true samples which reflects the stochasticity inherent in amplifying targets from guano extracts, challenges in properly quantifying amplicon vs. primer dimer when pooling, and preference for pure DNA over extract (positive control vs. all else).  
 
->amptk initially failed because files weren't decompressed properly. This was resolved and appended at the very first step of the renaming process described above. In addition, a `filt_fq` directory was created prior to executing the command, and the script was designed to dump the output files into that directory. The entire script was submitted using our SLURM job submission software; pertinent information regarding the amptk-specific arguments were as follows:  
+>amptk initially failed because files weren't decompressed properly. This is resolved with the following command:
+
+```
+gzip -d *.gz
+```
+
+> In addition, a `filt_fq` directory was created prior to executing the command, and the script was designed to dump the output files into that directory. The entire script was submitted using our SLURM job submission software; pertinent information regarding the amptk-specific arguments were as follows:  
 
 ```
 amptk illumina \
