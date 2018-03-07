@@ -62,7 +62,7 @@ The first step in the pipeline trims adapters (as a result of the insert length 
 gzip -d *.gz
 ```
 
-> In addition, a `filt_fq` directory was created prior to executing the command, and the script was designed to dump the output files into that directory. The entire script was submitted using our SLURM job submission software; pertinent information regarding the amptk-specific arguments were as follows:  
+> In addition, an `illumina` directory was created prior to executing the command, and the script was designed to dump the output files into that directory. The entire script was submitted using our SLURM job submission software; pertinent information regarding the amptk-specific arguments were as follows:  
 
 ```
 amptk illumina \
@@ -81,11 +81,13 @@ amptk illumina \
 
 ## dropping samples
 
-There is an important tradeoff between the likelihood that a read is the result of index bleed versus a true representation of the amplicons in a sample; if one is to account and filter for index-bleed, then one is to likely reduce the number of reads in a sample. In addition, because the mock community proportion of reads was large in this run, the likelihood of index bleed is higher than if the positive control had a moderate number of reads (proportional to per-sample read numbers). There are additional filtering parameters applied to account for this, though these filtering parameters work best when the low-read number samples are discarded. The following code was executed to drop the samples with less than 4800 reads, as that value represented samples with less than 0.5% total reads indexed to this project on the lane.
+There is an important tradeoff between the likelihood that a read is the result of index bleed versus a true representation of the amplicons in a sample; if one is to account and filter for index-bleed, then one is to likely reduce the number of reads in a sample. In addition, because the mock community proportion of reads was large in this run, the likelihood of index bleed is higher than if the positive control had a moderate number of reads (proportional to per-sample read numbers). There are additional filtering parameters applied to account for this, though these filtering parameters work best when the low-read number samples are discarded. The following code was executed to drop the samples with less than 4800 reads, as that value represented samples with less than 0.5% total reads indexed to this project on the lane.  
+
+> note that a `dropd` directory was created to pass the output files into; the following command was executed within that `dropd` directory
 
 ```
 amptk remove \
--i /mnt/lustre/macmaneslab/devon/guano/NAU/p8-2/filt_fq/trim.demux.fq.gz \
+-i /mnt/lustre/macmaneslab/devon/guano/NAU/p8-2/illumina/trim.demux.fq.gz \
 -t 4800 \
 -o dropd.demux.fq
 
