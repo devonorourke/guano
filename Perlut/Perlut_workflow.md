@@ -25,6 +25,14 @@ The goal was to produce file names with the following scheme: `{SampleName}_{bar
 
 A series of steps were applied to achieve that, as [described here](https://github.com/devonorourke/guano/blob/master/Perlut/renaming_scheme.md).  
 
+### side note on mock community
+The sample sheet submitted to the sequencing center incorrectly assigned the i7 and i5 index names (barcodes associated with 
+the mock community sample (this was the only sample with an incorrect barcode designation). The files were recovered by accessing the `Undetermined_S0_...fastq` file pair, containing all reads which an index sequence was recognized by the sequencer itself, but not associated with any listed index sequence on the sample sheet. A `grep` search as follows isolated the barcode sequence pair used in the run, and this pair was then added into the standard `amptk` workflow:  
+```
+cat Undetermined_S0_L001_R2_001.fastq | grep -A 3 "TGCGTCAA+GTCTAGTG" > unk_perlut_TGCGTCAA-GTCTAGTG_L001_R2_001.fastq &
+cat Undetermined_S0_L001_R2_001.fastq | grep -A 3 "TGCGTCAA+GTCTAGTG" > unk_perlut_TGCGTCAA-GTCTAGTG_L001_R2_001.fastq &
+```
+
 # amptk pipeline
 
 [amptk](https://github.com/nextgenusfs/amptk) is a bioinformatic toolkit which performs all necessary tasks beginning with quality and adapter trimming of raw reads, clustering OTUs, denoising and chimera detection, through to assigning taxonomy to each identified cluster and generating (among other outputs) the list of per-sample taxa represented in the dataset. A full documentation of available parameters used for the program are [detailed here](http://amptk.readthedocs.io/en/latest/index.html). 
