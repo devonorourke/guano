@@ -9,17 +9,17 @@ We'll start with the default parameters established by `amptk` - normalizing dat
 
 ```
 amptk filter \
--i ../dropd.cluster.otu_table.txt \
--f ../dropd.cluster.otus.fa \
--b mockIM4p82redo \
+-i /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/clust/dropd.cluster.otu_table.txt \
+-f /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/clust/dropd.cluster.otus.fa \
+-b une-mockIM4 \
 --delimiter csv \
 --keep_mock \
---calculate in \
+--calculate all \
 --subtract auto \
 --mc /mnt/lustre/macmaneslab/devon/guano/mockFastas/CFMR_insect_mock4alt.fa \
 --debug \
 --threshold max \
--o max_otu \
+-o mockIn \
 --normalize y
 ```
 
@@ -35,8 +35,8 @@ Filtering OTU table down to 877 OTUs and 2,887,946 read counts
 The parameters above are identifying that:  
 - A large number of reads expected to be present in the mock community are mapping to true samples (`Index bleed, mock into samples`); this isn't surprising given that nearly 1/3 of the lane consisted of the mock community. This was due to an improperly balanced library. As such, reads that are present in the mock community should be filtered out from the real data; we should take note of what these ~20 expected OTUs are in the mock becuase there is a chance that some of these OTUs are likely to be in our true samples (this is always on a case-by-case basis with every differnt project)  
 - A fairly small fraction of true samples are moving into the mock community (`Index bleed, samples into mock`); in addition, because we've normalized our dataset in this initial filtering analysis it's very likely that there has been limited index bleed of any true sample into our OTUs (that's a good thing).  
-- The `Auto subtract filter` identifies the number necessary to remove all unexpected reads in the mock sample. The value isn't particularly high, however we see that we drop out a few _expected_ OTUs from our mock community.  
-- The final OTU table and number of reads are sharply reduced after filtering the `dropd` data; we lose about a third of our overlal reads, and cut the number of OTUs in half.  
+- The `Auto subtract filter` identifies the number necessary to remove all unexpected reads in the mock sample. The value isn't particularly high, however we see that we drop out a few _expected_ OTUs from our mock community. We'll want to next look into what the OTUs are that are causing this "subtract" filter to be activated in the first place (ie. the OTUs present in the mock sample that shouldn't be there)  
+- The final OTU table and number of reads are sharply reduced after filtering the `dropd` data; we lose about a third of our overall reads, and cut the number of OTUs in half. This is because of the absurdly high mock bleed in rate, and the subtract filter working together.   
 
 The following commands are used to investigate what OTUs might be finding their way from true samples into the mock community, as well as finding how many reads (and from which OTUs) from the mock community are bleeding into the true samples - this uses the output of the filtered sample above. 
 
@@ -45,17 +45,21 @@ sed -i 's/#OTU ID/OTUid/' mockIn.final.csv
 sed -i 's/#OTU ID/OTUid/' mockIn.normalized.num.csv
 awk -F ',' '{print NF; exit}' mockIn.final.csv
 cut mockIn.normalized.num.csv -d ',' -f 1,2,38 | sort -t ',' -k3,3nr | awk -F "," '$2 != "0.0" {print $0}'
-cut mockIn.final.csv -d ',' -f 1,2,69 | sort -t ',' -k2,2nr | awk -F  "," '$2 != "0" {print $0}'
 ```
 
-It's clear from the output of the fourth line of the code above that our mock community looks good - there are at least 2000 reads in every mock OTU, and the next highest number of reads of an unexpected read has just 45 (normalized) reads. We could also perform a blast search to identify what that read might be from:  
-
-**hhhheeerrrrreeeee**
+It's clear from the output of the fourth line of the code above that our mock community looks good - there are at least 2000 reads in every mock OTU, and the next highest number of reads of an unexpected read has just 45 (normalized) reads In fact, there are only three potential contaminant OTUs which are identified in our mock which we are suspicious of. We could also perform a blast search to identify the taxonomy that could be assigned to each OTU:
 
 ```
-grep "\\bOTU228\\b" filtMax.normalized.num.csv
+grep "\\bOTU1004_suspect_mock_variant\\b" mockIn.normalized.num.csv
+grep "\\bOTU924_suspect_mock_variant\\b" mockIn.normalized.num.csv
+grep "\\bOTU190_suspect_mock_variant\\b" mockIn.normalized.num.csv
 ```
-The output suggests that several samples contain this OTU in high amounts, making it a likely candidate for either index-bleed or contamination. However, because the mock community was not amplified with these samples, contamination via extraction or PCR is impossible. Thus index bleed is the only culprit. To determine the likely taxa contributing to this contamination:
+
+The output from each of the three BLAST searchers are revealing. `OTU1004` is a 98% identity match (with 100% coverage) for _Harmonia axyridis_, a mock community member itself. `OTU924` is a 98% match (with 99% coverage) for _Harmonia axyridis_ also. These two initial results are likely pointing to the fact that we have a mutation in our mock community member that is driving the false representation of contamination; these OTUs can be ignored and thus the `--subtract` value we should be cautious of is that of the remaining OTU.  
+
+The last BLAST search for `OTU190` was a 100% identity match with 100% coverage for two _Gretchena_ species (_amatana_ and _deludana_); a third match at 99% identity was associated with _Gretchena watchungana_. This last search indicates the potential for contamination into our mock is very low - the total number of reads that this one OTU was bleeding into our mock community? **2** reads. We can therefore proceed without adding the `--subtract` filter at all.  
+
+The remaining concern is to what to do about the high index bleed of the mock community members into our true samples. As mentioned previously, this is to be expected because of the unbalanced library that was sequenced: there were far more reads dedicated to the single mock community sample than to any true sample. Thus there is a far greater likelihood of these OTUs present in the mock community to have found there way into the true samples. To detect those:  
 
 ```
 grep "\\bOTU228\\b" filtMax.filtered.otus.fa -A 1
