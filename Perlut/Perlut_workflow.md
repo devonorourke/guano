@@ -29,8 +29,8 @@ A series of steps were applied to achieve that, as [described here](https://gith
 The sample sheet submitted to the sequencing center incorrectly assigned the i7 and i5 index names (barcodes associated with 
 the mock community sample (this was the only sample with an incorrect barcode designation). The files were recovered by accessing the `Undetermined_S0_...fastq` file pair, containing all reads which an index sequence was recognized by the sequencer itself, but not associated with any listed index sequence on the sample sheet. A `grep` search as follows isolated the barcode sequence pair used in the run, and this pair was then added into the standard `amptk` workflow:  
 ```
-cat Undetermined_S0_L001_R2_001.fastq | grep -A 3 "TGCGTCAA+GTCTAGTG" > unk_perlut_TGCGTCAA-GTCTAGTG_L001_R2_001.fastq &
-cat Undetermined_S0_L001_R2_001.fastq | grep -A 3 "TGCGTCAA+GTCTAGTG" > unk_perlut_TGCGTCAA-GTCTAGTG_L001_R2_001.fastq &
+cat Undetermined_S0_L001_R1_001.fastq | grep -E '^@.*TGCGTCAA\+GTCTAGTG' -A 3 --no-group-separator > une-mockIM4_TGCGTCAA-GTCTAGTG_L001_R1_001.fastq &
+cat Undetermined_S0_L001_R2_001.fastq | grep -E '^@.*TGCGTCAA\+GTCTAGTG' -A 3 --no-group-separator > une-mockIM4_TGCGTCAA-GTCTAGTG_L001_R2_001.fastq &
 ```
 
 # amptk pipeline
@@ -72,7 +72,7 @@ amptk illumina \
 --require_primer off \
 --min_len 160 \
 --full_length \
---read_length 250 \
+--read_length 300 \
 -f GGTCAACAAATCATAAAGATATTGG \
 -r GGWACTAATCAATTTCCAAATCC \
 --cpus 24 \
@@ -81,22 +81,22 @@ amptk illumina \
 
 ## dropping samples
 
-There is an important tradeoff between the likelihood that a read is the result of index bleed versus a true representation of the amplicons in a sample; if one is to account and filter for index-bleed, then one is to likely reduce the number of reads in a sample. In addition, because the mock community proportion of reads was large in this run, the likelihood of index bleed is higher than if the positive control had a moderate number of reads (proportional to per-sample read numbers). There are additional filtering parameters applied to account for this, though these filtering parameters work best when the low-read number samples are discarded. The following code was executed to drop the samples with less than 4800 reads, as that value represented samples with less than 0.5% total reads indexed to this project on the lane.  
+There is an important tradeoff between the likelihood that a read is the result of index bleed versus a true representation of the amplicons in a sample; if one is to account and filter for index-bleed, then one is to likely reduce the number of reads in a sample. In addition, because the mock community proportion of reads was large in this run, the likelihood of index bleed is higher than if the positive control had a moderate number of reads (proportional to per-sample read numbers). There are additional filtering parameters applied to account for this, though these filtering parameters work best when the low-read number samples are discarded. The following code was executed to drop the samples with less than 4800 reads, as that value represented samples with less than 0.1% total reads indexed to this project on the lane. Note that this is an arbitrary cut off, and drops out many samples; in addition, no negative control is included above this threshold.   
 
 > note that a `dropd` directory was created to pass the output files into; the following command was executed within that `dropd` directory
 
 ```
 amptk remove \
--i /mnt/lustre/macmaneslab/devon/guano/NAU/p8-2/illumina/trim.demux.fq.gz \
--t 4800 \
+-i /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/illumina/trim.demux.fq.gz \
+-t 3600 \
 -o dropd.demux.fq
 
 gzip dropd.demux.fq
 ```
 
-This is a significant threshold as it drops 37 of 104 possible samples. However, the total number of reads which are excluded from the dataset is just 1% of the overall amount. A separate design in which all samples, or a lower threshold read-number applied, is also possible to carry through and compare if major difference arise in OTU abundance, index bleed thresholds, etc. As a first approximation, the more conservative approach seemed most sensible. Analysis of this reduced dataset has the suffix `dropd` applied. However it's also useful to explore what happens post-filtering with the less stringent read depth criteria are relaxed and all samples are included - these are termed `trimd`.
+This is a significant threshold as it drops 51 of 88 possible samples. However, the total number of reads which are excluded from the dataset is just 2% of the overall amount. A separate workflow in which all samples are retained is also run (and described herein) - this allows us to carry through both a conservative and liberal strategy and compare if major difference arise in OTU abundance, index bleed thresholds, etc. Analysis of the conservative (reduced sample) dataset has the suffix `dropd` applied; while the workflow with all samples are included are termed `trimd`.  
 
-Both datasets were retained throughout the analyses. Clustering was performed independently between datasets while filtering was applied to the `dropd` dataset only. One consequence of independent clustering approaches is the OTU numbers aren't comparable - what sequence represents OTU1 in the `dropd` dataset isn't necessarily the same sequence for OTU1 in the `trimd` dataset.  
+Clustering was performed independently - once for the `dropd` and once for the `trimd` datasets - while filtering was applied to the `dropd` dataset only. One consequence of independent clustering approaches is the OTU numbers aren't comparable - what sequence represents OTU1 in the `dropd` dataset isn't necessarily the same sequence for OTU1 in the `trimd` dataset.  
 
 ## clustering for OTUs
 
@@ -119,7 +119,10 @@ amptk dada2 \
 --uchime_ref COI
 ```
 
-Note that both `dropd` and `trimd` datasets had the same code applied. The output contains a pair of files which are applied in the next filtering strategy (for index bleed): the `.cluster.otu_table.txt` file which follows a traditional OTU matrix format, as well as the accompanying `.cluster.otus.fa` file which contains the OTU id in the header and the associated sequence. Each dataset is then filtered according to the following commands.  
+Note that both `dropd` and `trimd` datasets had the same code applied.  
+> The code above specifies the command used for the `dropd` dataset. For the `trimd` dataset, a different input file and different output name were substituted; everything else remains the same.  
+
+The output contains a pair of files which are applied in the next filtering strategy (for index bleed): the `.cluster.otu_table.txt` file which follows a traditional OTU matrix format, as well as the accompanying `.cluster.otus.fa` file which contains the OTU id in the header and the associated sequence. Each dataset is then filtered according to the following commands.  
 
 ## filtering
 
