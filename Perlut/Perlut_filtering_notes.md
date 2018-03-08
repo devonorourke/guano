@@ -351,6 +351,44 @@ Filtering OTU table down to 1,117 OTUs and 3,416,600 read counts
 
 The index bleed value is expected to be higher than the `dropd` data set because of the default way it's calculated: it sums up the entirety of mock-associated reads in true samples, and divides that sum by the number of reads in the actual mock sample (on a per OTU basis). That percentage is then applied to a `--threshold` value, which can be calculated a variety of ways (the sum of all OTUs, the single max OTU, the top5 % OTU values, etc.), but the way the percent is determined is always the same. Because we have about 2x the number of samples in the `trimd` data set, we have a greater changes that additional mock read will be part of the sum of the non-mock sample counts, thus there's an intrinsic tradeoff here: more samples to investigate means a higher index bleed.  
 
+> Side note - if you want to see what these index-bleed calculations should look like, try running this little R script:
+```
+# written: 8-March-2018
+# author: devon o'rourke
+# Part 1 - Motivation: 
+## Jon palmer described the index-bleed being calculated as follows:
+
+#   
+#    So how it is actually being calculated is as follows:
+#      1) OTU table is sliced for the mock community sample
+#      2) Total number of reads in mock community is calculated
+#      3) the total number of reads from non-mock community OTUs are then summed
+#      4) index-bleed into the mock community is then calculated by dividing total non-mock reads by the total reads in the mock
+#
+## We want to know what OTUs are causing the index-bleed to be elevated: 
+
+# Part 2 - script
+#runonce: 
+install.packages('data.table')
+## load packages
+library(data.table)
+## read in data
+reads.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/Perlut/trim_OTUdropd.sorted.csv')
+## create matrix from data.frame, creating row.names from first column of data.frame:
+reads.mat <- as.matrix(reads.df[,-1])
+## let's first drop the last column from the matrix of values to calculate the top non-mock read number present in every OTU (row):
+nonmock.mat <- reads.mat[,1:87]
+## now we'll calculate the sum of all those non-mock reads per OTU
+non_mock_sum <- apply(nonmock.mat, 1, sum)
+## pull out a vector of just the mock community values:
+mock_vals <- reads.mat[,88]
+## create a data.frame with those two vectors, then make a new column that follows Jon's logic above:
+df <- data.frame(non_mock_sum, mock_vals)
+options(scipen = 999)   ## this converts the forthcoming `df$perc` values to be printed as intergers rather than in scientific notation
+df$sumperc <- (df$non_mock_sum / df$mock_vals * 100)
+df <- subset(df, mock_vals != 0)
+```
+
 I tend to trust this higher value because of the fact that we have so many more mock reads than any other single true sample. We're still retaining a lot of OTUs (and my guess is many of these will be dropped once we remove singleton OTUs in the next R script), but the benefit of increasing this index-bleed value is that we can now retain more individual guano samples. Even if that means we only detect a few OTUs per sample, we have many more samples.  
 
 The final filter applied is similar to the `dropd` set, except we're going to increase our index bleed calculation to 3.8%, and set the subtract filter to 24.  
