@@ -220,7 +220,7 @@ Which produces a similar output as with out sanity check above, except the filte
 Filtering OTU table down to 1,277 OTUs and 3,412,100 read counts
 ```
 
-We carry forward the `finaldropd.filtered.otus.fa` and `finaldropd.final.binary.txt` files into taxonomy assignment. The next portion of the filtering analysis focuses on the other dataset - the `trim` dataset which did not drop any samples. The same principles apply in how we investigate what OTUs to drop, what value to assign for the `--subtract` argument, and what the `--index_bleed` values should be. The code applied is documented below, but the results and explanations used are shortened, as they follow the similar ideas already described for the `dropd` dataset.  
+We carry forward the `finaldropd.filtered.otus.fa` and `finaldropd.final.txt` files into taxonomy assignment. The next portion of the filtering analysis focuses on the other dataset - the `trim` dataset which did not drop any samples. The same principles apply in how we investigate what OTUs to drop, what value to assign for the `--subtract` argument, and what the `--index_bleed` values should be. The code applied is documented below, but the results and explanations used are shortened, as they follow the similar ideas already described for the `dropd` dataset.  
 
 # Filtering the `trim` dataset
 A few things hold true between both datasets: 
@@ -339,4 +339,43 @@ amptk filter \
 --normalize n
 ```
 
-We find that the _subtract_ value was reduced to **24** as expected, and the _index bleed_ value remained at 3.8%. To identify why this remains higher than in the `dropd` samples, 
+We find that the _subtract_ value was reduced to **24** as expected, and the _index bleed_ value remained at 3.8%. 
+
+```
+Index bleed, mock into samples: 3.790306%.  
+Index bleed, samples into mock: 0.012968%.
+Auto subtract filter set to 24
+une-mockIM4 sample has 24 OTUS out of 25 expected; 0 mock variants; 0 mock chimeras; Error rate: 0.081%
+Filtering OTU table down to 1,117 OTUs and 3,416,600 read counts
+```
+
+The index bleed value is expected to be higher than the `dropd` data set because of the default way it's calculated: it sums up the entirety of mock-associated reads in true samples, and divides that sum by the number of reads in the actual mock sample (on a per OTU basis). That percentage is then applied to a `--threshold` value, which can be calculated a variety of ways (the sum of all OTUs, the single max OTU, the top5 % OTU values, etc.), but the way the percent is determined is always the same. Because we have about 2x the number of samples in the `trimd` data set, we have a greater changes that additional mock read will be part of the sum of the non-mock sample counts, thus there's an intrinsic tradeoff here: more samples to investigate means a higher index bleed.  
+
+I tend to trust this higher value because of the fact that we have so many more mock reads than any other single true sample. We're still retaining a lot of OTUs (and my guess is many of these will be dropped once we remove singleton OTUs in the next R script), but the benefit of increasing this index-bleed value is that we can now retain more individual guano samples. Even if that means we only detect a few OTUs per sample, we have many more samples.  
+
+The final filter applied is similar to the `dropd` set, except we're going to increase our index bleed calculation to 3.8%, and set the subtract filter to 24.  
+
+```
+amptk filter \
+-i /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/dropd/trim_dropdOTUs.cleaned.otu_table.txt \
+-f /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/dropd/trim_dropdOTUs.cleaned.otus.fa \
+--mc /mnt/lustre/macmaneslab/devon/guano/mockFastas/CFMR_insect_mock4alt.fa \
+-b une-mockIM4 \
+--delimiter tsv \
+--index_bleed 0.038 \
+--subtract 24 \
+-o finaltrim \
+--normalize n
+```
+
+This produces the following output after mock reads and OTUs are removed:  
+
+```
+Index bleed, mock into samples00: 3.790306%.  
+Index bleed, samples into mock: 0.012968%.
+Subtracting 24 from OTU table
+une-mockIM4 sample has 24 OTUS out of 25 expected; 0 mock variants; 0 mock chimeras; Error rate: 0.081%
+Filtering OTU table down to 1,094 OTUs and 2,198,389 read counts
+```
+
+We'll carry the `trim` final output file pair (`finaltrim.filtered.otus.fa` and `finaltrim.final.txt`) into the final taxonomy analysis.
