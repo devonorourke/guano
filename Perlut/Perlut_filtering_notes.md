@@ -320,3 +320,23 @@ amptk drop \
 --list OTU526 OTU1181 OTU770 OTU184 OTU1155 \
 --out trim_dropdOTUs
 ```
+
+We then apply a default filter once more to determine how dropping these OTUs influences the index-bleed calculation (we expect the subtract value to equal 24 because we've retained `OTU166`):  
+
+```
+amptk filter \
+-i /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/dropd/trim_dropdOTUs.cleaned.otu_table.txt \
+-f /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/dropd/trim_dropdOTUs.cleaned.otus.fa \
+-b une-mockIM4 \
+--delimiter csv \
+--keep_mock \
+--calculate all \
+--subtract auto \
+--mc /mnt/lustre/macmaneslab/devon/guano/mockFastas/CFMR_insect_mock4alt.fa \
+--debug \
+--threshold max \
+-o trim_OTUdropd \
+--normalize n
+```
+
+We find that the _subtract_ value was reduced to **24** as expected, and the _index bleed_ value remained at 3.8%. To identify why this remains higher than in the `dropd` samples, 
