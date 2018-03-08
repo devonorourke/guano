@@ -124,6 +124,14 @@ Note that both `dropd` and `trimd` datasets had the same code applied.
 
 The output contains a pair of files which are applied in the next filtering strategy (for index bleed): the `.cluster.otu_table.txt` file which follows a traditional OTU matrix format, as well as the accompanying `.cluster.otus.fa` file which contains the OTU id in the header and the associated sequence. Each dataset is then filtered according to the following commands.  
 
+|  | trim | dropd |
+| --- | --- | --- |
+| # OTUs clustered | 1,912 | 1,792 |
+| # reads mapped to OTUs | 3,543,867 | 3,472,563 |
+| # iSeqs clustered | 3,525 | 3,110 |
+| # reads mapped to iSeqs | 3,549,960 | 3,478,881 |
+
+
 ## filtering
 
 Because a mock community was added to this project, the proportion of reads that are likely misassigned can be estimated on a per-OTU basis. In brief, we are certain of the OTUs likely to be present in mock community; any additional OTU is the result of index bleed. By calculating the proportion of reads that are present in our mock sample which _shouldn't be there_ we can estimate what fraction of reads (on a per-OTU basis) should be subtracted from all true samples.
