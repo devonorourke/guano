@@ -3,7 +3,9 @@ Filtering is an often neglected portion of amplicon analyses, despite the well d
 
 ## Manipulating normalized data:
 
-We'll start with the default parameters established by `amptk` - normalizing data and using the maximum value for a single OTU to calculate index bleed.  
+We'll start with the default parameters established by `amptk` - normalizing data and using the maximum value for a single OTU to calculate index bleed. Because we have two datasets which were independently clustered, we'll need to apply the same code to both `dropd` and `trim` data. The following example shows an example command used for the `dropd` dataset.  
+
+> Note a new directory `filtd` was created prior to the execution of this code to retain output files  
 
 ```
 amptk filter \
@@ -13,6 +15,7 @@ amptk filter \
 --delimiter csv \
 --keep_mock \
 --calculate in \
+--subtract auto \
 --mc /mnt/lustre/macmaneslab/devon/guano/mockFastas/CFMR_insect_mock4alt.fa \
 --debug \
 --threshold max \
@@ -23,23 +26,31 @@ amptk filter \
 The output generates the following summary statistics:  
 
 ```
-Index bleed, samples into mock: 4.798870%.
-Auto subtract filter set to 161526
-mockIM4p82redo sample has 8 OTUS out of 24 expected; 0 mock variants; 0 mock chimeras; Error rate: 0.000%
-Filtering OTU table down to 13 OTUs and 3,669,013 read counts
+Index bleed, mock into samples: 71.011751%.  
+Index bleed, samples into mock: 0.103005%
+Auto subtract filter set to 45
+une-mockIM4 sample has 19 OTUS out of 25 expected; 0 mock variants; 0 mock chimeras; Error rate: 0.125%
+Filtering OTU table down to 877 OTUs and 2,887,946 read counts
+```
+The parameters above are identifying that:  
+- A large number of reads expected to be present in the mock community are mapping to true samples (`Index bleed, mock into samples`); this isn't surprising given that nearly 1/3 of the lane consisted of the mock community. This was due to an improperly balanced library. As such, reads that are present in the mock community should be filtered out from the real data; we should take note of what these ~20 expected OTUs are in the mock becuase there is a chance that some of these OTUs are likely to be in our true samples (this is always on a case-by-case basis with every differnt project)  
+- A fairly small fraction of true samples are moving into the mock community (`Index bleed, samples into mock`); in addition, because we've normalized our dataset in this initial filtering analysis it's very likely that there has been limited index bleed of any true sample into our OTUs (that's a good thing).  
+- The `Auto subtract filter` identifies the number necessary to remove all unexpected reads in the mock sample. The value isn't particularly high, however we see that we drop out a few _expected_ OTUs from our mock community.  
+- The final OTU table and number of reads are sharply reduced after filtering the `dropd` data; we lose about a third of our overlal reads, and cut the number of OTUs in half.  
+
+The following commands are used to investigate what OTUs might be finding their way from true samples into the mock community, as well as finding how many reads (and from which OTUs) from the mock community are bleeding into the true samples - this uses the output of the filtered sample above. 
+
+```
+sed -i 's/#OTU ID/OTUid/' mockIn.final.csv
+sed -i 's/#OTU ID/OTUid/' mockIn.normalized.num.csv
+awk -F ',' '{print NF; exit}' mockIn.final.csv
+cut mockIn.normalized.num.csv -d ',' -f 1,2,38 | sort -t ',' -k3,3nr | awk -F "," '$2 != "0.0" {print $0}'
+cut mockIn.final.csv -d ',' -f 1,2,69 | sort -t ',' -k2,2nr | awk -F  "," '$2 != "0" {print $0}'
 ```
 
-This is a huge index bleed rate and suggests something about our parameters are wrong, or something about or sequence data itself is very problematic. To analyze the output files from this filtering process the following commands were executed:
+It's clear from the output of the fourth line of the code above that our mock community looks good - there are at least 2000 reads in every mock OTU, and the next highest number of reads of an unexpected read has just 45 (normalized) reads. We could also perform a blast search to identify what that read might be from:  
 
-```
-sed -i 's/#OTU ID/OTUid/' filtMax.final.csv
-sed -i 's/#OTU ID/OTUid/' filtMax.normalized.num.csv
-awk -F ',' '{print NF; exit}' filtMax.final.csv
-cut filtMax.normalized.num.csv -d ',' -f 1,2,69 | sort -t ',' -k2,2nr | awk -F "," '$2 != "0.0" {print $0}'
-cut filtMax.final.csv -d ',' -f 1,2,69 | sort -t ',' -k2,2nr | awk -F  "," '$2 != "0" {print $0}'
-```
-
- We see that OTU228 is the culprit. It contains 4748.0 normalized reads. The lowest mock OTU contains 714 reads, while all other non-mock OTUs are <= 13 reads (most are < 2). Thus the very large index bleed filter was applied to just one curious OTU. We'll want to check to determine how many other samples contain this same OTU:  
+**hhhheeerrrrreeeee**
 
 ```
 grep "\\bOTU228\\b" filtMax.normalized.num.csv
