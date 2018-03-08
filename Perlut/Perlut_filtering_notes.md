@@ -1,9 +1,11 @@
 # Supplementary notes on filtering
-Filtering is an often neglected portion of amplicon analyses, despite the well documented occurrence of amplicon artifacts which can lead to inflation of overall richness and diversity of OTUs perceived across a dataset. There is no one way to filter. What follows is a series of steps taken to find a set of empirically derived filters which can be applied to our data. Code applied is documented herein, while data tables referenced are linked through [this spreadsheet](https://docs.google.com/spreadsheets/d/19LlFd7W81gD3AIJEnKlICdZQh-2EwNxpmJkzRuA9kMA/edit#gid=0). Note that there are multiple data tables, listed sequentially as S1, S2, etc., as tabs on the single spreadsheet document.
+Filtering is an often neglected portion of amplicon analyses, despite the well documented occurrence of amplicon artifacts which can lead to inflation of overall richness and diversity of OTUs perceived across a dataset. There is no one way to filter. What follows is a series of steps taken to find a set of empirically derived filters which can be applied to our data.  
+
+# Filtering the `dropd` dataset 
+We'll start with the default parameters established by `amptk` - normalizing data and using the maximum value for a single OTU to calculate index bleed. Because we have two datasets which were independently clustered, we'll need to apply the same code to both `dropd` and `trim` data. We'll carry though the entire filtering analysis for just the `dropd` dataset first, then switch to the `trimd` data thereafter. 
 
 ## Manipulating normalized data:
-
-We'll start with the default parameters established by `amptk` - normalizing data and using the maximum value for a single OTU to calculate index bleed. Because we have two datasets which were independently clustered, we'll need to apply the same code to both `dropd` and `trim` data. The following example shows an example command used for the `dropd` dataset.  
+The following example shows an example command used for the `dropd` dataset.  
 
 > Note a new directory `filtd` was created prior to the execution of this code to retain output files  
 
@@ -158,28 +160,100 @@ Observations from each OTU:
 - `OTU175` was unequivocally matched as _Psilocorsis quercicella_ (oak leaftier moth). It's an OTU we see in our bat guano samples and I wouldn't be surprised to find in the bird samples either. However, the fact that this OTU is present in very low abundance (just 26 reads in our OTU), and identified in only one other sample (with 606 reads) makes me suspicious that such a read is of value to retain. We likely would discard it from our downstream analyses because we often discard singleton OTUs anyway (as it can really throw a wrench in diversity estiamtes). My inclination is to drop this OTU from further analysis entirely
 - `OTU1079` is a classic problem of trying to determine if something present in our lab could also be present out in nature: the sample is a clear match for _Fannia canicularis_ (common housefly). This same OTU has been detected in many other projects, including bat and bird guano from the northeast, western American regions as well as Central American countries. My guess is that this contaminant was present in the master mix used because it's the common component shared across all projects (water was changed, primers were changed, multiple extraction buffers were used). It's a particularly low-level contaminant, with only three samples having any identifiable reads (with 23, 19, and 16 reads represented in the mock community and two true samples, respectively). Given it's low read abundance and low read depth, I would discard this OTU entirely from analysis. 
 
-### My takeaways regarding the `dropd` dataset and best filtering practice
-There is no need to apply a highly conservative `--subtract` filter in this dataset, however we _should apply an index bleed of **2.1%**_ as a relatively conservative estimate of index-bleed. This will certainly reduce the number of OTUs we've identified in our raw OTU table, but it ultimately is just cutting out all the OTUs with very low read depth that are just as likely to be DNA present in a true sample at low concentrations as they are to be the product of tag-switching. We will _not_ normalized the dataset for the `dropd` samples, but we must make sure to remove any OTUs which are identified as matches for our mock community samples (this is done in the downstream R script). Finally, there are specific OTUs which we should drop out directly, and that can be done in the final filtering script.  
+## Final filtering steps for `dropd` data
+My takeaways regarding the `dropd` dataset and best filtering practice: there is no need to apply as large a `--subtract` filter in this dataset as initially calculated, because these top hits are from expected _Harmonia_ sequences. We _should apply an index bleed of **2.1%**_ as a relatively conservative estimate of index-bleed. Finally, there are specific OTUs which we should drop out directly, and that can be done by executing the following `amptk drop` command:  
 
-The final filtering command is as follows:  
+```
+amptk drop \
+--input /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/clust/dropd.cluster.otus.fa \
+--reads /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/dropd/dropd.demux.fq \
+--list OTU1004 OTU487 OTU924 OTU701 OTU175 OTU190 OTU1079 \
+--out dropdOTUs
+```
+
+This generate a pair of new files to use in the final filtering steps: **dropdOTUs.cleaned.otus.fa** and **dropdOTUs.cleaned.otu_table.txt**. We'll use these files for our final filtering. First, perform a sanity check to look through the filtered files and ensure that the appropriate OTUs are present in the dataset:  
 
 ```
 amptk filter \
--i ../dropd.cluster.otu_table.txt \
--f ../dropd.cluster.otus.fa \
--b mockIM4p82redo \
+-i /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/dropd/dropdOTUs.cleaned.otu_table.txt \
+-f /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/dropd/dropdOTUs.cleaned.otus.fa \
+-b une-mockIM4 \
+--delimiter csv \
+--keep_mock \
+--calculate all \
+--subtract auto \
 --mc /mnt/lustre/macmaneslab/devon/guano/mockFastas/CFMR_insect_mock4alt.fa \
---index_bleed 0.01 \
+--debug \
 --threshold max \
---calculate in \
---subtract 217 \
--o DropdFilt \
---delimiter tsv \
+-o dropdOTUs \
 --normalize n
 ```
 
-See **tableS4** for output of the final number of reads associated per sample per OTU.  
+Great. So what we see here is that our subtract filter has been reduced to just 15 (for the remaining OTUs which crept into our mock sample), our index bleed was set to 2.1%, and we have no mock variants or chimeras in our positive control (mock community).  
 
-One final note: the filtering threshold applied to this dataset could also reasonably be applied to the other dataset which contained _all samples_; note, however, that because some samples contained less _total reads_ than the minimum read number on a per-OTU basis, some of these would be dropped anyway again. Because we based our filtering from index bleed into the mock community using samples with the greatest number of reads it's highly likely that the filtering parameters would have changed by including additional samples which contained even fewer reads. This was applied as a comparison, with the `-i` and `-f` flags reflecting the changed input files from `dropd` to `trim`. There were a few more OTUs preserved, a few more reads preserved, and more samples.  
+```
+Index bleed, mock into samples: 2.067033%.  
+Index bleed, samples into mock: 0.010760%.
+Auto subtract filter set to 15
+une-mockIM4 sample has 24 OTUS out of 25 expected; 0 mock variants; 0 mock chimeras; Error rate: 0.102%
+Filtering OTU table down to 1,277 OTUs and 3,412,100 read counts
+```
 
-See **tableS5** for output when using the `trimd` dataset.
+Let's finish up this process by applying the final filter, this time removing all the temporary files and discarding the reads associated with the mock community:  
+
+```
+amptk filter \
+-i /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/dropd/dropdOTUs.cleaned.otu_table.txt \
+-f /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/dropd/dropdOTUs.cleaned.otus.fa \
+--mc /mnt/lustre/macmaneslab/devon/guano/mockFastas/CFMR_insect_mock4alt.fa \
+-b une-mockIM4 \
+--delimiter tsv \
+--index_bleed 0.021 \
+--subtract 15 \
+-o finaldropd \
+--normalize n
+```
+
+Which produces a similar output as with out sanity check above, except the filtering produces fewer reads and OTUs (because we've now discarded anything associated with our mock community sample):  
+
+```
+Filtering OTU table down to 1,277 OTUs and 3,412,100 read counts
+```
+
+We carry forward the `finaldropd.filtered.otus.fa` and `finaldropd.final.binary.txt` files into taxonomy assignment. The next portion of the filtering analysis focuses on the other dataset - the `trim` dataset which did not drop any samples. The same principles apply in how we investigate what OTUs to drop, what value to assign for the `--subtract` argument, and what the `--index_bleed` values should be. The code applied is documented below, but the results and explanations used are shortened, as they follow the similar ideas already described for the `dropd` dataset.  
+
+# Filtering the `trim` dataset
+A few things hold true between both datasets: 
+1. We expect_at least_ the same contaminants to be present in our `trim` data as in our `dropd` data, because the `trim` set is just a subset of the `dropd`.  
+2. We may find additional contaminants not present in the `trim` set; thus we'll need to start with a default filtering strategy to identify all possible contaminants.  
+3. We will **not** normalize data - this would only exacerbate the problems explained above (principally that it is artificially inflating the `--index_bleed` calculation. Because of this, we can jump directly into the second part of the filtering, and apply `--normalize n` to our filter script with the `--subtract auto` argument passed.  
+
+## Default filtering 
+
+```
+amptk filter \
+-i /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/clust/trim.cluster.otu_table.txt \
+-f /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/clust/trim.cluster.otus.fa \
+-b une-mockIM4 \
+--delimiter csv \
+--keep_mock \
+--calculate all \
+--subtract auto \
+--mc /mnt/lustre/macmaneslab/devon/guano/mockFastas/CFMR_insect_mock4alt.fa \
+--debug \
+--threshold max \
+-o trim_default \
+--normalize n
+```
+
+Produces this output:
+```
+Index bleed, mock into samples: 3.791080%.  
+Index bleed, samples into mock: 0.049073%.
+Auto subtract filter set to 302
+une-mockIM4 sample has 24 OTUS out of 25 expected; 0 mock variants; 0 mock chimeras; Error rate: 0.081%
+Filtering OTU table down to 267 OTUs and 3,300,018 read counts
+```
+
+Apparently with a marginally higher index bleed we see a big drop in the number of OTUs retained relative to our final `dropd` filtering argument set `--index_bleed` to 2.1%. We'll now identify who those contaminants might be:  
+
