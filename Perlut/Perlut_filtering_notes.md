@@ -44,11 +44,18 @@ The following commands are used to investigate what OTUs might be finding their 
 sed -i 's/#OTU ID/OTUid/' mockIn.final.csv
 sed -i 's/#OTU ID/OTUid/' mockIn.normalized.num.csv
 awk -F ',' '{print NF; exit}' mockIn.final.csv
-cut mockIn.normalized.num.csv -d ',' -f 1,2,38 | sort -t ',' -k3,3nr | awk -F "," '$2 != "0.0" {print $0}'
+cut mockIn.normalized.num.csv -d ',' -f 1,2,38 | sort -t ',' -k3,3nr | awk -F "," '$3 != "0.0" {print $0}'
 ```
 
 It's clear from the output of the fourth line of the code above that our mock community looks good - there are at least 2000 reads in every mock OTU, and the next highest number of reads of an unexpected read has just 45 (normalized) reads In fact, there are only three potential contaminant OTUs which are identified in our mock which we are suspicious of. We could also perform a blast search to identify the taxonomy that could be assigned to each OTU:
 
+```
+grep "\\bOTU1004\\b" mockIn.otus.counts.fa -A 1
+grep "\\bOTU924\\b" mockIn.otus.counts.fa -A 1
+grep "\\bOTU190\\b" mockIn.otus.counts.fa -A 1
+```
+
+Similarly, if you wanted to review the specific numbers of reads within each of those particular OTUs:
 ```
 grep "\\bOTU1004_suspect_mock_variant\\b" mockIn.normalized.num.csv
 grep "\\bOTU924_suspect_mock_variant\\b" mockIn.normalized.num.csv
@@ -59,205 +66,100 @@ The output from each of the three BLAST searchers are revealing. `OTU1004` is a 
 
 The last BLAST search for `OTU190` was a 100% identity match with 100% coverage for two _Gretchena_ species (_amatana_ and _deludana_); a third match at 99% identity was associated with _Gretchena watchungana_. This last search indicates the potential for contamination into our mock is very low - the total number of reads that this one OTU was bleeding into our mock community? **2** reads. We can therefore proceed without adding the `--subtract` filter at all.  
 
-The remaining concern is to what to do about the high index bleed of the mock community members into our true samples. As mentioned previously, this is to be expected because of the unbalanced library that was sequenced: there were far more reads dedicated to the single mock community sample than to any true sample. Thus there is a far greater likelihood of these OTUs present in the mock community to have found there way into the true samples. To detect those:  
-
-```
-grep "\\bOTU228\\b" filtMax.filtered.otus.fa -A 1
-```
-
-Using NCBI BLAST, this OTU aligns with 98% identity (and full query length) to _Harmonia axyridis_, a member of the mock community. This demonstrates that the OTU228 is potentially just a misassigned read which wasn't included in the mock community fasta file which all OTUs are aligned against when calculating index bleed. Index bleed _into_ the mock community is very small among all other OTUs. However, there are two complicating factors at work:  
-
-  1. This same OTU is present in large proportions in several other samples; because these data were normalized, it may be that there is significant index bleed from mock into true samples, but it is also possible that this proportion is greatly inflated because of the normalization process used to estimate these values. We'll explore the same dataset _without_ normalizing reads next.  
-  2. This same OTU was a model organism used in the lab in which PCR (but not extraction) was performed. Thus the somewhat bimodal distribution of reads for this OTU (several high, several very low) in true samples (and negative controls) could likely be explained by potential contamination at the PCR step.
+The remaining concern is to what to do about the high index bleed of the mock community members into our true samples. As mentioned previously, this is to be expected because of the unbalanced library that was sequenced: there were far more reads dedicated to the single mock community sample than to any true sample. Thus there is a far greater likelihood of these OTUs present in the mock community to have found there way into the true samples. However, I wondered if the incidence of bleed into the mock community was actually inflated by the fact that we were normalizing our reads in the first place. Thus the next step was to run the same command filtering our reads as above, but passing setting the `--normalize` argument to `n` ("no" normalizing); this is explained in the next section.  
 
 ## Manipulating NON normalized data:
 
-The same filtering approach was used as described above, with the `--normalize` flag switched from `y` to `n`.  This generated the following summary statistics:  
-
-```
-Index bleed, samples into mock: 4.795240%.
-Auto subtract filter set to 4748
-mockIM4p82redo sample has 8 OTUS out of 24 expected; 0 mock variants; 0 mock chimeras; Error rate: 0.000%
-Filtering OTU table down to 133 OTUs and 6,391,405 read counts
-```
-
-Interestingly, using non-normalized data doesn't significantly reduce the estimation of index-bleed. We next evaluate whether a single OTU is causing this high index bleed as before:  
-
-```
-sed -i 's/#OTU ID/OTUid/' filtMaxNoNorm.final.csv
-sed -i 's/#OTU ID/OTUid/' filtMaxNoNorm.sorted.csv
-awk -F ',' '{print NF; exit}' filtMaxNoNorm.final.csv
-cut filtMaxNoNorm.normalized.csv -d ',' -f 1,2,69 | sort -t ',' -k2,2nr | awk -F "," '$2 != "0.0" {print $0}'
-cut filtMaxNoNorm.final.csv -d ',' -f 1,2,69 | sort -t ',' -k2,2nr | awk -F  "," '$2 != "0" {print $0}'
-```
-
-Indeed the same OTU is identified as with normalized data (which is expected). Because data isn't normalized, the lowest expected mock OTU has a high read depth (24291 reads), while next highest non-mock contains just 433 reads. This confirms that the proportion of index bleed outside of the single OTU228 is minimal; if 433 represents the floor, and the mock community contained 3401801 total reads, then index bleed is 1/100th of the original calculation. The question remains as to whether or not OTU228 is a result of contamination or index bleed. To determine how the proportion of normalized vs. non-nomalized reads compare, the same code was executed on this output file:  
-
-```
-grep "\\bOTU228\\b" filtMaxNoNorm.sorted.csv
-```
-
-Information from this table was combined with the original data table and can [be viewed on Table S1 here](https://docs.google.com/spreadsheets/d/1OQVuGjC5trpjTDsATPYikvr6J0B_bCLT1yoJc7i8NzQ/edit#gid=0). Unfortunately it doesn't immediately provide any definitive answer as to whether OTU228 is present in a sample due to index bleed or contamination. There are instances in which relatively low read depth contains high proportion of its overall reads to this one sample (which could be explained either by contamination or index bleed), while other samples with low read depth don't contain any reads for this OTU. When looking at non-normalized data, what is clear is the majority of samples don't contain significant amounts of this OTU - 44 of 68 samples have less than 5 reads each.
-
-## Manipulating data with modified mock fasta
-
-Filtering parameters were same as described in the initial script. The difference is I added OTU228's sequence into the fasta file; this will effectively filter out that Harmonia read and recalculate index bleed _into_ mock.
-
-Output is identical in terms of reads attributed to all non-mock OTUs (nothing changes in terms of read numbers or OTUs; all that's changed is the previous OTU288 is now identified as a mock sample). However, the summary statistics portray a different index bleed estimation:  
-
-```
-Index bleed, samples into mock: 0.047002%
-mockIM4p82redo sample has 35 OTUS out of 25 expected; 0 mock variants; 0 mock chimeras; Error rate: 0.039%  
-Filtering OTU table down to 932 OTUs and 9,330,163 read counts
-```
-
-This demonstrates that if you assume this OTU is part of the mock, then the index bleed _into_ mock is reduced to 1/100th of the original estimation - **this suggests that whether this OTU is a source of contamination or index bleed, we are better off removing this OTU by either assigning it to the mock community or ignoring it when caculating index bleed**.
-
-I think our best approach is to remove any reads attributed to Harmonia once we've assigned taxonomy to our dataset, but it's worth mentioning in our analysis that it is possible these could be potential dietary sources in some instance. I looked into whether samples with significant numbers of Harmonia reads were associated with some sort of similar barcode; this doesn't appear to be the case. Of the 24 samples with >= 100 Harmonia reads (per sample), there were 10 forward and 10 reverse barcodes used. It is likely that similar barcodes are not the culprit for misidentification; however, index bleed is still as possibility to be explored such that the mock community Harmonia reads were bleeding into the true samples. We'll calculate that next.
-
-For what it's worth, the non-normalized data were also compared with this modified fasta file, with the `--normalize` flag switched from `y` to `n`. As with the normalized data, the output looks identical to the non-normalized data in terms of raw reads assigned to OTUs that should/shouldn't be in the mock.
-
-```
-Index bleed, samples into mock: 0.050620%.
-mockIM4p82redo sample has 67 OTUS out of 25 expected; 0 mock variants; 0 mock chimeras; Error rate: 0.041%
-Filtering OTU table down to 953 OTUs and 9,324,140 read counts
-```
-
-In summary, whether or not we normalize data will not affect our calculation for index bleed **assuming we account for the OTU228** issue described above (there are multiple ways to deal with it). Index bleed with this single OTU accounted for reduces our estimation very close to the `amptk` default of 0.005.
-
-## Calculating bleed from mock into true samples
-
-Because the mock community had such a high proportion of reads relative to the overall library, the rate of index bleed from the mock _into_ the samples should be addressed. `amptk` caclulates this by default and we'll pass the same argument as above but modify just one item (turning altering the `--calculate` function to `all` from `in`):
-
-Code for normalized estimation was as follows:
+The same filtering approach was used as described above, with the `--normalize` flag switched from `y` to `n`. Output files were renamed to specify the fact we turned normalization off. I left **on** the `--subtract auto` option for the time being so we could make a direct comparison to the last filtering command:  
 
 ```
 amptk filter \
--i ../dropd.cluster.otu_table.txt \
--f ../dropd.cluster.otus.fa \
--b mockIM4p82redo \
+-i /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/clust/dropd.cluster.otu_table.txt \
+-f /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/clust/dropd.cluster.otus.fa \
+-b une-mockIM4 \
 --delimiter csv \
 --keep_mock \
 --calculate all \
+--subtract auto \
 --mc /mnt/lustre/macmaneslab/devon/guano/mockFastas/CFMR_insect_mock4alt.fa \
 --debug \
 --threshold max \
--o mockIn \
---normalize y
-```
-
-The normalized values show a massive 95% index bleed of mock into true samples.
-
-```
-Index bleed, mock into samples: 95.355336%.  Index bleed, samples into mock: 0.047002%.
-mockIM4p82redo sample has 6 OTUS out of 25 expected; 1 mock variants; 4 mock chimeras; Error rate: 16.429%
-Filtering OTU table down to 932 OTUs and 3,374,623 read counts
-```
-
-This calculation may be largely due to the normalization of reads and having a disproportionally small number of actual reads in some true samples relative to the mock sample. We'll run a non-normalized estimate to compare. As before for non-normalized estimation `--normalize` was altered from `y` to `n`. We observe a huge difference:
-
-```
-Index bleed, mock into samples: 8.307496%.  Index bleed, samples into mock: 0.050620%.
-mockIM4p82redo sample has 45 OTUS out of 25 expected; 5 mock variants; 14 mock chimeras; Error rate: 0.040%
-Filtering OTU table down to 953 OTUs and 8,839,573 read counts
-```
-
-In this case, using non-normalized data demonstrates a dramatically different estimation of index bleed from the mock into the true samples: just ~8.4%. And that likely represents the extreme end. To determine which OTUs are contributing to the highest proportion of index bleed (we'd assume the big contributors would be the mock sequences given the higher throughput of mock sequences than any true reads) the analysis was carried out using a bit of R code. The output file `mockIn_noNorm.sorted.csv` was used for this analysis.  
-
-```
-## read in data
-reads.df <- read_csv("~/Desktop/guano/Rutgers/mockIn_noNorm.sorted.csv")
-
-## create matrix from data.frame, creating row.names from first column of data.frame:
-reads.mat <- as.matrix(reads.df[,-1])
-namelist <- reads.df$otuID
-rownames(reads.mat) <- namelist
-
-## create output
-maxRead.df <- data.frame(row.names = colnames(reads.mat),
-                MaxVal = apply(reads.mat, 2, max),
-                WhichMax = apply(reads.mat, 2, which.max))
-
-## this creates a "WhichMax" value which is the row number, not row name. Working a bit more to fix that:
-maxRead.df$SampleID <- rownames(maxRead.df)
-counter = (1:953)
-swap.df <- data.frame(counter, namelist)
-colnames(swap.df) <- c("WhichMax", "OTUid")
-
-Final.df <- merge(maxRead.df, swap.df)
-Final.df$WhichMax <- NULL
-```
-
-The goal of this analysis was to search through each sample and identify the OTU which contained the greatest number of reads. The output lists the OTU identity, the number of reads, and the sample name. The output can be viewed on [tableS2](https://docs.google.com/spreadsheets/d/1OQVuGjC5trpjTDsATPYikvr6J0B_bCLT1yoJc7i8NzQ/edit#gid=0).  
-
-The raw output from the R script only generates three fields. Two additional fields were created and are explained below. Note that the **OTUid** field indicates extensive numbers of suspected mock chimeras - this is a bug in the software which prints this value out when performing `--calculate all` in the `amptk filter` script _and you keep your `--keep mock` flag_. For further details about the naming convention Jon applies, see lines 185-189 in [his python script](https://github.com/nextgenusfs/amptk/blob/master/bin/amptk-filter.py). You'll note that these _suspected mock_ identifiers are dropped in the final two OTU tables, **S4** and **S5**, while retaining the same OTU number (in short, they're not actually suspected chimeras).  
-
-The data is structured as follows:  
-- **SampleID** represents the uniquely sequenced guano sample  
-- **TotalNonNormReads** represent the total number of reads passing our initial `amptk illumina` and `amptk cluster` filters, summed on a per-sample basis  
-- **MaxVal** is identified by finding the OTU which contains the most number of reads on a per sample basis  
-- **percReads** represents the proportion of reads represented by the **MaxVal** value for a given sample. In other words, this identifies how much one OTU is contributing to the overall proportion of reads in a sample  
-- **OTUid** represents an unclassified (but unique) sequence as determined by the `amptk cluster` scripts  
-
-For example, the first observation occurs for the mock community sample, which identifies a Mock OTU as the OTU with the most reads associated to that sample (which is 223034 reads) - that's exactly what we'd expect (the mock community should contain only mock sequences). The next observation is that of sample `rut16-1382`; the OTU for this sample which has the greatest number of reads is OTU2, which contains 21124 reads total.  
-
-Highlighted **OTUid** fields are those cases which are of concern, and suggest that in some, but not all cases, we have mock community sequences producing significant index bleed into the overall proportion of our samples. 19 of 68 of these samples have a mock community member contributing to the highest proportion of their overall reads - this is a likely a direct consequence of the high proportion of mock community sequences relative to sample sequences. The only way to account for these sequences are to remove them - this eliminates the false positive situation, but importantly, does nothing to address the fact that these may be samples in which that represents a real dietary component. Notably, these sequences are **not removed** from our filtering process, but remain in place even after taxonomy is assigned. However, when examining dietary trends among our samples, these mock samples will be filtered out.  
-
-What is just as revealing is that 2/3 of the samples don't contain a mock OTU as the dominant sequence type. This is encouraging because it suggests that if index bleed is happening, it's happening randomly and is not universally extensive (that is, even if every sample had some amount of mock OTU sequence in it, it's not in the majority). What is impossible to calculate is the extent with which a true sample is bleeding into another true sample.  
-
-## Summary observations
-The proportion of index bleed _into_ the mock community is trivial - less than 0.05%. This is expected given the large proportion of reads in the mock community relative to any other single sample in the library. However, the proportion of mock community reads _into a non-mock sample_ varies; in about 1/3 of the overall instances the mock sequence represents the highest proportion of reads, yet this generally represents less than 20% of the overall number of total reads in a given sample. This would appear to set the upper ceiling of index bleed at about 20% (an enormous value which would drastically reduce our dataset).  
-
-The tradeoff is as follows:  
-- **Keep majority of data, lose specific OTUS**. We can greatly reduce the observed index bleed if we eliminate mock sequences entirely from our analysis. However, the only rate with which we can empirically derive a value for index bleed if doing so would be from the `--calculate in` function which estimated a low index bleed rate of about 0.05%. The result in doing so would eliminate our potential to include the mock OTUs in any true sample, even if it were true that bats are eating one of those ~20 species. The benefit is that the vast majority of OTUs are retained; I would likely apply a slightly more conservative index bleed of about 0.1% (doubling the empirically derived observation).
-- **Keep all OTUs, lose majority of data**. This would drastically cut down the total number of reads remaining in our dataset, but would retain instances in which mock OTUs are identified in non-mock samples. This does not seem like the most prudent option because you are retaining potential false positives (which you can't empirically differentiate from true signal short of resequencing or targeting via qPCR), and you lose the majority of the overall read numbers in your data set.  
-
-## (almost) Final filtering protocol  
-I am going to apply an index-bleed filter of 1% across all reads, drop the mock community sample from our analysis, and carry forward with applying taxonomic information to the OTUs in the dataset. In addition, I will use the modified mock fasta file which added OTU228 as an additional Harmonia sequence.  
-
-This is performed with the following code:  
-
-```
-amptk filter \
--i ../dropd.cluster.otu_table.txt \
--f ../dropd.cluster.otus.fa \
--b mockIM4p82redo \
---delimiter csv \
---index_bleed 0.01 \
---mc /mnt/lustre/macmaneslab/devon/guano/mockFastas/CFMR_insect_mock4alt.fa \
---threshold max \
--o noNorm_bleed_1.0 \
+-o mockIn.noNorm \
 --normalize n
 ```
 
-We observe the following summary statistics:  
+
+By _not normalizing_, we see a monumental difference in the overall index bleed rate, and this is entirely attributed to the calculation of mock reads bleeding into the true samples:  
 
 ```
-Index bleed, mock into samples: 8.307496%.  Index bleed, samples into mock: 0.050620%.
-mockIM4p82redo sample has 56 OTUS out of 25 expected; 10 mock variants; 20 mock chimeras; Error rate: 0.041%
-Filtering OTU table down to 941 OTUs and 5,677,849 read counts
+Index bleed, mock into samples: 2.067058%.  
+Index bleed, samples into mock: 0.106595%.
+Auto subtract filter set to 551
+une-mockIM4 sample has 24 OTUS out of 25 expected; 0 mock variants; 0 mock chimeras; Error rate: 0.101%
+Filtering OTU table down to 184 OTUs and 3,262,931 read counts
 ```
 
-See **tableS3** for this output - a table of non-normalized number of reads per OTU per sample. Of note, this table suggests that among the OTUs detected in the mock sample the top 3 OTUs (in terms of number of reads) are **216, 29, and 11**. All other OTUs identified in the mock sample contain less than 10 reads. This is suggests that we may set a threshold for inclusion in our binary "present" or "absent" data table for future analyses in which somewhere between 10-217 reads are required to be considered "present", rather than just 1 or 2. This is ultimately the last major filtering consideration - what number of reads should any OTU, per sample, have _at a minimum_?  
+Pretty interesting. Using non-normalized data significantly reduced the estimation of index-bleed overall, yet the subtract filter now jumped up. We'll evaulate what's behind the subtract filter being so high once more (though I suspect it's going to be those _Harmonia_ reads causing the headache) in a minute. The first point to stress is that by _not normalizing_ our data, we have a very different picture of how often mock reads are finding their way into our community: it's tiny - just 2.1, which is right in line with what Jon and the default `amptk` program generally suggests (2% is the default). This suggests we shouldn't be normalizing this data, given how skewed our distribution of reads in the mock community is.  
 
-This _read minimum threshold_ can be applied in the same `amptk filter` script. When we append the above final filtering script to include `--min_reads_otu` and a value (either 216 or 29, for example) we see the following summary outputs:  
-
-** for a minimum number of reads > 29 **
+Another takeaway: we have a lot fewer OTUs, but have retained many more reads. This is expected: a drop in OTUs should occur because we've observed an _increase_ in the **subtract** value (551 versus the previous 45); likewise, a _decrease_ in the index bleed should retain more overall reads.  The next question is to determine whether or not that **subtract** increase is warranted:  q 
 
 ```
-mockIM4p82redo sample has 35 OTUS out of 25 expected; 4 mock variants; 7 mock chimeras; Error rate: 0.038%
-Filtering OTU table down to 703 OTUs and 5,673,534 read counts
+sed -i 's/#OTU ID/OTUid/' mockIn.noNorm.sorted.csv
+cut mockIn.noNorm.sorted.csv -d ',' -f 1,2,38 | sort -t ',' -k3,3nr | awk -F "," '$3 != "0" {print $0}'
 ```
 
-** for a minimum number of reads > 216 **
+What do we see? The top hitter is indeed the same OTU as before - `OTU1004`, which an earlier BLAST search determined was _Harmonia axyridis_. Likewise, if you look at the output from the above `cut` command, you'll notice a that there is a huge difference in the expected number of reads from our mock members, and about a 100-fold drop in read depth for all other 'contaminant' OTUs present in our mock sample - I've annotated the output below.
 
 ```
-mockIM4p82redo sample has 25 OTUS out of 25 expected; 1 mock variants; 0 mock chimeras; Error rate: 0.036%
-Filtering OTU table down to 442 OTUs and 5,626,434 read counts
+# Top OTUs from our mock samples: 
+MockIM32_pident=100.0_OTU7,103,70571
+MockIM20_pident=100.0_OTU8,194,66401
+MockIM27_pident=100.0_OTU9,337,63916
+...
+# Bottom OTUs from our mock samples:
+MockIM47_pident=99.4_OTU34,55,32224
+MockIM40_pident=100.0_OTU33,83,32166
+MockIM49_pident=100.0_OTU38,135,24965
+...
+# Top OTUs from our non-mock samples
+OTU1004_suspect_mock_variant,1,551    ## Harmonia (from earlier BLAST search)
+OTU487_suspect_mock_variant,0,302
+OTU924_suspect_mock_variant,1,243     ## Harmonia (from earlier BLAST search)
+OTU701_suspect_mock_chimera,0,49
+OTU175_suspect_mock_variant,0,26
+OTU190_suspect_mock_chimera,105,24    ## Gretchena (from earlier BLAST search)
+OTU1079_suspect_mock_chimera,0,23
+...
+# Remaining in list have less than 15 reads
 ```
 
-We find that there are no unintended OTUs present in the mock community and have thus resolved any traces of index bleed _into the mock sample_ with the more stringend **217** minimum read threshold. As expected, the additional filtering parameter of requiring a read minimum of 217 reads per sample don't significantly reduce the total number of reads from the library (it's a net loss of less than 1%). What is significant is the number of OTUs which are discarded - we lose more than half in the case of a minimum read depth set to **217**, but lose only about a quarter of reads when set to **30**. To be most conservative I'm inclined to enact a stricter threshold for read inclusion and will set the minimum number of reads to that higher value to ensure we have removed all trace of index bleed into our mock community.  
+So we see that the top hit for a 'contaminant' OTU is the same Harmonia as before, but what about `OTU487` and others not identified? Performing the same BLAST search with the earlier commands to identify the sequence to search for:  
 
+```
+grep "\\bOTU487\\b" mockIn.noNorm.otus.counts.fa -A 1
+grep "\\bOTU701\\b" mockIn.noNorm.otus.counts.fa -A 1
+grep "\\bOTU175\\b" mockIn.noNorm.otus.counts.fa -A 1
+grep "\\bOTU1079\\b" mockIn.noNorm.otus.counts.fa -A 1
+```
+
+Also as with before, we can determine the read depth per sample for each OTU in question:  
+
+```
+sed -i 's/#OTU ID/OTUid/' mockIn.noNorm.sorted.csv
+grep "OTU487" mockIn.noNorm.sorted.csv
+grep "OTU701" mockIn.noNorm.sorted.csv
+grep "OTU175" mockIn.noNorm.sorted.csv
+grep "OTU1079" mockIn.noNorm.sorted.csv
+```
+
+Observations from each OTU:
+- `OTU487` didn't have a clear strong winner in the BLAST search. The highest match was 96% identity across 100% coverage (pretty good!), but that species is found in Australia (so unless these sparrows travel to South Wales??...). What's more likely is we're within the right family (and possibly genus). However, the number of samples for which this OTU is present is just 3 (out of 88!), and the reads per sample are distributed as 302, 97, and 1. In fact, the sample with 302 reads is our mock community! This strongly suggest to me that this is a chimeric read and can be discarded from analyses entirely.  
+- `OTU701` was more convincing, as it has 99% identity across 100% coverage in the BLAST search. However, there were a total of just 49 reads in the entire library, and all of these were present in the mock community sample (not present in any true sample); this again may reflect some sort of chimera forming, though I'm doubtful of that given that we have a perfect alignment. Perhaps this species was present in very low abundance in the mock sample as a contaminant? Either way, because the mock sample isn't included in our analyses downstream, we can elimiate this OTU entirely.  
+- `OTU175` was unequivocally matched as _Psilocorsis quercicella_ (oak leaftier moth). It's an OTU we see in our bat guano samples and I wouldn't be surprised to find in the bird samples either. However, the fact that this OTU is present in very low abundance (just 26 reads in our OTU), and identified in only one other sample (with 606 reads) makes me suspicious that such a read is of value to retain. We likely would discard it from our downstream analyses because we often discard singleton OTUs anyway (as it can really throw a wrench in diversity estiamtes). My inclination is to drop this OTU from further analysis entirely
+- `OTU1079` is a classic problem of trying to determine if something present in our lab could also be present out in nature: the sample is a clear match for _Fannia canicularis_ (common housefly). This same OTU has been detected in many other projects, including bat and bird guano from the northeast, western American regions as well as Central American countries. My guess is that this contaminant was present in the master mix used because it's the common component shared across all projects (water was changed, primers were changed, multiple extraction buffers were used). It's a particularly low-level contaminant, with only three samples having any identifiable reads (with 23, 19, and 16 reads represented in the mock community and two true samples, respectively). Given it's low read abundance and low read depth, I would discard this OTU entirely from analysis. 
+
+### My takeaways regarding the `dropd` dataset and best filtering practice
+There is no need to apply a highly conservative `--subtract` filter in this dataset, however we _should apply an index bleed of **2.1%**_ as a relatively conservative estimate of index-bleed. This will certainly reduce the number of OTUs we've identified in our raw OTU table, but it ultimately is just cutting out all the OTUs with very low read depth that are just as likely to be DNA present in a true sample at low concentrations as they are to be the product of tag-switching. We will _not_ normalized the dataset for the `dropd` samples, but we must make sure to remove any OTUs which are identified as matches for our mock community samples (this is done in the downstream R script). Finally, there are specific OTUs which we should drop out directly, and that can be done in the final filtering script.  
 
 The final filtering command is as follows:  
 
