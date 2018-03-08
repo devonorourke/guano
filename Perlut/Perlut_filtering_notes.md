@@ -257,3 +257,66 @@ Filtering OTU table down to 267 OTUs and 3,300,018 read counts
 
 Apparently with a marginally higher index bleed we see a big drop in the number of OTUs retained relative to our final `dropd` filtering argument set `--index_bleed` to 2.1%. We'll now identify who those contaminants might be:  
 
+```
+sed -i 's/#OTU ID/OTUid/' trim_default.sorted.csv
+awk -F ',' '{print NF; exit}' trim_default.sorted.csv
+cut trim_default.sorted.csv -d ',' -f 1,2,89 | sort -t ',' -k3,3nr | awk -F "," '$3 != "0" {print $0}'
+```
+
+Output suggests a proportionally lower number of contaminant reads detected (the max was 302, as opposed to 551 before) - why? Recall that the clustering process itself is independent between the `dropd` and `trim` datasets; perhaps keeping more samples provided the clustering algorithms with more confidence in what a specific OTU consensus should be, and that the `dropd` OTUs were combined whereas the `trim` OUTs were separated out? We'll want to find out the identity of these reads in a moment, but suffice it to say that the number of reads assigned to unexpected OTUs in our mock community is quite low - notice there are just 6 unexpected OTUs beyond our earlier `--subtract` threshold of 15:  
+
+```
+MockIM40_pident=100.0_OTU33,0,32166
+MockIM49_pident=100.0_OTU38,91,24965
+OTU526_suspect_mock_variant,0,302
+OTU1181_suspect_mock_variant,0,91
+OTU770_suspect_mock_chimera,0,49
+OTU184_suspect_mock_variant,0,26
+OTU166_suspect_mock_chimera,0,24
+OTU1155_suspect_mock_chimera,0,23
+OTU301_suspect_mock_chimera,0,15
+```
+
+We next identify the identiy of these 6 OTUs. Note that because clustering processes were independent, the same sequence string may be assigned to a totally different OTU name:  
+
+```
+grep "\\bOTU526\\b" trim_default.otus.counts.fa -A 1
+grep "\\bOTU1181\\b" trim_default.otus.counts.fa -A 1
+grep "\\bOTU770\\b" trim_default.otus.counts.fa -A 1
+grep "\\bOTU184\\b" trim_default.otus.counts.fa -A 1
+grep "\\bOTU166\\b" trim_default.otus.counts.fa -A 1
+grep "\\bOTU1155\\b" trim_default.otus.counts.fa -A 1
+```
+
+BLAST searchers verify the following:
+- `OTU526` is the same as `OTU487` from the `dropd` dataset.  
+- `OTU770` is the same as `OTU701` from the `dropd` dataset.  
+- `OTU184` is the same as `OTU175` from the `dropd` dataset.  
+- `OTU166` is the same as `OTU190` from the `dropd` dataset.  
+- `OTU1155` is the same as `OTU1079` from the `dropd` dataset.
+
+In other words, nearly all our top contaminants are the same between datasets, and all of these were ultimately dropped from analysis. To double check that these contaminant OTUs were also sparesly distibuted among our samples:  
+
+```
+grep "OTU526_" trim_default.sorted.csv
+grep "OTU1181" trim_default.sorted.csv
+grep "OTU770_" trim_default.sorted.csv
+grep "OTU184_" trim_default.sorted.csv
+grep "OTU166_" trim_default.sorted.csv
+grep "OTU1155" trim_default.sorted.csv
+```
+
+- A bunch of OTUs are only present in the mock community sample: `OTU526`, `OTU770`, 
+- `OTU184` is present just in two samples (the same as in the `dropd` dataset) 
+- `OTU166` is present in 7 samples including the mock community; this makes me think it's probably not a contaminant at this point and will likely not be dropped from the final analysis. If that's the case, we'll have to increase the `--subtract` option a bit higher to eliminate it from the mock sample.  
+- `OTU1155` was present in four samples, the highest being 23 total reads to the mock community. This will be dropped from analysis because all other true samples with any read number are less than 23, and we're setting the subtract filter higher than that value.  
+
+There was one outlier OTU which didn't match up with our earlier `dropd` dataset: `OTU1181` in the `trimd` dataset. This was a beetle that a BLAST search only aligned 95% identity (across 100% coverage), thus the species-level assignment is likely incorrect. Nevertheless, it's clearly a beetle of some sort. However, this was detected in only one true sample in addition to the mock community, thus it would be dropped as a singleton OTU in our final processing. We'll eliminate it along with all the other OTUs as follows:  
+
+```
+amptk drop \
+--input /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/clust/trim.cluster.otus.fa \
+--reads /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/illumina/trim.demux.fq.gz \
+--list OTU526 OTU1181 OTU770 OTU184 OTU1155 \
+--out trim_dropdOTUs
+```
