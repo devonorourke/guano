@@ -136,14 +136,15 @@ The output contains a pair of files which are applied in the next filtering stra
 
 Because a mock community was added to this project, the proportion of reads that are likely misassigned can be estimated on a per-OTU basis. In brief, we are certain of the OTUs likely to be present in mock community; any additional OTU is the result of index bleed. By calculating the proportion of reads that are present in our mock sample which _shouldn't be there_ we can estimate what fraction of reads (on a per-OTU basis) should be subtracted from all true samples.
 
-This process takes place by applying an initial filtering step that filters reads using the most strict criteria (taking the largest instance of an OTU bleed and applying that percentage to filter across true samples); intermediate files are kept to investigate how the index-bleed is distributed on a per-OTU basis. I have maintained a [separate document](https://github.com/devonorourke/guano/blob/master/Perlut/Perlut_filtering_notes.md) describing the detailed steps used to apply what I feel are the most appropriate filtering strategies for this dataset. In addition, data output from these filtering steps is contained in a [supplementary spreadsheet](https://docs.google.com/spreadsheets/d/19LlFd7W81gD3AIJEnKlICdZQh-2EwNxpmJkzRuA9kMA/edit#gid=0).  
+This process takes place by applying an initial filtering step that filters reads using the most strict criteria (taking the largest instance of an OTU bleed and applying that percentage to filter across true samples); intermediate files are kept to investigate how the index-bleed is distributed on a per-OTU basis. I have maintained a [separate document](https://github.com/devonorourke/guano/blob/master/Perlut/Perlut_filtering_notes.md) describing the detailed steps used to apply what I feel are the most appropriate filtering strategies for this dataset.   
 
 In brief, this amounted to determining the proportion of index bleed _into the mock community_, the proportion of index bleed _from mock community into true samples_, and identifying any OTUs which were clustered yet not identified in the mock fasta file.  
 
-- Following a conservative data filtering approach, an initial dataset containing **100** samples, **953 OTUs** and **9,335,697 reads** is reduced to **67 samples**, **442 OTUs** and **5,626,434 reads**.   
-- The less stringent approach retains signal from all **99 samples**, **454 OTUs**, and **5,655,871 reads**.
+The filtering results from the `dropd` and `trimd` datasets are as follows:  
+- **For `trim`**, the initial dataset retained all **89** total samples, **3,543,867** reads (though > 1,245,00 were from the mock community alone), and **1912 OTUs**. Following filtering, we retained **2,198,389 reads** and **1,094 OTUs** (notably all mock reads have been removed).  
+- **For `dropd`** the initial dataset was reduced to just **38** samples (including the mock community) prior to filtering, with **3,472,564 reads** retained among **1,792 OTUs**. Following filtering the dataset included **2,194,756 reads** and **1,254 OTUs**.     
 
- A pair of output files after completing filtering steps are applied to then assign taxonomic information to our remaining reads. Following these steps, the `trimd` dataset was used exclusively to assign taxonomy to the OTUs present.  
+A pair of output files after completing filtering steps are applied to then assign taxonomic information to our remaining reads. Following these steps, the `trim` dataset was used exclusively to assign taxonomy to the OTUs present.  
 
 ## taxonomy assignment
 As described in the [amptk taxonomy](http://amptk.readthedocs.io/en/latest/taxonomy.html) section, the database used to assign taxonomy is derived from the Barcode of Life Database ([BOLD](http://v4.boldsystems.org/)). The sequences present in the database we're using are the result of two sequential clustering processes.
@@ -159,25 +160,25 @@ The following code was applied (in this example the method is the `hybrid` appro
 
 ```
 amptk taxonomy \
---input /mnt/lustre/macmaneslab/devon/guano/NAU/p8-2/filt/filt_final/fullFilt.final.binary.txt \
---fasta /mnt/lustre/macmaneslab/devon/guano/NAU/p8-2/filt/filt_final/fullFilt.filtered.otus.fa \
---out rut16_h \
+--input /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/filtd/finaltrim.final.txt \
+--fasta /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/filtd/finaltrim.filtered.otus.fa \
+--out Perlut \
 --db COI \
 --method usearch \
 --mapping_file /mnt/lustre/macmaneslab/devon/guano/NAU/p8-2/illumina/dropd.mapping_file.txt
 ```
 
-The output fasta sequence was uploaded to [the Github repo](https://github.com/devonorourke/guano/tree/master/Rutgers), while the OTU table with taxonomic information was added to the [supplementary spreadsheet](https://docs.google.com/spreadsheets/d/1OQVuGjC5trpjTDsATPYikvr6J0B_bCLT1yoJc7i8NzQ/edit#gid=860400922) as **Table S6**. Note that this table is in a binary "presence/absence" format, thus any value of `1` indicates that an OTU has passed our filters and counts as detected (present), while a value of `0` indicates that there is not sufficient evidence of detection for an OTU in a given sample.  
+The output fasta sequence and OTU table with taxonomic information were uploaded to [the Github repo](https://github.com/devonorourke/guano/tree/master/Perlut).  
 
-> Note that "absence" means a lot of different things:
+> Note that a value of 0 ("absence") could mean a variety of different things:  
 > - it could be that the OTU is not truly in the sample of guano
 > - it could be because an OTU was present but not amplified and sequenced  
 > - it could be the OTU was sequenced but there wasn't enough reads to pass our filters (with `--index_bleed` and `--subtract` arguments in `amptk filter`))
 
  # Further analyses
 
- An R script was then used to manipulate the output `rut16_h.otu_table.taxonomy.txt` file which includes both further data filtering, as well as the calculations for frequency tables and visualizations - [see here](https://github.com/devonorourke/guano/blob/master/Rutgers/OTUanalysis.R).  
+ An R script was then used to manipulate the output `Perlut.otu_table.taxonomy.txt` file which includes both further data filtering, as well as the calculations for frequency tables and visualizations - [see here](https://github.com/devonorourke/guano/blob/master/Perlut/OTUanalysis.R).  
 
- > One such data filtering taking place here is the removal of reads associated with the mock community. The index-bleed from the mock sequences into true samples is still detected in **Table S6**, however, these are removed within the R script when producing the final summary tables  
+ > One such data filtering taking place here is the removal of reads associated with the mock community. 
 
-Please see the Rutgers project [Github repo](https://github.com/devonorourke/guano/blob/master/Rutgers) for data summaries and visualizations.  
+Please see the Perlut [Github repo](https://github.com/devonorourke/guano/blob/master/Perlut) for subseuqent data summaries and visualizations.  
