@@ -156,16 +156,16 @@ As described in the [amptk taxonomy](http://amptk.readthedocs.io/en/latest/taxon
 
 Taxonomy was explored using both the _hybrid_ approach (default in amptk) as well as a _usearch only_ approach. In both instances, the `--method` reflected the given approach. See Jon's description of the steps used in his documentation at the link above.  
 
-The following code was applied (in this example the method is the `hybrid` approach):  
+The following code was applied (in this example the method is the `usearch` approach):  
 
 ```
 amptk taxonomy \
 --input /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/filtd/finaltrim.final.txt \
 --fasta /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/filtd/finaltrim.filtered.otus.fa \
---out Perlut \
+--out Perlut_u \
 --db COI \
 --method usearch \
---mapping_file /mnt/lustre/macmaneslab/devon/guano/NAU/p8-2/illumina/dropd.mapping_file.txt
+--mapping_file /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/illumina/dropd.mapping_file.txt
 ```
 
 The output fasta sequence and OTU table with taxonomic information were uploaded to [the Github repo](https://github.com/devonorourke/guano/tree/master/Perlut).  
