@@ -160,7 +160,7 @@ The following code was applied (in this example the method is the `usearch` appr
 
 ```
 amptk taxonomy \
---input /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/filtd/finaltrim.final.txt \
+--i /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/filtd/finaltrim.final.txt \
 --fasta /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/filtd/finaltrim.filtered.otus.fa \
 --out Perlut_u \
 --db COI \
