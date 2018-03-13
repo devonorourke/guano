@@ -3,18 +3,18 @@
 ## edited: 13-mar-2018
 ## author: devon orourke
 
-# ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ # 
-               ######     Part 1 - data wrangling     ######     
+# ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
+               ######     Part 1 - data wrangling     ######
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
 ## install packages (run once) - commented out by default
 # install.packages('data.table')
 # install.packages('reshape2')
 # install.packages('tidyr')
-# install.packages('ggplot2')               
-# install.packages('dplyr') 
-# install.packages('plyr')               
-               
+# install.packages('ggplot2')
+# install.packages('dplyr')
+# install.packages('plyr')
+
 ## load libraries:
 library(data.table)
 library(reshape2)
@@ -31,10 +31,10 @@ tmp.df <- melt(h_otutable.df)           # converting from wide format to long fo
 rm(h_otutable.df)
 colnames(tmp.df) <- c("OTUid", "Taxonomy", "SampleID", "CountReads")
 tmp.df <- tmp.df[complete.cases(tmp.df),]
-tmp.df <- separate(data = tmp.df, 
-                    col = Taxonomy, 
-                    into = c("TaxMethod", "AlignScore", "BOLDid", "kingdom_name", "phylum_name", "class_name", 
-                             "order_name", "family_name", "genus_name", "species_name"), 
+tmp.df <- separate(data = tmp.df,
+                    col = Taxonomy,
+                    into = c("TaxMethod", "AlignScore", "BOLDid", "kingdom_name", "phylum_name", "class_name",
+                             "order_name", "family_name", "genus_name", "species_name"),
                     sep = "\\;|,|\\|")
 
 ## reformat taxonomy columns to discard given prefix
@@ -50,18 +50,18 @@ tmp.df$species_name <- sub("s:", "", tmp.df$species_name)
 setwd("~/Repos/guano/Perlut/data/Routput/")
 write.csv(tmp.df, "Perlut_rawOTUtable.csv", quote = F)
 
-# ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ # 
-            ######     Part 2 - data filtering     ######     
+# ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
+            ######     Part 2 - data filtering     ######
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
 ## A bunch of considerations here:
 # 1. What is the lowest number of reads we should retain (should we keep all low reads)?
-# 2. What OTUs are creeping into our Extraction NTCs? 
-# 3. What OTUs are clearly a result of contamination (ex. Chiropteran DNA)  
+# 2. What OTUs are creeping into our Extraction NTCs?
+# 3. What OTUs are clearly a result of contamination (ex. Chiropteran DNA)
 
 ## To address issue #1, let's plot the distribution of counts of reads per OTU looks like...
 ## note we're restricting our views to read counts <= 50,000 (anything bigger is going to be vastly rare)
-## After plotting this first bit of code it's clear there are usually less than 10,000 reads per OTU... 
+## After plotting this first bit of code it's clear there are usually less than 10,000 reads per OTU...
 histReads <- ggplot(data = tmp.df,
                     aes(x = CountReads)) +
   geom_histogram(binwidth = 100) +
@@ -110,10 +110,10 @@ NTC_OTU_sums <- NTCs.df %>%
 NTC_otu.list <- NTCs.df$OTUid     # generate the list of all unique OTUs present in the NTCs
 contam.df <- tmp.df[tmp.df$OTUid %in% NTC_otu.list,]    # find all matches from the above list in our original 'tmp.df' data frame object
   # we find there are 121 matches; we know 39 of these are from the NTCs themselves, so there must be 72 instances in which potential contaminant OTUs are present in true samples
-#5... 
+#5...
 ## how many total reads are there?
 sum(contam.df$CountReads)
-  # 48,393 total reads... 
+  # 48,393 total reads...
 ## how many differnt samples have these suspected contaminant OTUs, and how many reads are there per sample?
 tmp_counts <- contam.df %>%
   group_by(SampleID) %>%
@@ -136,10 +136,10 @@ nauProject.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/mas
 colnames(nauProject.df) <- c("BOLDid", "Taxonomy")
 
 ## now clean up the data frame
-nauProject.df <- separate(data = nauProject.df, 
-                   col = Taxonomy, 
-                   into = c("kingdom_name", "phylum_name", "class_name", 
-                            "order_name", "family_name", "genus_name", "species_name"), 
+nauProject.df <- separate(data = nauProject.df,
+                   col = Taxonomy,
+                   into = c("kingdom_name", "phylum_name", "class_name",
+                            "order_name", "family_name", "genus_name", "species_name"),
                    sep = ",")
 nauProject.df$kingdom_name <- sub("k:", "", nauProject.df$kingdom_name)
 nauProject.df$phylum_name <- sub("p:", "", nauProject.df$phylum_name)
@@ -159,7 +159,7 @@ nauProject.list <- nauProject.df$BOLDid
 
 ## Using that 'nauProject.list' object, query that list against the 'tmp.df$BOLDalt' vector
 nauProjectMatches.df <- tmp.df[tmp.df$BOLDalt %in% nauProject.list,]
-  # how many reads here? 
+  # how many reads here?
   sum(nauProjectMatches.df$CountReads)    # 628,109 ... a big number, but > 500,000 are from just a one OTU (Dicranomyia (Idiopyga) halterella)
   # how many unique OTUs are identified?
   length(unique(nauProjectMatches.df$OTUid))    # 41 unique matches identified
@@ -181,7 +181,7 @@ nauProjectMatches.df <- tmp.df[tmp.df$BOLDalt %in% nauProject.list,]
   setwd("~/Repos/guano/Perlut/data/Routput/")
   write.csv(nauMatch_summary, "suspectedContaminants.csv", quote = F)
   write.csv(tmp.df, "Perlut_rawOTUtable.csv", quote = F)
-    
+
 ## Now let's finally remove those OTUs...
   # make a list of OTUs intended to be removed
   OTUdrop.list <- nauMatch_summary$BOLDid
@@ -189,13 +189,13 @@ nauProjectMatches.df <- tmp.df[tmp.df$BOLDalt %in% nauProject.list,]
   '%!in%' <- function(x,y)!('%in%'(x,y))
   tmpfilt.df <- tmp.df[tmp.df$BOLDid %!in% OTUdrop.list,]
 
-  
+
 ## Now let's look back at this filtered table and see how many extraction blanks remain:
   ## What OTUs are occurring from our extraction NTCs?
   ## first, subset the data for all 'SampleID' values that match "extBlank" string
   NTCs.df <- tmpfilt.df[tmpfilt.df$SampleID %in% matches]
   # there are 43 total OTUs (out of a possible 1654)
-  
+
   ## Let's a the same series of questions as before:
   # 1. How many total reads are there among all these NTCs?
   sum(NTCs.df$CountReads)
@@ -221,10 +221,10 @@ nauProjectMatches.df <- tmp.df[tmp.df$BOLDalt %in% nauProject.list,]
   NTC_otu.list <- NTCs.df$OTUid     # generate the list of all unique OTUs present in the NTCs
   contam.df <- tmpfilt.df[tmpfilt.df$OTUid %in% NTC_otu.list,]    # find all matches from the above list in our original 'tmp.df' data frame object
   # we find there are 135 matches; let's remove these OTUs from out dataset as well
-  #5... 
+  #5...
   ## how many total reads are there?
   sum(contam.df$CountReads)
-  # 48,177 total reads... 
+  # 48,177 total reads...
   ## how many differnt samples have these suspected contaminant OTUs, and how many reads are there per sample?
   tmp_counts <- contam.df %>%
     group_by(SampleID) %>%
@@ -236,11 +236,11 @@ nauProjectMatches.df <- tmp.df[tmp.df$BOLDalt %in% nauProject.list,]
   rm(tmp_counts, tmp_sums)
   # As observed before, most true samples have only 1 or 2 suspected contaminants; we'll remove all of these in our final filtered list
 
-## remove these contaminants from our data frame:  
+## remove these contaminants from our data frame:
 tmpfilt2.df <- tmpfilt.df[tmpfilt.df$OTUid %!in% NTC_otu.list,]
 
 ## What's left to filter?
-## remove the remaining OTUs which clearly are contaminants: 
+## remove the remaining OTUs which clearly are contaminants:
 # 1. Chiroptera reads and reads assigned to Mock Community sequences
 # 2. Other chordates from fish, reptiles, and amphibians (keeping only Arthropod information)
 filtdOTUs.df <- subset(tmpfilt2.df, phylum_name == "Arthropoda")
@@ -256,8 +256,8 @@ rm(tmp.df, tmpfilt.df, tmpfilt2.df,
    NTC_OTU_sums, NTC_summary, NTCs.df,
    matches, nauProject.list, NTC_otu.list, OTUdrop.list, toMatch)
 
-# ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ # 
-          ######     Part 3 - incorporating metadata     ######     
+# ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
+          ######     Part 3 - incorporating metadata     ######
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
 
@@ -278,8 +278,8 @@ write.csv(master.df, "master.csv", row.names = F, quote = F)
 
 ## Notrun: write.table(master.df, "PHINCHmaster.txt", row.names = F, quote = F, sep = "\t")
 
-# ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ # 
-                 ######     Part 4 - data analyses     ######     
+# ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
+                 ######     Part 4 - data analyses     ######
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
 ## load libraries and set working directory to print out data tables:
@@ -296,22 +296,23 @@ sum(OTUperSample$freq > 9)    # There are 32 samples with at least 10 OTUs
 speciesOnly.df <- na.omit(master.df)
 freq_species <- as.data.frame(table(speciesOnly.df$species_name))     # frequency table of species detected
 colnames(freq_species) <- c("species_name", "counts")
-write.csv(freq_species, "species_frq_table.csv", row.names = F, quote = F)   
+write.csv(freq_species, "species_frq_table.csv", row.names = F, quote = F)
 sum(freq_species$counts > 1)  # note 408 species identified, but most are not abundant (no OTU ID'd more than 11 samples)
 
 ## how many OTUs are called per site?
 OTUperSite = count(master.df, vars = c("NestBox"))
 colnames(OTUperSite) <- c("NestBox", "NumberOfDetections")
-write.csv(OTUperSite, "OTU_per_Site.csv", row.names = F, quote = F)   
+write.csv(OTUperSite, "OTU_per_Site.csv", row.names = F, quote = F)
 
 
 ## how many OTUs are called per site per week?
 OTUperSiteWeek = count(master.df, vars = c("NestBox", "Date"))
 colnames(OTUperSiteWeek) <- c("NestBox", "Date", "NumberOfDetections")
-write.csv(OTUperSiteWeek, "OTU_per_SiteWeek.csv", row.names = F, quote = F)   
+write.csv(OTUperSiteWeek, "OTU_per_SiteWeek.csv", row.names = F, quote = F)
 
 
-# ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ # 
-              ######     Part 5 - data visualization     ######     
+# ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
+              ######     Part 5 - data visualization     ######
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
+# ... To be added soon
