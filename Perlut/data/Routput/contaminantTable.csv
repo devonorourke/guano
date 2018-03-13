@@ -1,0 +1,136 @@
+,OTUid,TaxMethod,AlignScore,BOLDid,kingdom_name,phylum_name,class_name,order_name,family_name,genus_name,species_name,SampleID,CountReads,BOLDalt
+1,OTU169_suspect_mock_chimera,GS,99.4,BOLD:ACE2171.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,NA,NA,extBlankA07,133,BOLD:ACE2171
+2,OTU209_suspect_mock_chimera,GS,100.0,BOLD:AAB9410.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Acleris,Acleris semipurpurana,extBlankA07,124,BOLD:AAB9410
+3,OTU215_suspect_mock_chimera,GS,100.0,BOLD:ADF6563.2,Animalia,Arthropoda,Insecta,Ephemeroptera,Heptageniidae,Maccaffertium,Maccaffertium vicarium,extBlankA07,84,BOLD:ADF6563
+4,OTU573_suspect_mock_chimera,SS,1.0000,BOLD:ACO5149.1,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,extBlankA07,66,BOLD:ACO5149
+5,OTU760_suspect_mock_chimera,US,0.9919,BOLD:ACT5093.1,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,extBlankA07,51,BOLD:ACT5093
+6,OTU1472_suspect_mock_chimera,GS,99.4,BOLD:ACA6311.1,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,extBlankA07,74,BOLD:ACA6311
+7,OTU78_suspect_mock_chimera,GS,100.0,BOLD:AAA3306.1,Animalia,Arthropoda,Insecta,Trichoptera,Goeridae,Goera,Goera calcarata,extBlankB11,137,BOLD:AAA3306
+8,OTU125_suspect_mock_chimera,GS,100.0,BOLD:AAA6614.6,Animalia,Arthropoda,Insecta,Lepidoptera,Depressariidae,Psilocorsis,Psilocorsis reflexella,extBlankB11,98,BOLD:AAA6614
+9,OTU277_suspect_mock_chimera,US,0.9860,BOLD:AAP0959.1,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,extBlankB11,139,BOLD:AAP0959
+10,OTU419_suspect_mock_chimera,SS,0.9800,BOLD:AAD8248.1,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,extBlankB11,188,BOLD:AAD8248
+11,OTU471_suspect_mock_chimera,GS,97.8,BOLD:AAB0223.1,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,extBlankB11,118,BOLD:AAB0223
+12,OTU357_suspect_mock_chimera,GS,100.0,BOLD:AAB1096.3,Animalia,Arthropoda,Insecta,Lepidoptera,Blastobasidae,Blastobasis,Blastobasis glandulella,extBlankC10,30,BOLD:AAB1096
+13,OTU577_suspect_mock_chimera,GS,100.0,BOLD:AAB8595.2,Animalia,Arthropoda,Insecta,Trichoptera,Limnephilidae,Nemotaulius,Nemotaulius hostilis,extBlankC10,38,BOLD:AAB8595
+14,OTU1635_suspect_mock_chimera,SS,0.9500,BOLD:AAH3593.1,Animalia,Arthropoda,Insecta,Megaloptera,Corydalidae,Chauliodes,Chauliodes pectinicornis,extBlankC10,29,BOLD:AAH3593
+15,OTU59_suspect_mock_chimera,GS,100.0,BOLD:AAH3593.1,Animalia,Arthropoda,Insecta,Megaloptera,Corydalidae,Chauliodes,Chauliodes pectinicornis,extBlankE08,359,BOLD:AAH3593
+16,OTU73_suspect_mock_chimera,US,0.9859,BOLD:ACJ8629.1,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,extBlankE08,108,BOLD:ACJ8629
+17,OTU82_suspect_mock_chimera,GS,99.4,BOLD:AAC3145.3,Animalia,Arthropoda,Insecta,Ephemeroptera,Heptageniidae,Maccaffertium,Maccaffertium terminatum,extBlankE08,171,BOLD:AAC3145
+18,OTU136_suspect_mock_chimera,GS,100.0,BOLD:AAP2866.1,Animalia,Arthropoda,Insecta,Diptera,Ephydridae,Paracoenia,Paracoenia fumosa,extBlankE08,219,BOLD:AAP2866
+19,OTU143_suspect_mock_chimera,GS,100.0,BOLD:AAO2062.1,Animalia,Arthropoda,Insecta,Megaloptera,Corydalidae,Chauliodes,Chauliodes rastricornis,extBlankE08,32,BOLD:AAO2062
+20,OTU174_suspect_mock_chimera,SS,1.0000,BOLD:AAF0031.1,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,extBlankE08,35,BOLD:AAF0031
+21,OTU456_suspect_mock_chimera,GS,100.0,BOLD:AAD6225.1,Animalia,Arthropoda,Insecta,Hemiptera,Miridae,Phytocoris,Phytocoris conspurcatus,extBlankE08,68,BOLD:AAD6225
+22,OTU178_suspect_mock_chimera,GS,98.3,BOLD:ABX3627.2,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,NA,NA,extBlankH07,51,BOLD:ABX3627
+23,OTU746_suspect_mock_chimera,SS,1.0000,BOLD:AAY9742.1,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,extBlankH07,53,BOLD:AAY9742
+24,OTU166_suspect_mock_chimera,GS,100.0,BOLD:AAA6261.2,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Gretchena,Gretchena amatana,extBlankH08,100,BOLD:AAA6261
+25,OTU669_suspect_mock_chimera,GS,99.4,BOLD:AAN1801.1,Animalia,Arthropoda,Arachnida,Trombidiformes,NA,NA,NA,extBlankH08,65,BOLD:AAN1801
+26,OTU740_suspect_mock_chimera,GS,100.0,BOLD:AAB4833.1,Animalia,Arthropoda,Insecta,Lepidoptera,Noctuidae,Oligia,Oligia strigilis,extBlankH08,53,BOLD:AAB4833
+27,OTU44_suspect_mock_variant,GS,100.0,BOLD:AAB1787.1,Animalia,Arthropoda,Insecta,Hemiptera,Aphididae,Acyrthosiphon,Acyrthosiphon pisum,extBlankH09,1638,BOLD:AAB1787
+28,OTU78_suspect_mock_chimera,GS,100.0,BOLD:AAA3306.1,Animalia,Arthropoda,Insecta,Trichoptera,Goeridae,Goera,Goera calcarata,extBlankH09,143,BOLD:AAA3306
+29,OTU293_suspect_mock_chimera,GS,100.0,BOLD:AAB1082.1,Animalia,Arthropoda,Insecta,Lepidoptera,Limacodidae,Lithacodes,Lithacodes fasciola,extBlankH09,32,BOLD:AAB1082
+30,OTU665_suspect_mock_chimera,SS,1.0000,BOLD:AAB0624.1,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,extBlankH09,65,BOLD:AAB0624
+31,OTU91_suspect_mock_chimera,GS,99.4,BOLD:AAF9055.2,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Erioptera,Erioptera septemtrionis,extBlankH10,156,BOLD:AAF9055
+32,OTU254_suspect_mock_chimera,GS,100.0,BOLD:AAC2499.1,Animalia,Arthropoda,Insecta,Diptera,Drosophilidae,Drosophila,Drosophila suzukii,extBlankH10,28,BOLD:AAC2499
+33,OTU342,GS,98.9,BOLD:AAA2326.2,Animalia,Arthropoda,Insecta,Hymenoptera,Apidae,Apis,Apis mellifera,extBlankH10,190,BOLD:AAA2326
+34,OTU481_suspect_mock_chimera,US,0.9934,BOLD:ACL6196.1,Animalia,Arthropoda,Arachnida,Trombidiformes,NA,NA,NA,extBlankH10,114,BOLD:ACL6196
+35,OTU495_suspect_mock_chimera,US,0.9919,BOLD:AAY6400.2,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,extBlankH10,96,BOLD:AAY6400
+36,OTU530_suspect_mock_chimera,GS,100.0,BOLD:AAI5345.1,Animalia,Arthropoda,Insecta,Ephemeroptera,Ephemerellidae,Ephemerella,Ephemerella floripara,extBlankH10,73,BOLD:AAI5345
+37,OTU96_suspect_mock_chimera,GS,99.4,BOLD:AAB6239.1,Animalia,Arthropoda,Insecta,Trichoptera,Dipseudopsidae,Phylocentropus,Phylocentropus placidus,extBlankH11,168,BOLD:AAB6239
+38,OTU277_suspect_mock_chimera,US,0.9860,BOLD:AAP0959.1,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,extBlankH11,278,BOLD:AAP0959
+39,OTU390,US,1.0000,None,Animalia,Chordata,Actinopterygii,Cichliformes,NA,NA,NA,extBlankH11,165,None
+40,OTU1009_suspect_mock_chimera,GS,97.1,BOLD:ACX3930.1,Animalia,Arthropoda,Arachnida,Mesostigmata,Phytoseiidae,NA,NA,extBlankH11,28,BOLD:ACX3930
+41,OTU44_suspect_mock_variant,GS,100.0,BOLD:AAB1787.1,Animalia,Arthropoda,Insecta,Hemiptera,Aphididae,Acyrthosiphon,Acyrthosiphon pisum,nosample,1020,BOLD:AAB1787
+42,OTU133_suspect_mock_chimera,GS,100.0,BOLD:AAA3659.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Pandemis,Pandemis limitata,nosample,184,BOLD:AAA3659
+43,OTU238_suspect_mock_chimera,GS,99.4,BOLD:ABA5202.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Pseudolimnophila,Pseudolimnophila luteipennis,solutBlankG04,53,BOLD:ABA5202
+44,OTU73_suspect_mock_chimera,US,0.9859,BOLD:ACJ8629.1,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,une-01,97,BOLD:ACJ8629
+45,OTU166_suspect_mock_chimera,GS,100.0,BOLD:AAA6261.2,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Gretchena,Gretchena amatana,une-01,105,BOLD:AAA6261
+46,OTU209_suspect_mock_chimera,GS,100.0,BOLD:AAB9410.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Acleris,Acleris semipurpurana,une-01,49,BOLD:AAB9410
+47,OTU238_suspect_mock_chimera,GS,99.4,BOLD:ABA5202.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Pseudolimnophila,Pseudolimnophila luteipennis,une-03,77,BOLD:ABA5202
+48,OTU254_suspect_mock_chimera,GS,100.0,BOLD:AAC2499.1,Animalia,Arthropoda,Insecta,Diptera,Drosophilidae,Drosophila,Drosophila suzukii,une-03,47,BOLD:AAC2499
+49,OTU169_suspect_mock_chimera,GS,99.4,BOLD:ACE2171.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,NA,NA,une-04,69,BOLD:ACE2171
+50,OTU78_suspect_mock_chimera,GS,100.0,BOLD:AAA3306.1,Animalia,Arthropoda,Insecta,Trichoptera,Goeridae,Goera,Goera calcarata,une-10,180,BOLD:AAA3306
+51,OTU143_suspect_mock_chimera,GS,100.0,BOLD:AAO2062.1,Animalia,Arthropoda,Insecta,Megaloptera,Corydalidae,Chauliodes,Chauliodes rastricornis,une-10,108,BOLD:AAO2062
+52,OTU136_suspect_mock_chimera,GS,100.0,BOLD:AAP2866.1,Animalia,Arthropoda,Insecta,Diptera,Ephydridae,Paracoenia,Paracoenia fumosa,une-13,95,BOLD:AAP2866
+53,OTU456_suspect_mock_chimera,GS,100.0,BOLD:AAD6225.1,Animalia,Arthropoda,Insecta,Hemiptera,Miridae,Phytocoris,Phytocoris conspurcatus,une-14,55,BOLD:AAD6225
+54,OTU471_suspect_mock_chimera,GS,97.8,BOLD:AAB0223.1,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,une-14,33,BOLD:AAB0223
+55,OTU169_suspect_mock_chimera,GS,99.4,BOLD:ACE2171.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,NA,NA,une-15,121,BOLD:ACE2171
+56,OTU238_suspect_mock_chimera,GS,99.4,BOLD:ABA5202.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Pseudolimnophila,Pseudolimnophila luteipennis,une-15,116,BOLD:ABA5202
+57,OTU178_suspect_mock_chimera,GS,98.3,BOLD:ABX3627.2,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,NA,NA,une-16,56,BOLD:ABX3627
+58,OTU143_suspect_mock_chimera,GS,100.0,BOLD:AAO2062.1,Animalia,Arthropoda,Insecta,Megaloptera,Corydalidae,Chauliodes,Chauliodes rastricornis,une-17,52,BOLD:AAO2062
+59,OTU166_suspect_mock_chimera,GS,100.0,BOLD:AAA6261.2,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Gretchena,Gretchena amatana,une-18,57,BOLD:AAA6261
+60,OTU96_suspect_mock_chimera,GS,99.4,BOLD:AAB6239.1,Animalia,Arthropoda,Insecta,Trichoptera,Dipseudopsidae,Phylocentropus,Phylocentropus placidus,une-19,59,BOLD:AAB6239
+61,OTU136_suspect_mock_chimera,GS,100.0,BOLD:AAP2866.1,Animalia,Arthropoda,Insecta,Diptera,Ephydridae,Paracoenia,Paracoenia fumosa,une-19,133,BOLD:AAP2866
+62,OTU238_suspect_mock_chimera,GS,99.4,BOLD:ABA5202.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Pseudolimnophila,Pseudolimnophila luteipennis,une-20,36,BOLD:ABA5202
+63,OTU82_suspect_mock_chimera,GS,99.4,BOLD:AAC3145.3,Animalia,Arthropoda,Insecta,Ephemeroptera,Heptageniidae,Maccaffertium,Maccaffertium terminatum,une-21,149,BOLD:AAC3145
+64,OTU169_suspect_mock_chimera,GS,99.4,BOLD:ACE2171.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,NA,NA,une-21,77,BOLD:ACE2171
+65,OTU209_suspect_mock_chimera,GS,100.0,BOLD:AAB9410.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Acleris,Acleris semipurpurana,une-21,31,BOLD:AAB9410
+66,OTU238_suspect_mock_chimera,GS,99.4,BOLD:ABA5202.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Pseudolimnophila,Pseudolimnophila luteipennis,une-21,37,BOLD:ABA5202
+67,OTU96_suspect_mock_chimera,GS,99.4,BOLD:AAB6239.1,Animalia,Arthropoda,Insecta,Trichoptera,Dipseudopsidae,Phylocentropus,Phylocentropus placidus,une-25,79,BOLD:AAB6239
+68,OTU238_suspect_mock_chimera,GS,99.4,BOLD:ABA5202.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Pseudolimnophila,Pseudolimnophila luteipennis,une-25,65,BOLD:ABA5202
+69,OTU136_suspect_mock_chimera,GS,100.0,BOLD:AAP2866.1,Animalia,Arthropoda,Insecta,Diptera,Ephydridae,Paracoenia,Paracoenia fumosa,une-26,473,BOLD:AAP2866
+70,OTU44_suspect_mock_variant,GS,100.0,BOLD:AAB1787.1,Animalia,Arthropoda,Insecta,Hemiptera,Aphididae,Acyrthosiphon,Acyrthosiphon pisum,une-29,556,BOLD:AAB1787
+71,OTU169_suspect_mock_chimera,GS,99.4,BOLD:ACE2171.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,NA,NA,une-29,44,BOLD:ACE2171
+72,OTU133_suspect_mock_chimera,GS,100.0,BOLD:AAA3659.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Pandemis,Pandemis limitata,une-30,145,BOLD:AAA3659
+73,OTU254_suspect_mock_chimera,GS,100.0,BOLD:AAC2499.1,Animalia,Arthropoda,Insecta,Diptera,Drosophilidae,Drosophila,Drosophila suzukii,une-30,26,BOLD:AAC2499
+74,OTU59_suspect_mock_chimera,GS,100.0,BOLD:AAH3593.1,Animalia,Arthropoda,Insecta,Megaloptera,Corydalidae,Chauliodes,Chauliodes pectinicornis,une-31,8723,BOLD:AAH3593
+75,OTU73_suspect_mock_chimera,US,0.9859,BOLD:ACJ8629.1,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,une-31,2525,BOLD:ACJ8629
+76,OTU78_suspect_mock_chimera,GS,100.0,BOLD:AAA3306.1,Animalia,Arthropoda,Insecta,Trichoptera,Goeridae,Goera,Goera calcarata,une-31,1858,BOLD:AAA3306
+77,OTU82_suspect_mock_chimera,GS,99.4,BOLD:AAC3145.3,Animalia,Arthropoda,Insecta,Ephemeroptera,Heptageniidae,Maccaffertium,Maccaffertium terminatum,une-31,3051,BOLD:AAC3145
+78,OTU91_suspect_mock_chimera,GS,99.4,BOLD:AAF9055.2,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Erioptera,Erioptera septemtrionis,une-31,2229,BOLD:AAF9055
+79,OTU96_suspect_mock_chimera,GS,99.4,BOLD:AAB6239.1,Animalia,Arthropoda,Insecta,Trichoptera,Dipseudopsidae,Phylocentropus,Phylocentropus placidus,une-31,1366,BOLD:AAB6239
+80,OTU125_suspect_mock_chimera,GS,100.0,BOLD:AAA6614.6,Animalia,Arthropoda,Insecta,Lepidoptera,Depressariidae,Psilocorsis,Psilocorsis reflexella,une-31,2073,BOLD:AAA6614
+81,OTU133_suspect_mock_chimera,GS,100.0,BOLD:AAA3659.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Pandemis,Pandemis limitata,une-31,147,BOLD:AAA3659
+82,OTU143_suspect_mock_chimera,GS,100.0,BOLD:AAO2062.1,Animalia,Arthropoda,Insecta,Megaloptera,Corydalidae,Chauliodes,Chauliodes rastricornis,une-31,213,BOLD:AAO2062
+83,OTU166_suspect_mock_chimera,GS,100.0,BOLD:AAA6261.2,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Gretchena,Gretchena amatana,une-31,403,BOLD:AAA6261
+84,OTU169_suspect_mock_chimera,GS,99.4,BOLD:ACE2171.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,NA,NA,une-31,143,BOLD:ACE2171
+85,OTU174_suspect_mock_chimera,SS,1.0000,BOLD:AAF0031.1,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,une-31,560,BOLD:AAF0031
+86,OTU178_suspect_mock_chimera,GS,98.3,BOLD:ABX3627.2,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,NA,NA,une-31,924,BOLD:ABX3627
+87,OTU209_suspect_mock_chimera,GS,100.0,BOLD:AAB9410.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Acleris,Acleris semipurpurana,une-31,272,BOLD:AAB9410
+88,OTU215_suspect_mock_chimera,GS,100.0,BOLD:ADF6563.2,Animalia,Arthropoda,Insecta,Ephemeroptera,Heptageniidae,Maccaffertium,Maccaffertium vicarium,une-31,589,BOLD:ADF6563
+89,OTU238_suspect_mock_chimera,GS,99.4,BOLD:ABA5202.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Pseudolimnophila,Pseudolimnophila luteipennis,une-31,874,BOLD:ABA5202
+90,OTU254_suspect_mock_chimera,GS,100.0,BOLD:AAC2499.1,Animalia,Arthropoda,Insecta,Diptera,Drosophilidae,Drosophila,Drosophila suzukii,une-31,174,BOLD:AAC2499
+91,OTU277_suspect_mock_chimera,US,0.9860,BOLD:AAP0959.1,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,une-31,198,BOLD:AAP0959
+92,OTU293_suspect_mock_chimera,GS,100.0,BOLD:AAB1082.1,Animalia,Arthropoda,Insecta,Lepidoptera,Limacodidae,Lithacodes,Lithacodes fasciola,une-31,241,BOLD:AAB1082
+93,OTU357_suspect_mock_chimera,GS,100.0,BOLD:AAB1096.3,Animalia,Arthropoda,Insecta,Lepidoptera,Blastobasidae,Blastobasis,Blastobasis glandulella,une-31,42,BOLD:AAB1096
+94,OTU471_suspect_mock_chimera,GS,97.8,BOLD:AAB0223.1,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,une-31,66,BOLD:AAB0223
+95,OTU530_suspect_mock_chimera,GS,100.0,BOLD:AAI5345.1,Animalia,Arthropoda,Insecta,Ephemeroptera,Ephemerellidae,Ephemerella,Ephemerella floripara,une-31,26,BOLD:AAI5345
+96,OTU577_suspect_mock_chimera,GS,100.0,BOLD:AAB8595.2,Animalia,Arthropoda,Insecta,Trichoptera,Limnephilidae,Nemotaulius,Nemotaulius hostilis,une-31,80,BOLD:AAB8595
+97,OTU746_suspect_mock_chimera,SS,1.0000,BOLD:AAY9742.1,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,une-31,78,BOLD:AAY9742
+98,OTU1635_suspect_mock_chimera,SS,0.9500,BOLD:AAH3593.1,Animalia,Arthropoda,Insecta,Megaloptera,Corydalidae,Chauliodes,Chauliodes pectinicornis,une-31,208,BOLD:AAH3593
+99,OTU238_suspect_mock_chimera,GS,99.4,BOLD:ABA5202.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Pseudolimnophila,Pseudolimnophila luteipennis,une-34,45,BOLD:ABA5202
+100,OTU133_suspect_mock_chimera,GS,100.0,BOLD:AAA3659.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Pandemis,Pandemis limitata,une-36,540,BOLD:AAA3659
+101,OTU169_suspect_mock_chimera,GS,99.4,BOLD:ACE2171.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,NA,NA,une-36,77,BOLD:ACE2171
+102,OTU78_suspect_mock_chimera,GS,100.0,BOLD:AAA3306.1,Animalia,Arthropoda,Insecta,Trichoptera,Goeridae,Goera,Goera calcarata,une-38,115,BOLD:AAA3306
+103,OTU133_suspect_mock_chimera,GS,100.0,BOLD:AAA3659.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Pandemis,Pandemis limitata,une-41,58,BOLD:AAA3659
+104,OTU143_suspect_mock_chimera,GS,100.0,BOLD:AAO2062.1,Animalia,Arthropoda,Insecta,Megaloptera,Corydalidae,Chauliodes,Chauliodes rastricornis,une-42,61,BOLD:AAO2062
+105,OTU174_suspect_mock_chimera,SS,1.0000,BOLD:AAF0031.1,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,une-42,77,BOLD:AAF0031
+106,OTU73_suspect_mock_chimera,US,0.9859,BOLD:ACJ8629.1,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,une-43,114,BOLD:ACJ8629
+107,OTU91_suspect_mock_chimera,GS,99.4,BOLD:AAF9055.2,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Erioptera,Erioptera septemtrionis,une-43,115,BOLD:AAF9055
+108,OTU174_suspect_mock_chimera,SS,1.0000,BOLD:AAF0031.1,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,une-43,111,BOLD:AAF0031
+109,OTU178_suspect_mock_chimera,GS,98.3,BOLD:ABX3627.2,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,NA,NA,une-43,94,BOLD:ABX3627
+110,OTU238_suspect_mock_chimera,GS,99.4,BOLD:ABA5202.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Pseudolimnophila,Pseudolimnophila luteipennis,une-43,80,BOLD:ABA5202
+111,OTU73_suspect_mock_chimera,US,0.9859,BOLD:ACJ8629.1,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,une-45,210,BOLD:ACJ8629
+112,OTU143_suspect_mock_chimera,GS,100.0,BOLD:AAO2062.1,Animalia,Arthropoda,Insecta,Megaloptera,Corydalidae,Chauliodes,Chauliodes rastricornis,une-45,99,BOLD:AAO2062
+113,OTU169_suspect_mock_chimera,GS,99.4,BOLD:ACE2171.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,NA,NA,une-46,88,BOLD:ACE2171
+114,OTU174_suspect_mock_chimera,SS,1.0000,BOLD:AAF0031.1,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,une-46,129,BOLD:AAF0031
+115,OTU238_suspect_mock_chimera,GS,99.4,BOLD:ABA5202.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Pseudolimnophila,Pseudolimnophila luteipennis,une-46,54,BOLD:ABA5202
+116,OTU44_suspect_mock_variant,GS,100.0,BOLD:AAB1787.1,Animalia,Arthropoda,Insecta,Hemiptera,Aphididae,Acyrthosiphon,Acyrthosiphon pisum,une-48,453,BOLD:AAB1787
+117,OTU166_suspect_mock_chimera,GS,100.0,BOLD:AAA6261.2,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Gretchena,Gretchena amatana,une-48,54,BOLD:AAA6261
+118,OTU143_suspect_mock_chimera,GS,100.0,BOLD:AAO2062.1,Animalia,Arthropoda,Insecta,Megaloptera,Corydalidae,Chauliodes,Chauliodes rastricornis,une-49,82,BOLD:AAO2062
+119,OTU166_suspect_mock_chimera,GS,100.0,BOLD:AAA6261.2,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Gretchena,Gretchena amatana,une-49,98,BOLD:AAA6261
+120,OTU174_suspect_mock_chimera,SS,1.0000,BOLD:AAF0031.1,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,une-49,86,BOLD:AAF0031
+121,OTU143_suspect_mock_chimera,GS,100.0,BOLD:AAO2062.1,Animalia,Arthropoda,Insecta,Megaloptera,Corydalidae,Chauliodes,Chauliodes rastricornis,une-50,218,BOLD:AAO2062
+122,OTU178_suspect_mock_chimera,GS,98.3,BOLD:ABX3627.2,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,NA,NA,une-52,85,BOLD:ABX3627
+123,OTU209_suspect_mock_chimera,GS,100.0,BOLD:AAB9410.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Acleris,Acleris semipurpurana,une-52,91,BOLD:AAB9410
+124,OTU96_suspect_mock_chimera,GS,99.4,BOLD:AAB6239.1,Animalia,Arthropoda,Insecta,Trichoptera,Dipseudopsidae,Phylocentropus,Phylocentropus placidus,une-53,94,BOLD:AAB6239
+125,OTU238_suspect_mock_chimera,GS,99.4,BOLD:ABA5202.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Pseudolimnophila,Pseudolimnophila luteipennis,une-55,53,BOLD:ABA5202
+126,OTU44_suspect_mock_variant,GS,100.0,BOLD:AAB1787.1,Animalia,Arthropoda,Insecta,Hemiptera,Aphididae,Acyrthosiphon,Acyrthosiphon pisum,une-58,6019,BOLD:AAB1787
+127,OTU143_suspect_mock_chimera,GS,100.0,BOLD:AAO2062.1,Animalia,Arthropoda,Insecta,Megaloptera,Corydalidae,Chauliodes,Chauliodes rastricornis,une-58,88,BOLD:AAO2062
+128,OTU357_suspect_mock_chimera,GS,100.0,BOLD:AAB1096.3,Animalia,Arthropoda,Insecta,Lepidoptera,Blastobasidae,Blastobasis,Blastobasis glandulella,une-62,138,BOLD:AAB1096
+129,OTU73_suspect_mock_chimera,US,0.9859,BOLD:ACJ8629.1,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,une-64,164,BOLD:ACJ8629
+130,OTU169_suspect_mock_chimera,GS,99.4,BOLD:ACE2171.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,NA,NA,une-64,62,BOLD:ACE2171
+131,OTU254_suspect_mock_chimera,GS,100.0,BOLD:AAC2499.1,Animalia,Arthropoda,Insecta,Diptera,Drosophilidae,Drosophila,Drosophila suzukii,une-64,47,BOLD:AAC2499
+132,OTU44_suspect_mock_variant,GS,100.0,BOLD:AAB1787.1,Animalia,Arthropoda,Insecta,Hemiptera,Aphididae,Acyrthosiphon,Acyrthosiphon pisum,une-67,698,BOLD:AAB1787
+133,OTU174_suspect_mock_chimera,SS,1.0000,BOLD:AAF0031.1,Animalia,Arthropoda,Insecta,NA,NA,NA,NA,une-68,56,BOLD:AAF0031
+134,OTU143_suspect_mock_chimera,GS,100.0,BOLD:AAO2062.1,Animalia,Arthropoda,Insecta,Megaloptera,Corydalidae,Chauliodes,Chauliodes rastricornis,une-69,30,BOLD:AAO2062
+135,OTU82_suspect_mock_chimera,GS,99.4,BOLD:AAC3145.3,Animalia,Arthropoda,Insecta,Ephemeroptera,Heptageniidae,Maccaffertium,Maccaffertium terminatum,une-73,150,BOLD:AAC3145
