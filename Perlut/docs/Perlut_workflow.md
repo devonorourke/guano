@@ -181,4 +181,4 @@ The output fasta sequence and OTU table with taxonomic information were uploaded
 
  > One such data filtering taking place here is the removal of reads associated with the mock community.
 
-Please see the Perlut [Github repo](https://github.com/devonorourke/guano/blob/master/Perlut) for subsequent data summaries and visualizations.  
+Output from this R script are placed within [the `/data/Routput` directory within this Github repo](https://github.com/devonorourke/guano/tree/master/Perlut/data/Routput).  
