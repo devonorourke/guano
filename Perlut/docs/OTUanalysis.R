@@ -13,6 +13,7 @@
 # install.packages('tidyr')
 # install.packages('ggplot2')               
 # install.packages('dplyr') 
+# install.packages('plyr')               
                
 ## load libraries:
 library(data.table)
@@ -246,7 +247,14 @@ filtdOTUs.df <- subset(tmpfilt2.df, phylum_name == "Arthropoda")
 
 setwd("~/Repos/guano/Perlut/data/Routput/")
 write.csv(filtdOTUs.df, "filteredOTUtable.csv", quote = F)
+write.csv(contam.df, "contaminantTable.csv", quote = F)
 
+# cleanup...
+rm(tmp.df, tmpfilt.df, tmpfilt2.df,
+   contam_summary, contam.df,
+   nauMatch_summary, nauProject.df,
+   NTC_OTU_sums, NTC_summary, NTCs.df,
+   matches, nauProject.list, NTC_otu.list, OTUdrop.list, toMatch)
 
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ # 
           ######     Part 3 - incorporating metadata     ######     
@@ -254,93 +262,56 @@ write.csv(filtdOTUs.df, "filteredOTUtable.csv", quote = F)
 
 
 ## merge with metadata information
-meta.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/Rutgers/metadata.txt')
-meta.df$SampleID <- sub("\\.", "-", meta.df$SampleID)
-master.df <- merge(tmp.df, meta.df)
-rm(tmp.df, meta.df)
+# meta.df <- fread('../Perlut_metadata.csv', header = T)
+meta.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/Perlut/data/Perlut_metadata.csv', header = T)
+master.df <- merge(filtdOTUs.df, meta.df)
+rm(filtdOTUs.df, meta.df)
 
 ## adding hyperlink to link BOLD BIN value to website
 master.df$onclick <- paste("http://v4.boldsystems.org/index.php/Public_BarcodeCluster?clusteruri=",
-           as.character(master.df$BOLDid), sep = "")
-master.df$onclick <- gsub('.{2}$', '', master.df$onclick)     # had to remove last 2 characters for link to work
+           as.character(master.df$BOLDalt), sep = "")
 master.df <- master.df[grepl("None", BOLDid), onclick := "no_link_available"];    # when BOLDid not available, removed broken link
 
-setwd("~/Desktop/guano/Rutgers/")
+# write file to disk:
+setwd("~/Repos/guano/Perlut/data/Routput/")
 write.csv(master.df, "master.csv", row.names = F, quote = F)
 
 ## Notrun: write.table(master.df, "PHINCHmaster.txt", row.names = F, quote = F, sep = "\t")
 
-
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ # 
-                 ######     Part 2 - data analyses     ######     
+                 ######     Part 4 - data analyses     ######     
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
 ## load libraries and set working directory to print out data tables:
 library(plyr)
-setwd("~/Desktop/guano/Rutgers/")
+setwd("~/Repos/guano/Perlut/data/Routput/")
 
 ## following our filtering, how many samples remain with at least 1 OTU? 2 OTUs? 10 OTUs?
-OTUperSample = count(master.df, vars = c("SampleID"))   # There are 92 remaining samples; 5 of these are negative controls
-sum(OTUperSample$freq > 1)    # There are 74 samples with at least 2 OTUs (includes all 5 negative controls)
-sum(OTUperSample$freq > 4)    # There are 41 samples with at least 5 OTUs (includes 2 negative controls)
-sum(OTUperSample$freq > 9)    # There are 26 samples with at least 10 OTUs (includes 1 negative control)
-
+OTUperSample = count(master.df, vars = c("SampleID"))   # There are 66 remaining true samples (all NTCs have been filtered out by dropping related OTUs from dataset)
+sum(OTUperSample$freq > 1)    # There are 63 samples with at least 2 OTUs
+sum(OTUperSample$freq > 4)    # There are 51 samples with at least 4 OTUs
+sum(OTUperSample$freq > 9)    # There are 32 samples with at least 10 OTUs
 
 ## how many observations of OTUs contain complete information (ie. include 'species_name')... a.k.a. species frequency table
 speciesOnly.df <- na.omit(master.df)
 freq_species <- as.data.frame(table(speciesOnly.df$species_name))     # frequency table of species detected
 colnames(freq_species) <- c("species_name", "counts")
 write.csv(freq_species, "species_frq_table.csv", row.names = F, quote = F)   
-sum(freq_species$counts > 1)  # note 172 species identified, but almost all rare (just 55 OTUs detected more than once)
-
+sum(freq_species$counts > 1)  # note 408 species identified, but most are not abundant (no OTU ID'd more than 11 samples)
 
 ## how many OTUs are called per site?
-OTUperSite = count(master.df, vars = c("Location"))
-OTUperSite$Location <- sub("^$", "-control", OTUperSite$Location)
+OTUperSite = count(master.df, vars = c("NestBox"))
+colnames(OTUperSite) <- c("NestBox", "NumberOfDetections")
 write.csv(OTUperSite, "OTU_per_Site.csv", row.names = F, quote = F)   
 
 
 ## how many OTUs are called per site per week?
-OTUperSiteWeek = count(master.df, vars = c("Location", "WeekOfYear"))
-OTUperSiteWeek$Location <- sub("^$", "-control", OTUperSiteWeek$Location)
+OTUperSiteWeek = count(master.df, vars = c("NestBox", "Date"))
+colnames(OTUperSiteWeek) <- c("NestBox", "Date", "NumberOfDetections")
 write.csv(OTUperSiteWeek, "OTU_per_SiteWeek.csv", row.names = F, quote = F)   
 
 
-## what pests are detected?
-pestlist.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/pestlist.csv')
-
-## create a list of unique names from 'pestlist.df': unique species as well as unique genera
-pestSpeciesNames.df <- as.data.frame(unique(pestlist.df$LinneanName))     ## creates non-redundant list
-colnames(pestSpeciesNames.df) <- c("genus_name")
-pestSpeciesNames.df$genus_name <- as.character(pestSpeciesNames.df$genus_name)
-pestSpeciesNames.df$species_name <- pestSpeciesNames.df$genus_name
-pestSpeciesNames.df$genus_name <- gsub(" .*","", pestSpeciesNames.df$genus_name)  ## creates genus list, but not unique
-pestGenusNames.df <- data.frame(unique(pestSpeciesNames.df$genus))      ## creates a unique data.frame of unique genera
-colnames(pestGenusNames.df) <- "genus_name"
-pestGenusNames.df$genus_name <- as.character(pestGenusNames.df$genus_name)
-pestGenusNames.df$status <- "pest"
-pestSpeciesNames.df$genus_name <- NULL                                         ## creates a unique data.frame of unique species
-pestSpeciesNames.df$status <- "pest"
-rm(pestlist.df)
-
-## what 'species_name'values in 'master.df' match our 'pestSpeciesName.df' list?
-library(tidyverse)
-speciesPestMatch.df <- master.df %>% inner_join(pestSpeciesNames.df)
-
-## what 'genus_name'values in 'master.df' match our 'pestSpeciesName.df' list?
-    ## note these are not exact matches; 
-    ## these merely represent insects in 'master.df' which share a genus with pests listed in the same genera
-genusPestMatch.df <- master.df %>% inner_join(pestGenusNames.df)
-
-## how often was each species detected?
-genusPestMatch.table <- data.frame(table(genusPestMatch.df$species_name))
-length(unique(genusPestMatch.df$species_name))    ## 26 unique matches (not all unique matches named to species level)
-
-setwd("~/Desktop/guano/Rutgers/")
-write.csv(speciesPestMatch.df, "speciesPestMatch.csv", row.names = F, quote = F)
-write.csv(genusPestMatch.df, "genusPestMatch.csv", row.names = F, quote = F)
-
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ # 
-              ######     Part 3 - data visualization     ######     
+              ######     Part 5 - data visualization     ######     
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
