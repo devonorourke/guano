@@ -1,8 +1,8 @@
 # Supplementary notes on filtering
 Filtering is an often neglected portion of amplicon analyses, despite the well documented occurrence of amplicon artifacts which can lead to inflation of overall richness and diversity of OTUs perceived across a dataset. There is no one way to filter. What follows is a series of steps taken to find a set of empirically derived filters which can be applied to our data.  
 
-# Filtering the `dropd` dataset 
-We'll start with the default parameters established by `amptk` - normalizing data and using the maximum value for a single OTU to calculate index bleed. Because we have two datasets which were independently clustered, we'll need to apply the same code to both `dropd` and `trim` data. We'll carry though the entire filtering analysis for just the `dropd` dataset first, then switch to the `trimd` data thereafter. 
+# Filtering the `dropd` dataset
+We'll start with the default parameters established by `amptk` - normalizing data and using the maximum value for a single OTU to calculate index bleed. Because we have two datasets which were independently clustered, we'll need to apply the same code to both `dropd` and `trim` data. We'll carry though the entire filtering analysis for just the `dropd` dataset first, then switch to the `trimd` data thereafter.
 
 ## Manipulating normalized data:
 The following example shows an example command used for the `dropd` dataset.  
@@ -40,7 +40,7 @@ The parameters above are identifying that:
 - The `Auto subtract filter` identifies the number necessary to remove all unexpected reads in the mock sample. The value isn't particularly high, however we see that we drop out a few _expected_ OTUs from our mock community. We'll want to next look into what the OTUs are that are causing this "subtract" filter to be activated in the first place (ie. the OTUs present in the mock sample that shouldn't be there)  
 - The final OTU table and number of reads are sharply reduced after filtering the `dropd` data; we lose about a third of our overall reads, and cut the number of OTUs in half. This is because of the absurdly high mock bleed in rate, and the subtract filter working together.   
 
-The following commands are used to investigate what OTUs might be finding their way from true samples into the mock community, as well as finding how many reads (and from which OTUs) from the mock community are bleeding into the true samples - this uses the output of the filtered sample above. 
+The following commands are used to investigate what OTUs might be finding their way from true samples into the mock community, as well as finding how many reads (and from which OTUs) from the mock community are bleeding into the true samples - this uses the output of the filtered sample above.
 
 ```
 sed -i 's/#OTU ID/OTUid/' mockIn.final.csv
@@ -103,7 +103,7 @@ Filtering OTU table down to 184 OTUs and 3,262,931 read counts
 
 Pretty interesting. Using non-normalized data significantly reduced the estimation of index-bleed overall, yet the subtract filter now jumped up. We'll evaulate what's behind the subtract filter being so high once more (though I suspect it's going to be those _Harmonia_ reads causing the headache) in a minute. The first point to stress is that by _not normalizing_ our data, we have a very different picture of how often mock reads are finding their way into our community: it's tiny - just 2.1, which is right in line with what Jon and the default `amptk` program generally suggests (2% is the default). This suggests we shouldn't be normalizing this data, given how skewed our distribution of reads in the mock community is.  
 
-Another takeaway: we have a lot fewer OTUs, but have retained many more reads. This is expected: a drop in OTUs should occur because we've observed an _increase_ in the **subtract** value (551 versus the previous 45); likewise, a _decrease_ in the index bleed should retain more overall reads.  The next question is to determine whether or not that **subtract** increase is warranted:  q 
+Another takeaway: we have a lot fewer OTUs, but have retained many more reads. This is expected: a drop in OTUs should occur because we've observed an _increase_ in the **subtract** value (551 versus the previous 45); likewise, a _decrease_ in the index bleed should retain more overall reads.  The next question is to determine whether or not that **subtract** increase is warranted:  q
 
 ```
 sed -i 's/#OTU ID/OTUid/' mockIn.noNorm.sorted.csv
@@ -113,7 +113,7 @@ cut mockIn.noNorm.sorted.csv -d ',' -f 1,2,38 | sort -t ',' -k3,3nr | awk -F ","
 What do we see? The top hitter is indeed the same OTU as before - `OTU1004`, which an earlier BLAST search determined was _Harmonia axyridis_. Likewise, if you look at the output from the above `cut` command, you'll notice a that there is a huge difference in the expected number of reads from our mock members, and about a 100-fold drop in read depth for all other 'contaminant' OTUs present in our mock sample - I've annotated the output below.
 
 ```
-# Top OTUs from our mock samples: 
+# Top OTUs from our mock samples:
 MockIM32_pident=100.0_OTU7,103,70571
 MockIM20_pident=100.0_OTU8,194,66401
 MockIM27_pident=100.0_OTU9,337,63916
@@ -158,7 +158,7 @@ Observations from each OTU:
 - `OTU487` didn't have a clear strong winner in the BLAST search. The highest match was 96% identity across 100% coverage (pretty good!), but that species is found in Australia (so unless these sparrows travel to South Wales??...). What's more likely is we're within the right family (and possibly genus). However, the number of samples for which this OTU is present is just 3 (out of 88!), and the reads per sample are distributed as 302, 97, and 1. In fact, the sample with 302 reads is our mock community! This strongly suggest to me that this is a chimeric read and can be discarded from analyses entirely.  
 - `OTU701` was more convincing, as it has 99% identity across 100% coverage in the BLAST search. However, there were a total of just 49 reads in the entire library, and all of these were present in the mock community sample (not present in any true sample); this again may reflect some sort of chimera forming, though I'm doubtful of that given that we have a perfect alignment. Perhaps this species was present in very low abundance in the mock sample as a contaminant? Either way, because the mock sample isn't included in our analyses downstream, we can elimiate this OTU entirely.  
 - `OTU175` was unequivocally matched as _Psilocorsis quercicella_ (oak leaftier moth). It's an OTU we see in our bat guano samples and I wouldn't be surprised to find in the bird samples either. However, the fact that this OTU is present in very low abundance (just 26 reads in our OTU), and identified in only one other sample (with 606 reads) makes me suspicious that such a read is of value to retain. We likely would discard it from our downstream analyses because we often discard singleton OTUs anyway (as it can really throw a wrench in diversity estiamtes). My inclination is to drop this OTU from further analysis entirely
-- `OTU1079` is a classic problem of trying to determine if something present in our lab could also be present out in nature: the sample is a clear match for _Fannia canicularis_ (common housefly). This same OTU has been detected in many other projects, including bat and bird guano from the northeast, western American regions as well as Central American countries. My guess is that this contaminant was present in the master mix used because it's the common component shared across all projects (water was changed, primers were changed, multiple extraction buffers were used). It's a particularly low-level contaminant, with only three samples having any identifiable reads (with 23, 19, and 16 reads represented in the mock community and two true samples, respectively). Given it's low read abundance and low read depth, I would discard this OTU entirely from analysis. 
+- `OTU1079` is a classic problem of trying to determine if something present in our lab could also be present out in nature: the sample is a clear match for _Fannia canicularis_ (common housefly). This same OTU has been detected in many other projects, including bat and bird guano from the northeast, western American regions as well as Central American countries. My guess is that this contaminant was present in the master mix used because it's the common component shared across all projects (water was changed, primers were changed, multiple extraction buffers were used). It's a particularly low-level contaminant, with only three samples having any identifiable reads (with 23, 19, and 16 reads represented in the mock community and two true samples, respectively). Given it's low read abundance and low read depth, I would discard this OTU entirely from analysis.
 
 ## Final filtering steps for `dropd` data
 My takeaways regarding the `dropd` dataset and best filtering practice: there is no need to apply as large a `--subtract` filter in this dataset as initially calculated, because these top hits are from expected _Harmonia_ sequences. We _should apply an index bleed of **2.1%**_ as a relatively conservative estimate of index-bleed. Finally, there are specific OTUs which we should drop out directly, and that can be done by executing the following `amptk drop` command:  
@@ -223,12 +223,12 @@ Filtering OTU table down to 1,277 OTUs and 3,412,100 read counts
 We carry forward the `finaldropd.filtered.otus.fa` and `finaldropd.final.txt` files into taxonomy assignment. The next portion of the filtering analysis focuses on the other dataset - the `trim` dataset which did not drop any samples. The same principles apply in how we investigate what OTUs to drop, what value to assign for the `--subtract` argument, and what the `--index_bleed` values should be. The code applied is documented below, but the results and explanations used are shortened, as they follow the similar ideas already described for the `dropd` dataset.  
 
 # Filtering the `trim` dataset
-A few things hold true between both datasets: 
+A few things hold true between both datasets:
 1. We expect_at least_ the same contaminants to be present in our `trim` data as in our `dropd` data, because the `trim` set is just a subset of the `dropd`.  
 2. We may find additional contaminants not present in the `trim` set; thus we'll need to start with a default filtering strategy to identify all possible contaminants.  
 3. We will **not** normalize data - this would only exacerbate the problems explained above (principally that it is artificially inflating the `--index_bleed` calculation. Because of this, we can jump directly into the second part of the filtering, and apply `--normalize n` to our filter script with the `--subtract auto` argument passed.  
 
-## Default filtering 
+## Default filtering
 
 ```
 amptk filter \
@@ -260,7 +260,7 @@ Apparently with a marginally higher index bleed we see a big drop in the number 
 ```
 sed -i 's/#OTU ID/OTUid/' trim_default.sorted.csv
 awk -F ',' '{print NF; exit}' trim_default.sorted.csv
-cut trim_default.sorted.csv -d ',' -f 1,2,89 | sort -t ',' -k3,3nr | awk -F "," '$3 != "0" {print $0}'
+cut trim_default.sorted.csv -d ',' -f 1,2,87 | sort -t ',' -k3,3nr | awk -F "," '$3 != "0" {print $0}'
 ```
 
 Output suggests a proportionally lower number of contaminant reads detected (the max was 302, as opposed to 551 before) - why? Recall that the clustering process itself is independent between the `dropd` and `trim` datasets; perhaps keeping more samples provided the clustering algorithms with more confidence in what a specific OTU consensus should be, and that the `dropd` OTUs were combined whereas the `trim` OUTs were separated out? We'll want to find out the identity of these reads in a moment, but suffice it to say that the number of reads assigned to unexpected OTUs in our mock community is quite low - notice there are just 6 unexpected OTUs beyond our earlier `--subtract` threshold of 15:  
@@ -268,19 +268,18 @@ Output suggests a proportionally lower number of contaminant reads detected (the
 ```
 MockIM40_pident=100.0_OTU33,0,32166
 MockIM49_pident=100.0_OTU38,91,24965
-OTU526_suspect_mock_variant,0,302
+OTU527_suspect_mock_variant,0,302
 OTU1181_suspect_mock_variant,0,91
 OTU770_suspect_mock_chimera,0,49
 OTU184_suspect_mock_variant,0,26
 OTU166_suspect_mock_chimera,0,24
 OTU1155_suspect_mock_chimera,0,23
-OTU301_suspect_mock_chimera,0,15
 ```
 
 We next identify the identiy of these 6 OTUs. Note that because clustering processes were independent, the same sequence string may be assigned to a totally different OTU name:  
 
 ```
-grep "\\bOTU526\\b" trim_default.otus.counts.fa -A 1
+grep "\\bOTU527\\b" trim_default.otus.counts.fa -A 1
 grep "\\bOTU1181\\b" trim_default.otus.counts.fa -A 1
 grep "\\bOTU770\\b" trim_default.otus.counts.fa -A 1
 grep "\\bOTU184\\b" trim_default.otus.counts.fa -A 1
@@ -289,7 +288,7 @@ grep "\\bOTU1155\\b" trim_default.otus.counts.fa -A 1
 ```
 
 BLAST searchers verify the following:
-- `OTU526` is the same as `OTU487` from the `dropd` dataset.  
+- `OTU527` is the same as `OTU487` from the `dropd` dataset.  
 - `OTU770` is the same as `OTU701` from the `dropd` dataset.  
 - `OTU184` is the same as `OTU175` from the `dropd` dataset.  
 - `OTU166` is the same as `OTU190` from the `dropd` dataset.  
@@ -306,8 +305,8 @@ grep "OTU166_" trim_default.sorted.csv
 grep "OTU1155" trim_default.sorted.csv
 ```
 
-- A bunch of OTUs are only present in the mock community sample: `OTU526`, `OTU770`, 
-- `OTU184` is present just in two samples (the same as in the `dropd` dataset) 
+- A bunch of OTUs are only present in the mock community sample: `OTU526`, `OTU770`,
+- `OTU184` is present just in two samples (the same as in the `dropd` dataset)
 - `OTU166` is present in 7 samples including the mock community; this makes me think it's probably not a contaminant at this point and will likely not be dropped from the final analysis. If that's the case, we'll have to increase the `--subtract` option a bit higher to eliminate it from the mock sample.  
 - `OTU1155` was present in four samples, the highest being 23 total reads to the mock community. This will be dropped from analysis because all other true samples with any read number are less than 23, and we're setting the subtract filter higher than that value.  
 
@@ -317,7 +316,7 @@ There was one outlier OTU which didn't match up with our earlier `dropd` dataset
 amptk drop \
 --input /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/clust/trim.cluster.otus.fa \
 --reads /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/illumina/trim.demux.fq.gz \
---list OTU526 OTU1181 OTU770 OTU184 OTU1155 \
+--list OTU527 OTU1181 OTU770 OTU184 OTU1155 \
 --out trim_dropdOTUs
 ```
 
@@ -339,7 +338,7 @@ amptk filter \
 --normalize n
 ```
 
-We find that the _subtract_ value was reduced to **24** as expected, and the _index bleed_ value remained at 3.8%. 
+We find that the _subtract_ value was reduced to **24** as expected, and the _index bleed_ value remained at 3.8%.
 
 ```
 Index bleed, mock into samples: 3.790306%.  
@@ -355,7 +354,7 @@ The index bleed value is expected to be higher than the `dropd` data set because
 ```
 # written: 8-March-2018
 # author: devon o'rourke
-# Part 1 - Motivation: 
+# Part 1 - Motivation:
 ## Jon palmer described the index-bleed being calculated as follows:
 
 #   
@@ -365,10 +364,10 @@ The index bleed value is expected to be higher than the `dropd` data set because
 #      3) the total number of reads from non-mock community OTUs are then summed
 #      4) index-bleed into the mock community is then calculated by dividing total non-mock reads by the total reads in the mock
 #
-## We want to know what OTUs are causing the index-bleed to be elevated: 
+## We want to know what OTUs are causing the index-bleed to be elevated:
 
 # Part 2 - script
-#runonce: 
+#runonce:
 install.packages('data.table')
 ## load packages
 library(data.table)
