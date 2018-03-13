@@ -1,10 +1,10 @@
 # Introduction
-All information created for this project is available at [this Github repo](https://github.com/devonorourke/guano/tree/master/Perlut). Please visit that page for more information regarding data tables, visualizations, and code used to complete this work.
+All information created for this project is available at [this Github repo](https://github.com/devonorourke/guano/tree/master/BRIpompton). Please visit that page for more information regarding data tables, visualizations, and code used to complete this work.
 
 ## extraction history
 Avian fecal samples were collected by the Perlut lab in 2016. Initial attempts to use a 96-well MoBio PowerSoil kit failed to generate significant numbers of amplicons likely because samples were too large to throughly lyse the fecal samples. A second batch of collections were performed in 2017; a modified PowerSoil extraction was performed which included: 
 - using 2x recommended volumes of C1 and bead solution;
-- heating bead solution at 37 C and shaking on orbital shaker for 4 hours; 
+- heating bead solution at 37 C and shaking on orbital shaker for 4 hours;
 This lysate was then separated into 2 batches (as lysate volume exceed about 2 mL per sample) using the 96-well bead plates. The remainder of the PowerSoil extraction then proceeded following manufactuerers guidelines, with samples being eluted in 100 uL Solution C6 (Tris).  
 
 Preliminary PCR results generatd few amplicons. DNA quantification of the raw extracted DNA suggested low concentrations among the samples tested (N = 16). To both increase concentration of samples and to remove potential PCR inhibitors all DNA was concentrated using a 0.5X SPRI bead cleanup (AmpureXP beads), after which the batched samples previously split up from a single lysate mixture into independent 96-well plate positions were recombined into a single DNA eluant. DNA was subsequently detectable in 5 of 8 samples tested, and preliminary PCR suggested detectable signal among 3 of 8 samples. PCR then proceeded using the modified (barcoded, Illumina adapter-containing) primers.  
@@ -26,7 +26,7 @@ The goal was to produce file names with the following scheme: `{SampleName}_{bar
 A series of steps were applied to achieve that, as [described here](https://github.com/devonorourke/guano/blob/master/Perlut/renaming_scheme.md).  
 
 ### side note on mock community
-The sample sheet submitted to the sequencing center incorrectly assigned the i7 and i5 index names (barcodes associated with 
+The sample sheet submitted to the sequencing center incorrectly assigned the i7 and i5 index names (barcodes associated with
 the mock community sample (this was the only sample with an incorrect barcode designation). The files were recovered by accessing the `Undetermined_S0_...fastq` file pair, containing all reads which an index sequence was recognized by the sequencer itself, but not associated with any listed index sequence on the sample sheet. A `grep` search as follows isolated the barcode sequence pair used in the run, and this pair was then added into the standard `amptk` workflow:  
 ```
 cat Undetermined_S0_L001_R1_001.fastq | grep -E '^@.*TGCGTCAA\+GTCTAGTG' -A 3 --no-group-separator > une-mockIM4_TGCGTCAA-GTCTAGTG_L001_R1_001.fastq &
@@ -35,7 +35,7 @@ cat Undetermined_S0_L001_R2_001.fastq | grep -E '^@.*TGCGTCAA\+GTCTAGTG' -A 3 --
 
 # amptk pipeline
 
-[amptk](https://github.com/nextgenusfs/amptk) is a bioinformatic toolkit which performs all necessary tasks beginning with quality and adapter trimming of raw reads, clustering OTUs, denoising and chimera detection, through to assigning taxonomy to each identified cluster and generating (among other outputs) the list of per-sample taxa represented in the dataset. A full documentation of available parameters used for the program are [detailed here](http://amptk.readthedocs.io/en/latest/index.html). 
+[amptk](https://github.com/nextgenusfs/amptk) is a bioinformatic toolkit which performs all necessary tasks beginning with quality and adapter trimming of raw reads, clustering OTUs, denoising and chimera detection, through to assigning taxonomy to each identified cluster and generating (among other outputs) the list of per-sample taxa represented in the dataset. A full documentation of available parameters used for the program are [detailed here](http://amptk.readthedocs.io/en/latest/index.html).
 
 A virtual environment was created when completing the installation process. _Recall that `amptk` is written in Python2, not Python3_. Initiall installation proceeded as described in Jon's suggested installation guide.  
 
@@ -179,6 +179,6 @@ The output fasta sequence and OTU table with taxonomic information were uploaded
 
  An R script was then used to manipulate the output `Perlut.otu_table.taxonomy.txt` file which includes both further data filtering, as well as the calculations for frequency tables and visualizations - [see here](https://github.com/devonorourke/guano/blob/master/Perlut/OTUanalysis.R).  
 
- > One such data filtering taking place here is the removal of reads associated with the mock community. 
+ > One such data filtering taking place here is the removal of reads associated with the mock community.
 
 Please see the Perlut [Github repo](https://github.com/devonorourke/guano/blob/master/Perlut) for subseuqent data summaries and visualizations.  

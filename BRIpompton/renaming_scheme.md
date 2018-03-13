@@ -10,7 +10,7 @@ The goal was to produce file names with the following scheme: `{SampleName}_{bar
 The following steps were applied to the files to achieve that:
 > Note that raw files were downloaded to a subdirectory within the main project folder `Perlut`, thus these raw `.fastq.gz` files all reside in `.../path/to/Perlut/fqraw`  
 
-Samples will start out looking something like this: 
+Samples will start out looking something like this:
 ```
 CONTROL-extBlankA07-xx-xx-USA-2017-076-JF_S38_L001_R1_001.fastq.gz
 CONTROL-extBlankA07-xx-xx-USA-2017-076-JF_S38_L001_R2_001.fastq.gz
@@ -80,7 +80,7 @@ paste tmp_filelist.txt wanted_filelist.txt > final_filelist.txt
 xargs -a final_filelist.txt -n 2 mv
 ```
 
-This should rename all the files so that they now look something like this (compare to the inital structure from *step 1*: 
+This should rename all the files so that they now look something like this (compare to the inital structure from *step 1*:
 
 ```
 extBlankA07_GTCTATGA-ACGACGTG_L001_R1_001.fastq.gz
