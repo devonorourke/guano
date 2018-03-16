@@ -82,6 +82,20 @@ amptk illumina \
 --cleanup
 ```
 
+### dropping samples with less than 50 reads
+Before we can cluster our reads within each library, we have to ensure that every sample in our dataset has some minimum number of reads. Jon has set this value to 10 (initially because the DADA2 pipeline (part of the clustering process) requires a read minimum for it's script to function). I've found that I usually apply a `--subtract` value (see the `amptk filter` section below on that filter and how it's applied) of about **20** on most projects; in other words, I find that in most cases I drop out at least 20 reads per sample anyway. We'll start by ensuring that the only samples which are passed into the `amptk cluster` process have _at least 50 reads_, both to fit Jon's requirements, as well as ensure that DADA2 doesn't crash in case the initial small number of reads have very low Phred scores and are filtered out by the initial VSEARCH command that precedes the DADA2 clustering script.  
+
+> Recall that you can determine the number of reads per sample following the `amptk illmina` script (above) by viewing the output of the `.log` file (try `less {filename}.log` to view). We actually don't need to apply the `amptk remove` function to p10-1 because all samples have > 10 reads; however we do need to drop several samples from p10-2, which curiously had many samples with just a few reads.
+
+```
+amptk remove \
+--input {filename.fq} \
+--threshold 50 \
+--out {filename}_readfiltd.demux.fq
+```
+
+Following the completion of that `amptk remove` script (for p10-2 only) we pass the minimum read filtered samples through to `amptk cluster`. Of note - that dropped **134** samples from p10-2 (that is, 134 samples had less than 50 reads per sample), yet we still retained **10,708,094 reads** out of **10,710,237 total reads**.
+
 ## clustering for OTUs
 
 This is a two step process in which the **.fastq** file containing all reads is parsed first using the `DADA2` algorithm creating **iseq** candidate sequences (unique sequences which are not clustered), then these unique sequences are clustered to a 97% similarity using the more traditional `UCLUST` approach. See Jon's documentation describing the differences [here](http://amptk.readthedocs.io/en/latest/clustering.html). In brief, **iseq** values are clustered at a 100% identity, whereas the resulting **OTUs** are clustered at 97% identity, meaning that the **iseq** sequences are more exclusive than the **OTUs**.  
@@ -105,31 +119,83 @@ amptk dada2 \
 --uchime_ref COI
 ```
 
-The output contains a pair of files which are applied in the next filtering strategy (for index bleed): the `.cluster.otu_table.txt` file which follows a traditional OTU matrix format, as well as the accompanying `.cluster.otus.fa` file which contains the OTU id in the header and the associated sequence. Each dataset is then filtered according to the following commands.  
+The output contains a pair of files which are applied in the next filtering strategy (for index bleed): the `.cluster.otu_table.txt` file which follows a traditional OTU matrix format, as well as the accompanying `.cluster.otus.fa` file which contains the OTU id in the header and the associated sequence. In addiiton, a `.log` file contains information regarding the number of reads and clusters contained within each library. These results are summarized in the following table, grouped by library:
 
-**START HERE**
-
-|  | trim | dropd |
+|  | p10-1 | p10-2 |
 | --- | --- | --- |
-| # OTUs clustered | 1,912 | 1,792 |
-| # reads mapped to OTUs | 3,543,867 | 3,472,563 |
-| # iSeqs clustered | 3,525 | 3,110 |
-| # reads mapped to iSeqs | 3,549,960 | 3,478,881 |
-
+| # OTUs clustered | 3,020 | 1,835 |
+| # reads mapped to OTUs | 8,863,391 | 10,299,825 |
+| # iSeqs clustered | 12,929 | 3,713 |
+| # reads mapped to iSeqs | 8,910,365 | 10,339,310 |
 
 ## filtering
 
-Because a mock community was added to this project, the proportion of reads that are likely misassigned can be estimated on a per-OTU basis. In brief, we are certain of the OTUs likely to be present in mock community; any additional OTU is the result of index bleed. By calculating the proportion of reads that are present in our mock sample which _shouldn't be there_ we can estimate what fraction of reads (on a per-OTU basis) should be subtracted from all true samples.
+Because a mock community was added to each library of this project the proportion of reads that are likely misassigned can be estimated on a per-OTU basis. In brief, we are certain of the OTUs likely to be present in mock community; any additional OTU is the result of index bleed. By calculating the proportion of reads that are present in our mock sample which _shouldn't be there_ we can estimate what fraction of reads (on a per-OTU basis) should be subtracted from all true samples.
 
 This process takes place by applying an initial filtering step that filters reads using the most strict criteria (taking the largest instance of an OTU bleed and applying that percentage to filter across true samples); intermediate files are kept to investigate how the index-bleed is distributed on a per-OTU basis. I have maintained a [separate document](https://github.com/devonorourke/guano/blob/master/Perlut/docs/Perlut_filtering_notes.md) describing the detailed steps used to apply what I feel are the most appropriate filtering strategies for this dataset.   
 
 In brief, this amounted to determining the proportion of index bleed _into the mock community_, the proportion of index bleed _from mock community into true samples_, and identifying any OTUs which were clustered yet not identified in the mock fasta file.  
 
-The filtering results from the `dropd` and `trimd` datasets are as follows:  
-- **For `trim`**, the initial dataset retained all **89** total samples, **3,543,867** reads (though > 1,245,00 were from the mock community alone), and **1912 OTUs**. Following filtering, we retained **2,198,389 reads** and **1,094 OTUs** (notably all mock reads have been removed).  
-- **For `dropd`** the initial dataset was reduced to just **38** samples (including the mock community) prior to filtering, with **3,472,564 reads** retained among **1,792 OTUs**. Following filtering the dataset included **2,194,756 reads** and **1,254 OTUs**.     
+We initially filter each library separately, then ensure that there are no significant differences arising in terms of suspected contaminants, differences in `index_bleed` values and/or `subtract` values (see the **filtering_notes.md** file for explanations). We observed that there were no large differences among datasets, so the next stage was to combine the reads from both datasets, rename the mock communities as a single item, and then recluster the datasets before performing another round of filtering (filtering on the combined library cluster).
 
-A pair of output files after completing filtering steps are applied to then assign taxonomic information to our remaining reads. Following these steps, the `trim` dataset was used exclusively to assign taxonomy to the OTUs present.  
+# Starting anew: combining libraries for `p10-1` and `p10-2` to make a master `OahuBird` library
+The initial analyses act as a sort of _rough draft_ to approximate the likelihood of contamination in our data as well as get a sense of the distribution of read depths (both on a per-OTU basis and per-sample basis). I'm suspicious of including samples with very low read counts and suspect that some of these OTUs which are creeping in as contaminants are the result of the inclusion of low read-depth samples from the outset. To be more conservative in our analyses we're going to set a minimum read threshold of at least 1000 reads per sample. The earlier analysis allowed the inclusion of any dataset with ~ 50 reads per sample, but one effect is that we can be continuously retaining low-level contaminants in many samples which can be significantly elevating our expected OTU counts.  
+
+We begin the process just as before - but this time we can skip the `amptk illumina` step, and concatenate our two `.demux` files. However because there are two mock community samples among the two lanes of data, we're going to rename those separate mocks as a single mock, then cluster based on the entirety of all mock reads in both datasets (the other option would be to just eliminate one of the two, but this could bias what OTUs we're filtering). We'll then remove any samples with less than 1000 reads, then cluster the resulting OTUs among the samples that survived that filter. We then filter our clustered OTUs as before, but will specifically be interested in identifying which contaminant OTUs remain between those identified individually among the `p10-1` and `p10-2` datasets.  
+
+## combining datasets and renaming mock community headers
+
+Combine our two demultiplexed datasets as follows:
+```
+cat \
+/mnt/lustre/macmaneslab/devon/guano/NAU/OahuBird/illumina/p10-1/trim_p101.demux.fq \
+/mnt/lustre/macmaneslab/devon/guano/NAU/OahuBird/illumina/p10-2/trim_p102.demux.fq > \
+/mnt/lustre/macmaneslab/devon/guano/NAU/OahuBird/illumina/OahuBird.demux.fq &
+```
+
+As a sanity check, you can confirm how many different samples made it into this concatenated file with:
+```
+grep "^@R_" OahuBird.demux.fq | cut -d '=' -f2 | sort -u | grep -c "^"
+```
+Which will return a value of **762** - given that we started with **385** and **377** samples in `p10-1` and `p10-2` respectively, we have what we expect in that `OahuBird.demux.fq` file. However, we don't want to include two different mock communities in our filtering - just one - so we'll rename those two mock's as follows:
+
+```
+sed -i -e 's/mockIM4p10L1/mockOahuBirdIM4/' -e 's/mockP10L2IM4/mockOahuBirdIM4/' OahuBird.demux.fq &
+```
+
+## dropping samples with low read numbers and clustering remaining data
+
+Before cluster that single joint dataset we'll drop out any sample with less than 1000 reads.
+
+```
+amptk remove \
+--input OahuBird.demux.fq \
+--threshold 50 \
+--out trimd_OahuBird.demux.fq
+```
+
+Notably, the `.log` file points out that we've dropped quite a few samples. We started with **762** samples with at least 1 read, but with the `--threshold 1000` argument set above, we have retained only about half the samples **365** samples are removed, yet we retain **19,807,041** of **19,886,739 total reads** (99.6%). The tradeoff here is the breadth of samples we could investigate with the certainty that the reads we're retaining are likely present due to low-level contamination. Because our first filtering investigations showed that low-level contamination is absolutely in effect, this approach seemed most sensible to me.  
+
+The sequences associated with the remaining samples are then combined into OTUs with `amptk cluster` using the same criteria as with the individual read sets:
+
+```
+amptk dada2 \
+--fastq trimd_OahuBird.demux.fq \
+--out OahuBird \
+--length 180 \
+--platform illumina \
+--uchime_ref COI
+```
+**START here**
+The output in the `.log` file suggests that we have **dropped? increased? OTUs relative to initial findings??**
+**discuss resulting unfiltered clusters in terms of iseqs, reads, etc**
+|  | p10-1 | p10-2 | OahuBird (all)
+| --- | --- | --- | --- |
+| # OTUs clustered | 3,020 | 1,835 | ?? |
+| # reads mapped to OTUs | 8,863,391 | 10,299,825 | ?? |
+| # iSeqs clustered | 12,929 | 3,713 | ?? |
+| # reads mapped to iSeqs | 8,910,365 | 10,339,310 | ?? |
+
 
 ## taxonomy assignment
 As described in the [amptk taxonomy](http://amptk.readthedocs.io/en/latest/taxonomy.html) section, the database used to assign taxonomy is derived from the Barcode of Life Database ([BOLD](http://v4.boldsystems.org/)). The sequences present in the database we're using are the result of two sequential clustering processes.
