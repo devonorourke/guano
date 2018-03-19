@@ -282,6 +282,8 @@ write.csv(master.df, "master.csv", row.names = F, quote = F)
                  ######     Part 4 - data analyses     ######
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
+master.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/Perlut/data/Routput/master.csv', header = T)
+
 ## load libraries and set working directory to print out data tables:
 library(plyr)
 setwd("~/Repos/guano/Perlut/data/Routput/")

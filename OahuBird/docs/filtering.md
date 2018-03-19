@@ -273,30 +273,135 @@ Given that all we have detected in both `p10-1` and `p10-2` are minor levels of 
 - the `--subtract` filter will need to be used if we find that there are suspect OTUs remaining after the `--index_bleed` filter has been applied; it's unclear what this value will be, but it may result in quite a few OTUs being dropped  
 - there are many low-level contaminants which will need to be individually BLASTed and confirmed whether they are likely indicative of true samples or contaminants on a case-by-case basis. We'll explain each of those decisions in the single-dataset clustering output below.
 
-# Filtering considerations for combined `p10-1` and `p10-2` libraries
+# Filtering considerations for combined dataset, `OahuBird`
 
-The two libraries were combined as described in the [workflow.md document](https://github.com/devonorourke/guano/blob/master/OahuBird/docs/workflow.md). 
+Reads from the two libraries, `p10-1` and `p10-2` were combined as described in the [workflow.md document](https://github.com/devonorourke/guano/blob/master/OahuBird/docs/workflow.md#combining-datasets-and-renaming-mock-community-headers). In addition, samples with less than 1000 reads were removed from the dataset. The sequences remaining from the samples that survived filtering were then clustered. The filtering approach discussed here applies to the resulting cluster of the filtered, joint libraries of `p10-1` and `p10-2` termed `OahuBird`.  
 
-
-
-
-
-
-
-Let's finish up this process by applying the final filter, this time removing all the temporary files and discarding the reads associated with the mock community:  
+We begin by applying the default parameters within `amptk filter`, including normalizing our reads.
 
 ```
 amptk filter \
--i /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/dropd/dropdOTUs.cleaned.otu_table.txt \
--f /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/dropd/dropdOTUs.cleaned.otus.fa \
+-i /path/to/{filename}.otu_table.txt \
+-f /path/to/{filename}.otus.fa \
+-b mockOahuBirdIM4 \
+--delimiter csv \
+--keep_mock \
+--calculate all \
+--subtract auto \
 --mc /mnt/lustre/macmaneslab/devon/guano/mockFastas/CFMR_insect_mock4alt.fa \
--b une-mockIM4 \
---delimiter tsv \
---index_bleed 0.021 \
---subtract 15 \
--o finaldropd \
---normalize n
+--debug \
+--threshold max \
+-o all_default \
+--normalize y
 ```
+
+And we'll look into the output files to check a few things:
+- Do we see a similar index_bleed as observed in the two independent libraries as before?  
+- Do we see a similar level of suspected contaminant OTUs in terms of read depth?  
+
+```
+sed -i 's/#OTU ID/OTUid/' all_default.sorted.csv
+awk -F ',' '{print NF; exit}' all_default.sorted.csv    ## prints out 397 (there are 396 samples including the one mock)
+cut all_default.sorted.csv -d ',' -f 1,2,397 | sort -t ',' -k3,3nr | awk -F "," '$3 != "0" {print $0}'
+```
+
+From the `.log` file it's apparent that our index-bleed calculations appear just like the other libraries in which normalization was performed prior to read filtering:  
+```
+Index bleed, mock into samples: 71.344836%.  
+Index bleed, samples into mock: 0.054010%.
+Auto subtract filter set to 15
+mockOahuBirdIM4 sample has 23 OTUS out of 25 expected; 0 mock variants; 0 mock chimeras; Error rate: 0.092%
+Filtering OTU table down to 3,673 OTUs and 12,613,743 read counts
+```
+Note that we lose about a third of our reads with these default parameters, due to the extremely high index-bleed calculation. The output looks as expected in terms of the distribution of reads of expected mock community OTUs relative to unexpected OTUs in the mock sample:
+
+```
+## Top 3 expected mock OTUs
+MockIM5_pident=100.0_OTU18,0,229709
+MockIM23_pident=100.0_OTU19,0,228075
+MockIM29_pident=100.0_OTU23,0,226421
+...
+## Bottom 3 expected mock OTUs
+MockIM7_pident=100.0_OTU42,0,126121
+MockIM40_pident=100.0_OTU41,0,123435
+MockIM49_pident=100.0_OTU47,0,95743
+...
+## Top UNexpected mock OTUs
+OTU1730_suspect_mock_variant,0,650
+OTU3130_suspect_mock_variant,0,255
+OTU224_suspect_mock_chimera,0,122
+OTU1357_suspect_mock_chimera,0,95
+OTU949_suspect_mock_chimera,0,88
+OTU554_suspect_mock_variant,0,80
+OTU264_suspect_mock_variant,0,78
+```
+
+Now let's see what the results look like if we don't normalize our data prior to filtering:
+> Not shown: we executed the same filtering commands as described for the normalized data above, but switched the `--normalize` flag from `y` to `n`    
+
+```
+Index bleed, mock into samples: 0.925361%.  
+Index bleed, samples into mock: 0.067208%.
+Auto subtract filter set to 650
+mockOahuBirdIM4 sample has 24 OTUS out of 25 expected; 0 mock variants; 0 mock chimeras; Error rate: 0.087%
+Filtering OTU table down to 425 OTUs and 16,892,039 read counts
+```
+
+Like with the independent libraries before, we see that by not normalizing our data we increase the number of reads retained, but decrease the number of OTUs present in our data. It's a drastic difference: the normalized data has more than eight times the number of OTUs, and it's highly likely these are not representative of distinct taxonomic units (it's more likely they're the result of PCR error, contamination, sequencing error, etc.). Let's check to see if we see the same _UNexpected_ OTUs in the non-normalized data:  
+
+```
+sed -i 's/#OTU ID/OTUid/' all_NoNorm.sorted.csv
+cut all_NoNorm.sorted.csv -d ',' -f 1,2,397 | sort -t ',' -k3,3nr | awk -F "," '$3 != "0" {print $0}'
+```
+
+We find that the number of reads per OTU may have changed, but the order and their relative proportions are the same - this indicates that as we look into filtering these OTUs we can likely retain more reads by dropping a few particular contaminant OTUs, setting a modest index-bleed filter, and reducing the `--subract` value to something between what is expected between the normalized and non-normalized data. Here's a similar summary of selected expected and unexpected OTUs in the mock community:  
+
+```
+## Top 3 expected mock OTUs - same as in Normalized data
+MockIM5_pident=100.0_OTU18,0,229709
+MockIM23_pident=100.0_OTU19,0,228075
+MockIM29_pident=100.0_OTU23,0,226421
+## Bottom 3 expected mock OTUs - same as Normalized
+MockIM7_pident=100.0_OTU42,0,126121
+MockIM40_pident=100.0_OTU41,0,123435
+MockIM49_pident=100.0_OTU47,0,95743
+## Top UNexpected mock OTUs
+OTU1730_suspect_mock_variant,0,650
+OTU3130_suspect_mock_variant,0,255
+OTU224_suspect_mock_chimera,0,122
+OTU1357_suspect_mock_chimera,0,95
+OTU949_suspect_mock_chimera,0,88
+OTU554_suspect_mock_variant,0,80
+OTU264_suspect_mock_variant,0,78
+```
+
+We'll now look at those top unexpected OTUs to figure out whether or not they're the same taxa we observed in our independent libraries as before by BLASTing these OTUs in question and looking at their read distributions:  
+
+```
+## BLAST the resulting sequence (just the first three OTUs shown)
+grep "\\bOTU1730\\b" all_NoNorm.otus.counts.fa -A 1
+grep "\\bOTU3130\\b" all_NoNorm.otus.counts.fa -A 1
+grep "\\bOTU224\\b" all_NoNorm.otus.counts.fa -A 1
+grep "\\bOTU1357\\b" all_NoNorm.otus.counts.fa -A 1
+grep "\\bOTU949\\b" all_NoNorm.otus.counts.fa -A 1
+grep "\\bOTU554\\b" all_NoNorm.otus.counts.fa -A 1
+grep "\\bOTU264\\b" all_NoNorm.otus.counts.fa -A 1
+
+## Examine the read counts per sample (just one example shown)
+grep "OTU700" all_NoNorm.sorted.csv
+```
+
+We find the following:
+- `OTU1730` is _Harmonia axyridis_. We'll drop this OTU.
+- `OTU3130` matches `OTU2336` from `p10-1`; it occurred just twice in that library (one of which is the mock) and that stays true here - this is clearly a contaminant and will be dropped from further analysis.  
+- `OTU224` is our favorite house fly; `OTU456` from `p10-2` and `OTU135` from `p10-1`. It occurs in _lots_ of samples - 110 including the mock - yet just 18 of these samples have more than 100 reads total (the highest single read count being 654). This is very likely a contaminant and will be dropped from analysis.
+- `OTU1357` matches `OTU1159` from `p10-1`, and like with `OTU3130` above, it remains in just two samples (one of which is the mock). It is a contaminant which will be dropped from analysis.
+- `OTU949` matches `OTU707` from `p10-1`, it was detected in 28 samples, yet all at low frequency. It is another OTU which will be dropped.
+- `OTU554` matches `OTU700` from `p10-2`. It was detected 31 times, yet no sample had more than 200 reads, and just three of these had more than 100 reads. It is a likely contaminant OTU which will be discarded.  
+- `OTU264` matches `OTU205` from `p10-1`. It is found in low abundance in several samples and will be discarded as well.  
+
+**STARTHERE.. comment about which OTUs to drop, what `subtract` filter to set, what index bleed to set...**
+**likely start by dropping certain OTUs, then applying a 2% index bleed filter, then looking at what OTUs remain, then applying _that_ `subtract` value. that should give us confidence in retaining that OTUs that are left**
 
 Which produces a similar output as with out sanity check above, except the filtering produces fewer reads and OTUs (because we've now discarded anything associated with our mock community sample):  
 

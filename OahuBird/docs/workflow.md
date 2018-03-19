@@ -186,16 +186,19 @@ amptk dada2 \
 --platform illumina \
 --uchime_ref COI
 ```
-**START here**
-The output in the `.log` file suggests that we have **dropped? increased? OTUs relative to initial findings??**
-**discuss resulting unfiltered clusters in terms of iseqs, reads, etc**
+
+The output in the `.log` file suggests that we have haven't deviated from the expected number of OTUs relative to initial findings - they're about the sum of the two libraries - but this appears to me at least a bit unexpected, as it suggests these two runs have a lot of independent sequences (whereas given they were all from the same project, I'd have suspected there would be a reduction in the overall number of OTUs once we clustered the two datasets). The table below compares the initial findings of the separately clustered libraries with our joint library:  
+
 |  | p10-1 | p10-2 | OahuBird (all)
 | --- | --- | --- | --- |
-| # OTUs clustered | 3,020 | 1,835 | ?? |
-| # reads mapped to OTUs | 8,863,391 | 10,299,825 | ?? |
-| # iSeqs clustered | 12,929 | 3,713 | ?? |
-| # reads mapped to iSeqs | 8,910,365 | 10,339,310 | ?? |
+| # OTUs clustered | 3,020 | 1,835 | 4,177 |
+| # reads mapped to OTUs | 8,863,391 | 10,299,825 | 19,109,186 |
+| # iSeqs clustered | 12,929 | 3,713 | 15,648 |
+| # reads mapped to iSeqs | 8,910,365 | 10,339,310 | 19,180,369 |
 
+## Filtering the joint library  
+We employ the same filtering strategies as discussed in detail in the supplementary [filtering document](https://github.com/devonorourke/guano/blob/master/OahuBird/docs/filtering.md). In summary
+**SUMMARIZE THE FINAL SCRIPT EXECUTED TO FILTER THIS LIBRARY**
 
 ## taxonomy assignment
 As described in the [amptk taxonomy](http://amptk.readthedocs.io/en/latest/taxonomy.html) section, the database used to assign taxonomy is derived from the Barcode of Life Database ([BOLD](http://v4.boldsystems.org/)). The sequences present in the database we're using are the result of two sequential clustering processes.
@@ -205,17 +208,15 @@ As described in the [amptk taxonomy](http://amptk.readthedocs.io/en/latest/taxon
 > This database was updated as of 14-sept-2017, following the [release](https://github.com/nextgenusfs/amptk/releases/tag/1.0.0) of amptk v-1.0.0.  
 > Complete database download is [available here](https://osf.io/4xd9r/files/)
 
-Taxonomy was explored using both the _hybrid_ approach (default in amptk) as well as a _usearch only_ approach. In both instances, the `--method` reflected the given approach. See Jon's description of the steps used in his documentation at the link above.  
-
-The following code was applied (in this example the method is the `usearch` approach):  
+Taxonomy was explored using the _hybrid_ approach (default in amptk). See Jon's description of the steps used in his documentation at the link above for further details; notably, other taxonomic assignment options are available within `amptk`.  
 
 ```
 amptk taxonomy \
 --i /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/filtd/finaltrim.final.txt \
 --fasta /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/filtd/finaltrim.filtered.otus.fa \
---out Perlut_u \
+--out Perlut_h \
 --db COI \
---method usearch \
+--method hybrid \
 --mapping_file /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/illumina/dropd.mapping_file.txt
 ```
 
