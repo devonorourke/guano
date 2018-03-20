@@ -200,7 +200,7 @@ The output in the `.log` file suggests that we have haven't deviated from the ex
 We employ the same filtering strategies as discussed in detail in the supplementary [filtering document](https://github.com/devonorourke/guano/blob/master/OahuBird/docs/filtering.md). In summary, after applying a series of filters, we retain **1,529 OTUs** and **13,950,987 reads**. This value is considerably less than the initial library (both in terms of OTUs and reads); the read drop is expected because of the fact that so many reads were part of the mock community - these were included in our estimates of OTUs and reads in the table above, yet are not included in our final dataset after filtering. The number of OTUs dropping isn't surprising - in most datasets these OTU values are initially quite high and are due to many low-abundant reads due to index-bleed and contamination; once we've accounted for those factors many OTUs are discarded.
 
 ### Optional filtering - work in progress
-Jon has incorporated a third party software program that further refines our OTU estimates. While our initial filtering removes lots of OTUs we believe to be in low abundance due to index-bleed and/or contamination, it's also possible that these OTUs are in low abundance due to PCR error that creates unique OTUs when they should really be clustered together. The [LULU package](https://github.com/tobiasgf/lulu), is an algorithm for further clustering - see [their paper](https://www.nature.com/articles/s41467-017-01312-x) for complete details. The usage of this software is appropriate within our amptk workflow following our filtering, but should be completed before taxonomy assignment; usage is outlined within the [amptk documentation](http://amptk.readthedocs.io/en/latest/commands.html#amptk-lulu). I've tried to simplify what is happening in the following bullets:  
+Jon has incorporated a third party software program that further refines our OTU estimates. While our initial filtering removes lots of OTUs we believe to be in low abundance due to index-bleed and/or contamination, it's also possible that these OTUs are in low abundance due to PCR error that creates unique OTUs when they should really be clustered together. The [LULU package](https://github.com/tobiasgf/lulu), is an algorithm for further clustering - see [their paper](https://www.nature.com/articles/s41467-017-01312-x) for complete details. The usage of this software is appropriate within our amptk workflow following our filtering, but should be completed before taxonomy assignment; usage is outlined within the [amptk documentation](http://amptk.readthedocs.io/en/latest/commands.html#amptk-lulu). I've tried to simplify what is happening in the following bullets, but see [LULU's github page](https://github.com/tobiasgf/lulu#the-algorithm) for even more information about the algorithm's process:  
 
 - Though there are several parameters to potentially test, just one struck me as particularly relevant to toying with: the `--min_match` setting. LULU works in a series of steps; following sorting the OTU table by abundance (prioritized in terms numbers of detections for an OTU among samples first, then in terms of reads per OTU), the dataset is put through a pairwise percent dissimilarity test (BLASTn approach used by default) - these percent (dis)similarities are then used in the R LULU script which will only test for parent-daughter relationships _based on the `--min_match` value you specify_. Thus the default **84** percent dissimilarity seemed really low to me; a more conservative estimate of 95% would essentially specify that up to 5% of the variance between a pair of sequences is indicative of either PCR errors and/or intragenic variance among true OTUs within a species. While we've already clustered at 97% with VSEARCH (during the `amptk clust` process), this additional percent identity allows us to then label these _potentially related_ clusters.  
 - We then move along to the next major step where potentially related clusters are queried for their **cooccurrence** - this value is set by the `--minimum_relative_cooccurence` argument. This is a percent which reflects how likely you think these values _potentially related clusters are to cooccur_. We would think that if they are truly PCR errors or intragenic variation, then they should **often** cooccur. We set this to a fairly high value of 95%, meaning that we'd only expect them to be separated 5% of the time. Notably, this measure only is stipulated upon the daughter strand, so you can have the dominant parent OTU in lots of samples without the daughter, but you can't have lots of daugther samples without the parent. I haven't changed this setting in our testing because I have not empirically tested this with a positive control. A value of **95** percent is used by default.  
@@ -243,19 +243,46 @@ As described in the [amptk taxonomy](http://amptk.readthedocs.io/en/latest/taxon
 > This database was updated as of 14-sept-2017, following the [release](https://github.com/nextgenusfs/amptk/releases/tag/1.0.0) of amptk v-1.0.0.  
 > Complete database download is [available here](https://osf.io/4xd9r/files/)
 
-Taxonomy was explored using the _hybrid_ approach (default in amptk). See Jon's description of the steps used in his documentation at the link above for further details; notably, other taxonomic assignment options are available within `amptk`.  
+Taxonomy was explored using the _hybrid_ approach (default in amptk). See Jon's description of the steps used in his documentation at the link above for further details; notably, other taxonomic assignment options are available within `amptk`. I had to create a new mapping file because we combined reads from two datasets by concatenating the `amptk illumina` output (rather than rerunning it again from all the reads at once). This mapping file was then passed to the `amptk taxonomy` command below. To create the mapping file we want:
+> note a **taxonomy** directory was created within the parent directory of this project    
+
+```
+## generate the sample list we're sorting through:
+cd /mnt/lustre/macmaneslab/devon/guano/NAU/OahuBird/filtd/all/
+head -1 OahuBird.final.txt | tr '\t' '\n' | sed 's/#OTU ID/#SampleID/' > wanted_list.txt
+
+## run R script to:
+## (1) combine initial mapping files from both libraries
+## (2) subset from this master mapping file only samples present in our filtered OTU tables (rows matching the `wanted_list.txt`)  
+
+R
+p101map <- read.csv("/mnt/lustre/macmaneslab/devon/guano/NAU/OahuBird/illumina/p10-1/trim_p101.mapping_file.txt",sep='\t', header=TRUE)
+colnames(p101map)[1] <- "#SampleID"
+p102map <- read.csv("/mnt/lustre/macmaneslab/devon/guano/NAU/OahuBird/illumina/p10-2/trim_p102.mapping_file.txt",sep='\t', header=TRUE)
+colnames(p102map)[1] <- "#SampleID"
+allmap <- rbind(p101map,p102map)
+wanted <- read.csv("/mnt/lustre/macmaneslab/devon/guano/NAU/OahuBird/filtd/all/wanted_list.txt",sep='\t',header=TRUE)
+colnames(wanted) <- "#SampleID"
+library(dplyr)
+filtmap <- right_join(allmap, wanted)
+write.table(filtmap, file = "/mnt/lustre/macmaneslab/devon/guano/NAU/OahuBird/taxonomy/FilteredMappingFile.txt",sep='\t', quote = F, row.names=F)
+```
+
+Then use this mapping file (**FilteredMappingFile.txt**) for each of the datasets you're assigning taxonomy to (both the _LULU-curated_ as well as _filtered_ dataset without LULU curation). I'm terming each of these datasets as either LULU filtered or not, so they are discussed as **lulu** or **NOlulu** herein:  
+> Shown below reflects one of the two similar set of `amptk taxonomy` commands used (in this case, for the LULU curated and filtered dataset); for the _filtered but not curated_ dataset (**NOlulu**), replace the input otu table and fasta files  
+> note that subdirectories within the **taxonomy** parent directory were created for each of the unique otu tables used in this analysis  
 
 ```
 amptk taxonomy \
---i /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/filtd/finaltrim.final.txt \
---fasta /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/filtd/finaltrim.filtered.otus.fa \
---out Perlut_h \
+-i /mnt/lustre/macmaneslab/devon/guano/NAU/OahuBird/lulu/pid95/pid95.lulu.otu_table.txt \
+--fasta /mnt/lustre/macmaneslab/devon/guano/NAU/OahuBird/lulu/pid95/pid95.lulu.otus.fa \
+--out OahuBird_lulu_h \
 --db COI \
 --method hybrid \
---mapping_file /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/illumina/dropd.mapping_file.txt
+--mapping_file FilteredMappingFile.txt
 ```
 
-The output fasta sequence and OTU table with taxonomic information were uploaded to [the `/data/amptk` directory within this Github repo](https://github.com/devonorourke/guano/tree/master/Perlut/data/amptk).  
+I termed the two output datasets `OahuBird_lulu_h` for LULU-curated OTU table, while I appended a `Oahubird_h` prefix for the non-LULU curated OTU table (the reason being that LULU was an additional filter in addition to the filtering methods already applied to the **NOlulu** dataset). Each of the datasets contained multiple output files; I've uploaded the `.fasta` sequence and OTU `.txt` files with taxonomic information to [the `/data/amptk` directory within this Github repo](https://github.com/devonorourke/guano/tree/master/OahuBird/data/amtpk) as well as a `.biom` file which should be useful for additional analyses in other software packages if warranted.    
 
 > Note that a value of 0 ("absence") could mean a variety of different things:  
 > - it could be that the OTU is not truly in the sample of guano
