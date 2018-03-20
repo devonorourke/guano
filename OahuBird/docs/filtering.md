@@ -365,7 +365,7 @@ MockIM29_pident=100.0_OTU23,0,226421
 MockIM7_pident=100.0_OTU42,0,126121
 MockIM40_pident=100.0_OTU41,0,123435
 MockIM49_pident=100.0_OTU47,0,95743
-## Top UNexpected mock OTUs
+## Top UNexpected mock OTUs (more exist below what is shown here)
 OTU1730_suspect_mock_variant,0,650
 OTU3130_suspect_mock_variant,0,255
 OTU224_suspect_mock_chimera,0,122
@@ -378,14 +378,10 @@ OTU264_suspect_mock_variant,0,78
 We'll now look at those top unexpected OTUs to figure out whether or not they're the same taxa we observed in our independent libraries as before by BLASTing these OTUs in question and looking at their read distributions:  
 
 ```
-## BLAST the resulting sequence (just the first three OTUs shown)
+## BLAST the resulting sequence (just the first few OTUs shown; many more analyzed in detail below)
 grep "\\bOTU1730\\b" all_NoNorm.otus.counts.fa -A 1
 grep "\\bOTU3130\\b" all_NoNorm.otus.counts.fa -A 1
 grep "\\bOTU224\\b" all_NoNorm.otus.counts.fa -A 1
-grep "\\bOTU1357\\b" all_NoNorm.otus.counts.fa -A 1
-grep "\\bOTU949\\b" all_NoNorm.otus.counts.fa -A 1
-grep "\\bOTU554\\b" all_NoNorm.otus.counts.fa -A 1
-grep "\\bOTU264\\b" all_NoNorm.otus.counts.fa -A 1
 
 ## Examine the read counts per sample (just one example shown)
 grep "OTU700" all_NoNorm.sorted.csv
@@ -399,135 +395,99 @@ We find the following:
 - `OTU949` matches `OTU707` from `p10-1`, it was detected in 28 samples, yet all at low frequency. It is another OTU which will be dropped.
 - `OTU554` matches `OTU700` from `p10-2`. It was detected 31 times, yet no sample had more than 200 reads, and just three of these had more than 100 reads. It is a likely contaminant OTU which will be discarded.  
 - `OTU264` matches `OTU205` from `p10-1`. It is found in low abundance in several samples and will be discarded as well.  
+- `OTU279` matches `OTU113` from `p10-2`. It's a strange example because there are just two samples with more than 10 reads per sample: our mock (with 88) and a single true sample, **OahuBird-646**, with 3045 reads. That's a lot of reads to be a contaminant. Moreover, the sample itself doesn't seem particularly strange - it contains OTUs which are present in many other samples. In this particular case the tradeoff is dropping an OTU only in one sample (which contain many other OTUs) and lowering out `--subtract` value quite a bit, or keeping that OTU and leaving our `subtract` value at **88**. I'm inclined to just drop the OTU, as lowering the `subtract` value will retain more reads and more OTUs overall.
+- `OTU69`matches `OTU346` from `p10-2`. This OTU is identified in seven samples with more than 100 reads, two of which have more than 10,000 reads. It's likely a real signal and shouldn't be dropped yet. Because of this, the `--subtract` value can likely be set to the number of reads detected in our mock for this OTU.  
+- `OTU167` matches `OTU110` from `p10-2`. It's detected in over 200 samples, yet no single sample has more than 1500 reads (however, 31 samples have more than 100 reads, and 67 samples have more than 50 reads). If this is a contaminant, it's a highly abundant contaminant (we don't usually see these); if it's a chimera or true signal, it's unclear why this sequence isn't producing more reads in at least a few samples. What's curious is that the BLAST search generates a low % identity for any match (top hit just 89% over 100 % coverage); this makes me suspicious that it's in fact a chimeric sequence. However it could also be that it's a true signal which doesn't have good representation in our database. We'll retain this read for now.  
+- `OTU1` is our top hit - _D. suzukii_ - and is clearly a real signal. It's a known Hawaiian fruit fly. If we had dropped `OTU69`, this likely would be where we'd set our `subtract` value. This OTU is retained.
+- `OTU2285` is a match for `OTU700` in `p10-2`. It is identified in low read abundance in many samples , but the highest read number per sample is 55 (and that's in the mock!); this OTU will be removed.  
 
-**STARTHERE.. comment about which OTUs to drop, what `subtract` filter to set, what index bleed to set...**
-**likely start by dropping certain OTUs, then applying a 2% index bleed filter, then looking at what OTUs remain, then applying _that_ `subtract` value. that should give us confidence in retaining that OTUs that are left**
-
-Which produces a similar output as with out sanity check above, except the filtering produces fewer reads and OTUs (because we've now discarded anything associated with our mock community sample):  
-
-```
-Filtering OTU table down to 1,277 OTUs and 3,412,100 read counts
-```
-
-We carry forward the `finaldropd.filtered.otus.fa` and `finaldropd.final.txt` files into taxonomy assignment. The next portion of the filtering analysis focuses on the other dataset - the `trim` dataset which did not drop any samples. The same principles apply in how we investigate what OTUs to drop, what value to assign for the `--subtract` argument, and what the `--index_bleed` values should be. The code applied is documented below, but the results and explanations used are shortened, as they follow the similar ideas already described for the `dropd` dataset.  
-
-**!!!!!!!!!!!!!!!!!**
-
-
-
-
-
-
-```
-
-- A bunch of OTUs are only present in the mock community sample: `OTU526`, `OTU770`,
-- `OTU184` is present just in two samples (the same as in the `dropd` dataset)
-- `OTU166` is present in 7 samples including the mock community; this makes me think it's probably not a contaminant at this point and will likely not be dropped from the final analysis. If that's the case, we'll have to increase the `--subtract` option a bit higher to eliminate it from the mock sample.  
-- `OTU1155` was present in four samples, the highest being 23 total reads to the mock community. This will be dropped from analysis because all other true samples with any read number are less than 23, and we're setting the subtract filter higher than that value.  
-
-There was one outlier OTU which didn't match up with our earlier `dropd` dataset: `OTU1181` in the `trimd` dataset. This was a beetle that a BLAST search only aligned 95% identity (across 100% coverage), thus the species-level assignment is likely incorrect. Nevertheless, it's clearly a beetle of some sort. However, this was detected in only one true sample in addition to the mock community, thus it would be dropped as a singleton OTU in our final processing. We'll eliminate it along with all the other OTUs as follows:  
-
+It's clear that several OTUs should be dropped from further analysis. Let's do this first and then determine how this influences our subsequent filtering (using default parameters and any modified ones thereafter). To drop the OTUs discussed above:  
 ```
 amptk drop \
---input /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/clust/trim.cluster.otus.fa \
---reads /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/illumina/trim.demux.fq.gz \
---list OTU527 OTU1181 OTU770 OTU184 OTU1155 \
---out trim_dropdOTUs
+--input /mnt/lustre/macmaneslab/devon/guano/NAU/OahuBird/clust/all/OahuBird.cluster.otus.fa \
+--reads /mnt/lustre/macmaneslab/devon/guano/NAU/OahuBird/illumina/trimd_OahuBird.demux.fq \
+--list OTU1730 OTU3130 OTU224 OTU1357 OTU949 OTU554 OTU264 OTU279 OTU2285 \
+--out OahuBird_otudropd
 ```
 
-We then apply a default filter once more to determine how dropping these OTUs influences the index-bleed calculation (we expect the subtract value to equal 24 because we've retained `OTU166`):  
+After compleing this process we've removed 9 OTUs. The main questions remaining to resolve concern what value we should set the `--index_bleed` to as well as the `--subtract` filter.  One option would be to apply an `index_bleed` value calculated from either the _bleed-in_ observed (~ 0.5%) when we don't normalize, or what we have observed for the _mock-in_ values (~1%); though note we would expect in an index bleed of ~2% in typical MiSeq run. Let's check what happens when we apply a 2% `index_bleed` on non-normalized data, and compare it with an `index_bleed` value calculated at 1% (close to the default estimate); we'll set the `--subtract` value to auto for the moment, then investigate which OTUs remain in our mock at modest values:  
+
+>code not shown for the 1% estimate; change the `--index_bleed` value from **0.02** to **0.01**  
 
 ```
 amptk filter \
--i /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/dropd/trim_dropdOTUs.cleaned.otu_table.txt \
--f /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/dropd/trim_dropdOTUs.cleaned.otus.fa \
--b une-mockIM4 \
+-i /mnt/lustre/macmaneslab/devon/guano/NAU/OahuBird/clust/all/OahuBird_otudropd.cleaned.otu_table.txt \
+-f /mnt/lustre/macmaneslab/devon/guano/NAU/OahuBird/clust/all/OahuBird_otudropd.cleaned.otus.fa \
+-b mockOahuBirdIM4 \
 --delimiter csv \
---keep_mock \
---calculate all \
+--index_bleed 0.02 \
 --subtract auto \
+--keep_mock \
 --mc /mnt/lustre/macmaneslab/devon/guano/mockFastas/CFMR_insect_mock4alt.fa \
 --debug \
 --threshold max \
--o trim_OTUdropd \
+-o all_NoNorm_bleed2 \
 --normalize n
 ```
 
-We find that the _subtract_ value was reduced to **24** as expected, and the _index bleed_ value remained at 3.8%.
+We see there isn't a big difference between the two `index_bleed` values. The same number of OTUs are detected in the mock, the same number of OTUs remain, and there are just a few more sequences remaining in the lower `index_bleed` calculation (note that this value depends on whether we're counting the mock reads; if we remove them (by not including the `--keep_mock` argument above) we get a different output of OTUs and reads remaining; this is because that value includes (or doesn't) the mock reads depending upon if we pass that argument. For our purposes we should be comparing what the effect on read number and OTU number is when the mock is removed, as that is what our library will reflect).  
+> Note that our final read counts and OTUs **include mock community reads and OTUs**; these will not be included in the final table  
 
 ```
-Index bleed, mock into samples: 3.790306%.  
-Index bleed, samples into mock: 0.012968%.
-Auto subtract filter set to 24
-une-mockIM4 sample has 24 OTUS out of 25 expected; 0 mock variants; 0 mock chimeras; Error rate: 0.081%
-Filtering OTU table down to 1,117 OTUs and 3,416,600 read counts
+## For `index_bleed` = 0.01
+0.925364%.  Index bleed, samples into mock: 0.037660%.
+Overwriting auto detect index-bleed, setting to 1.000000%
+Auto subtract filter set to 89
+mockOahuBirdIM4 sample has 24 OTUS out of 25 expected; 0 mock variants; 0 mock chimeras; Error rate: 0.087%
+Filtering OTU table down to 1,148 OTUs and 18,144,460 read counts
+
+## For `index_bleed` = 0.02
+Index bleed, mock into samples: 0.925364%.  Index bleed, samples into mock: 0.037660%.
+Overwriting auto detect index-bleed, setting to 2.000000%
+Auto subtract filter set to 89
+mockOahuBirdIM4 sample has 24 OTUS out of 25 expected; 0 mock variants; 0 mock chimeras; Error rate: 0.087%
+Filtering OTU table down to 1,148 OTUs and 18,048,470 read counts
 ```
 
-The index bleed value is expected to be higher than the `dropd` data set because of the default way it's calculated: it sums up the entirety of mock-associated reads in true samples, and divides that sum by the number of reads in the actual mock sample (on a per OTU basis). That percentage is then applied to a `--threshold` value, which can be calculated a variety of ways (the sum of all OTUs, the single max OTU, the top5 % OTU values, etc.), but the way the percent is determined is always the same. Because we have about 2x the number of samples in the `trimd` data set, we have a greater changes that additional mock read will be part of the sum of the non-mock sample counts, thus there's an intrinsic tradeoff here: more samples to investigate means a higher index bleed.  
+However, I'm concerned we're dropping a lot of OTUs which contain reads which aren't particularly high in abundance (per sample). What is driving the `subract` filter to be set to **89**?  
 
-> Side note - if you want to see what these index-bleed calculations should look like, try running this little R script:
 ```
-# written: 8-March-2018
-# author: devon o'rourke
-# Part 1 - Motivation:
-## Jon palmer described the index-bleed being calculated as follows:
-
-#   
-#    So how it is actually being calculated is as follows:
-#      1) OTU table is sliced for the mock community sample
-#      2) Total number of reads in mock community is calculated
-#      3) the total number of reads from non-mock community OTUs are then summed
-#      4) index-bleed into the mock community is then calculated by dividing total non-mock reads by the total reads in the mock
-#
-## We want to know what OTUs are causing the index-bleed to be elevated:
-
-# Part 2 - script
-#runonce:
-install.packages('data.table')
-## load packages
-library(data.table)
-## read in data
-reads.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/Perlut/trim_OTUdropd.sorted.csv')
-## create matrix from data.frame, creating row.names from first column of data.frame:
-reads.mat <- as.matrix(reads.df[,-1])
-## let's first drop the last column from the matrix of values to calculate the top non-mock read number present in every OTU (row):
-nonmock.mat <- reads.mat[,1:87]
-## now we'll calculate the sum of all those non-mock reads per OTU
-non_mock_sum <- apply(nonmock.mat, 1, sum)
-## pull out a vector of just the mock community values:
-mock_vals <- reads.mat[,88]
-## create a data.frame with those two vectors, then make a new column that follows Jon's logic above:
-df <- data.frame(non_mock_sum, mock_vals)
-options(scipen = 999)   ## this converts the forthcoming `df$perc` values to be printed as intergers rather than in scientific notation
-df$sumperc <- (df$non_mock_sum / df$mock_vals * 100)
-df <- subset(df, mock_vals != 0)
+sed -i 's/#OTU ID/OTUid/' allOTUdropd_default.sorted.csv
+cut allOTUdropd_default.sorted.csv -d ',' -f 1,2,397 | sort -t ',' -k3,3nr | awk -F "," '$3 != "0" {print $0}'
 ```
 
-I tend to trust this higher value because of the fact that we have so many more mock reads than any other single true sample. We're still retaining a lot of OTUs (and my guess is many of these will be dropped once we remove singleton OTUs in the next R script), but the benefit of increasing this index-bleed value is that we can now retain more individual guano samples. Even if that means we only detect a few OTUs per sample, we have many more samples.  
+It's strange - we see that there are a different number of sequences mapping to these reads between our `.sorted.csv` files before and after dropping OTUs. In the case of the post-OTU dropped data, it's **OTU69** driving the `subtract` value - with a value of **89**. What's strange is that there were only **76** reads identified in the pre-OTU dropped data for this OTU. There must be a bit of stochasticity in the read mapping process itself which is driving this variation; while this doesn't seem all that big a difference, the `subtract` function really can dramatically influence the resulting dataset that is retained and/or discarded. For example, if we filter according to an `--index_bleed 0.01` and specify `--subtract 50` (rather than the auto-detected **89** value as above), we retain a lot more information:  
+> code not shown. replace values specified in above statement using similar filtering code as usual  
+```
+Index bleed, mock into samples: 0.925364%.  Index bleed, samples into mock: 0.037660%.
+Overwriting auto detect index-bleed, setting to 1.000000%
+Subtracting 50 from OTU table
+mockOahuBirdIM4 sample has 25 OTUS out of 25 expected; 0 mock variants; 1 mock chimeras; Error rate: 0.087%
+Filtering OTU table down to 1,553 OTUs and 18,410,121 read counts
+```
 
-The final filter applied is similar to the `dropd` set, except we're going to increase our index bleed calculation to 3.8%, and set the subtract filter to 24.  
+What we find is that we retain over **400 more OTUs**, yet those gains are made up in less than 2% of the total sequences available. If we look at the dataset this `--subtract` filter doesn't quite remove all the OTUs from our mock that shouldn't be in there (because we collapse two similar mock members in the clustering process, we really only have 24 expected members):  
+
+```
+sed -i 's/#OTU ID/OTUid/' allOTUdropd_sub50.normalized.csv
+cut allOTUdropd_sub50.normalized.csv -d ',' -f 1,2,397 | sort -t ',' -k3,3nr | awk -F "," '$3 != "0" {print $0}'
+```
+
+Here we find that **OTU167** retains a total of 16 reads in our mock, while all other contaminant OTUs are filtered out. I think this is a reasonable tradeoff: we have a very, very minor amount of contaminant read in our positive control, yet we've retained many more OTUs than if we had applied a `subtract` value by our default value. To create the final filtered table, we'll re-run the `amptk filter` command as above with our OTU-dropped table/fasta files, as well as specify the subtract filter to a value of `50`.
 
 ```
 amptk filter \
--i /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/dropd/trim_dropdOTUs.cleaned.otu_table.txt \
--f /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/dropd/trim_dropdOTUs.cleaned.otus.fa \
+-i /mnt/lustre/macmaneslab/devon/guano/NAU/OahuBird/clust/all/OahuBird_otudropd.cleaned.otu_table.txt \
+-f /mnt/lustre/macmaneslab/devon/guano/NAU/OahuBird/clust/all/OahuBird_otudropd.cleaned.otus.fa \
+-b mockOahuBirdIM4 \
+--delimiter csv \
+--index_bleed 0.01 \
+--subtract 50 \
 --mc /mnt/lustre/macmaneslab/devon/guano/mockFastas/CFMR_insect_mock4alt.fa \
--b une-mockIM4 \
---delimiter tsv \
---index_bleed 0.038 \
---subtract 24 \
--o finaltrim \
+--debug \
+--threshold max \
+-o OahuBird \
 --normalize n
 ```
 
-This produces the following output after mock reads and OTUs are removed:  
-
-```
-Index bleed, mock into samples00: 3.790306%.  
-Index bleed, samples into mock: 0.012968%.
-Subtracting 24 from OTU table
-une-mockIM4 sample has 24 OTUS out of 25 expected; 0 mock variants; 0 mock chimeras; Error rate: 0.081%
-Filtering OTU table down to 1,094 OTUs and 2,198,389 read counts
-```
-
-We'll carry the `trim` final output file pair (`finaltrim.filtered.otus.fa` and `finaltrim.final.txt`) into the final taxonomy analysis.
+In total we retain **1,529 OTUs** and **13,950,987 reads** (we've lost a lot of reads because of the high read count in our mock community. We'll next use the `OahuBird.filtered.otus.fa` and `OahuBird.final.csv` files in the taxonomy assignment portion of the workflow, as described in the [workflow document](https://github.com/devonorourke/guano/blob/master/OahuBird/docs/workflow.md).  

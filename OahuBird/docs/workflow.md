@@ -197,8 +197,43 @@ The output in the `.log` file suggests that we have haven't deviated from the ex
 | # reads mapped to iSeqs | 8,910,365 | 10,339,310 | 19,180,369 |
 
 ## Filtering the joint library  
-We employ the same filtering strategies as discussed in detail in the supplementary [filtering document](https://github.com/devonorourke/guano/blob/master/OahuBird/docs/filtering.md). In summary
-**SUMMARIZE THE FINAL SCRIPT EXECUTED TO FILTER THIS LIBRARY**
+We employ the same filtering strategies as discussed in detail in the supplementary [filtering document](https://github.com/devonorourke/guano/blob/master/OahuBird/docs/filtering.md). In summary, after applying a series of filters, we retain **1,529 OTUs** and **13,950,987 reads**. This value is considerably less than the initial library (both in terms of OTUs and reads); the read drop is expected because of the fact that so many reads were part of the mock community - these were included in our estimates of OTUs and reads in the table above, yet are not included in our final dataset after filtering. The number of OTUs dropping isn't surprising - in most datasets these OTU values are initially quite high and are due to many low-abundant reads due to index-bleed and contamination; once we've accounted for those factors many OTUs are discarded.
+
+### Optional filtering - work in progress
+Jon has incorporated a third party software program that further refines our OTU estimates. While our initial filtering removes lots of OTUs we believe to be in low abundance due to index-bleed and/or contamination, it's also possible that these OTUs are in low abundance due to PCR error that creates unique OTUs when they should really be clustered together. The [LULU package](https://github.com/tobiasgf/lulu), is an algorithm for further clustering - see [their paper](https://www.nature.com/articles/s41467-017-01312-x) for complete details. The usage of this software is appropriate within our amptk workflow following our filtering, but should be completed before taxonomy assignment; usage is outlined within the [amptk documentation](http://amptk.readthedocs.io/en/latest/commands.html#amptk-lulu). I've tried to simplify what is happening in the following bullets:  
+
+- Though there are several parameters to potentially test, just one struck me as particularly relevant to toying with: the `--min_match` setting. LULU works in a series of steps; following sorting the OTU table by abundance (prioritized in terms numbers of detections for an OTU among samples first, then in terms of reads per OTU), the dataset is put through a pairwise percent dissimilarity test (BLASTn approach used by default) - these percent (dis)similarities are then used in the R LULU script which will only test for parent-daughter relationships _based on the `--min_match` value you specify_. Thus the default **84** percent dissimilarity seemed really low to me; a more conservative estimate of 95% would essentially specify that up to 5% of the variance between a pair of sequences is indicative of either PCR errors and/or intragenic variance among true OTUs within a species. While we've already clustered at 97% with VSEARCH (during the `amptk clust` process), this additional percent identity allows us to then label these _potentially related_ clusters.  
+- We then move along to the next major step where potentially related clusters are queried for their **cooccurrence** - this value is set by the `--minimum_relative_cooccurence` argument. This is a percent which reflects how likely you think these values _potentially related clusters are to cooccur_. We would think that if they are truly PCR errors or intragenic variation, then they should **often** cooccur. We set this to a fairly high value of 95%, meaning that we'd only expect them to be separated 5% of the time. Notably, this measure only is stipulated upon the daughter strand, so you can have the dominant parent OTU in lots of samples without the daughter, but you can't have lots of daugther samples without the parent. I haven't changed this setting in our testing because I have not empirically tested this with a positive control. A value of **95** percent is used by default.  
+- By default, the parent OTU has to be more abundant than the daughter strand in all cases. However you can specify that an error _needs to have lower abundance on average_. In such a situation, all flagged daughter strands may not necessarily have the lowest read abundance, but their average might. This would be a more liberal option which I'm avoiding changing from their default.  
+- An updated OTU table is provided as are several other output files. I'm interested in further investigating whether our most abundant OTUs going into the filtering have the most daughter OTUs merged. I haven't done that yet with this data, but I did apply a 2x2 filtering criteria:  
+  - the input OTU table and fasta file were from the unfiltered `amptk clust` output (appended **Unfilt** in the output) or the OTU table and fasta file from the final `amptk filter` script which included several dropped OTUs, an `index-bleed` filter, and a `subtract` filter.  
+  - the `--min_match` setting was used at the default **84** value or a more conservative **95** percent similarity  
+
+The following script is an example of one of the four script used to make the output summary provided in the table below:  
+> note prior to executing this script, a `lulu` directory was created within the parent directory for this project, and separate subdirectories within that parent directory were created for each filtering paradigm  
+> just one example script is shown, using the unfiltered OTU table/fasta files, and a modified `--min_match` setting  
+
+```
+amptk lulu \
+-i /mnt/lustre/macmaneslab/devon/guano/NAU/OahuBird/clust/all/OahuBird.final.csv \
+-f /mnt/lustre/macmaneslab/devon/guano/NAU/OahuBird/clust/all/OahuBird.filtered.otus.fa \
+-o defaultUnfilt \
+--min_match 95
+```
+
+The simplest comparison to make with using LULU is how many OTUs remain following this additional clustering process; we started with **1,529** OTUs in our filtered dataset, yet following the `lulu` script we find that LULU has merged a different number of OTUs depending on which script parameters we applied (both in terms of the input OTU tables as well as the percent identity parameter passed within the LULU program itself). The following data table summarizes the results:  
+> Note that the *Unfiltered* OTU values are slightly inflated by the 24 mock community-associated OTUs  
+
+| OTU dataset | min_match value | # preLULU OTUs | # postLULU OTUs | # OTUs LULU clustered |
+| --- | --- | --- | --- | --- |
+| Filtered | 84 | 1,529 | 1,123 | 406 |
+| Filtered | 95 | 1,529 | 1,416 | 113 |
+| UNfiltered | 84 | 4,178 | 4,177 | 1 |
+| UNfiltered | 95 | 4,178 | 4,177 | 1 |
+
+What was expected was a reduction in number of OTUs curated by LULU when we specify a higher `--min_match` value, and indeed that's what we see in our **filtered** dataset. Specifying a 95% identity for consideration of cluster inclusion only **reduced our number of OTUs by about 8%**, whereas the default parameters **reduced our OTUs by almost 27%**. That's a big difference, but I don't see how we can argue using one parameter value over another without any empirical evidence suggesting that this kind of inclusion is warranted. What wasn't expected was the lack of clustering int he **unifiltered** dataset; in the LULU paper they describe how their curation had the greatest impact on the data with most OTUs and we're seeing the opposite.  
+
+Clearly, further work is necessary to better understand how to best use this program; for the time being we'll keep the curated OTU table from the **filtered** dataset as well as the **filtered** OTU table which wasn't curated through LULU. The **unfiltered** data will not be used in our forthcoming taxonomic analyses. Notably, the reduction in OTUs can then further impact our diversity measures (should we choose to evaluate those), but those aren't the next step in our workflow - that's assigning taxonomy to the OTU table and fasta files. We'll update those, and then proceed with ecology measures in detail later in the workflow.   
 
 ## taxonomy assignment
 As described in the [amptk taxonomy](http://amptk.readthedocs.io/en/latest/taxonomy.html) section, the database used to assign taxonomy is derived from the Barcode of Life Database ([BOLD](http://v4.boldsystems.org/)). The sequences present in the database we're using are the result of two sequential clustering processes.
