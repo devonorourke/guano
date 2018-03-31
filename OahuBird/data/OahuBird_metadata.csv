@@ -1,4 +1,4 @@
-ID,altID,seqID,alias,date sampled,species
+ID,altID,seqID,SampleID,DateSampled,BirdSpecies
 ntc,ntc,asc097,NTC_OahuBird.097,negControl,negControl
 2390_21986,HB195,asc098,OahuBird.098,7/8/04,JABW (Juv)
 2060_72971,HB196,asc099,OahuBird.099,7/9/04,JAWE
