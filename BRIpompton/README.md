@@ -5,11 +5,16 @@ All files created for joint project with Foster and Maslo labs. See [BRIpompton_
 ---
 
 ## File description
-
-- **Perlut_filtering_notes.md** - details elucidating filtering strategies used within `amptk` pipeline  
-- **Perlut_workflow.md** - description and example code provided for steps used in `amptk` pipeline  
-- **OTUanalysis.R** - R script used to generate all non amptk-derived outputs  
 - **README.md** - this message  
+
+Within the `docs` directory:  
+- **Pompton_filtering_notes.md** - details elucidating filtering strategies used within `amptk` pipeline  
+- **Pompton_workflow.md** - description and example code provided for steps used in `amptk` pipeline  
+- **OTUanalysis.R** - R script used to generate all non amptk-derived outputs  
 - **renaming_scheme.md** - supplementary info describing how raw .fq were renamed from NAU files  
-- **Perlut_h.otu_table.taxonomy.txt** - raw output from `amptk taxonomy`  
+
+Within the `data` directory:  
+- **Pompton_h.otu_table.taxonomy.txt** - raw output from `amptk taxonomy`  
 - **Perlut_h.otus.taxonomy.fa** - updated fasta file from `amptk taxonomy` converting unlabeled OTUs to include as complete taxonomic information as possible  
+
+Within the `scripts` directory:  
