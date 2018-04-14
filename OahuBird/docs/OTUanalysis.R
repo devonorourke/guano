@@ -21,10 +21,10 @@ library(reshape2)
 library(tidyr)
 library(ggplot2)
 library(dplyr)
-               
+
 ## read in data:
-setwd("~/Repos/guano/OahuBird/")               
-               
+setwd("~/Repos/guano/OahuBird/")
+
 h_otutable.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/OahuBird/data/amptk/OahuBird_lulu_h.otu_table.taxonomy.txt')
 colnames(h_otutable.df)[1] <- ""
 
@@ -49,7 +49,7 @@ tmp.df$family_name <- sub("f:", "", tmp.df$family_name)
 tmp.df$genus_name <- sub("g:", "", tmp.df$genus_name)
 tmp.df$species_name <- sub("s:", "", tmp.df$species_name)
 
-## append any of the 'SampleID' values which were actually NTCs (but not labeled as such):  
+## append any of the 'SampleID' values which were actually NTCs (but not labeled as such):
 ## import target and replacement data.frame:
 replace.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/OahuBird/data/Rrenamelist.df')
 
@@ -72,18 +72,18 @@ write.csv(tmp.df, "OahuBird_rawOTUtable.csv", quote = FALSE, row.names = FALSE)
 
 ## One way to address potential sources of contamination is to identify the OTUs present in samples across multiple libraries...
 ## ...with the idea being that if you see an OTU present in a diverse set of libraries, it's likely this is a contaminant
-## We're going to grab data from three separate projects: 
+## We're going to grab data from three separate projects:
 # 1. the `nau.df` project was from a bat guano collected in Central America
 # 2. the `rut.df` project was from bat guano collected in New Jersey
 # 3. the `perl.df` project was from bird guano collected in Maine
-## We don't expect any of the overlapping OTUs to be present in Hawaiian samples 
+## We don't expect any of the overlapping OTUs to be present in Hawaiian samples
 
 rut.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/Rutgers/master.csv', header = TRUE)
 perl.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/Perlut/data/Routput/master.csv', header = TRUE)
 nau.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/NAUsupp/masterdf.csv', header = TRUE)
 colnames(nau.df)[3] <- c("BOLDalt")
 
-## Before we can match we need to append the `BOLDid` vectors to remove the "." delimiter in the `tmp.df` and `rut.df` objects: 
+## Before we can match we need to append the `BOLDid` vectors to remove the "." delimiter in the `tmp.df` and `rut.df` objects:
 tmp.df$BOLDalt <- tmp.df$BOLDid
 tmp.df <- separate(tmp.df, col = BOLDalt, into = c("BOLDalt", "delete"), sep = "\\.")
 tmp.df$delete <- NULL
@@ -154,7 +154,7 @@ rm(tmp1.df, tmp2.df, tmp3.df)
 library(dplyr)
 x <- match.df %>%
   group_by(library, BOLDalt) %>%
-  tally() 
+  tally()
 
 ## Test-A: create list of values for all non-singleton occurrences of a BOLDalt entry per library:
 y <- subset(x, n <= 2)
@@ -177,9 +177,9 @@ drop.list <- tmpx.list[tmpx.list != ""]
 tmpfilt.df <- tmp.df[tmp.df$BOLDalt %!in% drop.list,]
 # note we drop from 10,720 observations to 5,564 observations
 
-# ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ 
+# ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~
 
-## Further filtering: 
+## Further filtering:
 ## 1. Remove all non-arthropod chordates:
 tmpfilt2.df <- subset(tmpfilt.df, phylum_name == "Arthropoda")
   ## how many unique OTUs remain?
@@ -209,7 +209,7 @@ contam.df <- tmpfilt2.df[tmpfilt2.df$OTUid %in% NTC_otu.list,]    # find all mat
 setwd("~/Repos/guano/OahuBird/data/Routput/")
 write.csv(Match_summary, "suspectedContaminants.csv", quote = FALSE)
 write.csv(tmp.df, "OahuBird_rawOTUtable.csv", quote = FALSE)
-write.csv(tmpfilt2.df, "FilteredOTUs.csv", quote = FALSE, row.names = FALSE)  
+write.csv(tmpfilt2.df, "FilteredOTUs.csv", quote = FALSE, row.names = FALSE)
 
 ## cleanup:
 rm(x,y,z,
@@ -226,10 +226,11 @@ rm(allmatch.list, drop.list, matches, NTC_otu.list, tmpdrop.list, tmpx.list, toM
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
 ## merge with metadata information
-#not run: tmpfilt2.df <- fread('~/Repos/guano/OahuBird/data/Routput/FilteredOTUs.csv', header = TRUE)
+#not run: tmpfilt2.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/OahuBird/data/Routput/FilteredOTUs.csv', header = TRUE)
 meta.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/OahuBird/data/OahuBird_metadata.csv', header = TRUE)
-meta.df <- meta.df[,c(4:6)]
-colnames(meta.df) <- c("SampleID", "DateSampled", "BirdSpecies")
+meta.df$SampleID <- paste("OahuBird.", substr(meta.df$seqID, 4, 6), sep = "")
+meta.df <- meta.df[,c(4:9)]
+colnames(meta.df) <- c("SamplingDate", "BirdSpecies", "Source", "VegNum", "SampleType", "SampleID")
 master.df <- merge(tmpfilt2.df, meta.df)
 #rm(tmpfilt2.df, meta.df)
 

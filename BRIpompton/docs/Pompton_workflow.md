@@ -1,37 +1,15 @@
 # Introduction
 All information created for this project is available at [this Github repo](https://github.com/devonorourke/guano/tree/master/BRIpompton). Please visit that page for more information regarding data tables, visualizations, and code used to complete this work.
 
-## extraction history
-Avian fecal samples were collected by the Perlut lab in 2016. Initial attempts to use a 96-well MoBio PowerSoil kit failed to generate significant numbers of amplicons likely because samples were too large to throughly lyse the fecal samples. A second batch of collections were performed in 2017; a modified PowerSoil extraction was performed which included: 
-- using 2x recommended volumes of C1 and bead solution;
-- heating bead solution at 37 C and shaking on orbital shaker for 4 hours;
-This lysate was then separated into 2 batches (as lysate volume exceed about 2 mL per sample) using the 96-well bead plates. The remainder of the PowerSoil extraction then proceeded following manufactuerers guidelines, with samples being eluted in 100 uL Solution C6 (Tris).  
+## Molecular work  
+Avian fecal samples were collected by Biodiversity Research Institute staff, led by Oksana Lane. Samples were placed directly in Qiagen/MoBio PowerFecal kit collection tubes to avoid potential cross contamination. Earlier work with avian samples suggested that this kit works well to extract DNA but potential PCR inhibitors remain in solution that prevent successful amplification of the arthropod COI target. Thus we followed the standard MoBio PowerFecal guide, eluting in 60 uL of Solution C6. The eluent was then subject to a 2x Ampure XP cleanup, and eluted in 20 uL of Nuclease Free Water (NFW).
 
-Preliminary PCR results generatd few amplicons. DNA quantification of the raw extracted DNA suggested low concentrations among the samples tested (N = 16). To both increase concentration of samples and to remove potential PCR inhibitors all DNA was concentrated using a 0.5X SPRI bead cleanup (AmpureXP beads), after which the batched samples previously split up from a single lysate mixture into independent 96-well plate positions were recombined into a single DNA eluant. DNA was subsequently detectable in 5 of 8 samples tested, and preliminary PCR suggested detectable signal among 3 of 8 samples. PCR then proceeded using the modified (barcoded, Illumina adapter-containing) primers.  
+COI amplicons were selectively amplified from the extracted and cleaned avian fecal DNA using custom primers adapted from Jusino 2017 (see preprint [here] (DOI: 10.7287/peerj.preprints.3184v1)); the key modification is that my design incorporates the entire Illumina adapter, barcode, pad, and linker, plus the COI primer sequence into a single oligo, rather than employing a 2-step process of COI PCR and subsequent adapter ligation. PCR products were pooled in equimolar fashion except when concentrations fell below 1.0 nM; those samples for which there was less than that mass of DNA were pooled with a maximum of 20 uL per sample. The subsequent pool was then filtered using the QiaQuick PCR cleanup spin column. The library was then submitted to Hubbard Center for Genome Studies at the University of New Hampshire.
 
-PCR products were pooled in equimolar fashion except when concentrations fell below 1.0 nM; those samples for which there was less than that mass of DNA were pooled with a maximum of 20 uL per sample. The subsequent pool was then filtered using the QiaQuick PCR cleanup spin column. The library was then submitted to Northern Arizona University's sequencing center.
+## sequencing at UNH
+The pooled library of COI amplicons were sequenced using a HiSeq 2500 platform following 250 bp PE sequencing using V3 chemistry set for a Rapid run on March 1, 2018. Raw numbers of reads and general run metrics are available to view from [this link](http://cobb.unh.edu/180302_orourke_P11_2_B_DemuxStats.html). Though it was not intended, the single library of pooled samples was spiked in on two lanes (we requested just one); thus there was about twice the expected number of sequences generated - these files were initially processed separately in the `amptk illumina` pre-processing step (see below), but combined thereafter when conducting clustering and taxonomic assignment, as these two lanes of data are essentially technical replicates and we can assume contain the same information.  
 
-## sequencing at NAU
-The pooled library of COI amplicons were sequenced using a MiSeq platform following 250 bp PE sequencing using V2 chemistry set for 500 cycles Northern Arizona University's sequencing center on January 17, 2017. Raw numbers of reads and general run metrics are available to view from [this Google Sheet](https://docs.google.com/spreadsheets/d/1HM1Wlbai3aSHFAxqTNZ19zt7g_H8hf4ZlB8fvw4TlFQ/edit#gid=0). Less the fraction of reads dedicated to the positive control, about 2.4 million reads were generated across 87 controls (N = 13) and true (N = 74) samples (note that negative controls contributed just 0.78% of these reads).
-
-## file naming
-
-The initial names applied to the **.fastq** files automatically generated by NAU were simplified. The output from NAU for a file followed one of two naming conventions:
-
-- `CONTROL-{SampleName}-xx-EN-USA-2017-076-JF_S{###}_L001_R1_001.fastq.gz` for mock community (positive) and negative control samples, with `SampleName` being specific to each sample, and `###` being either a two or three digit value assigned to the NAU sample sheet (effectively a redundant sample name they apply to each sample; shared with each forward and reverse **.fastq** file pair)
-- `NHCS-{SampleName}-xx-VE-USA-2017-076-JF_S{###}_L001_R2_001.fastq.gz` for all true samples, following the same naming scheme as described above
-
-The goal was to produce file names with the following scheme: `{SampleName}_{barcode}_L001_R{#}_001.fastq.gz`.
-
-A series of steps were applied to achieve that, as [described here](https://github.com/devonorourke/guano/blob/master/Perlut/renaming_scheme.md).  
-
-### side note on mock community
-The sample sheet submitted to the sequencing center incorrectly assigned the i7 and i5 index names (barcodes associated with
-the mock community sample (this was the only sample with an incorrect barcode designation). The files were recovered by accessing the `Undetermined_S0_...fastq` file pair, containing all reads which an index sequence was recognized by the sequencer itself, but not associated with any listed index sequence on the sample sheet. A `grep` search as follows isolated the barcode sequence pair used in the run, and this pair was then added into the standard `amptk` workflow:  
-```
-cat Undetermined_S0_L001_R1_001.fastq | grep -E '^@.*TGCGTCAA\+GTCTAGTG' -A 3 --no-group-separator > une-mockIM4_TGCGTCAA-GTCTAGTG_L001_R1_001.fastq &
-cat Undetermined_S0_L001_R2_001.fastq | grep -E '^@.*TGCGTCAA\+GTCTAGTG' -A 3 --no-group-separator > une-mockIM4_TGCGTCAA-GTCTAGTG_L001_R2_001.fastq &
-```
+About 6.1 million reads were generated across 105 samples. The positive control (mock community) spike in was well balanced (containing about 30,000 reads), with DNA extraction negative controls showing among the lowest read counts (~ 2000) and the PCR negative demonstrating zero reads. The true samples comprised the majority of the sequence data, with about 98.7% of all data dedicated to bird fecal samples.  
 
 # amptk pipeline
 
