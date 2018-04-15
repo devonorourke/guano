@@ -337,29 +337,11 @@ order0 + geom_bar(aes(fill = order_name)) +
   scale_fill_manual(values = tol28rainbow)
 
 
-
-b1 <- ggplot(dat.b1, aes(x = Site, y = Counts, fill = BatSpecies, label = BatSpecies)) +
-  geom_bar(stat = "identity", colour=barlines) +
-  scale_fill_manual(values = b1pal, name="Bat Species") + 
-  ylab("Number of times an OTU is detected") +
-  xlab("Site") + 
-  theme(axis.text.y = element_text(size = 8)) +
-  theme(axis.text.x = element_text(size = 10)) +
-  labs(title = "Number of OTUs detected per Bat Species and Site using DADA2/AMPtk pipeline") +
-  theme(plot.title = element_text(face = "bold")) +
-  #theme(legend.key.size = unit(4, "mm")) +
-  theme(legend.position = "none") +
-  geom_text(size = 3, position = position_stack(vjust = 0.5), angle = 45) +
-  coord_flip()
-b1
-
-
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
               ######     Part 5b - ordination viz     ######
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
-library(data.table)
-##not run: master.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/OahuBird/data/Routput/master.csv', header = T)
+##not run: master.df <- read.csv('https://raw.githubusercontent.com/devonorourke/guano/master/OahuBird/data/Routput/master.csv', header = T)
 
 ## make OTUtable from master, then filter out OTUs occurring less than 5 of fewer samples (remove rareish things)
 detach("package:data.table", unload=TRUE)
@@ -370,14 +352,13 @@ otu.df <- master.df[,c(1,2,13)]
 otu.mat <- dcast(otu.df, SampleID ~ OTUid, value.var = "CountReads")
 row.names(otu.mat) <- otu.mat$SampleID
 otu.mat$SampleID <- NULL
+otu.mat[is.na(otu.mat)] <- 0  ## replace NA with zero
+otu.mat[otu.mat > 0] = 1
+
 ## filter the table
 detach("package:data.table", unload=TRUE)
-otufilter1 = otu.mat[,colSums(otu.mat) > 4]  ## OTU must exist in at least 5 samples
-
-otu.mat[(colSums(otu.mat[,])>4),]
-
-otu.mat[]
-otufilt.mat = otufilt.mat[rowSums(otufilt.mat) > 0,] ## removes empty rows from filtering above
+otu.mat = otu.mat[,colSums(otu.mat) > 4]  ## OTU must exist in at least 5 samples
+otufilt.mat = otu.mat[rowSums(otu.mat) > 0,] ## removes empty rows from filtering above
 
 ## extreme filtering - keeping only samples existing in at least 10% of samples
 otufilt10.mat = otu.mat[,colSums(otu.mat) > 10]  ## OTU must exist in at least 5 samples
@@ -396,7 +377,7 @@ draup10 <- vegdist(otufilt10.mat, method="raup", binary=TRUE)
 # notrun: dbray <- vegdist(otutable.mat, method="bray", binary=TRUE)
 # notrun: djacc <- vegdist(otutable.mat, method="jaccard", binary=TRUE)
 ## 2) ordinate
-NMDSraup <- metaMDS(draup, distance = "raup", k = 2, trymax=200)
+NMDSraup <- metaMDS(draup, distance = "raup", k = 2, trymax=1000)
 NMDSraup10 <- metaMDS(draup10, distance = "raup", k = 2, trymax=200)
 ## 3) look at stress plot
 stressplot(NMDSraup)
@@ -413,23 +394,52 @@ ord.df <- merge(data.scores, samplemeta.df, all.x = TRUE)
 
 ## now we can use ggplot to make this better:
 library(ggplot2)
-o <- ggplot(data = ord.df, aes(x = NMDS1, y = NMDS2, shape = Source, color = SampleType))
-o + geom_point()
+
+## ordination where point shapes are 'Endemism' factor; point color is 'SampleType' factor
+o <- ggplot(data = ord.df, aes(x = NMDS1, y = NMDS2, shape = Endemism, color = SampleType))
+p1 <- o + geom_point() + scale_color_manual(values = c("red", "blue")) + 
+  theme(legend.position = "bottom") +
+  guides(ncol = 2, keywidth = 2, keyheight = 2) + 
+  labs(shape="Endemic status", color="Sample Type")
+p1
+
+## ordination where point shapes are 'SampleType' factor; point color is 'Endemism' factor
+orev <- ggplot(data = ord.df, aes(x = NMDS1, y = NMDS2, shape = SampleType, color = Endemism))
+p2 <- orev + geom_point() + scale_color_manual(values = c("red", "blue")) +
+  theme(legend.position = "bottom") +
+  guides(ncol = 2, keywidth = 2, keyheight = 2) + 
+  labs(shape="Sample Type", color="Endemic status")
+p2
+
+##not run: install.packages("egg")
+library(egg)
+## see more here: https://cran.r-project.org/web/packages/egg/vignettes/Ecosystem.html
+## and even more here: https://cran.r-project.org/web/packages/gridExtra/vignettes/arrangeGrob.html
+grid.arrange(p1, p2, nrow = 1, 
+             top = "Hawaiian arthropod composition are distinguished by collection type, not endemic status \n
+             Nonmetric Multidimensional Scaling (NMDS) of Raup-Crick dissimilarity index")
+
 
 ## how about adding fill into background by Source location?
 #unused plot colors for BirdSpecies: plotcolors <- c("#979d00", "#b78e6b","#8e9a67","#ede437","#7e400b","#ff473d","#455a0a","#cfc395","#98ad5a")
 #determined bird species from this list: http://www.wec.ufl.edu/birds/SurveyDocs/species_list.pdf
 
 o2 <- ggplot(ord.df) +
-  geom_polygon(data=ord.df,aes(x = NMDS1, y = NMDS2, fill=Source, group=Source),alpha=0.40) +  # add area fill
-  #geom_text(data=ord.df,aes(x = NMDS1, y = NMDS2, label=SampleID),alpha=0.5) +  # add the SampleID labels
-  geom_point(data=ord.df,aes(x = NMDS1, y = NMDS2, shape= BirdSpecies, colour= SampleType),size=1.75) +  # add the point markers
+  geom_polygon(data=ord.df,aes(x = NMDS1, y = NMDS2, fill=Endemism, group=Endemism),alpha=0.40) +  # add area fill
+  geom_point(data=ord.df,aes(x = NMDS1, y = NMDS2, shape= SampleSpecies, colour= SampleType),size=1.75) +  # add the point markers
   scale_colour_manual(values = c("red", "blue")) +
   scale_shape_manual(values = c(0,1,16,2,5,6,3,11,4)) +
   scale_fill_manual(values = c("#48b8da", "#0d353f", "#ffda00", "#b55251", "#dfb137", "#80e34b")) +
   labs(title = "Hawaiian arthropod composition are distinguished by collection type",
        subtitle = "Nonmetric Multidimensional Scaling (NMDS) of Raup-Crick dissimilarity index")
 o2
+
+## a related attmept from this site:https://jonlefcheck.net/2012/10/24/nmds-tutorial-in-r/comment-page-1/
+ordiplot(example_NMDS,type="n")
+ordihull(example_NMDS,groups=treat,draw="polygon",col="grey90",label=F)
+orditorp(example_NMDS,display="species",col="red",air=0.01)
+orditorp(example_NMDS,display="sites",col=c(rep("green",5),rep("blue",5)),
+         air=0.01,cex=1.25)
 
 
 
