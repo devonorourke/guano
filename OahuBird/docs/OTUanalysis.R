@@ -226,6 +226,7 @@ rm(allmatch.list, drop.list, matches, NTC_otu.list, tmpdrop.list, tmpx.list, toM
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
 ## merge with metadata information
+library(data.table)
 #not run: tmpfilt2.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/OahuBird/data/Routput/FilteredOTUs.csv', header = TRUE)
 meta.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/OahuBird/data/OahuBird_metadata.csv', header = TRUE)
 meta.df$SampleID <- paste("OahuBird.", substr(meta.df$seqID, 4, 6), sep = "")
