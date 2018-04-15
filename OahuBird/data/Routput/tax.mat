@@ -1,25 +1,25 @@
 "Kingdom"	"Phylum"	"Class"	"Order"	"Family"	"Genus"	"Species"
 "OTU100"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU207"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU338"	"Animalia"	"Arthropoda"	"Arachnida"	"Mesostigmata"	NA	NA	NA
-"OTU2829"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU207"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU301"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	NA	NA	NA
-"OTU352"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU2829"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU433"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Crambidae"	"Herpetogramma"	NA
 "OTU84"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Crambidae"	"Tauroscopa"	"Tauroscopa lachnaea"
+"OTU352"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU165"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Drosophilidae"	"Drosophila"	"Drosophila suzukii"
 "OTU221"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU357"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU43"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Drosophilidae"	"Drosophila"	"Drosophila suzukii"
 "OTU369"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU545"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Amorbia"	"Amorbia synneurana"
 "OTU555"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU545"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Amorbia"	"Amorbia synneurana"
 "OTU934"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
+"OTU503"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU1105"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU1242"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU2"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU503"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU10"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU29"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
 "OTU51"	"Animalia"	"Arthropoda"	"Arachnida"	"Trombidiformes"	"Anystidae"	NA	NA
@@ -29,122 +29,128 @@
 "OTU130"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU2249"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU91"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Geometridae"	NA	NA
+"OTU685"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1680"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU1213"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU1421"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1680"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU356"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU685"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU214"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU64"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU214"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU46"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU119"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
-"OTU1362"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU15"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU1362"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU119"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU219"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU1139"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	"Ectopsocidae"	"Ectopsocus"	"Ectopsocus californicus"
+"OTU1379"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU1039"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU101"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Coccinellidae"	NA	NA
 "OTU1367"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU1379"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU3039"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU709"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU305"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
 "OTU390"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU430"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU546"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU709"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU3039"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU1312"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	NA	NA	NA
-"OTU184"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU190"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU302"	"Animalia"	"Arthropoda"	"Malacostraca"	"Isopoda"	"Porcellionidae"	"Porcellio"	"Porcellio scaber"
 "OTU56"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU302"	"Animalia"	"Arthropoda"	"Malacostraca"	"Isopoda"	"Porcellionidae"	"Porcellio"	"Porcellio scaber"
+"OTU184"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU850"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU313"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU69"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU841"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Braconidae"	"Meteorus"	"Meteorus ictericus"
 "OTU258"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU318"	"Animalia"	"Arthropoda"	"Arachnida"	"Trombidiformes"	NA	NA	NA
-"OTU412"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU1170"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU603"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU753"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU412"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU987"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Xyloryctidae"	"Xylorycta"	NA
+"OTU603"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU107"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU882"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
+"OTU868"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Dryinidae"	"Gonatopus"	NA
 "OTU912"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU1072"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Dryinidae"	NA	NA
-"OTU107"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU136"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU50"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Syrphidae"	"Allograpta"	"Allograpta obliqua"
-"OTU868"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Dryinidae"	"Gonatopus"	NA
+"OTU136"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU1231"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU200"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU856"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	NA	NA	NA
 "OTU861"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Sciaridae"	NA	NA
+"OTU856"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	NA	NA	NA
 "OTU508"	"Animalia"	"Arthropoda"	"Insecta"	"Neuroptera"	NA	NA	NA
-"OTU102"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Apidae"	"Apis"	"Apis mellifera"
 "OTU415"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU295"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU102"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Apidae"	"Apis"	"Apis mellifera"
+"OTU621"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	NA	NA	NA
 "OTU1439"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU607"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU621"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	NA	NA	NA
 "OTU1176"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU1435"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU2982"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU403"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1073"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU362"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1073"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU562"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Nabidae"	"Nabis"	NA
 "OTU633"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU201"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU862"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU201"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU319"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU80"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU1076"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU344"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU1061"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1076"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU1581"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Dryinidae"	NA	NA
-"OTU4016"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU945"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
+"OTU92"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Cosmopterigidae"	NA	NA
 "OTU798"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU809"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Dryinidae"	"Gonatopus"	NA
-"OTU92"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Cosmopterigidae"	NA	NA
-"OTU945"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
+"OTU1581"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Dryinidae"	NA	NA
+"OTU4016"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU277"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU144"	"Animalia"	"Arthropoda"	"Insecta"	"Neuroptera"	NA	NA	NA
 "OTU524"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU2808"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU946"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU980"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Linyphiidae"	NA	NA
 "OTU1285"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Linyphiidae"	"Agyneta"	NA
+"OTU980"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Linyphiidae"	NA	NA
 "OTU1592"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Aphididae"	"Sitobion"	NA
-"OTU12"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Tomoceridae"	"Tomocerus"	"Tomocerus minor"
 "OTU559"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Tomoceridae"	"Tomocerus"	NA
-"OTU127"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	"Chironomus"	NA
+"OTU12"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Tomoceridae"	"Tomocerus"	"Tomocerus minor"
 "OTU209"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Psephenidae"	"Ectopria"	"Ectopria thoracica"
 "OTU62"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Epiphragma"	"Epiphragma fasciapenne"
-"OTU602"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU859"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU127"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	"Chironomus"	NA
 "OTU195"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	NA	NA
 "OTU346"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Brachycyttara"	NA
 "OTU60"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU811"	"Animalia"	"Arthropoda"	"Insecta"	"Ephemeroptera"	"Caenidae"	"Caenis"	"Caenis diminuta"
+"OTU602"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU859"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU955"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU1034"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU162"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Carposinidae"	"Carposina"	"Carposina paracrinifera"
 "OTU751"	"Animalia"	"Arthropoda"	"Arachnida"	"Sarcoptiformes"	NA	NA	NA
-"OTU1119"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU329"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU162"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Carposinidae"	"Carposina"	"Carposina paracrinifera"
 "OTU449"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU329"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1119"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
+"OTU131"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1491"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU1565"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
 "OTU447"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU1160"	"Animalia"	"Arthropoda"	"Insecta"	"Dermaptera"	NA	NA	NA
-"OTU1491"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU131"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1565"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU401"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU683"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Carabidae"	"Mecyclothorax"	NA
-"OTU6"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Philodromidae"	"Philodromus"	NA
 "OTU708"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU840"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU89"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU401"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU6"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Philodromidae"	"Philodromus"	NA
+"OTU683"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Carabidae"	"Mecyclothorax"	NA
 "OTU1028"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU197"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1990"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU202"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Stratiomyidae"	"Odontomyia"	"Odontomyia cincta"
+"OTU204"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Metalimnobia"	"Metalimnobia triocellata"
+"OTU215"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Aphrophoridae"	"Aphrophora"	"Aphrophora cribrata"
+"OTU235"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Syrphidae"	"Lejops"	"Lejops curvipes"
 "OTU506"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU1752"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU1002"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
@@ -163,16 +169,19 @@
 "OTU187"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Delphacidae"	"Delphacodes"	"Delphacodes detecta"
 "OTU189"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Euphylidorea"	"Euphylidorea luteola"
 "OTU192"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Sphingidae"	"Sphinx"	"Sphinx kalmiae"
-"OTU197"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1990"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU202"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Stratiomyidae"	"Odontomyia"	"Odontomyia cincta"
-"OTU204"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Metalimnobia"	"Metalimnobia triocellata"
-"OTU215"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Aphrophoridae"	"Aphrophora"	"Aphrophora cribrata"
-"OTU235"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Syrphidae"	"Lejops"	"Lejops curvipes"
-"OTU236"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Pseudexentera"	"Pseudexentera cressoniana"
-"OTU253"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Carabidae"	"Harpalus"	"Harpalus rufipes"
-"OTU260"	"Animalia"	"Arthropoda"	"Insecta"	"Blattodea"	"Ectobiidae"	"Parcoblatta"	NA
-"OTU261"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU558"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU609"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Cenopis"	"Cenopis diluticostana"
+"OTU624"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Xestia"	"Xestia c-nigrum"
+"OTU637"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU644"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Clepsis"	"Clepsis melaleucanus"
+"OTU682"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU689"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Cerambycidae"	"Astylopsis"	"Astylopsis sexguttata"
+"OTU738"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Ptilodactylidae"	"Ptilodactyla"	"Ptilodactyla serricollis"
+"OTU767"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Cerambycidae"	"Monochamus"	"Monochamus notatus"
+"OTU830"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU835"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Bryotropha"	"Bryotropha gemella"
+"OTU837"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU96"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Coleophoridae"	"Coleophora"	"Coleophora cratipennella"
 "OTU262"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Eucosma"	"Eucosma parmatana"
 "OTU270"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Apamea"	"Apamea plutonia"
 "OTU273"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
@@ -200,35 +209,23 @@
 "OTU505"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gracillariidae"	"Caloptilia"	"Caloptilia bimaculatella"
 "OTU510"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Autostichidae"	"Taygete"	"Taygete attributella"
 "OTU528"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Cnephasia"	"Cnephasia stephensiana"
-"OTU558"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU609"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Cenopis"	"Cenopis diluticostana"
-"OTU624"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Xestia"	"Xestia c-nigrum"
-"OTU637"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU644"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Clepsis"	"Clepsis melaleucanus"
-"OTU682"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU689"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Cerambycidae"	"Astylopsis"	"Astylopsis sexguttata"
-"OTU738"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Ptilodactylidae"	"Ptilodactyla"	"Ptilodactyla serricollis"
-"OTU767"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Cerambycidae"	"Monochamus"	"Monochamus notatus"
-"OTU830"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU835"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Bryotropha"	"Bryotropha gemella"
-"OTU837"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU96"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Coleophoridae"	"Coleophora"	"Coleophora cratipennella"
+"OTU261"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU236"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Pseudexentera"	"Pseudexentera cressoniana"
+"OTU253"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Carabidae"	"Harpalus"	"Harpalus rufipes"
+"OTU260"	"Animalia"	"Arthropoda"	"Insecta"	"Blattodea"	"Ectobiidae"	"Parcoblatta"	NA
 "OTU1780"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Xylena"	"Xylena cineritia"
 "OTU406"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Calliphoridae"	"Bellardia"	"Bellardia vulgaris"
 "OTU754"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Heteroceridae"	NA	NA
 "OTU843"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Psychodidae"	"Psychoda"	"Psychoda alternata"
 "OTU1644"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU1632"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Clepsis"	"Clepsis persicana"
+"OTU705"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Depressariidae"	"Semioscopis"	"Semioscopis packardella"
 "OTU380"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Depressariidae"	"Bibarrambla"	"Bibarrambla allenella"
 "OTU399"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Athous"	"Athous brightwelli"
 "OTU595"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Hydrophilidae"	"Hydrochara"	"Hydrochara obtusata"
 "OTU604"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU615"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Crambidae"	"Crambus"	"Crambus albellus"
-"OTU705"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Depressariidae"	"Semioscopis"	"Semioscopis packardella"
 "OTU1100"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Geometridae"	"Sicya"	"Sicya macularia"
-"OTU212"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Yponomeutidae"	"Swammerdamia"	"Swammerdamia caesiella"
-"OTU255"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU499"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Philodromidae"	"Philodromus"	"Philodromus praelustris"
 "OTU564"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
 "OTU597"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Scirtidae"	"Cyphon"	NA
 "OTU610"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
@@ -238,6 +235,10 @@
 "OTU736"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Cenopis"	"Cenopis directana"
 "OTU739"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Cydia"	"Cydia latiferreana"
 "OTU769"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Gymnandrosoma"	"Gymnandrosoma punctidiscanum"
+"OTU212"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Yponomeutidae"	"Swammerdamia"	"Swammerdamia caesiella"
+"OTU255"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU499"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Philodromidae"	"Philodromus"	"Philodromus praelustris"
+"OTU2260"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Melanotus"	NA
 "OTU548"	"Animalia"	"Arthropoda"	"Malacostraca"	"Stomatopoda"	NA	NA	NA
 "OTU794"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU2290"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
@@ -246,16 +247,15 @@
 "OTU1257"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Feralia"	"Feralia deceptiva"
 "OTU1342"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Melanotus"	NA
 "OTU1536"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tipulidae"	"Tipula"	"Tipula monticola"
-"OTU2260"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Melanotus"	NA
 "OTU367"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	NA	NA
-"OTU481"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tachinidae"	"Eutrixa"	"Eutrixa exilis"
-"OTU530"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Sarcophagidae"	NA	NA
 "OTU576"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Cerambycidae"	"Ecyrus"	"Ecyrus dasycerus"
 "OTU719"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Ancylis"	"Ancylis burgessiana"
+"OTU481"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tachinidae"	"Eutrixa"	"Eutrixa exilis"
+"OTU530"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Sarcophagidae"	NA	NA
 "OTU994"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1090"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU485"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	NA	NA	NA
 "OTU537"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU1090"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU446"	"Animalia"	"Arthropoda"	"Insecta"	"Orthoptera"	NA	NA	NA
 "OTU635"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU668"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Blastobasidae"	"Blastobasis"	"Blastobasis floridella"
@@ -270,9 +270,9 @@
 "OTU851"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Salticidae"	"Sitticus"	"Sitticus floricola"
 "OTU1745"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Carpatolechia"	"Carpatolechia fugitivella"
 "OTU618"	"Animalia"	"Arthropoda"	"Arachnida"	"Mesostigmata"	NA	NA	NA
-"OTU1351"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
 "OTU517"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
 "OTU667"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion bilineatus"
+"OTU1351"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
 "OTU340"	"Animalia"	"Arthropoda"	"Insecta"	"Trichoptera"	"Philopotamidae"	"Chimarra"	"Chimarra socia"
 "OTU972"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tineidae"	"Acrolophus"	"Acrolophus arcanella"
 "OTU1660"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Lycosidae"	"Piratula"	"Piratula insularis"
@@ -281,19 +281,13 @@
 "OTU744"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Blastobasidae"	"Blastobasis"	NA
 "OTU779"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Aphrophoridae"	"Aphrophora"	"Aphrophora parallella"
 "OTU1716"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	"Chironomus"	NA
+"OTU876"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Crambidae"	"Crambus"	"Crambus saltuellus"
+"OTU957"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Apotomis"	"Apotomis sauciana"
 "OTU552"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Chionodes"	"Chionodes baro"
 "OTU617"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Epinotia"	"Epinotia demarniana"
 "OTU627"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	NA	NA
-"OTU876"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Crambidae"	"Crambus"	"Crambus saltuellus"
-"OTU957"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Apotomis"	"Apotomis sauciana"
-"OTU525"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU724"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Dictynidae"	"Emblyna"	"Emblyna altamira"
-"OTU833"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU1175"	"Animalia"	"Arthropoda"	"Insecta"	"Ephemeroptera"	"Ephemeridae"	"Ephemera"	"Ephemera varia"
-"OTU1392"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Doryodes"	"Doryodes spadaria"
-"OTU1662"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1859"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Rhagionidae"	"Rhagio"	"Rhagio tringarius"
-"OTU1938"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chloropidae"	"Elachiptera"	NA
+"OTU525"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU389"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
 "OTU649"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Chionodes"	"Chionodes obscurusella"
 "OTU662"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
@@ -301,11 +295,17 @@
 "OTU917"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
 "OTU919"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tipulidae"	"Dolichopeza"	"Dolichopeza obscura"
 "OTU956"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1938"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chloropidae"	"Elachiptera"	NA
+"OTU1175"	"Animalia"	"Arthropoda"	"Insecta"	"Ephemeroptera"	"Ephemeridae"	"Ephemera"	"Ephemera varia"
+"OTU1392"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Doryodes"	"Doryodes spadaria"
+"OTU1662"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU833"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
+"OTU1859"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Rhagionidae"	"Rhagio"	"Rhagio tringarius"
 "OTU1234"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Miridae"	"Phytocoris"	"Phytocoris conspurcatus"
 "OTU1564"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Limonia"	"Limonia indigena"
-"OTU596"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Saturniidae"	"Dryocampa"	"Dryocampa rubicunda"
 "OTU854"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU991"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Apamea"	"Apamea dubitans"
+"OTU596"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Saturniidae"	"Dryocampa"	"Dryocampa rubicunda"
 "OTU1157"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Coleophoridae"	"Coleophora"	"Coleophora tiliaefoliella"
 "OTU138"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Coleophoridae"	"Coleophora"	"Coleophora duplicis group"
 "OTU1475"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Carabidae"	"Amara"	"Amara musculis"
@@ -313,28 +313,28 @@
 "OTU3433"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tipulidae"	"Tipula"	"Tipula submaculata"
 "OTU789"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Dolichopodidae"	NA	NA
 "OTU983"	"Animalia"	"Arthropoda"	"Insecta"	"Mecoptera"	NA	NA	NA
-"OTU1066"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU1718"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
 "OTU1559"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Mesoveliidae"	"Mesovelia"	"Mesovelia mulsanti"
+"OTU1066"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU561"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU877"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Cossidae"	"Prionoxystus"	"Prionoxystus robiniae"
 "OTU1137"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU3851"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU638"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Hyposada"	"Hyposada hydrocampata"
 "OTU782"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU930"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU3851"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU470"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU105"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU1267"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU1529"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU2030"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU275"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Braconidae"	"Meteorus"	NA
-"OTU278"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Lacinipolia"	"Lacinipolia sareta"
+"OTU105"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU417"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU507"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Stratiomyidae"	"Exaireta"	"Exaireta spinigera"
 "OTU729"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU898"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU922"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Drepanidae"	"Pseudothyatira"	"Pseudothyatira cymatophoroides"
+"OTU2030"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU275"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Braconidae"	"Meteorus"	NA
+"OTU278"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Lacinipolia"	"Lacinipolia sareta"
 "OTU1599"	"Animalia"	"Arthropoda"	"Insecta"	"Mantodea"	"Mantidae"	"Mantis"	"Mantis religiosa"
 "OTU1062"	"Animalia"	"Arthropoda"	"Insecta"	"Trichoptera"	"Limnephilidae"	NA	NA
 "OTU1440"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
@@ -342,9 +342,9 @@
 "OTU1123"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU1613"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
 "OTU932"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1010"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Nitidulidae"	NA	NA
 "OTU251"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU454"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	NA	NA
+"OTU1010"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Nitidulidae"	NA	NA
 "OTU77"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU981"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU1182"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
@@ -353,15 +353,15 @@
 "OTU865"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Lithophane"	"Lithophane innominata"
 "OTU157"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Desidae"	"Badumna"	"Badumna longinqua"
 "OTU396"	"Animalia"	"Arthropoda"	"Hexanauplia"	"Harpacticoida"	NA	NA	NA
-"OTU1268"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU988"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Scarabaeidae"	"Phyllophaga"	"Phyllophaga crenulata"
+"OTU1268"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU598"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Apidae"	"Apis"	"Apis mellifera"
 "OTU1168"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Braconidae"	NA	NA
-"OTU2574"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Ptilodactylidae"	"Ptilodactyla"	NA
 "OTU944"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Blastobasidae"	"Holcocera"	"Holcocera chalcofrontella"
+"OTU2574"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Ptilodactylidae"	"Ptilodactyla"	NA
+"OTU213"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Gretchena"	"Gretchena delicatana"
 "OTU1130"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
 "OTU1675"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Apantesis"	"Apantesis phalerata"
-"OTU213"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Gretchena"	"Gretchena delicatana"
 "OTU248"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU2097"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
 "OTU746"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	NA	NA
@@ -385,17 +385,25 @@
 "OTU1218"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU97"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU762"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU1091"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1184"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU336"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU542"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1091"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1184"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU844"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU963"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU371"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU388"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	NA	NA	NA
-"OTU476"	"Animalia"	"Arthropoda"	"Arachnida"	"Trombidiformes"	NA	NA	NA
-"OTU871"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Araneidae"	"Araneus"	"Araneus guttulatus"
-"OTU1053"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
+"OTU1449"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU151"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU1577"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1801"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Coleotechnites"	"Coleotechnites atrupictella"
+"OTU181"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tipulidae"	"Tipula"	"Tipula oleracea"
+"OTU182"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Miridae"	"Phytocoris"	NA
+"OTU1896"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Cenopis"	"Cenopis reticulatana"
+"OTU883"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU947"	"Animalia"	"Arthropoda"	"Insecta"	"Trichoptera"	NA	NA	NA
+"OTU951"	"Animalia"	"Arthropoda"	"Insecta"	"Blattodea"	NA	NA	NA
+"OTU958"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Mycetophilidae"	"Mycetophila"	"Mycetophila signatoides"
+"OTU995"	"Animalia"	"Arthropoda"	"Insecta"	"Trichoptera"	"Limnephilidae"	"Ironoquia"	"Ironoquia punctatissima"
+"OTU997"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Autostichidae"	"Oegoconia"	"Oegoconia novimundi"
 "OTU1023"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Crambidae"	"Scoparia"	"Scoparia biplagialis"
 "OTU1029"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
 "OTU1044"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
@@ -412,13 +420,11 @@
 "OTU1251"	"Animalia"	"Arthropoda"	"Insecta"	"Orthoptera"	"Acrididae"	"Melanoplus"	"Melanoplus bivittatus"
 "OTU1253"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Acleris"	"Acleris variana"
 "OTU1413"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU1449"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU151"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU1577"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1801"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Coleotechnites"	"Coleotechnites atrupictella"
-"OTU181"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tipulidae"	"Tipula"	"Tipula oleracea"
-"OTU182"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Miridae"	"Phytocoris"	NA
-"OTU1896"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Cenopis"	"Cenopis reticulatana"
+"OTU409"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Derbidae"	"Apache"	"Apache degeerii"
+"OTU423"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Sphingidae"	"Eumorpha"	"Eumorpha vitis"
+"OTU440"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU443"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU450"	"Animalia"	"Arthropoda"	"Diplopoda"	"Chordeumatida"	NA	NA	NA
 "OTU194"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Ormosia"	"Ormosia affinis"
 "OTU198"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	NA	NA
 "OTU210"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Blastobasidae"	"Pigritia"	NA
@@ -438,18 +444,24 @@
 "OTU379"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Geometridae"	"Macaria"	"Macaria carpo"
 "OTU385"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	NA	NA
 "OTU386"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU409"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Derbidae"	"Apache"	"Apache degeerii"
-"OTU423"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Sphingidae"	"Eumorpha"	"Eumorpha vitis"
-"OTU440"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU443"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU450"	"Animalia"	"Arthropoda"	"Diplopoda"	"Chordeumatida"	NA	NA	NA
-"OTU453"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU469"	"Animalia"	"Arthropoda"	"Arachnida"	"Mesostigmata"	"Blattisociidae"	"Cheiroseius"	NA
-"OTU473"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Blastobasidae"	NA	NA
-"OTU474"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Caryocolum"	"Caryocolum pullatella"
-"OTU482"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	"Ablabesmyia"	NA
-"OTU483"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Xestia"	"Xestia baja"
-"OTU487"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Elephantomyia"	"Elephantomyia westwoodi"
+"OTU714"	"Animalia"	"Arthropoda"	"Insecta"	"Blattodea"	NA	NA	NA
+"OTU723"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tachinidae"	"Eucelatoria"	NA
+"OTU725"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU741"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Blastobasidae"	"Blastobasis"	"Blastobasis glandulella"
+"OTU743"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Ampedus"	"Ampedus pullus"
+"OTU758"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Neotelphusa"	"Neotelphusa querciella"
+"OTU766"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Idia"	"Idia rotundalis"
+"OTU770"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU788"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Aphididae"	"Hyalopterus"	"Hyalopterus pruni"
+"OTU804"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Ampedus"	"Ampedus semicinctus"
+"OTU805"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Erioptera"	"Erioptera chlorophylla"
+"OTU812"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	NA	NA
+"OTU873"	"Animalia"	"Arthropoda"	"Insecta"	"Plecoptera"	"Nemouridae"	"Amphinemura"	"Amphinemura wui"
+"OTU371"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
+"OTU388"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	NA	NA	NA
+"OTU476"	"Animalia"	"Arthropoda"	"Arachnida"	"Trombidiformes"	NA	NA	NA
+"OTU871"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Araneidae"	"Araneus"	"Araneus guttulatus"
+"OTU1053"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU489"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	NA	NA
 "OTU492"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Melandryidae"	"Microtonus"	"Microtonus sericans"
 "OTU494"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Mycetophagidae"	"Litargus"	"Litargus tetraspilotus"
@@ -468,34 +480,26 @@
 "OTU622"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Depressariidae"	"Antaeotricha"	"Antaeotricha leucillana"
 "OTU650"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU671"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Latridiidae"	"Corticarina"	"Corticarina cavicollis"
-"OTU714"	"Animalia"	"Arthropoda"	"Insecta"	"Blattodea"	NA	NA	NA
-"OTU723"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tachinidae"	"Eucelatoria"	NA
-"OTU725"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU741"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Blastobasidae"	"Blastobasis"	"Blastobasis glandulella"
-"OTU743"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Ampedus"	"Ampedus pullus"
-"OTU758"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Neotelphusa"	"Neotelphusa querciella"
-"OTU766"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Idia"	"Idia rotundalis"
-"OTU770"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
-"OTU788"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Aphididae"	"Hyalopterus"	"Hyalopterus pruni"
-"OTU804"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Ampedus"	"Ampedus semicinctus"
-"OTU805"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Erioptera"	"Erioptera chlorophylla"
-"OTU812"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	NA	NA
-"OTU873"	"Animalia"	"Arthropoda"	"Insecta"	"Plecoptera"	"Nemouridae"	"Amphinemura"	"Amphinemura wui"
-"OTU883"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU947"	"Animalia"	"Arthropoda"	"Insecta"	"Trichoptera"	NA	NA	NA
-"OTU951"	"Animalia"	"Arthropoda"	"Insecta"	"Blattodea"	NA	NA	NA
-"OTU958"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Mycetophilidae"	"Mycetophila"	"Mycetophila signatoides"
-"OTU995"	"Animalia"	"Arthropoda"	"Insecta"	"Trichoptera"	"Limnephilidae"	"Ironoquia"	"Ironoquia punctatissima"
-"OTU997"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Autostichidae"	"Oegoconia"	"Oegoconia novimundi"
+"OTU473"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Blastobasidae"	NA	NA
+"OTU474"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Caryocolum"	"Caryocolum pullatella"
+"OTU482"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	"Ablabesmyia"	NA
+"OTU483"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Xestia"	"Xestia baja"
+"OTU487"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Elephantomyia"	"Elephantomyia westwoodi"
+"OTU469"	"Animalia"	"Arthropoda"	"Arachnida"	"Mesostigmata"	"Blattisociidae"	"Cheiroseius"	NA
+"OTU453"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU283"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Elaphria"	"Elaphria nucicolora"
 "OTU692"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Curculionidae"	"Phyllobius"	"Phyllobius oblongus"
 "OTU717"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Mycetophilidae"	"Exechiopsis"	"Exechiopsis pulchella complex"
 "OTU764"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU864"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Syrphidae"	"Eristalinus"	"Eristalinus aeneus"
-"OTU1374"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Depressariidae"	"Agonopterix"	"Agonopterix pulvipennella"
 "OTU513"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU721"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Toxonprucha"	"Toxonprucha excavata"
 "OTU904"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Catabenoides"	"Catabenoides terminellus"
+"OTU1374"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Depressariidae"	"Agonopterix"	"Agonopterix pulvipennella"
+"OTU1650"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Cisthene"	"Cisthene angelus"
+"OTU1664"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1677"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Mycetophilidae"	"Mycetophila"	"Mycetophila luctuosa"
+"OTU1707"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU1121"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU1429"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU1463"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
@@ -503,13 +507,12 @@
 "OTU1294"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Dichomeris"	"Dichomeris punctipennella"
 "OTU1319"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	"Tanytarsus"	"Tanytarsus mendax"
 "OTU1332"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1650"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Cisthene"	"Cisthene angelus"
-"OTU1664"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1677"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Mycetophilidae"	"Mycetophila"	"Mycetophila luctuosa"
-"OTU1707"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU879"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU897"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
 "OTU953"	"Animalia"	"Arthropoda"	"Insecta"	"Ephemeroptera"	"Heptageniidae"	"Leucrocuta"	"Leucrocuta aphrodite"
+"OTU1382"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Ponometia"	"Ponometia bicolorata"
+"OTU539"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU582"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Cicadellidae"	"Neohecalus"	"Neohecalus lineatus"
 "OTU527"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU1122"	"Animalia"	"Arthropoda"	"Diplopoda"	"Julida"	NA	NA	NA
 "OTU1228"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
@@ -519,33 +522,30 @@
 "OTU1131"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tineidae"	NA	NA
 "OTU1162"	"Animalia"	"Arthropoda"	"Insecta"	"Plecoptera"	NA	NA	NA
 "OTU1163"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Notodontidae"	"Porsica"	"Porsica acarodes"
-"OTU1382"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Ponometia"	"Ponometia bicolorata"
-"OTU539"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU582"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Cicadellidae"	"Neohecalus"	"Neohecalus lineatus"
-"OTU863"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gracillariidae"	"Caloptilia"	NA
 "OTU878"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Acronicta"	"Acronicta insularis"
 "OTU880"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU891"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Epinotia"	"Epinotia emarginana"
+"OTU863"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gracillariidae"	"Caloptilia"	NA
 "OTU998"	"Animalia"	"Arthropoda"	"Insecta"	"Blattodea"	NA	NA	NA
 "OTU1506"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU1753"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU1303"	"Animalia"	"Arthropoda"	"Collembola"	"Symphypleona"	"Bourletiellidae"	"Deuterosminthurus"	NA
 "OTU1588"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU3126"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Xestia"	"Xestia badicollis"
 "OTU1057"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU1115"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Depressariidae"	"Machimia"	"Machimia tentoriferella"
 "OTU1227"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Scirtidae"	"Cyphon"	NA
 "OTU1456"	"Animalia"	"Arthropoda"	"Arachnida"	"Trombidiformes"	NA	NA	NA
-"OTU3126"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Xestia"	"Xestia badicollis"
 "OTU797"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU354"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU1633"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU1340"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Dichomeris"	NA
 "OTU1578"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU1699"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Bucculatricidae"	"Bucculatrix"	"Bucculatrix ainsliella"
-"OTU648"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU1550"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU1383"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU1384"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tachinidae"	"Strongygaster"	NA
+"OTU648"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU1370"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU839"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU1019"	"Animalia"	"Arthropoda"	"Insecta"	"Trichoptera"	NA	NA	NA
@@ -561,15 +561,17 @@
 "OTU2057"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU1052"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU538"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Cicadellidae"	"Empoasca"	"Empoasca decipiens"
-"OTU1197"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Horistonotus"	"Horistonotus fidelis"
 "OTU1237"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Chrysomelidae"	NA	NA
 "OTU1393"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Epinotia"	"Epinotia transmissana"
+"OTU1197"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Horistonotus"	"Horistonotus fidelis"
 "OTU1551"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Spodoptera"	"Spodoptera frugiperda"
 "OTU1720"	"Animalia"	"Arthropoda"	"Insecta"	"Ephemeroptera"	"Heptageniidae"	"Leucrocuta"	"Leucrocuta aphrodite"
-"OTU866"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	"Dasydemellidae"	"Teliapsocus"	NA
-"OTU899"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Carabidae"	"Laemostenus"	"Laemostenus complanatus"
 "OTU941"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Euxoa"	"Euxoa inconcinna"
 "OTU961"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU866"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	"Dasydemellidae"	"Teliapsocus"	NA
+"OTU899"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Carabidae"	"Laemostenus"	"Laemostenus complanatus"
+"OTU2906"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU254"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU177"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU1448"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU1087"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
@@ -577,8 +579,6 @@
 "OTU1174"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU1287"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU1619"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU254"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU2906"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU382"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU3880"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU477"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
@@ -586,25 +586,25 @@
 "OTU529"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU594"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU696"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU905"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
+"OTU914"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU93"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
 "OTU699"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU755"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Linyphiidae"	"Erigone"	NA
 "OTU875"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU901"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU905"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
-"OTU914"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU93"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
+"OTU1394"	"Animalia"	"Arthropoda"	"Insecta"	"Blattodea"	NA	NA	NA
 "OTU1050"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Xyloryctidae"	"Tymbophora"	"Tymbophora peltastis"
 "OTU110"	"Animalia"	"Arthropoda"	"Insecta"	"Neuroptera"	NA	NA	NA
-"OTU1394"	"Animalia"	"Arthropoda"	"Insecta"	"Blattodea"	NA	NA	NA
-"OTU535"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	NA	NA	NA
 "OTU653"	"Animalia"	"Arthropoda"	"Insecta"	"Mantodea"	NA	NA	NA
 "OTU765"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	NA	NA	NA
 "OTU86"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU923"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU950"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	NA	NA	NA
+"OTU535"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	NA	NA	NA
 "OTU1045"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1011"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU1055"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU1011"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU1688"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Carabidae"	"Chlaenius"	"Chlaenius sericeus"
 "OTU620"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
 "OTU2175"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Schreckensteiniidae"	"Schreckensteinia"	"Schreckensteinia festaliella"
@@ -613,26 +613,28 @@
 "OTU38"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU806"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU2407"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU420"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU1140"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU1666"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU420"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU1430"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	"Psocidae"	"Ptycta"	"Ptycta polluta"
 "OTU292"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU257"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU735"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Braconidae"	"Meteorus"	"Meteorus pulchricornis"
 "OTU1070"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Theridiidae"	"Cryptachaea"	"Cryptachaea blattea"
-"OTU1689"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU68"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Pentatomidae"	"Nezara"	"Nezara viridula"
-"OTU1036"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU1689"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU1275"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1080"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Aphididae"	"Wahlgreniella"	"Wahlgreniella vaccinii"
+"OTU1036"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU173"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1080"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Aphididae"	"Wahlgreniella"	"Wahlgreniella vaccinii"
+"OTU1065"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU304"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU393"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU411"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU740"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Triclistus"	NA
 "OTU1554"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
-"OTU1065"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU698"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU713"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU1006"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU1027"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU1203"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
@@ -642,7 +644,5 @@
 "OTU1507"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
 "OTU179"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU534"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Sciaridae"	"Hyperlasion"	NA
-"OTU698"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU713"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU1731"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU133"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Drosophilidae"	"Drosophila"	"Drosophila simulans"
