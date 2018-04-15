@@ -245,7 +245,6 @@ write.csv(master.df, "master.csv", row.names = F, quote = F)
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
 detach("package:dplyr", unload=TRUE)
-detach("package:data.table", unload=TRUE)
 detach("package:reshape2", unload=TRUE)
 detach("package:tidyr", unload=TRUE)
 
@@ -265,22 +264,232 @@ speciesOnly.df <- na.omit(master.df)
 freq_species <- as.data.frame(table(speciesOnly.df$species_name))     # frequency table of species detected
 colnames(freq_species) <- c("species_name", "counts")
 write.csv(freq_species, "species_frq_table.csv", row.names = F, quote = F)
-sum(freq_species$counts > 1)  # note 142 species identified, but most are not abundant (no OTU ID'd more than 11 samples)
+sum(freq_species$counts > 1)  # note 212 species identified, but most are not abundant (only 41 species ID'd in more than 10 samples)
 
 ## how many OTUs are called per site?
-OTUperSite = count(master.df, vars = c("NestBox"))
-colnames(OTUperSite) <- c("NestBox", "NumberOfDetections")
+OTUperSite = count(master.df, vars = c("Source"))
+colnames(OTUperSite) <- c("Source", "NumberOfDetections")
 write.csv(OTUperSite, "OTU_per_Site.csv", row.names = F, quote = F)
 
-
-## how many OTUs are called per site per week?
-OTUperSiteWeek = count(master.df, vars = c("NestBox", "Date"))
-colnames(OTUperSiteWeek) <- c("NestBox", "Date", "NumberOfDetections")
-write.csv(OTUperSiteWeek, "OTU_per_SiteWeek.csv", row.names = F, quote = F)
+## how many OTUs are called between bird guano vs. vegetation?
+OTUperSampleType = count(master.df, vars = c("SampleType"))
+colnames(OTUperSampleType) <- c("SampleType", "NumberOfDetections")
+write.csv(OTUperSampleType, "OTU_per_SampleType.csv", row.names = F, quote = F)
 
 
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
               ######     Part 5 - data visualization     ######
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
-# ... To be added soon
+## vegan plot... builds on data created in Part 6 below
+tOTUtable <- t(otutable.mat)
+colSums(tOTUtable)
+
+## basic ordination with vegan (didn't complete through NMDS plot...)
+## 1) calculate distance:
+library(vegan)
+draup <- vegdist(tOTUtable, method="raup", binary=TRUE)
+# notrun: dbray <- vegdist(otutable.mat, method="bray", binary=TRUE)
+# notrun: djacc <- vegdist(otutable.mat, method="jaccard", binary=TRUE)
+
+NMDSraup <- metaMDS(draup, distance = "raup", k = 2, trymax=20)
+NMDSraupK3 <- metaMDS(draup, distance = "raup", k = 3, trymax=20)
+
+## see: https://chrischizinski.github.io/rstats/vegan-ggplot2/
+## see also: https://jonlefcheck.net/2012/10/24/nmds-tutorial-in-r/
+stressplot(NMDSraup)
+plot(NMDSraup)
+
+data(dune, dune.env)
+
+data.scores <- as.data.frame(scores(NMDSraup))  #Using the scores function from vegan to extract the site scores and convert to a data.frame
+data.scores$site <- rownames(data.scores)  # create a column of site names, from the rownames of data.scores
+plot(NMDSraup, type = "t")
+
+
+# ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
+              ######     Part 6 - Phyloseq plots     ######
+# ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
+## load in original OTUtable from amptk output:
+library(data.table)
+setwd("~/Repos/guano/OahuBird/")
+master.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/OahuBird/data/Routput/master.csv', header = T)
+master.df$SampleID <- gsub("\\.", "-", master.df$SampleID)
+h_otutable.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/OahuBird/data/amptk/OahuBird_h.otu_table.taxonomy.txt')
+row.names(h_otutable.df) <- h_otutable.df$`#OTU ID`
+## make a list of samples remaining in our filtered, meta-data included `master.df`:
+samplelist <- unique(master.df$SampleID)
+## then pick out just the columns in the original OTUtable from that list:
+otutable.df <- subset(h_otutable.df, select = samplelist)
+row.names(otutable.df) <- row.names(h_otutable.df)
+## sum up the rows and drop any OTUs where there are zero read counts; drop the rowsum and names columns after that
+otutable.df$rowsums <- rowSums(otutable.df[1:184])
+otutable.df$rowsums
+otutable.df$names <- rownames(otutable.df)
+otutable.df <- subset(otutable.df, rowsums != 0)
+row.names(otutable.df) <- otutable.df$names
+otutable.df$names <- NULL
+otutable.df$rowsums <- NULL
+## convert to binary matrix
+otutable.mat <- as.matrix((otutable.df > 0) + 0)
+  # this is what you'll load into phyloseq as 'OTU'
+
+## Generate a taxonomy table
+tax.df <- unique(master.df[,c(2,6:12)])
+rownames(tax.df) <- tax.df$OTUid
+tax.df$OTUid <- NULL
+colnames(tax.df) <- c("Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species")
+tax.mat <- as.matrix(tax.df)
+row.names(tax.mat) <- rownames(tax.df)
+  # this is what you'll load into phyloseq as 'TAX'
+
+## Add additional sample metadata:
+## found that Alissa had entered two unique values for sample OahuBird.184... so the first one was arbitrarily dropped
+metaps.df <- unique(master.df[,c(1,15:19)])
+metaps.df <- metaps.df[c(1:45, 47:185),]
+rownames(metaps.df) <- metaps.df$SampleID
+  # this is what you'll load into phyloseq as 'META'
+
+## save files to disk:
+setwd("~/Repos/guano/OahuBird/data/Routput/")
+write.table(otutable.mat, file = "otutable.mat", row.names = TRUE, sep = "\t")
+write.table(tax.mat, file = "tax.mat", row.names = TRUE, sep = "\t")
+write.table(metaps.df, file = "metaps.df", row.names = TRUE, sep = "\t")
+
+## load package `phyloseq`
+
+## notrun: source('http://bioconductor.org/biocLite.R')
+## notrun: biocLite('phyloseq')
+## notrun: source("http://bioconductor.org/biocLite.R")
+## not run: biocLite("multtest")
+## not run: install.packages("ape")
+#! not installed: source("http://bioconductor.org/biocLite.R")
+#! not installed: biocLite("BiocUpgrade")
+
+library(phyloseq)
+setwd("~/Repos/guano/OahuBird/data/Routput/")
+otutable.mat <- read.table(file="otutable.mat")
+tax.mat <- read.table(file="tax.mat")
+metaps.df <- read.table(file="metaps.df")
+
+OTU = otu_table(otutable.mat, taxa_are_rows = TRUE)
+TAX = tax_table(tax.mat)
+META = sample_data(metaps.df)
+rownames(META) = sample_names(OTU)
+physeq = phyloseq(OTU, TAX, META)
+physeq
+
+## added a tree - this was derived from the output of the `amptk taxonomy` command and then briefly modified with some bash commands as follows:
+## before I ran this bit of R code, I had to first modify the `amptk taxonomy` .fa output to get a tab-delimited format
+##
+## ```
+## awk '/^>/ {printf("\n%s\n",$0);next; } { printf("%s",$0);}  END {printf("\n");}' < OahuBird_h.otus.taxonomy.fa > tmp.fa
+## tail -n +2 tmp.fa | paste - - > tmp2.fa
+## ```
+## first, read in the tab-delimited fasta from the amptk taxonomy output that has been formatted above:
+amptk.fasta <- read.delim("~/Repos/guano/OahuBird/data/amptk/nolulu/tmp2.fa", 
+                          header = FALSE, sep = "\t", stringsAsFactors = FALSE)
+colnames(amptk.fasta) <- c("header", "seq")
+
+library(dplyr)
+library(tidyr)
+amptk.df <- amptk.fasta %>%
+  separate(header, c("header", "tax"), " ", extra = "merge")  # the `extra = "merge"` prevents the species names getting dropped
+rm(amptk.fasta)
+
+## grab the OTU names from our `master.df` object:
+otunames.df <- as.data.frame(unique(master.df$OTUid))
+colnames(otunames.df) <- "header"
+otunames.df$header <- paste('>', otunames.df$header, sep = '')
+
+## find matches where these overlap:
+matched.fasta <- merge(otunames.df, amptk.df)
+
+## and export that data.frame object, then reprocess from tab-delimited to single-line fasta:
+setwd("~/Repos/guano/OahuBird/data/Routput/")
+write.table(matched.fasta, file = "matched.fasta.txt", quote = FALSE, col.names = FALSE, row.names = FALSE, sep = "\t")
+
+## this made a matched.fasta.txt file which we then processed back into a typical fasta format: 
+## 
+## ```
+## awk -F "\t" '{print $1"\n"$3}' matched.fasta.txt > matched.fasta
+## ```
+
+
+## this file was then passed into `usearch` to make and updated tree:
+##
+## ```
+## usearch -cluster_agg matched.fasta -treeout matched.tree
+## ```
+## and the output file 'tree.phy' was ultimately loaded back into phyloseq 
+setwd("~/Repos/guano/OahuBird/data/Routput/")
+library(ape)
+mytree <- read.tree(file = "matched.tree")
+physeq2 = merge_phyloseq(physeq, mytree)
+physeq2
+
+## now plot some trees!
+library(ggplot2)
+## first two not particularly useful...
+plot_tree(physeq2)
+plot_tree(physeq2, color="Order")
+t <- plot_tree(physeq2, color="SampleType", shape = "SampleType", ladderize="left", plot.margin=0.3)
+t
+?plot_tree()
+
+## how about:
+plot_tree(physeq2, color="SampleType", shape="SampleType", label.tips="taxa_names", ladderize = "left", justify = "left")
+
+## now plot richness?
+plot_richness(physeq2, x="Source", color="SampleType")
+## or try...
+p = plot_richness(physeq2, x="Source", color="SampleType", measures=c("Observed", "Shannon", "Simpson"))
+p + geom_point(size=2.2, alpha=0.5) + labs(color = "Guano source")
+  # need to alter the SampleType legend key... state "bird" or "plant" sample...
+
+## bar plots:
+## basic
+plot_bar(physeq2, x="BirdSpecies", fill="Order", facet_grid=~SampleType)
+## better
+q = plot_bar(physeq2, "BirdSpecies", fill="Order")
+q + geom_bar(aes(color=Order, fill=Order), stat="identity", position="stack") +
+             labs(title="Number of OTU detections defined by taxonomic Order per bird species")
+  # would want to relabel x-axis tick to reflect the first bar is "vegetation"; or could face out
+  # want to rename y axis label as "observed" (it's binary abundance...)
+
+
+
+
+## basic ordination with phyloseq
+distance(physeq2, method = "bray", binary = TRUE)
+phyloseq::diversity(ps_obj, method = "jaccard", binary = TRUE)
+## Calculate ordination
+ojacc  <- ordinate(physeq2, "MDS", distance=djacc)
+
+
+## ordination, modifying the phyloseq example
+## get list of distance methods available and print
+dist_methods <- unlist(distanceMethodList)
+dist_methods
+## select wanted methods
+mydist_methods <- dist_methods[(c(8,16))]
+mydist_methods
+
+plist <- vector("list", length(mydist_methods))
+names(plist) = mydist_methods
+for( i in mydist_methods ){
+  # Calculate distance matrix
+  iDist <- distance(physeq2, method=i, binary = TRUE)
+  
+  ## Make plot
+  # Don't carry over previous plot (if error, p will be blank)
+  p <- NULL
+  # Create plot, store as temp variable, p
+  p <- plot_ordination(physeq2, iMDS, color="SampleType", shape="Source")
+  # Add title to each plot
+  p <- p + ggtitle(paste("MDS using distance method ", i, sep=""))
+  # Save the graphic to file.
+  plist[[i]] = p
+}
+
+print(plist[["jsd"]])
