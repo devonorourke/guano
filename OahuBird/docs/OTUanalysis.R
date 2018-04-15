@@ -226,9 +226,8 @@ rm(allmatch.list, drop.list, matches, NTC_otu.list, tmpdrop.list, tmpx.list, toM
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
 ## merge with metadata information
-library(data.table)
-#not run: tmpfilt2.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/OahuBird/data/Routput/FilteredOTUs.csv', header = TRUE)
-meta.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/OahuBird/data/OahuBird_metadata.csv', header = TRUE)
+#not run: tmpfilt2.df <- read.csv('https://raw.githubusercontent.com/devonorourke/guano/master/OahuBird/data/Routput/FilteredOTUs.csv', header = TRUE)
+meta.df <- read.csv('https://raw.githubusercontent.com/devonorourke/guano/master/OahuBird/data/OahuBird_metadata.csv', header = TRUE)
 meta.df$SampleID <- paste("OahuBird.", substr(meta.df$seqID, 4, 6), sep = "")
 meta.df <- meta.df[,c(4:9)]
 colnames(meta.df) <- c("SamplingDate", "BirdSpecies", "Source", "VegNum", "SampleType", "SampleID")
@@ -322,13 +321,10 @@ ggplot(freqOrders, aes(x = factor(SampleType), y = percObs, fill = order_name)) 
   labs(title = "Relative taxonomic Orders detected by avian guano or vegetative sampling methods",
        subtitle = "Taxonomic order defined using approaches described in 'amptk' bioinformatic pipeline\n using Barcode of Life Database references",
        x = "Sample Type",
-       y = "Percent taxonomic Order detected")
-
-
-
-
-
-
+       y = "Percent taxonomic Order detected") +
+  guides(fill = guide_legend(title = "Taxonomic Order", ncol = 2, keywidth = 2, keyheight = 2)) +
+  theme(legend.position = "right", axis.text.y=element_blank(), axis.ticks.y = element_blank())
+      
 
 ## 1) by 'BirdSpecies', faceting by Source
 ## 2) by 'BirdSpecies', with no veg plotted
