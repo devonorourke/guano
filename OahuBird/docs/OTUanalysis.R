@@ -234,6 +234,8 @@ meta.df <- meta.df[,c(4:9)]
 colnames(meta.df) <- c("SamplingDate", "BirdSpecies", "Source", "VegNum", "SampleType", "SampleID")
 master.df <- merge(tmpfilt2.df, meta.df)
 #rm(tmpfilt2.df, meta.df)
+## drop the "_suspect_mock_chimera" tag in the 'OTUid' field:
+master.df$OTUid <- gsub("_.*$","",master.df$OTUid)
 
 # write file to disk:
 setwd("~/Repos/guano/OahuBird/data/Routput/")
@@ -267,6 +269,11 @@ colnames(freq_species) <- c("species_name", "counts")
 write.csv(freq_species, "species_frq_table.csv", row.names = F, quote = F)
 sum(freq_species$counts > 1)  # note 212 species identified, but most are not abundant (only 41 species ID'd in more than 10 samples)
 
+## what is the frequency of each OTU?
+OTUcounts = count(master.df, vars = c("OTUid"))
+colnames(OTUcounts) <- c("OTUid", "NumberOfDetections")
+write.csv(OTUcounts, "OTUcounts.csv", row.names = F, quote = F)
+
 ## how many OTUs are called per site?
 OTUperSite = count(master.df, vars = c("Source"))
 colnames(OTUperSite) <- c("Source", "NumberOfDetections")
@@ -279,37 +286,160 @@ write.csv(OTUperSampleType, "OTU_per_SampleType.csv", row.names = F, quote = F)
 
 
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
-              ######     Part 5 - data visualization     ######
+              ######     Part 5a - taxa sampled viz     ######
+# ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
+## make a few plots showing the number of counts observed by taxonomic Order
+master.df <- read.csv('https://raw.githubusercontent.com/devonorourke/guano/master/OahuBird/data/Routput/master.csv', header = T)
+plot.df <- master.df
+plot.df$Counter <- "1"
+
+## 0) by 'Source', mashing together all bird species
+library(plyr)
+detach("package:dplyr", unload=TRUE)
+freqOrders <- count(plot.df, vars = c("SampleType", "order_name"))
+library(dplyr)
+oBSTbird <- filter(freqOrders, SampleType == "Bird")
+birdobs <- sum(oBSTbird$freq) ## 2254 observations
+oBSTbird$percObs <- (oBSTbird$freq)/birdobs*100
+oBSTveg <- filter(freqOrders, SampleType == "Veg")
+vegobs<- sum(oBSTveg$freq) ## 1476 observations
+oBSTveg$percObs <- (oBSTveg$freq)/vegobs*100
+freqOrders <- rbind(oBSTbird, oBSTveg)
+
+length(unique(freqOrders$order_name))  # we have 28 unique things to shade, including the 'NA' values
+tol28rainbow= c("#771155", "#AA4488", "#CC99BB", "#f7e9f7",
+                "#114477", "#4477AA", "#77AADD", "#e2effd",
+                "#117777", "#44AAAA", "#77CCCC", "#d9f0f0",
+                "#117744", "#44AA77", "#88CCAA", "#e0f0e6",
+                "#777711", "#AAAA44", "#DDDD77", "#eaeedf",
+                "#774411", "#AA7744", "#DDAA77", "#f6ebdd",
+                "#771122", "#AA4455", "#DD7788", "#fee8e3")
+
+library(ggplot2)
+ggplot(freqOrders, aes(x = factor(SampleType), y = percObs, fill = order_name)) +  
+  geom_bar(stat = "identity") + 
+  scale_fill_manual(values = tol28rainbow, na.value="black") +
+  labs(title = "Relative taxonomic Orders detected by avian guano or vegetative sampling methods",
+       subtitle = "Taxonomic order defined using approaches described in 'amptk' bioinformatic pipeline\n using Barcode of Life Database references",
+       x = "Sample Type",
+       y = "Percent taxonomic Order detected")
+
+
+
+
+
+
+
+## 1) by 'BirdSpecies', faceting by Source
+## 2) by 'BirdSpecies', with no veg plotted
+
+## for (0):
+
+
+order0 <- ggplot(plot.df, aes(x = SampleType))
+order0 + geom_bar(aes(fill = order_name)) +
+  scale_fill_manual(values = tol28rainbow)
+
+
+
+b1 <- ggplot(dat.b1, aes(x = Site, y = Counts, fill = BatSpecies, label = BatSpecies)) +
+  geom_bar(stat = "identity", colour=barlines) +
+  scale_fill_manual(values = b1pal, name="Bat Species") + 
+  ylab("Number of times an OTU is detected") +
+  xlab("Site") + 
+  theme(axis.text.y = element_text(size = 8)) +
+  theme(axis.text.x = element_text(size = 10)) +
+  labs(title = "Number of OTUs detected per Bat Species and Site using DADA2/AMPtk pipeline") +
+  theme(plot.title = element_text(face = "bold")) +
+  #theme(legend.key.size = unit(4, "mm")) +
+  theme(legend.position = "none") +
+  geom_text(size = 3, position = position_stack(vjust = 0.5), angle = 45) +
+  coord_flip()
+b1
+
+
+# ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
+              ######     Part 5b - ordination viz     ######
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
-## vegan plot... builds on data created in Part 6 below
-tOTUtable <- t(otutable.mat)
-colSums(tOTUtable)
+library(data.table)
+##not run: master.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/OahuBird/data/Routput/master.csv', header = T)
 
-## basic ordination with vegan (didn't complete through NMDS plot...)
-## 1) calculate distance:
+## make OTUtable from master, then filter out OTUs occurring less than 5 of fewer samples (remove rareish things)
+detach("package:data.table", unload=TRUE)
+library(reshape2)
+
+## make the table
+otu.df <- master.df[,c(1,2,13)]
+otu.mat <- dcast(otu.df, SampleID ~ OTUid, value.var = "CountReads")
+row.names(otu.mat) <- otu.mat$SampleID
+otu.mat$SampleID <- NULL
+## filter the table
+detach("package:data.table", unload=TRUE)
+otufilter1 = otu.mat[,colSums(otu.mat) > 4]  ## OTU must exist in at least 5 samples
+
+otu.mat[(colSums(otu.mat[,])>4),]
+
+otu.mat[]
+otufilt.mat = otufilt.mat[rowSums(otufilt.mat) > 0,] ## removes empty rows from filtering above
+
+## extreme filtering - keeping only samples existing in at least 10% of samples
+otufilt10.mat = otu.mat[,colSums(otu.mat) > 10]  ## OTU must exist in at least 5 samples
+otufilt10.mat = otufilt10.mat[rowSums(otufilt10.mat) > 0,] ## removes empty rows from filtering above
+
+## create a metadata table with sample information
+samplemeta.df <- unique(master.df[,c(1,15:19)])
+
+## creating a tree is more involved... see notes in Part6 below
+
+## vegan Ordination
 library(vegan)
-draup <- vegdist(tOTUtable, method="raup", binary=TRUE)
+## 1) calculate distance:
+draup <- vegdist(otufilt.mat, method="raup", binary=TRUE)
+draup10 <- vegdist(otufilt10.mat, method="raup", binary=TRUE)
 # notrun: dbray <- vegdist(otutable.mat, method="bray", binary=TRUE)
 # notrun: djacc <- vegdist(otutable.mat, method="jaccard", binary=TRUE)
-
-NMDSraup <- metaMDS(draup, distance = "raup", k = 2, trymax=20)
-NMDSraupK3 <- metaMDS(draup, distance = "raup", k = 3, trymax=20)
-
+## 2) ordinate
+NMDSraup <- metaMDS(draup, distance = "raup", k = 2, trymax=200)
+NMDSraup10 <- metaMDS(draup10, distance = "raup", k = 2, trymax=200)
+## 3) look at stress plot
+stressplot(NMDSraup)
+stressplot(NMDSraup10)
+## 4) quick plot
+plot(NMDSraup)
+plot(NMDSraup10)
 ## see: https://chrischizinski.github.io/rstats/vegan-ggplot2/
 ## see also: https://jonlefcheck.net/2012/10/24/nmds-tutorial-in-r/
-stressplot(NMDSraup)
-plot(NMDSraup)
-
-data(dune, dune.env)
-
 data.scores <- as.data.frame(scores(NMDSraup))  #Using the scores function from vegan to extract the site scores and convert to a data.frame
 data.scores$site <- rownames(data.scores)  # create a column of site names, from the rownames of data.scores
-plot(NMDSraup, type = "t")
+colnames(data.scores) <- c("NMDS1", "NMDS2", "SampleID")
+ord.df <- merge(data.scores, samplemeta.df, all.x = TRUE)
+
+## now we can use ggplot to make this better:
+library(ggplot2)
+o <- ggplot(data = ord.df, aes(x = NMDS1, y = NMDS2, shape = Source, color = SampleType))
+o + geom_point()
+
+## how about adding fill into background by Source location?
+#unused plot colors for BirdSpecies: plotcolors <- c("#979d00", "#b78e6b","#8e9a67","#ede437","#7e400b","#ff473d","#455a0a","#cfc395","#98ad5a")
+#determined bird species from this list: http://www.wec.ufl.edu/birds/SurveyDocs/species_list.pdf
+
+o2 <- ggplot(ord.df) +
+  geom_polygon(data=ord.df,aes(x = NMDS1, y = NMDS2, fill=Source, group=Source),alpha=0.40) +  # add area fill
+  #geom_text(data=ord.df,aes(x = NMDS1, y = NMDS2, label=SampleID),alpha=0.5) +  # add the SampleID labels
+  geom_point(data=ord.df,aes(x = NMDS1, y = NMDS2, shape= BirdSpecies, colour= SampleType),size=1.75) +  # add the point markers
+  scale_colour_manual(values = c("red", "blue")) +
+  scale_shape_manual(values = c(0,1,16,2,5,6,3,11,4)) +
+  scale_fill_manual(values = c("#48b8da", "#0d353f", "#ffda00", "#b55251", "#dfb137", "#80e34b")) +
+  labs(title = "Hawaiian arthropod composition are distinguished by collection type",
+       subtitle = "Nonmetric Multidimensional Scaling (NMDS) of Raup-Crick dissimilarity index")
+o2
+
+
 
 
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
-              ######     Part 6 - Phyloseq plots     ######
+              ######     UNUSED: Part 6 - Phyloseq plots     ######
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 ## load in original OTUtable from amptk output:
 library(data.table)
@@ -493,4 +623,4 @@ for( i in mydist_methods ){
   plist[[i]] = p
 }
 
-print(plist[["jsd"]])
+

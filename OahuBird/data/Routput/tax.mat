@@ -1,648 +1,648 @@
 "Kingdom"	"Phylum"	"Class"	"Order"	"Family"	"Genus"	"Species"
-"OTU100_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU207_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU338_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Mesostigmata"	NA	NA	NA
-"OTU2829_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU301_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	NA	NA	NA
-"OTU352_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU433_suspect_mock_variant"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Crambidae"	"Herpetogramma"	NA
-"OTU84_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Crambidae"	"Tauroscopa"	"Tauroscopa lachnaea"
-"OTU165_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Drosophilidae"	"Drosophila"	"Drosophila suzukii"
-"OTU221_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU357_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU43_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU369_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU545_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Amorbia"	"Amorbia synneurana"
-"OTU555_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
-"OTU934_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
-"OTU1105_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU1242_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU2_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU503_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU10_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
-"OTU29_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
-"OTU51_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Trombidiformes"	"Anystidae"	NA	NA
-"OTU53_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU54_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Grammodes"	"Grammodes bifasciata"
-"OTU577_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Trombidiformes"	NA	NA	NA
+"OTU100"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU207"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU338"	"Animalia"	"Arthropoda"	"Arachnida"	"Mesostigmata"	NA	NA	NA
+"OTU2829"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU301"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	NA	NA	NA
+"OTU352"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU433"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Crambidae"	"Herpetogramma"	NA
+"OTU84"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Crambidae"	"Tauroscopa"	"Tauroscopa lachnaea"
+"OTU165"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Drosophilidae"	"Drosophila"	"Drosophila suzukii"
+"OTU221"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU357"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
+"OTU43"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU369"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU545"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Amorbia"	"Amorbia synneurana"
+"OTU555"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU934"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
+"OTU1105"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU1242"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU2"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU503"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU10"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU29"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
+"OTU51"	"Animalia"	"Arthropoda"	"Arachnida"	"Trombidiformes"	"Anystidae"	NA	NA
+"OTU53"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU54"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Grammodes"	"Grammodes bifasciata"
+"OTU577"	"Animalia"	"Arthropoda"	"Arachnida"	"Trombidiformes"	NA	NA	NA
 "OTU130"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU2249_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU91_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Geometridae"	NA	NA
-"OTU1213_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1421_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1680_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU356_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU685_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU214_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU64_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU46_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU119_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
-"OTU1362_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
-"OTU15_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU2249"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU91"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Geometridae"	NA	NA
+"OTU1213"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1421"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1680"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU356"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU685"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU214"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU64"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU46"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU119"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU1362"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU15"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU219"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU1139_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	"Ectopsocidae"	"Ectopsocus"	"Ectopsocus californicus"
+"OTU1139"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	"Ectopsocidae"	"Ectopsocus"	"Ectopsocus californicus"
 "OTU1039"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU101_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Coccinellidae"	NA	NA
-"OTU1367_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU1379_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU3039_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
-"OTU305_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU390_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU430_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
-"OTU546_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU709_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1312_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	NA	NA	NA
-"OTU184_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU190_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU302_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Malacostraca"	"Isopoda"	"Porcellionidae"	"Porcellio"	"Porcellio scaber"
-"OTU56_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU101"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Coccinellidae"	NA	NA
+"OTU1367"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU1379"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU3039"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU305"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU390"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU430"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU546"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU709"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1312"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	NA	NA	NA
+"OTU184"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU190"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU302"	"Animalia"	"Arthropoda"	"Malacostraca"	"Isopoda"	"Porcellionidae"	"Porcellio"	"Porcellio scaber"
+"OTU56"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU850"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU313_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU69_suspect_mock_variant"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU841_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Braconidae"	"Meteorus"	"Meteorus ictericus"
+"OTU313"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU69"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU841"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Braconidae"	"Meteorus"	"Meteorus ictericus"
 "OTU258"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU318"	"Animalia"	"Arthropoda"	"Arachnida"	"Trombidiformes"	NA	NA	NA
 "OTU412"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU1170_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU603_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU753_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU987_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Xyloryctidae"	"Xylorycta"	NA
+"OTU1170"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU603"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU753"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU987"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Xyloryctidae"	"Xylorycta"	NA
 "OTU882"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU912"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1072_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Dryinidae"	NA	NA
-"OTU107_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU136_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU50_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Syrphidae"	"Allograpta"	"Allograpta obliqua"
-"OTU868_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Dryinidae"	"Gonatopus"	NA
+"OTU1072"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Dryinidae"	NA	NA
+"OTU107"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
+"OTU136"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU50"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Syrphidae"	"Allograpta"	"Allograpta obliqua"
+"OTU868"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Dryinidae"	"Gonatopus"	NA
 "OTU1231"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU200_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU856_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	NA	NA	NA
-"OTU861_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Sciaridae"	NA	NA
-"OTU508_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Neuroptera"	NA	NA	NA
+"OTU200"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU856"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	NA	NA	NA
+"OTU861"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Sciaridae"	NA	NA
+"OTU508"	"Animalia"	"Arthropoda"	"Insecta"	"Neuroptera"	NA	NA	NA
 "OTU102"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Apidae"	"Apis"	"Apis mellifera"
 "OTU415"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
-"OTU295_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
-"OTU1439_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU607_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU621_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	NA	NA	NA
+"OTU295"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU1439"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
+"OTU607"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU621"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	NA	NA	NA
 "OTU1176"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1435_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU2982_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU403_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1073_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU362_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU562_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Nabidae"	"Nabis"	NA
+"OTU1435"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU2982"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU403"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1073"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU362"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU562"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Nabidae"	"Nabis"	NA
 "OTU633"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU201_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
-"OTU862_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU319_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU80_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU201"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU862"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU319"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU80"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU344"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU1061_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1076_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU1581_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Dryinidae"	NA	NA
-"OTU4016_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU798_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU809_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Dryinidae"	"Gonatopus"	NA
-"OTU92_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Cosmopterigidae"	NA	NA
-"OTU945_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
+"OTU1061"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1076"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
+"OTU1581"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Dryinidae"	NA	NA
+"OTU4016"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU798"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
+"OTU809"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Dryinidae"	"Gonatopus"	NA
+"OTU92"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Cosmopterigidae"	NA	NA
+"OTU945"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU277"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU144_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Neuroptera"	NA	NA	NA
-"OTU524_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU2808_suspect_mock_variant"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU946_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU144"	"Animalia"	"Arthropoda"	"Insecta"	"Neuroptera"	NA	NA	NA
+"OTU524"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU2808"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU946"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU980"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Linyphiidae"	NA	NA
-"OTU1285_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Linyphiidae"	"Agyneta"	NA
+"OTU1285"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Linyphiidae"	"Agyneta"	NA
 "OTU1592"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Aphididae"	"Sitobion"	NA
-"OTU12_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Tomoceridae"	"Tomocerus"	"Tomocerus minor"
-"OTU559_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Tomoceridae"	"Tomocerus"	NA
-"OTU127_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	"Chironomus"	NA
-"OTU209_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Psephenidae"	"Ectopria"	"Ectopria thoracica"
-"OTU62_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Epiphragma"	"Epiphragma fasciapenne"
+"OTU12"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Tomoceridae"	"Tomocerus"	"Tomocerus minor"
+"OTU559"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	"Tomoceridae"	"Tomocerus"	NA
+"OTU127"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	"Chironomus"	NA
+"OTU209"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Psephenidae"	"Ectopria"	"Ectopria thoracica"
+"OTU62"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Epiphragma"	"Epiphragma fasciapenne"
 "OTU602"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU859"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU195_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	NA	NA
-"OTU346_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Brachycyttara"	NA
-"OTU60_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU811_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Ephemeroptera"	"Caenidae"	"Caenis"	"Caenis diminuta"
-"OTU955_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU195"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	NA	NA
+"OTU346"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Brachycyttara"	NA
+"OTU60"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU811"	"Animalia"	"Arthropoda"	"Insecta"	"Ephemeroptera"	"Caenidae"	"Caenis"	"Caenis diminuta"
+"OTU955"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU1034"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU162_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Carposinidae"	"Carposina"	"Carposina paracrinifera"
-"OTU751_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Sarcoptiformes"	NA	NA	NA
+"OTU162"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Carposinidae"	"Carposina"	"Carposina paracrinifera"
+"OTU751"	"Animalia"	"Arthropoda"	"Arachnida"	"Sarcoptiformes"	NA	NA	NA
 "OTU1119"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU329_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU449_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU329"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU449"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU447"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU1160"	"Animalia"	"Arthropoda"	"Insecta"	"Dermaptera"	NA	NA	NA
 "OTU1491"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU131_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1565_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU401_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU683_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Carabidae"	"Mecyclothorax"	NA
-"OTU6_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Philodromidae"	"Philodromus"	NA
-"OTU708_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU840_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU89_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1028_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU131"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1565"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU401"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU683"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Carabidae"	"Mecyclothorax"	NA
+"OTU6"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Philodromidae"	"Philodromus"	NA
+"OTU708"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU840"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU89"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1028"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU506"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU1752"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1002_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1037_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Ptinidae"	"Dorcatoma"	"Dorcatoma setulosa"
-"OTU108_suspect_mock_variant"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Xenolechia"	"Xenolechia ontariensis"
-"OTU134_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Erioptera"	"Erioptera septemtrionis"
-"OTU139_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Cheilotrichia"	"Cheilotrichia stigmatica"
-"OTU1485_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Sphingidae"	"Ceratomia"	"Ceratomia undulosa"
-"OTU154_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Athous"	"Athous acanthus"
-"OTU1663_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Delphacidae"	"Delphacodes"	"Delphacodes detecta"
-"OTU1717_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Autostichidae"	"Gerdana"	"Gerdana caritella"
-"OTU171_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Lycosidae"	"Pirata"	"Pirata piraticus"
-"OTU174_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Eucopina"	"Eucopina cocana"
-"OTU1754_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU183_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Trichoptera"	"Limnephilidae"	"Nemotaulius"	"Nemotaulius hostilis"
-"OTU187_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Delphacidae"	"Delphacodes"	"Delphacodes detecta"
-"OTU189_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Euphylidorea"	"Euphylidorea luteola"
-"OTU192_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Sphingidae"	"Sphinx"	"Sphinx kalmiae"
-"OTU197_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1990_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU202_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Stratiomyidae"	"Odontomyia"	"Odontomyia cincta"
-"OTU204_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Metalimnobia"	"Metalimnobia triocellata"
-"OTU215_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Aphrophoridae"	"Aphrophora"	"Aphrophora cribrata"
-"OTU235_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Syrphidae"	"Lejops"	"Lejops curvipes"
-"OTU236_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Pseudexentera"	"Pseudexentera cressoniana"
-"OTU253_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Carabidae"	"Harpalus"	"Harpalus rufipes"
-"OTU260_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Blattodea"	"Ectobiidae"	"Parcoblatta"	NA
-"OTU261_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU262_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Eucosma"	"Eucosma parmatana"
-"OTU270_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Apamea"	"Apamea plutonia"
-"OTU273_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU276_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Metalimnobia"	"Metalimnobia immatura"
-"OTU288_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Pandemis"	"Pandemis limitata"
-"OTU312_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Olethreutes"	"Olethreutes fasciatana"
-"OTU316_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Delphacidae"	"Megamelus"	"Megamelus inflatus"
-"OTU350_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Pediciidae"	"Ula"	"Ula sylvatica"
-"OTU363_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gracillariidae"	"Neurobathra"	"Neurobathra strigifinitella"
-"OTU377_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Eucosma"	"Eucosma ochroterminana"
-"OTU387_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Ampedus"	"Ampedus melanotoides"
-"OTU394_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tabanidae"	"Chrysops"	"Chrysops flavidus"
-"OTU408_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU421_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Ceratopogonidae"	NA	NA
-"OTU422_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Pyralidae"	"Pococera"	"Pococera expandens"
-"OTU444_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Cenopis"	"Cenopis pettitana"
-"OTU448_suspect_mock_variant"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Clepsis"	"Clepsis peritana"
-"OTU456_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Autostichidae"	"Glyphidocera"	"Glyphidocera septentrionella"
-"OTU468_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Glauce"	"Glauce pectenalaeella"
-"OTU478_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Dichomeris"	"Dichomeris furia"
-"OTU479_suspect_mock_variant"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Sphingidae"	"Eumorpha"	"Eumorpha pandorus"
-"OTU497_suspect_mock_variant"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Culicidae"	"Aedes"	"Aedes cantator"
-"OTU502_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Larisa"	"Larisa subsolana"
-"OTU504_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Limacodidae"	"Euclea"	"Euclea delphinii"
-"OTU505_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gracillariidae"	"Caloptilia"	"Caloptilia bimaculatella"
-"OTU510_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Autostichidae"	"Taygete"	"Taygete attributella"
-"OTU528_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Cnephasia"	"Cnephasia stephensiana"
-"OTU558_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU609_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Cenopis"	"Cenopis diluticostana"
-"OTU624_suspect_mock_variant"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Xestia"	"Xestia c-nigrum"
-"OTU637_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU644_suspect_mock_variant"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Clepsis"	"Clepsis melaleucanus"
-"OTU682_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU689_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Cerambycidae"	"Astylopsis"	"Astylopsis sexguttata"
-"OTU738_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Ptilodactylidae"	"Ptilodactyla"	"Ptilodactyla serricollis"
-"OTU767_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Cerambycidae"	"Monochamus"	"Monochamus notatus"
-"OTU830_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU835_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Bryotropha"	"Bryotropha gemella"
-"OTU837_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU96_suspect_mock_variant"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Coleophoridae"	"Coleophora"	"Coleophora cratipennella"
-"OTU1780_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Xylena"	"Xylena cineritia"
-"OTU406_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Calliphoridae"	"Bellardia"	"Bellardia vulgaris"
-"OTU754_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Heteroceridae"	NA	NA
-"OTU843_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Psychodidae"	"Psychoda"	"Psychoda alternata"
+"OTU1002"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1037"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Ptinidae"	"Dorcatoma"	"Dorcatoma setulosa"
+"OTU108"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Xenolechia"	"Xenolechia ontariensis"
+"OTU134"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Erioptera"	"Erioptera septemtrionis"
+"OTU139"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Cheilotrichia"	"Cheilotrichia stigmatica"
+"OTU1485"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Sphingidae"	"Ceratomia"	"Ceratomia undulosa"
+"OTU154"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Athous"	"Athous acanthus"
+"OTU1663"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Delphacidae"	"Delphacodes"	"Delphacodes detecta"
+"OTU1717"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Autostichidae"	"Gerdana"	"Gerdana caritella"
+"OTU171"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Lycosidae"	"Pirata"	"Pirata piraticus"
+"OTU174"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Eucopina"	"Eucopina cocana"
+"OTU1754"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU183"	"Animalia"	"Arthropoda"	"Insecta"	"Trichoptera"	"Limnephilidae"	"Nemotaulius"	"Nemotaulius hostilis"
+"OTU187"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Delphacidae"	"Delphacodes"	"Delphacodes detecta"
+"OTU189"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Euphylidorea"	"Euphylidorea luteola"
+"OTU192"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Sphingidae"	"Sphinx"	"Sphinx kalmiae"
+"OTU197"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1990"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU202"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Stratiomyidae"	"Odontomyia"	"Odontomyia cincta"
+"OTU204"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Metalimnobia"	"Metalimnobia triocellata"
+"OTU215"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Aphrophoridae"	"Aphrophora"	"Aphrophora cribrata"
+"OTU235"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Syrphidae"	"Lejops"	"Lejops curvipes"
+"OTU236"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Pseudexentera"	"Pseudexentera cressoniana"
+"OTU253"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Carabidae"	"Harpalus"	"Harpalus rufipes"
+"OTU260"	"Animalia"	"Arthropoda"	"Insecta"	"Blattodea"	"Ectobiidae"	"Parcoblatta"	NA
+"OTU261"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU262"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Eucosma"	"Eucosma parmatana"
+"OTU270"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Apamea"	"Apamea plutonia"
+"OTU273"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
+"OTU276"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Metalimnobia"	"Metalimnobia immatura"
+"OTU288"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Pandemis"	"Pandemis limitata"
+"OTU312"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Olethreutes"	"Olethreutes fasciatana"
+"OTU316"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Delphacidae"	"Megamelus"	"Megamelus inflatus"
+"OTU350"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Pediciidae"	"Ula"	"Ula sylvatica"
+"OTU363"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gracillariidae"	"Neurobathra"	"Neurobathra strigifinitella"
+"OTU377"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Eucosma"	"Eucosma ochroterminana"
+"OTU387"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Ampedus"	"Ampedus melanotoides"
+"OTU394"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tabanidae"	"Chrysops"	"Chrysops flavidus"
+"OTU408"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU421"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Ceratopogonidae"	NA	NA
+"OTU422"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Pyralidae"	"Pococera"	"Pococera expandens"
+"OTU444"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Cenopis"	"Cenopis pettitana"
+"OTU448"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Clepsis"	"Clepsis peritana"
+"OTU456"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Autostichidae"	"Glyphidocera"	"Glyphidocera septentrionella"
+"OTU468"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Glauce"	"Glauce pectenalaeella"
+"OTU478"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Dichomeris"	"Dichomeris furia"
+"OTU479"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Sphingidae"	"Eumorpha"	"Eumorpha pandorus"
+"OTU497"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Culicidae"	"Aedes"	"Aedes cantator"
+"OTU502"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Larisa"	"Larisa subsolana"
+"OTU504"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Limacodidae"	"Euclea"	"Euclea delphinii"
+"OTU505"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gracillariidae"	"Caloptilia"	"Caloptilia bimaculatella"
+"OTU510"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Autostichidae"	"Taygete"	"Taygete attributella"
+"OTU528"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Cnephasia"	"Cnephasia stephensiana"
+"OTU558"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU609"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Cenopis"	"Cenopis diluticostana"
+"OTU624"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Xestia"	"Xestia c-nigrum"
+"OTU637"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU644"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Clepsis"	"Clepsis melaleucanus"
+"OTU682"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU689"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Cerambycidae"	"Astylopsis"	"Astylopsis sexguttata"
+"OTU738"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Ptilodactylidae"	"Ptilodactyla"	"Ptilodactyla serricollis"
+"OTU767"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Cerambycidae"	"Monochamus"	"Monochamus notatus"
+"OTU830"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU835"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Bryotropha"	"Bryotropha gemella"
+"OTU837"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU96"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Coleophoridae"	"Coleophora"	"Coleophora cratipennella"
+"OTU1780"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Xylena"	"Xylena cineritia"
+"OTU406"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Calliphoridae"	"Bellardia"	"Bellardia vulgaris"
+"OTU754"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Heteroceridae"	NA	NA
+"OTU843"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Psychodidae"	"Psychoda"	"Psychoda alternata"
 "OTU1644"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1632_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Clepsis"	"Clepsis persicana"
-"OTU380_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Depressariidae"	"Bibarrambla"	"Bibarrambla allenella"
-"OTU399_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Athous"	"Athous brightwelli"
-"OTU595_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Hydrophilidae"	"Hydrochara"	"Hydrochara obtusata"
-"OTU604_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU615_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Crambidae"	"Crambus"	"Crambus albellus"
-"OTU705_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Depressariidae"	"Semioscopis"	"Semioscopis packardella"
-"OTU1100_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Geometridae"	"Sicya"	"Sicya macularia"
-"OTU212_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Yponomeutidae"	"Swammerdamia"	"Swammerdamia caesiella"
-"OTU255_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU499_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Philodromidae"	"Philodromus"	"Philodromus praelustris"
-"OTU564_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU597_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Scirtidae"	"Cyphon"	NA
-"OTU610_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU611_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU646_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Hemicrepidius"	"Hemicrepidius hemipodus"
-"OTU727_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Blastobasidae"	"Hypatopa"	"Hypatopa vestaliella"
-"OTU736_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Cenopis"	"Cenopis directana"
-"OTU739_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Cydia"	"Cydia latiferreana"
-"OTU769_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Gymnandrosoma"	"Gymnandrosoma punctidiscanum"
+"OTU1632"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Clepsis"	"Clepsis persicana"
+"OTU380"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Depressariidae"	"Bibarrambla"	"Bibarrambla allenella"
+"OTU399"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Athous"	"Athous brightwelli"
+"OTU595"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Hydrophilidae"	"Hydrochara"	"Hydrochara obtusata"
+"OTU604"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU615"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Crambidae"	"Crambus"	"Crambus albellus"
+"OTU705"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Depressariidae"	"Semioscopis"	"Semioscopis packardella"
+"OTU1100"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Geometridae"	"Sicya"	"Sicya macularia"
+"OTU212"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Yponomeutidae"	"Swammerdamia"	"Swammerdamia caesiella"
+"OTU255"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU499"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Philodromidae"	"Philodromus"	"Philodromus praelustris"
+"OTU564"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU597"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Scirtidae"	"Cyphon"	NA
+"OTU610"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU611"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU646"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Hemicrepidius"	"Hemicrepidius hemipodus"
+"OTU727"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Blastobasidae"	"Hypatopa"	"Hypatopa vestaliella"
+"OTU736"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Cenopis"	"Cenopis directana"
+"OTU739"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Cydia"	"Cydia latiferreana"
+"OTU769"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Gymnandrosoma"	"Gymnandrosoma punctidiscanum"
 "OTU548"	"Animalia"	"Arthropoda"	"Malacostraca"	"Stomatopoda"	NA	NA	NA
 "OTU794"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU2290"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU1003_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Macrochilo"	"Macrochilo orciferalis"
-"OTU1102_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Olethreutes"	"Olethreutes appendiceum"
-"OTU1257_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Feralia"	"Feralia deceptiva"
-"OTU1342_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Melanotus"	NA
-"OTU1536_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tipulidae"	"Tipula"	"Tipula monticola"
-"OTU2260_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Melanotus"	NA
-"OTU367_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	NA	NA
-"OTU481_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tachinidae"	"Eutrixa"	"Eutrixa exilis"
-"OTU530_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Sarcophagidae"	NA	NA
-"OTU576_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Cerambycidae"	"Ecyrus"	"Ecyrus dasycerus"
-"OTU719_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Ancylis"	"Ancylis burgessiana"
-"OTU994_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1003"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Macrochilo"	"Macrochilo orciferalis"
+"OTU1102"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Olethreutes"	"Olethreutes appendiceum"
+"OTU1257"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Feralia"	"Feralia deceptiva"
+"OTU1342"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Melanotus"	NA
+"OTU1536"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tipulidae"	"Tipula"	"Tipula monticola"
+"OTU2260"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Melanotus"	NA
+"OTU367"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	NA	NA
+"OTU481"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tachinidae"	"Eutrixa"	"Eutrixa exilis"
+"OTU530"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Sarcophagidae"	NA	NA
+"OTU576"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Cerambycidae"	"Ecyrus"	"Ecyrus dasycerus"
+"OTU719"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Ancylis"	"Ancylis burgessiana"
+"OTU994"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU485"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	NA	NA	NA
 "OTU537"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU1090_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU446_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Orthoptera"	NA	NA	NA
-"OTU635_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU668_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Blastobasidae"	"Blastobasis"	"Blastobasis floridella"
-"OTU679_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Sesiidae"	"Synanthedon"	"Synanthedon acerni"
-"OTU688_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Agnippe"	"Agnippe prunifoliella"
-"OTU760_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Sphingidae"	"Paonias"	"Paonias myops"
-"OTU771_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Linyphiidae"	"Grammonota"	"Grammonota gigas"
-"OTU787_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Carabidae"	"Notiobia"	"Notiobia terminata"
-"OTU792_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tabanidae"	"Tabanus"	"Tabanus atratus"
-"OTU793_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Silphidae"	"Necrodes"	"Necrodes surinamensis"
-"OTU817_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU851_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Salticidae"	"Sitticus"	"Sitticus floricola"
-"OTU1745_suspect_mock_variant"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Carpatolechia"	"Carpatolechia fugitivella"
-"OTU618_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Mesostigmata"	NA	NA	NA
-"OTU1351_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU517_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU667_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion bilineatus"
-"OTU340_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Trichoptera"	"Philopotamidae"	"Chimarra"	"Chimarra socia"
-"OTU972_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tineidae"	"Acrolophus"	"Acrolophus arcanella"
+"OTU1090"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU446"	"Animalia"	"Arthropoda"	"Insecta"	"Orthoptera"	NA	NA	NA
+"OTU635"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU668"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Blastobasidae"	"Blastobasis"	"Blastobasis floridella"
+"OTU679"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Sesiidae"	"Synanthedon"	"Synanthedon acerni"
+"OTU688"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Agnippe"	"Agnippe prunifoliella"
+"OTU760"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Sphingidae"	"Paonias"	"Paonias myops"
+"OTU771"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Linyphiidae"	"Grammonota"	"Grammonota gigas"
+"OTU787"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Carabidae"	"Notiobia"	"Notiobia terminata"
+"OTU792"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tabanidae"	"Tabanus"	"Tabanus atratus"
+"OTU793"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Silphidae"	"Necrodes"	"Necrodes surinamensis"
+"OTU817"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU851"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Salticidae"	"Sitticus"	"Sitticus floricola"
+"OTU1745"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Carpatolechia"	"Carpatolechia fugitivella"
+"OTU618"	"Animalia"	"Arthropoda"	"Arachnida"	"Mesostigmata"	NA	NA	NA
+"OTU1351"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU517"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU667"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Ophion"	"Ophion bilineatus"
+"OTU340"	"Animalia"	"Arthropoda"	"Insecta"	"Trichoptera"	"Philopotamidae"	"Chimarra"	"Chimarra socia"
+"OTU972"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tineidae"	"Acrolophus"	"Acrolophus arcanella"
 "OTU1660"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Lycosidae"	"Piratula"	"Piratula insularis"
-"OTU1584_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU718_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Carpatolechia"	"Carpatolechia belangerella"
-"OTU744_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Blastobasidae"	"Blastobasis"	NA
-"OTU779_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Aphrophoridae"	"Aphrophora"	"Aphrophora parallella"
-"OTU1716_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	"Chironomus"	NA
-"OTU552_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Chionodes"	"Chionodes baro"
-"OTU617_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Epinotia"	"Epinotia demarniana"
-"OTU627_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	NA	NA
-"OTU876_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Crambidae"	"Crambus"	"Crambus saltuellus"
-"OTU957_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Apotomis"	"Apotomis sauciana"
+"OTU1584"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU718"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Carpatolechia"	"Carpatolechia belangerella"
+"OTU744"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Blastobasidae"	"Blastobasis"	NA
+"OTU779"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Aphrophoridae"	"Aphrophora"	"Aphrophora parallella"
+"OTU1716"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	"Chironomus"	NA
+"OTU552"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Chionodes"	"Chionodes baro"
+"OTU617"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Epinotia"	"Epinotia demarniana"
+"OTU627"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	NA	NA
+"OTU876"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Crambidae"	"Crambus"	"Crambus saltuellus"
+"OTU957"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Apotomis"	"Apotomis sauciana"
 "OTU525"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU724"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Dictynidae"	"Emblyna"	"Emblyna altamira"
 "OTU833"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU1175_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Ephemeroptera"	"Ephemeridae"	"Ephemera"	"Ephemera varia"
-"OTU1392_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Doryodes"	"Doryodes spadaria"
-"OTU1662_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1859_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Rhagionidae"	"Rhagio"	"Rhagio tringarius"
-"OTU1938_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chloropidae"	"Elachiptera"	NA
-"OTU389_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU649_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Chionodes"	"Chionodes obscurusella"
-"OTU662_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU670_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU917_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU919_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tipulidae"	"Dolichopeza"	"Dolichopeza obscura"
-"OTU956_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1234_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Miridae"	"Phytocoris"	"Phytocoris conspurcatus"
-"OTU1564_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Limonia"	"Limonia indigena"
-"OTU596_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Saturniidae"	"Dryocampa"	"Dryocampa rubicunda"
-"OTU854_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU991_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Apamea"	"Apamea dubitans"
-"OTU1157_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Coleophoridae"	"Coleophora"	"Coleophora tiliaefoliella"
-"OTU138_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Coleophoridae"	"Coleophora"	"Coleophora duplicis group"
-"OTU1475_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Carabidae"	"Amara"	"Amara musculis"
-"OTU1598_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Archips"	"Archips semiferana"
-"OTU3433_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tipulidae"	"Tipula"	"Tipula submaculata"
-"OTU789_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Dolichopodidae"	NA	NA
-"OTU983_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Mecoptera"	NA	NA	NA
+"OTU1175"	"Animalia"	"Arthropoda"	"Insecta"	"Ephemeroptera"	"Ephemeridae"	"Ephemera"	"Ephemera varia"
+"OTU1392"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Doryodes"	"Doryodes spadaria"
+"OTU1662"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1859"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Rhagionidae"	"Rhagio"	"Rhagio tringarius"
+"OTU1938"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chloropidae"	"Elachiptera"	NA
+"OTU389"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU649"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Chionodes"	"Chionodes obscurusella"
+"OTU662"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU670"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU917"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU919"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tipulidae"	"Dolichopeza"	"Dolichopeza obscura"
+"OTU956"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1234"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Miridae"	"Phytocoris"	"Phytocoris conspurcatus"
+"OTU1564"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Limonia"	"Limonia indigena"
+"OTU596"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Saturniidae"	"Dryocampa"	"Dryocampa rubicunda"
+"OTU854"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU991"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Apamea"	"Apamea dubitans"
+"OTU1157"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Coleophoridae"	"Coleophora"	"Coleophora tiliaefoliella"
+"OTU138"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Coleophoridae"	"Coleophora"	"Coleophora duplicis group"
+"OTU1475"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Carabidae"	"Amara"	"Amara musculis"
+"OTU1598"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Archips"	"Archips semiferana"
+"OTU3433"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tipulidae"	"Tipula"	"Tipula submaculata"
+"OTU789"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Dolichopodidae"	NA	NA
+"OTU983"	"Animalia"	"Arthropoda"	"Insecta"	"Mecoptera"	NA	NA	NA
 "OTU1066"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU1718"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU1559_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Mesoveliidae"	"Mesovelia"	"Mesovelia mulsanti"
-"OTU561_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU877_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Cossidae"	"Prionoxystus"	"Prionoxystus robiniae"
-"OTU1137_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU3851_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU638_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Hyposada"	"Hyposada hydrocampata"
-"OTU782_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU930_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU470_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU105_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1267_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1529_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU2030_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU275_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Braconidae"	"Meteorus"	NA
-"OTU278_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Lacinipolia"	"Lacinipolia sareta"
-"OTU417_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU507_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Stratiomyidae"	"Exaireta"	"Exaireta spinigera"
-"OTU729_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
-"OTU898_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU922_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Drepanidae"	"Pseudothyatira"	"Pseudothyatira cymatophoroides"
-"OTU1599_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Mantodea"	"Mantidae"	"Mantis"	"Mantis religiosa"
-"OTU1062_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Trichoptera"	"Limnephilidae"	NA	NA
-"OTU1440_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU334_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1123_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1613_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
-"OTU932_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1010_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Nitidulidae"	NA	NA
-"OTU251_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU454_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	NA	NA
-"OTU77_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU981_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1182_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1425_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Tenthredinidae"	"Nematus"	"Nematus oligospilus"
-"OTU824_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Cerambycidae"	NA	NA
-"OTU865_suspect_mock_variant"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Lithophane"	"Lithophane innominata"
-"OTU157_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Desidae"	"Badumna"	"Badumna longinqua"
+"OTU1559"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Mesoveliidae"	"Mesovelia"	"Mesovelia mulsanti"
+"OTU561"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU877"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Cossidae"	"Prionoxystus"	"Prionoxystus robiniae"
+"OTU1137"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU3851"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU638"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Hyposada"	"Hyposada hydrocampata"
+"OTU782"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU930"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU470"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU105"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1267"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1529"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU2030"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU275"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Braconidae"	"Meteorus"	NA
+"OTU278"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Lacinipolia"	"Lacinipolia sareta"
+"OTU417"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU507"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Stratiomyidae"	"Exaireta"	"Exaireta spinigera"
+"OTU729"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU898"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU922"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Drepanidae"	"Pseudothyatira"	"Pseudothyatira cymatophoroides"
+"OTU1599"	"Animalia"	"Arthropoda"	"Insecta"	"Mantodea"	"Mantidae"	"Mantis"	"Mantis religiosa"
+"OTU1062"	"Animalia"	"Arthropoda"	"Insecta"	"Trichoptera"	"Limnephilidae"	NA	NA
+"OTU1440"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU334"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1123"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1613"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
+"OTU932"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1010"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Nitidulidae"	NA	NA
+"OTU251"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU454"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	NA	NA
+"OTU77"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU981"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1182"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1425"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Tenthredinidae"	"Nematus"	"Nematus oligospilus"
+"OTU824"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Cerambycidae"	NA	NA
+"OTU865"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Lithophane"	"Lithophane innominata"
+"OTU157"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Desidae"	"Badumna"	"Badumna longinqua"
 "OTU396"	"Animalia"	"Arthropoda"	"Hexanauplia"	"Harpacticoida"	NA	NA	NA
-"OTU1268_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU988_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Scarabaeidae"	"Phyllophaga"	"Phyllophaga crenulata"
+"OTU1268"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU988"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Scarabaeidae"	"Phyllophaga"	"Phyllophaga crenulata"
 "OTU598"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Apidae"	"Apis"	"Apis mellifera"
-"OTU1168_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Braconidae"	NA	NA
-"OTU2574_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Ptilodactylidae"	"Ptilodactyla"	NA
-"OTU944_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Blastobasidae"	"Holcocera"	"Holcocera chalcofrontella"
-"OTU1130_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU1675_suspect_mock_variant"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Apantesis"	"Apantesis phalerata"
-"OTU213_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Gretchena"	"Gretchena delicatana"
-"OTU248_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU2097_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU746_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	NA	NA
-"OTU777_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Amorbia"	"Amorbia humerosana"
-"OTU3855_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Lacinipolia"	"Lacinipolia dimocki"
-"OTU457_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Vespidae"	"Vespula"	"Vespula pensylvanica"
-"OTU484_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Dysderidae"	"Dysdera"	"Dysdera crocata"
-"OTU540_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Malacostraca"	"Amphipoda"	NA	NA	NA
-"OTU185_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tachinidae"	NA	NA
-"OTU259_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tachinidae"	NA	NA
-"OTU335_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU74_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tachinidae"	"Chaetogaedia"	NA
+"OTU1168"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Braconidae"	NA	NA
+"OTU2574"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Ptilodactylidae"	"Ptilodactyla"	NA
+"OTU944"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Blastobasidae"	"Holcocera"	"Holcocera chalcofrontella"
+"OTU1130"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU1675"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Apantesis"	"Apantesis phalerata"
+"OTU213"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Gretchena"	"Gretchena delicatana"
+"OTU248"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU2097"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU746"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	NA	NA
+"OTU777"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Amorbia"	"Amorbia humerosana"
+"OTU3855"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Lacinipolia"	"Lacinipolia dimocki"
+"OTU457"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Vespidae"	"Vespula"	"Vespula pensylvanica"
+"OTU484"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Dysderidae"	"Dysdera"	"Dysdera crocata"
+"OTU540"	"Animalia"	"Arthropoda"	"Malacostraca"	"Amphipoda"	NA	NA	NA
+"OTU185"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tachinidae"	NA	NA
+"OTU259"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tachinidae"	NA	NA
+"OTU335"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU74"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tachinidae"	"Chaetogaedia"	NA
 "OTU1478"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU686_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Platygastridae"	NA	NA
+"OTU686"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Platygastridae"	NA	NA
 "OTU908"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Linyphiidae"	"Tenuiphantes"	"Tenuiphantes tenuis"
-"OTU175_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1217_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU155_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU321_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU372_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1218_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU97_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
+"OTU175"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1217"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU155"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU321"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU372"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1218"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU97"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU762"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU1091_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1184_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU336_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU542_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU844_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU963_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1091"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1184"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU336"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU542"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU844"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU963"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU371"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU388"	"Animalia"	"Arthropoda"	"Collembola"	"Entomobryomorpha"	NA	NA	NA
 "OTU476"	"Animalia"	"Arthropoda"	"Arachnida"	"Trombidiformes"	NA	NA	NA
 "OTU871"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Araneidae"	"Araneus"	"Araneus guttulatus"
 "OTU1053"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU1023_suspect_mock_variant"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Crambidae"	"Scoparia"	"Scoparia biplagialis"
-"OTU1029_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU1044_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1067_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	"Xenochironomus"	"Xenochironomus xenolabis"
-"OTU1077_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	"Ablabesmyia"	"Ablabesmyia americana"
-"OTU1107_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Pediciidae"	"Tricyphona"	"Tricyphona calcar"
-"OTU1110_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	"Dicrotendipes"	"Dicrotendipes modestus"
-"OTU1120_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	NA
-"OTU1126_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Hypena"	"Hypena baltimoralis"
-"OTU1136_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Geometridae"	"Venusia"	"Venusia pearsalli"
-"OTU1150_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Athous"	"Athous rufifrons"
-"OTU1196_suspect_mock_variant"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Eulepidotis"	"Eulepidotis juncida"
-"OTU122_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Trombidiformes"	"Pionidae"	"Forelia"	NA
-"OTU1251_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Orthoptera"	"Acrididae"	"Melanoplus"	"Melanoplus bivittatus"
-"OTU1253_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Acleris"	"Acleris variana"
-"OTU1413_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU1449_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU151_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU1577_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1801_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Coleotechnites"	"Coleotechnites atrupictella"
-"OTU181_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tipulidae"	"Tipula"	"Tipula oleracea"
-"OTU182_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Miridae"	"Phytocoris"	NA
-"OTU1896_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Cenopis"	"Cenopis reticulatana"
-"OTU194_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Ormosia"	"Ormosia affinis"
-"OTU198_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	NA	NA
-"OTU210_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Blastobasidae"	"Pigritia"	NA
-"OTU2234_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Trombidiformes"	"Pionidae"	"Forelia"	NA
-"OTU2295_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Crambidae"	"Microthyris"	"Microthyris prolongalis"
-"OTU231_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tachinidae"	"Lixophaga"	NA
-"OTU241_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	"Procladius"	"Procladius denticulatus"
-"OTU2568_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tipulidae"	"Tipula"	"Tipula entomophthorae"
-"OTU281_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Cicadidae"	"Diceroprocta"	"Diceroprocta semicincta"
-"OTU294_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU300_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	NA	NA
-"OTU317_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU324_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Ceratopogonidae"	"Forcipomyia"	NA
-"OTU342_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tipulidae"	"Nephrotoma"	"Nephrotoma ferruginea"
-"OTU359_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Leuconycta"	"Leuconycta lepidula"
-"OTU378_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Sciaridae"	NA	NA
-"OTU379_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Geometridae"	"Macaria"	"Macaria carpo"
-"OTU385_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	NA	NA
-"OTU386_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU409_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Derbidae"	"Apache"	"Apache degeerii"
-"OTU423_suspect_mock_variant"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Sphingidae"	"Eumorpha"	"Eumorpha vitis"
-"OTU440_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU443_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU450_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Diplopoda"	"Chordeumatida"	NA	NA	NA
-"OTU453_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU469_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Mesostigmata"	"Blattisociidae"	"Cheiroseius"	NA
-"OTU473_suspect_mock_variant"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Blastobasidae"	NA	NA
-"OTU474_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Caryocolum"	"Caryocolum pullatella"
-"OTU482_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	"Ablabesmyia"	NA
-"OTU483_suspect_mock_variant"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Xestia"	"Xestia baja"
-"OTU487_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Elephantomyia"	"Elephantomyia westwoodi"
-"OTU489_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	NA	NA
-"OTU492_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Melandryidae"	"Microtonus"	"Microtonus sericans"
-"OTU494_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Mycetophagidae"	"Litargus"	"Litargus tetraspilotus"
-"OTU498_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tachinidae"	"Strongygaster"	NA
-"OTU515_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Eucosma"	"Eucosma parmatana"
-"OTU519_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Carabidae"	"Calosoma"	NA
-"OTU526_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Euparthenos"	"Euparthenos nubilis"
-"OTU543_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU553_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Dicranophragma"	NA
-"OTU563_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU570_suspect_mock_variant"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Chionodes"	"Chionodes soter"
-"OTU572_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU584_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Apamea"	"Apamea devastator"
-"OTU585_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tipulidae"	"Tipula"	"Tipula hermannia"
-"OTU599_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Depressariidae"	"Antaeotricha"	NA
-"OTU622_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Depressariidae"	"Antaeotricha"	"Antaeotricha leucillana"
-"OTU650_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU671_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Latridiidae"	"Corticarina"	"Corticarina cavicollis"
-"OTU714_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Blattodea"	NA	NA	NA
-"OTU723_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tachinidae"	"Eucelatoria"	NA
-"OTU725_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU741_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Blastobasidae"	"Blastobasis"	"Blastobasis glandulella"
-"OTU743_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Ampedus"	"Ampedus pullus"
-"OTU758_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Neotelphusa"	"Neotelphusa querciella"
-"OTU766_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Idia"	"Idia rotundalis"
-"OTU770_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
-"OTU788_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Aphididae"	"Hyalopterus"	"Hyalopterus pruni"
-"OTU804_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Ampedus"	"Ampedus semicinctus"
-"OTU805_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Erioptera"	"Erioptera chlorophylla"
-"OTU812_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	NA	NA
-"OTU873_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Plecoptera"	"Nemouridae"	"Amphinemura"	"Amphinemura wui"
-"OTU883_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU947_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Trichoptera"	NA	NA	NA
-"OTU951_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Blattodea"	NA	NA	NA
-"OTU958_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Mycetophilidae"	"Mycetophila"	"Mycetophila signatoides"
-"OTU995_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Trichoptera"	"Limnephilidae"	"Ironoquia"	"Ironoquia punctatissima"
-"OTU997_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Autostichidae"	"Oegoconia"	"Oegoconia novimundi"
-"OTU283_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Elaphria"	"Elaphria nucicolora"
-"OTU692_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Curculionidae"	"Phyllobius"	"Phyllobius oblongus"
-"OTU717_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Mycetophilidae"	"Exechiopsis"	"Exechiopsis pulchella complex"
-"OTU764_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU864_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Syrphidae"	"Eristalinus"	"Eristalinus aeneus"
-"OTU1374_suspect_mock_variant"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Depressariidae"	"Agonopterix"	"Agonopterix pulvipennella"
-"OTU513_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU721_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Toxonprucha"	"Toxonprucha excavata"
-"OTU904_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Catabenoides"	"Catabenoides terminellus"
+"OTU1023"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Crambidae"	"Scoparia"	"Scoparia biplagialis"
+"OTU1029"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU1044"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1067"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	"Xenochironomus"	"Xenochironomus xenolabis"
+"OTU1077"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	"Ablabesmyia"	"Ablabesmyia americana"
+"OTU1107"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Pediciidae"	"Tricyphona"	"Tricyphona calcar"
+"OTU1110"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	"Dicrotendipes"	"Dicrotendipes modestus"
+"OTU1120"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Enicospilus"	NA
+"OTU1126"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Hypena"	"Hypena baltimoralis"
+"OTU1136"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Geometridae"	"Venusia"	"Venusia pearsalli"
+"OTU1150"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Athous"	"Athous rufifrons"
+"OTU1196"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Eulepidotis"	"Eulepidotis juncida"
+"OTU122"	"Animalia"	"Arthropoda"	"Arachnida"	"Trombidiformes"	"Pionidae"	"Forelia"	NA
+"OTU1251"	"Animalia"	"Arthropoda"	"Insecta"	"Orthoptera"	"Acrididae"	"Melanoplus"	"Melanoplus bivittatus"
+"OTU1253"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Acleris"	"Acleris variana"
+"OTU1413"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
+"OTU1449"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU151"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU1577"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1801"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Coleotechnites"	"Coleotechnites atrupictella"
+"OTU181"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tipulidae"	"Tipula"	"Tipula oleracea"
+"OTU182"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Miridae"	"Phytocoris"	NA
+"OTU1896"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Cenopis"	"Cenopis reticulatana"
+"OTU194"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Ormosia"	"Ormosia affinis"
+"OTU198"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	NA	NA
+"OTU210"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Blastobasidae"	"Pigritia"	NA
+"OTU2234"	"Animalia"	"Arthropoda"	"Arachnida"	"Trombidiformes"	"Pionidae"	"Forelia"	NA
+"OTU2295"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Crambidae"	"Microthyris"	"Microthyris prolongalis"
+"OTU231"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tachinidae"	"Lixophaga"	NA
+"OTU241"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	"Procladius"	"Procladius denticulatus"
+"OTU2568"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tipulidae"	"Tipula"	"Tipula entomophthorae"
+"OTU281"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Cicadidae"	"Diceroprocta"	"Diceroprocta semicincta"
+"OTU294"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU300"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	NA	NA
+"OTU317"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU324"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Ceratopogonidae"	"Forcipomyia"	NA
+"OTU342"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tipulidae"	"Nephrotoma"	"Nephrotoma ferruginea"
+"OTU359"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Leuconycta"	"Leuconycta lepidula"
+"OTU378"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Sciaridae"	NA	NA
+"OTU379"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Geometridae"	"Macaria"	"Macaria carpo"
+"OTU385"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	NA	NA
+"OTU386"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU409"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Derbidae"	"Apache"	"Apache degeerii"
+"OTU423"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Sphingidae"	"Eumorpha"	"Eumorpha vitis"
+"OTU440"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU443"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU450"	"Animalia"	"Arthropoda"	"Diplopoda"	"Chordeumatida"	NA	NA	NA
+"OTU453"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU469"	"Animalia"	"Arthropoda"	"Arachnida"	"Mesostigmata"	"Blattisociidae"	"Cheiroseius"	NA
+"OTU473"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Blastobasidae"	NA	NA
+"OTU474"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Caryocolum"	"Caryocolum pullatella"
+"OTU482"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	"Ablabesmyia"	NA
+"OTU483"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Xestia"	"Xestia baja"
+"OTU487"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Elephantomyia"	"Elephantomyia westwoodi"
+"OTU489"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	NA	NA
+"OTU492"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Melandryidae"	"Microtonus"	"Microtonus sericans"
+"OTU494"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Mycetophagidae"	"Litargus"	"Litargus tetraspilotus"
+"OTU498"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tachinidae"	"Strongygaster"	NA
+"OTU515"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Eucosma"	"Eucosma parmatana"
+"OTU519"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Carabidae"	"Calosoma"	NA
+"OTU526"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Euparthenos"	"Euparthenos nubilis"
+"OTU543"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU553"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Dicranophragma"	NA
+"OTU563"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU570"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Chionodes"	"Chionodes soter"
+"OTU572"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU584"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Apamea"	"Apamea devastator"
+"OTU585"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tipulidae"	"Tipula"	"Tipula hermannia"
+"OTU599"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Depressariidae"	"Antaeotricha"	NA
+"OTU622"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Depressariidae"	"Antaeotricha"	"Antaeotricha leucillana"
+"OTU650"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU671"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Latridiidae"	"Corticarina"	"Corticarina cavicollis"
+"OTU714"	"Animalia"	"Arthropoda"	"Insecta"	"Blattodea"	NA	NA	NA
+"OTU723"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tachinidae"	"Eucelatoria"	NA
+"OTU725"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU741"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Blastobasidae"	"Blastobasis"	"Blastobasis glandulella"
+"OTU743"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Ampedus"	"Ampedus pullus"
+"OTU758"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Neotelphusa"	"Neotelphusa querciella"
+"OTU766"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Idia"	"Idia rotundalis"
+"OTU770"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU788"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Aphididae"	"Hyalopterus"	"Hyalopterus pruni"
+"OTU804"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Ampedus"	"Ampedus semicinctus"
+"OTU805"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Limoniidae"	"Erioptera"	"Erioptera chlorophylla"
+"OTU812"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Cecidomyiidae"	NA	NA
+"OTU873"	"Animalia"	"Arthropoda"	"Insecta"	"Plecoptera"	"Nemouridae"	"Amphinemura"	"Amphinemura wui"
+"OTU883"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU947"	"Animalia"	"Arthropoda"	"Insecta"	"Trichoptera"	NA	NA	NA
+"OTU951"	"Animalia"	"Arthropoda"	"Insecta"	"Blattodea"	NA	NA	NA
+"OTU958"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Mycetophilidae"	"Mycetophila"	"Mycetophila signatoides"
+"OTU995"	"Animalia"	"Arthropoda"	"Insecta"	"Trichoptera"	"Limnephilidae"	"Ironoquia"	"Ironoquia punctatissima"
+"OTU997"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Autostichidae"	"Oegoconia"	"Oegoconia novimundi"
+"OTU283"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Elaphria"	"Elaphria nucicolora"
+"OTU692"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Curculionidae"	"Phyllobius"	"Phyllobius oblongus"
+"OTU717"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Mycetophilidae"	"Exechiopsis"	"Exechiopsis pulchella complex"
+"OTU764"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU864"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Syrphidae"	"Eristalinus"	"Eristalinus aeneus"
+"OTU1374"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Depressariidae"	"Agonopterix"	"Agonopterix pulvipennella"
+"OTU513"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU721"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Toxonprucha"	"Toxonprucha excavata"
+"OTU904"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Catabenoides"	"Catabenoides terminellus"
 "OTU1121"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU1429"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU1463"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU1165_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Miridae"	"Rhinacloa"	"Rhinacloa forticornis"
-"OTU1294_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Dichomeris"	"Dichomeris punctipennella"
-"OTU1319_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	"Tanytarsus"	"Tanytarsus mendax"
-"OTU1332_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1650_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Cisthene"	"Cisthene angelus"
-"OTU1664_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1677_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Mycetophilidae"	"Mycetophila"	"Mycetophila luctuosa"
-"OTU1707_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU879_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU897_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU953_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Ephemeroptera"	"Heptageniidae"	"Leucrocuta"	"Leucrocuta aphrodite"
+"OTU1165"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Miridae"	"Rhinacloa"	"Rhinacloa forticornis"
+"OTU1294"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Dichomeris"	"Dichomeris punctipennella"
+"OTU1319"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Chironomidae"	"Tanytarsus"	"Tanytarsus mendax"
+"OTU1332"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1650"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Erebidae"	"Cisthene"	"Cisthene angelus"
+"OTU1664"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1677"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Mycetophilidae"	"Mycetophila"	"Mycetophila luctuosa"
+"OTU1707"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
+"OTU879"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU897"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU953"	"Animalia"	"Arthropoda"	"Insecta"	"Ephemeroptera"	"Heptageniidae"	"Leucrocuta"	"Leucrocuta aphrodite"
 "OTU527"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU1122"	"Animalia"	"Arthropoda"	"Diplopoda"	"Julida"	NA	NA	NA
 "OTU1228"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
 "OTU1524"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU1092_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
-"OTU1111_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Crambidae"	"Pilocrocis"	"Pilocrocis calamistis"
-"OTU1131_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tineidae"	NA	NA
-"OTU1162_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Plecoptera"	NA	NA	NA
-"OTU1163_suspect_mock_variant"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Notodontidae"	"Porsica"	"Porsica acarodes"
-"OTU1382_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Ponometia"	"Ponometia bicolorata"
-"OTU539_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU582_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Cicadellidae"	"Neohecalus"	"Neohecalus lineatus"
-"OTU863_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gracillariidae"	"Caloptilia"	NA
-"OTU878_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Acronicta"	"Acronicta insularis"
-"OTU880_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU891_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Epinotia"	"Epinotia emarginana"
-"OTU998_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Blattodea"	NA	NA	NA
-"OTU1506_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
-"OTU1753_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1303_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Collembola"	"Symphypleona"	"Bourletiellidae"	"Deuterosminthurus"	NA
-"OTU1588_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1057_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1115_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Depressariidae"	"Machimia"	"Machimia tentoriferella"
-"OTU1227_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Scirtidae"	"Cyphon"	NA
-"OTU1456_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Trombidiformes"	NA	NA	NA
-"OTU3126_suspect_mock_variant"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Xestia"	"Xestia badicollis"
+"OTU1092"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
+"OTU1111"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Crambidae"	"Pilocrocis"	"Pilocrocis calamistis"
+"OTU1131"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tineidae"	NA	NA
+"OTU1162"	"Animalia"	"Arthropoda"	"Insecta"	"Plecoptera"	NA	NA	NA
+"OTU1163"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Notodontidae"	"Porsica"	"Porsica acarodes"
+"OTU1382"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Ponometia"	"Ponometia bicolorata"
+"OTU539"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU582"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Cicadellidae"	"Neohecalus"	"Neohecalus lineatus"
+"OTU863"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gracillariidae"	"Caloptilia"	NA
+"OTU878"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Acronicta"	"Acronicta insularis"
+"OTU880"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU891"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Epinotia"	"Epinotia emarginana"
+"OTU998"	"Animalia"	"Arthropoda"	"Insecta"	"Blattodea"	NA	NA	NA
+"OTU1506"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU1753"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1303"	"Animalia"	"Arthropoda"	"Collembola"	"Symphypleona"	"Bourletiellidae"	"Deuterosminthurus"	NA
+"OTU1588"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1057"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1115"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Depressariidae"	"Machimia"	"Machimia tentoriferella"
+"OTU1227"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Scirtidae"	"Cyphon"	NA
+"OTU1456"	"Animalia"	"Arthropoda"	"Arachnida"	"Trombidiformes"	NA	NA	NA
+"OTU3126"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Xestia"	"Xestia badicollis"
 "OTU797"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU354_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU354"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU1633"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU1340_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Dichomeris"	NA
-"OTU1578_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
-"OTU1699_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Bucculatricidae"	"Bucculatrix"	"Bucculatrix ainsliella"
+"OTU1340"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Gelechiidae"	"Dichomeris"	NA
+"OTU1578"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU1699"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Bucculatricidae"	"Bucculatrix"	"Bucculatrix ainsliella"
 "OTU648"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU1550"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1383_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1384_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tachinidae"	"Strongygaster"	NA
+"OTU1383"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1384"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Tachinidae"	"Strongygaster"	NA
 "OTU1370"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU839_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU839"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU1019"	"Animalia"	"Arthropoda"	"Insecta"	"Trichoptera"	NA	NA	NA
 "OTU1186"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
-"OTU1014_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Mycetophilidae"	"Mycomya"	NA
-"OTU1051_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Depressariidae"	"Depressaria"	"Depressaria depressana"
-"OTU1104_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Ancylis"	"Ancylis divisana"
-"OTU1434_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU818_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Silphidae"	"Nicrophorus"	"Nicrophorus orbicollis"
-"OTU1623_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1038_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
-"OTU1560_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU2057_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
-"OTU1052_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU538_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Cicadellidae"	"Empoasca"	"Empoasca decipiens"
-"OTU1197_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Horistonotus"	"Horistonotus fidelis"
-"OTU1237_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Chrysomelidae"	NA	NA
-"OTU1393_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Epinotia"	"Epinotia transmissana"
-"OTU1551_suspect_mock_variant"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Spodoptera"	"Spodoptera frugiperda"
-"OTU1720_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Ephemeroptera"	"Heptageniidae"	"Leucrocuta"	"Leucrocuta aphrodite"
-"OTU866_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	"Dasydemellidae"	"Teliapsocus"	NA
-"OTU899_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Carabidae"	"Laemostenus"	"Laemostenus complanatus"
-"OTU941_suspect_mock_variant"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Euxoa"	"Euxoa inconcinna"
-"OTU961_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU1014"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Mycetophilidae"	"Mycomya"	NA
+"OTU1051"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Depressariidae"	"Depressaria"	"Depressaria depressana"
+"OTU1104"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Ancylis"	"Ancylis divisana"
+"OTU1434"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU818"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Silphidae"	"Nicrophorus"	"Nicrophorus orbicollis"
+"OTU1623"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1038"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU1560"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU2057"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU1052"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU538"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Cicadellidae"	"Empoasca"	"Empoasca decipiens"
+"OTU1197"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Elateridae"	"Horistonotus"	"Horistonotus fidelis"
+"OTU1237"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Chrysomelidae"	NA	NA
+"OTU1393"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Tortricidae"	"Epinotia"	"Epinotia transmissana"
+"OTU1551"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Spodoptera"	"Spodoptera frugiperda"
+"OTU1720"	"Animalia"	"Arthropoda"	"Insecta"	"Ephemeroptera"	"Heptageniidae"	"Leucrocuta"	"Leucrocuta aphrodite"
+"OTU866"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	"Dasydemellidae"	"Teliapsocus"	NA
+"OTU899"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Carabidae"	"Laemostenus"	"Laemostenus complanatus"
+"OTU941"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Noctuidae"	"Euxoa"	"Euxoa inconcinna"
+"OTU961"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
 "OTU177"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU1448"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU1087_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1124_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
-"OTU1174_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1287_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU1619_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU254_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU2906_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU382_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU3880_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU477_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU512_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU529_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU594_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU696_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU699_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU755_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Linyphiidae"	"Erigone"	NA
-"OTU875_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU901_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU905_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
-"OTU914_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU93_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
-"OTU1050_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Xyloryctidae"	"Tymbophora"	"Tymbophora peltastis"
-"OTU110_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Neuroptera"	NA	NA	NA
-"OTU1394_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Blattodea"	NA	NA	NA
-"OTU535_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	NA	NA	NA
-"OTU653_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Mantodea"	NA	NA	NA
-"OTU765_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	NA	NA	NA
-"OTU86_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU923_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU950_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	NA	NA	NA
+"OTU1087"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1124"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
+"OTU1174"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1287"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU1619"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU254"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU2906"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU382"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU3880"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU477"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU512"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU529"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU594"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU696"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU699"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU755"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Linyphiidae"	"Erigone"	NA
+"OTU875"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU901"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU905"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
+"OTU914"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU93"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
+"OTU1050"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Xyloryctidae"	"Tymbophora"	"Tymbophora peltastis"
+"OTU110"	"Animalia"	"Arthropoda"	"Insecta"	"Neuroptera"	NA	NA	NA
+"OTU1394"	"Animalia"	"Arthropoda"	"Insecta"	"Blattodea"	NA	NA	NA
+"OTU535"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	NA	NA	NA
+"OTU653"	"Animalia"	"Arthropoda"	"Insecta"	"Mantodea"	NA	NA	NA
+"OTU765"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	NA	NA	NA
+"OTU86"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU923"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU950"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	NA	NA	NA
 "OTU1045"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU1011"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU1055_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
-"OTU1688_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Carabidae"	"Chlaenius"	"Chlaenius sericeus"
-"OTU620_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
-"OTU2175_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Schreckensteiniidae"	"Schreckensteinia"	"Schreckensteinia festaliella"
-"OTU225_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
+"OTU1055"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU1688"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	"Carabidae"	"Chlaenius"	"Chlaenius sericeus"
+"OTU620"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
+"OTU2175"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Schreckensteiniidae"	"Schreckensteinia"	"Schreckensteinia festaliella"
+"OTU225"	"Animalia"	"Arthropoda"	"Insecta"	NA	NA	NA	NA
 "OTU1376"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
-"OTU38_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU806_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU38"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU806"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU2407"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
 "OTU1140"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU1666"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU420_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1430_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	"Psocidae"	"Ptycta"	"Ptycta polluta"
-"OTU292_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU257_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
-"OTU735_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Braconidae"	"Meteorus"	"Meteorus pulchricornis"
-"OTU1070_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Theridiidae"	"Cryptachaea"	"Cryptachaea blattea"
-"OTU1689_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU68_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Pentatomidae"	"Nezara"	"Nezara viridula"
-"OTU1036_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
-"OTU1275_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1080_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Aphididae"	"Wahlgreniella"	"Wahlgreniella vaccinii"
-"OTU173_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU420"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1430"	"Animalia"	"Arthropoda"	"Insecta"	"Psocodea"	"Psocidae"	"Ptycta"	"Ptycta polluta"
+"OTU292"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU257"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	NA	NA	NA
+"OTU735"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Braconidae"	"Meteorus"	"Meteorus pulchricornis"
+"OTU1070"	"Animalia"	"Arthropoda"	"Arachnida"	"Araneae"	"Theridiidae"	"Cryptachaea"	"Cryptachaea blattea"
+"OTU1689"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU68"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Pentatomidae"	"Nezara"	"Nezara viridula"
+"OTU1036"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
+"OTU1275"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1080"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	"Aphididae"	"Wahlgreniella"	"Wahlgreniella vaccinii"
+"OTU173"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
 "OTU304"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
 "OTU393"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU411"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
 "OTU740"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	"Ichneumonidae"	"Triclistus"	NA
 "OTU1554"	"Animalia"	"Arthropoda"	"Insecta"	"Hemiptera"	NA	NA	NA
-"OTU1065_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1006_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1027_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1203_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU128_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Geometridae"	"Digrammia"	"Digrammia excurvata"
-"OTU1395_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1500_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
-"OTU1507_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
-"OTU179_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
-"OTU534_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Sciaridae"	"Hyperlasion"	NA
-"OTU698_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU713_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU1731_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
-"OTU133_suspect_mock_chimera"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Drosophilidae"	"Drosophila"	"Drosophila simulans"
+"OTU1065"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1006"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1027"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1203"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU128"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	"Geometridae"	"Digrammia"	"Digrammia excurvata"
+"OTU1395"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1500"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	NA	NA	NA
+"OTU1507"	"Animalia"	"Arthropoda"	"Insecta"	"Coleoptera"	NA	NA	NA
+"OTU179"	"Animalia"	"Arthropoda"	"Insecta"	"Hymenoptera"	NA	NA	NA
+"OTU534"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Sciaridae"	"Hyperlasion"	NA
+"OTU698"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU713"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU1731"	"Animalia"	"Arthropoda"	"Insecta"	"Lepidoptera"	NA	NA	NA
+"OTU133"	"Animalia"	"Arthropoda"	"Insecta"	"Diptera"	"Drosophilidae"	"Drosophila"	"Drosophila simulans"
