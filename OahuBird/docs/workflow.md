@@ -35,11 +35,11 @@ A virtual environment was created when completing the installation process. _Rec
 
 Initial installation proceeded as described in Jon's suggested [installation guide](http://amptk.readthedocs.io/en/latest/#install).  
 > A note about versions - in addition to the core Python scripts comprising `amptk`, several dependencies were also installed. Versions used in this analysis include:
-- amptk v. 1.1.0
+- amptk v. 1.1.3-36d7eda
 - usearch9 v9.2.64_i86linux32
 - usearch10 v10.0.240_i86linux32
 - vsearch v2.6.2_linux_x86_64
-- remaining python modules and R dependencies were installed via Conda (upgrade/updates with `pip` and/or `conda` performed 5-Mar-2017); install commands were:  
+- remaining python modules and R dependencies were installed via Conda (upgrade/updates with `pip` and/or `conda` performed 16-Mar-2018); install commands were:  
 
 Installation of Python and R dependencies were performed within the virtual environment created:  
 ```

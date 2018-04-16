@@ -104,3 +104,22 @@ Remove the unwanted `.txt` files from the directory and you're ready to start wi
 ```
 rm *.txt
 ```
+
+
+# renaming Cobb raw.fq files for small project
+An earlier sequencing effort was undertaken for this project; these samples were not included in the currently described analysis, but were renamed nonetheless as follows:
+
+```
+rename -n asc_ asc- *.gz
+rename mock_IM3 mock-IM3 *.gz
+find . -name "*.gz" | sort | sed -e 's|^\./||' > raw_filelist.txt
+cut -d '_' -f 2- raw_filelist.txt > wantedc2.txt
+## added wanted metadata names to wantedc0.txt
+nano wantedc0.txt ## then pasted wanted metadata names from metadata.csv file
+while read line; do for i in {1..2}; do echo "$line"; done; done < wantedc0.txt > wantedc1.txt
+paste wantedc1.txt wantedc2.txt -d '_' > wantedlist.txt
+paste raw_filelist.txt wantedlist.txt > final_filelist.txt
+mv _CGAGAGTT-CGTTACTA_L002_R1_001.fastq.gz mockIM3_CGAGAGTT-CGTTACTA_L002_R1_001.fastq.gz
+mv  p_CGAGAGTT-CGTTACTA_L002_R2_001.fastq.gz mockIM3_CGAGAGTT-CGTTACTA_L002_R2_001.fastq.gz
+re name NTC_ NTC- *
+```

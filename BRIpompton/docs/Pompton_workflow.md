@@ -7,28 +7,53 @@ Avian fecal samples were collected by Biodiversity Research Institute staff, led
 COI amplicons were selectively amplified from the extracted and cleaned avian fecal DNA using custom primers adapted from Jusino 2017 (see preprint [here] (DOI: 10.7287/peerj.preprints.3184v1)); the key modification is that my design incorporates the entire Illumina adapter, barcode, pad, and linker, plus the COI primer sequence into a single oligo, rather than employing a 2-step process of COI PCR and subsequent adapter ligation. PCR products were pooled in equimolar fashion except when concentrations fell below 1.0 nM; those samples for which there was less than that mass of DNA were pooled with a maximum of 20 uL per sample. The subsequent pool was then filtered using the QiaQuick PCR cleanup spin column. The library was then submitted to Hubbard Center for Genome Studies at the University of New Hampshire.
 
 ## sequencing at UNH
-The pooled library of COI amplicons were sequenced using a HiSeq 2500 platform following 250 bp PE sequencing using V3 chemistry set for a Rapid run on March 1, 2018. Raw numbers of reads and general run metrics are available to view from [this link](http://cobb.unh.edu/180302_orourke_P11_2_B_DemuxStats.html). Though it was not intended, the single library of pooled samples was spiked in on two lanes (we requested just one); thus there was about twice the expected number of sequences generated - these files were initially processed separately in the `amptk illumina` pre-processing step (see below), but combined thereafter when conducting clustering and taxonomic assignment, as these two lanes of data are essentially technical replicates and we can assume contain the same information.  
+The pooled library of COI amplicons were sequenced using a HiSeq 2500 platform following 250 bp PE sequencing using V3 chemistry set for a Rapid run on March 1, 2018. Raw numbers of reads and general run metrics are available to view from [this link](http://cobb.unh.edu/180302_orourke_P11_2_B_DemuxStats.html). Though it was not intended, the single library of pooled samples was spiked in on two separate lanes (we requested just one); thus there was about twice the expected number of sequences generated - reads of each sample among the two lanes were combined and renamed [described here](https://github.com/devonorourke/guano/blob/master/BRIpompton/docs/pompton-rename.md). These raw combined reads were then trimmed and quality filtered, clustered, and assigned taxonomy through the `amptk` pipeline described below.  
 
 About 6.1 million reads were generated across 105 samples. The positive control (mock community) spike in was well balanced (containing about 30,000 reads), with DNA extraction negative controls showing among the lowest read counts (~ 2000) and the PCR negative demonstrating zero reads. The true samples comprised the majority of the sequence data, with about 98.7% of all data dedicated to bird fecal samples.  
 
-# amptk pipeline
+## Creating the working environment for `amptk`
+```
+conda create -n amptk python=3.6 biopython natsort pandas numpy matplotlib seaborn python-edlib edlib biom-format psutil
+source activate amptk
 
-[amptk](https://github.com/nextgenusfs/amptk) is a bioinformatic toolkit which performs all necessary tasks beginning with quality and adapter trimming of raw reads, clustering OTUs, denoising and chimera detection, through to assigning taxonomy to each identified cluster and generating (among other outputs) the list of per-sample taxa represented in the dataset. A full documentation of available parameters used for the program are [detailed here](http://amptk.readthedocs.io/en/latest/index.html).
+conda install -c bioconda vsearch
+conda install r-base bioconductor-dada2
+conda install r-base bioconductor-phyloseq
+conda install r-tidyverse
 
-A virtual environment was created when completing the installation process. _Recall that `amptk` is written in Python2, not Python3_. Initiall installation proceeded as described in Jon's suggested installation guide.  
+R
+install.packages('devtools')
+library('devtools')
+# did not run: install_github("tobiasgf/lulu")
+q()
 
-> A note about versions - in addition to the core Python scripts comprising `amptk`, several dependencies were also installed. Versions used in this analysis include:
-- amptk v. 1.1.0
+git clone https://github.com/nextgenusfs/amptk.git
+cd $HOME/bin
+ln -s /mnt/lustre/macmaneslab/devon/pkgs/amptk/bin/amptk .
+```
+
+The current versions among the core programs used in the `amptk` pipleine are as follows:
+- amptk v. 1.1.3-36d7eda
 - usearch9 v9.2.64_i86linux32
 - usearch10 v10.0.240_i86linux32
-- vsearch v2.6.2_linux_x86_64
-- remaining python modules and R dependencies were installed via Conda (upgrade/updates with `pip` and/or `conda` performed 5-Mar-2017); install commands were:  
+- vsearch  v2.7.0_linux_x86_64
 
+Remaining python modules and R dependencies were installed via Conda (upgrade/updates with `pip` and/or `conda` performed 13-April-2018); install commands were:
 ```
 pip install -U -I biopython natsort pandas numpy matplotlib seaborn edlib biom-format psutil
 conda install r-base bioconductor-dada2
 conda install r-base bioconductor-dada2
 ```  
+
+The environment was activated as: `source activate amptk`. All bioinformatic processes described below occurred within this virtual environment.  
+
+# amptk pipeline
+
+[amptk](https://github.com/nextgenusfs/amptk) is a bioinformatic toolkit which performs all necessary tasks beginning with quality and adapter trimming of raw reads, clustering OTUs, denoising and chimera detection, through to assigning taxonomy to each identified cluster and generating (among other outputs) the list of per-sample taxa represented in the dataset. A full documentation of available parameters used for the program are [detailed here](http://amptk.readthedocs.io/en/latest/index.html).
+
+A virtual environment was created when completing the installation process. Note that recent versions of `amptk` are now compatible with Python3, thus a virtual environment was created with that Python version to reflect the change.
+
+
 
 ## adapter trimming and PE merging
 
