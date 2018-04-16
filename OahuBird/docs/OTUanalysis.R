@@ -292,7 +292,10 @@ master.df <- read.csv('https://raw.githubusercontent.com/devonorourke/guano/mast
 plot.df <- master.df
 plot.df$Counter <- "1"
 
-## 0) by 'Source', mashing together all bird species
+## 0) FIX THESE THREE PLOTS (MISSING 2 WHEN PROGRAM CRASHED) - LOOK TO GITHUB
+## FIRST PLOT SHOULD BE JUST BIRD V. VEG
+## SECOND PLOT IS BIRD ONLY, NO VEG, BUT NEED A NEW plyr TABLE AND JUST RAW COUNTS; NEED plyr TABLE TO INCLUDE ENDEMISM IN 'COUNTS' FOR THIRD PLOT
+## THIRD PLOT IS BIRD ONLY BUT FACETED BY ENDEMISM
 library(plyr)
 detach("package:dplyr", unload=TRUE)
 freqOrders <- count(plot.df, vars = c("SampleType", "order_name"))
@@ -435,11 +438,10 @@ o2 <- ggplot(ord.df) +
 o2
 
 ## a related attmept from this site:https://jonlefcheck.net/2012/10/24/nmds-tutorial-in-r/comment-page-1/
-ordiplot(example_NMDS,type="n")
-ordihull(example_NMDS,groups=treat,draw="polygon",col="grey90",label=F)
-orditorp(example_NMDS,display="species",col="red",air=0.01)
-orditorp(example_NMDS,display="sites",col=c(rep("green",5),rep("blue",5)),
-         air=0.01,cex=1.25)
+ordiplot(NMDSraup,type="n")
+with(ord.df, ordihull(NMDSraup,groups=Endemism,draw="polygon",col=c("grey90", "blue"),label=F,alpha = 0.3))
+with(ord.df, orditorp(NMDSraup,display="sites",col="red",air=0.01))
+with(ord.df, orditorp(NMDSraup,display="species",col=c(rep("green",5),rep("blue",5)),air=0.01,cex=1.25))
 
 
 
