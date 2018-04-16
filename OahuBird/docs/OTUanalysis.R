@@ -288,14 +288,12 @@ write.csv(OTUperSampleType, "OTU_per_SampleType.csv", row.names = F, quote = F)
               ######     Part 5a - taxa sampled viz     ######
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 ## make a few plots showing the number of counts observed by taxonomic Order
+setwd("~/Repos/guano/OahuBird/data/Routput/")
 master.df <- read.csv('https://raw.githubusercontent.com/devonorourke/guano/master/OahuBird/data/Routput/master.csv', header = T)
 plot.df <- master.df
 plot.df$Counter <- "1"
+rm(master.df)
 
-## 0) FIX THESE THREE PLOTS (MISSING 2 WHEN PROGRAM CRASHED) - LOOK TO GITHUB
-## FIRST PLOT SHOULD BE JUST BIRD V. VEG
-## SECOND PLOT IS BIRD ONLY, NO VEG, BUT NEED A NEW plyr TABLE AND JUST RAW COUNTS; NEED plyr TABLE TO INCLUDE ENDEMISM IN 'COUNTS' FOR THIRD PLOT
-## THIRD PLOT IS BIRD ONLY BUT FACETED BY ENDEMISM
 library(plyr)
 detach("package:dplyr", unload=TRUE)
 freqOrders <- count(plot.df, vars = c("SampleType", "order_name"))
@@ -307,6 +305,7 @@ oBSTveg <- filter(freqOrders, SampleType == "Veg")
 vegobs<- sum(oBSTveg$freq) ## 1476 observations
 oBSTveg$percObs <- (oBSTveg$freq)/vegobs*100
 freqOrders <- rbind(oBSTbird, oBSTveg)
+rm(oBSTbird, oBSTveg, birdobs, vegobs)
 
 length(unique(freqOrders$order_name))  # we have 28 unique things to shade, including the 'NA' values
 tol28rainbow= c("#771155", "#AA4488", "#CC99BB", "#f7e9f7",
@@ -328,17 +327,95 @@ ggplot(freqOrders, aes(x = factor(SampleType), y = percObs, fill = order_name)) 
   guides(fill = guide_legend(title = "Taxonomic Order", ncol = 2, keywidth = 2, keyheight = 2)) +
   theme(legend.position = "right", axis.text.y=element_blank(), axis.ticks.y = element_blank())
       
+rm(freqOrders)
+## 1) by 'SampleSpecies', birds ONLY
+detach("package:dplyr", unload=TRUE)
+library(plyr)
+freq_bySpeciesOrders <- count(plot.df, vars = c("SampleType", "order_name", "SampleSpecies", "Endemism"))
+library(dplyr)
+oBSTbird <- filter(freq_bySpeciesOrders, SampleType == "Bird", Endemism != "unknown")
+length(unique(freq_bySpeciesOrders$order_name))  # we have 28 unique things to shade again; use same plot
 
-## 1) by 'BirdSpecies', faceting by Source
-## 2) by 'BirdSpecies', with no veg plotted
+ggplot(oBSTbird, aes(x = factor(SampleSpecies), y = freq, fill = order_name)) +  
+  geom_bar(stat = "identity") + 
+  scale_fill_manual(values = tol28rainbow, na.value="black") +
+  labs(title = "Observed detections of taxonomic Orders among Hawaiian bird species' guano",
+       subtitle = "Taxonomic order defined using approaches described in 'amptk' bioinformatic pipeline\n using Barcode of Life Database references",
+       x = "Bird Species",
+       y = "Number of times taxonomic Order detected") +
+  guides(fill = guide_legend(title = "Taxonomic Order", ncol = 2, keywidth = 2, keyheight = 2)) +
+  theme(legend.position = "right", axis.text.y=element_blank(), axis.ticks.y = element_blank())
 
-## for (0):
+## 2) by 'SampleSpecies', faceted by 'SampleType'
+ggplot(freq_bySpeciesOrders, aes(x = factor(SampleSpecies), y = freq, fill = order_name)) +  
+  geom_bar(stat = "identity") + 
+  scale_fill_manual(values = tol28rainbow, na.value="black") +
+  facet_grid(~ SampleType,  scales = "free_x", space = "free") +
+  theme(panel.spacing = unit(2, "lines")) +
+  labs(title = "Observed detections of taxonomic Orders among Hawaiian bird species guano",
+       subtitle = "Taxonomic order defined using approaches described in 'amptk' bioinformatic pipeline\n using Barcode of Life Database references",
+       x = "Bird Species",
+       y = "Number of times taxonomic Order detected") +
+  guides(fill = guide_legend(title = "Taxonomic Order", ncol = 2, keywidth = 2, keyheight = 2)) +
+  theme(legend.position = "right", axis.text.y=element_blank(), axis.ticks.y = element_blank())
 
 
-order0 <- ggplot(plot.df, aes(x = SampleType))
-order0 + geom_bar(aes(fill = order_name)) +
-  scale_fill_manual(values = tol28rainbow)
+## 3) by 'SampleType' specific to just 3 bird species in both native/exotic 'Endemism' factors, faceted by 'Endemism'
 
+tmp1 <- subset(freq_bySpeciesOrders, SampleSpecies %in% targetSamples)
+tmp2 <- subset(tmp1, Endemism != "unknown")
+library(dplyr)
+
+rbleNative <- filter(tmp2, SampleSpecies == "RBLE", Endemism == "Native")
+rbleNative_count <- sum(rbleNative$freq)
+rbleNative$percObs <- (rbleNative$freq)/rbleNative_count*100
+rbleExotic <- filter(tmp2, SampleSpecies == "RBLE", Endemism == "Exotic")
+rbleExotic_count <- sum(rbleExotic$freq)
+rbleExotic$percObs <- (rbleExotic$freq)/rbleExotic_count*100
+
+jabwNative <- filter(tmp2, SampleSpecies == "JABW", Endemism == "Native")
+jabwNative_count <- sum(jabwNative$freq)
+jabwNative$percObs <- (jabwNative$freq)/jabwNative_count*100
+jabwExotic <- filter(tmp2, SampleSpecies == "JABW", Endemism == "Exotic")
+jabwExotic_count <- sum(jabwExotic$freq)
+jabwExotic$percObs <- (jabwExotic$freq)/jabwExotic_count*100
+
+jaweNative <- filter(tmp2, SampleSpecies == "JAWE", Endemism == "Native")
+jaweNative_count <- sum(jaweNative$freq)
+jaweNative$percObs <- (jaweNative$freq)/jaweNative_count*100
+jaweExotic <- filter(tmp2, SampleSpecies == "JAWE", Endemism == "Exotic")
+jaweExotic_count <- sum(jaweExotic$freq)
+jaweExotic$percObs <- (jaweExotic$freq)/jaweExotic_count*100
+
+
+tmp3 <- rbind(rbleNative, rbleExotic,
+              jabwNative, jabwExotic,
+              jaweNative, jaweExotic)
+
+length(unique(tmp3$order_name))   ## missing 3 kinds of orders; make new palette to maintain similar color scheme
+unique(tmp3$order_name)
+levels(plot.df$order_name)
+## dropping numbers 6, 22, and 25 from original palette: 
+
+tol25rainbow= c("#771155", "#AA4488", "#CC99BB", "#f7e9f7",
+                "#114477", "#77AADD", "#e2effd",
+                "#117777", "#44AAAA", "#77CCCC", "#d9f0f0",
+                "#117744", "#44AA77", "#88CCAA", "#e0f0e6",
+                "#777711", "#AAAA44", "#DDDD77", "#eaeedf",
+                "#774411", "#DDAA77", "#f6ebdd",
+                "#AA4455", "#DD7788", "#fee8e3")
+
+ggplot(data=tmp3, aes(x = factor(SampleSpecies), y = percObs, fill = order_name)) +  
+  geom_bar(stat = "identity") + 
+  scale_fill_manual(values = tol25rainbow, na.value="black") +
+  facet_grid(~ Endemism,  scales = "free_x", space = "free") +
+  theme(panel.spacing = unit(2, "lines")) +
+  labs(title = "Relative proportions of detections of taxonomic Orders among Hawaiian bird species guano",
+       subtitle = "Taxonomic order defined using approaches described in 'amptk' bioinformatic pipeline\n using Barcode of Life Database references",
+       x = "Bird Species",
+       y = "Percent of taxonomic Order detected") +
+  guides(fill = guide_legend(title = "Taxonomic Order", ncol = 2, keywidth = 2, keyheight = 2)) +
+  theme(legend.position = "right", axis.text.y=element_blank(), axis.ticks.y = element_blank())
 
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
               ######     Part 5b - ordination viz     ######
