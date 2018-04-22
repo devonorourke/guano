@@ -1,6 +1,6 @@
 ## Background
 
-All files created for joint project with the Foster and Biodiversity Research Institute (BRI). See [BRIpompton_workflow.md](https://github.com/devonorourke/guano/blob/master/BRIpompton/BRIpompton_workflow.md) for details describing molecular and bioinformatic processes applied to sequence data. Contact [devon.orourke@gmail.com](mailto:devon.orourke@gmail.com) with questions.  
+All files created for joint project with the Foster and Biodiversity Research Institute (BRI). See [BRIpompton_workflow.md](https://github.com/devonorourke/guano/blob/master/BRIpompton/docs/Pompton_workflow.md) for details describing molecular and bioinformatic processes applied to sequence data. Contact [devon.orourke@gmail.com](mailto:devon.orourke@gmail.com) with questions.  
 
 ---
 
