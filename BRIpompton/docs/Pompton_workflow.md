@@ -51,21 +51,15 @@ The environment was activated as: `source activate amptk`. All bioinformatic pro
 
 [amptk](https://github.com/nextgenusfs/amptk) is a bioinformatic toolkit which performs all necessary tasks beginning with quality and adapter trimming of raw reads, clustering OTUs, denoising and chimera detection, through to assigning taxonomy to each identified cluster and generating (among other outputs) the list of per-sample taxa represented in the dataset. A full documentation of available parameters used for the program are [detailed here](http://amptk.readthedocs.io/en/latest/index.html).
 
-A virtual environment was created when completing the installation process. Note that recent versions of `amptk` are now compatible with Python3, thus a virtual environment was created with that Python version to reflect the change.
+As noted above, a similarly named virtual environment "`amptk`" was created when completing the installation process. Note that recent versions of `amptk` are now compatible with Python3, thus a virtual environment was created with that Python version to reflect the change.  
 
+The following sections reflect the basic outlines of the scripts used to execute the `amptk` commands. However, as these jobs were submitted through a compute cluster they do not reflect the entirety of the script. See the [scripts](https://github.com/devonorourke/guano/tree/master/BRIpompton/scripts) directory for full details of each script employed.
 
+Finally, though not implied in either the script nor in the code blocks below, child directories were created for each `amptk` process within the parent directory for this process (for example, the raw .fastq files are in `../project/fqraw`, the output of `amptk illumina` reside within `../project/illumina`, the output from the `amptk taxonomy` commands reside within `../project/taxonomy`, etc.).  
 
 ## adapter trimming and PE merging
 
-The first step in the pipeline trims adapters (as a result of the insert length being less than the read length) and then uses USEARCH to merge paired end reads. Orphaned reads are discarded (this typically accounts for less then 2% of the overall number or reads in a sample). A single **.fastq.gz** file is output by concatenating all the individual paired reads with headers modified to specify the sample name. In addition, the **.amptk-demux.log** file documents the proportion of merged reads per sample. These ranged from the high end (~3.5 million; positive control) to just 26 total reads for a single sample. There was a significant distribution of numbers of reads for true samples which reflects the stochasticity inherent in amplifying targets from guano extracts, challenges in properly quantifying amplicon vs. primer dimer when pooling, and preference for pure DNA over extract (positive control vs. all else).  
-
->amptk initially failed because files weren't decompressed properly. This is resolved with the following command:
-
-```
-gzip -d *.gz
-```
-
-> In addition, an `illumina` directory was created prior to executing the command, and the script was designed to dump the output files into that directory. The entire script was submitted using our SLURM job submission software; pertinent information regarding the amptk-specific arguments were as follows:  
+The first step in the pipeline trims adapters (as a result of the insert length being less than the read length) and then uses USEARCH to merge paired end reads. Orphaned reads are discarded (this typically accounts for less then 2% of the overall number or reads in a sample).
 
 ```
 amptk illumina \
@@ -82,28 +76,22 @@ amptk illumina \
 --cleanup
 ```
 
+A single **.fastq.gz** file is output by concatenating all the individual paired reads with headers modified to specify the sample name. In addition, the **.amptk-demux.log** file documents the proportion of merged reads per sample. The library was fairly well balanced, with 76 samples having more than 5,000 reads each; all four of our DNA extraction negative controls had less than 5,000 reads but all had enough to warrant inclusion in the analysis to investigate low-level contamination. In fact, all samples were included in the subsequent filtering analyses to determine what minimal read threshold was required for inclusion in the clustering step.  
+
+> note - to view the read counts from the `.amptk-demux.log` file, just run this little one-liner:
+```
+sed -n '/Found.*.barcoded samples/,$p' trim_pomp.amptk-demux.log | grep -v "^\[" | sed 's/^[[:blank:]]*//'
+```
+
 ## dropping samples
 
-There is an important tradeoff between the likelihood that a read is the result of index bleed versus a true representation of the amplicons in a sample; if one is to account and filter for index-bleed, then one is to likely reduce the number of reads in a sample. In addition, because the mock community proportion of reads was large in this run, the likelihood of index bleed is higher than if the positive control had a moderate number of reads (proportional to per-sample read numbers). There are additional filtering parameters applied to account for this, though these filtering parameters work best when the low-read number samples are discarded. The following code was executed to drop the samples with less than 4800 reads, as that value represented samples with less than 0.1% total reads indexed to this project on the lane. Note that this is an arbitrary cut off, and drops out many samples; in addition, no negative control is included above this threshold.   
+There is an important tradeoff between the likelihood that a read is the result of index bleed versus a true representation of the amplicons in a sample; if one is to account and filter for index-bleed, then one is to likely reduce the number of reads in a sample. Because the mock community proportion of reads was well balanced in this run, the likelihood of index bleed is no higher among known community members in the positive control than any true sample (or negative control); we therefore run little risk in initially including all of our samples going into the preliminary clustering process. Nevertheless, we may revisit dropping samples after our first filtering estimations following clustering if it is determined that certain samples with low read numbers are likely containing just contaminant reads or those whose reads may be reduced due to our index-bleed calculations.  
 
-> note that a `dropd` directory was created to pass the output files into; the following command was executed within that `dropd` directory
-
-```
-amptk remove \
--i /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/illumina/trim.demux.fq.gz \
--t 3600 \
--o dropd.demux.fq
-
-gzip dropd.demux.fq
-```
-
-This is a significant threshold as it drops 51 of 88 possible samples. However, the total number of reads which are excluded from the dataset is just 2% of the overall amount. A separate workflow in which all samples are retained is also run (and described herein) - this allows us to carry through both a conservative and liberal strategy and compare if major difference arise in OTU abundance, index bleed thresholds, etc. Analysis of the conservative (reduced sample) dataset has the suffix `dropd` applied; while the workflow with all samples are included are termed `trimd`.  
-
-Clustering was performed independently - once for the `dropd` and once for the `trimd` datasets - while filtering was applied to the `dropd` dataset only. One consequence of independent clustering approaches is the OTU numbers aren't comparable - what sequence represents OTU1 in the `dropd` dataset isn't necessarily the same sequence for OTU1 in the `trimd` dataset.  
+Clustering was therefore performed initially on all reads without any samples dropped. One final note - it could be easy to just set an arbitrary threshold of 5000 reads, as this would then remove all NTC samples and about 20% of our true samples; we could then assert that all we'd need to filter thereafter was some proportion of index-bleed. However this approach doesn't leverage the fact that we can learn something about what OTUs may need to have their reads further reduced if they in fact are present in the negative controls. The power in keeping in those NTCs initially is that we can better assess which OTUs, and at what read depth, should be filtered.  
 
 ## clustering for OTUs
 
-This is a two step process in which the **.fastq** file containing all reads is parsed first using the `DADA2` algorithm creating **iseq** candidate sequences (unique sequences which are not clustered), then these unique sequences are clustered to a 97% similarity using the more traditional `UCLUST` approach. See Jon's documentation describing the differences [here](http://amptk.readthedocs.io/en/latest/clustering.html). In brief, **iseq** values are clustered at a 100% identity, whereas the resulting **OTUs** are clustered at 97% identity, meaning that the **iseq** sequences are more exclusive than the **OTUs**.  
+This is a two step process in which the **.fastq** file containing all reads is parsed first using the `DADA2` algorithm creating **Amplicon Sequence Variants (ASV)** (formerly termed **iSeqs**) candidate sequences. These unique sequences are then clustered to a specified similarity threshold (97%) using a traditional `UCLUST` approach. See Jon's documentation describing the differences [here](http://amptk.readthedocs.io/en/latest/clustering.html). In brief, **ASV** values are clustered at a 100% identity, whereas the resulting **OTUs** are clustered at 97% identity, meaning that the **ASV** sequences are more exclusive than the **OTUs**.  
 
 In addition there is a chimera filtering step applied to the data; this requires the installation of the COI database provided by amptk:
 
@@ -115,29 +103,28 @@ Then execute the clustering with the following code:
 
 ```
 amptk dada2 \
---fastq dropd.demux.fq.gz \
---out dropd \
+--fastq /mnt/lustre/macmaneslab/devon/guano/Pompton/illumina/trim_pomp.demux.fq.gz \
+--out rough \
 --length 180 \
 --platform illumina \
 --uchime_ref COI
 ```
 
-Note that both `dropd` and `trimd` datasets had the same code applied.  
-> The code above specifies the command used for the `dropd` dataset. For the `trimd` dataset, a different input file and different output name were substituted; everything else remains the same.  
+The output contains a pair of files which are applied in the next filtering strategy (for index bleed): the `.cluster.otu_table.txt` file which follows a traditional OTU matrix format, as well as the accompanying `.cluster.otus.fa` file which contains the OTU id in the header and the associated sequence. Each dataset is then filtered according to the following commands (see **Filtering** section below).  
 
-The output contains a pair of files which are applied in the next filtering strategy (for index bleed): the `.cluster.otu_table.txt` file which follows a traditional OTU matrix format, as well as the accompanying `.cluster.otus.fa` file which contains the OTU id in the header and the associated sequence. Each dataset is then filtered according to the following commands.  
+We find that after quality and chimera filtering, about **86 % of reads** were used to identify unique sequence variants (ASVs) or clusters (OTUs). The following table summarizes information contained in the `Pompton_clust-rough.log` file generated in the `amptk clust` command:
 
-|  | trim | dropd |
-| --- | --- | --- |
-| # OTUs clustered | 1,912 | 1,792 |
-| # reads mapped to OTUs | 3,543,867 | 3,472,563 |
-| # iSeqs clustered | 3,525 | 3,110 |
-| # reads mapped to iSeqs | 3,549,960 | 3,478,881 |
+|  | allSamples |
+| --- | --- |
+| # OTUs clustered | 2,152 |
+| # reads mapped to OTUs | 2,595,284 |
+| # ASVs clustered |  4,305 |
+| # reads mapped to ASVs | 2,603,097 |
 
 
 ## filtering
 
-Because a mock community was added to this project, the proportion of reads that are likely misassigned can be estimated on a per-OTU basis. In brief, we are certain of the OTUs likely to be present in mock community; any additional OTU is the result of index bleed. By calculating the proportion of reads that are present in our mock sample which _shouldn't be there_ we can estimate what fraction of reads (on a per-OTU basis) should be subtracted from all true samples.
+Because a mock community was added to this project, the proportion of reads that are likely misassigned can be estimated on a per-OTU basis. In brief, we are certain of the OTUs likely to be present in mock community; any additional OTU is the result of index bleed (or potentially contamination, but this is unlikely given that this positive control is separately processed from the negative controls and true samples). By calculating the proportion of reads that are present in our mock sample which _shouldn't be there_ we can estimate what fraction of reads (on a per-OTU basis) should be subtracted from all true samples.
 
 This process takes place by applying an initial filtering step that filters reads using the most strict criteria (taking the largest instance of an OTU bleed and applying that percentage to filter across true samples); intermediate files are kept to investigate how the index-bleed is distributed on a per-OTU basis. I have maintained a [separate document](https://github.com/devonorourke/guano/blob/master/Perlut/Perlut_filtering_notes.md) describing the detailed steps used to apply what I feel are the most appropriate filtering strategies for this dataset.   
 

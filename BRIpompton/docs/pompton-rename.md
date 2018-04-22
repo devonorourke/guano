@@ -1,64 +1,37 @@
-Starting within the `$HOME` directory of the project:
+Reads from the sequencing center were demultiplexed by sample name and lane number, and placed within sample-named parent directories. Because the library was run among two independent lanes we generated technical replicates that were combined before processing in the `amptk` pipeline. Thus a single sample could have initially expected to have the following file structure:  
 ```
-mkdir fqraw
+#parent directory named '.../Sample_pomp_4584/'
+pomp-4584_TGAGTACG-TAGCGAGT_L001_R1_001.fastq.gz
+pomp-4584_TGAGTACG-TAGCGAGT_L002_R1_001.fastq.gz
+pomp-4584_TGAGTACG-TAGCGAGT_L001_R2_001.fastq.gz
+pomp-4584_TGAGTACG-TAGCGAGT_L002_R2_001.fastq.gz
+```
+
+Files were transferred from the individual parent directories recursively and put into a new directory on Premise:
+> The path to the parent directory for these raw .fastq files was: `/mnt/lustre/macmaneslab/devon/guano/Pompton/fqraw`
+
+Files with matching base names were concatenated into (fake lane number) new file per forward/reverse read pair.   
+```
 cd fqraw
 mkdir lane1 lane2
 rsync -avz foster@cobb.unh.edu:/data/foster/devon/180302/*/*.gz .
-mv *L001*.gz ./lane1
-mv *L002*.gz ./lane2
-cd lane1
-for i in `ls`; do mv "$i" lane1-"$i"; done
-cd ../lane2
-for i in `ls`; do mv "$i" lane2-"$i"; done
-mv *.gz ../
-cd ../lane1
-mv *.gz ../
 
-mv lane1-mock-IM4p11_2_TGCGTCAA-GTCTAGTG_L001_R1_001.fastq.gz lane1-mock-IM4p11-2_TGCGTCAA-GTCTAGTG_L001_R1_001.fastq.gz
-mv lane1-mock-IM4p11_2_TGCGTCAA-GTCTAGTG_L001_R2_001.fastq.gz lane1-mock-IM4p11-2_TGCGTCAA-GTCTAGTG_L001_R2_001.fastq.gz
-mv lane2-mock-IM4p11_2_TGCGTCAA-GTCTAGTG_L002_R1_001.fastq.gz lane2-mock-IM4p11-2_TGCGTCAA-GTCTAGTG_L002_R1_001.fastq.gz
-mv lane2-mock-IM4p11_2_TGCGTCAA-GTCTAGTG_L002_R2_001.fastq.gz lane2-mock-IM4p11-2_TGCGTCAA-GTCTAGTG_L002_R2_001.fastq.gz
+for i in `ls | cut -d '_' -f 1,2 | sort -u`;
+do
+cat "$i"_L001_R1_001.fastq.gz "$i"_L002_R1_001.fastq.gz > "$i"_L003_R1_001.fastq.gz
+cat "$i"_L001_R2_001.fastq.gz "$i"_L002_R2_001.fastq.gz > "$i"_L003_R2_001.fastq.gz
+done
 ```
 
-# Creating the working environment
+Using the example of files listed above, the output generated is a single read pair set:
 ```
-conda create -n amptk python=3.6 biopython natsort pandas numpy matplotlib seaborn python-edlib edlib biom-format psutil
-source activate amptk
-
-conda install -c bioconda vsearch
-conda install r-base bioconductor-dada2
-conda install r-base bioconductor-phyloseq
-conda install r-tidyverse
-
-R
-install.packages('devtools')
-library('devtools')
-# did not run: install_github("tobiasgf/lulu")
-q()
-
-git clone https://github.com/nextgenusfs/amptk.git
-cd $HOME/bin
-ln -s /mnt/lustre/macmaneslab/devon/pkgs/amptk/bin/amptk .
+pomp-4584_TGAGTACG-TAGCGAGT_L003_R1_001.fastq.gz
+pomp-4584_TGAGTACG-TAGCGAGT_L003_R2_001.fastq.gz
 ```
 
-# renaming Cobb raw.fq files
-```
-rename -n asc_ asc- *.gz
-rename mock_IM3 mock-IM3 *.gz
-find . -name "*.gz" | sort | sed -e 's|^\./||' > raw_filelist.txt
-cut -d '_' -f 2- raw_filelist.txt > wantedc2.txt
-## added wanted metadata names to wantedc0.txt
-nano wantedc0.txt ## then pasted wanted metadata names from metadata.csv file
-while read line; do for i in {1..2}; do echo "$line"; done; done < wantedc0.txt > wantedc1.txt
-paste wantedc1.txt wantedc2.txt -d '_' > wantedlist.txt
-paste raw_filelist.txt wantedlist.txt > final_filelist.txt
-mv _CGAGAGTT-CGTTACTA_L002_R1_001.fastq.gz mockIM3_CGAGAGTT-CGTTACTA_L002_R1_001.fastq.gz
-mv  p_CGAGAGTT-CGTTACTA_L002_R2_001.fastq.gz mockIM3_CGAGAGTT-CGTTACTA_L002_R2_001.fastq.gz
-re name NTC_ NTC- *
-```
+The initial reads were removed, and these concatenated reads were then used as the raw data for the `amptk` workflow.
 
-# installing amptk
-Installed v-1.1.3 `amptk` within new Conda environment:  
+
 
 # running amptk
 Illumina step:
