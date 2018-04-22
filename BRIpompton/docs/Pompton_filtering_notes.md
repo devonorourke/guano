@@ -314,7 +314,7 @@ amptk filter \
 --min_samples_otu 2
 ```
 
-We've lost just one sample, dropped the four negative controls, and elimited our mock community sample from further analysis. 98 true samples remain for analysis. A summary of the ouput is as follows:  
+We've dropped the four negative controls and eliminated our mock community sample from further analysis. All true samples remain for analysis. A summary of the output is as follows:  
 
 ```
 Overwriting auto detect index-bleed, setting to 2.000000%
