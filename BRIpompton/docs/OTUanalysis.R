@@ -16,16 +16,15 @@
 # install.packages('plyr')
 
 ## load libraries:
-library(data.table)
 library(reshape2)
 library(tidyr)
 library(ggplot2)
 library(dplyr)
 
 ## read in data:
-setwd("~/Repos/guano/OahuBird/")
+setwd("~/Repos/guano/BRIpompton/")
 
-h_otutable.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/OahuBird/data/amptk/OahuBird_lulu_h.otu_table.taxonomy.txt')
+h_otutable.df <- read.csv('https://raw.githubusercontent.com/devonorourke/guano/master/BRIpompton/data/amptk/Pompton_h.otu_table.taxonomy.txt', sep = '\t')
 colnames(h_otutable.df)[1] <- ""
 
 ## reformat matrix into data.frame, split strings into appropriate columns
@@ -49,38 +48,23 @@ tmp.df$family_name <- sub("f:", "", tmp.df$family_name)
 tmp.df$genus_name <- sub("g:", "", tmp.df$genus_name)
 tmp.df$species_name <- sub("s:", "", tmp.df$species_name)
 
-## append any of the 'SampleID' values which were actually NTCs (but not labeled as such):
-## import target and replacement data.frame:
-replace.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/OahuBird/data/Rrenamelist.df')
-
-## then use dplyr to make a new column for the replacement matches
-tmp2.df <- dplyr::left_join(tmp.df,replace.df, by = "SampleID")
-## then substitute any `N/A` value with the original value for those values that didn't have a NTC match:
-tmp.df <- within(tmp2.df, X <- ifelse(is.na(replacements), SampleID, replacements))
-tmp.df$SampleID <- NULL
-tmp.df$replacements <- NULL
-colnames(tmp.df)[13] <- "SampleID"
-rm(tmp2.df, replace.df)
-
 ## save this raw (unfiltered) data frame
-setwd("~/Repos/guano/OahuBird/data/Routput/")
-write.csv(tmp.df, "OahuBird_rawOTUtable.csv", quote = FALSE, row.names = FALSE)
+setwd("~/Repos/guano/BRIpompton/data/Routput/")
+write.csv(tmp.df, "Pompton_rawOTUtable.csv", quote = FALSE, row.names = FALSE)
 
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
             ######     Part 2 - data filtering     ######
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
 ## One way to address potential sources of contamination is to identify the OTUs present in samples across multiple libraries...
-## ...with the idea being that if you see an OTU present in a diverse set of libraries, it's likely this is a contaminant
-## We're going to grab data from three separate projects:
+## ...with the idea being that if you see an OTU present in a diverse (in terms of geographic sampling origins) set of libraries, it's likely this is a contaminant
+## We're going to grab data from two separate projects:
 # 1. the `nau.df` project was from a bat guano collected in Central America
-# 2. the `rut.df` project was from bat guano collected in New Jersey
-# 3. the `perl.df` project was from bird guano collected in Maine
-## We don't expect any of the overlapping OTUs to be present in Hawaiian samples
+# 2. the `oahu.df` project was from bird guano collected in Hawaii
+## We don't expect any of the overlapping OTUs to be present in the samples from New Jersey
 
-rut.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/Rutgers/master.csv', header = TRUE)
-perl.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/Perlut/data/Routput/master.csv', header = TRUE)
-nau.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/NAUsupp/masterdf.csv', header = TRUE)
+oahu.df <- read.csv('https://raw.githubusercontent.com/devonorourke/guano/master/OahuBird/data/Routput/master.csv', header = TRUE)
+nau.df <- read.csv('https://raw.githubusercontent.com/devonorourke/guano/master/NAUsupp/masterdf.csv', header = TRUE)
 colnames(nau.df)[3] <- c("BOLDalt")
 
 ## Before we can match we need to append the `BOLDid` vectors to remove the "." delimiter in the `tmp.df` and `rut.df` objects:
@@ -88,15 +72,15 @@ tmp.df$BOLDalt <- tmp.df$BOLDid
 tmp.df <- separate(tmp.df, col = BOLDalt, into = c("BOLDalt", "delete"), sep = "\\.")
 tmp.df$delete <- NULL
 
-rut.df$BOLDalt <- rut.df$BOLDid
-rut.df <- separate(rut.df, col = BOLDalt, into = c("BOLDalt", "delete"), sep = "\\.")
-rut.df$delete <- NULL
+oahu.df$BOLDalt <- oahu.df$BOLDid
+oahu.df <- separate(oahu.df, col = BOLDalt, into = c("BOLDalt", "delete"), sep = "\\.")
+oahu.df$delete <- NULL
 
 
-## Get a list of all non-redundant `BOLDalt` elements among all three projects:
+## Get a list of all non-redundant `BOLDalt` elements among the two projects:
 # because 'none' is not a unique identifier we're removing it from this list
 # we're also removing 'CFMR:IM4', 'SINTAX', and 'UTAX' as these were earlier relics of an amptk naming scheme we're not using
-string <- unique(c(rut.df$BOLDalt, nau.df$BOLDalt, perl.df$BOLDalt))
+string <- unique(c(oahu.df$BOLDalt, nau.df$BOLDalt))
 find.list <- list("None", "UTAX", "SINTAX", "CFMR:IM4")
 find.string <- paste(unlist(find.list), collapse = "|")
 tmpx.list <- gsub(find.string, replacement = "", x = string)
@@ -106,10 +90,11 @@ rm(string, find.list, find.string, tmpx.list)
 
 ## Using that 'allmatch.list' object, query that list against the 'tmp.df$BOLDalt' vector to find common BOLD(alt) id's
 ProjectMatches.df <- tmp.df[tmp.df$BOLDalt %in% allmatch.list,]
+
 # how many reads here?
-sum(ProjectMatches.df$CountReads)    # 5,295,342 ... a huge number; represents about 2/5 of our overall data (13,950,987 reads)
+sum(ProjectMatches.df$CountReads)    # 85,184 ... not a massive number, but something to take notice of; in addition, we have 231 observations that match!
 # how many unique OTUs are identified?
-length(unique(ProjectMatches.df$OTUid))    # 501 unique matches identified... (our data originally had 1416 OTUs)
+length(unique(ProjectMatches.df$OTUid))    # 59 unique matches identified... (our data originally had 3280 OTUs)
 ## Finally, use that 'nauProjectMatches.df' object and determine how many reads and how frequently are these matches identified in our real data?
 tmp_counts <- ProjectMatches.df %>%
   group_by(BOLDalt) %>%
@@ -123,6 +108,14 @@ rm(tmp_counts, tmp_sums)
 x <- tmp.df[,c(1,14)]         ## grab just the OTUid and BOLDalt vectors from the `tmp.df` object
 y <- x[!duplicated(x[1:2]),]  ## obtain only unique combinations of OTUid and BOLDids (note there can be the same BOLDid for multiple OTUid's)
 z <- merge(Match_summary, y)  ## paste these unique OTUid's for every BOLDid in the `Match_summary` object to identify trends in OTU read abundance and frequency of detection
+
+
+# ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ 
+
+## this is where you left off ...
+
+# ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ 
+
 
 ## now group the datasets from our `Match_summary` list to include just the "BOLDalt" and "SampleID" columns, then make a frequency table from that:
 tiny.nau = nau.df[,c(1,3)]
