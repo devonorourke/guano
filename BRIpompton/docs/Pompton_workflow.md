@@ -140,19 +140,22 @@ As described in the [amptk taxonomy](http://amptk.readthedocs.io/en/latest/taxon
 > This database was updated as of 14-sept-2017, following the [release](https://github.com/nextgenusfs/amptk/releases/tag/1.0.0) of amptk v-1.0.0.  
 > Complete database download is [available here](https://osf.io/4xd9r/files/)
 
-Taxonomy was explored using both the _hybrid_ approach (default in amptk) as well as a _usearch only_ approach. In both instances, the `--method` reflected the given approach. See Jon's description of the steps used in his documentation at the link above.  
+Taxonomy was assigned using the _hybrid_ approach (default in amptk). See [Jon's description](http://amptk.readthedocs.io/en/latest/taxonomy.html#amptk-taxonomy) of the method for complete details - in brief, this approach calculates a consensus last common ancestor (LCA) taxonomy based on results from three classifiers: USEARCH, UTAX, and SINTAX. This LCA identity is then applied to the OTUs present in the dataset using a global alignment.
 
-The following code was applied (in this example the method is the `usearch` approach):  
+The following code was applied:  
 
 ```
 amptk taxonomy \
---i /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/filtd/finaltrim.final.txt \
---fasta /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/filtd/finaltrim.filtered.otus.fa \
---out Perlut_u \
+--i /mnt/lustre/macmaneslab/devon/guano/Pompton/filt/filtd.final.csv \
+--fasta /mnt/lustre/macmaneslab/devon/guano/Pompton/filt/filtd/filtd.filtered.otus.fa \
+--out Pompton_h \
 --db COI \
---method usearch \
---mapping_file /mnt/lustre/macmaneslab/devon/guano/NAU/Perlut/illumina/dropd.mapping_file.txt
+--method hybrid \
+--mapping_file /mnt/lustre/macmaneslab/devon/guano/Pompton/illumina/trim_pomp.mapping_file.txt
 ```
+
+- could also try input a different mapping file: `/mnt/lustre/macmaneslab/devon/guano/Pompton/taxonomy/pomp.updated_mapping_file.txt` where I've manually deleted the mock and four NTCs...
+
 
 The output fasta sequence and OTU table with taxonomic information were uploaded to [the Github repo](https://github.com/devonorourke/guano/tree/master/Perlut).  
 

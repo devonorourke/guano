@@ -239,7 +239,7 @@ Take the `NTCreduced.otu_table.txt` output from the R script and modify the head
 sed -i 's/OTUid/#OTU ID/' NTCreduced.otu_table.txt
 ```
 
-## Run `amptk filter` again, this time letting the `subtract` and `index-bleed` calculations run on auto:
+Now plug back into the `amptk filter` program with the NTC removed table.
 
 ```
 amptk filter \
