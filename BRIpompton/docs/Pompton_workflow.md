@@ -166,8 +166,8 @@ The output fasta sequence and OTU table with taxonomic information were uploaded
 
  # Further analyses
 
- An R script was then used to manipulate the output `Perlut.otu_table.taxonomy.txt` file which includes both further data filtering, as well as the calculations for frequency tables and visualizations - [see here](https://github.com/devonorourke/guano/blob/master/Perlut/OTUanalysis.R).  
+ An R script - [see here](https://github.com/devonorourke/guano/blob/master/Perlut/OTUanalysis.R) - was then used to manipulate an output file (`Pompton_h.otu_table.taxonomy.txt`) which includes both further data filtering, as well as the calculations for frequency tables and visualizations.  
 
- > One such data filtering taking place here is the removal of reads associated with the mock community.
+ > One such data filtering taking place here is the removal of reads associated with the mock community. Note that this is a conservative step which is perhaps a subtly subjective decision that may warrant revision: the biological mock community consists of about 20 insect members - these same members may be present in real samples (that is, they may be eaten by the birds) - but we have limited power to resolve the difference whether or not those mock samples are the result of index bleed or the result of actual detection. They were left out for the preliminary analyses, but the mock filtered and unfiltered datasets were both produced as `BRIPompton_FullFilteredOTUtable_noMock` and `BRIPompton_FullFilteredOTUtable_withMock`, respectively.  
 
-Please see the Perlut [Github repo](https://github.com/devonorourke/guano/blob/master/Perlut) for subseuqent data summaries and visualizations.  
+Please see the BRIPompton [Github repo](https://github.com/devonorourke/guano/tree/master/BRIpompton) for subsequent data summaries and visualizations.  

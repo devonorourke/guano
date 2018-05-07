@@ -110,7 +110,7 @@ y <- x[!duplicated(x[1:2]),]  ## obtain only unique combinations of OTUid and BO
 z <- merge(Match_summary, y)  ## paste these unique OTUid's for every BOLDid in the `Match_summary` object to identify trends in OTU read abundance and frequency of detection
 
 
-## Observation: The majority of these are suspected mock chimeras. 
+## Observation: The majority of these are suspected mock chimeras.
 ## To keep as conservative an estimate as possible we'll remove each of these from the dataset.
 
 ## Let's build a "naughty.list" that would include any BOLDalt value that is detected in the ProjectMatches.df object:
@@ -135,7 +135,7 @@ tmpfilt2.df <- subset(tmpfilt.df, phylum_name == "Arthropoda")
 
 ## 2. Remove the big contaminators we've seen from previous datasets:
 ## This is a subjective decision, but from many previous sequencing runs I've noticed that the following inverts are often detected at low levels...
-## In this dataset, none of these BOLDID's had a single sample with high read depths but were present in low levels in many samples, indicative of conaminants 
+## In this dataset, none of these BOLDID's had a single sample with high read depths but were present in low levels in many samples, indicative of conaminants
 othercontams <- c("BOLD:AAH3593", "BOLD:AAO2062", "BOLD:AAC4559", "BOLD:AAC3145", "BOLD:AAE8479", "BOLD:AAG2645", "BOLD:AAA6614")
 ## These were: 'Chauliodes pectinicornis', 'Chauliodes rastricornis', 'Maccaffertium mediopunctatum', 'Maccaffertium terminatum', 'Maccaffertium mexicanum', 'Hexagenia limbata', 'Psilocorsis reflexella'
 
@@ -153,7 +153,7 @@ biglist <- bigcontamlist$V1
 tmpfilt4.df <- tmpfilt2.df[tmpfilt2.df$BOLDalt %!in% biglist,]
 
 
-## 4. Last item: we did not remve the "Mock" OTUs present in the dataset yet... 
+## 4. Last item: we did not remve the "Mock" OTUs present in the dataset yet...
 ## This is problematic because there may be instances in which the OTUs present in that mock community really may be consumed by the birds
 ## We'll split our dataset into a final filtered library in which the mock remained, versus one in which the mock is removed:
 
@@ -210,7 +210,8 @@ detach("package:dplyr", unload=TRUE)
 detach("package:reshape2", unload=TRUE)
 detach("package:tidyr", unload=TRUE)
 
-##not run: master.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/OahuBird/data/Routput/master.csv', header = T)
+##not run:
+master.df <- read.csv('https://raw.githubusercontent.com/devonorourke/guano/master/BRIpompton/data/Routput/master.csv', header = TRUE)
 
 library(plyr)
 setwd("~/Repos/guano/BRIpompton/data/Routput/")
@@ -234,13 +235,13 @@ OTUcounts = count(master.df, vars = c("OTUid"))
 colnames(OTUcounts) <- c("OTUid", "NumberOfDetections")
 write.csv(OTUcounts, "OTUcounts.csv", row.names = F, quote = F)
   ## most abundant OTU (OTU361) present in 35 samples - can't read too much into this because it's never detected in high amounts
-  ## probably the most frequent high read winner is OTU20 - a gypsy moth - as this has many samples with high numbers of reads detected  
+  ## probably the most frequent high read winner is OTU20 - a gypsy moth - as this has many samples with high numbers of reads detected
 
 ## how many OTUs are called per site?
 OTUperSite = count(master.df, vars = c("SiteName"))
 colnames(OTUperSite) <- c("SiteName", "NumberOfDetections")
 write.csv(OTUperSite, "OTU_per_Site.csv", row.names = F, quote = F)
-  ## decent balance of detections per site 
+  ## decent balance of detections per site
 
 ## how many OTUs are called per Territory?
 OTUperTerritory = count(master.df, vars = c("Territory"))
@@ -248,20 +249,26 @@ colnames(OTUperSite) <- c("Territory", "NumberOfDetections")
 write.csv(OTUperSite, "OTU_per_Territory.csv", row.names = F, quote = F)
   ## as with SiteName, decent number of observations per Territory to make comparisons across all elements of this variable
 
+## what about a few multivariate questions...
+## what OTUs do we observe per Site per Species?
+OTUperSiteperSpecies = count(master.df, vars = c("SiteName", "BirdSpecies"))
+colnames(OTUperSiteperSpecies) <- c("SiteName", "BirdSpecies", "NumberOfDetections")
+write.csv(OTUperSiteperSpecies, "OTU_per_Site_and_Species.csv", row.names = F, quote = F)
 
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
               ######     Part 5a - taxa sampled viz     ######
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 ## make a few plots showing the number of counts observed by taxonomic Order
-setwd("~/Repos/guano/OahuBird/data/Routput/")
-master.df <- read.csv('https://raw.githubusercontent.com/devonorourke/guano/master/OahuBird/data/Routput/master.csv', header = T)
+setwd("~/Repos/guano/BRIpompton/data/Routput/")
+##not run: master.df <- read.csv('https://raw.githubusercontent.com/devonorourke/guano/master/BRIpompton/data/Routput/master.csv', header = TRUE)
+
 plot.df <- master.df
 plot.df$Counter <- "1"
 rm(master.df)
 
 library(plyr)
 detach("package:dplyr", unload=TRUE)
-freqOrders <- count(plot.df, vars = c("SampleType", "order_name"))
+freqOrders <- count(plot.df, vars = c("BirdSpecies", "order_name"))
 library(dplyr)
 oBSTbird <- filter(freqOrders, SampleType == "Bird")
 birdobs <- sum(oBSTbird$freq) ## 2254 observations
@@ -282,8 +289,8 @@ tol28rainbow= c("#771155", "#AA4488", "#CC99BB", "#f7e9f7",
                 "#771122", "#AA4455", "#DD7788", "#fee8e3")
 
 library(ggplot2)
-ggplot(freqOrders, aes(x = factor(SampleType), y = percObs, fill = order_name)) +  
-  geom_bar(stat = "identity") + 
+ggplot(freqOrders, aes(x = factor(SampleType), y = percObs, fill = order_name)) +
+  geom_bar(stat = "identity") +
   scale_fill_manual(values = tol28rainbow, na.value="black") +
   labs(title = "Relative taxonomic Orders detected by avian guano or vegetative sampling methods",
        subtitle = "Taxonomic order defined using approaches described in 'amptk' bioinformatic pipeline\n using Barcode of Life Database references",
@@ -291,7 +298,7 @@ ggplot(freqOrders, aes(x = factor(SampleType), y = percObs, fill = order_name)) 
        y = "Percent taxonomic Order detected") +
   guides(fill = guide_legend(title = "Taxonomic Order", ncol = 2, keywidth = 2, keyheight = 2)) +
   theme(legend.position = "right", axis.text.y=element_blank(), axis.ticks.y = element_blank())
-      
+
 rm(freqOrders)
 ## 1) by 'SampleSpecies', birds ONLY
 detach("package:dplyr", unload=TRUE)
@@ -301,8 +308,8 @@ library(dplyr)
 oBSTbird <- filter(freq_bySpeciesOrders, SampleType == "Bird", Endemism != "unknown")
 length(unique(freq_bySpeciesOrders$order_name))  # we have 28 unique things to shade again; use same plot
 
-ggplot(oBSTbird, aes(x = factor(SampleSpecies), y = freq, fill = order_name)) +  
-  geom_bar(stat = "identity") + 
+ggplot(oBSTbird, aes(x = factor(SampleSpecies), y = freq, fill = order_name)) +
+  geom_bar(stat = "identity") +
   scale_fill_manual(values = tol28rainbow, na.value="black") +
   labs(title = "Observed detections of taxonomic Orders among Hawaiian bird species' guano",
        subtitle = "Taxonomic order defined using approaches described in 'amptk' bioinformatic pipeline\n using Barcode of Life Database references",
@@ -312,8 +319,8 @@ ggplot(oBSTbird, aes(x = factor(SampleSpecies), y = freq, fill = order_name)) +
   theme(legend.position = "right", axis.text.y=element_blank(), axis.ticks.y = element_blank())
 
 ## 2) by 'SampleSpecies', faceted by 'SampleType'
-ggplot(freq_bySpeciesOrders, aes(x = factor(SampleSpecies), y = freq, fill = order_name)) +  
-  geom_bar(stat = "identity") + 
+ggplot(freq_bySpeciesOrders, aes(x = factor(SampleSpecies), y = freq, fill = order_name)) +
+  geom_bar(stat = "identity") +
   scale_fill_manual(values = tol28rainbow, na.value="black") +
   facet_grid(~ SampleType,  scales = "free_x", space = "free") +
   theme(panel.spacing = unit(2, "lines")) +
@@ -360,7 +367,7 @@ tmp3 <- rbind(rbleNative, rbleExotic,
 length(unique(tmp3$order_name))   ## missing 3 kinds of orders; make new palette to maintain similar color scheme
 unique(tmp3$order_name)
 levels(plot.df$order_name)
-## dropping numbers 6, 22, and 25 from original palette: 
+## dropping numbers 6, 22, and 25 from original palette:
 
 tol25rainbow= c("#771155", "#AA4488", "#CC99BB", "#f7e9f7",
                 "#114477", "#77AADD", "#e2effd",
@@ -370,8 +377,8 @@ tol25rainbow= c("#771155", "#AA4488", "#CC99BB", "#f7e9f7",
                 "#774411", "#DDAA77", "#f6ebdd",
                 "#AA4455", "#DD7788", "#fee8e3")
 
-ggplot(data=tmp3, aes(x = factor(SampleSpecies), y = percObs, fill = order_name)) +  
-  geom_bar(stat = "identity") + 
+ggplot(data=tmp3, aes(x = factor(SampleSpecies), y = percObs, fill = order_name)) +
+  geom_bar(stat = "identity") +
   scale_fill_manual(values = tol25rainbow, na.value="black") +
   facet_grid(~ Endemism,  scales = "free_x", space = "free") +
   theme(panel.spacing = unit(2, "lines")) +
@@ -442,9 +449,9 @@ library(ggplot2)
 
 ## ordination where point shapes are 'Endemism' factor; point color is 'SampleType' factor
 o <- ggplot(data = ord.df, aes(x = NMDS1, y = NMDS2, shape = Endemism, color = SampleType))
-p1 <- o + geom_point() + scale_color_manual(values = c("red", "blue")) + 
+p1 <- o + geom_point() + scale_color_manual(values = c("red", "blue")) +
   theme(legend.position = "bottom") +
-  guides(ncol = 2, keywidth = 2, keyheight = 2) + 
+  guides(ncol = 2, keywidth = 2, keyheight = 2) +
   labs(shape="Endemic status", color="Sample Type")
 p1
 
@@ -452,7 +459,7 @@ p1
 orev <- ggplot(data = ord.df, aes(x = NMDS1, y = NMDS2, shape = SampleType, color = Endemism))
 p2 <- orev + geom_point() + scale_color_manual(values = c("red", "blue")) +
   theme(legend.position = "bottom") +
-  guides(ncol = 2, keywidth = 2, keyheight = 2) + 
+  guides(ncol = 2, keywidth = 2, keyheight = 2) +
   labs(shape="Sample Type", color="Endemic status")
 p2
 
@@ -460,7 +467,7 @@ p2
 library(egg)
 ## see more here: https://cran.r-project.org/web/packages/egg/vignettes/Ecosystem.html
 ## and even more here: https://cran.r-project.org/web/packages/gridExtra/vignettes/arrangeGrob.html
-grid.arrange(p1, p2, nrow = 1, 
+grid.arrange(p1, p2, nrow = 1,
              top = "Hawaiian arthropod composition are distinguished by collection type, not endemic status \n
              Nonmetric Multidimensional Scaling (NMDS) of Raup-Crick dissimilarity index")
 
@@ -568,7 +575,7 @@ physeq
 ## tail -n +2 tmp.fa | paste - - > tmp2.fa
 ## ```
 ## first, read in the tab-delimited fasta from the amptk taxonomy output that has been formatted above:
-amptk.fasta <- read.delim("~/Repos/guano/OahuBird/data/amptk/nolulu/tmp2.fa", 
+amptk.fasta <- read.delim("~/Repos/guano/OahuBird/data/amptk/nolulu/tmp2.fa",
                           header = FALSE, sep = "\t", stringsAsFactors = FALSE)
 colnames(amptk.fasta) <- c("header", "seq")
 
@@ -590,8 +597,8 @@ matched.fasta <- merge(otunames.df, amptk.df)
 setwd("~/Repos/guano/OahuBird/data/Routput/")
 write.table(matched.fasta, file = "matched.fasta.txt", quote = FALSE, col.names = FALSE, row.names = FALSE, sep = "\t")
 
-## this made a matched.fasta.txt file which we then processed back into a typical fasta format: 
-## 
+## this made a matched.fasta.txt file which we then processed back into a typical fasta format:
+##
 ## ```
 ## awk -F "\t" '{print $1"\n"$3}' matched.fasta.txt > matched.fasta
 ## ```
@@ -602,7 +609,7 @@ write.table(matched.fasta, file = "matched.fasta.txt", quote = FALSE, col.names 
 ## ```
 ## usearch -cluster_agg matched.fasta -treeout matched.tree
 ## ```
-## and the output file 'tree.phy' was ultimately loaded back into phyloseq 
+## and the output file 'tree.phy' was ultimately loaded back into phyloseq
 setwd("~/Repos/guano/OahuBird/data/Routput/")
 library(ape)
 mytree <- read.tree(file = "matched.tree")
@@ -661,7 +668,7 @@ names(plist) = mydist_methods
 for( i in mydist_methods ){
   # Calculate distance matrix
   iDist <- distance(physeq2, method=i, binary = TRUE)
-  
+
   ## Make plot
   # Don't carry over previous plot (if error, p will be blank)
   p <- NULL
@@ -672,5 +679,3 @@ for( i in mydist_methods ){
   # Save the graphic to file.
   plist[[i]] = p
 }
-
-
