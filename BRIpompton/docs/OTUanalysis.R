@@ -258,3 +258,118 @@ write.csv(OTUperSiteperSpecies, "OTU_per_Site_and_Species.csv", row.names = F, q
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
               ######     Part 5a - taxa sampled viz     ######
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
+
+setwd("~/Repos/guano/OahuBird/data/Routput/")
+master.df <- read.csv('https://raw.githubusercontent.com/devonorourke/guano/master/BRIpompton/data/Routput/master.csv', header = TRUE)
+plot.df <- master.df
+rm(master.df)
+
+## First plot will be to generate a couple of stacked bar plots with frequency of detections by Taxonomic Order per:
+## 1. Bird Species
+## 2. Site
+## 3. Bird Species, partitioned (faceted) by Site
+
+## It's worth generating a table to examine the frequency of detection for each bird per Taxonomic Order, grouped with Taxonomic Class:
+## We wont' use this in the plotting directly, but it's good to refer to when figuring out how to lay out the figure
+library(plyr)
+detach("package:dplyr", unload=TRUE)
+freqOrders <- count(plot.df, vars = c("class_name", "order_name"))
+
+## to figure out a coloring scheme for this legend, let's figure out how many taxonomic orders there are in our dataset
+## note we could choose to exclude any value missing information at this Taxonomic level (it appears as "NA")...
+#  but I think it's better to show the viewer how much of our information is missing
+
+## generate a color palette where we group each taxonomic Class a single color, and use a variety of hues to discriminate among the orders within those classes:
+length(unique(plot.df$class_name))  # we have 8 unique colors to make
+length(unique(plot.df$order_name))  # we have 33 unique orders, including the one 'NA' value associated to the "insecta"
+
+## What's the order ggplot will print things? It's automatically alphabetical...
+## don't forget that it will also include "NA" at the end (not within the alphabetical order)
+sort(unique(plot.df$order_name))
+
+## so we can make a color palette that is grouped by color, then hue'd by taxonomic Class:
+## helpful site: https://www.w3schools.com/colors/colors_picker.asp
+
+## what are all the unique class/order taxonomic level pairings?
+bcolours <- unique(plot.df[c("class_name", "order_name")])
+bcolours <- bcolours[with(bcolours, order(class_name)), ]
+  ## brutal. so we have a lot of different numbers of hues here...
+  ## we're going to assigne the following color spectrum into 'http://tools.medialab.sciences-po.fr/iwanthue/' to get what we need:
+
+## in that `bcolours` object you'll see there are:
+##    (6)  Arachnida - red
+##    (1)  Branchiopoda - slate blue
+##    (3)  Collembola - green
+##    (2)  Diplopoda - orange/yellow
+##    (1)  Hexanauplia - light gray
+##    (15) Insecta - blue/violet
+##    (3)  Malacostraca - brown
+##    (2)  Maxillopoda - dark grey
+
+mypal <- c("#e6ccb3", "#ff4d4d", "#732e74", "#C0C0C0", 
+           "#4fc2e4", "#DCDCDC", "#cc9966", "#000000", 
+           "#c743df", "#79d279", "#5d94d1", "#708090", 
+           "#6739ce", "#bea0e4", "#86592d", "#ffa31a", 
+           "#462287", "#e18cdb", "#990000", "#332460", 
+           "#d968db", "#51589c", "#206020", "#ffd633", 
+           "#a232a6", "#4d0000", "#ff9999", "#ffe6e6", 
+           "#d9f2d9", "#627ee0", "#a664ad", "#7462da", "#777777")
+
+
+## if you want to make a similar plot that doesn't plot NA values, use this line instead
+## b <- ggplot(data = (plot.df[!is.na(plot.df$order_name),]),
+
+b <- ggplot(data = plot.df,
+            aes(BirdSpecies, ..count.., fill = order_name)) +
+  geom_bar() +
+  scale_fill_manual(values = mypal) +
+  labs(title = "Relative taxonomic Orders detected by avian guano - BRI Pompton project",
+       subtitle = "Taxonomic order defined using approaches described in 'amptk' bioinformatic pipeline\n using Barcode of Life Database references",
+       x = "Bird Species",
+       y = "Number of detections") +
+  guides(fill = guide_legend(title = "Taxonomic Order", ncol = 2)) +
+  theme(legend.position = "right", axis.text.y=element_blank(), axis.ticks.y = element_blank(),
+        axis.text.x = element_text(angle = 45, hjust = 1))
+b
+ggsave(filename = "TaxOrder_byBirdSpecies.png", 
+       b,
+       device = "png", 
+       path = "~/Repos/guano/BRIpompton/data/Routput/plots/")
+
+
+s <- ggplot(data = plot.df,
+            aes(SiteName, ..count.., fill = order_name)) +
+  geom_bar() +
+  scale_fill_manual(values = mypal) +
+  labs(title = "Relative taxonomic Orders detected by avian guano - BRI Pompton project",
+       subtitle = "Taxonomic order defined using approaches described in 'amptk' bioinformatic pipeline\n using Barcode of Life Database references",
+       x = "Site Name",
+       y = "Number of detections") +
+  guides(fill = guide_legend(title = "Taxonomic Order", ncol = 2)) +
+  theme(legend.position = "right", axis.text.y=element_blank(), axis.ticks.y = element_blank(),
+        axis.text.x = element_text(angle = 45, hjust = 1))
+s
+
+ggsave(filename = "TaxOrder_bySite.png", 
+       s,
+       device = "png", 
+       path = "~/Repos/guano/BRIpompton/data/Routput/plots/")
+
+bs <- ggplot(data = plot.df,
+                aes(BirdSpecies, ..count.., fill = order_name)) +
+  geom_bar() +
+  scale_fill_manual(values = mypal) +
+  labs(title = "Relative taxonomic Orders detected by avian guano - BRI Pompton project",
+       subtitle = "Taxonomic order defined using approaches described in 'amptk' bioinformatic pipeline\n using Barcode of Life Database references",
+       x = "Bird Species",
+       y = "Number of detections") +
+  guides(fill = guide_legend(title = "Taxonomic Order", ncol = 2)) +
+  theme(legend.position = "right", axis.text.y=element_blank(), axis.ticks.y = element_blank(),
+        axis.text.x = element_text(angle = 45, hjust = 1)) +
+  facet_wrap(~ SiteName)
+bs
+
+ggsave(filename = "TaxOrder_bySite_andBirdSpecies.png", 
+       bs,
+       device = "png", 
+       path = "~/Repos/guano/BRIpompton/data/Routput/plots/")
