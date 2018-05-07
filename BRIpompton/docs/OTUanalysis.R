@@ -133,40 +133,74 @@ tmpfilt2.df <- subset(tmpfilt.df, phylum_name == "Arthropoda")
   ## how many unique BOLDid's?
   length(unique(tmpfilt2.df$BOLDalt)) ## 543; interesting degree of redundancy here...
 
+## 2. Remove the big contaminators we've seen from previous datasets:
+## This is a subjective decision, but from many previous sequencing runs I've noticed that the following inverts are often detected at low levels...
+## In this dataset, none of these BOLDID's had a single sample with high read depths but were present in low levels in many samples, indicative of conaminants 
+othercontams <- c("BOLD:AAH3593", "BOLD:AAO2062", "BOLD:AAC4559", "BOLD:AAC3145", "BOLD:AAE8479", "BOLD:AAG2645", "BOLD:AAA6614")
+## These were: 'Chauliodes pectinicornis', 'Chauliodes rastricornis', 'Maccaffertium mediopunctatum', 'Maccaffertium terminatum', 'Maccaffertium mexicanum', 'Hexagenia limbata', 'Psilocorsis reflexella'
+
+## now let's remove these other contaminants:
+tmpfilt3.df <- tmpfilt2.df[tmpfilt2.df$BOLDalt %!in% othercontams,]
+  ## I'm not a huge fan of this subjective approach; so let's explore one final one...
+
+## 3. Final option - and sort of most "nuclear" option. Look back to the Oahu project contaminant list...
+## This list was derived from similar datasets as the filters here: NAU and Oahu, but also included Rutgers...
+## The danger is that Rutgers datasets overlap geographically with this Pompton one, and it's possible that the birds and bats are eating similar inverts
+## However, after applying this filter, notice that we only reduce about 25% of our overall obserations; this would indicate we have done everything possible to remove contaminants, but haven't lost most of our data
+## what about searching through another bigger list from the Oahu project?
+bigcontamlist <- read.csv(file = 'https://raw.githubusercontent.com/devonorourke/guano/master/BRIpompton/data/oahubigcontamlist.csv', header = FALSE, stringsAsFactors = FALSE)
+biglist <- bigcontamlist$V1
+tmpfilt4.df <- tmpfilt2.df[tmpfilt2.df$BOLDalt %!in% biglist,]
+
+
+## 4. Last item: we did not remve the "Mock" OTUs present in the dataset yet... 
+## This is problematic because there may be instances in which the OTUs present in that mock community really may be consumed by the birds
+## We'll split our dataset into a final filtered library in which the mock remained, versus one in which the mock is removed:
+
+## drop the "_suspect_mock_chimera" tag in the 'OTUid' field:
+tmpfilt4.df$OTUid <- gsub("_.*$","",tmpfilt4.df$OTUid)
+  # We'll keep the `tmpfilt4.df` object as the data.frame which retains those Mock reads
+
+## drop any rows which match a mock OTU:
+tomatch <- c("MockIM")
+tmpfilt5.df <- subset(tmpfilt4.df, !grepl(paste(tomatch, collapse= "|"), OTUid))
+
 
 ## Save these data:
 setwd("~/Repos/guano/BRIpompton/data/Routput/")
 write.csv(Match_summary, "suspectedContaminants.csv", quote = FALSE)
 write.csv(tmp.df, "BRIPompton_rawOTUtable.csv", quote = FALSE)
-write.csv(tmpfilt2.df, "BRIPompton_filteredOTUtable.csv", quote = FALSE, row.names = FALSE)
+write.csv(tmpfilt4.df, "BRIPompton_FullFilteredOTUtable_withMock.csv", quote = FALSE, row.names = FALSE)
+write.csv(tmpfilt5.df, "BRIPompton_FullFilteredOTUtable_noMock.csv", quote = FALSE, row.names = FALSE)
 
 ## cleanup:
 rm(x,y,z,
    nau.df, oahu.df,
-   tiny.nau, tiny.perl, tiny.rut,
-   tmp.df, tmpfilt.df, tmpMatch.df, NTCs.df,
-   Match_summary, match.df, contam.df, ProjectMatches.df,
+   tmp.df, tmpfilt.df, tmpfilt2.df, tmpfilt3.df, tmpfilt4.df, tmpMatch.df, NTCs.df, bigcontamlist,
+   Match_summary, match.df, contam.df, ProjectMatches.df, allmatch.list,
    remove1, remove2)
 
-rm(allmatch.list, drop.list, matches, NTC_otu.list, tmpdrop.list, tmpx.list, toMatch)
+rm(allmatch.list, drop.list, matches, NTC_otu.list, tmpdrop.list, tmpx.list, tomatch, biglist, othercontams)
 
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
           ######     Part 3 - incorporating metadata     ######
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
 ## merge with metadata information
-#not run: tmpfilt2.df <- read.csv('https://raw.githubusercontent.com/devonorourke/guano/master/OahuBird/data/Routput/FilteredOTUs.csv', header = TRUE)
-meta.df <- read.csv('https://raw.githubusercontent.com/devonorourke/guano/master/OahuBird/data/OahuBird_metadata.csv', header = TRUE)
-meta.df$SampleID <- paste("OahuBird.", substr(meta.df$seqID, 4, 6), sep = "")
-meta.df <- meta.df[,c(4:9)]
-colnames(meta.df) <- c("SamplingDate", "BirdSpecies", "Source", "VegNum", "SampleType", "SampleID")
-master.df <- merge(tmpfilt2.df, meta.df)
-#rm(tmpfilt2.df, meta.df)
-## drop the "_suspect_mock_chimera" tag in the 'OTUid' field:
+#not run: tmpfilt4.df <- read.csv('https://raw.githubusercontent.com/devonorourke/guano/master/BRIpompton/data/Routput/BRIPompton_FullFilteredOTUtable.csv', header = TRUE)
+meta.df <- read.csv('https://raw.githubusercontent.com/devonorourke/guano/master/BRIpompton/data/BRIPomptonMeta.tsv',
+                    sep="\t", header = TRUE)
+meta.df$Alias <- gsub("-","\\.",meta.df$Alias)
+colnames(meta.df) <- c("SampleID", "BandNum", "SampleDate", "SiteName", "Territory", "RecapStatus", "BirdSpecies", "BirdAge", "BirdSex")
+
+master.df <- merge(tmpfilt4.df, meta.df)
+rm(tmpfilt4.df, meta.df)
+
+#drop the "_suspect_mock_chimera" tag in the 'OTUid' field:
 master.df$OTUid <- gsub("_.*$","",master.df$OTUid)
 
 # write file to disk:
-setwd("~/Repos/guano/OahuBird/data/Routput/")
+setwd("~/Repos/guano/BRIpompton/data/Routput/")
 write.csv(master.df, "master.csv", row.names = F, quote = F)
 
 ## Notrun: write.table(master.df, "PHINCHmaster.txt", row.names = F, quote = F, sep = "\t")
@@ -182,20 +216,22 @@ detach("package:tidyr", unload=TRUE)
 ##not run: master.df <- fread('https://raw.githubusercontent.com/devonorourke/guano/master/OahuBird/data/Routput/master.csv', header = T)
 
 library(plyr)
-setwd("~/Repos/guano/OahuBird/data/Routput/")
+setwd("~/Repos/guano/BRIpompton/data/Routput/")
 
 ## following our filtering, how many samples remain with at least 1 OTU? 2 OTUs? 10 OTUs?
-OTUperSample = count(master.df, vars = c("SampleID"))   # There are 99 remaining true samples (all bit one NTC has been filtered out)
-sum(OTUperSample$freq > 1)    # There are 90 samples with at least 2 OTUs
-sum(OTUperSample$freq > 4)    # There are 72 samples with at least 4 OTUs
-sum(OTUperSample$freq > 9)    # There are 51 samples with at least 10 OTUs
+OTUperSample = count(master.df, vars = c("SampleID"))   # There are 96 true samples remaining from our initial 99 submitted
+sum(OTUperSample$freq > 1)    # There are 93 samples with at least 2 OTUs
+sum(OTUperSample$freq > 4)    # There are 86 samples with at least 4 OTUs
+sum(OTUperSample$freq > 9)    # There are 70 samples with at least 10 OTUs
 
 ## how many observations of OTUs contain complete information (ie. include 'species_name')... a.k.a. species frequency table
-speciesOnly.df <- na.omit(master.df)
-freq_species <- as.data.frame(table(speciesOnly.df$species_name))     # frequency table of species detected
+speciesOnly.df <- na.omit(master.df)    ## 786 observations remain (about 1/3 of our dataset is named to the species level...)
+sum(freq_species$counts > 1)  # note 173 species identified, but most are not abundant (only 15 species ID'd in >= 10 samples)
+
+freq_species <- as.data.frame(table(speciesOnly.df$species_name))     # frequency table of species detected... so we see there are 173 unique species named
 colnames(freq_species) <- c("species_name", "counts")
 write.csv(freq_species, "species_frq_table.csv", row.names = F, quote = F)
-sum(freq_species$counts > 1)  # note 212 species identified, but most are not abundant (only 41 species ID'd in more than 10 samples)
+
 
 ## what is the frequency of each OTU?
 OTUcounts = count(master.df, vars = c("OTUid"))
