@@ -94,8 +94,8 @@ ProjectMatches.df <- tmp.df[tmp.df$BOLDalt %in% allmatch.list,]
 # how many reads here?
 sum(ProjectMatches.df$CountReads)    # 85,184 ... not a massive number, but something to take notice of; in addition, we have 231 observations that match!
 # how many unique OTUs are identified?
-length(unique(ProjectMatches.df$OTUid))    # 59 unique matches identified... (our data originally had 3280 OTUs)
-## Finally, use that 'nauProjectMatches.df' object and determine how many reads and how frequently are these matches identified in our real data?
+length(unique(ProjectMatches.df$OTUid))    # 59 unique matches identified... (our tmp.df dataset has 3725 OTUs)
+## Finally, use 'ProjectMatches.df' to determine how many reads and how frequently are these matches identified in our tmp.df object
 tmp_counts <- ProjectMatches.df %>%
   group_by(BOLDalt) %>%
   count()
@@ -110,65 +110,18 @@ y <- x[!duplicated(x[1:2]),]  ## obtain only unique combinations of OTUid and BO
 z <- merge(Match_summary, y)  ## paste these unique OTUid's for every BOLDid in the `Match_summary` object to identify trends in OTU read abundance and frequency of detection
 
 
-# ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ 
+## Observation: The majority of these are suspected mock chimeras. 
+## To keep as conservative an estimate as possible we'll remove each of these from the dataset.
 
-## this is where you left off ...
+## Let's build a "naughty.list" that would include any BOLDalt value that is detected in the ProjectMatches.df object:
 
-# ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ # ! ~ 
-
-
-## now group the datasets from our `Match_summary` list to include just the "BOLDalt" and "SampleID" columns, then make a frequency table from that:
-tiny.nau = nau.df[,c(1,3)]
-colnames(tiny.nau) <- c("SampleID", "BOLDalt")
-tiny.nau$library <- "nau"
-
-tiny.rut = rut.df[,c(1,17)]
-colnames(tiny.rut) <- c("SampleID", "BOLDalt")
-tiny.rut$library <- "rut"
-
-tiny.perl = perl.df[,c(1,14)]
-colnames(tiny.perl) <- c("SampleID", "BOLDalt")
-tiny.perl$library <- "perl"
-
-tmpMatch.df <- rbind(tiny.nau, tiny.perl, tiny.rut)  ## this is used for our frequency counts
-## drop the 'SINTAX', 'UTAX', 'None', and 'CFMR:IM4' labels as they won't produce any meaningful matches:
-tmp1.df <- subset(tmpMatch.df, BOLDalt != "SINTAX")
-tmp2.df <- subset(tmp1.df, BOLDalt != "UTAX")
-tmp3.df <- subset(tmp2.df, BOLDalt != "CFMR:IM4")
-match.df <- subset(tmp3.df, BOLDalt != "None")
-rm(tmp1.df, tmp2.df, tmp3.df)
-
-
-## Let's build a "naughty.list" that would include any BOLDalt value that:
-# Test-A: is detected in more than two samples in any library at least once (discard this)
-# Test-B: passes Test-A, but is detected in at least 2 libraries (discard this)
-
-## this generates a list counting the number of times a 'BOLDalt' item is identified, not the number of unique "library" values present...
-library(dplyr)
-x <- match.df %>%
-  group_by(library, BOLDalt) %>%
-  tally()
-
-## Test-A: create list of values for all non-singleton occurrences of a BOLDalt entry per library:
-y <- subset(x, n <= 2)
-remove1 <- subset(x, n > 2)
-
-## Test-B: filter out duplicate entries by "BOLDalt" as these are matches present in multiple libraries
-remove2 <- y[duplicated(y$BOLDalt),]
-z <- y[!duplicated(y$BOLDalt),]
-
-## combine 'remove1' and 'remove2' entries into a vector to exclude from final list:
-tmpdrop.list <- unique(c(remove1$BOLDalt, remove2$BOLDalt))
-## There was a single exception to the above filter - for samples containing 'BOLD:AAO4373'...
-## ...which contained vastly more reads in the Hawaiian dataset than other samples and was likely thus a contaminant into those datasets from Hawaii
-tmpx.list <- sub("BOLD:AAO4373", "", tmpdrop.list)
-drop.list <- tmpx.list[tmpx.list != ""]
+drop.list <- unique(ProjectMatches.df$BOLDalt)
 
 ## Now let's finally remove those OTUs...
 ## First write a little function and remove them from 'tmp.df' object
 '%!in%' <- function(x,y)!('%in%'(x,y))
 tmpfilt.df <- tmp.df[tmp.df$BOLDalt %!in% drop.list,]
-# note we drop from 10,720 observations to 5,564 observations
+# note we drop from 3,280 observations to 3,049 observations
 
 # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~ # ~
 
@@ -176,37 +129,20 @@ tmpfilt.df <- tmp.df[tmp.df$BOLDalt %!in% drop.list,]
 ## 1. Remove all non-arthropod chordates:
 tmpfilt2.df <- subset(tmpfilt.df, phylum_name == "Arthropoda")
   ## how many unique OTUs remain?
-  length(unique(tmpfilt2.df$OTUid)) ## lots: 1,176
+  length(unique(tmpfilt2.df$OTUid)) ## lots: 677
   ## how many unique BOLDid's?
-  length(unique(tmpfilt2.df$BOLDalt)) ## 994; interesting degree of redundancy here...
+  length(unique(tmpfilt2.df$BOLDalt)) ## 543; interesting degree of redundancy here...
 
-## 2. Among any remaining NTC samples, what OTUs are present and how are the distributed among our true samples?
-## subset the data for all 'SampleID' values that match "extBlank" string
-toMatch <- c("^NTC")    # make a list of the regex terms to match
-matches <- unique (grep(paste(toMatch,collapse="|"),
-                        tmpfilt2.df$SampleID, value=TRUE))   # make a vector of every one of those matches fitting the regex above
-NTCs.df <- tmpfilt2.df[tmpfilt2.df$SampleID %in% matches,]         # capture all matches of regex in 'tmp.df' object
-  # there are 5 total OTUs (out of a 1162 )
-
-## How many total reads are there among all these NTCs?
-sum(NTCs.df$CountReads) # there are just 7,485 total reads among all NTCs idenitified (out of 11,782,862 remaining)
-
-## Create an object listing only the OTUs present in out NTCs found in true samples too:
-NTC_otu.list <- NTCs.df$OTUid     # generate the list of all unique OTUs present in the NTCs
-contam.df <- tmpfilt2.df[tmpfilt2.df$OTUid %in% NTC_otu.list,]    # find all matches from the above list in our original 'tmp.df' data frame object
-# we find there are 95 matches; we know 5 of these are from the NTCs themselves
-# each of these OTUs seem like real contaminants from the Hawaiian samples themselves - they appear in multiple samples with high read counts
-# we'll retain each of these reads, but note that they were identified in a single contaminant sample after filtering
 
 ## Save these data:
-setwd("~/Repos/guano/OahuBird/data/Routput/")
+setwd("~/Repos/guano/BRIpompton/data/Routput/")
 write.csv(Match_summary, "suspectedContaminants.csv", quote = FALSE)
-write.csv(tmp.df, "OahuBird_rawOTUtable.csv", quote = FALSE)
-write.csv(tmpfilt2.df, "FilteredOTUs.csv", quote = FALSE, row.names = FALSE)
+write.csv(tmp.df, "BRIPompton_rawOTUtable.csv", quote = FALSE)
+write.csv(tmpfilt2.df, "BRIPompton_filteredOTUtable.csv", quote = FALSE, row.names = FALSE)
 
 ## cleanup:
 rm(x,y,z,
-   nau.df, rut.df, perl.df,
+   nau.df, oahu.df,
    tiny.nau, tiny.perl, tiny.rut,
    tmp.df, tmpfilt.df, tmpMatch.df, NTCs.df,
    Match_summary, match.df, contam.df, ProjectMatches.df,
