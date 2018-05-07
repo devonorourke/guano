@@ -1,60 +1,232 @@
-,BOLDalt,n,TotalCounts
-1,BOLD:AAA2326,2,34
-2,BOLD:AAA2330,3,313
-3,BOLD:AAA3067,6,355
-4,BOLD:AAA3564,2,115
-5,BOLD:AAA3993,6,82
-6,BOLD:AAA4646,3,142
-7,BOLD:AAA6260,4,108
-8,BOLD:AAA6292,2,93
-9,BOLD:AAA6709,2,71
-10,BOLD:AAA8103,2,86
-11,BOLD:AAA8504,4,107
-12,BOLD:AAA8523,4,102
-13,BOLD:AAA8620,3,90
-14,BOLD:AAA9619,4,385
-15,BOLD:AAB0062,4,91
-16,BOLD:AAB0124,4,12552
-17,BOLD:AAB0223,2,77
-18,BOLD:AAB1096,4,445
-19,BOLD:AAB4070,2,61
-20,BOLD:AAB5414,4,62
-21,BOLD:AAB7926,4,14994
-22,BOLD:AAC0733,4,39067
-23,BOLD:AAC2499,5,253
-24,BOLD:AAC2533,2,67
-25,BOLD:AAC6357,14,1367
-26,BOLD:AAC9882,2,148
-27,BOLD:AAD2665,3,44
-28,BOLD:AAE0951,2,36
-29,BOLD:AAE7137,2,130
-30,BOLD:AAE7397,7,28
-31,BOLD:AAF9055,11,570
-32,BOLD:AAG3622,3,211
-33,BOLD:AAG8977,3,102
-34,BOLD:AAG9172,4,2086
-35,BOLD:AAH2428,3,54
-36,BOLD:AAH2433,2,73
-37,BOLD:AAK8834,4,99
-38,BOLD:AAN0893,3,71
-39,BOLD:AAN5406,2,685
-40,BOLD:AAN6304,3,2057
-41,BOLD:AAN8576,2,42
-42,BOLD:AAO2061,3,2680
-43,BOLD:AAO4373,8,301
-44,BOLD:AAO8357,2,118
-45,BOLD:AAY9592,2,635
-46,BOLD:AAZ5969,2,38
-47,BOLD:ABW5810,11,556
-48,BOLD:ABX6298,3,131
-49,BOLD:ACA7482,2,123
-50,BOLD:ACA9904,17,605
-51,BOLD:ACL8650,6,202
-52,BOLD:ACM3087,2,45
-53,BOLD:ACN3922,2,52
-54,BOLD:ACO9170,2,41
-55,BOLD:ACP5902,5,228
-56,BOLD:ACR3763,5,336
-57,BOLD:ACS3427,2,1329
-58,BOLD:ACU4209,3,126
-59,BOLD:ACW3302,2,83
+,OTUid,TaxMethod,AlignScore,BOLDid,kingdom_name,phylum_name,class_name,order_name,family_name,genus_name,species_name,SampleID,CountReads,BOLDalt,freq,TotalCounts
+1,OTU722_suspect_mock_chimera,US,0.9844,BOLD:ACP5902.1,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,pomp.4584,137,BOLD:ACP5902,1,85184
+2,OTU532_suspect_mock_chimera,GS,100.0,BOLD:AAH2433.1,Animalia,Arthropoda,Insecta,Coleoptera,Elateridae,Athous,Athous acanthus,pomp.4585,8,BOLD:AAH2433,1,85184
+3,OTU860_suspect_mock_chimera,US,0.0000,BOLD:ACN3922.1,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,pomp.4585,10,BOLD:ACN3922,1,85184
+4,OTU1055_suspect_mock_chimera,GS,97.2,BOLD:AAN8576.2,Animalia,Arthropoda,Arachnida,Araneae,Linyphiidae,Grammonota,Grammonota gigas,pomp.4585,33,BOLD:AAN8576,1,85184
+5,OTU1125_suspect_mock_chimera,GS,99.4,BOLD:AAA3993.24,Animalia,Arthropoda,Insecta,Lepidoptera,Coleophoridae,Coleophora,Coleophora duplicis group,pomp.4585,9,BOLD:AAA3993,1,85184
+6,OTU12_suspect_mock_chimera,GS,100.0,BOLD:AAC0733.2,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Archips,Archips semiferana,pomp.4586,1137,BOLD:AAC0733,1,85184
+7,OTU161_suspect_mock_variant,GS,100.0,BOLD:AAC6357.1,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,Xenolechia,Xenolechia ontariensis,pomp.4586,19,BOLD:AAC6357,1,85184
+8,OTU722_suspect_mock_chimera,US,0.9844,BOLD:ACP5902.1,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,pomp.4586,11,BOLD:ACP5902,1,85184
+9,OTU772_suspect_mock_chimera,GS,100.0,BOLD:AAA8620.3,Animalia,Arthropoda,Insecta,Lepidoptera,Limacodidae,Euclea,Euclea delphinii,pomp.4586,7,BOLD:AAA8620,1,85184
+10,OTU1125_suspect_mock_chimera,GS,99.4,BOLD:AAA3993.24,Animalia,Arthropoda,Insecta,Lepidoptera,Coleophoridae,Coleophora,Coleophora duplicis group,pomp.4586,5,BOLD:AAA3993,1,85184
+11,OTU31_suspect_mock_chimera,GS,100.0,BOLD:AAB7926.5,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Cenopis,Cenopis directana,pomp.4587,11619,BOLD:AAB7926,1,85184
+12,OTU51_suspect_mock_chimera,GS,99.4,BOLD:AAB0124.2,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Cenopis,Cenopis pettitana,pomp.4587,3601,BOLD:AAB0124,1,85184
+13,OTU161_suspect_mock_variant,GS,100.0,BOLD:AAC6357.1,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,Xenolechia,Xenolechia ontariensis,pomp.4587,13,BOLD:AAC6357,1,85184
+14,OTU776,GS,99.4,BOLD:AAG8977.1,Animalia,Arthropoda,Insecta,Hemiptera,Derbidae,Apache,Apache degeerii,pomp.4587,42,BOLD:AAG8977,1,85184
+15,OTU988_suspect_mock_chimera,GS,100.0,BOLD:AAB0062.3,Animalia,Arthropoda,Insecta,Diptera,Tipulidae,Tipula,Tipula entomophthorae,pomp.4587,38,BOLD:AAB0062,1,85184
+16,OTU31_suspect_mock_chimera,GS,100.0,BOLD:AAB7926.5,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Cenopis,Cenopis directana,pomp.4588,1117,BOLD:AAB7926,1,85184
+17,OTU792_suspect_mock_chimera,GS,99.4,BOLD:AAB4070.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Gymnandrosoma,Gymnandrosoma punctidiscanum,pomp.4588,9,BOLD:AAB4070,1,85184
+18,OTU924_suspect_mock_chimera,GS,100.0,BOLD:AAH2428.1,Animalia,Arthropoda,Insecta,Coleoptera,Elateridae,Athous,Athous brightwelli,pomp.4588,21,BOLD:AAH2428,1,85184
+19,OTU1150_suspect_mock_chimera,GS,99.4,BOLD:AAZ5969.1,Animalia,Arthropoda,Insecta,Diptera,Tipulidae,Dolichopeza,Dolichopeza obscura,pomp.4588,30,BOLD:AAZ5969,1,85184
+20,OTU1255_suspect_mock_chimera,GS,100.0,BOLD:AAE7397.1,Animalia,Arthropoda,Insecta,Lepidoptera,Depressariidae,Depressaria,Depressaria depressana,pomp.4588,7,BOLD:AAE7397,1,85184
+21,OTU216_suspect_mock_chimera,GS,100.0,BOLD:AAN5406.1,Animalia,Arthropoda,Insecta,Diptera,Calliphoridae,Bellardia,Bellardia vulgaris,pomp.4589,661,BOLD:AAN5406,1,85184
+22,OTU538_suspect_mock_chimera,GS,100.0,BOLD:ACA9904.5,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Cheilotrichia,Cheilotrichia stigmatica,pomp.4589,70,BOLD:ACA9904,1,85184
+23,OTU776,GS,99.4,BOLD:AAG8977.1,Animalia,Arthropoda,Insecta,Hemiptera,Derbidae,Apache,Apache degeerii,pomp.4589,55,BOLD:AAG8977,1,85184
+24,OTU418_suspect_mock_chimera,GS,100.0,BOLD:ACR3763.3,Animalia,Arthropoda,Insecta,Coleoptera,Ptilodactylidae,Ptilodactyla,Ptilodactyla serricollis,pomp.4590,58,BOLD:ACR3763,1,85184
+25,OTU510_suspect_mock_chimera,GS,100.0,BOLD:AAE7137.3,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,Glauce,Glauce pectenalaeella,pomp.4590,77,BOLD:AAE7137,1,85184
+26,OTU538_suspect_mock_chimera,GS,100.0,BOLD:ACA9904.5,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Cheilotrichia,Cheilotrichia stigmatica,pomp.4590,64,BOLD:ACA9904,1,85184
+27,OTU1130_suspect_mock_chimera,SS,0.2300,BOLD:AAE0951.1,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,pomp.4591,30,BOLD:AAE0951,1,85184
+28,OTU173,GS,100.0,BOLD:AAN6304.4,Animalia,Arthropoda,Arachnida,Araneae,Araneidae,Araneus,Araneus guttulatus,pomp.4594,1141,BOLD:AAN6304,1,85184
+29,OTU450_suspect_mock_chimera,GS,99.4,BOLD:AAA2330.1,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Hypena,Hypena baltimoralis,pomp.4594,288,BOLD:AAA2330,1,85184
+30,OTU475_suspect_mock_chimera,GS,99.4,BOLD:ACL8650.5,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Epiphragma,Epiphragma fasciapenne,pomp.4594,42,BOLD:ACL8650,1,85184
+31,OTU626_suspect_mock_chimera,GS,100.0,BOLD:AAA8523.1,Animalia,Arthropoda,Insecta,Lepidoptera,Sesiidae,Synanthedon,Synanthedon acerni,pomp.4594,1,BOLD:AAA8523,1,85184
+32,OTU921_suspect_mock_chimera,GS,99.4,BOLD:AAB5414.1,Animalia,Arthropoda,Insecta,Lepidoptera,Coleophoridae,Coleophora,Coleophora cratipennella,pomp.4594,1,BOLD:AAB5414,1,85184
+33,OTU461_suspect_mock_chimera,GS,100.0,BOLD:AAF9055.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Erioptera,Erioptera septemtrionis,pomp.4596,73,BOLD:AAF9055,1,85184
+34,OTU745_suspect_mock_chimera,GS,100.0,BOLD:AAC2533.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Olethreutes,Olethreutes fasciatana,pomp.4596,9,BOLD:AAC2533,1,85184
+35,OTU51_suspect_mock_chimera,GS,99.4,BOLD:AAB0124.2,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Cenopis,Cenopis pettitana,pomp.4597,1256,BOLD:AAB0124,1,85184
+36,OTU528_suspect_mock_chimera,GS,97.8,BOLD:AAO8357.1,Animalia,Arthropoda,Insecta,Hemiptera,Delphacidae,Delphacodes,Delphacodes detecta,pomp.4597,54,BOLD:AAO8357,1,85184
+37,OTU913_suspect_mock_chimera,GS,97.8,BOLD:AAB0223.1,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,pomp.4597,28,BOLD:AAB0223,1,85184
+38,OTU475_suspect_mock_chimera,GS,99.4,BOLD:ACL8650.5,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Epiphragma,Epiphragma fasciapenne,pomp.4598,13,BOLD:ACL8650,1,85184
+39,OTU924_suspect_mock_chimera,GS,100.0,BOLD:AAH2428.1,Animalia,Arthropoda,Insecta,Coleoptera,Elateridae,Athous,Athous brightwelli,pomp.4598,10,BOLD:AAH2428,1,85184
+40,OTU1125_suspect_mock_chimera,GS,99.4,BOLD:AAA3993.24,Animalia,Arthropoda,Insecta,Lepidoptera,Coleophoridae,Coleophora,Coleophora duplicis group,pomp.4598,1,BOLD:AAA3993,1,85184
+41,OTU161_suspect_mock_variant,GS,100.0,BOLD:AAC6357.1,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,Xenolechia,Xenolechia ontariensis,pomp.4599,482,BOLD:AAC6357,1,85184
+42,OTU538_suspect_mock_chimera,GS,100.0,BOLD:ACA9904.5,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Cheilotrichia,Cheilotrichia stigmatica,pomp.4599,21,BOLD:ACA9904,1,85184
+43,OTU538_suspect_mock_chimera,GS,100.0,BOLD:ACA9904.5,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Cheilotrichia,Cheilotrichia stigmatica,pomp.4601,23,BOLD:ACA9904,1,85184
+44,OTU1130_suspect_mock_chimera,SS,0.2300,BOLD:AAE0951.1,Animalia,Arthropoda,Insecta,Lepidoptera,NA,NA,NA,pomp.4601,6,BOLD:AAE0951,1,85184
+45,OTU161_suspect_mock_variant,GS,100.0,BOLD:AAC6357.1,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,Xenolechia,Xenolechia ontariensis,pomp.4602,22,BOLD:AAC6357,1,85184
+46,OTU1150_suspect_mock_chimera,GS,99.4,BOLD:AAZ5969.1,Animalia,Arthropoda,Insecta,Diptera,Tipulidae,Dolichopeza,Dolichopeza obscura,pomp.4602,8,BOLD:AAZ5969,1,85184
+47,OTU118,GS,100.0,BOLD:AAG9172.3,Animalia,Arthropoda,Arachnida,Araneae,Linyphiidae,Tenuiphantes,Tenuiphantes tenuis,pomp.4603,30,BOLD:AAG9172,1,85184
+48,OTU418_suspect_mock_chimera,GS,100.0,BOLD:ACR3763.3,Animalia,Arthropoda,Insecta,Coleoptera,Ptilodactylidae,Ptilodactyla,Ptilodactyla serricollis,pomp.4605,24,BOLD:ACR3763,1,85184
+49,OTU490_suspect_mock_chimera,GS,100.0,BOLD:ABX6298.1,Animalia,Arthropoda,Insecta,Diptera,Tipulidae,Nephrotoma,Nephrotoma ferruginea,pomp.4605,88,BOLD:ABX6298,1,85184
+50,OTU263_suspect_mock_chimera,GS,100.0,BOLD:AAB1096.3,Animalia,Arthropoda,Insecta,Lepidoptera,Blastobasidae,Blastobasis,Blastobasis glandulella,pomp.4606,287,BOLD:AAB1096,1,85184
+51,OTU1255_suspect_mock_chimera,GS,100.0,BOLD:AAE7397.1,Animalia,Arthropoda,Insecta,Lepidoptera,Depressariidae,Depressaria,Depressaria depressana,pomp.4606,1,BOLD:AAE7397,1,85184
+52,OTU118,GS,100.0,BOLD:AAG9172.3,Animalia,Arthropoda,Arachnida,Araneae,Linyphiidae,Tenuiphantes,Tenuiphantes tenuis,pomp.4607,1110,BOLD:AAG9172,1,85184
+53,OTU621_suspect_mock_chimera,GS,98.9,BOLD:AAA3564.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Clepsis,Clepsis persicana,pomp.4607,21,BOLD:AAA3564,1,85184
+54,OTU490_suspect_mock_chimera,GS,100.0,BOLD:ABX6298.1,Animalia,Arthropoda,Insecta,Diptera,Tipulidae,Nephrotoma,Nephrotoma ferruginea,pomp.4608,10,BOLD:ABX6298,1,85184
+55,OTU722_suspect_mock_chimera,US,0.9844,BOLD:ACP5902.1,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,pomp.4608,24,BOLD:ACP5902,1,85184
+56,OTU1115,GS,100.0,BOLD:AAA2326.1,Animalia,Arthropoda,Insecta,Hymenoptera,Apidae,Apis,Apis mellifera,pomp.4608,12,BOLD:AAA2326,1,85184
+57,OTU433_suspect_mock_chimera,US,0.0169,BOLD:ACO9170.1,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,pomp.4609,21,BOLD:ACO9170,1,85184
+58,OTU461_suspect_mock_chimera,GS,100.0,BOLD:AAF9055.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Erioptera,Erioptera septemtrionis,pomp.4609,40,BOLD:AAF9055,1,85184
+59,OTU475_suspect_mock_chimera,GS,99.4,BOLD:ACL8650.5,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Epiphragma,Epiphragma fasciapenne,pomp.4609,21,BOLD:ACL8650,1,85184
+60,OTU12_suspect_mock_chimera,GS,100.0,BOLD:AAC0733.2,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Archips,Archips semiferana,pomp.4610,35602,BOLD:AAC0733,1,85184
+61,OTU329_suspect_mock_chimera,GS,100.0,BOLD:ABW5810.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Euphylidorea,Euphylidorea luteola,pomp.4611,27,BOLD:ABW5810,1,85184
+62,OTU461_suspect_mock_chimera,GS,100.0,BOLD:AAF9055.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Erioptera,Erioptera septemtrionis,pomp.4612,31,BOLD:AAF9055,1,85184
+63,OTU639,US,0.0269,BOLD:ACA7482.1,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,pomp.4612,33,BOLD:ACA7482,1,85184
+64,OTU161_suspect_mock_variant,GS,100.0,BOLD:AAC6357.1,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,Xenolechia,Xenolechia ontariensis,pomp.4615,56,BOLD:AAC6357,1,85184
+65,OTU103_suspect_mock_chimera,GS,100.0,BOLD:AAO2061.1,Animalia,Arthropoda,Insecta,Blattodea,Ectobiidae,Parcoblatta,NA,pomp.4616,60,BOLD:AAO2061,1,85184
+66,OTU902_suspect_mock_chimera,GS,99.4,BOLD:AAA8103.1,Animalia,Arthropoda,Insecta,Lepidoptera,Depressariidae,Antaeotricha,Antaeotricha leucillana,pomp.4616,39,BOLD:AAA8103,1,85184
+67,OTU329_suspect_mock_chimera,GS,100.0,BOLD:ABW5810.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Euphylidorea,Euphylidorea luteola,pomp.4617,49,BOLD:ABW5810,1,85184
+68,OTU343_suspect_mock_chimera,SS,0.1400,BOLD:AAO4373.1,Animalia,Arthropoda,Arachnida,Araneae,NA,NA,NA,pomp.4617,26,BOLD:AAO4373,1,85184
+69,OTU935_suspect_mock_chimera,GS,97.8,BOLD:AAA6260.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Gretchena,Gretchena delicatana,pomp.4617,43,BOLD:AAA6260,1,85184
+70,OTU1255_suspect_mock_chimera,GS,100.0,BOLD:AAE7397.1,Animalia,Arthropoda,Insecta,Lepidoptera,Depressariidae,Depressaria,Depressaria depressana,pomp.4617,1,BOLD:AAE7397,1,85184
+71,OTU118,GS,100.0,BOLD:AAG9172.3,Animalia,Arthropoda,Arachnida,Araneae,Linyphiidae,Tenuiphantes,Tenuiphantes tenuis,pomp.4618,600,BOLD:AAG9172,1,85184
+72,OTU367_suspect_mock_chimera,GS,100.0,BOLD:AAA3067.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Eucopina,Eucopina cocana,pomp.4618,13,BOLD:AAA3067,1,85184
+73,OTU461_suspect_mock_chimera,GS,100.0,BOLD:AAF9055.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Erioptera,Erioptera septemtrionis,pomp.4618,10,BOLD:AAF9055,1,85184
+74,OTU161_suspect_mock_variant,GS,100.0,BOLD:AAC6357.1,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,Xenolechia,Xenolechia ontariensis,pomp.4619,32,BOLD:AAC6357,1,85184
+75,OTU367_suspect_mock_chimera,GS,100.0,BOLD:AAA3067.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Eucopina,Eucopina cocana,pomp.4619,81,BOLD:AAA3067,1,85184
+76,OTU372_suspect_mock_chimera,GS,100.0,BOLD:AAC2499.1,Animalia,Arthropoda,Insecta,Diptera,Drosophilidae,Drosophila,Drosophila suzukii,pomp.4619,12,BOLD:AAC2499,1,85184
+77,OTU569_suspect_mock_chimera,GS,100.0,BOLD:AAA8504.1,Animalia,Arthropoda,Insecta,Lepidoptera,Blastobasidae,Holcocera,Holcocera chalcofrontella,pomp.4619,49,BOLD:AAA8504,1,85184
+78,OTU872_suspect_mock_chimera,GS,99.4,BOLD:AAA4646.1,Animalia,Arthropoda,Insecta,Lepidoptera,Crambidae,Microthyris,Microthyris prolongalis,pomp.4619,64,BOLD:AAA4646,1,85184
+79,OTU161_suspect_mock_variant,GS,100.0,BOLD:AAC6357.1,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,Xenolechia,Xenolechia ontariensis,pomp.4620,39,BOLD:AAC6357,1,85184
+80,OTU367_suspect_mock_chimera,GS,100.0,BOLD:AAA3067.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Eucopina,Eucopina cocana,pomp.4620,37,BOLD:AAA3067,1,85184
+81,OTU461_suspect_mock_chimera,GS,100.0,BOLD:AAF9055.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Erioptera,Erioptera septemtrionis,pomp.4620,40,BOLD:AAF9055,1,85184
+82,OTU329_suspect_mock_chimera,GS,100.0,BOLD:ABW5810.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Euphylidorea,Euphylidorea luteola,pomp.4621,66,BOLD:ABW5810,1,85184
+83,OTU921_suspect_mock_chimera,GS,99.4,BOLD:AAB5414.1,Animalia,Arthropoda,Insecta,Lepidoptera,Coleophoridae,Coleophora,Coleophora cratipennella,pomp.4621,14,BOLD:AAB5414,1,85184
+84,OTU12_suspect_mock_chimera,GS,100.0,BOLD:AAC0733.2,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Archips,Archips semiferana,pomp.4622,1496,BOLD:AAC0733,1,85184
+85,OTU713_suspect_mock_variant,GS,100.0,BOLD:AAA6709.2,Animalia,Arthropoda,Insecta,Lepidoptera,Sphingidae,Ceratomia,Ceratomia undulosa,pomp.4622,36,BOLD:AAA6709,1,85184
+86,OTU51_suspect_mock_chimera,GS,99.4,BOLD:AAB0124.2,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Cenopis,Cenopis pettitana,pomp.4623,6993,BOLD:AAB0124,1,85184
+87,OTU383_suspect_mock_chimera,GS,100.0,BOLD:AAG3622.1,Animalia,Arthropoda,Insecta,Hemiptera,Aphrophoridae,Aphrophora,Aphrophora cribrata,pomp.4623,8,BOLD:AAG3622,1,85184
+88,OTU343_suspect_mock_chimera,SS,0.1400,BOLD:AAO4373.1,Animalia,Arthropoda,Arachnida,Araneae,NA,NA,NA,pomp.4625,65,BOLD:AAO4373,1,85184
+89,OTU538_suspect_mock_chimera,GS,100.0,BOLD:ACA9904.5,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Cheilotrichia,Cheilotrichia stigmatica,pomp.4625,23,BOLD:ACA9904,1,85184
+90,OTU569_suspect_mock_chimera,GS,100.0,BOLD:AAA8504.1,Animalia,Arthropoda,Insecta,Lepidoptera,Blastobasidae,Holcocera,Holcocera chalcofrontella,pomp.4625,26,BOLD:AAA8504,1,85184
+91,OTU805_suspect_mock_chimera,GS,98.9,BOLD:ACU4209.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,NA,NA,pomp.4625,83,BOLD:ACU4209,1,85184
+92,OTU1255_suspect_mock_chimera,GS,100.0,BOLD:AAE7397.1,Animalia,Arthropoda,Insecta,Lepidoptera,Depressariidae,Depressaria,Depressaria depressana,pomp.4625,1,BOLD:AAE7397,1,85184
+93,OTU538_suspect_mock_chimera,GS,100.0,BOLD:ACA9904.5,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Cheilotrichia,Cheilotrichia stigmatica,pomp.4626,20,BOLD:ACA9904,1,85184
+94,OTU844_suspect_mock_chimera,GS,100.0,BOLD:AAK8834.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Metalimnobia,Metalimnobia triocellata,pomp.4626,3,BOLD:AAK8834,1,85184
+95,OTU1265,SS,0.3100,BOLD:AAD2665.5,Animalia,Arthropoda,Arachnida,Araneae,Philodromidae,Philodromus,NA,pomp.4626,20,BOLD:AAD2665,1,85184
+96,OTU216_suspect_mock_chimera,GS,100.0,BOLD:AAN5406.1,Animalia,Arthropoda,Insecta,Diptera,Calliphoridae,Bellardia,Bellardia vulgaris,pomp.4627,24,BOLD:AAN5406,1,85184
+97,OTU329_suspect_mock_chimera,GS,100.0,BOLD:ABW5810.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Euphylidorea,Euphylidorea luteola,pomp.4627,9,BOLD:ABW5810,1,85184
+98,OTU450_suspect_mock_chimera,GS,99.4,BOLD:AAA2330.1,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Hypena,Hypena baltimoralis,pomp.4627,15,BOLD:AAA2330,1,85184
+99,OTU475_suspect_mock_chimera,GS,99.4,BOLD:ACL8650.5,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Epiphragma,Epiphragma fasciapenne,pomp.4627,28,BOLD:ACL8650,1,85184
+100,OTU538_suspect_mock_chimera,GS,100.0,BOLD:ACA9904.5,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Cheilotrichia,Cheilotrichia stigmatica,pomp.4627,32,BOLD:ACA9904,1,85184
+101,OTU805_suspect_mock_chimera,GS,98.9,BOLD:ACU4209.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,NA,NA,pomp.4627,13,BOLD:ACU4209,1,85184
+102,OTU161_suspect_mock_variant,GS,100.0,BOLD:AAC6357.1,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,Xenolechia,Xenolechia ontariensis,pomp.4628,40,BOLD:AAC6357,1,85184
+103,OTU461_suspect_mock_chimera,GS,100.0,BOLD:AAF9055.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Erioptera,Erioptera septemtrionis,pomp.4628,65,BOLD:AAF9055,1,85184
+104,OTU230_suspect_mock_chimera,GS,98.9,BOLD:AAY9592.1,Animalia,Arthropoda,Insecta,Coleoptera,Scarabaeidae,Phyllophaga,Phyllophaga crenulata,pomp.4629,73,BOLD:AAY9592,1,85184
+105,OTU538_suspect_mock_chimera,GS,100.0,BOLD:ACA9904.5,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Cheilotrichia,Cheilotrichia stigmatica,pomp.4629,9,BOLD:ACA9904,1,85184
+106,OTU569_suspect_mock_chimera,GS,100.0,BOLD:AAA8504.1,Animalia,Arthropoda,Insecta,Lepidoptera,Blastobasidae,Holcocera,Holcocera chalcofrontella,pomp.4629,31,BOLD:AAA8504,1,85184
+107,OTU621_suspect_mock_chimera,GS,98.9,BOLD:AAA3564.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Clepsis,Clepsis persicana,pomp.4629,94,BOLD:AAA3564,1,85184
+108,OTU626_suspect_mock_chimera,GS,100.0,BOLD:AAA8523.1,Animalia,Arthropoda,Insecta,Lepidoptera,Sesiidae,Synanthedon,Synanthedon acerni,pomp.4629,8,BOLD:AAA8523,1,85184
+109,OTU263_suspect_mock_chimera,GS,100.0,BOLD:AAB1096.3,Animalia,Arthropoda,Insecta,Lepidoptera,Blastobasidae,Blastobasis,Blastobasis glandulella,pomp.4630,84,BOLD:AAB1096,1,85184
+110,OTU343_suspect_mock_chimera,SS,0.1400,BOLD:AAO4373.1,Animalia,Arthropoda,Arachnida,Araneae,NA,NA,NA,pomp.4630,38,BOLD:AAO4373,1,85184
+111,OTU367_suspect_mock_chimera,GS,100.0,BOLD:AAA3067.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Eucopina,Eucopina cocana,pomp.4630,12,BOLD:AAA3067,1,85184
+112,OTU456_suspect_mock_chimera,GS,97.1,BOLD:AAN0893.1,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Grammodes,Grammodes bifasciata,pomp.4630,32,BOLD:AAN0893,1,85184
+113,OTU461_suspect_mock_chimera,GS,100.0,BOLD:AAF9055.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Erioptera,Erioptera septemtrionis,pomp.4630,121,BOLD:AAF9055,1,85184
+114,OTU569_suspect_mock_chimera,GS,100.0,BOLD:AAA8504.1,Animalia,Arthropoda,Insecta,Lepidoptera,Blastobasidae,Holcocera,Holcocera chalcofrontella,pomp.4630,1,BOLD:AAA8504,1,85184
+115,OTU872_suspect_mock_chimera,GS,99.4,BOLD:AAA4646.1,Animalia,Arthropoda,Insecta,Lepidoptera,Crambidae,Microthyris,Microthyris prolongalis,pomp.4630,48,BOLD:AAA4646,1,85184
+116,OTU935_suspect_mock_chimera,GS,97.8,BOLD:AAA6260.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Gretchena,Gretchena delicatana,pomp.4630,27,BOLD:AAA6260,1,85184
+117,OTU367_suspect_mock_chimera,GS,100.0,BOLD:AAA3067.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Eucopina,Eucopina cocana,pomp.4631,79,BOLD:AAA3067,1,85184
+118,OTU538_suspect_mock_chimera,GS,100.0,BOLD:ACA9904.5,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Cheilotrichia,Cheilotrichia stigmatica,pomp.4631,54,BOLD:ACA9904,1,85184
+119,OTU563_suspect_mock_chimera,GS,100.0,BOLD:AAC9882.4,Animalia,Arthropoda,Insecta,Ephemeroptera,Heptageniidae,Leucrocuta,Leucrocuta aphrodite,pomp.4631,80,BOLD:AAC9882,1,85184
+120,OTU626_suspect_mock_chimera,GS,100.0,BOLD:AAA8523.1,Animalia,Arthropoda,Insecta,Lepidoptera,Sesiidae,Synanthedon,Synanthedon acerni,pomp.4631,50,BOLD:AAA8523,1,85184
+121,OTU722_suspect_mock_chimera,US,0.9844,BOLD:ACP5902.1,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,pomp.4631,17,BOLD:ACP5902,1,85184
+122,OTU772_suspect_mock_chimera,GS,100.0,BOLD:AAA8620.3,Animalia,Arthropoda,Insecta,Lepidoptera,Limacodidae,Euclea,Euclea delphinii,pomp.4631,38,BOLD:AAA8620,1,85184
+123,OTU1255_suspect_mock_chimera,GS,100.0,BOLD:AAE7397.1,Animalia,Arthropoda,Insecta,Lepidoptera,Depressariidae,Depressaria,Depressaria depressana,pomp.4631,2,BOLD:AAE7397,1,85184
+124,OTU31_suspect_mock_chimera,GS,100.0,BOLD:AAB7926.5,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Cenopis,Cenopis directana,pomp.4632,465,BOLD:AAB7926,1,85184
+125,OTU173,GS,100.0,BOLD:AAN6304.4,Animalia,Arthropoda,Arachnida,Araneae,Araneidae,Araneus,Araneus guttulatus,pomp.4632,71,BOLD:AAN6304,1,85184
+126,OTU456_suspect_mock_chimera,GS,97.1,BOLD:AAN0893.1,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Grammodes,Grammodes bifasciata,pomp.4632,5,BOLD:AAN0893,1,85184
+127,OTU510_suspect_mock_chimera,GS,100.0,BOLD:AAE7137.3,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,Glauce,Glauce pectenalaeella,pomp.4632,53,BOLD:AAE7137,1,85184
+128,OTU343_suspect_mock_chimera,SS,0.1400,BOLD:AAO4373.1,Animalia,Arthropoda,Arachnida,Araneae,NA,NA,NA,pomp.4633,16,BOLD:AAO4373,1,85184
+129,OTU329_suspect_mock_chimera,GS,100.0,BOLD:ABW5810.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Euphylidorea,Euphylidorea luteola,pomp.4634,28,BOLD:ABW5810,1,85184
+130,OTU461_suspect_mock_chimera,GS,100.0,BOLD:AAF9055.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Erioptera,Erioptera septemtrionis,pomp.4634,8,BOLD:AAF9055,1,85184
+131,OTU1115,GS,100.0,BOLD:AAA2326.1,Animalia,Arthropoda,Insecta,Hymenoptera,Apidae,Apis,Apis mellifera,pomp.4634,22,BOLD:AAA2326,1,85184
+132,OTU12_suspect_mock_chimera,GS,100.0,BOLD:AAC0733.2,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Archips,Archips semiferana,pomp.4635,832,BOLD:AAC0733,1,85184
+133,OTU776,GS,99.4,BOLD:AAG8977.1,Animalia,Arthropoda,Insecta,Hemiptera,Derbidae,Apache,Apache degeerii,pomp.4635,5,BOLD:AAG8977,1,85184
+134,OTU263_suspect_mock_chimera,GS,100.0,BOLD:AAB1096.3,Animalia,Arthropoda,Insecta,Lepidoptera,Blastobasidae,Blastobasis,Blastobasis glandulella,pomp.4636,18,BOLD:AAB1096,1,85184
+135,OTU329_suspect_mock_chimera,GS,100.0,BOLD:ABW5810.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Euphylidorea,Euphylidorea luteola,pomp.4636,30,BOLD:ABW5810,1,85184
+136,OTU418_suspect_mock_chimera,GS,100.0,BOLD:ACR3763.3,Animalia,Arthropoda,Insecta,Coleoptera,Ptilodactylidae,Ptilodactyla,Ptilodactyla serricollis,pomp.4636,31,BOLD:ACR3763,1,85184
+137,OTU626_suspect_mock_chimera,GS,100.0,BOLD:AAA8523.1,Animalia,Arthropoda,Insecta,Lepidoptera,Sesiidae,Synanthedon,Synanthedon acerni,pomp.4636,43,BOLD:AAA8523,1,85184
+138,OTU860_suspect_mock_chimera,US,0.0000,BOLD:ACN3922.1,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,pomp.4636,42,BOLD:ACN3922,1,85184
+139,OTU988_suspect_mock_chimera,GS,100.0,BOLD:AAB0062.3,Animalia,Arthropoda,Insecta,Diptera,Tipulidae,Tipula,Tipula entomophthorae,pomp.4636,3,BOLD:AAB0062,1,85184
+140,OTU161_suspect_mock_variant,GS,100.0,BOLD:AAC6357.1,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,Xenolechia,Xenolechia ontariensis,pomp.4637,251,BOLD:AAC6357,1,85184
+141,OTU929_suspect_mock_chimera,GS,100.0,BOLD:ACM3087.1,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,pomp.4637,1,BOLD:ACM3087,1,85184
+142,OTU844_suspect_mock_chimera,GS,100.0,BOLD:AAK8834.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Metalimnobia,Metalimnobia triocellata,pomp.4638,42,BOLD:AAK8834,1,85184
+143,OTU538_suspect_mock_chimera,GS,100.0,BOLD:ACA9904.5,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Cheilotrichia,Cheilotrichia stigmatica,pomp.4642,33,BOLD:ACA9904,1,85184
+144,OTU329_suspect_mock_chimera,GS,100.0,BOLD:ABW5810.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Euphylidorea,Euphylidorea luteola,pomp.4643,45,BOLD:ABW5810,1,85184
+145,OTU411_suspect_mock_chimera,GS,99.4,BOLD:AAA9619.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Cenopis,Cenopis reticulatana,pomp.4643,22,BOLD:AAA9619,1,85184
+146,OTU161_suspect_mock_variant,GS,100.0,BOLD:AAC6357.1,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,Xenolechia,Xenolechia ontariensis,pomp.4645,71,BOLD:AAC6357,1,85184
+147,OTU343_suspect_mock_chimera,SS,0.1400,BOLD:AAO4373.1,Animalia,Arthropoda,Arachnida,Araneae,NA,NA,NA,pomp.4645,58,BOLD:AAO4373,1,85184
+148,OTU383_suspect_mock_chimera,GS,100.0,BOLD:AAG3622.1,Animalia,Arthropoda,Insecta,Hemiptera,Aphrophoridae,Aphrophora,Aphrophora cribrata,pomp.4645,29,BOLD:AAG3622,1,85184
+149,OTU173,GS,100.0,BOLD:AAN6304.4,Animalia,Arthropoda,Arachnida,Araneae,Araneidae,Araneus,Araneus guttulatus,pomp.4646,845,BOLD:AAN6304,1,85184
+150,OTU929_suspect_mock_chimera,GS,100.0,BOLD:ACM3087.1,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,pomp.4650,44,BOLD:ACM3087,1,85184
+151,OTU1125_suspect_mock_chimera,GS,99.4,BOLD:AAA3993.24,Animalia,Arthropoda,Insecta,Lepidoptera,Coleophoridae,Coleophora,Coleophora duplicis group,pomp.4650,17,BOLD:AAA3993,1,85184
+152,OTU161_suspect_mock_variant,GS,100.0,BOLD:AAC6357.1,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,Xenolechia,Xenolechia ontariensis,pomp.4651,15,BOLD:AAC6357,1,85184
+153,OTU1055_suspect_mock_chimera,GS,97.2,BOLD:AAN8576.2,Animalia,Arthropoda,Arachnida,Araneae,Linyphiidae,Grammonota,Grammonota gigas,pomp.4651,9,BOLD:AAN8576,1,85184
+154,OTU538_suspect_mock_chimera,GS,100.0,BOLD:ACA9904.5,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Cheilotrichia,Cheilotrichia stigmatica,pomp.4652,20,BOLD:ACA9904,1,85184
+155,OTU1265,SS,0.3100,BOLD:AAD2665.5,Animalia,Arthropoda,Arachnida,Araneae,Philodromidae,Philodromus,NA,pomp.4654,23,BOLD:AAD2665,1,85184
+156,OTU745_suspect_mock_chimera,GS,100.0,BOLD:AAC2533.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Olethreutes,Olethreutes fasciatana,pomp.4655,58,BOLD:AAC2533,1,85184
+157,OTU1125_suspect_mock_chimera,GS,99.4,BOLD:AAA3993.24,Animalia,Arthropoda,Insecta,Lepidoptera,Coleophoridae,Coleophora,Coleophora duplicis group,pomp.4655,19,BOLD:AAA3993,1,85184
+158,OTU329_suspect_mock_chimera,GS,100.0,BOLD:ABW5810.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Euphylidorea,Euphylidorea luteola,pomp.4657,15,BOLD:ABW5810,1,85184
+159,OTU988_suspect_mock_chimera,GS,100.0,BOLD:AAB0062.3,Animalia,Arthropoda,Insecta,Diptera,Tipulidae,Tipula,Tipula entomophthorae,pomp.4657,39,BOLD:AAB0062,1,85184
+160,OTU411_suspect_mock_chimera,GS,99.4,BOLD:AAA9619.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Cenopis,Cenopis reticulatana,pomp.4659,26,BOLD:AAA9619,1,85184
+161,OTU450_suspect_mock_chimera,GS,99.4,BOLD:AAA2330.1,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Hypena,Hypena baltimoralis,pomp.4660,10,BOLD:AAA2330,1,85184
+162,OTU538_suspect_mock_chimera,GS,100.0,BOLD:ACA9904.5,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Cheilotrichia,Cheilotrichia stigmatica,pomp.4660,13,BOLD:ACA9904,1,85184
+163,OTU872_suspect_mock_chimera,GS,99.4,BOLD:AAA4646.1,Animalia,Arthropoda,Insecta,Lepidoptera,Crambidae,Microthyris,Microthyris prolongalis,pomp.4660,30,BOLD:AAA4646,1,85184
+164,OTU162,US,1.0000,BOLD:ACS3427.1,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,pomp.4661,338,BOLD:ACS3427,1,85184
+165,OTU343_suspect_mock_chimera,SS,0.1400,BOLD:AAO4373.1,Animalia,Arthropoda,Arachnida,Araneae,NA,NA,NA,pomp.4661,42,BOLD:AAO4373,1,85184
+166,OTU372_suspect_mock_chimera,GS,100.0,BOLD:AAC2499.1,Animalia,Arthropoda,Insecta,Diptera,Drosophilidae,Drosophila,Drosophila suzukii,pomp.4661,65,BOLD:AAC2499,1,85184
+167,OTU433_suspect_mock_chimera,US,0.0169,BOLD:ACO9170.1,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,pomp.4661,20,BOLD:ACO9170,1,85184
+168,OTU161_suspect_mock_variant,GS,100.0,BOLD:AAC6357.1,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,Xenolechia,Xenolechia ontariensis,pomp.4662,101,BOLD:AAC6357,1,85184
+169,OTU372_suspect_mock_chimera,GS,100.0,BOLD:AAC2499.1,Animalia,Arthropoda,Insecta,Diptera,Drosophilidae,Drosophila,Drosophila suzukii,pomp.4663,55,BOLD:AAC2499,1,85184
+170,OTU461_suspect_mock_chimera,GS,100.0,BOLD:AAF9055.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Erioptera,Erioptera septemtrionis,pomp.4663,41,BOLD:AAF9055,1,85184
+171,OTU343_suspect_mock_chimera,SS,0.1400,BOLD:AAO4373.1,Animalia,Arthropoda,Arachnida,Araneae,NA,NA,NA,pomp.4664,32,BOLD:AAO4373,1,85184
+172,OTU532_suspect_mock_chimera,GS,100.0,BOLD:AAH2433.1,Animalia,Arthropoda,Insecta,Coleoptera,Elateridae,Athous,Athous acanthus,pomp.4664,65,BOLD:AAH2433,1,85184
+173,OTU538_suspect_mock_chimera,GS,100.0,BOLD:ACA9904.5,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Cheilotrichia,Cheilotrichia stigmatica,pomp.4664,71,BOLD:ACA9904,1,85184
+174,OTU372_suspect_mock_chimera,GS,100.0,BOLD:AAC2499.1,Animalia,Arthropoda,Insecta,Diptera,Drosophilidae,Drosophila,Drosophila suzukii,pomp.4665,52,BOLD:AAC2499,1,85184
+175,OTU263_suspect_mock_chimera,GS,100.0,BOLD:AAB1096.3,Animalia,Arthropoda,Insecta,Lepidoptera,Blastobasidae,Blastobasis,Blastobasis glandulella,pomp.4666,56,BOLD:AAB1096,1,85184
+176,OTU329_suspect_mock_chimera,GS,100.0,BOLD:ABW5810.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Euphylidorea,Euphylidorea luteola,pomp.4666,26,BOLD:ABW5810,1,85184
+177,OTU456_suspect_mock_chimera,GS,97.1,BOLD:AAN0893.1,Animalia,Arthropoda,Insecta,Lepidoptera,Erebidae,Grammodes,Grammodes bifasciata,pomp.4666,34,BOLD:AAN0893,1,85184
+178,OTU538_suspect_mock_chimera,GS,100.0,BOLD:ACA9904.5,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Cheilotrichia,Cheilotrichia stigmatica,pomp.4666,27,BOLD:ACA9904,1,85184
+179,OTU921_suspect_mock_chimera,GS,99.4,BOLD:AAB5414.1,Animalia,Arthropoda,Insecta,Lepidoptera,Coleophoridae,Coleophora,Coleophora cratipennella,pomp.4666,46,BOLD:AAB5414,1,85184
+180,OTU989_suspect_mock_chimera,US,0.0000,BOLD:ACW3302.1,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,pomp.4666,44,BOLD:ACW3302,1,85184
+181,OTU475_suspect_mock_chimera,GS,99.4,BOLD:ACL8650.5,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Epiphragma,Epiphragma fasciapenne,pomp.4667,23,BOLD:ACL8650,1,85184
+182,OTU935_suspect_mock_chimera,GS,97.8,BOLD:AAA6260.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Gretchena,Gretchena delicatana,pomp.4667,12,BOLD:AAA6260,1,85184
+183,OTU329_suspect_mock_chimera,GS,100.0,BOLD:ABW5810.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Euphylidorea,Euphylidorea luteola,pomp.4668,25,BOLD:ABW5810,1,85184
+184,OTU411_suspect_mock_chimera,GS,99.4,BOLD:AAA9619.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Cenopis,Cenopis reticulatana,pomp.4668,192,BOLD:AAA9619,1,85184
+185,OTU921_suspect_mock_chimera,GS,99.4,BOLD:AAB5414.1,Animalia,Arthropoda,Insecta,Lepidoptera,Coleophoridae,Coleophora,Coleophora cratipennella,pomp.4668,1,BOLD:AAB5414,1,85184
+186,OTU31_suspect_mock_chimera,GS,100.0,BOLD:AAB7926.5,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Cenopis,Cenopis directana,pomp.4669,1793,BOLD:AAB7926,1,85184
+187,OTU51_suspect_mock_chimera,GS,99.4,BOLD:AAB0124.2,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Cenopis,Cenopis pettitana,pomp.4669,702,BOLD:AAB0124,1,85184
+188,OTU161_suspect_mock_variant,GS,100.0,BOLD:AAC6357.1,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,Xenolechia,Xenolechia ontariensis,pomp.4669,92,BOLD:AAC6357,1,85184
+189,OTU372_suspect_mock_chimera,GS,100.0,BOLD:AAC2499.1,Animalia,Arthropoda,Insecta,Diptera,Drosophilidae,Drosophila,Drosophila suzukii,pomp.4669,69,BOLD:AAC2499,1,85184
+190,OTU475_suspect_mock_chimera,GS,99.4,BOLD:ACL8650.5,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Epiphragma,Epiphragma fasciapenne,pomp.4669,75,BOLD:ACL8650,1,85184
+191,OTU805_suspect_mock_chimera,GS,98.9,BOLD:ACU4209.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,NA,NA,pomp.4669,30,BOLD:ACU4209,1,85184
+192,OTU988_suspect_mock_chimera,GS,100.0,BOLD:AAB0062.3,Animalia,Arthropoda,Insecta,Diptera,Tipulidae,Tipula,Tipula entomophthorae,pomp.4669,11,BOLD:AAB0062,1,85184
+193,OTU989_suspect_mock_chimera,US,0.0000,BOLD:ACW3302.1,Animalia,Arthropoda,Insecta,Hymenoptera,NA,NA,NA,pomp.4669,39,BOLD:ACW3302,1,85184
+194,OTU461_suspect_mock_chimera,GS,100.0,BOLD:AAF9055.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Erioptera,Erioptera septemtrionis,pomp.4670,25,BOLD:AAF9055,1,85184
+195,OTU528_suspect_mock_chimera,GS,97.8,BOLD:AAO8357.1,Animalia,Arthropoda,Insecta,Hemiptera,Delphacidae,Delphacodes,Delphacodes detecta,pomp.4670,64,BOLD:AAO8357,1,85184
+196,OTU538_suspect_mock_chimera,GS,100.0,BOLD:ACA9904.5,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Cheilotrichia,Cheilotrichia stigmatica,pomp.4671,55,BOLD:ACA9904,1,85184
+197,OTU638_suspect_mock_chimera,GS,100.0,BOLD:AAA6292.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Cnephasia,Cnephasia stephensiana,pomp.4671,45,BOLD:AAA6292,1,85184
+198,OTU1255_suspect_mock_chimera,GS,100.0,BOLD:AAE7397.1,Animalia,Arthropoda,Insecta,Lepidoptera,Depressariidae,Depressaria,Depressaria depressana,pomp.4671,12,BOLD:AAE7397,1,85184
+199,OTU343_suspect_mock_chimera,SS,0.1400,BOLD:AAO4373.1,Animalia,Arthropoda,Arachnida,Araneae,NA,NA,NA,pomp.4672,24,BOLD:AAO4373,1,85184
+200,OTU383_suspect_mock_chimera,GS,100.0,BOLD:AAG3622.1,Animalia,Arthropoda,Insecta,Hemiptera,Aphrophoridae,Aphrophora,Aphrophora cribrata,pomp.4672,174,BOLD:AAG3622,1,85184
+201,OTU638_suspect_mock_chimera,GS,100.0,BOLD:AAA6292.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Cnephasia,Cnephasia stephensiana,pomp.4672,48,BOLD:AAA6292,1,85184
+202,OTU538_suspect_mock_chimera,GS,100.0,BOLD:ACA9904.5,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Cheilotrichia,Cheilotrichia stigmatica,pomp.4673,39,BOLD:ACA9904,1,85184
+203,OTU103_suspect_mock_chimera,GS,100.0,BOLD:AAO2061.1,Animalia,Arthropoda,Insecta,Blattodea,Ectobiidae,Parcoblatta,NA,pomp.4674,365,BOLD:AAO2061,1,85184
+204,OTU418_suspect_mock_chimera,GS,100.0,BOLD:ACR3763.3,Animalia,Arthropoda,Insecta,Coleoptera,Ptilodactylidae,Ptilodactyla,Ptilodactyla serricollis,pomp.4674,160,BOLD:ACR3763,1,85184
+205,OTU844_suspect_mock_chimera,GS,100.0,BOLD:AAK8834.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Metalimnobia,Metalimnobia triocellata,pomp.4675,23,BOLD:AAK8834,1,85184
+206,OTU230_suspect_mock_chimera,GS,98.9,BOLD:AAY9592.1,Animalia,Arthropoda,Insecta,Coleoptera,Scarabaeidae,Phyllophaga,Phyllophaga crenulata,pomp.4676,562,BOLD:AAY9592,1,85184
+207,OTU639,US,0.0269,BOLD:ACA7482.1,Animalia,Arthropoda,Insecta,Diptera,NA,NA,NA,pomp.4676,90,BOLD:ACA7482,1,85184
+208,OTU722_suspect_mock_chimera,US,0.9844,BOLD:ACP5902.1,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,pomp.4676,39,BOLD:ACP5902,1,85184
+209,OTU162,US,1.0000,BOLD:ACS3427.1,Animalia,Arthropoda,Insecta,Hemiptera,NA,NA,NA,pomp.4677,991,BOLD:ACS3427,1,85184
+210,OTU772_suspect_mock_chimera,GS,100.0,BOLD:AAA8620.3,Animalia,Arthropoda,Insecta,Lepidoptera,Limacodidae,Euclea,Euclea delphinii,pomp.4677,45,BOLD:AAA8620,1,85184
+211,OTU161_suspect_mock_variant,GS,100.0,BOLD:AAC6357.1,Animalia,Arthropoda,Insecta,Lepidoptera,Gelechiidae,Xenolechia,Xenolechia ontariensis,pomp.4682,134,BOLD:AAC6357,1,85184
+212,OTU329_suspect_mock_chimera,GS,100.0,BOLD:ABW5810.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Euphylidorea,Euphylidorea luteola,pomp.4682,236,BOLD:ABW5810,1,85184
+213,OTU367_suspect_mock_chimera,GS,100.0,BOLD:AAA3067.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Eucopina,Eucopina cocana,pomp.4682,133,BOLD:AAA3067,1,85184
+214,OTU418_suspect_mock_chimera,GS,100.0,BOLD:ACR3763.3,Animalia,Arthropoda,Insecta,Coleoptera,Ptilodactylidae,Ptilodactyla,Ptilodactyla serricollis,pomp.4682,63,BOLD:ACR3763,1,85184
+215,OTU461_suspect_mock_chimera,GS,100.0,BOLD:AAF9055.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Erioptera,Erioptera septemtrionis,pomp.4682,116,BOLD:AAF9055,1,85184
+216,OTU490_suspect_mock_chimera,GS,100.0,BOLD:ABX6298.1,Animalia,Arthropoda,Insecta,Diptera,Tipulidae,Nephrotoma,Nephrotoma ferruginea,pomp.4682,33,BOLD:ABX6298,1,85184
+217,OTU538_suspect_mock_chimera,GS,100.0,BOLD:ACA9904.5,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Cheilotrichia,Cheilotrichia stigmatica,pomp.4682,31,BOLD:ACA9904,1,85184
+218,OTU563_suspect_mock_chimera,GS,100.0,BOLD:AAC9882.4,Animalia,Arthropoda,Insecta,Ephemeroptera,Heptageniidae,Leucrocuta,Leucrocuta aphrodite,pomp.4682,68,BOLD:AAC9882,1,85184
+219,OTU713_suspect_mock_variant,GS,100.0,BOLD:AAA6709.2,Animalia,Arthropoda,Insecta,Lepidoptera,Sphingidae,Ceratomia,Ceratomia undulosa,pomp.4682,35,BOLD:AAA6709,1,85184
+220,OTU792_suspect_mock_chimera,GS,99.4,BOLD:AAB4070.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Gymnandrosoma,Gymnandrosoma punctidiscanum,pomp.4682,52,BOLD:AAB4070,1,85184
+221,OTU844_suspect_mock_chimera,GS,100.0,BOLD:AAK8834.1,Animalia,Arthropoda,Insecta,Diptera,Limoniidae,Metalimnobia,Metalimnobia triocellata,pomp.4682,31,BOLD:AAK8834,1,85184
+222,OTU902_suspect_mock_chimera,GS,99.4,BOLD:AAA8103.1,Animalia,Arthropoda,Insecta,Lepidoptera,Depressariidae,Antaeotricha,Antaeotricha leucillana,pomp.4682,47,BOLD:AAA8103,1,85184
+223,OTU913_suspect_mock_chimera,GS,97.8,BOLD:AAB0223.1,Animalia,Arthropoda,Insecta,Coleoptera,NA,NA,NA,pomp.4682,49,BOLD:AAB0223,1,85184
+224,OTU924_suspect_mock_chimera,GS,100.0,BOLD:AAH2428.1,Animalia,Arthropoda,Insecta,Coleoptera,Elateridae,Athous,Athous brightwelli,pomp.4682,23,BOLD:AAH2428,1,85184
+225,OTU935_suspect_mock_chimera,GS,97.8,BOLD:AAA6260.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Gretchena,Gretchena delicatana,pomp.4682,26,BOLD:AAA6260,1,85184
+226,OTU1125_suspect_mock_chimera,GS,99.4,BOLD:AAA3993.24,Animalia,Arthropoda,Insecta,Lepidoptera,Coleophoridae,Coleophora,Coleophora duplicis group,pomp.4682,31,BOLD:AAA3993,1,85184
+227,OTU103_suspect_mock_chimera,GS,100.0,BOLD:AAO2061.1,Animalia,Arthropoda,Insecta,Blattodea,Ectobiidae,Parcoblatta,NA,pomp.4684,2255,BOLD:AAO2061,1,85184
+228,OTU118,GS,100.0,BOLD:AAG9172.3,Animalia,Arthropoda,Arachnida,Araneae,Linyphiidae,Tenuiphantes,Tenuiphantes tenuis,pomp.4684,346,BOLD:AAG9172,1,85184
+229,OTU411_suspect_mock_chimera,GS,99.4,BOLD:AAA9619.1,Animalia,Arthropoda,Insecta,Lepidoptera,Tortricidae,Cenopis,Cenopis reticulatana,pomp.4684,145,BOLD:AAA9619,1,85184
+230,OTU1255_suspect_mock_chimera,GS,100.0,BOLD:AAE7397.1,Animalia,Arthropoda,Insecta,Lepidoptera,Depressariidae,Depressaria,Depressaria depressana,pomp.4684,4,BOLD:AAE7397,1,85184
+231,OTU1265,SS,0.3100,BOLD:AAD2665.5,Animalia,Arthropoda,Arachnida,Araneae,Philodromidae,Philodromus,NA,pomp.4684,1,BOLD:AAD2665,1,85184

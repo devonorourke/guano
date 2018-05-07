@@ -187,17 +187,14 @@ rm(allmatch.list, drop.list, matches, NTC_otu.list, tmpdrop.list, tmpx.list, tom
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
 
 ## merge with metadata information
-#not run: tmpfilt4.df <- read.csv('https://raw.githubusercontent.com/devonorourke/guano/master/BRIpompton/data/Routput/BRIPompton_FullFilteredOTUtable.csv', header = TRUE)
+#not run: tmpfilt5.df <- read.csv('https://raw.githubusercontent.com/devonorourke/guano/master/BRIpompton/data/Routput/BRIPompton_FullFilteredOTUtable_noMock.csv', header = TRUE)
 meta.df <- read.csv('https://raw.githubusercontent.com/devonorourke/guano/master/BRIpompton/data/BRIPomptonMeta.tsv',
                     sep="\t", header = TRUE)
 meta.df$Alias <- gsub("-","\\.",meta.df$Alias)
 colnames(meta.df) <- c("SampleID", "BandNum", "SampleDate", "SiteName", "Territory", "RecapStatus", "BirdSpecies", "BirdAge", "BirdSex")
 
-master.df <- merge(tmpfilt4.df, meta.df)
-rm(tmpfilt4.df, meta.df)
-
-#drop the "_suspect_mock_chimera" tag in the 'OTUid' field:
-master.df$OTUid <- gsub("_.*$","",master.df$OTUid)
+master.df <- merge(tmpfilt5.df, meta.df)
+rm(tmpfilt5.df, meta.df)
 
 # write file to disk:
 setwd("~/Repos/guano/BRIpompton/data/Routput/")
@@ -219,17 +216,16 @@ library(plyr)
 setwd("~/Repos/guano/BRIpompton/data/Routput/")
 
 ## following our filtering, how many samples remain with at least 1 OTU? 2 OTUs? 10 OTUs?
-OTUperSample = count(master.df, vars = c("SampleID"))   # There are 96 true samples remaining from our initial 99 submitted
-sum(OTUperSample$freq > 1)    # There are 93 samples with at least 2 OTUs
-sum(OTUperSample$freq > 4)    # There are 86 samples with at least 4 OTUs
-sum(OTUperSample$freq > 9)    # There are 70 samples with at least 10 OTUs
+OTUperSample = count(master.df, vars = c("SampleID"))   # There are 95 true samples remaining from our initial 99 submitted
+sum(OTUperSample$freq > 1)    # There are 89 samples with at least 2 OTUs
+sum(OTUperSample$freq > 4)    # There are 81 samples with at least 4 OTUs
+sum(OTUperSample$freq > 9)    # There are 62 samples with at least 10 OTUs
 
 ## how many observations of OTUs contain complete information (ie. include 'species_name')... a.k.a. species frequency table
-speciesOnly.df <- na.omit(master.df)    ## 786 observations remain (about 1/3 of our dataset is named to the species level...)
-sum(freq_species$counts > 1)  # note 173 species identified, but most are not abundant (only 15 species ID'd in >= 10 samples)
-
+speciesOnly.df <- na.omit(master.df)    ## 575 observations remain (about 1/3 of our dataset is named to the species level...)
 freq_species <- as.data.frame(table(speciesOnly.df$species_name))     # frequency table of species detected... so we see there are 173 unique species named
 colnames(freq_species) <- c("species_name", "counts")
+sum(freq_species$counts > 1)  # note 156 species identified, but most are not abundant (only 15 species ID'd in >= 10 samples)
 write.csv(freq_species, "species_frq_table.csv", row.names = F, quote = F)
 
 
@@ -237,16 +233,20 @@ write.csv(freq_species, "species_frq_table.csv", row.names = F, quote = F)
 OTUcounts = count(master.df, vars = c("OTUid"))
 colnames(OTUcounts) <- c("OTUid", "NumberOfDetections")
 write.csv(OTUcounts, "OTUcounts.csv", row.names = F, quote = F)
+  ## most abundant OTU (OTU361) present in 35 samples - can't read too much into this because it's never detected in high amounts
+  ## probably the most frequent high read winner is OTU20 - a gypsy moth - as this has many samples with high numbers of reads detected  
 
 ## how many OTUs are called per site?
-OTUperSite = count(master.df, vars = c("Source"))
-colnames(OTUperSite) <- c("Source", "NumberOfDetections")
+OTUperSite = count(master.df, vars = c("SiteName"))
+colnames(OTUperSite) <- c("SiteName", "NumberOfDetections")
 write.csv(OTUperSite, "OTU_per_Site.csv", row.names = F, quote = F)
+  ## decent balance of detections per site 
 
-## how many OTUs are called between bird guano vs. vegetation?
-OTUperSampleType = count(master.df, vars = c("SampleType"))
-colnames(OTUperSampleType) <- c("SampleType", "NumberOfDetections")
-write.csv(OTUperSampleType, "OTU_per_SampleType.csv", row.names = F, quote = F)
+## how many OTUs are called per Territory?
+OTUperTerritory = count(master.df, vars = c("Territory"))
+colnames(OTUperSite) <- c("Territory", "NumberOfDetections")
+write.csv(OTUperSite, "OTU_per_Territory.csv", row.names = F, quote = F)
+  ## as with SiteName, decent number of observations per Territory to make comparisons across all elements of this variable
 
 
 # ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ #
