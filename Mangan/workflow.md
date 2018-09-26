@@ -1,5 +1,5 @@
 # Introduction
-All information created for this project is available at [this Github repo](https://github.com/devonorourke/guano/tree/master/managan). Please visit that page for more information regarding data tables, visualizations, and code used to complete this work.
+All information created for this project is available at [this Github repo](https://github.com/devonorourke/guano/tree/master/Mangan). Please visit that page for more information regarding data tables, visualizations, and code used to complete this work.
 
 ## Molecular work  
 ??? Avian fecal samples were collected by Biodiversity Research Institute staff, led by Oksana Lane. Samples were placed directly in Qiagen/MoBio PowerFecal kit collection tubes to avoid potential cross contamination. Earlier work with avian samples suggested that this kit works well to extract DNA but potential PCR inhibitors remain in solution that prevent successful amplification of the arthropod COI target. Thus we followed the standard MoBio PowerFecal guide, eluting in 60 uL of Solution C6. The eluent was then subject to a 2x Ampure XP cleanup, and eluted in 20 uL of Nuclease Free Water (NFW).
