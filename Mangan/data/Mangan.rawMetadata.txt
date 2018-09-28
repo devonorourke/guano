@@ -3,23 +3,23 @@ Date	Site	Roost	Individual Samples	Pooled Sample	Collector(s)	Notes	Set Traps	Pu
 6/21/2017	Egner	B	10	1			11:20 AM	3:00 PM	bats present	6/14/2017	63
 6/21/2017	Egner	C	10	1	cc2		11:25 AM	3:25 PM	bats present	6/14/2017	37
 6/21/2017	Egner	D	10	1	dd2		11:30 AM	3:30 PM	bats present	6/14/2017	41
-6/21/2017	Hickory Bottoms	A	10	1	aa1		10:30 AM	1:40 PM	1 dead bat	6/7/2017	79
-6/21/2017	Hickory Bottoms	B	10	1	bb1		10:40 AM	1:50 PM	lots of bats	6/7/2017	108
-6/21/2017	Hickory Bottoms	C	10	1	cc1		10:45 AM	2:20 PM	lots of bats	6/7/2017	94
-6/21/2017	Hickory Bottoms	D	10	1	dd1		10:50 AM	2:25 PM	bats present	6/7/2017	113
+6/21/2017	HickoryBottoms	A	10	1	aa1		10:30 AM	1:40 PM	1 dead bat	6/7/2017	79
+6/21/2017	HickoryBottoms	B	10	1	bb1		10:40 AM	1:50 PM	lots of bats	6/7/2017	108
+6/21/2017	HickoryBottoms	C	10	1	cc1		10:45 AM	2:20 PM	lots of bats	6/7/2017	94
+6/21/2017	HickoryBottoms	D	10	1	dd1		10:50 AM	2:25 PM	bats present	6/7/2017	113
 7/27/2017	Egner	A	5	0			2:30 PM	11:30 AM	quiet	7/19/2017	2
 7/27/2017	Egner	B	10	1	bbZ		2:25 PM	11:25 AM	bats present	7/19/2017	117
 7/27/2017	Egner	C	10	1	ccZ		2:15 PM	11:15 AM	bats present	7/19/2017	14
 7/27/2017	Egner	D	10	1	ddZ		2:20 PM	11:20 AM	bats present	7/19/2017	88
-7/27/2017	Hickory Bottoms	A	10	1	aaY		1:15 PM	9:30 AM	quiet	7/12/2017	11
-7/27/2017	Hickory Bottoms	B	10	1	bbY		1:20 PM	9:40 AM	bats present	7/12/2017	142
-7/27/2017	Hickory Bottoms	C	10	1	ccY		1:35 PM	9:30 AM	bats present	7/12/2017	68
-7/27/2017	Hickory Bottoms	D	10	1	ddY		1:30 PM	9:40 AM	bats present	7/12/2017	73
+7/27/2017	HickoryBottoms	A	10	1	aaY		1:15 PM	9:30 AM	quiet	7/12/2017	11
+7/27/2017	HickoryBottoms	B	10	1	bbY		1:20 PM	9:40 AM	bats present	7/12/2017	142
+7/27/2017	HickoryBottoms	C	10	1	ccY		1:35 PM	9:30 AM	bats present	7/12/2017	68
+7/27/2017	HickoryBottoms	D	10	1	ddY		1:30 PM	9:40 AM	bats present	7/12/2017	73
 9/15/2017	Egner	A	7	0			2:50 PM	12:05 PM	quiet	9/18/2017	0
 9/15/2017	Egner	B	10	1	bbX		3:05 PM	12:30 PM	bats present	9/18/2017	82
 9/15/2017	Egner	C	10	1	ccX		2:55 PM	12:15 PM	bats present	9/18/2017	74
 9/15/2017	Egner	D	10	1	ddX		3:00 PM	12:20 PM	bats present	9/18/2017	25
-9/15/2017	Hickory Bottoms	A	10	1	aaa		1:05 PM	10:05 AM	bats present	9/14/2017	67
-9/15/2017	Hickory Bottoms	B	10	1	bbb		1:00 PM	10:10 AM	bats present	9/14/2017	70
-9/15/2017	Hickory Bottoms	C	N/A	N/A			1:10 PM	10:20 AM	N/A	9/14/2017	0
-9/15/2017	Hickory Bottoms	D	10	1	ddd		1:20 PM	10:25 AM	lots of bats	9/14/2017	154
+9/15/2017	HickoryBottoms	A	10	1	aaa		1:05 PM	10:05 AM	bats present	9/14/2017	67
+9/15/2017	HickoryBottoms	B	10	1	bbb		1:00 PM	10:10 AM	bats present	9/14/2017	70
+9/15/2017	HickoryBottoms	C	N/A	N/A			1:10 PM	10:20 AM	N/A	9/14/2017	0
+9/15/2017	HickoryBottoms	D	10	1	ddd		1:20 PM	10:25 AM	lots of bats	9/14/2017	154
