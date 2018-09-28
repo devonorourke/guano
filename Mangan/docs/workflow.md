@@ -1,72 +1,64 @@
 # Introduction
-All information created for this project is available at [this Github repo](https://github.com/devonorourke/guano/tree/master/Mangan). Please visit that page for more information regarding data tables, visualizations, and code used to complete this work.
+All information created for this project is available at [this Github repo](https://github.com/devonorourke/guano/tree/master/Mangan). Please visit that page for more information regarding data tables| visualizations| and code used to complete this work.
 
 ## Molecular work  
-??? Avian fecal samples were collected by Biodiversity Research Institute staff, led by Oksana Lane. Samples were placed directly in Qiagen/MoBio PowerFecal kit collection tubes to avoid potential cross contamination. Earlier work with avian samples suggested that this kit works well to extract DNA but potential PCR inhibitors remain in solution that prevent successful amplification of the arthropod COI target. Thus we followed the standard MoBio PowerFecal guide, eluting in 60 uL of Solution C6. The eluent was then subject to a 2x Ampure XP cleanup, and eluted in 20 uL of Nuclease Free Water (NFW).
 
-??? COI amplicons were selectively amplified from the extracted and cleaned avian fecal DNA using custom primers adapted from Jusino 2017 (see preprint [here] (DOI: 10.7287/peerj.preprints.3184v1)); the key modification is that my design incorporates the entire Illumina adapter, barcode, pad, and linker, plus the COI primer sequence into a single oligo, rather than employing a 2-step process of COI PCR and subsequent adapter ligation. PCR products were pooled in equimolar fashion except when concentrations fell below 1.0 nM; those samples for which there was less than that mass of DNA were pooled with a maximum of 20 uL per sample. The subsequent pool was then filtered using the QiaQuick PCR cleanup spin column. The library was then submitted to Hubbard Center for Genome Studies at the University of New Hampshire.
+## sequencing at NAU
 
-## sequencing at UNH
-??? The pooled library of COI amplicons were sequenced using a HiSeq 2500 platform following 250 bp PE sequencing using V3 chemistry set for a Rapid run on March 1, 2018. Raw numbers of reads and general run metrics are available to view from [this link](http://cobb.unh.edu/180302_orourke_P11_2_B_DemuxStats.html). Though it was not intended, the single library of pooled samples was spiked in on two separate lanes (we requested just one); thus there was about twice the expected number of sequences generated - reads of each sample among the two lanes were combined and renamed [described here](https://github.com/devonorourke/guano/blob/master/BRIpompton/docs/pompton-rename.md). These raw combined reads were then trimmed and quality filtered, clustered, and assigned taxonomy through the `amptk` pipeline described below.  
+## Renaming
+Renamed the default raw .fastq files to something easier to work with:
 
-??? About 6.1 million reads were generated across 105 samples. The positive control (mock community) spike in was well balanced (containing about 30,000 reads), with DNA extraction negative controls showing among the lowest read counts (~ 2000) and the PCR negative demonstrating zero reads. The true samples comprised the majority of the sequence data, with about 98.7% of all data dedicated to bird fecal samples.  
-
-## Creating the working environment for `amptk`
+For the `CONTROL` files:
 ```
-conda create -n amptk python=3.6 biopython natsort pandas numpy matplotlib seaborn python-edlib edlib biom-format psutil
-source activate amptk
-
-conda install -c bioconda vsearch
-conda install r-base bioconductor-dada2
-conda install r-base bioconductor-phyloseq
-conda install r-tidyverse
-
-R
-install.packages('devtools')
-library('devtools')
-# did not run: install_github("tobiasgf/lulu")
-q()
-
-git clone https://github.com/nextgenusfs/amptk.git
-cd $HOME/bin
-ln -s /mnt/lustre/macmaneslab/devon/pkgs/amptk/bin/amptk .
+rename 's/-xx-xx-USA-2017-076-JF_//g' *.gz
+rename 's/CONTROL-//g' *.gz
 ```
+
+For the `NHCS` files:
+```
+rename 's/-xx-VE-USA-2017-076-JF_.*.L/_L/g' *.gz
+rename 's/NHCS-//g' *.gz
+```
+
+This results in control files having names like:
+```
+ExtractionNTC9S97_L001_R1_001.fastq.gz
+ExtractionNTC9S97_L001_R2_001.fastq.gz
+```
+
+and true samples having names like:
+```
+6212017EGA1_L001_R1_001.fastq.gz
+6212017EGA1_L001_R2_001.fastq.gz
+```
+
+## Installation specifications
+
 
 The current versions among the core programs used in the `amptk` pipleine are as follows:
-- AMPtk v1.2.4
+- AMPtk v1.1.3-36d7eda
 - usearch9 v9.2.64_i86linux32
 - usearch10 v10.0.240_i86linux32
 - vsearch  v2.7.0_linux_x86_64
 
-Remaining python modules and R dependencies were installed via Conda (upgrade/updates with `pip` and/or `conda` performed 13-April-2018); install commands were:
-```
-pip install -U -I biopython natsort pandas numpy matplotlib seaborn edlib biom-format psutil
-conda install r-base bioconductor-dada2
-conda install r-base bioconductor-dada2
-```  
-
-> Note that the core `amptk` package was updated from the initial conda install in which the virtual environment was created
-
-The environment was activated as: `source activate amptk`. All bioinformatic processes described below occurred within this virtual environment.  
-
 # amptk pipeline
 
-[amptk](https://github.com/nextgenusfs/amptk) is a bioinformatic toolkit which performs all necessary tasks beginning with quality and adapter trimming of raw reads, clustering OTUs, denoising and chimera detection, through to assigning taxonomy to each identified cluster and generating (among other outputs) the list of per-sample taxa represented in the dataset. A full documentation of available parameters used for the program are [detailed here](http://amptk.readthedocs.io/en/latest/index.html).
+[amptk](https://github.com/nextgenusfs/amptk) is a bioinformatic toolkit which performs all necessary tasks beginning with quality and adapter trimming of raw reads| clustering OTUs| denoising and chimera detection| through to assigning taxonomy to each identified cluster and generating (among other outputs) the list of per-sample taxa represented in the dataset. A full documentation of available parameters used for the program are [detailed here](http://amptk.readthedocs.io/en/latest/index.html).
 
-As noted above, a similarly named virtual environment "`amptk`" was created when completing the installation process. Note that recent versions of `amptk` are now compatible with Python3, thus a virtual environment was created with that Python version to reflect the change.  
+The following sections reflect the basic outlines of the scripts used to execute the `amptk` commands. Note that commands were submitted through a compute cluster and thus do not reflect the entirety of the script full script - we're showing just the arguments necessary to recapitulate the `amptk`-specific code.
 
-The following sections reflect the basic outlines of the scripts used to execute the `amptk` commands. However, as these jobs were submitted through a compute cluster they do not reflect the entirety of the script. See the [scripts](https://github.com/devonorourke/guano/tree/master/BRIpompton/scripts) directory for full details of each script employed.
+Finally| though not implied in either the script nor in the code blocks below| subdirectories were created for each `amptk` process prior to executing the command. The directories were typically named for this process (for example| the raw .fastq files are in `../project/fqraw`| the output from the `amptk taxonomy` commands reside within `../project/taxonomy`| etc.).  
 
-Finally, though not implied in either the script nor in the code blocks below, child directories were created for each `amptk` process within the parent directory for this process (for example, the raw .fastq files are in `../project/fqraw`, the output of `amptk illumina` reside within `../project/illumina`, the output from the `amptk taxonomy` commands reside within `../project/taxonomy`, etc.).  
-
-## adapter trimming and PE merging
+# adapter trimming and PE merging
 
 The first step in the pipeline trims adapters (as a result of the insert length being less than the read length) and then uses USEARCH to merge paired end reads. Orphaned reads are discarded (this typically accounts for less then 2% of the overall number or reads in a sample).
 
+> The following script was executed in `$PROJECTPATH/trimfq`
+
 ```
 amptk illumina \
--i /mnt/lustre/macmaneslab/devon/guano/NAU/Mangan/fastq/raw
--o trim \
+-i /mnt/lustre/macmaneslab/devon/guano/NAU/Mangan/rawfq \
+--out trim \
 --rescue_forward on \
 --require_primer off \
 --min_len 160 \
@@ -78,88 +70,119 @@ amptk illumina \
 --cleanup
 ```
 
-A single **.fastq.gz** file is output by concatenating all the individual paired reads with headers modified to specify the sample name. In addition, the **.amptk-demux.log** file documents the proportion of merged reads per sample. The library was fairly well balanced, with 76 samples having more than 5,000 reads each; all four of our DNA extraction negative controls had less than 5,000 reads but all had enough to warrant inclusion in the analysis to investigate low-level contamination. In fact, all samples were included in the subsequent filtering analyses to determine what minimal read threshold was required for inclusion in the clustering step.  
+A single **.fastq.gz** file is output by concatenating all the individual paired reads with headers modified to specify the sample name. In addition| the **.amptk-demux.log** file documents the proportion of merged reads per sample. All but 7 of the 308 samples had sufficient reads for analysis.
 
-> note - to view the read counts from the `.amptk-demux.log` file, just run this little one-liner:
+> note - to view the read counts from the `.amptk-demux.log` file| just run this little one-liner:
 ```
-sed -n '/Found.*.barcoded samples/,$p' trim_pomp.amptk-demux.log | grep -v "^\[" | sed 's/^[[:blank:]]*//'
+sed -n '/Found.*.barcoded samples/|$p' trim.amptk-demux.log | grep -v "^\[" | sed 's/^[[:blank:]]*//'
 ```
 
-## dropping samples
+Notable concerns include substantial reads associated with negative control samples. We'll need to tack those samples and filter out possible contaminants from the entire dataset. For now| we'll remove the 7 samples with insufficient read depth:
 
-There is an important tradeoff between the likelihood that a read is the result of index bleed versus a true representation of the amplicons in a sample; if one is to account and filter for index-bleed, then one is to likely reduce the number of reads in a sample. Because the mock community proportion of reads was well balanced in this run, the likelihood of index bleed is no higher among known community members in the positive control than any true sample (or negative control); we therefore run little risk in initially including all of our samples going into the preliminary clustering process. Nevertheless, we may revisit dropping samples after our first filtering estimations following clustering if it is determined that certain samples with low read numbers are likely containing just contaminant reads or those whose reads may be reduced due to our index-bleed calculations.  
+# dropping samples
 
-Clustering was therefore performed initially on all reads without any samples dropped. One final note - it could be easy to just set an arbitrary threshold of 5000 reads, as this would then remove all NTC samples and about 20% of our true samples; we could then assert that all we'd need to filter thereafter was some proportion of index-bleed. However this approach doesn't leverage the fact that we can learn something about what OTUs may need to have their reads further reduced if they in fact are present in the negative controls. The power in keeping in those NTCs initially is that we can better assess which OTUs, and at what read depth, should be filtered.  
+There is an important tradeoff with retaining all reads in all samples| versus retaining fewer reads in fewer samples: the likelihood of a false positive. In our dataset| false positives can occur in multiple ways: chimeric reads| mis-assigned barcodes| and PCR error. Retaining samples with very low read depth runs the risk of keeping reads which are near or below the index (barcode) switching error rate; we find it more appropriate to drop samples when there are fewer than a few thousand reads. We'll do that here - note there are a few ways in `amptk` to do this| but we'll just specify dropping any samples with less than 1000 reads (note that of the 7 samples we're dropping| the one with the _greatest_ number of reads is just 47):
+> We are performing this task within the same path as the input: `$PROJECTPATH/trimfq`
 
-## clustering for OTUs
+```
+amptk remove \
+-i /mnt/lustre/macmaneslab/devon/guano/NAU/Mangan/trimfq/trim.demux.fq.gz \
+-t 1000 \
+-o dropd.demux.fq
+```
 
-This is a two step process in which the **.fastq** file containing all reads is parsed first using the `DADA2` algorithm creating **Amplicon Sequence Variants (ASV)** (formerly termed **iSeqs**) candidate sequences. These unique sequences are then clustered to a specified similarity threshold (97%) using a traditional `UCLUST` approach. See Jon's documentation describing the differences [here](http://amptk.readthedocs.io/en/latest/clustering.html). In brief, **ASV** values are clustered at a 100% identity, whereas the resulting **OTUs** are clustered at 97% identity, meaning that the **ASV** sequences are more exclusive than the **OTUs**.  
+We'll use the output `dropd.demux.fq` file for the next step in our pipeline: clustering OTUs from the available sequence data.
 
-In addition there is a chimera filtering step applied to the data; this requires the installation of the COI database provided by amptk:
+# clustering for OTUs
 
+AMPTK's clustering pipeline| as we're using it| is a three step process in which:
+1. The **dropd.demux.fq** file containing relevant reads is parsed first using `VSEARCH` to assess read quality
+2. The subsequent quality-filtered reads are then clustered as OTUs. We're using the `UNOISE3` algorithm to cluster here| which "clusters" at 100% identity| meaning that we're keeping all unique sequence variants (with some built-in error modeling to merge variation likely due to sequencing). In addition to the clustering iteself| this process includes a chimera-filtering step driven by the COI database created with:
 ```
 amptk install -i COI
 ```
+3. The resulting _Zotus_ produced with UNOISE3 are then clustered at the conventional 97% identity with `UCLUST`.  
 
-Then execute the clustering with the following code:
+> See Jon's documentation describing the differences [here](http://amptk.readthedocs.io/en/latest/clustering.html) regarding other clustering options.
 
+The command itself executed for clustering is:
 ```
-amptk dada2 \
---fastq /mnt/lustre/macmaneslab/devon/guano/Pompton/illumina/trim_pomp.demux.fq.gz \
---out rough \
---length 180 \
---platform illumina \
+~/bin/amptk unoise3 \
+-i dropd.demux.fq \
+-o unoise \
 --uchime_ref COI
 ```
 
-The output contains a pair of files which are applied in the next filtering strategy (for index bleed): the `.cluster.otu_table.txt` file which follows a traditional OTU matrix format, as well as the accompanying `.cluster.otus.fa` file which contains the OTU id in the header and the associated sequence. Each dataset is then filtered according to the following commands (see **Filtering** section below).  
+The clustering process results with two datasets consisting of the same kind of infromation - an OTU table and a fasta file. Each table/fasta pair relates to the clustering process mentioned above: one table/fasta contains 100% identity clusters| while the other contains 97% identity clusters. I've found that for the sake of performing simple diet analyses| clustering works fine. This is because we next append taxonomic information to these OTUs| and the resulting taxonomic identities of unique (at 100% identity) OTUs often collapse to the same taxonony| which would have been collapsed if we had used the 97% identity clustering.
 
-We find that after quality and chimera filtering, about **86 % of reads** were used to identify unique sequence variants (ASVs) or clusters (OTUs). The following table summarizes information contained in the `Pompton_clust-rough.log` file generated in the `amptk clust` command:
+We find that **11,544,724 reads** pass the quality filtering from the initial **13,882,162 reads** analyzed. These reads then are reduced to **1,517,626 unique sequences** which are then deduplicated within `UNOISE3`. These unique sequence variants are denoised to just **4,202** variants, of which **3,583** unique sequence variants pass chimera filtering (**520** (12.4%) chimeras, **3583** (85.3%) non-chimeras, and **99** (2.4%) borderline sequences in 4,202 total sequences. The **4,202** unique variants are then clustered into OTUs using a 97% identity threshold, resulting in **1,927** OTUs (Singletons: **1187**, 33.1% of seqs, 61.6% of clusters.
 
-|  | allSamples |
-| --- | --- |
-| # OTUs clustered | 2,152 |
-| # reads mapped to OTUs | 2,595,284 |
-| # ASVs clustered |  4,305 |
-| # reads mapped to ASVs | 2,603,097 |
+This last point is critical to notice, as it can greatly influence the interpretation in diversity metrics:
+```
+Singletons: **1187**, 33.1% of seqs, 61.6% of clusters.
+```
 
+This means that 33% of the data are sequences which occur only once in the dataset - they exist in only one sample. Likewise, over 60% of the OTUs (the clusters) are singletons. If we were to filter out singletons, we would be dropping the majority of our OTUs, and over 30% of our sequence data. The question is whether or not we want to analyze the rare variants or not.
+
+We'll use  the 97% identity clustered output and apply that information to the next filtering step (for index bleed): the `.cluster.otu_table.txt` file which follows a traditional OTU matrix format| as well as the accompanying `.cluster.otus.fa` file which contains the OTU id in the header and the associated sequence.
 
 ## filtering
 
-Because a mock community was added to this project, the proportion of reads that are likely misassigned can be estimated on a per-OTU basis. In brief, we are certain of the OTUs likely to be present in mock community; any additional OTU is the result of index bleed (or potentially contamination, but this is unlikely given that this positive control is separately processed from the negative controls and true samples). By calculating the proportion of reads that are present in our mock sample which _shouldn't be there_ we can estimate what fraction of reads (on a per-OTU basis) should be subtracted from all true samples.
+Because no positive control (mock community) was used with this project| the proportion of reads that are likely misassigned can not be estimated empirically _within our specific dataset_. Instead| we will assign the default filtering parameter that Jon has observed in his work in generating this pipeline (default for MiSeq Illumina runs is 0.5% - see [Jon's notes here](https://amptk.readthedocs.io/en/latest/filtering.html)). We sacrifice dropping a few reads and rare OTUs for the benefit of increased likelihood of assigning reads to their appropriate sample. One minor difference in this filtering approach compared to the default parameters of `amptk`: because this dataset was very well balanced we don't noramlize data (thus `--normalize n`).
 
-This process takes place by applying an initial filtering step that filters reads using the most strict criteria (taking the largest instance of an OTU bleed and applying that percentage to filter across true samples); intermediate files are kept to investigate how the index-bleed is distributed on a per-OTU basis. I have maintained a [separate document](https://github.com/devonorourke/guano/blob/master/BRIpompton/docs/Pompton_filtering_notes.md) describing the detailed steps used to apply what I feel are the most appropriate filtering strategies for this dataset.   
+```
+amptk filter \
+-i unoise.cluster.otu_table.txt \
+-f unoise.cluster.otus.fa \
+--index_bleed 0.005 \
+--debug \
+--out Mangan \
+--normalize n
+```
 
-In brief, this amounted to examining what OTUs were present in the mock community (positive control) that were not expected to be there, as well as identifying OTUs which were present in DNA-extraction negative control samples. OTUs were removed or subtracted from the entire dataset.  
+What we find is that we have reduced our initial number of samples because we've reduced the number of reads (on a per-OTU basis) by 0.5%; thus samples with very low read numbers - like negative controls - are often dropped. This is indeed the case as we lose three NTC's but no true samples by using this filtering approach. Interestingly there is no difference in the number of project-wide OTUs pre and post filtering (it remains at **1,927 OTUs**). What we do notice is the number of OTUs per sample is reduced quite a bit for most samples, and some negative controls retain certain OTUs. In all, we have reduced our dataset from **11,634,568** to **11,504,725 reads** . We're going to keep these in our analyses, assign taxonomy, then think about filtering these out at a later step in the pipeline.
 
-The filtering results as applied generated **771 OTUs**, with **1,353,398 reads** among all true samples. A pair of output files after completing filtering steps are applied to then assign taxonomic information to our remaining OTUs.  
+| sample | reads | preFilt OTUs | postFilt OTUs |
+| --- | --- | --- | --- |
+|9152017HBPoolB2|38344|93|56
+|9152017HBPoolB3|38151|81|52
+|9152017HBPoolB4|35090|102|58
+|ExtractionNTC1S1|68391|67|47
+|ExtractionNTC2S10|30104|16|11
+|ExtractionNTC5S37|7|6|6
+|ExtractionNTC9S97|15|10|10
+|ExtractionNTC15S151|5|4|4
+|blankS39|37761|59|41
+
+
 
 ## taxonomy assignment
-As described in the [amptk taxonomy](http://amptk.readthedocs.io/en/latest/taxonomy.html) section, the database used to assign taxonomy is derived from the Barcode of Life Database ([BOLD](http://v4.boldsystems.org/)). The sequences present in the database we're using are the result of two sequential clustering processes.
+As described in the [amptk taxonomy](http://amptk.readthedocs.io/en/latest/taxonomy.html) section| the database used to assign taxonomy is derived from the Barcode of Life Database ([BOLD](http://v4.boldsystems.org/)). The sequences present in the database we're using are the result of two sequential clustering processes.
 - BOLD's BIN data serve as the initial sequence material. These sequences themselves are initially derived from [a clustering process](http://v4.boldsystems.org/index.php/Public_BarcodeIndexNumber_Home).
 - The BIN sequences are then clustered locally by amptk to 99% identity. These data are further processed to train the UTAX program which can be used in taxonomic assignment/prediction.  
 
-> This database was updated as of 14-sept-2017, following the [release](https://github.com/nextgenusfs/amptk/releases/tag/1.0.0) of amptk v-1.0.0.  
+> This database was updated as of 14-sept-2017| following the [release](https://github.com/nextgenusfs/amptk/releases/tag/1.0.0) of amptk v-1.0.0.  
 > Complete database download is [available here](https://osf.io/4xd9r/files/)
 
-Taxonomy was assigned using the _hybrid_ approach (default in amptk). See [Jon's description](http://amptk.readthedocs.io/en/latest/taxonomy.html#amptk-taxonomy) of the method for complete details - in brief, this approach calculates a consensus last common ancestor (LCA) taxonomy based on results from three classifiers: USEARCH, UTAX, and SINTAX. This LCA identity is then applied to the OTUs present in the dataset using a global alignment.
+Taxonomy was assigned using the _hybrid_ approach (default in amptk). See [Jon's description](http://amptk.readthedocs.io/en/latest/taxonomy.html#amptk-taxonomy) of the method for complete details - in brief, this approach:
+1. Performs a global alignment of all OTU sequences against the BOLD database using `USEARCH` to find the most taxonomic information up to a specified cutoff (we use default parameters which keep any hits with >= 70% identity)
+2. Runs the `UTAX` and `SINTAX` classifiers to generate taxonomic strings with scores that pass a specified identity cutoff (here 80% for either)
+3. The best hit, if found in USEARCH, is retained if above 97% identity; if less than that, then the best `UTAX` or `SINTAX` classifier is retained.
+> When we filter our results later, we'll indicate which classifier was used
 
-The following code was applied:  
-
+The code:
 ```
 amptk taxonomy \
---i /mnt/lustre/macmaneslab/devon/guano/Pompton/filt/filtd.final.csv \
---fasta /mnt/lustre/macmaneslab/devon/guano/Pompton/filt/filtd/filtd.filtered.otus.fa \
---out Pompton_h \
+-i Mangan.final.txt \
+--fasta Mangan.filtered.otus.fa \
+--out Mangan \
 --db COI \
---method hybrid \
---mapping_file /mnt/lustre/macmaneslab/devon/guano/Pompton/illumina/trim_pomp.mapping_file.txt
+--mapping_file Mangan.mappingFile.txt
 ```
 
-- could also try input a different mapping file: `/mnt/lustre/macmaneslab/devon/guano/Pompton/taxonomy/pomp.updated_mapping_file.txt` where I've manually deleted the mock and four NTCs...
+> The `Mangan.mappingFile.txt` file was created by modifying the provided "_Collected Guano Samples_" Excel spreadsheet to fit the required format of the conversion. This involved ascribing each sample with the metadata information (each row a unique observation (sample), each column a variable like Site, Roost, Date, etc.)
 
-
-The output fasta sequence and OTU table with taxonomic information were uploaded to [the Github repo](https://github.com/devonorourke/guano/tree/master/Perlut).  
+The output fasta file, OTU table, and biom file with taxonomic information were uploaded to [the Github repo](https://github.com/devonorourke/guano/tree/master/Perlut).  
 
 > Note that a value of 0 ("absence") could mean a variety of different things:  
 > - it could be that the OTU is not truly in the sample of guano
@@ -168,8 +191,8 @@ The output fasta sequence and OTU table with taxonomic information were uploaded
 
  # Further analyses
 
- An R script - [see here](https://github.com/devonorourke/guano/blob/master/Perlut/OTUanalysis.R) - was then used to manipulate an output file (`Pompton_h.otu_table.taxonomy.txt`) which includes both further data filtering, as well as the calculations for frequency tables and visualizations.  
+ An R script - [see here](https://github.com/devonorourke/guano/blob/master/Perlut/OTUanalysis.R) - was then used to manipulate an output file (`Pompton_h.otu_table.taxonomy.txt`) which includes both further data filtering| as well as the calculations for frequency tables and visualizations.  
 
- > One such data filtering taking place here is the removal of reads associated with the mock community. Note that this is a conservative step which is perhaps a subtly subjective decision that may warrant revision: the biological mock community consists of about 20 insect members - these same members may be present in real samples (that is, they may be eaten by the birds) - but we have limited power to resolve the difference whether or not those mock samples are the result of index bleed or the result of actual detection. They were left out for the preliminary analyses, but the mock filtered and unfiltered datasets were both produced as `BRIPompton_FullFilteredOTUtable_noMock` and `BRIPompton_FullFilteredOTUtable_withMock`, respectively.  
+ > One such data filtering taking place here is the removal of reads associated with the mock community. Note that this is a conservative step which is perhaps a subtly subjective decision that may warrant revision: the biological mock community consists of about 20 insect members - these same members may be present in real samples (that is| they may be eaten by the birds) - but we have limited power to resolve the difference whether or not those mock samples are the result of index bleed or the result of actual detection. They were left out for the preliminary analyses| but the mock filtered and unfiltered datasets were both produced as `BRIPompton_FullFilteredOTUtable_noMock` and `BRIPompton_FullFilteredOTUtable_withMock`| respectively.  
 
 Please see the BRIPompton [Github repo](https://github.com/devonorourke/guano/tree/master/BRIpompton) for subsequent data summaries and visualizations.  
