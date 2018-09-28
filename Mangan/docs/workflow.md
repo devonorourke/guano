@@ -2,8 +2,12 @@
 All information created for this project is available at [this Github repo](https://github.com/devonorourke/guano/tree/master/Mangan). Please visit that page for more information regarding data tables| visualizations| and code used to complete this work.
 
 ## Molecular work  
+Guano was provided as both single sample and pooled samples. Samples were processed either in 96-well plates or as single tube extractions using Qiagen's PowerSoil kits. Negative controls were used in both plates and single tubes to evaluate potential for cross-contamination during extraction.
+Arthropod COI sequences were amplified using custom primers which targets a 180 bp region of cytochrome oxidase subunit-1. The resulting PCR products were normalized using Applied Biosystem's SequalPrep kit. The resulting normalized PCR products were pooled in fixed volumes and submitted for sequencing.
+> These primers contain unique forward and reverse barcode/indices as well as full length Illumina primer index and flow-cell binding sequence. The result of a single PCR run generates ready-to-sequence amplicons.
 
 ## sequencing at NAU
+The pooled library of COI amplicons were sequenced on an Illumina MiSeq machine with 300 bp PE sequencing using V2 chemistry set for 600 cycles at Northern Arizona University's sequencing center on September 14, 2018. **14,490,123 raw reads** were generated
 
 ## Renaming
 Renamed the default raw .fastq files to something easier to work with:
@@ -95,7 +99,7 @@ We'll use the output `dropd.demux.fq` file for the next step in our pipeline: cl
 
 # clustering for OTUs
 
-AMPTK's clustering pipeline| as we're using it| is a three step process in which:
+AMPTK's clustering pipeline (as we're using it) is a three step process in which:
 1. The **dropd.demux.fq** file containing relevant reads is parsed first using `VSEARCH` to assess read quality
 2. The subsequent quality-filtered reads are then clustered as OTUs. We're using the `UNOISE3` algorithm to cluster here| which "clusters" at 100% identity| meaning that we're keeping all unique sequence variants (with some built-in error modeling to merge variation likely due to sequencing). In addition to the clustering iteself| this process includes a chimera-filtering step driven by the COI database created with:
 ```
@@ -182,17 +186,12 @@ amptk taxonomy \
 
 > The `Mangan.mappingFile.txt` file was created by modifying the provided "_Collected Guano Samples_" Excel spreadsheet to fit the required format of the conversion. This involved ascribing each sample with the metadata information (each row a unique observation (sample), each column a variable like Site, Roost, Date, etc.)
 
-The output fasta file, OTU table, and biom file with taxonomic information were uploaded to [the Github repo](https://github.com/devonorourke/guano/tree/master/Perlut).  
-
-> Note that a value of 0 ("absence") could mean a variety of different things:  
-> - it could be that the OTU is not truly in the sample of guano
-> - it could be because an OTU was present but not amplified and sequenced  
-> - it could be the OTU was sequenced but there wasn't enough reads to pass our filters (with `--index_bleed` and `--subtract` arguments in `amptk filter`))
+The output fasta file, OTU table, and biom file with taxonomic information were uploaded to [the data section](https://github.com/devonorourke/guano/tree/master/Mangan/data) of this Github repo.  
 
  # Further analyses
 
- An R script - [see here](https://github.com/devonorourke/guano/blob/master/Perlut/OTUanalysis.R) - was then used to manipulate an output file (`Pompton_h.otu_table.taxonomy.txt`) which includes both further data filtering| as well as the calculations for frequency tables and visualizations.  
-
- > One such data filtering taking place here is the removal of reads associated with the mock community. Note that this is a conservative step which is perhaps a subtly subjective decision that may warrant revision: the biological mock community consists of about 20 insect members - these same members may be present in real samples (that is| they may be eaten by the birds) - but we have limited power to resolve the difference whether or not those mock samples are the result of index bleed or the result of actual detection. They were left out for the preliminary analyses| but the mock filtered and unfiltered datasets were both produced as `BRIPompton_FullFilteredOTUtable_noMock` and `BRIPompton_FullFilteredOTUtable_withMock`| respectively.  
-
-Please see the BRIPompton [Github repo](https://github.com/devonorourke/guano/tree/master/BRIpompton) for subsequent data summaries and visualizations.  
+ An [R script](https://github.com/devonorourke/guano/blob/master/Mangan/docs/Mangan.OTUanalysis.R) was then used to manipulate the [Mangan.otu_table.taxonomy.txt](https://github.com/devonorourke/guano/blob/master/Mangan/data/Mangan.otu_table.taxonomy.txt) file to both further filter potential contaminant reads as well as produce visualizations in the [data](https://github.com/devonorourke/guano/tree/master/Mangan/data) subdirectory of this repository.
+ Note that a major difference between the `Mangan.otu_table.taxonomy.txt` input and the resulting `master.df` file which encompasses these data is the transformation of sequence reads in their relative counts (total number of filtered sequences) to presence/absence counts. "_Absence_" could mean a variety of different things:
+ - it could be that the OTU is not truly in the sample of guano
+ - it could be because an OTU was present but not amplified and sequenced  
+ - it could be the OTU was sequenced but there wasn't enough reads to pass our filters (with the `--index_bleed` arguments in `amptk filter`)
