@@ -146,6 +146,8 @@ amptk filter \
 
 What we find is that we have reduced our initial number of samples because we've reduced the number of reads (on a per-OTU basis) by 0.5%; thus samples with very low read numbers - like negative controls - are often dropped. This is indeed the case as we lose three NTC's but no true samples by using this filtering approach. Interestingly there is no difference in the number of project-wide OTUs pre and post filtering (it remains at **1,927 OTUs**). What we do notice is the number of OTUs per sample is reduced quite a bit for most samples, and some negative controls retain certain OTUs. In all, we have reduced our dataset from **11,634,568** to **11,504,725 reads** . We're going to keep these in our analyses, assign taxonomy, then think about filtering these out at a later step in the pipeline.
 
+For example, this table shows how true samples typically result in drops in numbers of unique OTUs before and after applying this 0.5% filtering step. In the case of some negative controls (_ExtractionNTC*_) we find that there are relatively few to start with; in three instances the entirety of available OTUs are reduced to zero which is why we lose those NTCs from further analyses. Notably, no true samples were dropped from analysis by applying this filter.
+
 | sample | reads | preFilt OTUs | postFilt OTUs |
 | --- | --- | --- | --- |
 |9152017HBPoolB2|38344|93|56
@@ -157,7 +159,6 @@ What we find is that we have reduced our initial number of samples because we've
 |ExtractionNTC9S97|15|10|10
 |ExtractionNTC15S151|5|4|4
 |blankS39|37761|59|41
-
 
 
 ## taxonomy assignment
