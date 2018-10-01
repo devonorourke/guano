@@ -1,5 +1,6 @@
 A brief description of the following datasets:
 
+- **Mangan.master.csv** - The main spreadsheet (in comma-delimited format) containing information that combines metadata with sequence data. Each row represents a single observation: a unique sequence variant (here called an "Operational Taxonomic Unit", or OTU) for a given sample.
 - **Mangan.mappingFile.txt** - Contains sample ID's and associated metadata (ex. collection dates, site names, roost IDs). Used to process `.biom` file.
 - **Mangan.otus.taxonomy.fa** - The fasta file of sequences for OTUs used in this analysis which were index-bleed and chimera-filtered and then taxonomy was assigned. Includes some OTUs which were filtered by the R script used to identify potential contaminant reads and bat OTUs.
 - **Mangan.final.txt** - An OTU table. Specifically, a matrix with columns as OTUs (first column) and Sample ID's (columns 2 - (N-1)), and rows as counts of sequence reads.
