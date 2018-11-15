@@ -1,0 +1,4 @@
+P4-1
+Concatenate 1171a and 1171b after denoising; update metadata file for QIIME to reflect update in SampleID. These two samples were biological replicates.
+We can do this within QIIME, if desired: https://forum.qiime2.org/t/merging-feature-tables/2326/4
+
