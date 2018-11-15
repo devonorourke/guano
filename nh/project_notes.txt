@@ -2,3 +2,6 @@ P4-1
 Concatenate 1171a and 1171b after denoising; update metadata file for QIIME to reflect update in SampleID. These two samples were biological replicates.
 We can do this within QIIME, if desired: https://forum.qiime2.org/t/merging-feature-tables/2326/4
 
+P7-1
+Don't need to concatenate samples 3572 because only one of two amplified (just 3572a amplified; there is no 3572b).
+Likewise, sample 2556a has no replicate with sequence data.
